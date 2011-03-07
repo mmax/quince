@@ -1,0 +1,154 @@
+//
+//  MintFunction.m
+//  MINT
+//
+//  Created by max on 3/5/10.
+//  Copyright 2010 Maximilian Marcoll. All rights reserved.
+//
+
+#import "Function.h"
+#import "QuinceObject.h"
+#import "QuinceDocument.h"
+
+@implementation Function
+
+-(Function *)init{
+
+	if(self = [super init]){
+		
+		dictionary = [[NSMutableDictionary alloc]init];
+		[self setValue:[self className] forKey:@"name"];
+		//[self setValue:[self inputDescriptors] forKey:@"inputDescriptors"];
+		[self reset];
+		//addToPool = YES;
+	}
+	return self;
+}
+
+
+-(void)dealloc{
+	//NSLog(@"%@:dealloc", [self className]);	
+	[dictionary release];
+	[super dealloc];
+}
+
+-(id)valueForKey:(NSString *)key{
+	//NSLog(@"MintFunction: (%@): valueForKey:%@", [self className], key);
+	return [dictionary valueForKey:key];
+}
+
+-(void)setValue:(id)value forKey:(NSString *)key{
+//	NSLog(@"MintFunction: (%@): setValue:... forKey:%@", [self className], key);
+//	NSLog(@"%@", dictionary);
+	[dictionary setValue:value forKey:key];
+}
+
+
+
+-(void)setDocument:(QuinceDocument *)doc{
+	document = doc;
+}
+
+-(QuinceDocument *)document{return document;}
+
+-(void)performActionWithInputDescriptors:(NSArray *)inputDescriptors{
+	[self setValue:inputDescriptors forKey:@"inputDescriptors"];
+	//NSLog(@"%@: performActionWithInputDescriptors: %@", [self className], inputDescriptors);
+	[self perform];
+//	[self reset];
+}
+
+-(QuinceObject *)objectForPurpose:(NSString *)purpose{
+
+	//NSLog(@"%@: objectForPurpose: inputDescriptors: %@", [self className], [self valueForKey:@"inputDescriptors"]);
+	for(NSDictionary * d in [self valueForKey:@"inputDescriptors"]){
+		if([[d valueForKey:@"purpose"]isEqualToString:purpose])
+			return [d valueForKey:@"object"];
+	}
+	NSLog(@"ERROR: %@: objectForPurpose: could not find object for purpose: %@ ", [self className], purpose);
+	return nil;
+}
+
+-(void)reset{
+	[self setValue:[self inputDescriptors] forKey:@"inputDescriptors"];
+	[self setValue:[NSNumber numberWithBool:NO] forKey:@"_defaults"];
+	[dictionary removeObjectForKey:@"result"];
+	[dictionary removeObjectForKey:@"output"];
+}
+
+
+-(QuinceObject *)outputObjectOfType:(NSString *)type{
+	QuinceObject * quince;
+	if([self valueForKey:@"result"]){
+		quince = [self valueForKey:@"result"];
+		if(![[quince type] isEqualToString:type]){
+			[document presentAlertWithText:
+			 [NSString stringWithFormat:@"%@: ERROR: given object is of type '%@', expected '%@' creating new!", [self className], [quince type], type]];
+		}
+		else {
+			[self setValue:quince forKey:@"output"];
+			return quince;
+		}
+	}
+
+	quince = [document newObjectOfClassNamed:type inPool:YES]; 
+	[self setValue:quince forKey:@"output"];
+	return [quince autorelease];
+}
+
+-(NSString *)outputType{
+
+	return @"QuinceObject";
+}
+
+-(BOOL)typeCheckPurpose:(NSString *)purpose withType:(NSString *)type{
+
+	QuinceObject * quince = [document newObjectOfClassNamed:type];
+	NSArray * desc = [self inputDescriptors];
+	for(NSDictionary * dict in desc){
+	
+		if([[dict valueForKey:@"purpose"]isEqualToString:purpose]){
+		
+			if ([quince isOfType:[dict valueForKey:@"type"]])
+				return YES;
+			else
+				 return NO;
+		}
+	}
+	return NO;
+}
+
+
+-(void)setOutputObjectToObjectWithPurpose:(NSString *)purpose{
+
+	[self setValue:[self objectForPurpose:purpose] forKey:@"output"];
+	//NSLog(@"%@: setOutputObjectToObjectWithPurpose: %@", [self className],purpose);
+}
+
+
+-(void)done{
+	[[NSNotificationCenter defaultCenter]postNotificationName:@"functionDone" object:self];
+
+}
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+/////////////// to be implemented by function:
+
+-(NSMutableArray *)inputDescriptors{
+	
+	NSMutableDictionary * dictA = [[NSMutableDictionary alloc]init];
+	[dictA setValue:[NSString stringWithString:@"source"] forKey:@"purpose"];
+	[dictA setValue:[NSString stringWithString:@"QuinceObject"] forKey:@"type"];
+	NSMutableArray * ipd = [[NSMutableArray alloc]initWithObjects:dictA, nil];
+	[dictA release];
+	return [ipd autorelease];
+}
+
+
+-(void)perform{
+}
+
+-(BOOL)needsInput{return YES;}	// if a function doesNotNeedInput to operate, 
+
+
+@end
