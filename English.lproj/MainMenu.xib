@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="599"/>
+			<integer value="612"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -252,6 +252,53 @@
 									<int key="NSMnemonicLoc">2147483647</int>
 									<reference key="NSOnImage" ref="1033313550"/>
 									<reference key="NSMixedImage" ref="310636482"/>
+								</object>
+								<object class="NSMenuItem" id="632411351">
+									<reference key="NSMenu" ref="720053764"/>
+									<string key="NSTitle">Objects</string>
+									<string key="NSKeyEquiv"/>
+									<int key="NSMnemonicLoc">2147483647</int>
+									<reference key="NSOnImage" ref="1033313550"/>
+									<reference key="NSMixedImage" ref="310636482"/>
+									<string key="NSAction">submenuAction:</string>
+									<object class="NSMenu" key="NSSubmenu" id="622664007">
+										<string key="NSTitle">Objects</string>
+										<object class="NSMutableArray" key="NSMenuItems">
+											<bool key="EncodedWithXMLCoder">YES</bool>
+											<object class="NSMenuItem" id="528394492">
+												<reference key="NSMenu" ref="622664007"/>
+												<string key="NSTitle">New Empty Object</string>
+												<string key="NSKeyEquiv"/>
+												<int key="NSMnemonicLoc">2147483647</int>
+												<reference key="NSOnImage" ref="1033313550"/>
+												<reference key="NSMixedImage" ref="310636482"/>
+											</object>
+											<object class="NSMenuItem" id="23697954">
+												<reference key="NSMenu" ref="622664007"/>
+												<string key="NSTitle">New Audio File Object</string>
+												<string key="NSKeyEquiv"/>
+												<int key="NSMnemonicLoc">2147483647</int>
+												<reference key="NSOnImage" ref="1033313550"/>
+												<reference key="NSMixedImage" ref="310636482"/>
+											</object>
+											<object class="NSMenuItem" id="141388649">
+												<reference key="NSMenu" ref="622664007"/>
+												<string key="NSTitle">New Data File Object</string>
+												<string key="NSKeyEquiv"/>
+												<int key="NSMnemonicLoc">2147483647</int>
+												<reference key="NSOnImage" ref="1033313550"/>
+												<reference key="NSMixedImage" ref="310636482"/>
+											</object>
+											<object class="NSMenuItem" id="406779097">
+												<reference key="NSMenu" ref="622664007"/>
+												<string key="NSTitle">New Object linked to Selected Audio File Object</string>
+												<string key="NSKeyEquiv"/>
+												<int key="NSMnemonicLoc">2147483647</int>
+												<reference key="NSOnImage" ref="1033313550"/>
+												<reference key="NSMixedImage" ref="310636482"/>
+											</object>
+										</object>
+									</object>
 								</object>
 								<object class="NSMenuItem" id="425164168">
 									<reference key="NSMenu" ref="720053764"/>
@@ -1379,6 +1426,38 @@
 					</object>
 					<int key="connectionID">610</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">newDataFile:</string>
+						<reference key="source" ref="1014"/>
+						<reference key="destination" ref="141388649"/>
+					</object>
+					<int key="connectionID">616</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">newObject:</string>
+						<reference key="source" ref="1014"/>
+						<reference key="destination" ref="528394492"/>
+					</object>
+					<int key="connectionID">617</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">newAudioFile:</string>
+						<reference key="source" ref="1014"/>
+						<reference key="destination" ref="23697954"/>
+					</object>
+					<int key="connectionID">619</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">newObjectForSelectedAudioFile:</string>
+						<reference key="source" ref="1014"/>
+						<reference key="destination" ref="406779097"/>
+					</object>
+					<int key="connectionID">621</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -1478,6 +1557,7 @@
 							<reference ref="1010469920"/>
 							<reference ref="99685026"/>
 							<reference ref="189236112"/>
+							<reference ref="632411351"/>
 						</object>
 						<reference key="parent" ref="379814623"/>
 					</object>
@@ -2161,6 +2241,47 @@
 						<reference key="object" ref="189236112"/>
 						<reference key="parent" ref="720053764"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">611</int>
+						<reference key="object" ref="632411351"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="622664007"/>
+						</object>
+						<reference key="parent" ref="720053764"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">612</int>
+						<reference key="object" ref="622664007"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="528394492"/>
+							<reference ref="141388649"/>
+							<reference ref="23697954"/>
+							<reference ref="406779097"/>
+						</object>
+						<reference key="parent" ref="632411351"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">613</int>
+						<reference key="object" ref="528394492"/>
+						<reference key="parent" ref="622664007"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">614</int>
+						<reference key="object" ref="141388649"/>
+						<reference key="parent" ref="622664007"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">618</int>
+						<reference key="object" ref="23697954"/>
+						<reference key="parent" ref="622664007"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">620</int>
+						<reference key="object" ref="406779097"/>
+						<reference key="parent" ref="622664007"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -2344,6 +2465,13 @@
 					<string>606.IBPluginDependency</string>
 					<string>607.IBPluginDependency</string>
 					<string>609.IBPluginDependency</string>
+					<string>611.IBPluginDependency</string>
+					<string>612.IBEditorWindowLastContentRect</string>
+					<string>612.IBPluginDependency</string>
+					<string>613.IBPluginDependency</string>
+					<string>614.IBPluginDependency</string>
+					<string>618.IBPluginDependency</string>
+					<string>620.IBPluginDependency</string>
 					<string>72.IBPluginDependency</string>
 					<string>72.ImportedFromIB2</string>
 					<string>73.IBPluginDependency</string>
@@ -2549,7 +2677,12 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<integer value="1"/>
+					<string>{{714, 553}, {375, 83}}</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -2564,7 +2697,9 @@
 					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
-					<string>{{372, 493}, {342, 243}}</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<integer value="1"/>
+					<string>{{372, 473}, {342, 263}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
 					<string>{{155, 774}, {199, 203}}</string>
@@ -2590,7 +2725,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">610</int>
+			<int key="maxID">621</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -2634,7 +2769,7 @@
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">FunctionLoader.h</string>
+						<string key="minorKey">QuinceApi/FunctionLoader.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
@@ -2676,7 +2811,7 @@
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">MainController.h</string>
+						<string key="minorKey">QuinceCore/MainController.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
@@ -2688,7 +2823,7 @@
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">MainScrollerDocumentView.h</string>
+						<string key="minorKey">QuinceCore/MainScrollerDocumentView.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
@@ -2822,7 +2957,7 @@
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">QuinceDocument.h</string>
+						<string key="minorKey">QuinceCore/QuinceDocument.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">

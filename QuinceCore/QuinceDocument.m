@@ -665,10 +665,14 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	// validate interface items
 	
 	int count = [[objectPoolTreeController selectedObjects]count];
-	if(count>1 || ![[[self getSingleSelectedObjectController]content]isOfType:@"AudioFile"])
+	if(count>1 || ![[[self getSingleSelectedObjectController]content]isOfType:@"AudioFile"]){
 		[newObjectWithAudioFileButton setEnabled:NO];
-	else if(count ==1 && [[[self getSingleSelectedObjectController]content]isOfType:@"AudioFile"])
+	//	[newObjectWithAudioFileMenuItem setEnabled:NO];
+	}
+	else if(count ==1 && [[[self getSingleSelectedObjectController]content]isOfType:@"AudioFile"]){
 		[newObjectWithAudioFileButton setEnabled:YES];
+	//	[newObjectWithAudioFileMenuItem setEnabled:YES];
+	}
 	
 	AudioFile * audio = [self getCurrentlySelectedAudioFile];
 
@@ -1074,7 +1078,11 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 -(QuinceObject *)newObjectForSelectedAudioFileOfClassNamed:(NSString *)className inPool:(BOOL)addToPool{
 
 	AudioFile * audio = [self getCurrentlySelectedAudioFile];
-	if(!audio)return nil;
+
+	if(!audio){
+		[self presentAlertWithText:@"No Audio File Object Selected"];
+		return nil;
+	}
 	QuinceObject * quince = [self newObjectOfClassNamed:@"QuinceObject" inPool:YES];
 	[self linkObject:quince toAudioFile:audio];
 	

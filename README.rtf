@@ -17,8 +17,8 @@ release from the quince website at http://quince.maximilianmarcoll.de .\
 \
 In any case, if you have any questions, please write to quince@maximilianmarcoll.de\
 \
-Please note that quince is release under the GPL.\
-You should have received y copy of the GPL along with this package.\
+Please note that quince is released under the GPL.\
+You should have received a copy of the GPL along with this package.\
 If not, go to http://www.gnu.org/licenses/gpl.html\
 \
 THANK YOU VERY MUCH!!\
@@ -47,6 +47,6 @@ Correspondingly you will find three directories in this package, called "QuinceC
 The QuinceCore-directory contains all sources that build the basic application, no functionality apart from very fundamental behaviour is implemented in these files. The QuinceApi-directory contains the sources necessary to build the QuinceApi.framework. The QuinceApi.framework is what one needs to link against to build plug-ins. The QuinceApi contains all the classes one has to communicate with when developing plug-ins, as well as abstract superclasses to build plug-ins of different types. Finally, the bundles directory contains the sources of all the plug-ins that come with quince.\
 \
 There is only one Xcode project for quince. It has multiple targets for quince itself, the api and all the plug-ins.\
-\
+The build settings are set up in a way that everything that is built  is put into place automatically (bundles into /Library/Application Support/quince, the QuinceApi into /Library/Frameworks) except for the quince application itself. It remains in the build directory until you move it. You do not however have to move it to the Applications folder or any other place for the app to work. \
 \
 }
