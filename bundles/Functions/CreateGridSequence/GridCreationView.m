@@ -2,7 +2,6 @@
 //  GridCreationView.m
 //  quince
 //
-//
 //  Created by max on 11/23/06.
 //  Copyright 2006 Maximilian Marcoll. All rights reserved.
 //

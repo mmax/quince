@@ -3,7 +3,7 @@
 //  quince
 //
 //  Created by max on 9/3/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Copyright 2010 Maximilian Marcoll. All rights reserved.
 //
 //
 //	If you have any questions contact quince@maximilianmarcoll.de
