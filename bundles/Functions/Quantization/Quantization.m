@@ -35,6 +35,7 @@
 	QuinceObjectController * resultController = [[self outputObjectOfType:@"QuinceObject"]controller];//[document controllerForNewQuinceObjectOfClassNamed:[seq className] inPool:NO];//[document newQuinceObjectOfClassNamed:[seq className]];
 	long index=0, i=0;
 	
+	[self copyParamsOf:seq into:[resultController content]];
 	
 	if([[grid end]doubleValue] <= [[seq end]doubleValue])
 		grid = [self createGridRepetitions];
@@ -174,6 +175,23 @@
 	[dictA release];
 	[dictB release];
 	return [ipd autorelease];
+}
+
+
+-(void)copyParamsOf:(QuinceObject*)source into:(QuinceObject*)target{
+
+	NSMutableArray * keys = [NSMutableArray arrayWithArray:[source allKeys]];
+	
+	for(NSString * key in keys){
+	
+		if(![key isEqualToString:@"subObjects"] && 
+		   ![key isEqualToString:@"id"] &&
+		   ![key isEqualToString:@"type"] &&
+		   ![key isEqualToString:@"name"] &&
+		   ![key isEqualToString:@"date"]){
+			[target setValue:[[source valueForKey:key]copy] forKey:key];
+		}
+	}
 }
 
 @end

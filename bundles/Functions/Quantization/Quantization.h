@@ -35,4 +35,5 @@
 
 -(QuinceObject *)createGridRepetitions;
 -(long)quantizeMint:(QuinceObject *)candidate withGrid:(QuinceObject *)grid startSearchAt:(long)index;
+-(void)copyParamsOf:(QuinceObject*)source into:(QuinceObject*)target;
 @end
