@@ -185,6 +185,8 @@
 	for(StripController * sc in stripControllers)
 		[sc setVolumeRange:[[self valueForKey:@"volumeRange"]intValue] ];
 
+	[[doc undoManager]registerUndoWithTarget:self selector:@selector(removeStripWithStripController:) object:stripController];
+	[[doc undoManager]setActionName:@"New Strip"];
 	
 	return [stripController autorelease];
 }
@@ -195,6 +197,9 @@
 }
 
 -(void)removeStripWithStripController:(StripController *)sc{
+
+	[[doc undoManager]registerUndoWithTarget:self selector:@selector(createViewsFromDictionary:) object:[self xmlDictionary]];
+	[[doc undoManager]setActionName:@"Delete Strip"];
 
 	[sc clear];
 	[[sc interceptView]removeFromSuperview];
@@ -228,7 +233,9 @@
 	[self resize:NSMakeSize(x, y)];
 	[self rearrangeStripControls];
 	[self rearrangeStrips];
+	
 }
+
 
 -(void)clear{
 
@@ -417,17 +424,17 @@
 	
 	for(StripController * strip in stripControllers){
 		
-		NSMutableArray * layerArray = [[NSMutableArray alloc]init];
-		NSArray * layers = [strip layerControllers];
-		
-		for(LayerController * lc in layers)	
-			[layerArray addObject:[lc dictionary]];
-
-		[stripArray addObject:layerArray];
-		[layerArray release];
+		/* NSMutableArray * layerArray = [[NSMutableArray alloc]init];
+				NSArray * layers = [strip layerControllers];
+				
+				for(LayerController * lc in layers)	
+					[layerArray addObject:[lc dictionary]];
+		 */
+		[stripArray addObject:[strip xml_layers]];//layerArray];
+		//[layerArray release];
 	}
 	[dict setValue:stripArray forKey:@"strips"];
-	[stripArray release];
+	[stripArray autorelease];
 }
 
 -(NSDictionary *)xmlDictionary{

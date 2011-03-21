@@ -58,7 +58,7 @@
 }
 
 - (void) dealloc{
-   
+	[self clear];
 	[tableViewController release]; // is retained in awakeFromNib
     [layerControllers release];
 	 if(interceptView)
@@ -88,7 +88,8 @@
 
 
 - (IBAction) addRow:(id) sender{
-  
+	[[[controller document]undoManager]registerUndoWithTarget:self selector:@selector(createLayersFromArray:) object:[self xml_layers]];
+	[[[controller document]undoManager]setActionName:@"Add Layer"];
 	/* if(interceptView){
 			
 			//[interceptView removeFromSuperview];
@@ -130,6 +131,8 @@
 }
 
  - (IBAction) removeRow:(id) sender{
+	 [[[controller document]undoManager]registerUndoWithTarget:self selector:@selector(createLayersFromArray:) object:[self xml_layers]];
+	 [[[controller document]undoManager]setActionName:@"Remove Layer"];
 	 
 	NSIndexSet *selectedRows = [subviewTableView selectedRowIndexes];
 	unsigned int index = [selectedRows lastIndex];
@@ -281,7 +284,10 @@
 }
 
 -(void)createLayersFromArray:(NSArray *)layers{
-
+	[[[controller document]undoManager]registerUndoWithTarget:self selector:@selector(createLayersFromArray:) object:[self xml_layers]];
+	[[[controller document]undoManager]setActionName:@"Rebuild Layers"];
+	
+	[self clear];
 	for(NSDictionary * layer in layers){	
 		[self addLayer];
 		LayerController * lc = [layerControllers lastObject];
@@ -352,6 +358,15 @@
 
 -(NSNumber *)volumeRange{
 	return [controller valueForKey:@"volumeRange"];
+}
+
+-(NSArray *)xml_layers{
+	 NSMutableArray * layerArray = [[NSMutableArray alloc]init];
+		
+	 for(LayerController * lc in layerControllers)	
+		 [layerArray addObject:[lc dictionary]];
+	
+	return [layerArray autorelease];
 }
 
 @end

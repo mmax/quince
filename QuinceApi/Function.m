@@ -71,6 +71,8 @@
 -(QuinceDocument *)document{return document;}
 
 -(void)performActionWithInputDescriptors:(NSArray *)inputDescriptors{
+	
+	
 	[self setValue:inputDescriptors forKey:@"inputDescriptors"];
 	//NSLog(@"%@: performActionWithInputDescriptors: %@", [self className], inputDescriptors);
 	[self perform];

@@ -194,8 +194,9 @@
 -(Function *)functionNamed:(NSString *)name;
 -(IBAction)performFunctionWithMenuItem:(id)sender;
 -(IBAction)performFunctionOnCurrentSelectionWithMenuItem:(id)sender;
+-(void)replaceControllers:(NSArray *)a withControllers:(NSArray *)b inSuperController:(QuinceObjectController *)superController inView:(ContainerView*)view forFunctionNamed:(NSString*)name;
 -(void)performFunctionNamed:(NSString *)functionName onObject:(QuinceObject *)target;
--(void)feedFunction:(Function *)function withValuesOfObject:(QuinceObject *)target;
+-(void)performFunction:(Function *)function withValuesOfObject:(QuinceObject *)target;
 
 -(void)play;
 -(IBAction)togglePlayback:(id)sender;
@@ -203,7 +204,6 @@
 -(IBAction)test:(id)sender;
 
 -(BOOL)areTheseControllersSiblings:(NSArray *)controllers;
-
 @end
 
 

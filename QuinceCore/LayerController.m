@@ -104,6 +104,10 @@
 }
 
 -(BOOL)loadObjectWithController:(QuinceObjectController *)mc{
+	if(!mc)return NO;
+	[[[mainController document] undoManager] registerUndoWithTarget:self selector:@selector(loadObjectWithController:) object:[[self view] contentController]];
+	[[[mainController document] undoManager] setActionName:@"load"];
+
 	ContainerView * view = [self view];
 	QuinceObject * quince = [mc content];
 	[view clear];
@@ -136,7 +140,7 @@
 
 
 -(IBAction)load:(id)sender{
-
+	
 	QuinceObjectController * mc = [stripController getSingleSelectedObjectController];
 	[self loadObjectWithController:mc];
 }

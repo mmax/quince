@@ -635,7 +635,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 -(IBAction) showInspector:(id)sender{
-[inspectorWindow makeKeyAndOrderFront:nil];
+	[inspectorWindow makeKeyAndOrderFront:nil];
 	
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -971,6 +971,10 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 
 	QuinceObjectController * mc = [quince controller];
 	
+//	[undoManager registerUndoWithTarget:self selector:@selector(addObjectToObjectPool:) object:quince];
+//	[undoManager setActionName:@"Remove Object"];
+
+	
 	for(ContainerView * view in [mc registeredContainerViews])
 		[[view layerController]clear];
 	
@@ -1086,6 +1090,10 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	QuinceObject * quince = [self newObjectOfClassNamed:@"QuinceObject" inPool:YES];
 	[self linkObject:quince toAudioFile:audio];
 	
+	[undoManager registerUndoWithTarget:self selector:@selector(removeObject:) object:quince];
+	//[[undoManager prepareWithInvocationTarget:self] removeObject:quince];
+	[undoManager setActionName:@"New Object for selected AudioFile"];
+	
 	return quince;
 }
 
@@ -1136,7 +1144,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 		if(result)
 			return result;
 	}
-	[self presentAlertWithText:[NSString stringWithFormat:@"could not find quinceObject with %@: %@", key, value]];
+	//[self presentAlertWithText:[NSString stringWithFormat:@"could not find quinceObject with %@: %@", key, value]];
 	return nil;
 }
 
@@ -1535,7 +1543,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 
 -(IBAction)performFunctionOnCurrentSelectionWithMenuItem:(id)sender{
 
-	NSLog(@"performFunctionOnCurrentSelectionWithMenuItem:%@", [sender title]);
+	//NSLog(@"performFunctionOnCurrentSelectionWithMenuItem:%@", [sender title]);
 	
 	ContainerView * currentView = [mainController activeView];	// get the currently active view
 	NSArray * selectedChildViews = [currentView selection];			// get an array containing the selected childViews
@@ -1545,27 +1553,67 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	for(ChildView * child in selectedChildViews)				// store their contollers in an array
 		[selectionControllers addObject:[child controller]];
 
-	for (QuinceObjectController * mc in selectionControllers)	
-		[superController removeSubObjectWithController:mc withUpdate:NO];	// remove the subobjects from the previous super-object
+	//for (QuinceObjectController * mc in selectionControllers)	
+	//	[superController removeSubObjectWithController:mc withUpdate:NO];	// remove the subobjects from the previous super-object
 	
 	QuinceObject * mother = [self newObjectOfClassNamed:@"QuinceObject" inPool:NO];	//create an empty Object
 	
-	for (QuinceObjectController * mc in selectionControllers)			// and add the selection as subobjects
-		[[mother controller] addSubObjectWithController:mc withUpdate:NO];
+	for (QuinceObjectController * mc in selectionControllers){			// and add the selection as subobjects
+		QuinceObjectController * copy = [self controllerForCopyOfQuinceObjectController:mc inPool:NO];
+		[[mother controller] addSubObjectWithController:copy withUpdate:NO];
+	}
 	
 	Function * fun = [self functionNamed:[sender title]];		// get the selected function
 	[fun reset];
 	NSArray * inputDescriptors = [fun inputDescriptors];
 	[[inputDescriptors lastObject]setValue:mother forKey:@"object"];	
-	[fun setValue:inputDescriptors forKey:@"inputDescriptors"];		// pass the ‘mother’ Object as the input to the function
-	[fun perform];													// perform the function,
+//	[fun setValue:inputDescriptors forKey:@"inputDescriptors"];		// pass the ‘mother’ Object as the input to the function
+	[fun performActionWithInputDescriptors:inputDescriptors];		// perform the function,
 	//[fun reset];													// reset it
 	
-	for (QuinceObjectController * mc in selectionControllers)	
-		[superController addSubObjectWithController:mc withUpdate:YES];	// add the subobjects to the previous super-object
+	//for (QuinceObjectController * mc in selectionControllers)	
+	//	[superController addSubObjectWithController:mc withUpdate:YES];	// add the subobjects to the previous super-object
+	
+
+	NSMutableArray * newControllers = [[NSMutableArray alloc]init];
+	
+	for(QuinceObject * q in [mother valueForKey:@"subObjects"]){
+		[newControllers addObject:[q controller]];
+	}
+	
+	[self replaceControllers:selectionControllers withControllers:newControllers inSuperController:superController inView:currentView forFunctionNamed:[sender title]];
 	
 	[selectionControllers release];
+	[newControllers release];
 	[mother release];
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-(void)replaceControllers:(NSArray *)a withControllers:(NSArray *)b inSuperController:(QuinceObjectController *)superController 
+				   inView:(ContainerView*)view forFunctionNamed:(NSString*)name{
+
+	[[undoManager prepareWithInvocationTarget:self] replaceControllers:b withControllers:a inSuperController:superController inView:view forFunctionNamed:name];
+	[undoManager setActionName:name];
+	
+	for (QuinceObjectController * mc in a)	
+		[superController removeSubObjectWithController:mc withUpdate:NO];
+	
+	for (QuinceObjectController * mc in b)
+		[superController addSubObjectWithController:mc withUpdate:NO];
+
+	[superController update];
+	
+	for(ContainerView * c in [superController registeredContainerViews])
+		[c reload];
+	
+	for(QuinceObjectController * mc in b){
+		ChildView * cv = [view childViewWithController:mc];
+		[view selectChildView:cv];
+	}
+	
+	
+
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1575,15 +1623,13 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 
 	Function * fun = [self functionNamed:functionName];
 	[fun setValue:target forKey:@"result"];
-	[self feedFunction: fun withValuesOfObject:target];
-	
-	[fun perform];
-	//[fun reset];
+	[self performFunction:fun withValuesOfObject:target];
+
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
--(void)feedFunction:(Function *)function withValuesOfObject:(QuinceObject *)target{
+-(void)performFunction:(Function *)function withValuesOfObject:(QuinceObject *)target{
 
 	NSArray * inputDescriptors = [function inputDescriptors];
 	
@@ -1593,8 +1639,8 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 		//NSLog(@"feeding function with object:%@ for key:%@", [target valueForKey:key], key);
 		[dict setValue:[target valueForKey:key] forKey:@"object"];
 	}
-	
-	[function setValue:inputDescriptors forKey:@"inputDescriptors"];
+
+	[function performActionWithInputDescriptors:inputDescriptors];
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -96,6 +96,7 @@
 -(BOOL)showGuides;						// default: YES
 -(BOOL)allowsNewSubObjectsToRepresentAudioFiles;//default:NO
 -(ChildView *)childViewForPoint:(NSPoint)point;
+-(void)moveSelectionByValuesInSize:(NSValue *)sizeValue;
 -(void)moveSelectionByX:(float)x andY:(float)y;
 
 NSRect RectFromPoints(NSPoint point1, NSPoint point2);
@@ -120,6 +121,7 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2);
 -(void)selectChildViews:(NSArray *)someChildViews;
 -(void)selectAllChildViews;
 -(NSMutableArray *)childViews;
+-(void)resizeSelectedChildViewsByValuesInSize:(NSValue *)sizeValue;
 -(void)resizeSelectedChildViewsByX:(float) x	andY:(float)y;
 -(NSRect) unionRectForSelection;
 -(BOOL)allowsHorizontalResize;			//default : YES

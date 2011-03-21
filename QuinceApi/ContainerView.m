@@ -222,6 +222,8 @@ NSString* const kMuteString = @"m";
     BOOL childHit=NO;
 	ChildView * child;
 	
+	[[document undoManager]beginUndoGrouping];
+	
 	[[self window] makeFirstResponder:self]; //?
 	clickLocation = [self convertPoint:[event locationInWindow] fromView:nil];
 	child = [self childViewForPoint:clickLocation];
@@ -235,6 +237,9 @@ NSString* const kMuteString = @"m";
 		if(NSPointInRect([self convertPoint:clickLocation toView:child], [child resizeXCursorRect])){
 			resizeDragging = YES;
 			lastDragLocation=clickLocation;
+			
+
+			
 			if(![selection containsObject:child]) {
 				[self deselectAllChildViews];
 				[self selectChildView:child];	
@@ -343,12 +348,15 @@ NSString* const kMuteString = @"m";
 	if(dragging){
 
 		if ([self allowsHorizontalDrag] && [self allowsVerticalDrag]) {
-			[self moveSelectionByX:deltaX andY:deltaY];
+			//[self moveSelectionByX:deltaX andY:deltaY];
+			[self moveSelectionByValuesInSize:[NSValue valueWithSize:NSMakeSize(deltaX, deltaY)]];
 		}
 		else if([self allowsHorizontalDrag])
-			[self moveSelectionByX:deltaX andY:0];
+			//[self moveSelectionByX:deltaX andY:0];
+			[self moveSelectionByValuesInSize:[NSValue valueWithSize:NSMakeSize(deltaX, 0)]];
 		else if([self allowsVerticalDrag])
-			[self moveSelectionByX:0 andY:deltaY];
+			//[self moveSelectionByX:0 andY:deltaY];
+			[self moveSelectionByValuesInSize:[NSValue valueWithSize:NSMakeSize(0, deltaY)]];
 	}
 	else if(selDragging){
 		[self setNeedsDisplayInRect:selRect];
@@ -358,14 +366,17 @@ NSString* const kMuteString = @"m";
 	else if(resizeDragging){
 		newDragLocation=[self convertPoint:[event locationInWindow]
 								  fromView:nil];
-
-		[self resizeSelectedChildViewsByX:newDragLocation.x-lastDragLocation.x andY: newDragLocation.y-lastDragLocation.y];
+		[self resizeSelectedChildViewsByValuesInSize:[NSValue valueWithSize:NSMakeSize(newDragLocation.x-lastDragLocation.x, newDragLocation.y-lastDragLocation.y)]];
+//		[self resizeSelectedChildViewsByX:newDragLocation.x-lastDragLocation.x andY: newDragLocation.y-lastDragLocation.y];
 	}
 	lastDragLocation=newDragLocation;
 }
 
 -(void)mouseUp:(NSEvent *)event{
 	findShiftDragDirection = YES;
+	
+	[[document undoManager]endUndoGrouping];
+	
 	if(![[self valueForKey:@"visible"]boolValue])
 		return;
 
@@ -398,19 +409,28 @@ NSString* const kMuteString = @"m";
 }
 
 -(IBAction)moveUp:(id)sender{
-	[self moveSelectionByX:0 andY:1];
+
+	NSValue * v = [NSValue valueWithSize:NSMakeSize(0, 1)];
+	[self moveSelectionByValuesInSize:v];
+//	[self moveSelectionByX:0 andY:1];
 }
 
 -(IBAction)moveDown:(id)sender{
-	[self moveSelectionByX:0 andY:-1];
+	NSValue * v = [NSValue valueWithSize:NSMakeSize(0, -1)];
+	[self moveSelectionByValuesInSize:v];
+//	[self moveSelectionByX:0 andY:-1];
 }
 
 -(IBAction)moveLeft:(id)sender{
-	[self moveSelectionByX:-1 andY:0];
+	NSValue * v = [NSValue valueWithSize:NSMakeSize(-1, 0)];
+	[self moveSelectionByValuesInSize:v];
+//	[self moveSelectionByX:-1 andY:0];
 }
 
 -(IBAction)moveRight:(id)sender{
-	[self moveSelectionByX:1 andY:0];
+	NSValue * v = [NSValue valueWithSize:NSMakeSize(1, 0)];
+	[self moveSelectionByValuesInSize:v];
+//	[self moveSelectionByX:1 andY:0];
 }
 
 -(IBAction)insertNewline:(id)sender{
@@ -613,6 +633,17 @@ NSString* const kMuteString = @"m";
 	return nil;	
 }
 
+-(void)moveSelectionByValuesInSize:(NSValue *)sizeValue{
+
+
+	NSSize delta = [sizeValue sizeValue];
+	NSSize deltaMinus = NSMakeSize(-1*delta.width, -1*delta.height);
+	[[document undoManager]registerUndoWithTarget:self selector:@selector(moveSelectionByValuesInSize:) object:[NSValue valueWithSize:deltaMinus]];
+	[[document undoManager]setActionName:@"move"];
+	
+	[self moveSelectionByX:delta.width andY:delta.height];
+}
+
 -(void)moveSelectionByX:(float)x andY:(float)y{
 	
 	//NSRect before = [self unionRectForSelection];
@@ -649,7 +680,7 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 }
 
 -(void)prepareToDisplayObjectWithController:(QuinceObjectController *)mc{
-	[self clear];
+		[self clear];
 	float widthNeeded = [[mc valueForKeyPath:@"selection.duration"]floatValue]*[[self valueForKey:@"pixelsPerUnitX"]floatValue];
 	if([self frame].size.width < widthNeeded)
 		[[layerController mainController] resizeViewsForWidth:widthNeeded]; // bähh
@@ -752,6 +783,16 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 -(void)selectAllChildViews{
 	[self deselectAllChildViews];// make sure we don't have any duplicates in the selection
 	[self selectChildViews:[NSArray arrayWithArray: childViews]];
+}
+
+-(void)resizeSelectedChildViewsByValuesInSize:(NSValue *)sizeValue{
+	
+	NSSize delta = [sizeValue sizeValue];
+	NSSize deltaMinus = NSMakeSize(-1*delta.width, -1*delta.height);
+	[[document undoManager]registerUndoWithTarget:self selector:@selector(resizeSelectedChildViewsByValuesInSize:) object:[NSValue valueWithSize:deltaMinus]];
+	[[document undoManager]setActionName:@"resize"];
+	
+	[self resizeSelectedChildViewsByX:delta.width andY:delta.height];// moveSelectionByX:delta.width andY:delta.height];
 }
 
 -(void)resizeSelectedChildViewsByX:(float) x	andY:(float)y{
