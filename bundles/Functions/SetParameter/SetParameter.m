@@ -42,7 +42,7 @@
 
 -(void)perform{
 	
-	NSLog(@"SetParameter:perform");
+	//NSLog(@"SetParameter:perform");
 	[pamMenu removeAllItems];
 	QuinceObject * q = [self objectForPurpose:@"source"];
 	NSArray * keys = [q allKeysRecursively];

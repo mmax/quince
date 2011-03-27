@@ -21,6 +21,12 @@
 		500CADB3122D5A7300B980B8 /* MarkChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 500CADB2122D5A7300B980B8 /* MarkChild.m */; };
 		500CADCA122D5B0000B980B8 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B49701207745C0050CFB7 /* QuinceApi.framework */; };
 		500CADCD122D5B1A00B980B8 /* MarkContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 500CADCC122D5B1A00B980B8 /* MarkContainer.m */; };
+		5015AEB7133E70FB006C85AA /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		5015AF34133E721F006C85AA /* FoldByParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5015AF33133E721F006C85AA /* FoldByParameter.m */; };
+		5015AF64133E75AC006C85AA /* FBP_window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5015AF63133E75AC006C85AA /* FBP_window.xib */; };
+		5015B003133EA9B0006C85AA /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		5015B017133EAB59006C85AA /* ApplyValueList.m in Sources */ = {isa = PBXBuildFile; fileRef = 5015B016133EAB59006C85AA /* ApplyValueList.m */; };
+		5015B08F133EB37C006C85AA /* AVL_win.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5015B08E133EB37C006C85AA /* AVL_win.xib */; };
 		501BFA2011C83E6D00A7BDCD /* ColorByKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 501BFA1F11C83E6D00A7BDCD /* ColorByKey.m */; };
 		501C285A11CE8E5D0097B5F0 /* ResampleEnvelope.m in Sources */ = {isa = PBXBuildFile; fileRef = 501C285911CE8E5D0097B5F0 /* ResampleEnvelope.m */; };
 		501C286111CE92F90097B5F0 /* ResampleEnvelopeWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501C286011CE92F90097B5F0 /* ResampleEnvelopeWindow.xib */; };
@@ -226,6 +232,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 500CADBE122D5AB400B980B8;
 			remoteInfo = MarkContainer;
+		};
+		5015AEB3133E70EB006C85AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09 /* QuinceApi */;
+			remoteInfo = QuinceApi;
+		};
+		5015AF36133E7272006C85AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5015AEAD133E70DA006C85AA /* FoldByParameter */;
+			remoteInfo = FoldByParameter;
+		};
+		5015B001133EA9AB006C85AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09 /* QuinceApi */;
+			remoteInfo = QuinceApi;
+		};
+		5015B00A133EAA3D006C85AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5015AFFB133EA9A4006C85AA /* ApplyValueList */;
+			remoteInfo = ApplyValueList;
 		};
 		501C285E11CE8E990097B5F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -904,6 +938,16 @@
 		500CADC0122D5AB400B980B8 /* MarkContainer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MarkContainer-Info.plist"; path = "bundles/ContainerViews/MarkContainer/MarkContainer-Info.plist"; sourceTree = "<group>"; };
 		500CADCB122D5B1A00B980B8 /* MarkContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MarkContainer.h; path = bundles/ContainerViews/MarkContainer/MarkContainer.h; sourceTree = "<group>"; };
 		500CADCC122D5B1A00B980B8 /* MarkContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MarkContainer.m; path = bundles/ContainerViews/MarkContainer/MarkContainer.m; sourceTree = "<group>"; };
+		5015AEAE133E70DA006C85AA /* FoldByParameter.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoldByParameter.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5015AEAF133E70DA006C85AA /* FoldByParameter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FoldByParameter-Info.plist"; path = "bundles/Functions/FoldByParameter/FoldByParameter-Info.plist"; sourceTree = "<group>"; };
+		5015AF32133E721F006C85AA /* FoldByParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoldByParameter.h; path = bundles/Functions/FoldByParameter/FoldByParameter.h; sourceTree = "<group>"; };
+		5015AF33133E721F006C85AA /* FoldByParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoldByParameter.m; path = bundles/Functions/FoldByParameter/FoldByParameter.m; sourceTree = "<group>"; };
+		5015AF63133E75AC006C85AA /* FBP_window.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FBP_window.xib; path = bundles/Functions/FoldByParameter/FBP_window.xib; sourceTree = "<group>"; };
+		5015AFFC133EA9A4006C85AA /* ApplyValueList.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplyValueList.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5015AFFD133EA9A4006C85AA /* ApplyValueList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ApplyValueList-Info.plist"; path = "bundles/Functions/ApplyValueList/ApplyValueList-Info.plist"; sourceTree = "<group>"; };
+		5015B015133EAB59006C85AA /* ApplyValueList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplyValueList.h; path = bundles/Functions/ApplyValueList/ApplyValueList.h; sourceTree = "<group>"; };
+		5015B016133EAB59006C85AA /* ApplyValueList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApplyValueList.m; path = bundles/Functions/ApplyValueList/ApplyValueList.m; sourceTree = "<group>"; };
+		5015B08E133EB37C006C85AA /* AVL_win.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AVL_win.xib; path = bundles/Functions/ApplyValueList/AVL_win.xib; sourceTree = "<group>"; };
 		501BFA1F11C83E6D00A7BDCD /* ColorByKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorByKey.m; path = bundles/Functions/ColorByKey/ColorByKey.m; sourceTree = "<group>"; };
 		501C284111CE8D920097B5F0 /* ResampleEnvelope.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResampleEnvelope.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		501C284211CE8D930097B5F0 /* ResampleEnvelope-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ResampleEnvelope-Info.plist"; path = "bundles/Functions/ResampleEnvelope/ResampleEnvelope-Info.plist"; sourceTree = "<group>"; };
@@ -1186,6 +1230,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				500CADCA122D5B0000B980B8 /* QuinceApi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5015AEAC133E70DA006C85AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5015AEB7133E70FB006C85AA /* QuinceApi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5015AFFA133EA9A4006C85AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5015B003133EA9B0006C85AA /* QuinceApi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1622,6 +1682,8 @@
 				508C43B21295596E00875B93 /* OneVoice_Loudest.bundle */,
 				508C44EB1295E65E00875B93 /* JoinByFrequency.bundle */,
 				50BFCB7C129987DB00618422 /* ImportMaxMspCollForSingleParameter.bundle */,
+				5015AEAE133E70DA006C85AA /* FoldByParameter.bundle */,
+				5015AFFC133EA9A4006C85AA /* ApplyValueList.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1681,6 +1743,8 @@
 				50999A9E1276425E00AD0D65 /* AlignOnVolume-Info.plist */,
 				504A6A3411AA00FB007F60FF /* ApplyEnvelopeWindow.xib */,
 				504A692511A9C0E5007F60FF /* ApplyEnvelope-Info.plist */,
+				5015AFFD133EA9A4006C85AA /* ApplyValueList-Info.plist */,
+				5015B08E133EB37C006C85AA /* AVL_win.xib */,
 				506BF9BB117A66C900ECBC4E /* Audio2Envelope.plist */,
 				50F420561198BF3C009F695A /* AudioFilePlayer-Info.plist */,
 				50716F7E117A77E600357470 /* AutomationChildView-Info.plist */,
@@ -1703,6 +1767,8 @@
 				50E93BDA119065CD00A63246 /* EqlDstrbtn_Volume-Info.plist */,
 				50B86D331190383D00D235AA /* EqlDstrbtn_Start-Info.plist */,
 				50A362CE126EF67B004D360B /* ExportDescriptionListing-Info.plist */,
+				5015AF63133E75AC006C85AA /* FBP_window.xib */,
+				5015AEAF133E70DA006C85AA /* FoldByParameter-Info.plist */,
 				507750B81268DCE700AF7956 /* Gate-Info.plist */,
 				5077512B1268DEE100AF7956 /* GateWindow.xib */,
 				50D3931811C71B7B0080B427 /* graph2.png */,
@@ -1801,6 +1867,24 @@
 			name = MarkContainer;
 			sourceTree = "<group>";
 		};
+		5015AF35133E722A006C85AA /* FoldByParameter */ = {
+			isa = PBXGroup;
+			children = (
+				5015AF32133E721F006C85AA /* FoldByParameter.h */,
+				5015AF33133E721F006C85AA /* FoldByParameter.m */,
+			);
+			name = FoldByParameter;
+			sourceTree = "<group>";
+		};
+		5015B018133EAB90006C85AA /* ApplyValueList */ = {
+			isa = PBXGroup;
+			children = (
+				5015B015133EAB59006C85AA /* ApplyValueList.h */,
+				5015B016133EAB59006C85AA /* ApplyValueList.m */,
+			);
+			name = ApplyValueList;
+			sourceTree = "<group>";
+		};
 		501C285B11CE8E630097B5F0 /* ResampleEnvelope */ = {
 			isa = PBXGroup;
 			children = (
@@ -1838,6 +1922,7 @@
 			children = (
 				50BD9B8B118FA0F50093F197 /* AlignOnVolume */,
 				504A694311A9C1D1007F60FF /* ApplyEnvelope */,
+				5015B018133EAB90006C85AA /* ApplyValueList */,
 				506BF9C4117A670A00ECBC4E /* Audio2Envelope */,
 				50D3937C11C838330080B427 /* ColorByKey */,
 				506BF94F117A642F00ECBC4E /* CreateGridSequence */,
@@ -1846,6 +1931,7 @@
 				50B86D581190390800D235AA /* EqlDstrbtn_Start */,
 				50E93C011190666000A63246 /* EqlDstrbtn_Volume */,
 				50A362E6126EF700004D360B /* ExportDescriptionListing */,
+				5015AF35133E722A006C85AA /* FoldByParameter */,
 				507750C51268DD4F00AF7956 /* Gate */,
 				50035AF211C97CE9008D4F11 /* ImportFrequencies */,
 				50BFCB891299884600618422 /* ImportMaxMSPCollForSingleParameter */,
@@ -2387,6 +2473,42 @@
 			name = MarkContainer;
 			productName = MarkContainer;
 			productReference = 500CADBF122D5AB400B980B8 /* MarkContainer.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		5015AEAD133E70DA006C85AA /* FoldByParameter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5015AEB2133E70DB006C85AA /* Build configuration list for PBXNativeTarget "FoldByParameter" */;
+			buildPhases = (
+				5015AEAA133E70DA006C85AA /* Resources */,
+				5015AEAB133E70DA006C85AA /* Sources */,
+				5015AEAC133E70DA006C85AA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5015AEB4133E70EB006C85AA /* PBXTargetDependency */,
+			);
+			name = FoldByParameter;
+			productName = FoldByParameter;
+			productReference = 5015AEAE133E70DA006C85AA /* FoldByParameter.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		5015AFFB133EA9A4006C85AA /* ApplyValueList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5015B000133EA9A5006C85AA /* Build configuration list for PBXNativeTarget "ApplyValueList" */;
+			buildPhases = (
+				5015AFF8133EA9A4006C85AA /* Resources */,
+				5015AFF9133EA9A4006C85AA /* Sources */,
+				5015AFFA133EA9A4006C85AA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5015B002133EA9AB006C85AA /* PBXTargetDependency */,
+			);
+			name = ApplyValueList;
+			productName = ApplyValueList;
+			productReference = 5015AFFC133EA9A4006C85AA /* ApplyValueList.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		501C284011CE8D920097B5F0 /* ResampleEnvelope */ = {
@@ -3213,6 +3335,8 @@
 				508C442B12955A2400875B93 /* PBXTargetDependency */,
 				508C44F71295E6B300875B93 /* PBXTargetDependency */,
 				50BFCBF8129988E800618422 /* PBXTargetDependency */,
+				5015AF37133E7272006C85AA /* PBXTargetDependency */,
+				5015B00B133EAA3D006C85AA /* PBXTargetDependency */,
 			);
 			name = quince;
 			productInstallPath = "$(HOME)/Applications";
@@ -3237,6 +3361,7 @@
 			targets = (
 				50999AA6127642A200AD0D65 /* AlignOnVolume */,
 				504A692311A9C0E5007F60FF /* ApplyEnvelope */,
+				5015AFFB133EA9A4006C85AA /* ApplyValueList */,
 				5009C31D1187525900666C2D /* Audio2Envelope */,
 				50F420541198BF3C009F695A /* AudioFilePlayer */,
 				50716F7C117A77E600357470 /* AutomationChild */,
@@ -3253,6 +3378,7 @@
 				50B86D311190383D00D235AA /* EqlDstrbtn_Start */,
 				50E93BD8119065CD00A63246 /* EqlDstrbtn_Volume */,
 				50A362CC126EF67B004D360B /* ExportDescriptionListing */,
+				5015AEAD133E70DA006C85AA /* FoldByParameter */,
 				507750B61268DCE700AF7956 /* Gate */,
 				50035ADD11C97C37008D4F11 /* ImportFrequencies */,
 				50BFCB7B129987DB00618422 /* ImportMaxMSPCollForSingleParameter */,
@@ -3321,6 +3447,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5015AEAA133E70DA006C85AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5015AF64133E75AC006C85AA /* FBP_window.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5015AFF8133EA9A4006C85AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5015B08F133EB37C006C85AA /* AVL_win.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3777,6 +3919,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5015AEAB133E70DA006C85AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5015AF34133E721F006C85AA /* FoldByParameter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5015AFF9133EA9A4006C85AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5015B017133EAB59006C85AA /* ApplyValueList.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		501C283E11CE8D920097B5F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -4179,6 +4337,26 @@
 			isa = PBXTargetDependency;
 			target = 500CADBE122D5AB400B980B8 /* MarkContainer */;
 			targetProxy = 500CADC6122D5AF500B980B8 /* PBXContainerItemProxy */;
+		};
+		5015AEB4133E70EB006C85AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 5015AEB3133E70EB006C85AA /* PBXContainerItemProxy */;
+		};
+		5015AF37133E7272006C85AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5015AEAD133E70DA006C85AA /* FoldByParameter */;
+			targetProxy = 5015AF36133E7272006C85AA /* PBXContainerItemProxy */;
+		};
+		5015B002133EA9AB006C85AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 5015B001133EA9AB006C85AA /* PBXContainerItemProxy */;
+		};
+		5015B00B133EAA3D006C85AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5015AFFB133EA9A4006C85AA /* ApplyValueList */;
+			targetProxy = 5015B00A133EAA3D006C85AA /* PBXContainerItemProxy */;
 		};
 		501C285F11CE8E990097B5F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -4950,6 +5128,110 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = MarkContainer;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		5015AEB0133E70DB006C85AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "bundles/Functions/FoldByParameter/FoldByParameter-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = FoldByParameter;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		5015AEB1133E70DB006C85AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "FoldByParameter-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = FoldByParameter;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		5015AFFE133EA9A4006C85AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "bundles/Functions/ApplyValueList/ApplyValueList-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ApplyValueList;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		5015AFFF133EA9A4006C85AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "ApplyValueList-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ApplyValueList;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -7283,6 +7565,24 @@
 			buildConfigurations = (
 				500CADC1122D5AB500B980B8 /* Debug */,
 				500CADC2122D5AB500B980B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5015AEB2133E70DB006C85AA /* Build configuration list for PBXNativeTarget "FoldByParameter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5015AEB0133E70DB006C85AA /* Debug */,
+				5015AEB1133E70DB006C85AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5015B000133EA9A5006C85AA /* Build configuration list for PBXNativeTarget "ApplyValueList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5015AFFE133EA9A4006C85AA /* Debug */,
+				5015AFFF133EA9A4006C85AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
