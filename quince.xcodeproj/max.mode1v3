@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -264,30 +266,17 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>2A37F4AAFDCFA73011CA2CEA</string>
-								<string>2A37F4ABFDCFA73011CA2CEA</string>
-								<string>50A5229B117A51BA0072FB09</string>
-								<string>2A37F4AFFDCFA73011CA2CEA</string>
-								<string>50299DEF114EA08A003A2185</string>
-								<string>504A694311A9C1D1007F60FF</string>
-								<string>5015B018133EAB90006C85AA</string>
-								<string>5015AF35133E722A006C85AA</string>
-								<string>5074FE631238E20200BB60C6</string>
-								<string>1C37FBAC04509CD000000102</string>
 								<string>E2644B35053B69B200211256</string>
-								<string>1CC0EA4004350EF90041110B</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>47</integer>
-									<integer>45</integer>
-									<integer>29</integer>
-									<integer>26</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 339}, {220, 1056}}</string>
+							<string>{{0, 0}, {220, 1056}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -317,14 +306,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>FoldByParameter.m</string>
+								<string>quince-Info.plist</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -332,11 +319,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>FoldByParameter.m</string>
+										<string>quince-Info.plist</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>5015B0D6133ED8AA006C85AA</string>
+										<string>50EB48E01345CC5F00164174</string>
 										<key>history</key>
 										<array>
 											<string>506BF950117A643B00ECBC4E</string>
@@ -382,7 +369,6 @@
 											<string>50B81AA713294EE8006450C9</string>
 											<string>50B81AA813294EE8006450C9</string>
 											<string>50B81AA913294EE8006450C9</string>
-											<string>50B81AAA13294EE8006450C9</string>
 											<string>502A134D132BA2BA0080F784</string>
 											<string>502A134E132BA2BA0080F784</string>
 											<string>502A134F132BA2BA0080F784</string>
@@ -524,7 +510,8 @@
 											<string>5015B0B7133ED61A006C85AA</string>
 											<string>5015B0CB133ED79E006C85AA</string>
 											<string>5015B0CC133ED79E006C85AA</string>
-											<string>5015B0CD133ED79E006C85AA</string>
+											<string>50EB48DB1345CC5D00164174</string>
+											<string>50B81AAA13294EE8006450C9</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -536,14 +523,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1002, 1016}}</string>
+								<string>{{0, 0}, {1002, 819}}</string>
 								<key>RubberWindowFrame</key>
 								<string>2 63 1244 1115 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>1016pt</string>
+							<string>819pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -556,14 +543,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 1021}, {1002, 53}}</string>
+								<string>{{0, 824}, {1002, 250}}</string>
 								<key>RubberWindowFrame</key>
 								<string>2 63 1244 1115 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>53pt</string>
+							<string>250pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -582,9 +569,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>5015AEA4133E58AF006C85AA</string>
+				<string>50EB48DD1345CC5D00164174</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>5015AEA5133E58AF006C85AA</string>
+				<string>50EB48DE1345CC5D00164174</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -722,13 +709,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>5015B0D7133ED8AA006C85AA</string>
-		<string>5015AF50133E7349006C85AA</string>
-		<string>5015AF51133E7349006C85AA</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>50C653441129964A0041BCDC</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>/Users/max/SWProjects/quince/quince.xcodeproj</string>
+		<string>/users/max/SWProjects/quince/quince.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>2 63 1244 1115 0 0 1920 1178 </string>
@@ -769,8 +751,6 @@
 							<string>221pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -810,7 +790,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>50C653441129964A0041BCDC</string>
-				<string>5015AEA7133E58AF006C85AA</string>
+				<string>50EB48DF1345CC5D00164174</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -823,7 +803,7 @@
 			<key>WindowToolGUID</key>
 			<string>50C653441129964A0041BCDC</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>

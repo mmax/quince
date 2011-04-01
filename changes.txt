@@ -1,0 +1,12 @@
+_________________________________________________________________
+
+v.0.9.4
+• added undo
+• added function: ApplyValueList
+• added function: FoldByParameter
+_________________________________________________________________
+
+v 0.9.3.1
+• fixed a bug in the quantization function plug-in
+The quantized output now has the same parameters and values of the input sequence (exept for the subobjects of course).
+
