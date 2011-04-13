@@ -1,8 +1,8 @@
 //
-//  ApplyValueList.h
+//  ApplyValuesFromSeq.h
 //  quince
 //
-//  Created by max on 3/27/11.
+//  Created by max on 4/13/11.
 //  Copyright 2011 Maximilian Marcoll. All rights reserved.
 //
 //
@@ -28,16 +28,13 @@
 #import <QuinceApi/Function.h>
 #import <QuinceApi/QuinceObject.h>
 #import <QuinceApi/QuinceDocument.h>
-#import <QuinceApi/DataFile.h>
 
-
-
-@interface ApplyValueList : Function {
-
+@interface ApplyValuesFromSeq : Function {
 	IBOutlet NSPopUpButton * pop;
+	IBOutlet NSPopUpButton * modePop;
 
 }
 -(IBAction)OK:(id)sender;
--(NSArray *)linesFromString:(NSString *)string;
-
+-(IBAction)cancel:(id)sender;
+-(NSMutableArray *)keys;
 @end
