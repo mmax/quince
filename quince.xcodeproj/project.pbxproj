@@ -92,6 +92,8 @@
 		506BF987117A653D00ECBC4E /* LilyPondExportWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 506BF986117A653D00ECBC4E /* LilyPondExportWindow.xib */; };
 		506BF988117A653D00ECBC4E /* LilyPondExportWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 506BF986117A653D00ECBC4E /* LilyPondExportWindow.xib */; };
 		506BF9A5117A664E00ECBC4E /* Quantization.m in Sources */ = {isa = PBXBuildFile; fileRef = 506BF9A4117A664E00ECBC4E /* Quantization.m */; };
+		506C6B36135617020060BD9D /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		506C6B3D135617C20060BD9D /* ExtractEnvSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C6B3C135617C20060BD9D /* ExtractEnvSequence.m */; };
 		506D0BB4120AE63400F3F602 /* play.gif in Resources */ = {isa = PBXBuildFile; fileRef = 506D0BB3120AE63400F3F602 /* play.gif */; };
 		506D0C0A120AE70400F3F602 /* stop.gif in Resources */ = {isa = PBXBuildFile; fileRef = 506D0C09120AE70400F3F602 /* stop.gif */; };
 		506D0D5E120B9BBD00F3F602 /* ColorByKey.xib in Resources */ = {isa = PBXBuildFile; fileRef = 506D0D5D120B9BBD00F3F602 /* ColorByKey.xib */; };
@@ -414,6 +416,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 506BF99B117A660A00ECBC4E;
 			remoteInfo = Quantization;
+		};
+		506C6B34135616FF0060BD9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
+		506C6B391356176E0060BD9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 506C6B2D135616F60060BD9D;
+			remoteInfo = ExtractEnvSequence;
+		};
+		506C6B46135629E30060BD9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 506C6B2D135616F60060BD9D;
+			remoteInfo = ExtractEnvSequence;
 		};
 		50716F9E117A795900357470 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1025,6 +1048,10 @@
 		506BF9C1117A670500ECBC4E /* Audio2Envelope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Audio2Envelope.h; path = bundles/Functions/Audio2Envelope/Audio2Envelope.h; sourceTree = "<group>"; };
 		506BF9C2117A670500ECBC4E /* Audio2Envelope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Audio2Envelope.m; path = bundles/Functions/Audio2Envelope/Audio2Envelope.m; sourceTree = "<group>"; };
 		506BF9E5117A677800ECBC4E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
+		506C6B2E135616F60060BD9D /* ExtractEnvSequence.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtractEnvSequence.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		506C6B2F135616F60060BD9D /* ExtractEnvSequence-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ExtractEnvSequence-Info.plist"; path = "bundles/Functions/ExtractEnvSequence/ExtractEnvSequence-Info.plist"; sourceTree = "<group>"; };
+		506C6B3B135617C20060BD9D /* ExtractEnvSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExtractEnvSequence.h; path = bundles/Functions/ExtractEnvSequence/ExtractEnvSequence.h; sourceTree = "<group>"; };
+		506C6B3C135617C20060BD9D /* ExtractEnvSequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExtractEnvSequence.m; path = bundles/Functions/ExtractEnvSequence/ExtractEnvSequence.m; sourceTree = "<group>"; };
 		506D0BB3120AE63400F3F602 /* play.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = play.gif; path = graphics/play.gif; sourceTree = "<group>"; };
 		506D0C09120AE70400F3F602 /* stop.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = stop.gif; path = graphics/stop.gif; sourceTree = "<group>"; };
 		506D0D5D120B9BBD00F3F602 /* ColorByKey.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ColorByKey.xib; path = bundles/Functions/ColorByKey/ColorByKey.xib; sourceTree = "<group>"; };
@@ -1366,6 +1393,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		506C6B2C135616F60060BD9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506C6B36135617020060BD9D /* QuinceApi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50716F7B117A77E600357470 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1684,6 +1719,7 @@
 				50BFCB7C129987DB00618422 /* ImportMaxMspCollForSingleParameter.bundle */,
 				5015AEAE133E70DA006C85AA /* FoldByParameter.bundle */,
 				5015AFFC133EA9A4006C85AA /* ApplyValueList.bundle */,
+				506C6B2E135616F60060BD9D /* ExtractEnvSequence.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1767,6 +1803,7 @@
 				50E93BDA119065CD00A63246 /* EqlDstrbtn_Volume-Info.plist */,
 				50B86D331190383D00D235AA /* EqlDstrbtn_Start-Info.plist */,
 				50A362CE126EF67B004D360B /* ExportDescriptionListing-Info.plist */,
+				506C6B2F135616F60060BD9D /* ExtractEnvSequence-Info.plist */,
 				5015AF63133E75AC006C85AA /* FBP_window.xib */,
 				5015AEAF133E70DA006C85AA /* FoldByParameter-Info.plist */,
 				507750B81268DCE700AF7956 /* Gate-Info.plist */,
@@ -1931,6 +1968,7 @@
 				50B86D581190390800D235AA /* EqlDstrbtn_Start */,
 				50E93C011190666000A63246 /* EqlDstrbtn_Volume */,
 				50A362E6126EF700004D360B /* ExportDescriptionListing */,
+				506C6B3F135618030060BD9D /* ExtractEnvSequence */,
 				5015AF35133E722A006C85AA /* FoldByParameter */,
 				507750C51268DD4F00AF7956 /* Gate */,
 				50035AF211C97CE9008D4F11 /* ImportFrequencies */,
@@ -2063,6 +2101,15 @@
 				506BF9C2117A670500ECBC4E /* Audio2Envelope.m */,
 			);
 			name = Audio2Envelope;
+			sourceTree = "<group>";
+		};
+		506C6B3F135618030060BD9D /* ExtractEnvSequence */ = {
+			isa = PBXGroup;
+			children = (
+				506C6B3B135617C20060BD9D /* ExtractEnvSequence.h */,
+				506C6B3C135617C20060BD9D /* ExtractEnvSequence.m */,
+			);
+			name = ExtractEnvSequence;
 			sourceTree = "<group>";
 		};
 		50717010117A7E7100357470 /* AutomationChild */ = {
@@ -2768,6 +2815,24 @@
 			productReference = 506BF99C117A660A00ECBC4E /* Quantization.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
+		506C6B2D135616F60060BD9D /* ExtractEnvSequence */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 506C6B33135616F70060BD9D /* Build configuration list for PBXNativeTarget "ExtractEnvSequence" */;
+			buildPhases = (
+				506C6B2A135616F60060BD9D /* Resources */,
+				506C6B2B135616F60060BD9D /* Sources */,
+				506C6B2C135616F60060BD9D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				506C6B35135616FF0060BD9D /* PBXTargetDependency */,
+			);
+			name = ExtractEnvSequence;
+			productName = ExtractEnvSequence;
+			productReference = 506C6B2E135616F60060BD9D /* ExtractEnvSequence.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		50716F7C117A77E600357470 /* AutomationChild */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50716F81117A77E700357470 /* Build configuration list for PBXNativeTarget "AutomationChild" */;
@@ -2981,6 +3046,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				506C6B3A1356176E0060BD9D /* PBXTargetDependency */,
 				50A362D5126EF68B004D360B /* PBXTargetDependency */,
 			);
 			name = ExportDescriptionListing;
@@ -3297,8 +3363,8 @@
 				506BF97D117A650600ECBC4E /* PBXTargetDependency */,
 				506BF9A8117A666800ECBC4E /* PBXTargetDependency */,
 				50716FE5117A7C2000357470 /* PBXTargetDependency */,
-				50717016117A7E9900357470 /* PBXTargetDependency */,
 				50717044117A7FF700357470 /* PBXTargetDependency */,
+				50717016117A7E9900357470 /* PBXTargetDependency */,
 				5009C3621187538300666C2D /* PBXTargetDependency */,
 				50B86D45119038B900D235AA /* PBXTargetDependency */,
 				50E93BFF1190664D00A63246 /* PBXTargetDependency */,
@@ -3337,6 +3403,7 @@
 				50BFCBF8129988E800618422 /* PBXTargetDependency */,
 				5015AF37133E7272006C85AA /* PBXTargetDependency */,
 				5015B00B133EAA3D006C85AA /* PBXTargetDependency */,
+				506C6B47135629E30060BD9D /* PBXTargetDependency */,
 			);
 			name = quince;
 			productInstallPath = "$(HOME)/Applications";
@@ -3378,6 +3445,7 @@
 				50B86D311190383D00D235AA /* EqlDstrbtn_Start */,
 				50E93BD8119065CD00A63246 /* EqlDstrbtn_Volume */,
 				50A362CC126EF67B004D360B /* ExportDescriptionListing */,
+				506C6B2D135616F60060BD9D /* ExtractEnvSequence */,
 				5015AEAD133E70DA006C85AA /* FoldByParameter */,
 				507750B61268DCE700AF7956 /* Gate */,
 				50035ADD11C97C37008D4F11 /* ImportFrequencies */,
@@ -3564,6 +3632,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		506BF998117A660A00ECBC4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506C6B2A135616F60060BD9D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -4051,6 +4126,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		506C6B2B135616F60060BD9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506C6B3D135617C20060BD9D /* ExtractEnvSequence.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50716F7A117A77E600357470 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -4467,6 +4550,21 @@
 			isa = PBXTargetDependency;
 			target = 506BF99B117A660A00ECBC4E /* Quantization */;
 			targetProxy = 506BF9A7117A666800ECBC4E /* PBXContainerItemProxy */;
+		};
+		506C6B35135616FF0060BD9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 506C6B34135616FF0060BD9D /* PBXContainerItemProxy */;
+		};
+		506C6B3A1356176E0060BD9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 506C6B2D135616F60060BD9D /* ExtractEnvSequence */;
+			targetProxy = 506C6B391356176E0060BD9D /* PBXContainerItemProxy */;
+		};
+		506C6B47135629E30060BD9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 506C6B2D135616F60060BD9D /* ExtractEnvSequence */;
+			targetProxy = 506C6B46135629E30060BD9D /* PBXContainerItemProxy */;
 		};
 		50716F9F117A795900357470 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5976,6 +6074,59 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Quantization;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		506C6B31135616F70060BD9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				DSTROOT = /;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "bundles/Functions/ExtractEnvSequence/ExtractEnvSequence-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ExtractEnvSequence;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		506C6B32135616F70060BD9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "ExtractEnvSequence-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ExtractEnvSequence;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -7709,6 +7860,15 @@
 			buildConfigurations = (
 				506BF99E117A660A00ECBC4E /* Debug */,
 				506BF99F117A660A00ECBC4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		506C6B33135616F70060BD9D /* Build configuration list for PBXNativeTarget "ExtractEnvSequence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				506C6B31135616F70060BD9D /* Debug */,
+				506C6B32135616F70060BD9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

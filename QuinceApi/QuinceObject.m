@@ -653,7 +653,7 @@
 		
 		double start = [[m valueForKey:@"start"]doubleValue]+[[m offsetForKey:@"start"]doubleValue];
 		double end = start + [[m valueForKey:@"duration"]doubleValue];
-		if (start<t && t<end)
+		if (start<=t && t<end)
 			[s addObject:m];
 	}
 	return [s autorelease];

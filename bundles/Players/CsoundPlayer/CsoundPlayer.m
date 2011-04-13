@@ -154,10 +154,11 @@ static void * csoundCallback(CSOUND * csound,int attr, const char *format, va_li
 
 	[timer invalidate];	
 	csoundStop(csound);	
-
+	NSLog(@"CSoundPlayer:stopped");
 	[self setIsPlaying:NO];
 	[document setCursorTime:[document valueForKey:@"playbackStartTime"]];
 	csoundReset(csound);
+	NSLog(@"CSoundPlayer:reset");
 	//csoundDestroy(csound);
 }
 
