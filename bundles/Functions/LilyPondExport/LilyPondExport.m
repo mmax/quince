@@ -382,6 +382,7 @@ double maxabs(double d){return d<0?d*(-1):d;}
 	NSString* tupletStart;
 	NSString* tupletEnd;
 	QuinceObject* event = [events objectAtIndex:index];
+	NSString* pitchString = [self getPitchStringForEvent:event];
 	NSString* infoString=[self createInfoStringForEvent:event];
 	
 	if(measure<=0)
@@ -418,11 +419,11 @@ double maxabs(double d){return d<0?d*(-1):d;}
 	if(times ==0)times = 1;
 	
 	if(times==5){
-		[self toFile:[NSString stringWithFormat:@"%@%@~%@", [self getPitchStringForEvent:event], [self durationStringForMeasure:measure times:3], infoString]];
-		[self toFile:[NSString stringWithFormat:@"%@%@", [self getPitchStringForEvent:event], [self durationStringForMeasure:measure times:2]]];
+		[self toFile:[NSString stringWithFormat:@"%@%@~%@", pitchString, [self durationStringForMeasure:measure times:3], infoString]];
+		[self toFile:[NSString stringWithFormat:@"%@%@", pitchString, [self durationStringForMeasure:measure times:2]]];
 	}
 	else {
-		[self toFile:[NSString stringWithFormat:@"%@%@%@", [self getPitchStringForEvent:event], [self durationStringForMeasure:measure times:times], infoString]] ;
+		[self toFile:[NSString stringWithFormat:@"%@%@%@", pitchString, [self durationStringForMeasure:measure times:times], infoString]] ;
 	}
 	remainingDur = 	[[event duration]doubleValue] - (1.0/measure)*times;
 	int remainingSeconds = remainingDur;
@@ -435,7 +436,7 @@ double maxabs(double d){return d<0?d*(-1):d;}
 	}
 	while(remainingSeconds--){
 		//NSLog(@"remainingSeconds?");
-		[self toFile:[NSString stringWithFormat:@"\t%@4", [self getPitchStringForEvent:event]]];
+		[self toFile:[NSString stringWithFormat:@"\t%@4", pitchString]];
 		//NSLog(@"remainingSeconds: no");
 		if(remainingDurFractionalPart>0){
 			[self toFile:@"~"];
@@ -459,12 +460,12 @@ double maxabs(double d){return d<0?d*(-1):d;}
 		//NSLog(@"irgendwo hier muss es ja sein...");
 		if(times==5){
 			
-			[self toFile:[NSString stringWithFormat:@"%@%@~", [self getPitchStringForEvent:event], [self durationStringForMeasure:measure times:3]]];
-			[self toFile:[NSString stringWithFormat:@"%@%@", [self getPitchStringForEvent:event], [self durationStringForMeasure:measure times:2]]];
+			[self toFile:[NSString stringWithFormat:@"%@%@~", pitchString, [self durationStringForMeasure:measure times:3]]];
+			[self toFile:[NSString stringWithFormat:@"%@%@", pitchString, [self durationStringForMeasure:measure times:2]]];
 			
 		}
 		else{
-			[self toFile:[NSString stringWithFormat:@"%@%@", [self getPitchStringForEvent:event], [self durationStringForMeasure:measure times:times]]];
+			[self toFile:[NSString stringWithFormat:@"%@%@", pitchString, [self durationStringForMeasure:measure times:times]]];
 		}
 		//NSLog(@"oder doch nicht?");
 	}
@@ -648,17 +649,24 @@ double maxabs(double d){return d<0?d*(-1):d;}
 		}
 		else														//wenn weisse taste
 			quarterToneSuffix = [NSString stringWithFormat:@"eh"]; // viertelTon runter
+		
+		cent+=50;
 	}
 	
 	else if(cent > 25) {	// 
 		if(pitch == 1 || pitch == 3 || pitch == 6 || pitch == 8 || pitch == 10){//wenn schwarze taste,
 			pitch++; //halbton rauf
 			quarterToneSuffix = [NSString stringWithFormat:@"eh"]; // viertelTon runter
+
 		}
 		else														//wenn weisse taste
 			quarterToneSuffix = [NSString stringWithFormat:@"ih"]; // viertelTon rauf
+			
+		cent -= 50;
 	}	
-	else quarterToneSuffix = [NSString stringWithFormat:@""];		
+	else quarterToneSuffix = [NSString stringWithFormat:@""];	
+
+	[event setValue:[NSNumber numberWithInt:cent] forKey:@"cent"];
 
 	switch(octave) {
 			
