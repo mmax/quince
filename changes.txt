@@ -1,5 +1,5 @@
 
-
+• updated project to work in xcode4
 • fixed a bug in the LilyPondExport Function (cent deviations) 
 • added function: ApplyValuesFromSeq
 • added function: ExtractEnvSequence

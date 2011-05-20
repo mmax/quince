@@ -45,8 +45,8 @@ NSString * MovedRowsType = @"quince_MOVED_ROWS_TYPE";
 		[subviewTableColumn setDataCell: [[[SubviewTableViewCell alloc] init] autorelease]];
 		[subviewTableView setAllowsMultipleSelection:NO];
 		
-        [subviewTableView setDataSource: self];
-        [subviewTableView setDelegate: self];
+        [subviewTableView setDataSource: (id)self];
+        [subviewTableView setDelegate: (id)self];
     }
     return self;
 }

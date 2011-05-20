@@ -73,7 +73,6 @@
 		505B498E1207745D0050CFB7 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B49701207745C0050CFB7 /* QuinceApi.framework */; };
 		505C6C75119F1FFD0086B612 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505C6C74119F1FFD0086B612 /* AudioUnit.framework */; };
 		506009551131BC7A00E75717 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506009541131BC7A00E75717 /* MainController.m */; };
-		5066E62E122C57A800929AA4 /* CsoundLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5066E62D122C57A700929AA4 /* CsoundLib.framework */; };
 		506BF80F117A597200ECBC4E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506BF7B1117A56DA00ECBC4E /* SenTestingKit.framework */; };
 		506BF84C117A5AF500ECBC4E /* AutomationContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 506BF84B117A5AF500ECBC4E /* AutomationContainer.m */; };
 		506BF859117A5B3400ECBC4E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506BF7B1117A56DA00ECBC4E /* SenTestingKit.framework */; };
@@ -117,6 +116,7 @@
 		507750BE1268DCFA00AF7956 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		507750C31268DD3E00AF7956 /* Gate.m in Sources */ = {isa = PBXBuildFile; fileRef = 507750C21268DD3E00AF7956 /* Gate.m */; };
 		5077512C1268DEE100AF7956 /* GateWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5077512B1268DEE100AF7956 /* GateWindow.xib */; };
+		5078D9F41386F5D200634ABF /* CsoundLib64.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5078D9F31386F5D200634ABF /* CsoundLib64.framework */; };
 		507C6F8511977F6E00914B4C /* Legato.m in Sources */ = {isa = PBXBuildFile; fileRef = 507C6F8411977F6E00914B4C /* Legato.m */; };
 		5084BE811132E60800188672 /* stripControlBackground.tif in Resources */ = {isa = PBXBuildFile; fileRef = 5084BE801132E60800188672 /* stripControlBackground.tif */; };
 		508B1856114A7977002FBC55 /* MainScrollerDocumentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 508B1855114A7977002FBC55 /* MainScrollerDocumentView.m */; };
@@ -277,14 +277,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 50A522B4117A52560072FB09 /* QuinceApi */;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
 			remoteInfo = QuinceApi;
 		};
 		5035B90913563F9D003E8570 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5035B8EF13563EBE003E8570 /* ApplyValuesFromSeq */;
+			remoteGlobalIDString = 5035B8EF13563EBE003E8570;
 			remoteInfo = ApplyValuesFromSeq;
 		};
 		504A692E11A9C14D007F60FF /* PBXContainerItemProxy */ = {
@@ -1110,6 +1110,7 @@
 		507750C11268DD3E00AF7956 /* Gate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gate.h; path = bundles/Functions/Gate/Gate.h; sourceTree = "<group>"; };
 		507750C21268DD3E00AF7956 /* Gate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Gate.m; path = bundles/Functions/Gate/Gate.m; sourceTree = "<group>"; };
 		5077512B1268DEE100AF7956 /* GateWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GateWindow.xib; path = bundles/Functions/Gate/GateWindow.xib; sourceTree = "<group>"; };
+		5078D9F31386F5D200634ABF /* CsoundLib64.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CsoundLib64.framework; path = Library/Frameworks/CsoundLib64.framework; sourceTree = SDKROOT; };
 		507C6F7211977EDB00914B4C /* Legato.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Legato.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		507C6F7311977EDB00914B4C /* Legato-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Legato-Info.plist"; path = "bundles/Functions/Legato/Legato-Info.plist"; sourceTree = "<group>"; };
 		507C6F8311977F6E00914B4C /* Legato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Legato.h; path = bundles/Functions/Legato/Legato.h; sourceTree = "<group>"; };
@@ -1310,9 +1311,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5078D9F41386F5D200634ABF /* CsoundLib64.framework in Frameworks */,
 				50325EA9122694A000E22031 /* QuinceApi.framework in Frameworks */,
 				50325EAB122694AD00E22031 /* AudioToolbox.framework in Frameworks */,
-				5066E62E122C57A800929AA4 /* CsoundLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1758,6 +1759,7 @@
 		2A37F4AAFDCFA73011CA2CEA /* MINT */ = {
 			isa = PBXGroup;
 			children = (
+				5078D9F31386F5D200634ABF /* CsoundLib64.framework */,
 				2A37F4ABFDCFA73011CA2CEA /* Model */,
 				50A5229B117A51BA0072FB09 /* ModelControllers */,
 				50BB629C116F987D0056C410 /* ViewControllers */,
@@ -3483,7 +3485,11 @@
 			};
 			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "quince" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* MINT */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -5082,6 +5088,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = ImportFrequencyTable;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -5106,6 +5113,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = ImportFrequencyTable;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -5135,6 +5143,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Audio2Envelope;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -5159,6 +5168,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = EnvelopeFromAudioFile;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -5187,6 +5197,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = EnvToSeq;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -5211,6 +5222,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = EnvToSeq;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -5239,6 +5251,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = MarkChild;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -5263,6 +5276,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = MarkChild;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -5291,6 +5305,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = MarkContainer;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -5315,6 +5330,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = MarkContainer;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -5343,6 +5359,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = FoldByParameter;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -5367,6 +5384,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = FoldByParameter;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -5395,6 +5413,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = ApplyValueList;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -5419,6 +5438,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = ApplyValueList;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -5447,6 +5467,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = ResampleEnvelope;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -5471,6 +5492,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = ResampleEnvelope;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -5480,6 +5502,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -5499,6 +5522,8 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = CSoundPlayer;
+				SDKROOT = macosx;
+				VALID_ARCHS = i386;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -5507,6 +5532,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -5523,6 +5549,8 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = CSoundPlayer;
+				SDKROOT = macosx;
+				VALID_ARCHS = i386;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -5551,6 +5579,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = ApplyValuesFromSeq;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -5575,6 +5604,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = ApplyValuesFromSeq;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -5603,6 +5633,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = ApplyEnvelope;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -5627,6 +5658,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = ApplyEnvelope;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -5655,6 +5687,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Normalize;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -5679,6 +5712,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = normalize;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -5708,6 +5742,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = AutomationView;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -5732,6 +5767,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = AutomationView;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -5761,6 +5797,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = AutomationViewTestUnit;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -5787,6 +5824,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = AutomationViewTestUnit;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
 				ZERO_LINK = NO;
 			};
@@ -5816,6 +5854,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = EnvelopeBasic;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -5840,6 +5879,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = EnvelopeBasic;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -5869,6 +5909,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = TimeGridView;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -5893,6 +5934,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = TimeGridView;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -5922,6 +5964,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = VolumeStandard;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -5946,6 +5989,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = VolumeStandard;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -5975,6 +6019,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = VolumeStandardTestUnit;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -6001,6 +6046,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = VolumeStandardTestUnit;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
 				ZERO_LINK = NO;
 			};
@@ -6030,6 +6076,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = CreateGridSequence;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -6054,6 +6101,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = CreateGridSequence;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -6083,6 +6131,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = LilyPondExport;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -6107,6 +6156,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = LilyPondExport;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -6136,6 +6186,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = LilyPondExportTestUnit;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -6162,6 +6213,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = LilyPondExportTestUnit;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
 				ZERO_LINK = NO;
 			};
@@ -6191,6 +6243,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Quantization;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -6215,6 +6268,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Quantization;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -6244,6 +6298,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = ExtractEnvSequence;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -6268,6 +6323,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = ExtractEnvSequence;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -6296,6 +6352,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = AutomationChildView;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -6320,6 +6377,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = AutomationChildView;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -6348,6 +6406,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = AutomationChildViewTestUnit;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -6374,6 +6433,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = AutomationChildViewTestUnit;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
 				ZERO_LINK = NO;
 			};
@@ -6402,6 +6462,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = EnvelopeChild;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -6426,6 +6487,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = EnvelopeChild;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -6454,6 +6516,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = SequenceChildTestUnit;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -6480,6 +6543,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = SequenceChildTestUnit;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
 				ZERO_LINK = NO;
 			};
@@ -6508,6 +6572,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = SequenceChild;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -6532,6 +6597,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = SequenceChild;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -6560,6 +6626,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = SetParameter;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -6584,6 +6651,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = SetParameter;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -6612,6 +6680,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Gate;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -6636,6 +6705,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Gate;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -6664,6 +6734,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Legato;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -6688,6 +6759,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Legato;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -6716,6 +6788,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = OneVoice_Loudest;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -6740,6 +6813,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = OneVoice_Loudest;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -6768,6 +6842,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = JoinByFrequency;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -6792,6 +6867,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = JoinByFrequency;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -6820,6 +6896,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = AlignOnVolume;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -6844,6 +6921,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = AlignOnVolume;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -6872,6 +6950,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = ExportDescriptionListing;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -6896,6 +6975,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = ExportDescriptionListing;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -6936,6 +7016,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = QuinceApi;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -6966,6 +7047,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = MintApi;
+				SDKROOT = macosx;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -6994,6 +7076,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = MintApiTestUnit;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -7020,6 +7103,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = MintApiTestUnit;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
 				ZERO_LINK = NO;
 			};
@@ -7048,6 +7132,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = EnvelopeGate;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -7072,6 +7157,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = EnvelopeGate;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -7100,6 +7186,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = EqlDstrbtn_Start;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -7124,6 +7211,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = EqlDstrbtn_Start;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -7152,6 +7240,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Sets_Difference;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -7176,6 +7265,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Sets_Difference;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -7204,6 +7294,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Sets_SymDiff;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -7228,6 +7319,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Sets_SymDiff;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -7256,6 +7348,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = TempoChange;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -7280,6 +7373,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = TempoChange;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -7308,6 +7402,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = ImportMaxMspCollForSingleParameter;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -7332,6 +7427,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = ImportListForSingleParameter;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -7360,6 +7456,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = MapDynamicExpr;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -7384,6 +7481,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = MapDynamicExpr;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -7412,6 +7510,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Sets_Union;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -7436,6 +7535,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Sets_Union;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -7464,6 +7564,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Sets_UnionNoDoubles;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -7488,6 +7589,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Sets_UnionNoDoubles;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -7516,6 +7618,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Sets_Intersection;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -7540,6 +7643,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Sets_Intersection;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -7568,6 +7672,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = ColorByKey;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -7592,6 +7697,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = ColorByKey;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -7620,6 +7726,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = RemoveParameter;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -7644,6 +7751,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = RemoveParameter;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -7672,6 +7780,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = EqlDstrbtn_Volume;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -7696,6 +7805,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = EqlDstrbtn_Volume;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -7724,6 +7834,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = AudioFilePlayer;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -7748,6 +7859,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = SimpleAudio;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -7769,7 +7881,7 @@
 				INFOPLIST_FILE = "QuinceCore/quince-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = quince;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -7784,32 +7896,36 @@
 				INFOPLIST_FILE = "quince-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = MINT;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
 		C05733CC08A9546B00998B17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx;
+				VALID_ARCHS = i386;
 			};
 			name = Debug;
 		};
 		C05733CD08A9546B00998B17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
+				VALID_ARCHS = i386;
 			};
 			name = Release;
 		};

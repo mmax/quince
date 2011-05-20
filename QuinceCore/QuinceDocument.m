@@ -322,17 +322,17 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	NSArray* librarySearchPaths = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSSystemDomainMask, YES);
 
     NSEnumerator* searchPathEnum = [librarySearchPaths objectEnumerator];
-    while (currPath = [searchPathEnum nextObject])
+    while ((currPath = [searchPathEnum nextObject]))
 		[bundleSearchPaths addObject: [NSString stringWithFormat:@"%@/quince", currPath]];
 	
 	//NSLog(@"%@", bundleSearchPaths);
 	searchPathEnum = [bundleSearchPaths objectEnumerator];
-	while (currPath = [searchPathEnum nextObject]){
+	while ((currPath = [searchPathEnum nextObject])){
         NSDirectoryEnumerator *bundleEnum;
         NSString *currBundlePath;
         bundleEnum = [[NSFileManager defaultManager] enumeratorAtPath:currPath];
         if (bundleEnum){
-            while (currBundlePath = [bundleEnum nextObject]){
+            while ((currBundlePath = [bundleEnum nextObject])){
                 if ([[currBundlePath pathExtension] isEqualToString:@"bundle"])// we found a bundle, add it to the list
 					[bundlePaths addObject:[currPath stringByAppendingPathComponent:currBundlePath]];
             }
@@ -345,7 +345,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	NSEnumerator* pathEnum = [bundlePaths objectEnumerator];
 	NSMutableArray * classList = [[NSMutableArray alloc]init];
 	
-    while (currPath = [pathEnum nextObject]) {
+    while ((currPath = [pathEnum nextObject])) {
         
 		NSBundle* currBundle = [NSBundle bundleWithPath:currPath];
 
@@ -410,7 +410,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
         contentEnum = [[NSFileManager defaultManager] enumeratorAtPath:path];
 		//NSLog(@"%@", path);
 		if (contentEnum){
-            while (curPath = [contentEnum nextObject]){
+            while ((curPath = [contentEnum nextObject])){
 				//NSLog(@"%@", curPath);
                 if ([[curPath pathExtension] isEqualToString:@"plist"])
 					[plistPaths addObject:[path stringByAppendingPathComponent:curPath]];
@@ -447,7 +447,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	NSEnumerator * e = [viewClassList objectEnumerator];
 	containerViewClasses = viewClassList;
 	Class a;
-	while (a = [e nextObject])
+	while ((a = [e nextObject]))
 		[containerViewClassNames addObject:[a className]];
 	[mainController setContainerViewClasses:viewClassList];
 }
@@ -460,7 +460,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	functionClasses = functionClassList;
 	Function * fun;
 	Class a;
-	while (a = [e nextObject]){
+	while ((a = [e nextObject])){
 		[functionClassNames addObject:[a className]];
 		fun = [[a alloc]init];
 		[self addFunctionToPool:fun];
@@ -514,7 +514,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	NSEnumerator * e = [childViewClassList objectEnumerator];
 	childViewClasses = childViewClassList;
 	Class a;
-	while (a = [e nextObject])
+	while ((a = [e nextObject]))
 		[childViewClassNames addObject:[a className]];
 }
 

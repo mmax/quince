@@ -34,7 +34,7 @@
 
 
 -(ChildView *)init{
-	if(self = [super initWithFrame:NSMakeRect(0, 0, kDefaultWidth, kDefaultHeight)]){// init NSView with dummy rect
+	if((self = [super initWithFrame:NSMakeRect(0, 0, kDefaultWidth, kDefaultHeight)])){// init NSView with dummy rect
 		
 		controller = nil;
 		//[self setWantsLayer:YES];

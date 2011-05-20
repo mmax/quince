@@ -160,7 +160,9 @@
 		[guide setValue:zero forKey:@"path"];
 		
 		NSMutableAttributedString * s = [[[NSMutableAttributedString alloc]initWithString:[NSString stringWithFormat:@"%d", dB]]autorelease];
+        NSLog(@"intercept:error_now?");
 		tRange = NSMakeRange(0, [s length]);	
+        NSLog(@"intercept:error_no!");
 		[s addAttribute:NSForegroundColorAttributeName value:[NSColor whiteColor] range:tRange];
 		[s addAttribute:NSFontAttributeName value:font range:tRange];
 		point = NSMakePoint([self bounds].origin.x+1,y+1);

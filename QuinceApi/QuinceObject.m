@@ -33,7 +33,7 @@
 #pragma mark initialization methos
 
 -(QuinceObject *)init{
-	if(self = [super init]){
+	if((self = [super init])){
 		dictionary = [[NSMutableDictionary alloc]init];
 		[self setInitialValues];
 	}
@@ -42,7 +42,7 @@
 
 -(QuinceObject *)initWithQuinceObject:(QuinceObject *)quince{
 
-	if(self = [super init]){
+	if((self = [super init])){
 
 		dictionary = [[NSMutableDictionary alloc] initWithDictionary:[quince dictionary]];
 		[self setValue:[[NSMutableArray alloc]init] forKey:@"subObjects"];
@@ -69,7 +69,7 @@
 
 -(QuinceObject *)initWithSubObjects:(NSArray *)subs{
 	//NSLog(@"QuinceObject: initWithSubObjects _ unsure about ownership / memory...");
-	if(self = [super init]){
+	if((self = [super init])){
 		dictionary = [[NSMutableDictionary alloc]init];
 		[self setInitialValues];
 		//[self setValue:[[NSMutableArray alloc]initWithArray:subs] forKey:@"subObjects"];
@@ -89,7 +89,7 @@
 
 -(QuinceObject *)initWithXMLDictionary:(NSDictionary *)xml{
 	//NSLog(@"QuinceObject:initWithXMLDictionary...");
-	if(self = [super init]){
+	if((self = [super init])){
 		[self setInitialValues];
 		dictionary = [[NSMutableDictionary alloc]init];
 		[dictionary addEntriesFromDictionary:xml];
@@ -699,7 +699,7 @@
 			[subsToMigrate addObject:q];
 	}
 	
-	NSLog(@"%d subs to migrate", [subsToMigrate count]);
+	NSLog(@"%lu subs to migrate", [subsToMigrate count]);
 	
 	if([subsToMigrate count]){
 		//QuinceObjectController * splitCopy = [superController copyOfController:newSplitController withSubObjects:NO addAsSubObject:NO];
