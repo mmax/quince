@@ -116,8 +116,8 @@
 		507750BE1268DCFA00AF7956 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		507750C31268DD3E00AF7956 /* Gate.m in Sources */ = {isa = PBXBuildFile; fileRef = 507750C21268DD3E00AF7956 /* Gate.m */; };
 		5077512C1268DEE100AF7956 /* GateWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5077512B1268DEE100AF7956 /* GateWindow.xib */; };
-		5078D9F41386F5D200634ABF /* CsoundLib64.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5078D9F31386F5D200634ABF /* CsoundLib64.framework */; };
 		507C6F8511977F6E00914B4C /* Legato.m in Sources */ = {isa = PBXBuildFile; fileRef = 507C6F8411977F6E00914B4C /* Legato.m */; };
+		50830BB91387022700AC36AF /* CsoundLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50830BB81387022700AC36AF /* CsoundLib.framework */; };
 		5084BE811132E60800188672 /* stripControlBackground.tif in Resources */ = {isa = PBXBuildFile; fileRef = 5084BE801132E60800188672 /* stripControlBackground.tif */; };
 		508B1856114A7977002FBC55 /* MainScrollerDocumentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 508B1855114A7977002FBC55 /* MainScrollerDocumentView.m */; };
 		508C43BD129559CB00875B93 /* OneVoice_Loudest.m in Sources */ = {isa = PBXBuildFile; fileRef = 508C43BC129559CB00875B93 /* OneVoice_Loudest.m */; };
@@ -1115,6 +1115,7 @@
 		507C6F7311977EDB00914B4C /* Legato-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Legato-Info.plist"; path = "bundles/Functions/Legato/Legato-Info.plist"; sourceTree = "<group>"; };
 		507C6F8311977F6E00914B4C /* Legato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Legato.h; path = bundles/Functions/Legato/Legato.h; sourceTree = "<group>"; };
 		507C6F8411977F6E00914B4C /* Legato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Legato.m; path = bundles/Functions/Legato/Legato.m; sourceTree = "<group>"; };
+		50830BB81387022700AC36AF /* CsoundLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CsoundLib.framework; path = Library/Frameworks/CsoundLib.framework; sourceTree = SDKROOT; };
 		5084BE801132E60800188672 /* stripControlBackground.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = stripControlBackground.tif; path = graphics/stripControlBackground.tif; sourceTree = "<group>"; };
 		508B1854114A7977002FBC55 /* MainScrollerDocumentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScrollerDocumentView.h; path = QuinceCore/MainScrollerDocumentView.h; sourceTree = "<group>"; };
 		508B1855114A7977002FBC55 /* MainScrollerDocumentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainScrollerDocumentView.m; path = QuinceCore/MainScrollerDocumentView.m; sourceTree = "<group>"; };
@@ -1311,7 +1312,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5078D9F41386F5D200634ABF /* CsoundLib64.framework in Frameworks */,
+				50830BB91387022700AC36AF /* CsoundLib.framework in Frameworks */,
 				50325EA9122694A000E22031 /* QuinceApi.framework in Frameworks */,
 				50325EAB122694AD00E22031 /* AudioToolbox.framework in Frameworks */,
 			);
@@ -1759,6 +1760,7 @@
 		2A37F4AAFDCFA73011CA2CEA /* MINT */ = {
 			isa = PBXGroup;
 			children = (
+				50830BB81387022700AC36AF /* CsoundLib.framework */,
 				5078D9F31386F5D200634ABF /* CsoundLib64.framework */,
 				2A37F4ABFDCFA73011CA2CEA /* Model */,
 				50A5229B117A51BA0072FB09 /* ModelControllers */,
