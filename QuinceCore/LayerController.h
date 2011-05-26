@@ -68,5 +68,5 @@
 -(void)clear;
 -(void)updateViewForCurrentSize;
 -(void)moveLayerToNewY:(float)y;
-
+-(NSString *)parameterOnYAxis;
 @end

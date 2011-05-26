@@ -94,6 +94,7 @@
 -(NSNumber *)volumeRange;
 -(void)updateVolumeGuideFlag;
 -(NSArray *)xml_layers;
+-(NSString *)parameterOnYAxis;
 @end
 
 

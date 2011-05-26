@@ -39,7 +39,7 @@
 
 -(StripController *)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
 	
-	if(self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]){
+	if((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])){
 		volumeGuides = NO;
 		[self loadView];
 		layerControllers = [[NSMutableArray alloc] init];
@@ -50,7 +50,7 @@
 
 -(StripController *)init{
 	
-	if(self = [super init]){
+	if((self = [super init])){
 		layerControllers = [[NSMutableArray alloc] init];
 		volumeGuides = NO;
 	}
@@ -367,6 +367,13 @@
 		 [layerArray addObject:[lc dictionary]];
 	
 	return [layerArray autorelease];
+}
+
+-(NSString *)parameterOnYAxis{
+
+    if(![layerControllers count])
+        return nil;
+    return [[layerControllers lastObject]parameterOnYAxis];
 }
 
 @end

@@ -79,6 +79,17 @@
 	
 	ContainerView * newView, *oldView = [self valueForKey:@"view"];
 	QuinceObjectController * mc = [self valueForKey:@"content"];
+    QuinceDocument * doc = [stripController document];
+    
+    NSString * yPar = [stripController parameterOnYAxis];
+
+    newView = [stripController newContainerViewOfClassNamed:name]; // temp, for checking
+    NSString * viewYPar =    [newView parameterOnY];
+
+    if (yPar != nil  && ![ viewYPar isEqualToString:yPar] ) {
+        [doc presentAlertWithText:[NSString stringWithFormat:@"incompatible view: this strip needs parameter '%@' on the y-axis. the chosen view has '%@'", yPar, viewYPar]];
+        return;
+    }
 	
 	if(oldView != nil)
 		newView = [stripController replaceView:oldView withNewContainerViewOfClassNamed:name];
@@ -248,5 +259,9 @@
 	[view setFrame:r];
 }
 
-
+-(NSString *)parameterOnYAxis{
+    ContainerView * view = [self valueForKey:@"view"];
+    if(!view)return nil;
+    return [view parameterOnY];
+}
 @end
