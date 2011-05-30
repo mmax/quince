@@ -699,7 +699,7 @@
 			[subsToMigrate addObject:q];
 	}
 	
-	NSLog(@"%lu subs to migrate", [subsToMigrate count]);
+	NSLog(@"%u subs to migrate", [subsToMigrate count]);
 	
 	if([subsToMigrate count]){
 		//QuinceObjectController * splitCopy = [superController copyOfController:newSplitController withSubObjects:NO addAsSubObject:NO];

@@ -1,0 +1,193 @@
+TMarkContainer
+v7
+r0
+t327450188.996677
+cCheck dependencies
+cProcessInfoPlistFile "/Library/Application Support/quince/ContainerViews/MarkContainer.bundle/Contents/Info.plist" bundles/ContainerViews/MarkContainer/MarkContainer-Info.plist
+cSymLink /users/max/SWProjects/quince/build/Debug/MarkContainer.bundle "/Library/Application Support/quince/ContainerViews/MarkContainer.bundle"
+cTouch "/Library/Application Support/quince/ContainerViews/MarkContainer.bundle"
+
+N/Developer/SDKs/MacOSX10.5.sdk
+c000000004B7D589B00000000000000EE
+t1266505883
+s238
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h
+c000000004864BB88000000000000170F
+t1214561160
+s5903
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Library/Application Support/quince/ContainerViews/MarkContainer.bundle
+t1305757388
+s102
+
+N/Library/Application Support/quince/ContainerViews/MarkContainer.bundle/Contents/Info.plist
+t1305757388
+s1091
+
+N/Library/Application Support/quince/ContainerViews/MarkContainer.bundle/Contents/MacOS/MarkContainer
+t1302720728
+s14264
+
+N/Library/Frameworks/QuinceApi.framework/QuinceApi
+c000000004DA5F0D10000000000031A80
+t1302720721
+s203392
+
+N/Users/max/SWProjects/quince/QuinceApi/ContainerView.h
+c000000004D87ADCB00000000000017D4
+t1300737483
+s6100
+i<Cocoa/Cocoa.h>
+
+N/Users/max/SWProjects/quince/build/Debug/MarkContainer.bundle
+t3
+s71
+
+N/Users/max/SWProjects/quince/build/quince.build/Debug/MarkContainer.build/Objects-normal/i386/MarkContainer.LinkFileList
+c000000004D8E9F0B000000000000006E
+t1301192459
+s110
+
+N/Users/max/SWProjects/quince/build/quince.build/Debug/MarkContainer.build/Objects-normal/i386/MarkContainer.o
+t1301192460
+s14904
+
+N/Users/max/SWProjects/quince/bundles/ContainerViews/MarkContainer/MarkContainer.h
+c000000004D7B6B3200000000000003D6
+t1299934002
+s982
+i<Cocoa/Cocoa.h>
+i<QuinceApi/ContainerView.h>
+
+N/Users/max/SWProjects/quince/bundles/ContainerViews/MarkContainer/MarkContainer.m
+c000000004D7B6B3200000000000004FC
+t1299934002
+s1276
+i"MarkContainer.h"
+
+N/users/max/SWProjects/quince/build/Debug/MarkContainer.bundle
+t3
+s71
+
+N/users/max/SWProjects/quince/build/quince.build/Debug/MarkContainer.build/Objects-normal/i386/MarkContainer.LinkFileList
+c000000004D8E9F0B000000000000006E
+t1301192459
+s110
+
+N/users/max/SWProjects/quince/build/quince.build/Debug/MarkContainer.build/Objects-normal/i386/MarkContainer.o
+t1301192460
+s14904
+
+N/users/max/SWProjects/quince/bundles/ContainerViews/MarkContainer/MarkContainer.h
+c000000004D7B6B3200000000000003D6
+t1299934002
+s982
+i<Cocoa/Cocoa.h>
+i<QuinceApi/ContainerView.h>
+
+N/users/max/SWProjects/quince/bundles/ContainerViews/MarkContainer/MarkContainer.m
+c000000004D7B6B3200000000000004FC
+t1299934002
+s1276
+i"MarkContainer.h"
+
+N/var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-blgtilqraloyelgkwmmmlqixjusc/AppKit.h.gch
+t1290463335
+s53501680
+
+N/var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gjbpynddvlfuglfgtkokhfohuzks/AppKit.h.gch
+t1301192437
+s53501680
+
+Nbundles/ContainerViews/MarkContainer/MarkContainer-Info.plist
+c000000004C7D236600000000000002CD
+t1283269478
+s717
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies327450188#327450188#0(157"[WARN]warning: no rule to process file '$(PROJECT_DIR)/bundles/ContainerViews/MarkContainer/MarkContainer.m' of type sourcecode.c.objc for architecture i3861(22@150"warning: no rule to process file '$(PROJECT_DIR)/bundles/ContainerViews/MarkContainer/MarkContainer.m' of type sourcecode.c.objc for architecture i386327450188#18446744073709551615#0#0(1@0"0(0#1#0"8616245952#0"0#
+
+CCompileC build/quince.build/Debug/MarkContainer.build/Objects-normal/i386/MarkContainer.o /Users/max/SWProjects/quince/bundles/ContainerViews/MarkContainer/MarkContainer.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s322885259.906427
+e322885260.099307
+r1
+xCompileC
+xbuild/quince.build/Debug/MarkContainer.build/Objects-normal/i386/MarkContainer.o
+x/Users/max/SWProjects/quince/bundles/ContainerViews/MarkContainer/MarkContainer.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@89"Compile /Users/max/SWProjects/quince/bundles/ContainerViews/MarkContainer/MarkContainer.m322885259#322885260#0(0"0(0#0#81"/Users/max/SWProjects/quince/bundles/ContainerViews/MarkContainer/MarkContainer.m4300911832#1430"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/MarkContainer.build/MarkContainer-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/MarkContainer.build/MarkContainer-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/MarkContainer.build/MarkContainer-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/MarkContainer.build/MarkContainer-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/MarkContainer.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/MarkContainer.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gjbpynddvlfuglfgtkokhfohuzks/AppKit.h -c /Users/max/SWProjects/quince/bundles/ContainerViews/MarkContainer/MarkContainer.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/MarkContainer.build/Objects-normal/i386/MarkContainer.o0#
+
+CCompileC build/quince.build/Debug/MarkContainer.build/Objects-normal/i386/MarkContainer.o /users/max/SWProjects/quince/bundles/ContainerViews/MarkContainer/MarkContainer.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s322430296.588573
+e322430296.758308
+r1
+xCompileC
+xbuild/quince.build/Debug/MarkContainer.build/Objects-normal/i386/MarkContainer.o
+x/users/max/SWProjects/quince/bundles/ContainerViews/MarkContainer/MarkContainer.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@89"Compile /users/max/SWProjects/quince/bundles/ContainerViews/MarkContainer/MarkContainer.m322430296#322430296#0(0"0(0#0#81"/users/max/SWProjects/quince/bundles/ContainerViews/MarkContainer/MarkContainer.m4300911832#1430"    cd /users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /users/max/SWProjects/quince/build/quince.build/Debug/MarkContainer.build/MarkContainer-generated-files.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/MarkContainer.build/MarkContainer-own-target-headers.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/MarkContainer.build/MarkContainer-all-target-headers.hmap -iquote /users/max/SWProjects/quince/build/quince.build/Debug/MarkContainer.build/MarkContainer-project-headers.hmap -F/users/max/SWProjects/quince/build/Debug -I/users/max/SWProjects/quince/build/Debug/include -I/users/max/SWProjects/quince/build/quince.build/Debug/MarkContainer.build/DerivedSources/i386 -I/users/max/SWProjects/quince/build/quince.build/Debug/MarkContainer.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-blgtilqraloyelgkwmmmlqixjusc/AppKit.h -c /users/max/SWProjects/quince/bundles/ContainerViews/MarkContainer/MarkContainer.m -o /users/max/SWProjects/quince/build/quince.build/Debug/MarkContainer.build/Objects-normal/i386/MarkContainer.o0#
+
+CLd "/Library/Application Support/quince/ContainerViews/MarkContainer.bundle/Contents/MacOS/MarkContainer" normal i386
+s324413528.331190
+e324413528.368346
+r1
+xLd
+x/Library/Application Support/quince/ContainerViews/MarkContainer.bundle/Contents/MacOS/MarkContainer
+xnormal
+xi386
+lSLF07#2@105"Link /Library/Application Support/quince/ContainerViews/MarkContainer.bundle/Contents/MacOS/MarkContainer324413528#324413528#0(0"0(0#0#0"4300911832#578"    cd /Users/max/SWProjects/quince    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -bundle -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/max/SWProjects/quince/build/Debug -F/Users/max/SWProjects/quince/build/Debug -filelist /Users/max/SWProjects/quince/build/quince.build/Debug/MarkContainer.build/Objects-normal/i386/MarkContainer.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework AppKit -framework QuinceApi -o "/Library/Application Support/quince/ContainerViews/MarkContainer.bundle/Contents/MacOS/MarkContainer"0#
+
+CProcessInfoPlistFile "/Library/Application Support/quince/ContainerViews/MarkContainer.bundle/Contents/Info.plist" bundles/ContainerViews/MarkContainer/MarkContainer-Info.plist
+s327450188.982949
+e327450188.994152
+r1
+xProcessInfoPlistFile
+x/Library/Application Support/quince/ContainerViews/MarkContainer.bundle/Contents/Info.plist
+xbundles/ContainerViews/MarkContainer/MarkContainer-Info.plist
+lSLF07#2@69"Process bundles/ContainerViews/MarkContainer/MarkContainer-Info.plist327450188#327450189#0(0"0(0#0#90"/users/max/SWProjects/quince/bundles/ContainerViews/MarkContainer/MarkContainer-Info.plist8615553920#262"    cd /users/max/SWProjects/quince    builtin-infoPlistUtility bundles/ContainerViews/MarkContainer/MarkContainer-Info.plist -expandbuildsettings -platform macosx -o "/Library/Application Support/quince/ContainerViews/MarkContainer.bundle/Contents/Info.plist"0#
+
+CProcessPCH /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-blgtilqraloyelgkwmmmlqixjusc/AppKit.h.gch /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gjbpynddvlfuglfgtkokhfohuzks/AppKit.h.gch /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CSymLink /Users/max/SWProjects/quince/build/Debug/MarkContainer.bundle "/Library/Application Support/quince/ContainerViews/MarkContainer.bundle"
+s322885259.901777
+e322885259.906051
+r1
+xSymLink
+x/Users/max/SWProjects/quince/build/Debug/MarkContainer.bundle
+x/Library/Application Support/quince/ContainerViews/MarkContainer.bundle
+lSLF07#2@69"Process /Users/max/SWProjects/quince/build/Debug/MarkContainer.bundle322885259#322885259#0(0"0(0#0#0"4300911832#188"    cd /Users/max/SWProjects/quince    /bin/ln -sf "/Library/Application Support/quince/ContainerViews/MarkContainer.bundle" /Users/max/SWProjects/quince/build/Debug/MarkContainer.bundle0#
+
+CSymLink /users/max/SWProjects/quince/build/Debug/MarkContainer.bundle "/Library/Application Support/quince/ContainerViews/MarkContainer.bundle"
+s327450188.989916
+e327450188.994280
+r1
+xSymLink
+x/users/max/SWProjects/quince/build/Debug/MarkContainer.bundle
+x/Library/Application Support/quince/ContainerViews/MarkContainer.bundle
+lSLF07#2@69"Process /users/max/SWProjects/quince/build/Debug/MarkContainer.bundle327450188#327450189#0(0"0(0#0#0"8615226240#188"    cd /users/max/SWProjects/quince    /bin/ln -sf "/Library/Application Support/quince/ContainerViews/MarkContainer.bundle" /users/max/SWProjects/quince/build/Debug/MarkContainer.bundle0#
+
+CTouch "/Library/Application Support/quince/ContainerViews/MarkContainer.bundle"
+s327450188.994341
+e327450188.996641
+r1
+xTouch
+x/Library/Application Support/quince/ContainerViews/MarkContainer.bundle
+lSLF07#2@77"Touch /Library/Application Support/quince/ContainerViews/MarkContainer.bundle327450188#327450189#0(0"0(0#0#0"8637444416#132"    cd /users/max/SWProjects/quince    /usr/bin/touch -c "/Library/Application Support/quince/ContainerViews/MarkContainer.bundle"0#
+

@@ -95,6 +95,7 @@
 -(void)updateVolumeGuideFlag;
 -(NSArray *)xml_layers;
 -(NSString *)parameterOnYAxis;
+-(int)layerCount;
 @end
 
 

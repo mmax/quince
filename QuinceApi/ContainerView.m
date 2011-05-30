@@ -46,7 +46,7 @@ NSString* const kMuteString = @"m";
 #pragma mark basics
 
 -(id)initWithFrame:(NSRect)frame{	
-	if (self = [super initWithFrame:frame]) {
+	if ((self = [super initWithFrame:frame])) {
 		
 		[[NSAnimationContext currentContext] setDuration:1.0];
 		childViews = [[NSMutableArray alloc] init];
@@ -626,7 +626,7 @@ NSString* const kMuteString = @"m";
 	
 	ChildView * child;
 	NSEnumerator * e = [childViews objectEnumerator];
-	while (child = [e nextObject]) {
+	while ((child = [e nextObject])) {
 		if(NSPointInRect(point, [child frame]))
 			return child;
 	}

@@ -1,0 +1,409 @@
+TEnvToSeq
+v7
+r0
+t327450188.967555
+cCheck dependencies
+cProcessInfoPlistFile "/Library/Application Support/quince/Functions/EnvToSeq.bundle/Contents/Info.plist" bundles/Functions/EnvToSeq/EnvToSeq-Info.plist
+cSymLink /users/max/SWProjects/quince/build/Debug/EnvToSeq.bundle "/Library/Application Support/quince/Functions/EnvToSeq.bundle"
+cCpResource "/Library/Application Support/quince/Functions/EnvToSeq.bundle/Contents/Resources/EnvToSeqWindow.xib" bundles/Functions/EnvToSeq/EnvToSeqWindow.xib
+cTouch "/Library/Application Support/quince/Functions/EnvToSeq.bundle"
+
+N/Developer/SDKs/MacOSX10.5.sdk
+c000000004B7D589B00000000000000EE
+t1266505883
+s238
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h
+c000000004864BB88000000000000170F
+t1214561160
+s5903
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.h
+c000000004864A73B000000000000095A
+t1214555963
+s2394
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AudioUnit.framework/Headers/AudioUnit.h
+c000000004864A72E00000000000003CC
+t1214555950
+s972
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Library/Application Support/quince/Functions/EnvToSeq.bundle
+t1305757388
+s102
+
+N/Library/Application Support/quince/Functions/EnvToSeq.bundle/Contents/Info.plist
+t1305757388
+s1076
+
+N/Library/Application Support/quince/Functions/EnvToSeq.bundle/Contents/MacOS/EnvToSeq
+t1302720728
+s18988
+
+N/Library/Application Support/quince/Functions/EnvToSeq.bundle/Contents/Resources/EnvToSeqWindow.nib
+t1301195071
+s7666
+
+N/Library/Application Support/quince/Functions/EnvToSeq.bundle/Contents/Resources/EnvToSeqWindow.xib
+t1305757388
+s50532
+
+N/Library/Frameworks/QuinceApi.framework/QuinceApi
+c000000004DA5F0D10000000000031A80
+t1302720721
+s203392
+
+N/Users/max/SWProjects/quince/QuinceApi/AudioFile.h
+c000000004D7B68CE00000000000004C7
+t1299933390
+s1223
+i<Cocoa/Cocoa.h>
+i"DataFile.h"
+
+N/Users/max/SWProjects/quince/QuinceApi/ContainerView.h
+c000000004D87ADCB00000000000017D4
+t1300737483
+s6100
+i<Cocoa/Cocoa.h>
+
+N/Users/max/SWProjects/quince/QuinceApi/DataFile.h
+c000000004D7B68CE0000000000000414
+t1299933390
+s1044
+i<Cocoa/Cocoa.h>
+i"QuinceObject.h"
+
+N/Users/max/SWProjects/quince/QuinceApi/Envelope.h
+c000000004D74EAE90000000000000535
+t1299507945
+s1333
+i<Cocoa/Cocoa.h>
+i<QuinceApi/QuinceObject.h>
+
+N/Users/max/SWProjects/quince/QuinceApi/Function.h
+c000000004D7B68CE00000000000017B4
+t1299933390
+s6068
+i<Cocoa/Cocoa.h>
+
+N/Users/max/SWProjects/quince/QuinceApi/FunctionGraph.h
+c000000004D74EAA300000000000004BC
+t1299507875
+s1212
+i<Cocoa/Cocoa.h>
+i<QuinceApi/Function.h>
+
+N/Users/max/SWProjects/quince/QuinceApi/Player.h
+c000000004D74EAA40000000000001218
+t1299507876
+s4632
+i<Cocoa/Cocoa.h>
+i<AudioToolbox/AudioToolbox.h>
+i<QuinceApi/QuinceObject.h>
+i<AudioUnit/AudioUnit.h>
+
+N/Users/max/SWProjects/quince/QuinceApi/QuinceObject.h
+c000000004D7B68CE0000000000001108
+t1299933390
+s4360
+i<Cocoa/Cocoa.h>
+
+N/Users/max/SWProjects/quince/QuinceApi/QuinceObjectController.h
+c000000004D7B68CE0000000000000E08
+t1299933390
+s3592
+i<Cocoa/Cocoa.h>
+i<QuinceApi/QuinceObject.h>
+i<QuinceApi/ContainerView.h>
+i<QuinceApi/QuinceDocument.h>
+
+N/Users/max/SWProjects/quince/QuinceCore/LayerController.h
+c000000004D74EAA300000000000009BC
+t1299507875
+s2492
+i<Cocoa/Cocoa.h>
+
+N/Users/max/SWProjects/quince/QuinceCore/MainController.h
+c000000004D87DB660000000000000E96
+t1300749158
+s3734
+i<Cocoa/Cocoa.h>
+i"StripController.h"
+
+N/Users/max/SWProjects/quince/QuinceCore/QuinceDocument.h
+c000000004D87CEA00000000000001E40
+t1300745888
+s7744
+i<Cocoa/Cocoa.h>
+i<QuinceApi/ContainerView.h>
+i<QuinceApi/AudioFile.h>
+i<QuinceApi/Function.h>
+i<QuinceApi/QuinceObjectController.h>
+i"LayerController.h"
+i"MainController.h"
+i<QuinceApi/Player.h>
+i<QuinceApi/FunctionGraph.h>
+i<QuinceApi/QuinceObject.h>
+
+N/Users/max/SWProjects/quince/QuinceCore/StripController.h
+c000000004D87DA350000000000000C60
+t1300748853
+s3168
+i<Cocoa/Cocoa.h>
+i"StripLayerControlsArrayController.h"
+i<QuinceApi/ContainerView.h>
+
+N/Users/max/SWProjects/quince/QuinceCore/StripLayerControlsArrayController.h
+c000000004D74EAA50000000000000BDD
+t1299507877
+s3037
+i"SubviewTableViewCell.h"
+i"StripController.h"
+
+N/Users/max/SWProjects/quince/QuinceCore/SubviewTableViewCell.h
+c000000004D74EAA500000000000003B4
+t1299507877
+s948
+i<AppKit/AppKit.h>
+
+N/Users/max/SWProjects/quince/build/Debug/EnvToSeq.bundle
+t3
+s61
+
+N/Users/max/SWProjects/quince/build/quince.build/Debug/EnvToSeq.build/Objects-normal/i386/EnvToSeq.LinkFileList
+c000000004D8E9F0B0000000000000064
+t1301192459
+s100
+
+N/Users/max/SWProjects/quince/build/quince.build/Debug/EnvToSeq.build/Objects-normal/i386/EnvToSeq.o
+t1302714843
+s45036
+
+N/Users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeq.h
+c000000004D7B6B320000000000000576
+t1299934002
+s1398
+i<Cocoa/Cocoa.h>
+i<QuinceApi/Function.h>
+i<QuinceApi/Envelope.h>
+i<QuinceApi/QuinceDocument.h>
+i<QuinceApi/QuinceObjectController.h>
+
+N/Users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeq.m
+c000000004DA5D8170000000000000D07
+t1302714391
+s3335
+i"EnvToSeq.h"
+
+N/Users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeqWindow.xib
+c000000004C7D1D49000000000000C564
+t1283267913
+s50532
+
+N/users/max/SWProjects/quince/QuinceCore/LayerController.h
+c000000004D74EAA300000000000009BC
+t1299507875
+s2492
+i<Cocoa/Cocoa.h>
+
+N/users/max/SWProjects/quince/QuinceCore/MainController.h
+c000000004D87DB660000000000000E96
+t1300749158
+s3734
+i<Cocoa/Cocoa.h>
+i"StripController.h"
+
+N/users/max/SWProjects/quince/QuinceCore/QuinceDocument.h
+c000000004D87CEA00000000000001E40
+t1300745888
+s7744
+i<Cocoa/Cocoa.h>
+i<QuinceApi/ContainerView.h>
+i<QuinceApi/AudioFile.h>
+i<QuinceApi/Function.h>
+i<QuinceApi/QuinceObjectController.h>
+i"LayerController.h"
+i"MainController.h"
+i<QuinceApi/Player.h>
+i<QuinceApi/FunctionGraph.h>
+i<QuinceApi/QuinceObject.h>
+
+N/users/max/SWProjects/quince/QuinceCore/StripController.h
+c000000004D87DA350000000000000C60
+t1300748853
+s3168
+i<Cocoa/Cocoa.h>
+i"StripLayerControlsArrayController.h"
+i<QuinceApi/ContainerView.h>
+
+N/users/max/SWProjects/quince/QuinceCore/StripLayerControlsArrayController.h
+c000000004D74EAA50000000000000BDD
+t1299507877
+s3037
+i"SubviewTableViewCell.h"
+i"StripController.h"
+
+N/users/max/SWProjects/quince/QuinceCore/SubviewTableViewCell.h
+c000000004D74EAA500000000000003B4
+t1299507877
+s948
+i<AppKit/AppKit.h>
+
+N/users/max/SWProjects/quince/build/Debug/EnvToSeq.bundle
+t3
+s61
+
+N/users/max/SWProjects/quince/build/quince.build/Debug/EnvToSeq.build/Objects-normal/i386/EnvToSeq.LinkFileList
+c000000004D8E9F0B0000000000000064
+t1301192459
+s100
+
+N/users/max/SWProjects/quince/build/quince.build/Debug/EnvToSeq.build/Objects-normal/i386/EnvToSeq.o
+t1301192459
+s45036
+
+N/users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeq.h
+c000000004D7B6B320000000000000576
+t1299934002
+s1398
+i<Cocoa/Cocoa.h>
+i<QuinceApi/Function.h>
+i<QuinceApi/Envelope.h>
+i<QuinceApi/QuinceDocument.h>
+i<QuinceApi/QuinceObjectController.h>
+
+N/users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeq.m
+c000000004D7B6B320000000000000D07
+t1299934002
+s3335
+i"EnvToSeq.h"
+
+N/users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeqWindow.xib
+c000000004C7D1D49000000000000C564
+t1283267913
+s50532
+
+N/var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-blgtilqraloyelgkwmmmlqixjusc/AppKit.h.gch
+t1290463335
+s53501680
+
+N/var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gjbpynddvlfuglfgtkokhfohuzks/AppKit.h.gch
+t1301192437
+s53501680
+
+Nbundles/Functions/EnvToSeq/EnvToSeq-Info.plist
+c000000004C7D137600000000000002C8
+t1283265398
+s712
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies327450188#327450188#0(142"[WARN]warning: no rule to process file '$(PROJECT_DIR)/bundles/Functions/EnvToSeq/EnvToSeq.m' of type sourcecode.c.objc for architecture i3861(22@135"warning: no rule to process file '$(PROJECT_DIR)/bundles/Functions/EnvToSeq/EnvToSeq.m' of type sourcecode.c.objc for architecture i386327450188#18446744073709551615#0#0(1@0"0(0#1#0"8626783840#0"0#
+
+CCompileC build/quince.build/Debug/EnvToSeq.build/Objects-normal/i386/EnvToSeq.o /Users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeq.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s324407637.028470
+e324407643.179522
+r1
+xCompileC
+xbuild/quince.build/Debug/EnvToSeq.build/Objects-normal/i386/EnvToSeq.o
+x/Users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeq.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /Users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeq.m324407637#324407643#0(0"0(0#0#66"/Users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeq.m4300911832#1355"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/EnvToSeq.build/EnvToSeq-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/EnvToSeq.build/EnvToSeq-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/EnvToSeq.build/EnvToSeq-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/EnvToSeq.build/EnvToSeq-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/EnvToSeq.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/EnvToSeq.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gjbpynddvlfuglfgtkokhfohuzks/AppKit.h -c /Users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeq.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/EnvToSeq.build/Objects-normal/i386/EnvToSeq.o0#
+
+CCompileC build/quince.build/Debug/EnvToSeq.build/Objects-normal/i386/EnvToSeq.o /users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeq.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s322441976.695516
+e322441977.041288
+r1
+xCompileC
+xbuild/quince.build/Debug/EnvToSeq.build/Objects-normal/i386/EnvToSeq.o
+x/users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeq.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeq.m322441976#322441977#0(0"0(0#0#66"/users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeq.m4300911832#1355"    cd /users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /users/max/SWProjects/quince/build/quince.build/Debug/EnvToSeq.build/EnvToSeq-generated-files.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/EnvToSeq.build/EnvToSeq-own-target-headers.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/EnvToSeq.build/EnvToSeq-all-target-headers.hmap -iquote /users/max/SWProjects/quince/build/quince.build/Debug/EnvToSeq.build/EnvToSeq-project-headers.hmap -F/users/max/SWProjects/quince/build/Debug -I/users/max/SWProjects/quince/build/Debug/include -I/users/max/SWProjects/quince/build/quince.build/Debug/EnvToSeq.build/DerivedSources/i386 -I/users/max/SWProjects/quince/build/quince.build/Debug/EnvToSeq.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-blgtilqraloyelgkwmmmlqixjusc/AppKit.h -c /users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeq.m -o /users/max/SWProjects/quince/build/quince.build/Debug/EnvToSeq.build/Objects-normal/i386/EnvToSeq.o0#
+
+CCompileXIB /Users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeqWindow.xib
+s322887871.468084
+e322887871.767786
+r1
+xCompileXIB
+x/Users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeqWindow.xib
+lSLF07#2@56"CompileXIB bundles/Functions/EnvToSeq/EnvToSeqWindow.xib322887871#322887871#0(0"0(0#0#74"/Users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeqWindow.xib4300911832#319"    cd /Users/max/SWProjects/quince    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Library/Application Support/quince/Functions/EnvToSeq.bundle/Contents/Resources/EnvToSeqWindow.nib" /Users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeqWindow.xib0#
+
+CCompileXIB /users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeqWindow.xib
+s321969052.810457
+e321969053.055782
+r1
+xCompileXIB
+x/users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeqWindow.xib
+lSLF07#2@56"CompileXIB bundles/Functions/EnvToSeq/EnvToSeqWindow.xib321969052#321969053#0(0"0(0#0#74"/users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeqWindow.xib4300911832#319"    cd /users/max/SWProjects/quince    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Library/Application Support/quince/Functions/EnvToSeq.bundle/Contents/Resources/EnvToSeqWindow.nib" /users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeqWindow.xib0#
+
+CCpResource "/Library/Application Support/quince/Functions/EnvToSeq.bundle/Contents/Resources/EnvToSeqWindow.xib" bundles/Functions/EnvToSeq/EnvToSeqWindow.xib
+s327450188.961359
+e327450188.965447
+r1
+xCpResource
+x/Library/Application Support/quince/Functions/EnvToSeq.bundle/Contents/Resources/EnvToSeqWindow.xib
+xbundles/Functions/EnvToSeq/EnvToSeqWindow.xib
+lSLF07#2@50"Copy bundles/Functions/EnvToSeq/EnvToSeqWindow.xib327450188#327450188#0(0"0(0#0#74"/users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeqWindow.xib8620127072#356"    cd /users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeqWindow.xib "/Library/Application Support/quince/Functions/EnvToSeq.bundle/Contents/Resources"0#
+
+CLd "/Library/Application Support/quince/Functions/EnvToSeq.bundle/Contents/MacOS/EnvToSeq" normal i386
+s324413528.218564
+e324413528.283531
+r1
+xLd
+x/Library/Application Support/quince/Functions/EnvToSeq.bundle/Contents/MacOS/EnvToSeq
+xnormal
+xi386
+lSLF07#2@90"Link /Library/Application Support/quince/Functions/EnvToSeq.bundle/Contents/MacOS/EnvToSeq324413528#324413528#0(0"0(0#0#0"4300911832#553"    cd /Users/max/SWProjects/quince    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -bundle -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/max/SWProjects/quince/build/Debug -F/Users/max/SWProjects/quince/build/Debug -filelist /Users/max/SWProjects/quince/build/quince.build/Debug/EnvToSeq.build/Objects-normal/i386/EnvToSeq.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework AppKit -framework QuinceApi -o "/Library/Application Support/quince/Functions/EnvToSeq.bundle/Contents/MacOS/EnvToSeq"0#
+
+CProcessInfoPlistFile "/Library/Application Support/quince/Functions/EnvToSeq.bundle/Contents/Info.plist" bundles/Functions/EnvToSeq/EnvToSeq-Info.plist
+s327450188.958135
+e327450188.961274
+r1
+xProcessInfoPlistFile
+x/Library/Application Support/quince/Functions/EnvToSeq.bundle/Contents/Info.plist
+xbundles/Functions/EnvToSeq/EnvToSeq-Info.plist
+lSLF07#2@54"Process bundles/Functions/EnvToSeq/EnvToSeq-Info.plist327450188#327450188#0(0"0(0#0#75"/users/max/SWProjects/quince/bundles/Functions/EnvToSeq/EnvToSeq-Info.plist8624202432#237"    cd /users/max/SWProjects/quince    builtin-infoPlistUtility bundles/Functions/EnvToSeq/EnvToSeq-Info.plist -expandbuildsettings -platform macosx -o "/Library/Application Support/quince/Functions/EnvToSeq.bundle/Contents/Info.plist"0#
+
+CProcessPCH /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-blgtilqraloyelgkwmmmlqixjusc/AppKit.h.gch /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gjbpynddvlfuglfgtkokhfohuzks/AppKit.h.gch /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CSymLink /Users/max/SWProjects/quince/build/Debug/EnvToSeq.bundle "/Library/Application Support/quince/Functions/EnvToSeq.bundle"
+s322885259.016351
+e322885259.019335
+r1
+xSymLink
+x/Users/max/SWProjects/quince/build/Debug/EnvToSeq.bundle
+x/Library/Application Support/quince/Functions/EnvToSeq.bundle
+lSLF07#2@64"Process /Users/max/SWProjects/quince/build/Debug/EnvToSeq.bundle322885259#322885259#0(0"0(0#0#0"4300911832#173"    cd /Users/max/SWProjects/quince    /bin/ln -sf "/Library/Application Support/quince/Functions/EnvToSeq.bundle" /Users/max/SWProjects/quince/build/Debug/EnvToSeq.bundle0#
+
+CSymLink /users/max/SWProjects/quince/build/Debug/EnvToSeq.bundle "/Library/Application Support/quince/Functions/EnvToSeq.bundle"
+s327450188.958761
+e327450188.961057
+r1
+xSymLink
+x/users/max/SWProjects/quince/build/Debug/EnvToSeq.bundle
+x/Library/Application Support/quince/Functions/EnvToSeq.bundle
+lSLF07#2@64"Process /users/max/SWProjects/quince/build/Debug/EnvToSeq.bundle327450188#327450188#0(0"0(0#0#0"8623468192#173"    cd /users/max/SWProjects/quince    /bin/ln -sf "/Library/Application Support/quince/Functions/EnvToSeq.bundle" /users/max/SWProjects/quince/build/Debug/EnvToSeq.bundle0#
+
+CTouch "/Library/Application Support/quince/Functions/EnvToSeq.bundle"
+s327450188.965574
+e327450188.967524
+r1
+xTouch
+x/Library/Application Support/quince/Functions/EnvToSeq.bundle
+lSLF07#2@67"Touch /Library/Application Support/quince/Functions/EnvToSeq.bundle327450188#327450188#0(0"0(0#0#0"8613441376#122"    cd /users/max/SWProjects/quince    /usr/bin/touch -c "/Library/Application Support/quince/Functions/EnvToSeq.bundle"0#
+

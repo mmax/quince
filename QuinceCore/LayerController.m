@@ -82,6 +82,8 @@
     QuinceDocument * doc = [stripController document];
     
     NSString * yPar = [stripController parameterOnYAxis];
+    if ([stripController layerCount] == 1)
+        yPar = nil;
 
     newView = [stripController newContainerViewOfClassNamed:name]; // temp, for checking
     NSString * viewYPar =    [newView parameterOnY];

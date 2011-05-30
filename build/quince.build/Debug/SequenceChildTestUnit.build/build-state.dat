@@ -1,0 +1,445 @@
+TSequenceChildTestUnit
+v7
+r0
+t327450188.697434
+cCheck dependencies
+cProcessInfoPlistFile /users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest/Contents/Info.plist bundles/ChildViews/SequenceChild/SequenceChildTestUnit-Info.plist
+cPhaseScriptExecution "Run Script" /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Script-50717022117A7F1800357470.sh
+cTouch /users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest
+
+N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/NSException_SenTestFailure.h
+c000000004B44113C0000000000000E25
+t1262752060
+s3621
+i<Foundation/Foundation.h>
+i<SenTestingKit/SenTestDefines.h>
+
+N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenInterfaceTestCase.h
+c000000004B44113C0000000000000701
+t1262752060
+s1793
+i<Foundation/Foundation.h>
+i<SenTestingKit/SenTestCase.h>
+
+N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTest.h
+c000000004B44113C000000000000084C
+t1262752060
+s2124
+i<Foundation/Foundation.h>
+
+N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestCase.h
+c000000004B44113C000000000000167B
+t1262752060
+s5755
+i<Foundation/NSObject.h>
+i<SenTestingKit/SenTest.h>
+i<SenTestingKit/SenTestCase_Macros.h>
+i<SenTestingKit/NSException_SenTestFailure.h>
+
+N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestCaseRun.h
+c000000004B44113C0000000000000860
+t1262752060
+s2144
+i<SenTestingKit/SenTestRun.h>
+i<SenTestingKit/SenTestDefines.h>
+
+N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestCase_Macros.h
+c000000004B44113C0000000000007F41
+t1262752060
+s32577
+i<SenTestingKit/SenTestingUtilities.h>
+
+N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestDefines.h
+c000000004B44113C0000000000000947
+t1262752060
+s2375
+
+N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestDistributedNotifier.h
+c000000004B44113C00000000000006F0
+t1262752060
+s1776
+i<Foundation/Foundation.h>
+i<SenTestingKit/SenTestObserver.h>
+
+N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestLog.h
+c000000004B44113C00000000000006D0
+t1262752060
+s1744
+i<Foundation/Foundation.h>
+i<SenTestingKit/SenTestObserver.h>
+
+N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestObserver.h
+c000000004B44113C00000000000009CF
+t1262752060
+s2511
+i<Foundation/Foundation.h>
+i<SenTestingKit/SenTestDefines.h>
+
+N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestProbe.h
+c000000004B44113C0000000000000958
+t1262752060
+s2392
+i<Foundation/Foundation.h>
+i<SenTestingKit/SenTestDefines.h>
+
+N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestRun.h
+c000000004B44113C0000000000000A79
+t1262752060
+s2681
+i<Foundation/NSObject.h>
+i<SenTestingKit/SenTest.h>
+
+N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestSuite.h
+c000000004B44113C0000000000000CCF
+t1262752060
+s3279
+i<SenTestingKit/SenTest.h>
+i<SenTestingKit/SenTestCase.h>
+i<Foundation/Foundation.h>
+
+N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestSuiteRun.h
+c000000004B44113C00000000000007D3
+t1262752060
+s2003
+i<SenTestingKit/SenTestRun.h>
+i<SenTestingKit/SenTestDefines.h>
+
+N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestingKit.h
+c000000004B44113C00000000000008A5
+t1262752060
+s2213
+i<SenTestingKit/SenTestDefines.h>
+i<SenTestingKit/SenTest.h>
+i<SenTestingKit/SenTestCase.h>
+i<SenTestingKit/SenTestSuite.h>
+i<SenTestingKit/SenTestObserver.h>
+i<SenTestingKit/NSException_SenTestFailure.h>
+i<SenTestingKit/SenTestLog.h>
+i<SenTestingKit/SenTestDistributedNotifier.h>
+i<SenTestingKit/SenTestRun.h>
+i<SenTestingKit/SenTestSuiteRun.h>
+i<SenTestingKit/SenTestCaseRun.h>
+i<SenTestingKit/SenInterfaceTestCase.h>
+i<SenTestingKit/SenTestProbe.h>
+i<SenTestingKit/SenTestingUtilities.h>
+
+N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestingUtilities.h
+c000000004B44113C0000000000000C37
+t1262752060
+s3127
+i<Foundation/Foundation.h>
+
+N/Developer/Library/Frameworks/SenTestingKit.framework/SenTestingKit
+c000000004B4411450000000000046C00
+t1262752069
+s289792
+
+N/Developer/SDKs/MacOSX10.5.sdk
+c000000004B7D589B00000000000000EE
+t1266505883
+s238
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004864A1C900000000000012EE
+t1214554569
+s4846
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h
+c000000004864A1CB0000000000000CD5
+t1214554571
+s3285
+
+N/Library/Frameworks/QuinceApi.framework/QuinceApi
+c000000004DA5F0D10000000000031A80
+t1302720721
+s203392
+
+N/Users/max/SWProjects/quince/QuinceApi/ChildView.h
+c000000004D7B674B0000000000000A73
+t1299933003
+s2675
+i<Cocoa/Cocoa.h>
+
+N/Users/max/SWProjects/quince/QuinceApi/ContainerView.h
+c000000004D87ADCB00000000000017D4
+t1300737483
+s6100
+i<Cocoa/Cocoa.h>
+
+N/Users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest
+t1302720727
+s102
+
+N/Users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest/Contents/Info.plist
+t1301192450
+s691
+
+N/Users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest/Contents/MacOS/SequenceChildTestUnit
+t1302720727
+s14584
+
+N/Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Objects-normal/i386/SequenceChild.o
+t1301192451
+s13964
+
+N/Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Objects-normal/i386/SequenceChildTest.o
+t1301192450
+s16244
+
+N/Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Objects-normal/i386/SequenceChildTestUnit.LinkFileList
+c000000004D8E9F0200000000000000F0
+t1301192450
+s240
+
+N/Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Script-50717022117A7F1800357470.sh
+c000000004D8E9F020000000000000062
+t1301192450
+s98
+
+N/Users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChild.h
+c000000004D74EAA400000000000003D1
+t1299507876
+s977
+i<Cocoa/Cocoa.h>
+i<QuinceApi/ChildView.h>
+
+N/Users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChild.m
+c000000004D74EAA5000000000000049C
+t1299507877
+s1180
+i"SequenceChild.h"
+
+N/Users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChildTest.h
+c000000004D74EAA500000000000003F9
+t1299507877
+s1017
+i<SenTestingKit/SenTestingKit.h>
+
+N/Users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChildTest.m
+c000000004D74EAA50000000000000719
+t1299507877
+s1817
+i"SequenceChildTest.h"
+i"SequenceChild.h"
+i<QuinceApi/ContainerView.h>
+
+N/users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest
+t1305757388
+s102
+
+N/users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest/Contents/Info.plist
+t1305757388
+s1090
+
+N/users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest/Contents/MacOS/SequenceChildTestUnit
+t1300749174
+s14584
+
+N/users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Objects-normal/i386/SequenceChild.o
+t1299934021
+s13964
+
+N/users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Objects-normal/i386/SequenceChildTest.o
+t1300737493
+s16244
+
+N/users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Objects-normal/i386/SequenceChildTestUnit.LinkFileList
+c000000004D80A41700000000000000F0
+t1300276247
+s240
+
+N/users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Script-50717022117A7F1800357470.sh
+c000000004DD446CC0000000000000062
+t1305757388
+s98
+
+N/users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChild.h
+c000000004D74EAA400000000000003D1
+t1299507876
+s977
+i<Cocoa/Cocoa.h>
+i<QuinceApi/ChildView.h>
+
+N/users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChild.m
+c000000004D74EAA5000000000000049C
+t1299507877
+s1180
+i"SequenceChild.h"
+
+N/users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChildTest.h
+c000000004D74EAA500000000000003F9
+t1299507877
+s1017
+i<SenTestingKit/SenTestingKit.h>
+
+N/users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChildTest.m
+c000000004D74EAA50000000000000719
+t1299507877
+s1817
+i"SequenceChildTest.h"
+i"SequenceChild.h"
+i<QuinceApi/ContainerView.h>
+
+N/var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-aiblocypqoljasdykicoxmptdzmo/Cocoa.h.gch
+t1290463330
+s54116752
+
+N/var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-eqicvfbikwpmznavaghahysycxjr/Cocoa.h.gch
+t1301192431
+s54116752
+
+Nbundles/ChildViews/SequenceChild/SequenceChildTestUnit-Info.plist
+c000000004BCA479800000000000002BC
+t1271547800
+s700
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies327450188#327450188#0(310"[WARN]warning: no rule to process file '$(PROJECT_DIR)/bundles/ChildViews/SequenceChild/SequenceChildTest.m' of type sourcecode.c.objc for architecture i386[WARN]warning: no rule to process file '$(PROJECT_DIR)/bundles/ChildViews/SequenceChild/SequenceChild.m' of type sourcecode.c.objc for architecture i3862(22@150"warning: no rule to process file '$(PROJECT_DIR)/bundles/ChildViews/SequenceChild/SequenceChildTest.m' of type sourcecode.c.objc for architecture i386327450188#18446744073709551615#0#0(1@0"0(22@146"warning: no rule to process file '$(PROJECT_DIR)/bundles/ChildViews/SequenceChild/SequenceChild.m' of type sourcecode.c.objc for architecture i386327450188#18446744073709551615#0#0(1@0"0(0#1#0"8635311328#0"0#
+
+CCompileC build/quince.build/Debug/SequenceChildTestUnit.build/Objects-normal/i386/SequenceChild.o /Users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChild.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s322885251.001721
+e322885251.173257
+r1
+xCompileC
+xbuild/quince.build/Debug/SequenceChildTestUnit.build/Objects-normal/i386/SequenceChild.o
+x/Users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChild.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@85"Compile /Users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChild.m322885251#322885251#0(0"0(0#0#77"/Users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChild.m4300911832#1525"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/SequenceChildTestUnit-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/SequenceChildTestUnit-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/SequenceChildTestUnit-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/SequenceChildTestUnit-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -F/Developer/Library/Frameworks -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-eqicvfbikwpmznavaghahysycxjr/Cocoa.h -c /Users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChild.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Objects-normal/i386/SequenceChild.o0#
+
+CCompileC build/quince.build/Debug/SequenceChildTestUnit.build/Objects-normal/i386/SequenceChild.o /users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChild.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/quince.build/Debug/SequenceChildTestUnit.build/Objects-normal/i386/SequenceChildTest.o /Users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChildTest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s322885250.796424
+e322885251.001599
+r1
+xCompileC
+xbuild/quince.build/Debug/SequenceChildTestUnit.build/Objects-normal/i386/SequenceChildTest.o
+x/Users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChildTest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@89"Compile /Users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChildTest.m322885250#322885251#0(0"0(0#0#81"/Users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChildTest.m4300911832#1533"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/SequenceChildTestUnit-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/SequenceChildTestUnit-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/SequenceChildTestUnit-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/SequenceChildTestUnit-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -F/Developer/Library/Frameworks -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-eqicvfbikwpmznavaghahysycxjr/Cocoa.h -c /Users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChildTest.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Objects-normal/i386/SequenceChildTest.o0#
+
+CCompileC build/quince.build/Debug/SequenceChildTestUnit.build/Objects-normal/i386/SequenceChildTest.o /users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChildTest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s322430293.637403
+e322430293.809494
+r1
+xCompileC
+xbuild/quince.build/Debug/SequenceChildTestUnit.build/Objects-normal/i386/SequenceChildTest.o
+x/users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChildTest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@89"Compile /users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChildTest.m322430293#322430293#0(0"0(0#0#81"/users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChildTest.m4300911832#1533"    cd /users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -iquote /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/SequenceChildTestUnit-generated-files.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/SequenceChildTestUnit-own-target-headers.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/SequenceChildTestUnit-all-target-headers.hmap -iquote /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/SequenceChildTestUnit-project-headers.hmap -F/users/max/SWProjects/quince/build/Debug -F/Developer/Library/Frameworks -I/users/max/SWProjects/quince/build/Debug/include -I/users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/DerivedSources/i386 -I/users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-aiblocypqoljasdykicoxmptdzmo/Cocoa.h -c /users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChildTest.m -o /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Objects-normal/i386/SequenceChildTest.o0#
+
+CLd /Users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest/Contents/MacOS/SequenceChildTestUnit normal i386
+s324413527.161143
+e324413527.192106
+r1
+xLd
+x/Users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest/Contents/MacOS/SequenceChildTestUnit
+xnormal
+xi386
+lSLF07#2@111"Link /Users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest/Contents/MacOS/SequenceChildTestUnit324413527#324413527#0(0"0(0#0#0"4300911832#657"    cd /Users/max/SWProjects/quince    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -bundle -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/max/SWProjects/quince/build/Debug -F/Users/max/SWProjects/quince/build/Debug -F/Developer/Library/Frameworks -filelist /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Objects-normal/i386/SequenceChildTestUnit.LinkFileList -mmacosx-version-min=10.5 -framework Cocoa -framework SenTestingKit -framework SenTestingKit -framework QuinceApi -o /Users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest/Contents/MacOS/SequenceChildTestUnit0#
+
+CLd /users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest/Contents/MacOS/SequenceChildTestUnit normal i386
+s322441974.303237
+e322441974.368341
+r1
+xLd
+x/users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest/Contents/MacOS/SequenceChildTestUnit
+xnormal
+xi386
+lSLF07#2@111"Link /users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest/Contents/MacOS/SequenceChildTestUnit322441974#322441974#0(0"0(0#0#0"4300911832#657"    cd /users/max/SWProjects/quince    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -bundle -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/users/max/SWProjects/quince/build/Debug -F/users/max/SWProjects/quince/build/Debug -F/Developer/Library/Frameworks -filelist /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Objects-normal/i386/SequenceChildTestUnit.LinkFileList -mmacosx-version-min=10.5 -framework Cocoa -framework SenTestingKit -framework SenTestingKit -framework QuinceApi -o /users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest/Contents/MacOS/SequenceChildTestUnit0#
+
+CPhaseScriptExecution "Run Script" /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Script-50717022117A7F1800357470.sh
+s324583078.123683
+e324583078.383051
+r1
+xPhaseScriptExecution
+xRun Script
+x/Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Script-50717022117A7F1800357470.sh
+o/Developer/Tools/RunPlatformUnitTests.include:412: note: Started tests for architectures 'i386'
+o/Developer/Tools/RunPlatformUnitTests.include:419: note: Running tests for architecture 'i386' (GC OFF)
+oobjc[14591]: GC: forcing GC OFF because OBJC_DISABLE_GC is set
+oTest Suite '/Users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest(Tests)' started at 2011-04-15 19:57:58 +0200
+oTest Suite 'SequenceChildTest' started at 2011-04-15 19:57:58 +0200
+oTest Suite 'SequenceChildTest' finished at 2011-04-15 19:57:58 +0200.
+oExecuted 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+o
+oTest Suite '/Users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest(Tests)' finished at 2011-04-15 19:57:58 +0200.
+oExecuted 0 tests, with 0 failures (0 unexpected) in 0.000 (0.003) seconds
+o
+o/Developer/Tools/RunPlatformUnitTests.include:446: note: Passed tests for architecture 'i386' (GC OFF)
+o/Developer/Tools/RunPlatformUnitTests.include:462: note: Completed tests for architectures 'i386'
+lSLF07#2@36"Run custom shell script 'Run Script'324583078#324583078#1(20@47"Run unit tests for architecture 'i386' (GC OFF)324583078#324583078#1(20@91"Run test suite /Users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest(Tests)324583078#324583078#1(20@32"Run test suite SequenceChildTest324583078#324583078#0(212"Test Suite 'SequenceChildTest' started at 2011-04-15 19:57:58 +0200Test Suite 'SequenceChildTest' finished at 2011-04-15 19:57:58 +0200.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds0(0#0#23"0 out of 0 tests passed13"0.000 seconds73"Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds17"SequenceChildTest543"Test Suite '/Users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest(Tests)' started at 2011-04-15 19:57:58 +0200Test Suite 'SequenceChildTest' started at 2011-04-15 19:57:58 +0200Test Suite 'SequenceChildTest' finished at 2011-04-15 19:57:58 +0200.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) secondsTest Suite '/Users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest(Tests)' finished at 2011-04-15 19:57:58 +0200.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.003) seconds0(0#0#23"0 out of 0 tests passed13"0.003 seconds73"Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.003) seconds76"/Users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest(Tests)814"/Developer/Tools/RunPlatformUnitTests.include:419: note: Running tests for architecture 'i386' (GC OFF)objc[14591]: GC: forcing GC OFF because OBJC_DISABLE_GC is setTest Suite '/Users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest(Tests)' started at 2011-04-15 19:57:58 +0200Test Suite 'SequenceChildTest' started at 2011-04-15 19:57:58 +0200Test Suite 'SequenceChildTest' finished at 2011-04-15 19:57:58 +0200.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) secondsTest Suite '/Users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest(Tests)' finished at 2011-04-15 19:57:58 +0200.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.003) seconds/Developer/Tools/RunPlatformUnitTests.include:446: note: Passed tests for architecture 'i386' (GC OFF)0(0#0#0"0"102"/Developer/Tools/RunPlatformUnitTests.include:446: note: Passed tests for architecture 'i386' (GC OFF)0"1008"/Developer/Tools/RunPlatformUnitTests.include:412: note: Started tests for architectures 'i386'/Developer/Tools/RunPlatformUnitTests.include:419: note: Running tests for architecture 'i386' (GC OFF)objc[14591]: GC: forcing GC OFF because OBJC_DISABLE_GC is setTest Suite '/Users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest(Tests)' started at 2011-04-15 19:57:58 +0200Test Suite 'SequenceChildTest' started at 2011-04-15 19:57:58 +0200Test Suite 'SequenceChildTest' finished at 2011-04-15 19:57:58 +0200.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) secondsTest Suite '/Users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest(Tests)' finished at 2011-04-15 19:57:58 +0200.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.003) seconds/Developer/Tools/RunPlatformUnitTests.include:446: note: Passed tests for architecture 'i386' (GC OFF)/Developer/Tools/RunPlatformUnitTests.include:462: note: Completed tests for architectures 'i386'0(0#0#0"4300911832#16228"    cd /Users/max/SWProjects/quince    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER max    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386 ppc"    setenv ARCHS_STANDARD_32_BIT "i386 ppc"    setenv ARCHS_STANDARD_64_BIT x86_64    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/max/SWProjects/quince/build    setenv BUILD_ROOT /Users/max/SWProjects/quince/build    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/max/SWProjects/quince/build/Debug    setenv CACHE_ROOT /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest    setenv CODE_SIGNING_ALLOWED YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/max/SWProjects/quince/build/Debug    setenv CONFIGURATION_TEMP_DIR /Users/max/SWProjects/quince/build/quince.build/Debug    setenv CONTENTS_FOLDER_PATH SequenceChildTestUnit.octest/Contents    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH /Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/quince.dst    setenv DWARF_DSYM_FILE_NAME SequenceChildTestUnit.octest.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Users/max/SWProjects/quince/build/Debug    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH SequenceChildTestUnit.octest/Contents/Executables    setenv EXECUTABLE_FOLDER_PATH SequenceChildTestUnit.octest/Contents/MacOS    setenv EXECUTABLE_NAME SequenceChildTestUnit    setenv EXECUTABLE_PATH SequenceChildTestUnit.octest/Contents/MacOS/SequenceChildTestUnit    setenv FILE_LIST /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH SequenceChildTestUnit.octest/Contents/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/max/SWProjects/quince/build/Debug\" /Developer/Library/Frameworks"    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME SequenceChildTestUnit.octest    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD gnu99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_ENABLE_FIX_AND_CONTINUE NO    setenv GCC_ENABLE_OBJC_EXCEPTIONS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_MODEL_TUNING G5    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.2    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE NO    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/max/SWProjects/quince/build/Debug/include\" "    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE bundles/ChildViews/SequenceChild/SequenceChildTestUnit-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH SequenceChildTestUnit.octest/Contents/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH /InfoPlist.strings    setenv INSTALL_DIR /tmp/quince.dst/Users/max/Library/Bundles    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER max    setenv INSTALL_PATH /Users/max/Library/Bundles    setenv INSTALL_ROOT /tmp/quince.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH SequenceChildTestUnit.octest/Contents/Resources/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/SequenceChildTestUnit-LinkMap-normal-i386.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/max/SWProjects/quince/build/Debug\" "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Objects-normal/i386/SequenceChildTestUnit.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_bundle    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv MAC_OS_X_VERSION_ACTUAL 1064    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0604    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Objects-normal    setenv OBJROOT /Users/max/SWProjects/quince/build    setenv ONLY_ACTIVE_ARCH YES    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-framework Cocoa -framework SenTestingKit"    setenv PACKAGE_TYPE com.apple.package-type.wrapper    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH SequenceChildTestUnit.octest/Contents/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/PkgInfo    setenv PKGINFO_PATH SequenceChildTestUnit.octest/Contents/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_NAME macosx    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH SequenceChildTestUnit.octest/Contents/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH SequenceChildTestUnit.octest/Contents/PrivateHeaders    setenv PRODUCT_NAME SequenceChildTestUnit    setenv PRODUCT_SETTINGS_PATH /Users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChildTestUnit-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.bundle    setenv PROFILING_CODE NO    setenv PROJECT quince    setenv PROJECT_DERIVED_FILE_DIR /Users/max/SWProjects/quince/build/quince.build/DerivedSources    setenv PROJECT_DIR /Users/max/SWProjects/quince    setenv PROJECT_FILE_PATH /Users/max/SWProjects/quince/quince.xcodeproj    setenv PROJECT_NAME quince    setenv PROJECT_TEMP_DIR /Users/max/SWProjects/quince/build/quince.build    setenv PUBLIC_HEADERS_FOLDER_PATH SequenceChildTestUnit.octest/Contents/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/max/SWProjects/quince/build/Debug\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH SequenceChildTestUnit.octest/Contents/Resources/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer/SDKs/MacOSX10.5.sdk    setenv SDK_DIR /Developer/SDKs/MacOSX10.5.sdk    setenv SDK_NAME macosx10.5    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Users/max/SWProjects/quince/build/Debug/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH SequenceChildTestUnit.octest/Contents/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH SequenceChildTestUnit.octest/Contents/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Users/max/SWProjects/quince    setenv SRCROOT /Users/max/SWProjects/quince    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE non-global    setenv SYMBOL_REPOSITORY_DIR /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/SymbolRepositories    setenv SYMROOT /Users/max/SWProjects/quince/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME SequenceChildTestUnit    setenv TARGET_BUILD_DIR /Users/max/SWProjects/quince/build/Debug    setenv TARGET_NAME SequenceChildTestUnit    setenv TARGET_TEMP_DIR /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build    setenv TEMP_DIR /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build    setenv TEMP_FILES_DIR /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build    setenv TEMP_FILE_DIR /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build    setenv TEMP_ROOT /Users/max/SWProjects/quince/build    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH SequenceChildTestUnit.octest/Contents/Resources    setenv UNSTRIPPED_PRODUCT NO    setenv USER max    setenv USER_APPS_DIR /Users/max/Applications    setenv USER_LIBRARY_DIR /Users/max/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "i386 ppc ppc64 ppc7400 ppc970 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH SequenceChildTestUnit.octest/Contents/version.plist    setenv VERSION_INFO_BUILDER max    setenv VERSION_INFO_FILE SequenceChildTestUnit_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:SequenceChildTestUnit  PROJECT:quince-\""    setenv WRAPPER_EXTENSION octest    setenv WRAPPER_NAME SequenceChildTestUnit.octest    setenv WRAPPER_SUFFIX .octest    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_VERSION_ACTUAL 0322    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    /bin/sh -c /Users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Script-50717022117A7F1800357470.sh0#
+
+CPhaseScriptExecution "Run Script" /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Script-50717022117A7F1800357470.sh
+s327450188.643721
+e327450188.695078
+r0
+xPhaseScriptExecution
+xRun Script
+x/users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Script-50717022117A7F1800357470.sh
+o/Developer/Tools/RunPlatformUnitTests.include:412: note: Started tests for architectures 'i386'
+o/Developer/Tools/RunPlatformUnitTests.include:419: note: Running tests for architecture 'i386' (GC OFF)
+oobjc[82381]: GC: forcing GC OFF because OBJC_DISABLE_GC is set
+o2011-05-19 00:23:08.680 otest-i386[82381:903] The executable for the test bundle at /users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest could not be found.
+o2011-05-19 00:23:08.683 otest-i386[82381:903] Usage: otest-i386 [-SenTest Self | All | None | <TestCaseClassName/testMethodName>] <path of unit to be tested>
+o2011-05-19 00:23:08.683 otest-i386[82381:903] *** -[NSCFDictionary setObject:forKey:]: attempt to insert nil value (key: _NSTaskExecutablePath)
+o/Developer/Tools/RunPlatformUnitTests.include:448: error: Failed tests for architecture 'i386' (GC OFF)
+o/Developer/Tools/RunPlatformUnitTests.include:462: note: Completed tests for architectures 'i386'
+lSLF07#2@36"Run custom shell script 'Run Script'327450188#327450188#1(20@47"Run unit tests for architecture 'i386' (GC OFF)327450188#327450188#0(747"/Developer/Tools/RunPlatformUnitTests.include:419: note: Running tests for architecture 'i386' (GC OFF)objc[82381]: GC: forcing GC OFF because OBJC_DISABLE_GC is set2011-05-19 00:23:08.680 otest-i386[82381:903] The executable for the test bundle at /users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest could not be found.2011-05-19 00:23:08.683 otest-i386[82381:903] Usage: otest-i386 [-SenTest Self | All | None | <TestCaseClassName/testMethodName>] <path of unit to be tested>2011-05-19 00:23:08.683 otest-i386[82381:903] *** -[NSCFDictionary setObject:forKey:]: attempt to insert nil value (key: _NSTaskExecutablePath)/Developer/Tools/RunPlatformUnitTests.include:448: error: Failed tests for architecture 'i386' (GC OFF)1(4@45"Failed tests for architecture 'i386' (GC OFF)327450188#18446744073709551615#0#0(6@0"327450188#0#0#0#0#0"0(0#0#0"0"103"/Developer/Tools/RunPlatformUnitTests.include:448: error: Failed tests for architecture 'i386' (GC OFF)0"941"/Developer/Tools/RunPlatformUnitTests.include:412: note: Started tests for architectures 'i386'/Developer/Tools/RunPlatformUnitTests.include:419: note: Running tests for architecture 'i386' (GC OFF)objc[82381]: GC: forcing GC OFF because OBJC_DISABLE_GC is set2011-05-19 00:23:08.680 otest-i386[82381:903] The executable for the test bundle at /users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest could not be found.2011-05-19 00:23:08.683 otest-i386[82381:903] Usage: otest-i386 [-SenTest Self | All | None | <TestCaseClassName/testMethodName>] <path of unit to be tested>2011-05-19 00:23:08.683 otest-i386[82381:903] *** -[NSCFDictionary setObject:forKey:]: attempt to insert nil value (key: _NSTaskExecutablePath)/Developer/Tools/RunPlatformUnitTests.include:448: error: Failed tests for architecture 'i386' (GC OFF)/Developer/Tools/RunPlatformUnitTests.include:462: note: Completed tests for architectures 'i386'0(0#0#0"8629300960#16772"    cd /users/max/SWProjects/quince    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER max    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386"    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_STANDARD_64_BIT x86_64    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /users/max/SWProjects/quince/build    setenv BUILD_ROOT /users/max/SWProjects/quince/build    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /users/max/SWProjects/quince/build/Debug    setenv CACHE_ROOT /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TM/-Caches-/com.apple.Xcode.502    setenv CCHROOT /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TM/-Caches-/com.apple.Xcode.502    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest    setenv CODE_SIGNING_ALLOWED YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TM/-Caches-/com.apple.Xcode.502/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /users/max/SWProjects/quince/build/Debug    setenv CONFIGURATION_TEMP_DIR /users/max/SWProjects/quince/build/quince.build/Debug    setenv CONTENTS_FOLDER_PATH SequenceChildTestUnit.octest/Contents    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/DerivedSources    setenv DERIVED_FILE_DIR /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/DerivedSources    setenv DERIVED_SOURCES_DIR /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH SequenceChildTestUnit.octest/Contents/Resources/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/quince.dst    setenv DWARF_DSYM_FILE_NAME SequenceChildTestUnit.octest.dSYM    setenv DWARF_DSYM_FOLDER_PATH /users/max/SWProjects/quince/build/Debug    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn .git CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn .git *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH SequenceChildTestUnit.octest/Contents/Executables    setenv EXECUTABLE_FOLDER_PATH SequenceChildTestUnit.octest/Contents/MacOS    setenv EXECUTABLE_NAME SequenceChildTestUnit    setenv EXECUTABLE_PATH SequenceChildTestUnit.octest/Contents/MacOS/SequenceChildTestUnit    setenv FILE_LIST /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH SequenceChildTestUnit.octest/Contents/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/users/max/SWProjects/quince/build/Debug\" /Developer/Library/Frameworks"    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME SequenceChildTestUnit.octest    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD gnu99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_ENABLE_FIX_AND_CONTINUE NO    setenv GCC_ENABLE_OBJC_EXCEPTIONS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_MODEL_TUNING G5    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvmgcc42    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE NO    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/users/max/SWProjects/quince/build/Debug/include\" "    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE bundles/ChildViews/SequenceChild/SequenceChildTestUnit-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH SequenceChildTestUnit.octest/Contents/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH SequenceChildTestUnit.octest/Contents/Resources/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/quince.dst/Users/max/Library/Bundles    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER max    setenv INSTALL_PATH /Users/max/Library/Bundles    setenv INSTALL_ROOT /tmp/quince.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH SequenceChildTestUnit.octest/Contents/Resources/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/SequenceChildTestUnit-LinkMap-normal-i386.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/users/max/SWProjects/quince/build/Debug\" "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Objects-normal/i386/SequenceChildTestUnit.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH SequenceChildTestUnit.octest/Contents/Resources/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_bundle    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 10J3250    setenv MAC_OS_X_VERSION_ACTUAL 1067    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0607    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Objects    setenv OBJECT_FILE_DIR_normal /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Objects-normal    setenv OBJROOT /users/max/SWProjects/quince/build    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-framework Cocoa -framework SenTestingKit"    setenv PACKAGE_TYPE com.apple.package-type.wrapper    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH SequenceChildTestUnit.octest/Contents/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/PkgInfo    setenv PKGINFO_PATH SequenceChildTestUnit.octest/Contents/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_NAME macosx    setenv PLATFORM_PRODUCT_BUILD_VERSION 4A2002a    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH SequenceChildTestUnit.octest/Contents/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH SequenceChildTestUnit.octest/Contents/PrivateHeaders    setenv PRODUCT_NAME SequenceChildTestUnit    setenv PRODUCT_SETTINGS_PATH /users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChildTestUnit-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.bundle    setenv PROFILING_CODE NO    setenv PROJECT quince    setenv PROJECT_DERIVED_FILE_DIR /users/max/SWProjects/quince/build/quince.build/DerivedSources    setenv PROJECT_DIR /users/max/SWProjects/quince    setenv PROJECT_FILE_PATH /users/max/SWProjects/quince/quince.xcodeproj    setenv PROJECT_NAME quince    setenv PROJECT_TEMP_DIR /users/max/SWProjects/quince/build/quince.build    setenv PUBLIC_HEADERS_FOLDER_PATH SequenceChildTestUnit.octest/Contents/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/users/max/SWProjects/quince/build/Debug\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH SequenceChildTestUnit.octest/Contents/Resources/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer/SDKs/MacOSX10.6.sdk    setenv SDK_DIR /Developer/SDKs/MacOSX10.6.sdk    setenv SDK_NAME macosx10.6    setenv SDK_PRODUCT_BUILD_VERSION 4A2002a    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /users/max/SWProjects/quince/build/Debug/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH SequenceChildTestUnit.octest/Contents/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH SequenceChildTestUnit.octest/Contents/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /users/max/SWProjects/quince    setenv SRCROOT /users/max/SWProjects/quince    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE non-global    setenv SYMBOL_REPOSITORY_DIR /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/SymbolRepositories    setenv SYMROOT /users/max/SWProjects/quince/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME SequenceChildTestUnit    setenv TARGET_BUILD_DIR /users/max/SWProjects/quince/build/Debug    setenv TARGET_NAME SequenceChildTestUnit    setenv TARGET_TEMP_DIR /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build    setenv TEMP_DIR /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build    setenv TEMP_FILES_DIR /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build    setenv TEMP_FILE_DIR /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build    setenv TEMP_ROOT /users/max/SWProjects/quince/build    setenv UID 502    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH SequenceChildTestUnit.octest/Contents/Resources    setenv UNSTRIPPED_PRODUCT NO    setenv USER max    setenv USER_APPS_DIR /Users/max/Applications    setenv USER_LIBRARY_DIR /Users/max/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "i386 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH SequenceChildTestUnit.octest/Contents/version.plist    setenv VERSION_INFO_BUILDER max    setenv VERSION_INFO_FILE SequenceChildTestUnit_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:SequenceChildTestUnit  PROJECT:quince-\""    setenv WRAPPER_EXTENSION octest    setenv WRAPPER_NAME SequenceChildTestUnit.octest    setenv WRAPPER_SUFFIX .octest    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_LEGACY_PRODUCT_NAME_MODIFIER 3    setenv XCODE_PRODUCT_BUILD_VERSION 4A2002a    setenv XCODE_VERSION_ACTUAL 0400    setenv XCODE_VERSION_MAJOR 0400    setenv XCODE_VERSION_MINOR 0400    setenv YACC /Developer/usr/bin/yacc    setenv _REAL_SDKROOT macosx10.6    /bin/sh -c /users/max/SWProjects/quince/build/quince.build/Debug/SequenceChildTestUnit.build/Script-50717022117A7F1800357470.sh1#
+
+CProcessInfoPlistFile /Users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest/Contents/Info.plist bundles/ChildViews/SequenceChild/SequenceChildTestUnit-Info.plist
+s322885250.792092
+e322885250.796260
+r1
+xProcessInfoPlistFile
+x/Users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest/Contents/Info.plist
+xbundles/ChildViews/SequenceChild/SequenceChildTestUnit-Info.plist
+lSLF07#2@73"Process bundles/ChildViews/SequenceChild/SequenceChildTestUnit-Info.plist322885250#322885250#0(0"0(0#0#94"/Users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChildTestUnit-Info.plist4300911832#262"    cd /Users/max/SWProjects/quince    builtin-infoPlistUtility bundles/ChildViews/SequenceChild/SequenceChildTestUnit-Info.plist -expandbuildsettings -platform macosx -o /Users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest/Contents/Info.plist0#
+
+CProcessInfoPlistFile /users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest/Contents/Info.plist bundles/ChildViews/SequenceChild/SequenceChildTestUnit-Info.plist
+s327450188.641362
+e327450188.643647
+r1
+xProcessInfoPlistFile
+x/users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest/Contents/Info.plist
+xbundles/ChildViews/SequenceChild/SequenceChildTestUnit-Info.plist
+lSLF07#2@73"Process bundles/ChildViews/SequenceChild/SequenceChildTestUnit-Info.plist327450188#327450188#0(0"0(0#0#94"/users/max/SWProjects/quince/bundles/ChildViews/SequenceChild/SequenceChildTestUnit-Info.plist8633367552#262"    cd /users/max/SWProjects/quince    builtin-infoPlistUtility bundles/ChildViews/SequenceChild/SequenceChildTestUnit-Info.plist -expandbuildsettings -platform macosx -o /users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest/Contents/Info.plist0#
+
+CProcessPCH /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-aiblocypqoljasdykicoxmptdzmo/Cocoa.h.gch /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-eqicvfbikwpmznavaghahysycxjr/Cocoa.h.gch /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CTouch /Users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest
+s324413527.375719
+e324413527.379396
+r1
+xTouch
+x/Users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest
+lSLF07#2@75"Touch /Users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest324413527#324413527#0(0"0(0#0#0"4300911832#128"    cd /Users/max/SWProjects/quince    /usr/bin/touch -c /Users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest0#
+
+CTouch /users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest
+s327450188.695149
+e327450188.697398
+r1
+xTouch
+x/users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest
+lSLF07#2@75"Touch /users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest327450188#327450188#0(0"0(0#0#0"8637868576#128"    cd /users/max/SWProjects/quince    /usr/bin/touch -c /users/max/SWProjects/quince/build/Debug/SequenceChildTestUnit.octest0#
+

@@ -1,0 +1,324 @@
+TImportListForSingleParameter
+v7
+r0
+t312059858.992865
+cCheck dependencies
+cProcessInfoPlistFile "/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle/Contents/Info.plist" ImportListForSingleParameter-Info.plist
+cSymLink /users/max/SWProjects/quince/build/Debug/ImportListForSingleParameter.bundle "/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle"
+cCompileXIB /Users/max/SWProjects/quince/bundles/Functions/ImportListForSingleParameter/ILFSP_window.xib
+cProcessPCH /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-blgtilqraloyelgkwmmmlqixjusc/AppKit.h.gch /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/quince.build/Debug/ImportListForSingleParameter.build/Objects-normal/i386/ImportListForSingleParameter.o /Users/max/SWProjects/quince/bundles/Functions/ImportListForSingleParameter/ImportListForSingleParameter.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd "/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle/Contents/MacOS/ImportListForSingleParameter" normal i386
+cTouch "/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle"
+
+N/Developer/SDKs/MacOSX10.5.sdk
+c000000004B7D589B00000000000000EE
+t1266505883
+s238
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h
+c000000004864BB88000000000000170F
+t1214561160
+s5903
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.h
+c000000004864A73B000000000000095A
+t1214555963
+s2394
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AudioUnit.framework/Headers/AudioUnit.h
+c000000004864A72E00000000000003CC
+t1214555950
+s972
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle
+t1290367058
+s102
+
+N/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle/Contents/Info.plist
+t1290359162
+s717
+
+N/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle/Contents/MacOS/ImportListForSingleParameter
+t1290367058
+s19692
+
+N/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle/Contents/Resources/ILFSP_window.nib
+t1290366784
+s16578
+
+N/Users/max/SWProjects/quince/QuinceApi/AudioFile.h
+c000000004C59BE1E00000000000001E2
+t1280949790
+s482
+i<Cocoa/Cocoa.h>
+i"DataFile.h"
+
+N/Users/max/SWProjects/quince/QuinceApi/ContainerView.h
+c000000004C8139620000000000001475
+t1283537250
+s5237
+i<Cocoa/Cocoa.h>
+
+N/Users/max/SWProjects/quince/QuinceApi/DataFile.h
+c000000004C59BE1F0000000000000131
+t1280949791
+s305
+i<Cocoa/Cocoa.h>
+i"QuinceObject.h"
+
+N/Users/max/SWProjects/quince/QuinceApi/Function.h
+c000000004C59BE1F00000000000014D1
+t1280949791
+s5329
+i<Cocoa/Cocoa.h>
+
+N/Users/max/SWProjects/quince/QuinceApi/QuinceObject.h
+c000000004C8028AF0000000000000E24
+t1283467439
+s3620
+i<Cocoa/Cocoa.h>
+
+N/Users/max/SWProjects/quince/QuinceApi/QuinceObjectController.h
+c000000004CC615FF0000000000000B26
+t1288050175
+s2854
+i<Cocoa/Cocoa.h>
+i<QuinceApi/QuinceObject.h>
+i<QuinceApi/ContainerView.h>
+i<QuinceApi/QuinceDocument.h>
+
+N/Users/max/SWProjects/quince/bundles/Functions/ImportListForSingleParameter/ILFSP_window.xib
+c000000004CE96F3A0000000000011050
+t1290366778
+s69712
+
+N/Users/max/SWProjects/quince/bundles/Functions/ImportListForSingleParameter/ImportListForSingleParameter.h
+c000000004CE96E51000000000000051A
+t1290366545
+s1306
+i<Cocoa/Cocoa.h>
+i<QuinceApi/Function.h>
+i<QuinceApi/QuinceObject.h>
+i<QuinceApi/DataFile.h>
+i<QuinceApi/QuinceDocument.h>
+
+N/Users/max/SWProjects/quince/bundles/Functions/ImportListForSingleParameter/ImportListForSingleParameter.m
+c000000004CE9704B0000000000000B6C
+t1290367051
+s2924
+i"ImportListForSingleParameter.h"
+
+N/tmp/quince.dst/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle
+t2
+s0
+
+N/tmp/quince.dst/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle/Contents/Info.plist
+t2
+s0
+
+N/tmp/quince.dst/Users/max/Library/Bundles/ImportListForSingleParameter.bundle
+t2
+s0
+
+N/tmp/quince.dst/Users/max/Library/Bundles/ImportListForSingleParameter.bundle/Contents/Info.plist
+t2
+s0
+
+N/users/max/SWProjects/quince/FunctionGraph.h
+c000000004CC615B800000000000001D9
+t1288050104
+s473
+i<Cocoa/Cocoa.h>
+i<QuinceApi/Function.h>
+
+N/users/max/SWProjects/quince/FunctionLoader.h
+c000000004C59BE1F0000000000000368
+t1280949791
+s872
+i<Cocoa/Cocoa.h>
+
+N/users/max/SWProjects/quince/LayerController.h
+c000000004C6AD64F00000000000006DE
+t1282070095
+s1758
+i<Cocoa/Cocoa.h>
+
+N/users/max/SWProjects/quince/MainController.h
+c000000004C5A9BF30000000000000BB5
+t1281006579
+s2997
+i<Cocoa/Cocoa.h>
+i"StripController.h"
+
+N/users/max/SWProjects/quince/Player.h
+c000000004CC6158B0000000000000F35
+t1288050059
+s3893
+i<Cocoa/Cocoa.h>
+i<AudioToolbox/AudioToolbox.h>
+i<QuinceApi/QuinceObject.h>
+i<AudioUnit/AudioUnit.h>
+
+N/users/max/SWProjects/quince/QuinceDocument.h
+c000000004CC614770000000000001A97
+t1288049783
+s6807
+i<Cocoa/Cocoa.h>
+i<QuinceApi/ContainerView.h>
+i<QuinceApi/AudioFile.h>
+i<QuinceApi/Function.h>
+i<QuinceApi/QuinceObjectController.h>
+i"LayerController.h"
+i"MainController.h"
+i<QuinceApi/FunctionLoader.h>
+i<QuinceApi/Player.h>
+i<QuinceApi/FunctionGraph.h>
+i<QuinceApi/QuinceObject.h>
+
+N/users/max/SWProjects/quince/StripController.h
+c000000004CC615210000000000000967
+t1288049953
+s2407
+i<Cocoa/Cocoa.h>
+i"StripLayerControlsArrayController.h"
+i<QuinceApi/ContainerView.h>
+
+N/users/max/SWProjects/quince/StripLayerControlsArrayController.h
+c000000004CC615220000000000000863
+t1288049954
+s2147
+i<QuinceApi/QuinceDocument.h>
+i"SubviewTableViewCell.h"
+i"StripController.h"
+
+N/users/max/SWProjects/quince/SubviewTableViewCell.h
+c000000004C6A71500000000000000311
+t1282044240
+s785
+i<AppKit/AppKit.h>
+
+N/users/max/SWProjects/quince/build/Debug/ImportListForSingleParameter.bundle
+t3
+s81
+
+N/users/max/SWProjects/quince/build/Debug/ImportListForSingleParameter.bundle/Contents/Info.plist
+t2
+s0
+
+N/users/max/SWProjects/quince/build/Debug/QuinceApi.framework/QuinceApi
+c000000004CE5C86500000000000308DC
+t1290127461
+s198876
+
+N/users/max/SWProjects/quince/build/quince.build/Debug/ImportListForSingleParameter.build/Objects-normal/i386/ImportListForSingleParameter.LinkFileList
+c000000004CE9517A000000000000008C
+t1290359162
+s140
+
+N/users/max/SWProjects/quince/build/quince.build/Debug/ImportListForSingleParameter.build/Objects-normal/i386/ImportListForSingleParameter.o
+t1290367058
+s48256
+
+N/var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-blgtilqraloyelgkwmmmlqixjusc/AppKit.h.gch
+t1288190949
+s53501680
+
+NImportListForSingleParameter-Info.plist
+c000000004CE9509400000000000002C8
+t1290358932
+s712
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies312059855#312059855#0(0"0(0#1#0"4300911832#0"0#
+
+CCompileC build/quince.build/Debug/ImportListForSingleParameter.build/Objects-normal/i386/ImportListForSingleParameter.o /Users/max/SWProjects/quince/bundles/Functions/ImportListForSingleParameter/ImportListForSingleParameter.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s312059855.329902
+e312059858.770302
+r1
+xCompileC
+xbuild/quince.build/Debug/ImportListForSingleParameter.build/Objects-normal/i386/ImportListForSingleParameter.o
+x/Users/max/SWProjects/quince/bundles/Functions/ImportListForSingleParameter/ImportListForSingleParameter.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@114"Compile /Users/max/SWProjects/quince/bundles/Functions/ImportListForSingleParameter/ImportListForSingleParameter.m312059855#312059858#0(0"0(0#0#106"/Users/max/SWProjects/quince/bundles/Functions/ImportListForSingleParameter/ImportListForSingleParameter.m4300911832#1635"    cd /users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /users/max/SWProjects/quince/build/quince.build/Debug/ImportListForSingleParameter.build/ImportListForSingleParameter-generated-files.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/ImportListForSingleParameter.build/ImportListForSingleParameter-own-target-headers.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/ImportListForSingleParameter.build/ImportListForSingleParameter-all-target-headers.hmap -iquote /users/max/SWProjects/quince/build/quince.build/Debug/ImportListForSingleParameter.build/ImportListForSingleParameter-project-headers.hmap -F/users/max/SWProjects/quince/build/Debug -I/users/max/SWProjects/quince/build/Debug/include -I/users/max/SWProjects/quince/build/quince.build/Debug/ImportListForSingleParameter.build/DerivedSources/i386 -I/users/max/SWProjects/quince/build/quince.build/Debug/ImportListForSingleParameter.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-blgtilqraloyelgkwmmmlqixjusc/AppKit.h -c /Users/max/SWProjects/quince/bundles/Functions/ImportListForSingleParameter/ImportListForSingleParameter.m -o /users/max/SWProjects/quince/build/quince.build/Debug/ImportListForSingleParameter.build/Objects-normal/i386/ImportListForSingleParameter.o0#
+
+CCompileXIB /Users/max/SWProjects/quince/bundles/Functions/ImportListForSingleParameter/ILFSP_window.xib
+s312059582.241119
+e312059584.531530
+r1
+xCompileXIB
+x/Users/max/SWProjects/quince/bundles/Functions/ImportListForSingleParameter/ILFSP_window.xib
+lSLF07#2@103"CompileXIB /Users/max/SWProjects/quince/bundles/Functions/ImportListForSingleParameter/ILFSP_window.xib312059582#312059584#0(0"0(0#0#92"/Users/max/SWProjects/quince/bundles/Functions/ImportListForSingleParameter/ILFSP_window.xib4300911832#355"    cd /users/max/SWProjects/quince    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle/Contents/Resources/ILFSP_window.nib" /Users/max/SWProjects/quince/bundles/Functions/ImportListForSingleParameter/ILFSP_window.xib0#
+
+CLd "/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle/Contents/MacOS/ImportListForSingleParameter" normal i386
+s312059858.770592
+e312059858.872582
+r1
+xLd
+x/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle/Contents/MacOS/ImportListForSingleParameter
+xnormal
+xi386
+lSLF07#2@130"Link /Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle/Contents/MacOS/ImportListForSingleParameter312059858#312059858#0(0"0(0#0#0"4300911832#633"    cd /users/max/SWProjects/quince    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -bundle -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/users/max/SWProjects/quince/build/Debug -F/users/max/SWProjects/quince/build/Debug -filelist /users/max/SWProjects/quince/build/quince.build/Debug/ImportListForSingleParameter.build/Objects-normal/i386/ImportListForSingleParameter.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework AppKit -framework QuinceApi -o "/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle/Contents/MacOS/ImportListForSingleParameter"0#
+
+CProcessInfoPlistFile "/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle/Contents/Info.plist" ImportListForSingleParameter-Info.plist
+s312051962.506193
+e312051962.650216
+r1
+xProcessInfoPlistFile
+x/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle/Contents/Info.plist
+xImportListForSingleParameter-Info.plist
+lSLF07#2@47"Process ImportListForSingleParameter-Info.plist312051962#312051962#0(0"0(0#0#68"/users/max/SWProjects/quince/ImportListForSingleParameter-Info.plist4300911832#250"    cd /users/max/SWProjects/quince    builtin-infoPlistUtility ImportListForSingleParameter-Info.plist -expandbuildsettings -platform macosx -o "/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle/Contents/Info.plist"0#
+
+CProcessInfoPlistFile "/tmp/quince.dst/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle/Contents/Info.plist" ImportListForSingleParameter-Info.plist
+r0
+
+CProcessInfoPlistFile /tmp/quince.dst/Users/max/Library/Bundles/ImportListForSingleParameter.bundle/Contents/Info.plist ImportListForSingleParameter-Info.plist
+r0
+
+CProcessInfoPlistFile /users/max/SWProjects/quince/build/Debug/ImportListForSingleParameter.bundle/Contents/Info.plist ImportListForSingleParameter-Info.plist
+r0
+
+CProcessPCH /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-blgtilqraloyelgkwmmmlqixjusc/AppKit.h.gch /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CSymLink /users/max/SWProjects/quince/build/Debug/ImportListForSingleParameter.bundle "/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle"
+s312051962.634024
+e312051962.650443
+r1
+xSymLink
+x/users/max/SWProjects/quince/build/Debug/ImportListForSingleParameter.bundle
+x/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle
+lSLF07#2@84"Process /users/max/SWProjects/quince/build/Debug/ImportListForSingleParameter.bundle312051962#312051962#0(0"0(0#0#0"4300911832#213"    cd /users/max/SWProjects/quince    /bin/ln -sf "/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle" /users/max/SWProjects/quince/build/Debug/ImportListForSingleParameter.bundle0#
+
+CSymLink /users/max/SWProjects/quince/build/Debug/ImportListForSingleParameter.bundle "/tmp/quince.dst/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle"
+r0
+
+CSymLink /users/max/SWProjects/quince/build/Debug/ImportListForSingleParameter.bundle /tmp/quince.dst/Users/max/Library/Bundles/ImportListForSingleParameter.bundle
+r0
+
+CTouch "/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle"
+s312059858.872681
+e312059858.992811
+r1
+xTouch
+x/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle
+lSLF07#2@87"Touch /Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle312059858#312059858#0(0"0(0#0#0"4300911832#142"    cd /users/max/SWProjects/quince    /usr/bin/touch -c "/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle"0#
+
+CTouch "/tmp/quince.dst/Library/Application Support/quince/Functions/ImportListForSingleParameter.bundle"
+r0
+
+CTouch /tmp/quince.dst/Users/max/Library/Bundles/ImportListForSingleParameter.bundle
+r0
+
+CTouch /users/max/SWProjects/quince/build/Debug/ImportListForSingleParameter.bundle
+r0
+

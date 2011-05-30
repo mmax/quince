@@ -1,0 +1,240 @@
+TMapDynamicExpr
+v7
+r0
+t327450189.011113
+cCheck dependencies
+cProcessInfoPlistFile "/Library/Application Support/quince/Functions/MapDynamicExpr.bundle/Contents/Info.plist" bundles/Functions/MapDynamicExpr/MapDynamicExpr-Info.plist
+cSymLink /users/max/SWProjects/quince/build/Debug/MapDynamicExpr.bundle "/Library/Application Support/quince/Functions/MapDynamicExpr.bundle"
+cCpResource "/Library/Application Support/quince/Functions/MapDynamicExpr.bundle/Contents/Resources/MapDynamicExprWindow.xib" bundles/Functions/MapDynamicExpr/MapDynamicExprWindow.xib
+cTouch "/Library/Application Support/quince/Functions/MapDynamicExpr.bundle"
+
+N/Developer/SDKs/MacOSX10.5.sdk
+c000000004B7D589B00000000000000EE
+t1266505883
+s238
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h
+c000000004864BB88000000000000170F
+t1214561160
+s5903
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Library/Application Support/quince/Functions/MapDynamicExpr.bundle
+t1305757389
+s102
+
+N/Library/Application Support/quince/Functions/MapDynamicExpr.bundle/Contents/Info.plist
+t1305757389
+s1088
+
+N/Library/Application Support/quince/Functions/MapDynamicExpr.bundle/Contents/MacOS/MapDynamicExpr
+t1302720728
+s19596
+
+N/Library/Application Support/quince/Functions/MapDynamicExpr.bundle/Contents/Resources/MapDynamicExprWindow.nib
+t1301195072
+s22977
+
+N/Library/Application Support/quince/Functions/MapDynamicExpr.bundle/Contents/Resources/MapDynamicExprWindow.xib
+t1305757389
+s104605
+
+N/Users/max/SWProjects/quince/QuinceApi/Function.h
+c000000004D7B68CE00000000000017B4
+t1299933390
+s6068
+i<Cocoa/Cocoa.h>
+
+N/Users/max/SWProjects/quince/QuinceApi/QuinceObject.h
+c000000004D7B68CE0000000000001108
+t1299933390
+s4360
+i<Cocoa/Cocoa.h>
+
+N/Users/max/SWProjects/quince/build/Debug/MapDynamicExpr.bundle
+t3
+s67
+
+N/Users/max/SWProjects/quince/build/Debug/QuinceApi.framework/QuinceApi
+c000000004DA5F0D10000000000031A80
+t1302720721
+s203392
+
+N/Users/max/SWProjects/quince/build/quince.build/Debug/MapDynamicExpr.build/Objects-normal/i386/MapDynamicExpr.LinkFileList
+c000000004D8E9F0C0000000000000070
+t1301192460
+s112
+
+N/Users/max/SWProjects/quince/build/quince.build/Debug/MapDynamicExpr.build/Objects-normal/i386/MapDynamicExpr.o
+t1301192460
+s24700
+
+N/Users/max/SWProjects/quince/bundles/Functions/MapDynamicExpr/MapDynamicExpr.h
+c000000004D7B6B3200000000000007F1
+t1299934002
+s2033
+i<Cocoa/Cocoa.h>
+i<QuinceApi/Function.h>
+i<QuinceApi/QuinceObject.h>
+
+N/Users/max/SWProjects/quince/bundles/Functions/MapDynamicExpr/MapDynamicExpr.m
+c000000004D7B6B320000000000000E83
+t1299934002
+s3715
+i"MapDynamicExpr.h"
+
+N/Users/max/SWProjects/quince/bundles/Functions/MapDynamicExpr/MapDynamicExprWindow.xib
+c000000004C801E3C000000000001989D
+t1283464764
+s104605
+
+N/users/max/SWProjects/quince/build/Debug/MapDynamicExpr.bundle
+t3
+s67
+
+N/users/max/SWProjects/quince/build/Debug/QuinceApi.framework/QuinceApi
+c000000004D8EAA1F0000000000031A80
+t1301195295
+s203392
+
+N/users/max/SWProjects/quince/build/quince.build/Debug/MapDynamicExpr.build/Objects-normal/i386/MapDynamicExpr.LinkFileList
+c000000004D8E9F0C0000000000000070
+t1301192460
+s112
+
+N/users/max/SWProjects/quince/build/quince.build/Debug/MapDynamicExpr.build/Objects-normal/i386/MapDynamicExpr.o
+t1301192460
+s24700
+
+N/users/max/SWProjects/quince/bundles/Functions/MapDynamicExpr/MapDynamicExpr.h
+c000000004D7B6B3200000000000007F1
+t1299934002
+s2033
+i<Cocoa/Cocoa.h>
+i<QuinceApi/Function.h>
+i<QuinceApi/QuinceObject.h>
+
+N/users/max/SWProjects/quince/bundles/Functions/MapDynamicExpr/MapDynamicExpr.m
+c000000004D7B6B320000000000000E83
+t1299934002
+s3715
+i"MapDynamicExpr.h"
+
+N/users/max/SWProjects/quince/bundles/Functions/MapDynamicExpr/MapDynamicExprWindow.xib
+c000000004C801E3C000000000001989D
+t1283464764
+s104605
+
+N/var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-blgtilqraloyelgkwmmmlqixjusc/AppKit.h.gch
+t1290463335
+s53501680
+
+N/var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gjbpynddvlfuglfgtkokhfohuzks/AppKit.h.gch
+t1301192437
+s53501680
+
+Nbundles/Functions/MapDynamicExpr/MapDynamicExpr-Info.plist
+c000000004C800E1800000000000002C8
+t1283460632
+s712
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies327450188#327450189#0(154"[WARN]warning: no rule to process file '$(PROJECT_DIR)/bundles/Functions/MapDynamicExpr/MapDynamicExpr.m' of type sourcecode.c.objc for architecture i3861(22@147"warning: no rule to process file '$(PROJECT_DIR)/bundles/Functions/MapDynamicExpr/MapDynamicExpr.m' of type sourcecode.c.objc for architecture i386327450188#18446744073709551615#0#0(1@0"0(0#1#0"8637249344#0"0#
+
+CCompileC build/quince.build/Debug/MapDynamicExpr.build/Objects-normal/i386/MapDynamicExpr.o /Users/max/SWProjects/quince/bundles/Functions/MapDynamicExpr/MapDynamicExpr.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s322885260.557447
+e322885260.796784
+r1
+xCompileC
+xbuild/quince.build/Debug/MapDynamicExpr.build/Objects-normal/i386/MapDynamicExpr.o
+x/Users/max/SWProjects/quince/bundles/Functions/MapDynamicExpr/MapDynamicExpr.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@86"Compile /Users/max/SWProjects/quince/bundles/Functions/MapDynamicExpr/MapDynamicExpr.m322885260#322885260#0(0"0(0#0#78"/Users/max/SWProjects/quince/bundles/Functions/MapDynamicExpr/MapDynamicExpr.m4300911832#1439"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/MapDynamicExpr.build/MapDynamicExpr-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/MapDynamicExpr.build/MapDynamicExpr-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/MapDynamicExpr.build/MapDynamicExpr-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/MapDynamicExpr.build/MapDynamicExpr-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/MapDynamicExpr.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/MapDynamicExpr.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gjbpynddvlfuglfgtkokhfohuzks/AppKit.h -c /Users/max/SWProjects/quince/bundles/Functions/MapDynamicExpr/MapDynamicExpr.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/MapDynamicExpr.build/Objects-normal/i386/MapDynamicExpr.o0#
+
+CCompileC build/quince.build/Debug/MapDynamicExpr.build/Objects-normal/i386/MapDynamicExpr.o /users/max/SWProjects/quince/bundles/Functions/MapDynamicExpr/MapDynamicExpr.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileXIB /Users/max/SWProjects/quince/bundles/Functions/MapDynamicExpr/MapDynamicExprWindow.xib
+s322887872.322435
+e322887872.646574
+r1
+xCompileXIB
+x/Users/max/SWProjects/quince/bundles/Functions/MapDynamicExpr/MapDynamicExprWindow.xib
+lSLF07#2@68"CompileXIB bundles/Functions/MapDynamicExpr/MapDynamicExprWindow.xib322887872#322887872#0(0"0(0#0#86"/Users/max/SWProjects/quince/bundles/Functions/MapDynamicExpr/MapDynamicExprWindow.xib4300911832#343"    cd /Users/max/SWProjects/quince    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Library/Application Support/quince/Functions/MapDynamicExpr.bundle/Contents/Resources/MapDynamicExprWindow.nib" /Users/max/SWProjects/quince/bundles/Functions/MapDynamicExpr/MapDynamicExprWindow.xib0#
+
+CCompileXIB /users/max/SWProjects/quince/bundles/Functions/MapDynamicExpr/MapDynamicExprWindow.xib
+s321969053.336279
+e321969053.602518
+r1
+xCompileXIB
+x/users/max/SWProjects/quince/bundles/Functions/MapDynamicExpr/MapDynamicExprWindow.xib
+lSLF07#2@68"CompileXIB bundles/Functions/MapDynamicExpr/MapDynamicExprWindow.xib321969053#321969053#0(0"0(0#0#86"/users/max/SWProjects/quince/bundles/Functions/MapDynamicExpr/MapDynamicExprWindow.xib4300911832#343"    cd /users/max/SWProjects/quince    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Library/Application Support/quince/Functions/MapDynamicExpr.bundle/Contents/Resources/MapDynamicExprWindow.nib" /users/max/SWProjects/quince/bundles/Functions/MapDynamicExpr/MapDynamicExprWindow.xib0#
+
+CCpResource "/Library/Application Support/quince/Functions/MapDynamicExpr.bundle/Contents/Resources/MapDynamicExprWindow.xib" bundles/Functions/MapDynamicExpr/MapDynamicExprWindow.xib
+s327450189.005688
+e327450189.009227
+r1
+xCpResource
+x/Library/Application Support/quince/Functions/MapDynamicExpr.bundle/Contents/Resources/MapDynamicExprWindow.xib
+xbundles/Functions/MapDynamicExpr/MapDynamicExprWindow.xib
+lSLF07#2@62"Copy bundles/Functions/MapDynamicExpr/MapDynamicExprWindow.xib327450189#327450189#0(0"0(0#0#86"/users/max/SWProjects/quince/bundles/Functions/MapDynamicExpr/MapDynamicExprWindow.xib8623067904#374"    cd /users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /users/max/SWProjects/quince/bundles/Functions/MapDynamicExpr/MapDynamicExprWindow.xib "/Library/Application Support/quince/Functions/MapDynamicExpr.bundle/Contents/Resources"0#
+
+CLd "/Library/Application Support/quince/Functions/MapDynamicExpr.bundle/Contents/MacOS/MapDynamicExpr" normal i386
+s324413528.395391
+e324413528.426256
+r1
+xLd
+x/Library/Application Support/quince/Functions/MapDynamicExpr.bundle/Contents/MacOS/MapDynamicExpr
+xnormal
+xi386
+lSLF07#2@102"Link /Library/Application Support/quince/Functions/MapDynamicExpr.bundle/Contents/MacOS/MapDynamicExpr324413528#324413528#0(0"0(0#0#0"4300911832#577"    cd /Users/max/SWProjects/quince    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -bundle -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/max/SWProjects/quince/build/Debug -F/Users/max/SWProjects/quince/build/Debug -filelist /Users/max/SWProjects/quince/build/quince.build/Debug/MapDynamicExpr.build/Objects-normal/i386/MapDynamicExpr.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework AppKit -framework QuinceApi -o "/Library/Application Support/quince/Functions/MapDynamicExpr.bundle/Contents/MacOS/MapDynamicExpr"0#
+
+CProcessInfoPlistFile "/Library/Application Support/quince/Functions/MapDynamicExpr.bundle/Contents/Info.plist" bundles/Functions/MapDynamicExpr/MapDynamicExpr-Info.plist
+s327450189.002091
+e327450189.005479
+r1
+xProcessInfoPlistFile
+x/Library/Application Support/quince/Functions/MapDynamicExpr.bundle/Contents/Info.plist
+xbundles/Functions/MapDynamicExpr/MapDynamicExpr-Info.plist
+lSLF07#2@66"Process bundles/Functions/MapDynamicExpr/MapDynamicExpr-Info.plist327450189#327450189#0(0"0(0#0#87"/users/max/SWProjects/quince/bundles/Functions/MapDynamicExpr/MapDynamicExpr-Info.plist8630569248#255"    cd /users/max/SWProjects/quince    builtin-infoPlistUtility bundles/Functions/MapDynamicExpr/MapDynamicExpr-Info.plist -expandbuildsettings -platform macosx -o "/Library/Application Support/quince/Functions/MapDynamicExpr.bundle/Contents/Info.plist"0#
+
+CProcessPCH /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-blgtilqraloyelgkwmmmlqixjusc/AppKit.h.gch /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gjbpynddvlfuglfgtkokhfohuzks/AppKit.h.gch /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CSymLink /Users/max/SWProjects/quince/build/Debug/MapDynamicExpr.bundle "/Library/Application Support/quince/Functions/MapDynamicExpr.bundle"
+s322885260.164175
+e322885260.179094
+r1
+xSymLink
+x/Users/max/SWProjects/quince/build/Debug/MapDynamicExpr.bundle
+x/Library/Application Support/quince/Functions/MapDynamicExpr.bundle
+lSLF07#2@70"Process /Users/max/SWProjects/quince/build/Debug/MapDynamicExpr.bundle322885260#322885260#0(0"0(0#0#0"4300911832#185"    cd /Users/max/SWProjects/quince    /bin/ln -sf "/Library/Application Support/quince/Functions/MapDynamicExpr.bundle" /Users/max/SWProjects/quince/build/Debug/MapDynamicExpr.bundle0#
+
+CSymLink /users/max/SWProjects/quince/build/Debug/MapDynamicExpr.bundle "/Library/Application Support/quince/Functions/MapDynamicExpr.bundle"
+s327450189.002714
+e327450189.005606
+r1
+xSymLink
+x/users/max/SWProjects/quince/build/Debug/MapDynamicExpr.bundle
+x/Library/Application Support/quince/Functions/MapDynamicExpr.bundle
+lSLF07#2@70"Process /users/max/SWProjects/quince/build/Debug/MapDynamicExpr.bundle327450189#327450189#0(0"0(0#0#0"8627134496#185"    cd /users/max/SWProjects/quince    /bin/ln -sf "/Library/Application Support/quince/Functions/MapDynamicExpr.bundle" /users/max/SWProjects/quince/build/Debug/MapDynamicExpr.bundle0#
+
+CTouch "/Library/Application Support/quince/Functions/MapDynamicExpr.bundle"
+s327450189.009300
+e327450189.011079
+r1
+xTouch
+x/Library/Application Support/quince/Functions/MapDynamicExpr.bundle
+lSLF07#2@73"Touch /Library/Application Support/quince/Functions/MapDynamicExpr.bundle327450189#327450189#0(0"0(0#0#0"8621964064#128"    cd /users/max/SWProjects/quince    /usr/bin/touch -c "/Library/Application Support/quince/Functions/MapDynamicExpr.bundle"0#
+

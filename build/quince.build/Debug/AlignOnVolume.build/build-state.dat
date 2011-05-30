@@ -1,0 +1,179 @@
+TAlignOnVolume
+v7
+r0
+t327450189.194462
+cCheck dependencies
+cProcessInfoPlistFile "/Library/Application Support/quince/Functions/AlignOnVolume.bundle/Contents/Info.plist" bundles/Functions/AlignOnVolume/AlignOnVolume-Info.plist
+cSymLink /users/max/SWProjects/quince/build/Debug/AlignOnVolume.bundle "/Library/Application Support/quince/Functions/AlignOnVolume.bundle"
+cTouch "/Library/Application Support/quince/Functions/AlignOnVolume.bundle"
+
+N/Developer/SDKs/MacOSX10.5.sdk
+c000000004B7D589B00000000000000EE
+t1266505883
+s238
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h
+c000000004864BB88000000000000170F
+t1214561160
+s5903
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Library/Application Support/quince/Functions/AlignOnVolume.bundle
+t1305757389
+s102
+
+N/Library/Application Support/quince/Functions/AlignOnVolume.bundle/Contents/Info.plist
+t1305757389
+s1086
+
+N/Library/Application Support/quince/Functions/AlignOnVolume.bundle/Contents/MacOS/AlignOnVolume
+t1302720729
+s13688
+
+N/Users/max/SWProjects/quince/QuinceApi/Function.h
+c000000004D7B68CE00000000000017B4
+t1299933390
+s6068
+i<Cocoa/Cocoa.h>
+
+N/Users/max/SWProjects/quince/QuinceApi/QuinceObject.h
+c000000004D7B68CE0000000000001108
+t1299933390
+s4360
+i<Cocoa/Cocoa.h>
+
+N/Users/max/SWProjects/quince/build/Debug/AlignOnVolume.bundle
+t3
+s66
+
+N/Users/max/SWProjects/quince/build/Debug/QuinceApi.framework/QuinceApi
+c000000004DA5F0D10000000000031A80
+t1302720721
+s203392
+
+N/Users/max/SWProjects/quince/build/quince.build/Debug/AlignOnVolume.build/Objects-normal/i386/AlignOnVolume.LinkFileList
+c000000004D8E9F11000000000000006E
+t1301192465
+s110
+
+N/Users/max/SWProjects/quince/build/quince.build/Debug/AlignOnVolume.build/Objects-normal/i386/AlignOnVolume.o
+t1301192465
+s8192
+
+N/Users/max/SWProjects/quince/bundles/Functions/AlignOnVolume/AlignOnVolume.h
+c000000004D7B6B3200000000000003F5
+t1299934002
+s1013
+i<Cocoa/Cocoa.h>
+i<QuinceApi/Function.h>
+i"QuinceObject.h"
+
+N/Users/max/SWProjects/quince/bundles/Functions/AlignOnVolume/AlignOnVolume.m
+c000000004D7B6B320000000000000572
+t1299934002
+s1394
+i"AlignOnVolume.h"
+
+N/users/max/SWProjects/quince/build/Debug/AlignOnVolume.bundle
+t3
+s66
+
+N/users/max/SWProjects/quince/build/Debug/QuinceApi.framework/QuinceApi
+c000000004D8EAA1F0000000000031A80
+t1301195295
+s203392
+
+N/users/max/SWProjects/quince/build/quince.build/Debug/AlignOnVolume.build/Objects-normal/i386/AlignOnVolume.LinkFileList
+c000000004D8E9F11000000000000006E
+t1301192465
+s110
+
+N/users/max/SWProjects/quince/build/quince.build/Debug/AlignOnVolume.build/Objects-normal/i386/AlignOnVolume.o
+t1301192465
+s8192
+
+N/var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-blgtilqraloyelgkwmmmlqixjusc/AppKit.h.gch
+t1290463335
+s53501680
+
+N/var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gjbpynddvlfuglfgtkokhfohuzks/AppKit.h.gch
+t1301192437
+s53501680
+
+Nbundles/Functions/AlignOnVolume/AlignOnVolume-Info.plist
+c000000004CC60B2700000000000002C8
+t1288047399
+s712
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies327450189#327450189#0(166"[WARN]warning: no rule to process file '/Users/max/SWProjects/quince/bundles/Functions/AlignOnVolume/AlignOnVolume.m' of type sourcecode.c.objc for architecture i3861(22@159"warning: no rule to process file '/Users/max/SWProjects/quince/bundles/Functions/AlignOnVolume/AlignOnVolume.m' of type sourcecode.c.objc for architecture i386327450189#18446744073709551615#0#0(1@0"0(0#1#0"8614169984#0"0#
+
+CCompileC build/quince.build/Debug/AlignOnVolume.build/Objects-normal/i386/AlignOnVolume.o /Users/max/SWProjects/quince/bundles/Functions/AlignOnVolume/AlignOnVolume.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s322885265.610341
+e322885265.786029
+r1
+xCompileC
+xbuild/quince.build/Debug/AlignOnVolume.build/Objects-normal/i386/AlignOnVolume.o
+x/Users/max/SWProjects/quince/bundles/Functions/AlignOnVolume/AlignOnVolume.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@84"Compile /Users/max/SWProjects/quince/bundles/Functions/AlignOnVolume/AlignOnVolume.m322885265#322885265#0(0"0(0#0#76"/Users/max/SWProjects/quince/bundles/Functions/AlignOnVolume/AlignOnVolume.m4300911832#1425"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/AlignOnVolume.build/AlignOnVolume-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/AlignOnVolume.build/AlignOnVolume-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/AlignOnVolume.build/AlignOnVolume-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/AlignOnVolume.build/AlignOnVolume-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/AlignOnVolume.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/AlignOnVolume.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gjbpynddvlfuglfgtkokhfohuzks/AppKit.h -c /Users/max/SWProjects/quince/bundles/Functions/AlignOnVolume/AlignOnVolume.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/AlignOnVolume.build/Objects-normal/i386/AlignOnVolume.o0#
+
+CLd "/Library/Application Support/quince/Functions/AlignOnVolume.bundle/Contents/MacOS/AlignOnVolume" normal i386
+s324413529.736542
+e324413529.782205
+r1
+xLd
+x/Library/Application Support/quince/Functions/AlignOnVolume.bundle/Contents/MacOS/AlignOnVolume
+xnormal
+xi386
+lSLF07#2@100"Link /Library/Application Support/quince/Functions/AlignOnVolume.bundle/Contents/MacOS/AlignOnVolume324413529#324413529#0(0"0(0#0#0"4300911832#573"    cd /Users/max/SWProjects/quince    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -bundle -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/max/SWProjects/quince/build/Debug -F/Users/max/SWProjects/quince/build/Debug -filelist /Users/max/SWProjects/quince/build/quince.build/Debug/AlignOnVolume.build/Objects-normal/i386/AlignOnVolume.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework AppKit -framework QuinceApi -o "/Library/Application Support/quince/Functions/AlignOnVolume.bundle/Contents/MacOS/AlignOnVolume"0#
+
+CProcessInfoPlistFile "/Library/Application Support/quince/Functions/AlignOnVolume.bundle/Contents/Info.plist" bundles/Functions/AlignOnVolume/AlignOnVolume-Info.plist
+s327450189.180643
+e327450189.187059
+r1
+xProcessInfoPlistFile
+x/Library/Application Support/quince/Functions/AlignOnVolume.bundle/Contents/Info.plist
+xbundles/Functions/AlignOnVolume/AlignOnVolume-Info.plist
+lSLF07#2@64"Process bundles/Functions/AlignOnVolume/AlignOnVolume-Info.plist327450189#327450189#0(0"0(0#0#85"/users/max/SWProjects/quince/bundles/Functions/AlignOnVolume/AlignOnVolume-Info.plist8607232864#252"    cd /users/max/SWProjects/quince    builtin-infoPlistUtility bundles/Functions/AlignOnVolume/AlignOnVolume-Info.plist -expandbuildsettings -platform macosx -o "/Library/Application Support/quince/Functions/AlignOnVolume.bundle/Contents/Info.plist"0#
+
+CProcessPCH /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-blgtilqraloyelgkwmmmlqixjusc/AppKit.h.gch /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gjbpynddvlfuglfgtkokhfohuzks/AppKit.h.gch /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CSymLink /Users/max/SWProjects/quince/build/Debug/AlignOnVolume.bundle "/Library/Application Support/quince/Functions/AlignOnVolume.bundle"
+s322885265.605292
+e322885265.609980
+r1
+xSymLink
+x/Users/max/SWProjects/quince/build/Debug/AlignOnVolume.bundle
+x/Library/Application Support/quince/Functions/AlignOnVolume.bundle
+lSLF07#2@69"Process /Users/max/SWProjects/quince/build/Debug/AlignOnVolume.bundle322885265#322885265#0(0"0(0#0#0"4300911832#183"    cd /Users/max/SWProjects/quince    /bin/ln -sf "/Library/Application Support/quince/Functions/AlignOnVolume.bundle" /Users/max/SWProjects/quince/build/Debug/AlignOnVolume.bundle0#
+
+CSymLink /users/max/SWProjects/quince/build/Debug/AlignOnVolume.bundle "/Library/Application Support/quince/Functions/AlignOnVolume.bundle"
+s327450189.181300
+e327450189.187320
+r1
+xSymLink
+x/users/max/SWProjects/quince/build/Debug/AlignOnVolume.bundle
+x/Library/Application Support/quince/Functions/AlignOnVolume.bundle
+lSLF07#2@69"Process /users/max/SWProjects/quince/build/Debug/AlignOnVolume.bundle327450189#327450189#0(0"0(0#0#0"8611911136#183"    cd /users/max/SWProjects/quince    /bin/ln -sf "/Library/Application Support/quince/Functions/AlignOnVolume.bundle" /users/max/SWProjects/quince/build/Debug/AlignOnVolume.bundle0#
+
+CTouch "/Library/Application Support/quince/Functions/AlignOnVolume.bundle"
+s327450189.187400
+e327450189.194411
+r1
+xTouch
+x/Library/Application Support/quince/Functions/AlignOnVolume.bundle
+lSLF07#2@72"Touch /Library/Application Support/quince/Functions/AlignOnVolume.bundle327450189#327450189#0(0"0(0#0#0"8599533632#127"    cd /users/max/SWProjects/quince    /usr/bin/touch -c "/Library/Application Support/quince/Functions/AlignOnVolume.bundle"0#
+

@@ -376,4 +376,9 @@
     return [[layerControllers lastObject]parameterOnYAxis];
 }
 
+-(int)layerCount{
+
+    return [layerControllers count];
+}
+
 @end

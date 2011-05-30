@@ -1,0 +1,354 @@
+TVolumeStandardContainer
+v7
+r0
+t327450187.598266
+cCheck dependencies
+cProcessInfoPlistFile "/Library/Application Support/quince/ContainerViews/VolumeStandard.bundle/Contents/Info.plist" bundles/ContainerViews/VolumeStandardContainer/VolumeStandard-Info.plist
+cSymLink /users/max/SWProjects/quince/build/Debug/VolumeStandard.bundle "/Library/Application Support/quince/ContainerViews/VolumeStandard.bundle"
+cTouch "/Library/Application Support/quince/ContainerViews/VolumeStandard.bundle"
+
+N/Developer/SDKs/MacOSX10.5.sdk
+c000000004B7D589B00000000000000EE
+t1266505883
+s238
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h
+c000000004864BB88000000000000170F
+t1214561160
+s5903
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.h
+c000000004864A73B000000000000095A
+t1214555963
+s2394
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AudioUnit.framework/Headers/AudioUnit.h
+c000000004864A72E00000000000003CC
+t1214555950
+s972
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Library/Application Support/quince/ContainerViews/VolumeStandard.bundle
+t1305757387
+s102
+
+N/Library/Application Support/quince/ContainerViews/VolumeStandard.bundle/Contents/Info.plist
+t1305757387
+s1093
+
+N/Library/Application Support/quince/ContainerViews/VolumeStandard.bundle/Contents/MacOS/VolumeStandard
+t1302720724
+s14132
+
+N/Library/Frameworks/QuinceApi.framework/QuinceApi
+c000000004DA5F0D10000000000031A80
+t1302720721
+s203392
+
+N/Users/max/SWProjects/quince/QuinceApi/AudioFile.h
+c000000004D7B68CE00000000000004C7
+t1299933390
+s1223
+i<Cocoa/Cocoa.h>
+i"DataFile.h"
+
+N/Users/max/SWProjects/quince/QuinceApi/ContainerView.h
+c000000004D87ADCB00000000000017D4
+t1300737483
+s6100
+i<Cocoa/Cocoa.h>
+
+N/Users/max/SWProjects/quince/QuinceApi/DataFile.h
+c000000004D7B68CE0000000000000414
+t1299933390
+s1044
+i<Cocoa/Cocoa.h>
+i"QuinceObject.h"
+
+N/Users/max/SWProjects/quince/QuinceApi/Function.h
+c000000004D7B68CE00000000000017B4
+t1299933390
+s6068
+i<Cocoa/Cocoa.h>
+
+N/Users/max/SWProjects/quince/QuinceApi/FunctionGraph.h
+c000000004D74EAA300000000000004BC
+t1299507875
+s1212
+i<Cocoa/Cocoa.h>
+i<QuinceApi/Function.h>
+
+N/Users/max/SWProjects/quince/QuinceApi/Player.h
+c000000004D74EAA40000000000001218
+t1299507876
+s4632
+i<Cocoa/Cocoa.h>
+i<AudioToolbox/AudioToolbox.h>
+i<QuinceApi/QuinceObject.h>
+i<AudioUnit/AudioUnit.h>
+
+N/Users/max/SWProjects/quince/QuinceApi/QuinceObject.h
+c000000004D7B68CE0000000000001108
+t1299933390
+s4360
+i<Cocoa/Cocoa.h>
+
+N/Users/max/SWProjects/quince/QuinceApi/QuinceObjectController.h
+c000000004D7B68CE0000000000000E08
+t1299933390
+s3592
+i<Cocoa/Cocoa.h>
+i<QuinceApi/QuinceObject.h>
+i<QuinceApi/ContainerView.h>
+i<QuinceApi/QuinceDocument.h>
+
+N/Users/max/SWProjects/quince/QuinceCore/LayerController.h
+c000000004D74EAA300000000000009BC
+t1299507875
+s2492
+i<Cocoa/Cocoa.h>
+
+N/Users/max/SWProjects/quince/QuinceCore/MainController.h
+c000000004D87DB660000000000000E96
+t1300749158
+s3734
+i<Cocoa/Cocoa.h>
+i"StripController.h"
+
+N/Users/max/SWProjects/quince/QuinceCore/QuinceDocument.h
+c000000004D87CEA00000000000001E40
+t1300745888
+s7744
+i<Cocoa/Cocoa.h>
+i<QuinceApi/ContainerView.h>
+i<QuinceApi/AudioFile.h>
+i<QuinceApi/Function.h>
+i<QuinceApi/QuinceObjectController.h>
+i"LayerController.h"
+i"MainController.h"
+i<QuinceApi/Player.h>
+i<QuinceApi/FunctionGraph.h>
+i<QuinceApi/QuinceObject.h>
+
+N/Users/max/SWProjects/quince/QuinceCore/StripController.h
+c000000004D87DA350000000000000C60
+t1300748853
+s3168
+i<Cocoa/Cocoa.h>
+i"StripLayerControlsArrayController.h"
+i<QuinceApi/ContainerView.h>
+
+N/Users/max/SWProjects/quince/QuinceCore/StripLayerControlsArrayController.h
+c000000004D74EAA50000000000000BDD
+t1299507877
+s3037
+i"SubviewTableViewCell.h"
+i"StripController.h"
+
+N/Users/max/SWProjects/quince/QuinceCore/SubviewTableViewCell.h
+c000000004D74EAA500000000000003B4
+t1299507877
+s948
+i<AppKit/AppKit.h>
+
+N/Users/max/SWProjects/quince/build/Debug/VolumeStandard.bundle
+t3
+s72
+
+N/Users/max/SWProjects/quince/build/quince.build/Debug/VolumeStandardContainer.build/Objects-normal/i386/VolumeStandard.LinkFileList
+c000000004D8E9EF70000000000000082
+t1301192439
+s130
+
+N/Users/max/SWProjects/quince/build/quince.build/Debug/VolumeStandardContainer.build/Objects-normal/i386/VolumeStandardContainer.o
+t1301192439
+s38672
+
+N/Users/max/SWProjects/quince/bundles/ContainerViews/VolumeStandardContainer/VolumeStandardContainer.h
+c000000004D74EAA50000000000000418
+t1299507877
+s1048
+i<Cocoa/Cocoa.h>
+i<QuinceApi/ContainerView.h>
+i<QuinceApi/QuinceObjectController.h>
+
+N/Users/max/SWProjects/quince/bundles/ContainerViews/VolumeStandardContainer/VolumeStandardContainer.m
+c000000004D74EAA500000000000004E6
+t1299507877
+s1254
+i"VolumeStandardContainer.h"
+
+N/users/max/SWProjects/quince/QuinceCore/LayerController.h
+c000000004D74EAA300000000000009BC
+t1299507875
+s2492
+i<Cocoa/Cocoa.h>
+
+N/users/max/SWProjects/quince/QuinceCore/MainController.h
+c000000004D87DB660000000000000E96
+t1300749158
+s3734
+i<Cocoa/Cocoa.h>
+i"StripController.h"
+
+N/users/max/SWProjects/quince/QuinceCore/QuinceDocument.h
+c000000004D87CEA00000000000001E40
+t1300745888
+s7744
+i<Cocoa/Cocoa.h>
+i<QuinceApi/ContainerView.h>
+i<QuinceApi/AudioFile.h>
+i<QuinceApi/Function.h>
+i<QuinceApi/QuinceObjectController.h>
+i"LayerController.h"
+i"MainController.h"
+i<QuinceApi/Player.h>
+i<QuinceApi/FunctionGraph.h>
+i<QuinceApi/QuinceObject.h>
+
+N/users/max/SWProjects/quince/QuinceCore/StripController.h
+c000000004D87DA350000000000000C60
+t1300748853
+s3168
+i<Cocoa/Cocoa.h>
+i"StripLayerControlsArrayController.h"
+i<QuinceApi/ContainerView.h>
+
+N/users/max/SWProjects/quince/QuinceCore/StripLayerControlsArrayController.h
+c000000004D74EAA50000000000000BDD
+t1299507877
+s3037
+i"SubviewTableViewCell.h"
+i"StripController.h"
+
+N/users/max/SWProjects/quince/QuinceCore/SubviewTableViewCell.h
+c000000004D74EAA500000000000003B4
+t1299507877
+s948
+i<AppKit/AppKit.h>
+
+N/users/max/SWProjects/quince/build/Debug/VolumeStandard.bundle
+t3
+s72
+
+N/users/max/SWProjects/quince/build/quince.build/Debug/VolumeStandardContainer.build/Objects-normal/i386/VolumeStandard.LinkFileList
+c000000004D80A4120000000000000082
+t1300276242
+s130
+
+N/users/max/SWProjects/quince/build/quince.build/Debug/VolumeStandardContainer.build/Objects-normal/i386/VolumeStandardContainer.o
+t1300749170
+s38672
+
+N/users/max/SWProjects/quince/bundles/ContainerViews/VolumeStandardContainer/VolumeStandardContainer.h
+c000000004D74EAA50000000000000418
+t1299507877
+s1048
+i<Cocoa/Cocoa.h>
+i<QuinceApi/ContainerView.h>
+i<QuinceApi/QuinceObjectController.h>
+
+N/users/max/SWProjects/quince/bundles/ContainerViews/VolumeStandardContainer/VolumeStandardContainer.m
+c000000004D74EAA500000000000004E6
+t1299507877
+s1254
+i"VolumeStandardContainer.h"
+
+N/var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-blgtilqraloyelgkwmmmlqixjusc/AppKit.h.gch
+t1290463335
+s53501680
+
+N/var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gjbpynddvlfuglfgtkokhfohuzks/AppKit.h.gch
+t1301192437
+s53501680
+
+Nbundles/ContainerViews/VolumeStandardContainer/VolumeStandard-Info.plist
+c000000004C5740FC00000000000002CD
+t1280786684
+s717
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies327450187#327450187#0(177"[WARN]warning: no rule to process file '$(PROJECT_DIR)/bundles/ContainerViews/VolumeStandardContainer/VolumeStandardContainer.m' of type sourcecode.c.objc for architecture i3861(22@170"warning: no rule to process file '$(PROJECT_DIR)/bundles/ContainerViews/VolumeStandardContainer/VolumeStandardContainer.m' of type sourcecode.c.objc for architecture i386327450187#18446744073709551615#0#0(1@0"0(0#1#0"8639593120#0"0#
+
+CCompileC build/quince.build/Debug/VolumeStandardContainer.build/Objects-normal/i386/VolumeStandardContainer.o /Users/max/SWProjects/quince/bundles/ContainerViews/VolumeStandardContainer/VolumeStandardContainer.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s322885239.563961
+e322885239.817357
+r1
+xCompileC
+xbuild/quince.build/Debug/VolumeStandardContainer.build/Objects-normal/i386/VolumeStandardContainer.o
+x/Users/max/SWProjects/quince/bundles/ContainerViews/VolumeStandardContainer/VolumeStandardContainer.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@109"Compile /Users/max/SWProjects/quince/bundles/ContainerViews/VolumeStandardContainer/VolumeStandardContainer.m322885239#322885239#0(0"0(0#0#101"/Users/max/SWProjects/quince/bundles/ContainerViews/VolumeStandardContainer/VolumeStandardContainer.m4300911832#1542"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/VolumeStandardContainer.build/VolumeStandard-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/VolumeStandardContainer.build/VolumeStandard-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/VolumeStandardContainer.build/VolumeStandard-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/VolumeStandardContainer.build/VolumeStandard-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/VolumeStandardContainer.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/VolumeStandardContainer.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gjbpynddvlfuglfgtkokhfohuzks/AppKit.h -c /Users/max/SWProjects/quince/bundles/ContainerViews/VolumeStandardContainer/VolumeStandardContainer.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/VolumeStandardContainer.build/Objects-normal/i386/VolumeStandardContainer.o0#
+
+CCompileC build/quince.build/Debug/VolumeStandardContainer.build/Objects-normal/i386/VolumeStandardContainer.o /users/max/SWProjects/quince/bundles/ContainerViews/VolumeStandardContainer/VolumeStandardContainer.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s322441970.384874
+e322441970.629793
+r1
+xCompileC
+xbuild/quince.build/Debug/VolumeStandardContainer.build/Objects-normal/i386/VolumeStandardContainer.o
+x/users/max/SWProjects/quince/bundles/ContainerViews/VolumeStandardContainer/VolumeStandardContainer.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@109"Compile /users/max/SWProjects/quince/bundles/ContainerViews/VolumeStandardContainer/VolumeStandardContainer.m322441970#322441970#0(0"0(0#0#101"/users/max/SWProjects/quince/bundles/ContainerViews/VolumeStandardContainer/VolumeStandardContainer.m4300911832#1542"    cd /users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /users/max/SWProjects/quince/build/quince.build/Debug/VolumeStandardContainer.build/VolumeStandard-generated-files.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/VolumeStandardContainer.build/VolumeStandard-own-target-headers.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/VolumeStandardContainer.build/VolumeStandard-all-target-headers.hmap -iquote /users/max/SWProjects/quince/build/quince.build/Debug/VolumeStandardContainer.build/VolumeStandard-project-headers.hmap -F/users/max/SWProjects/quince/build/Debug -I/users/max/SWProjects/quince/build/Debug/include -I/users/max/SWProjects/quince/build/quince.build/Debug/VolumeStandardContainer.build/DerivedSources/i386 -I/users/max/SWProjects/quince/build/quince.build/Debug/VolumeStandardContainer.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-blgtilqraloyelgkwmmmlqixjusc/AppKit.h -c /users/max/SWProjects/quince/bundles/ContainerViews/VolumeStandardContainer/VolumeStandardContainer.m -o /users/max/SWProjects/quince/build/quince.build/Debug/VolumeStandardContainer.build/Objects-normal/i386/VolumeStandardContainer.o0#
+
+CLd "/Library/Application Support/quince/ContainerViews/VolumeStandard.bundle/Contents/MacOS/VolumeStandard" normal i386
+s324413524.767681
+e324413524.873918
+r1
+xLd
+x/Library/Application Support/quince/ContainerViews/VolumeStandard.bundle/Contents/MacOS/VolumeStandard
+xnormal
+xi386
+lSLF07#2@107"Link /Library/Application Support/quince/ContainerViews/VolumeStandard.bundle/Contents/MacOS/VolumeStandard324413524#324413524#0(0"0(0#0#0"4300911832#591"    cd /Users/max/SWProjects/quince    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -bundle -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/max/SWProjects/quince/build/Debug -F/Users/max/SWProjects/quince/build/Debug -filelist /Users/max/SWProjects/quince/build/quince.build/Debug/VolumeStandardContainer.build/Objects-normal/i386/VolumeStandard.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework AppKit -framework QuinceApi -o "/Library/Application Support/quince/ContainerViews/VolumeStandard.bundle/Contents/MacOS/VolumeStandard"0#
+
+CProcessInfoPlistFile "/Library/Application Support/quince/ContainerViews/VolumeStandard.bundle/Contents/Info.plist" bundles/ContainerViews/VolumeStandardContainer/VolumeStandard-Info.plist
+s327450187.589864
+e327450187.594520
+r1
+xProcessInfoPlistFile
+x/Library/Application Support/quince/ContainerViews/VolumeStandard.bundle/Contents/Info.plist
+xbundles/ContainerViews/VolumeStandardContainer/VolumeStandard-Info.plist
+lSLF07#2@80"Process bundles/ContainerViews/VolumeStandardContainer/VolumeStandard-Info.plist327450187#327450187#0(0"0(0#0#101"/users/max/SWProjects/quince/bundles/ContainerViews/VolumeStandardContainer/VolumeStandard-Info.plist8639311264#274"    cd /users/max/SWProjects/quince    builtin-infoPlistUtility bundles/ContainerViews/VolumeStandardContainer/VolumeStandard-Info.plist -expandbuildsettings -platform macosx -o "/Library/Application Support/quince/ContainerViews/VolumeStandard.bundle/Contents/Info.plist"0#
+
+CProcessPCH /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-blgtilqraloyelgkwmmmlqixjusc/AppKit.h.gch /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gjbpynddvlfuglfgtkokhfohuzks/AppKit.h.gch /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CSymLink /Users/max/SWProjects/quince/build/Debug/VolumeStandard.bundle "/Library/Application Support/quince/ContainerViews/VolumeStandard.bundle"
+s322885239.554887
+e322885239.563528
+r1
+xSymLink
+x/Users/max/SWProjects/quince/build/Debug/VolumeStandard.bundle
+x/Library/Application Support/quince/ContainerViews/VolumeStandard.bundle
+lSLF07#2@70"Process /Users/max/SWProjects/quince/build/Debug/VolumeStandard.bundle322885239#322885239#0(0"0(0#0#0"4300911832#190"    cd /Users/max/SWProjects/quince    /bin/ln -sf "/Library/Application Support/quince/ContainerViews/VolumeStandard.bundle" /Users/max/SWProjects/quince/build/Debug/VolumeStandard.bundle0#
+
+CSymLink /users/max/SWProjects/quince/build/Debug/VolumeStandard.bundle "/Library/Application Support/quince/ContainerViews/VolumeStandard.bundle"
+s327450187.590682
+e327450187.594773
+r1
+xSymLink
+x/users/max/SWProjects/quince/build/Debug/VolumeStandard.bundle
+x/Library/Application Support/quince/ContainerViews/VolumeStandard.bundle
+lSLF07#2@70"Process /users/max/SWProjects/quince/build/Debug/VolumeStandard.bundle327450187#327450187#0(0"0(0#0#0"8638742336#190"    cd /users/max/SWProjects/quince    /bin/ln -sf "/Library/Application Support/quince/ContainerViews/VolumeStandard.bundle" /users/max/SWProjects/quince/build/Debug/VolumeStandard.bundle0#
+
+CTouch "/Library/Application Support/quince/ContainerViews/VolumeStandard.bundle"
+s327450187.594855
+e327450187.598216
+r1
+xTouch
+x/Library/Application Support/quince/ContainerViews/VolumeStandard.bundle
+lSLF07#2@78"Touch /Library/Application Support/quince/ContainerViews/VolumeStandard.bundle327450187#327450187#0(0"0(0#0#0"8618559200#133"    cd /users/max/SWProjects/quince    /usr/bin/touch -c "/Library/Application Support/quince/ContainerViews/VolumeStandard.bundle"0#
+

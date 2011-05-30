@@ -186,6 +186,10 @@
 		50E87AD21170FF8A00FFA57E /* EventInterceptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E87AD11170FF8A00FFA57E /* EventInterceptView.m */; };
 		50E93BF11190662800A63246 /* EqlDstrbtn_Volume.m in Resources */ = {isa = PBXBuildFile; fileRef = 50E93BF01190662800A63246 /* EqlDstrbtn_Volume.m */; };
 		50E93BFD1190664400A63246 /* EqlDstrbtn_Volume.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E93BF01190662800A63246 /* EqlDstrbtn_Volume.m */; };
+		50EAF2CA1393BAD200258AD1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		50EAF2D01393BAD200258AD1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50EAF2CE1393BAD200258AD1 /* InfoPlist.strings */; };
+		50EAF2E41393BC4400258AD1 /* FrequencyStandardContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EAF2E31393BC4400258AD1 /* FrequencyStandardContainer.m */; };
+		50EAF2E71393BDCD00258AD1 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		50F420001198B2DD009F695A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506BF9E5117A677800ECBC4E /* AudioToolbox.framework */; };
 		50F4206E1198BF96009F695A /* AudioFilePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F4206D1198BF96009F695A /* AudioFilePlayer.m */; };
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
@@ -938,6 +942,20 @@
 			remoteGlobalIDString = 50E93BD8119065CD00A63246;
 			remoteInfo = EqlDstrbtn_Volume;
 		};
+		50EAF2E51393BC6B00258AD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50EAF2C71393BAD200258AD1;
+			remoteInfo = FrequencyStandardContainer;
+		};
+		50EAF2E81393BDD500258AD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
 		50F4206A1198BF80009F695A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
@@ -1232,6 +1250,13 @@
 		50E93BDA119065CD00A63246 /* EqlDstrbtn_Volume-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EqlDstrbtn_Volume-Info.plist"; path = "bundles/Functions/EqlDstrbtn_Volume/EqlDstrbtn_Volume-Info.plist"; sourceTree = "<group>"; };
 		50E93BEF1190662800A63246 /* EqlDstrbtn_Volume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EqlDstrbtn_Volume.h; path = bundles/Functions/EqlDstrbtn_Volume/EqlDstrbtn_Volume.h; sourceTree = "<group>"; };
 		50E93BF01190662800A63246 /* EqlDstrbtn_Volume.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EqlDstrbtn_Volume.m; path = bundles/Functions/EqlDstrbtn_Volume/EqlDstrbtn_Volume.m; sourceTree = "<group>"; };
+		50EAF2C81393BAD200258AD1 /* FrequencyStandardContainer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrequencyStandardContainer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		50EAF2C91393BAD200258AD1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		50EAF2DB1393BC0400258AD1 /* FrequencyStandardContainer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "FrequencyStandardContainer-Info.plist"; path = "bundles/ContainerViews/FrequencyStandardContainer/FrequencyStandardContainer-Info.plist"; sourceTree = SOURCE_ROOT; };
+		50EAF2DE1393BC2400258AD1 /* FrequencyStandardContainer-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "FrequencyStandardContainer-Prefix.pch"; path = "bundles/ContainerViews/FrequencyStandardContainer/FrequencyStandardContainer-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		50EAF2E01393BC3200258AD1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = bundles/ContainerViews/FrequencyStandardContainer/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		50EAF2E21393BC4400258AD1 /* FrequencyStandardContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FrequencyStandardContainer.h; path = bundles/ContainerViews/FrequencyStandardContainer/FrequencyStandardContainer.h; sourceTree = SOURCE_ROOT; };
+		50EAF2E31393BC4400258AD1 /* FrequencyStandardContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FrequencyStandardContainer.m; path = bundles/ContainerViews/FrequencyStandardContainer/FrequencyStandardContainer.m; sourceTree = SOURCE_ROOT; };
 		50F420551198BF3C009F695A /* AudioFilePlayer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioFilePlayer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F420561198BF3C009F695A /* AudioFilePlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "AudioFilePlayer-Info.plist"; path = "bundles/Players/AudioFilePlayer/AudioFilePlayer-Info.plist"; sourceTree = "<group>"; };
 		50F4206C1198BF96009F695A /* AudioFilePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioFilePlayer.h; path = bundles/Players/AudioFilePlayer/AudioFilePlayer.h; sourceTree = "<group>"; };
@@ -1651,6 +1676,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50EAF2C51393BAD200258AD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50EAF2E71393BDCD00258AD1 /* QuinceApi.framework in Frameworks */,
+				50EAF2CA1393BAD200258AD1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50F420531198BF3C009F695A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1700,7 +1734,6 @@
 			isa = PBXGroup;
 			children = (
 				8D15AC370486D014006FF6A4 /* quince.app */,
-				50A522B5117A52560072FB09 /* QuinceApi.framework */,
 				50A522FB117A52F60072FB09 /* MintApiTestUnit.octest */,
 				506BF833117A5A9700ECBC4E /* AutomationView.bundle */,
 				506BF854117A5B1A00ECBC4E /* AutomationViewTestUnit.octest */,
@@ -1751,6 +1784,7 @@
 				5015AFFC133EA9A4006C85AA /* ApplyValueList.bundle */,
 				506C6B2E135616F60060BD9D /* ExtractEnvSequence.bundle */,
 				5035B8F013563EBE003E8570 /* ApplyValuesFromSeq.bundle */,
+				50EAF2C81393BAD200258AD1 /* FrequencyStandardContainer.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1758,6 +1792,7 @@
 		2A37F4AAFDCFA73011CA2CEA /* MINT */ = {
 			isa = PBXGroup;
 			children = (
+				50A522B5117A52560072FB09 /* QuinceApi.framework */,
 				2A37F4ABFDCFA73011CA2CEA /* Model */,
 				50A5229B117A51BA0072FB09 /* ModelControllers */,
 				50BB629C116F987D0056C410 /* ViewControllers */,
@@ -1896,6 +1931,7 @@
 			isa = PBXGroup;
 			children = (
 				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				50EAF2C91393BAD200258AD1 /* Cocoa.framework */,
 				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -1980,6 +2016,7 @@
 			children = (
 				506BF85E117A5B7800ECBC4E /* AutomationView */,
 				506BF8A5117A5E3D00ECBC4E /* EnvelopeContainer */,
+				50EAF2CB1393BAD200258AD1 /* FrequencyStandardContainer */,
 				500CADCE122D5B3700B980B8 /* MarkContainer */,
 				506BF8CD117A5FA700ECBC4E /* TimeGridView */,
 				506BF908117A612000ECBC4E /* VolumeStandard */,
@@ -2429,6 +2466,26 @@
 				50E93BF01190662800A63246 /* EqlDstrbtn_Volume.m */,
 			);
 			name = EqlDstrbtn_Volume;
+			sourceTree = "<group>";
+		};
+		50EAF2CB1393BAD200258AD1 /* FrequencyStandardContainer */ = {
+			isa = PBXGroup;
+			children = (
+				50EAF2CC1393BAD200258AD1 /* Supporting Files */,
+				50EAF2E21393BC4400258AD1 /* FrequencyStandardContainer.h */,
+				50EAF2E31393BC4400258AD1 /* FrequencyStandardContainer.m */,
+			);
+			path = FrequencyStandardContainer;
+			sourceTree = "<group>";
+		};
+		50EAF2CC1393BAD200258AD1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50EAF2DF1393BC3200258AD1 /* InfoPlist.strings */,
+				50EAF2DB1393BC0400258AD1 /* FrequencyStandardContainer-Info.plist */,
+				50EAF2DE1393BC2400258AD1 /* FrequencyStandardContainer-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		50F4206F1198BF9B009F695A /* AudioFilePlayer */ = {
@@ -3386,6 +3443,24 @@
 			productReference = 50E93BD9119065CD00A63246 /* EqlDstrbtn_Volume.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
+		50EAF2C71393BAD200258AD1 /* FrequencyStandardContainer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50EAF2D21393BAD200258AD1 /* Build configuration list for PBXNativeTarget "FrequencyStandardContainer" */;
+			buildPhases = (
+				50EAF2C41393BAD200258AD1 /* Sources */,
+				50EAF2C51393BAD200258AD1 /* Frameworks */,
+				50EAF2C61393BAD200258AD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50EAF2E91393BDD500258AD1 /* PBXTargetDependency */,
+			);
+			name = FrequencyStandardContainer;
+			productName = FrequencyStandardContainer;
+			productReference = 50EAF2C81393BAD200258AD1 /* FrequencyStandardContainer.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		50F420541198BF3C009F695A /* AudioFilePlayer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50F420591198BF3D009F695A /* Build configuration list for PBXNativeTarget "AudioFilePlayer" */;
@@ -3420,6 +3495,7 @@
 				506BF8AA117A5E6200ECBC4E /* PBXTargetDependency */,
 				506BF8D0117A5FD000ECBC4E /* PBXTargetDependency */,
 				506BF90A117A613100ECBC4E /* PBXTargetDependency */,
+				50EAF2E61393BC6B00258AD1 /* PBXTargetDependency */,
 				506BF948117A636F00ECBC4E /* PBXTargetDependency */,
 				506BF97D117A650600ECBC4E /* PBXTargetDependency */,
 				506BF9A8117A666800ECBC4E /* PBXTargetDependency */,
@@ -3514,6 +3590,7 @@
 				50A362CC126EF67B004D360B /* ExportDescriptionListing */,
 				506C6B2D135616F60060BD9D /* ExtractEnvSequence */,
 				5015AEAD133E70DA006C85AA /* FoldByParameter */,
+				50EAF2C71393BAD200258AD1 /* FrequencyStandardContainer */,
 				507750B61268DCE700AF7956 /* Gate */,
 				50035ADD11C97C37008D4F11 /* ImportFrequencies */,
 				50BFCB7B129987DB00618422 /* ImportMaxMSPCollForSingleParameter */,
@@ -3525,7 +3602,6 @@
 				500CADA0122D59FD00B980B8 /* MarkChild */,
 				500CADBE122D5AB400B980B8 /* MarkContainer */,
 				504A69A911A9F692007F60FF /* Normalize */,
-				508C43B11295596E00875B93 /* OneVoice_Loudest */,
 				506BF99B117A660A00ECBC4E /* Quantization */,
 				8D15AC270486D014006FF6A4 /* quince */,
 				50A522B4117A52560072FB09 /* QuinceApi */,
@@ -3533,6 +3609,7 @@
 				50E860AF11F857A20014CFE9 /* RemoveParameter */,
 				501C284011CE8D920097B5F0 /* ResampleEnvelope */,
 				50717033117A7F4300357470 /* SequenceChild */,
+				508C43B11295596E00875B93 /* OneVoice_Loudest */,
 				50717023117A7F1800357470 /* SequenceChildTestUnit */,
 				5074FE4C1238E1A500BB60C6 /* SetParameter */,
 				50B8F4911230F2E600E444BC /* Sets_Difference */,
@@ -3916,6 +3993,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				50E93BF11190662800A63246 /* EqlDstrbtn_Volume.m in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50EAF2C61393BAD200258AD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50EAF2D01393BAD200258AD1 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4444,6 +4529,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				50E93BFD1190664400A63246 /* EqlDstrbtn_Volume.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50EAF2C41393BAD200258AD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50EAF2E41393BC4400258AD1 /* FrequencyStandardContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5004,6 +5097,16 @@
 			target = 50E93BD8119065CD00A63246 /* EqlDstrbtn_Volume */;
 			targetProxy = 50E93BFE1190664D00A63246 /* PBXContainerItemProxy */;
 		};
+		50EAF2E61393BC6B00258AD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50EAF2C71393BAD200258AD1 /* FrequencyStandardContainer */;
+			targetProxy = 50EAF2E51393BC6B00258AD1 /* PBXContainerItemProxy */;
+		};
+		50EAF2E91393BDD500258AD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 50EAF2E81393BDD500258AD1 /* PBXContainerItemProxy */;
+		};
 		50F4206B1198BF80009F695A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 50F420541198BF3C009F695A /* AudioFilePlayer */;
@@ -5058,6 +5161,22 @@
 				50E8775811709A4E00FFA57E /* English */,
 			);
 			name = StripControl.xib;
+			sourceTree = "<group>";
+		};
+		50EAF2CE1393BAD200258AD1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+			);
+			name = InfoPlist.strings;
+			path = /Users/max/SWProjects/quince/FrequencyStandardContainer;
+			sourceTree = "<absolute>";
+		};
+		50EAF2DF1393BC3200258AD1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50EAF2E01393BC3200258AD1 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -7809,6 +7928,52 @@
 			};
 			name = Release;
 		};
+		50EAF2D31393BAD200258AD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/ContainerViews/FrequencyStandardContainer/FrequencyStandardContainer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/ContainerViews/FrequencyStandardContainer/FrequencyStandardContainer-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/ContainerViews/";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		50EAF2D41393BAD200258AD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = NO;
+				DSTROOT = /;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/ContainerViews/FrequencyStandardContainer/FrequencyStandardContainer-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/ContainerViews/FrequencyStandardContainer/FrequencyStandardContainer-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		50F420571198BF3D009F695A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -8379,6 +8544,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		50EAF2D21393BAD200258AD1 /* Build configuration list for PBXNativeTarget "FrequencyStandardContainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50EAF2D31393BAD200258AD1 /* Debug */,
+				50EAF2D41393BAD200258AD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		50F420591198BF3D009F695A /* Build configuration list for PBXNativeTarget "AudioFilePlayer" */ = {
 			isa = XCConfigurationList;
