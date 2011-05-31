@@ -164,7 +164,7 @@
 		[zero setLineWidth:0];
 		[guide setValue:zero forKey:@"path"];
 		
-		NSMutableAttributedString * s = [[[NSMutableAttributedString alloc]initWithString:[NSString stringWithFormat:@"%d", dB]]autorelease];
+		NSMutableAttributedString * s = [[[NSMutableAttributedString alloc]initWithString:[NSString stringWithFormat:@"%d dB", dB]]autorelease];
        // NSLog(@"intercept:error_now?");
 		tRange = NSMakeRange(0, [s length]);	
       //  NSLog(@"intercept:error_no!");
@@ -221,6 +221,42 @@
 }
 
 -(void)computePitchGuides{
+   
+    float y, alpha;
+	int fontSize=8;//,  frequencyRange = 15000;//[[stripController volumeRange]integerValue];
+	NSFont *font = [NSFont systemFontOfSize:fontSize];
+	NSRange tRange;
+	NSPoint point;
+	NSBezierPath * zero;
+	[[self valueForKey:@"guides"] removeAllObjects];
+	
+	for(int p = 24;p<130;p+=12){
+		NSMutableDictionary * guide = [[NSMutableDictionary alloc]init];
+		ContainerView * view = [(LayerController * )[[stripController layerControllers] lastObject]view];
+		y = [[view yForParameterValue:[NSNumber numberWithInt:p]]floatValue];
+        //NSLog(@"f: %f, y: %f", f, y);
+		alpha = 0.5;//(0.4/frequencyRange)*(frequencyRange-maxabs_float(f))+0.1;
+		NSColor * color = [NSColor colorWithDeviceWhite:1 alpha:alpha];
+		[guide setValue:color forKey:@"color" ];
+		
+		zero = [[[NSBezierPath alloc]init]autorelease];
+		[zero moveToPoint:NSMakePoint(0,y)];
+		[zero lineToPoint:NSMakePoint([self bounds].size.width, y)];
+		[zero setLineWidth:0];
+		[guide setValue:zero forKey:@"path"];
+		
+		NSMutableAttributedString * s = [[[NSMutableAttributedString alloc]initWithString:[NSString stringWithFormat:@"%d", p]]autorelease];
+        // NSLog(@"intercept:error_now?");
+		tRange = NSMakeRange(0, [s length]);	
+        //  NSLog(@"intercept:error_no!");
+		[s addAttribute:NSForegroundColorAttributeName value:[NSColor whiteColor] range:tRange];
+		[s addAttribute:NSFontAttributeName value:font range:tRange];
+		point = NSMakePoint([self bounds].origin.x+1,y+1);
+		//point = NSMakePoint(x+1,y+1);
+		[guide setValue:[NSValue valueWithPoint:point]forKey:@"point"];
+		[guide setValue:s forKey:@"string"];
+		[[self valueForKey:@"guides"] addObject:guide];
+	}
 
 
 }
@@ -264,6 +300,15 @@
 
 
 -(void)drawPitchGuidesInRect:(NSRect) r{
+    for(NSDictionary * d in [self valueForKey:@"guides"]){
+        
+		[[d valueForKey:@"color"]set];
+		[[d valueForKey:@"path"]stroke];
+		NSMutableAttributedString * s = [d valueForKey:@"string"];
+		NSRect frame = [s boundingRectWithSize:[s size] options:NSStringDrawingUsesFontLeading];
+		if(NSIntersectsRect(frame,r))
+            [s drawAtPoint:[[d valueForKey:@"point"]pointValue]];
+    }
 }
 
 -(void)drawVolumeGuidesInRect:(NSRect) r{
@@ -307,7 +352,7 @@
 
 -(void)setFrame:(NSRect)frameRect{
 	[super setFrame:frameRect];
-	
+	[self computeGuides];
 	/* if(volumeGuides){
 			NSAffineTransform * trans = [NSAffineTransform transform];
 			[trans scaleXBy:diffX yBy:1];

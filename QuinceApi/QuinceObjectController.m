@@ -32,7 +32,7 @@
 @synthesize node, document;//, childView;
 
 -(QuinceObjectController *)initWithContent:(id)content{
-	if(self = [super initWithContent:content]) {
+	if((self = [super initWithContent:content])) {
 		[self setNode:[[NSTreeNode alloc] initWithRepresentedObject:self]];
 		registeredContainerViews = [[NSMutableSet alloc]init];
 		registeredChildViews = [[NSMutableSet alloc]init];
@@ -472,6 +472,16 @@
 -(NSString*)description{
 
 	return [NSString stringWithFormat:@"QuinceObjectController: %@", [[self content]description] ];
+}
+
+-(id)changedParameter{
+
+    return [[[document objectInspectorController]selectedObjects]lastObject];
+}
+
+-(void)updateObjectInspector{
+
+    [document updateObjectInspector];
 }
 
 @end

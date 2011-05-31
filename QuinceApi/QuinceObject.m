@@ -242,12 +242,16 @@
 #pragma mark KVC
 
 -(void)setValue:(id)aValue forKey:(NSString *)aKey{
-	
-	if([aKey isEqualToString:@"dictionary"]){ // set by ObjectInspector (NSDictionaryController)
-		NSArray * keys = [aValue allKeys];
-		for(NSString * dictKey in keys){
-			[self setValue:[aValue valueForKey:dictKey] forKey:dictKey];
-		}
+	//NSLog(@"QuinceObject:setValue:forKey:%@", aKey);
+	if([aKey isEqualToString:@"dictionary"]){                   // set by ObjectInspector (NSDictionaryController)
+		//NSArray * keys = [aValue allKeys];                      // since we don't know if some changed parameters are dependant on one another (like frequency and pitch
+        id changedParameter = [controller changedParameter];    // we can not simply copy all values of the dictionary but we have to find the changed parameter and 
+       [self setValue:[changedParameter valueForKey:@"value"] forKey:[changedParameter valueForKey:@"key"]]; //set that parameter's value (and dependant parameter's values)
+        NSLog(@"changedParameter:%@", changedParameter);        // that's both secure and efficient
+      //  for(NSString * dictKey in keys)    // to make sure we have the correct values before changing all the other values...
+      //    [self setValue:[aValue valueForKey:dictKey] forKey:dictKey];
+        
+        [controller updateObjectInspector];
 		return;
 	}
 	
@@ -255,14 +259,32 @@
 	
 	
 	if([aKey isEqualToString:@"frequency"]){
-		//[self setFrequency:aValue withUpdate:YES];
-		[self setValue:[NSNumber numberWithInt:[self fToM:[aValue doubleValue]]] forKey:@"pitch"];
-		[self setValue:[NSNumber numberWithInt:[self fToC:[aValue doubleValue]]] forKey:@"cent"];
+		[self setFrequency:aValue withUpdate:YES];
+        [self checkAndUpdateSubsForKey:aKey];
+        return;
+		//[self setValue:[NSNumber numberWithInt:[self fToM:[aValue doubleValue]]] forKey:@"pitch"];
+		//[self setValue:[NSNumber numberWithInt:[self fToC:[aValue doubleValue]]] forKey:@"cent"];
+        
 	}
 	else if([aKey isEqualToString:@"pitch"]){
+        [self setPitch:aValue withUpdate:YES];
+        [self checkAndUpdateSubsForKey:aKey];
+        return;
+        //[self setValue:[NSNumber numberWithDouble:[self mToF:[aValue intValue]]] forKey:@"frequency"];
 		//[self setValue:[NSNumber numberWithInt:0] forKey:@"cent"];
-		//[self setValue:[NSNumber numberWithDouble:[self mToF:[aValue intValue]]] forKey:@"frequency"];
-	}
+    }
+    else if([aKey isEqualToString:@"cent"]){
+        [self setCent:aValue withUpdate:YES];
+        [self checkAndUpdateSubsForKey:aKey];
+        return;
+    }
+//	
+//        [self willChangeValueForKey:@"frequency"];
+//        [self willChangeValueForKey:@"dictionary"];
+//        [dictionary setValue:[NSNumber numberWithDouble:[self mToF:[aValue intValue]]] forKey:@"frequency"];
+//        [self didChangeValueForKey:@"frequency"];
+//        [self didChangeValueForKey:@"dictionary"];
+	//}
 	/* else if([aKey isEqualToString:@"cent"]){
 		int pitch = [[self valueForKey:@"pitch"]intValue];
 		double newFreq = [self mToF:pitch]*pow(pow(2, 1/1200), [c intValue]);
@@ -278,14 +300,20 @@
 	[self didChangeValueForKey:aKey];
 	[self didChangeValueForKey:@"dictionary"];
 	
-	if([self isFolded] && [self canCreateOffsetForKey:aKey] && [controller isDisplayed]){
-//		NSLog(@"QuinceObject: telling subObjects to updateOffsetForKey:%@", aKey);
+    [self checkAndUpdateSubsForKey:aKey];
+	
+}
+ 
+-(void)checkAndUpdateSubsForKey:(NSString *)aKey{
+    if([self isFolded] && [self canCreateOffsetForKey:aKey] && [controller isDisplayed]){
+        //		NSLog(@"QuinceObject: telling subObjects to updateOffsetForKey:%@", aKey);
 		[[self valueForKey:@"subObjects"] makeObjectsPerformSelector:@selector(updateOffsetForKey:) withObject:aKey];
 	}
 }
- 
--(id)valueForKey:(NSString *)key{
 
+
+-(id)valueForKey:(NSString *)key{
+   // NSLog(@"QuinceObject: valueForKey:%@", key);
 	if([key isEqualToString:@"dictionary"])
 		return [self dictionary];
 	else if([key isEqualToString:@"isFolded"])
@@ -892,27 +920,63 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context){
 
 
 -(void)setFrequency:(NSNumber *)f withUpdate:(BOOL)b{
+    
+    if(!b)
+        [self willChangeValueForKey:@"dictionary"];
 
-	if(b) {
-		//[self setPitch:[NSNumber numberWithInt:[self fToM:[f doubleValue]]] withUpdate:NO];
-		//[self setCent:[NSNumber numberWithInt:[self fToC:[f doubleValue]]] withUpdate:NO];
+    [self willChangeValueForKey:@"frequency"];
+	[dictionary setValue:f forKey:@"frequency"];
+    [self didChangeValueForKey:@"frequency"];
+		
+    if(b) {
+		[self setPitch:[NSNumber numberWithInt:[self fToM:[f doubleValue]]] withUpdate:NO];
+		[self setCent:[NSNumber numberWithInt:[self fToC:[f doubleValue]]] withUpdate:NO];
 	}
+    else
+        [self didChangeValueForKey:@"dictionary"];
 }
 
--(void)setPitch:(NSNumber *)p withUpdate:(BOOL)b{		
+
+
+-(void)setPitch:(NSNumber *)p withUpdate:(BOOL)b{	
+  
+    
+	if(!b)
+        [self willChangeValueForKey:@"dictionary"];
+
+    [self willChangeValueForKey:@"pitch"];
+	[dictionary setValue:p forKey:@"pitch"];
+	[self didChangeValueForKey:@"pitch"];
 
 	if(b) {
 		[self setFrequency:[NSNumber numberWithDouble:[self mToF:[p intValue]]] withUpdate:NO];
 		[self setCent:[NSNumber numberWithInt:0] withUpdate:NO];
 	}
+    
+	else
+        [self didChangeValueForKey:@"dictionary"];
 }	
 
+
+    
 -(void)setCent:(NSNumber *)c withUpdate:(BOOL)b{	
-	if(b){
+
+    if(!b)
+        [self willChangeValueForKey:@"dictionary"];
+
+    [self willChangeValueForKey:@"cent"];
+	[dictionary setValue:c forKey:@"cent"];
+    [self didChangeValueForKey:@"cent"];
+
+	    
+    if(b){
 		int pitch = [[self valueForKey:@"pitch"]intValue];
 		double newFreq = [self mToF:pitch]*pow(pow(2, 1/1200), [c intValue]);
 		[self setFrequency:[NSNumber numberWithDouble:newFreq] withUpdate:NO];
 	}
+    else
+        [self didChangeValueForKey:@"dictionary"];
+
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////

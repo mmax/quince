@@ -70,28 +70,65 @@
 	[view setHidden:hidden];
 }
 
+
+-(void)loadAnyCompatibleView{
+    [self setViewWithName:[self anyCompatibleViewClassName]];
+}
+
 -(IBAction)changeView:(id)sender{
 	
 	NSString * name = [viewMenu titleOfSelectedItem];
+    ContainerView * newView = [stripController newContainerViewOfClassNamed:name]; // temp, for checking
+    if(![self isCompatibleViewClass:name]){
+         name = [self anyCompatibleViewClassName];
+        [[stripController document] presentAlertWithText:[NSString stringWithFormat:@"Incompatible View: \nThis strip has the parameter '%@' on the y-axis. The chosen view has '%@'. \nI loaded the %@ instead. \nPlease load the view in another strip.", [stripController parameterOnYAxis], [newView parameterOnY], name]];
+    }
+        
 	[self setViewWithName:name];
+}
+
+-(BOOL)isCompatibleViewClass:(NSString *)name{
+
+    ContainerView * newView = [stripController newContainerViewOfClassNamed:name]; // temp, for checking
+    NSString * yPar = [stripController parameterOnYAxis];
+    
+    if ([stripController layerCount] == 1)
+        yPar = nil;
+    
+    if (yPar != nil  && ![[newView parameterOnY] isEqualToString:yPar] )
+        return NO;
+    
+    return YES;
+}
+
+-(NSString *)anyCompatibleViewClassName{
+
+
+    NSArray * viewClasses = [[stripController document]containerViewClassNames];
+    for(NSString * class in viewClasses){
+    
+        if([self isCompatibleViewClass:class])
+            return class;
+    }
+    return nil;
 }
 
 -(void)setViewWithName:(NSString *)name{
 	
+    QuinceDocument * doc = [stripController document];
+
+    if(!name)
+        [doc presentAlertWithText:@"ERROR: LayerController: no view specified!"];
+    
+    
 	ContainerView * newView, *oldView = [self valueForKey:@"view"];
 	QuinceObjectController * mc = [self valueForKey:@"content"];
-    QuinceDocument * doc = [stripController document];
-    
-    NSString * yPar = [stripController parameterOnYAxis];
-    if ([stripController layerCount] == 1)
-        yPar = nil;
-
+        
     newView = [stripController newContainerViewOfClassNamed:name]; // temp, for checking
-    NSString * viewYPar =    [newView parameterOnY];
+//    NSString * viewYPar =    [newView parameterOnY];
 
-    if (yPar != nil  && ![ viewYPar isEqualToString:yPar] ) {
-        [doc presentAlertWithText:[NSString stringWithFormat:@"incompatible view: this strip needs parameter '%@' on the y-axis. the chosen view has '%@'", yPar, viewYPar]];
-        return;
+    if(![self isCompatibleViewClass:name]){//(yPar != nil  && ![ viewYPar isEqualToString:yPar] ) {
+                return;
     }
 	
 	if(oldView != nil)

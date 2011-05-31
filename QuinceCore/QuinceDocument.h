@@ -119,6 +119,7 @@
 -(NSMutableArray *)containerViewClassNames;
 -(NSScrollView *)mainScrollView;
 -(NSArray *)objectInspectorExcludedKeys;
+-(NSDictionaryController *)objectInspectorController;
 -(BOOL)isPlaying;
 -(NSNumber *)playbackObjectCreationLatency;
 	

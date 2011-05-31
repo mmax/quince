@@ -79,4 +79,6 @@
 -(void) toggleMute;
 -(void)unregisterChildView:(ChildView *)child;
 -(void)registerChildView:(ChildView *)child;
+-(id)changedParameter;
+-(void)updateObjectInspector;
 @end

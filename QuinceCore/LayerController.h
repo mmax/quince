@@ -48,7 +48,10 @@
 
 - (NSView *) tableViewSubview;
 -(IBAction)toggleVisible:(id)sender;
+-(void)loadAnyCompatibleView;
 -(IBAction)changeView:(id)sender;
+-(BOOL)isCompatibleViewClass:(NSString *)name;
+-(NSString *)anyCompatibleViewClassName;
 -(void)setViewWithName:(NSString *)name;
 -(IBAction)load:(id)sender;
 -(id)valueForKey:(NSString *)key;

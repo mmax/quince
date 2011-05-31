@@ -81,11 +81,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "QuinceCore/QuinceDocument.m"
-         timestampString = "321197365.629981"
+         timestampString = "328549848.146601"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "1154"
-         endingLineNumber = "1154">
+         startingLineNumber = "1158"
+         endingLineNumber = "1158">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "Yes"
@@ -93,11 +93,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "QuinceCore/QuinceDocument.m"
-         timestampString = "321197365.753154"
+         timestampString = "328549848.146601"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "1185"
-         endingLineNumber = "1185">
+         startingLineNumber = "1189"
+         endingLineNumber = "1189">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -105,11 +105,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "QuinceCore/EventInterceptView.m"
-         timestampString = "328488209.144785"
+         timestampString = "328540343.1186"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "331"
-         endingLineNumber = "331"
+         startingLineNumber = "376"
+         endingLineNumber = "376"
          landmarkName = "-setValue:forKey:"
          landmarkType = "5">
       </FileBreakpoint>

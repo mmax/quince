@@ -30,6 +30,9 @@
 		501BFA2011C83E6D00A7BDCD /* ColorByKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 501BFA1F11C83E6D00A7BDCD /* ColorByKey.m */; };
 		501C285A11CE8E5D0097B5F0 /* ResampleEnvelope.m in Sources */ = {isa = PBXBuildFile; fileRef = 501C285911CE8E5D0097B5F0 /* ResampleEnvelope.m */; };
 		501C286111CE92F90097B5F0 /* ResampleEnvelopeWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501C286011CE92F90097B5F0 /* ResampleEnvelopeWindow.xib */; };
+		5027F13A13951CED00A9389A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		5027F14F13951E3600A9389A /* PitchContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5027F14E13951E3600A9389A /* PitchContainer.m */; };
+		5027F15013951EFC00A9389A /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		502C8CE611835C27006CCFB2 /* FunctionLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 502C8CE411835C27006CCFB2 /* FunctionLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		502C8CE711835C27006CCFB2 /* FunctionLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 502C8CE511835C27006CCFB2 /* FunctionLoader.m */; };
 		50325EA9122694A000E22031 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
@@ -187,7 +190,6 @@
 		50E93BF11190662800A63246 /* EqlDstrbtn_Volume.m in Resources */ = {isa = PBXBuildFile; fileRef = 50E93BF01190662800A63246 /* EqlDstrbtn_Volume.m */; };
 		50E93BFD1190664400A63246 /* EqlDstrbtn_Volume.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E93BF01190662800A63246 /* EqlDstrbtn_Volume.m */; };
 		50EAF2CA1393BAD200258AD1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
-		50EAF2D01393BAD200258AD1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50EAF2CE1393BAD200258AD1 /* InfoPlist.strings */; };
 		50EAF2E41393BC4400258AD1 /* FrequencyStandardContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EAF2E31393BC4400258AD1 /* FrequencyStandardContainer.m */; };
 		50EAF2E71393BDCD00258AD1 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		50F420001198B2DD009F695A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506BF9E5117A677800ECBC4E /* AudioToolbox.framework */; };
@@ -276,6 +278,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 501C284011CE8D920097B5F0;
 			remoteInfo = ResampleEnvelope;
+		};
+		5027F14513951D0600A9389A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5027F13813951CED00A9389A;
+			remoteInfo = PitchContainer;
 		};
 		5035B90213563F53003E8570 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1014,6 +1023,12 @@
 		501C286011CE92F90097B5F0 /* ResampleEnvelopeWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ResampleEnvelopeWindow.xib; path = bundles/Functions/ResampleEnvelope/ResampleEnvelopeWindow.xib; sourceTree = "<group>"; };
 		501E41FF11B5639E000072FA /* FunctionGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FunctionGraph.h; path = QuinceApi/FunctionGraph.h; sourceTree = "<group>"; };
 		501E420011B5639E000072FA /* FunctionGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FunctionGraph.m; path = QuinceApi/FunctionGraph.m; sourceTree = "<group>"; };
+		5027F13913951CED00A9389A /* PitchContainer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PitchContainer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5027F14713951D3E00A9389A /* PitchContainer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "PitchContainer-Info.plist"; path = "bundles/ContainerViews/PitchContainer/PitchContainer-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5027F14913951D4F00A9389A /* PitchContainer-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PitchContainer-Prefix.pch"; path = "bundles/ContainerViews/PitchContainer/PitchContainer-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		5027F14B13951D7300A9389A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = bundles/ContainerViews/PitchContainer/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		5027F14D13951E3600A9389A /* PitchContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PitchContainer.h; path = bundles/ContainerViews/PitchContainer/PitchContainer.h; sourceTree = SOURCE_ROOT; };
+		5027F14E13951E3600A9389A /* PitchContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PitchContainer.m; path = bundles/ContainerViews/PitchContainer/PitchContainer.m; sourceTree = SOURCE_ROOT; };
 		502C8CE411835C27006CCFB2 /* FunctionLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FunctionLoader.h; path = QuinceApi/FunctionLoader.h; sourceTree = "<group>"; };
 		502C8CE511835C27006CCFB2 /* FunctionLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FunctionLoader.m; path = QuinceApi/FunctionLoader.m; sourceTree = "<group>"; };
 		50325EA01226947500E22031 /* CSoundPlayer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSoundPlayer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1328,6 +1343,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				505B49731207745C0050CFB7 /* QuinceApi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5027F13613951CED00A9389A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5027F15013951EFC00A9389A /* QuinceApi.framework in Frameworks */,
+				5027F13A13951CED00A9389A /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1785,6 +1809,7 @@
 				506C6B2E135616F60060BD9D /* ExtractEnvSequence.bundle */,
 				5035B8F013563EBE003E8570 /* ApplyValuesFromSeq.bundle */,
 				50EAF2C81393BAD200258AD1 /* FrequencyStandardContainer.bundle */,
+				5027F13913951CED00A9389A /* PitchContainer.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2000,6 +2025,26 @@
 			name = ResampleEnvelope;
 			sourceTree = "<group>";
 		};
+		5027F13B13951CED00A9389A /* PitchContainer */ = {
+			isa = PBXGroup;
+			children = (
+				5027F13C13951CED00A9389A /* Supporting Files */,
+				5027F14D13951E3600A9389A /* PitchContainer.h */,
+				5027F14E13951E3600A9389A /* PitchContainer.m */,
+			);
+			path = PitchContainer;
+			sourceTree = "<group>";
+		};
+		5027F13C13951CED00A9389A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5027F14713951D3E00A9389A /* PitchContainer-Info.plist */,
+				5027F14A13951D7300A9389A /* InfoPlist.strings */,
+				5027F14913951D4F00A9389A /* PitchContainer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		50299DE1114EA07C003A2185 /* ChildViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -2018,6 +2063,7 @@
 				506BF8A5117A5E3D00ECBC4E /* EnvelopeContainer */,
 				50EAF2CB1393BAD200258AD1 /* FrequencyStandardContainer */,
 				500CADCE122D5B3700B980B8 /* MarkContainer */,
+				5027F13B13951CED00A9389A /* PitchContainer */,
 				506BF8CD117A5FA700ECBC4E /* TimeGridView */,
 				506BF908117A612000ECBC4E /* VolumeStandard */,
 			);
@@ -2674,6 +2720,23 @@
 			name = ResampleEnvelope;
 			productName = ResampleEnvelope;
 			productReference = 501C284111CE8D920097B5F0 /* ResampleEnvelope.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		5027F13813951CED00A9389A /* PitchContainer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5027F14413951CED00A9389A /* Build configuration list for PBXNativeTarget "PitchContainer" */;
+			buildPhases = (
+				5027F13513951CED00A9389A /* Sources */,
+				5027F13613951CED00A9389A /* Frameworks */,
+				5027F13713951CED00A9389A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PitchContainer;
+			productName = PitchContainer;
+			productReference = 5027F13913951CED00A9389A /* PitchContainer.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		50325E9F1226947500E22031 /* CsoundPlayer */ = {
@@ -3542,6 +3605,7 @@
 				5015B00B133EAA3D006C85AA /* PBXTargetDependency */,
 				506C6B47135629E30060BD9D /* PBXTargetDependency */,
 				5035B90A13563F9D003E8570 /* PBXTargetDependency */,
+				5027F14613951D0600A9389A /* PBXTargetDependency */,
 			);
 			name = quince;
 			productInstallPath = "$(HOME)/Applications";
@@ -3602,6 +3666,7 @@
 				500CADA0122D59FD00B980B8 /* MarkChild */,
 				500CADBE122D5AB400B980B8 /* MarkContainer */,
 				504A69A911A9F692007F60FF /* Normalize */,
+				5027F13813951CED00A9389A /* PitchContainer */,
 				506BF99B117A660A00ECBC4E /* Quantization */,
 				8D15AC270486D014006FF6A4 /* quince */,
 				50A522B4117A52560072FB09 /* QuinceApi */,
@@ -3683,6 +3748,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				501C286111CE92F90097B5F0 /* ResampleEnvelopeWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5027F13713951CED00A9389A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4000,7 +4072,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50EAF2D01393BAD200258AD1 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4175,6 +4246,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				501C285A11CE8E5D0097B5F0 /* ResampleEnvelope.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5027F13513951CED00A9389A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5027F14F13951E3600A9389A /* PitchContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4621,6 +4700,11 @@
 			isa = PBXTargetDependency;
 			target = 501C284011CE8D920097B5F0 /* ResampleEnvelope */;
 			targetProxy = 501C285E11CE8E990097B5F0 /* PBXContainerItemProxy */;
+		};
+		5027F14613951D0600A9389A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5027F13813951CED00A9389A /* PitchContainer */;
+			targetProxy = 5027F14513951D0600A9389A /* PBXContainerItemProxy */;
 		};
 		5035B90313563F53003E8570 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5147,6 +5231,14 @@
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
+		5027F14A13951D7300A9389A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5027F14B13951D7300A9389A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		50BB627F116F958E0056C410 /* LayerControlsView.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -5162,14 +5254,6 @@
 			);
 			name = StripControl.xib;
 			sourceTree = "<group>";
-		};
-		50EAF2CE1393BAD200258AD1 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-			);
-			name = InfoPlist.strings;
-			path = /Users/max/SWProjects/quince/FrequencyStandardContainer;
-			sourceTree = "<absolute>";
 		};
 		50EAF2DF1393BC3200258AD1 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -5612,6 +5696,52 @@
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		5027F14213951CED00A9389A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/ContainerViews/PitchContainer/PitchContainer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/ContainerViews/PitchContainer/PitchContainer-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/ContainerViews/";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		5027F14313951CED00A9389A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/ContainerViews/PitchContainer/PitchContainer-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/ContainerViews/PitchContainer/PitchContainer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -8167,6 +8297,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		5027F14413951CED00A9389A /* Build configuration list for PBXNativeTarget "PitchContainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5027F14213951CED00A9389A /* Debug */,
+				5027F14313951CED00A9389A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		50325EA41226947600E22031 /* Build configuration list for PBXNativeTarget "CsoundPlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -8552,6 +8690,7 @@
 				50EAF2D41393BAD200258AD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50F420591198BF3D009F695A /* Build configuration list for PBXNativeTarget "AudioFilePlayer" */ = {
 			isa = XCConfigurationList;

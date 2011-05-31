@@ -58,6 +58,7 @@
 -(QuinceDocument *)document;
 -(long)subObjectsCount;
 -(void)setValue:(id)aValue forKey:(NSString *)aKey;
+-(void)checkAndUpdateSubsForKey:(NSString *)aKey;
 -(id)valueForKey:(NSString *)key;
 -(NSValue *)constrainValue:(id)value forKey:(NSString *)key;
 -(NSMutableDictionary *)dictionary;

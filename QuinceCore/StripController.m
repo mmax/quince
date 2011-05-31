@@ -107,9 +107,10 @@
 	[slc setViewClassNames:[controller containerViewClassNames]];
 	[slc setStripController:self];
 	[slc setMainController:controller];
-	[slc changeView:nil];
-	
+		
 	[[self layerControllers] addObject: slc];
+    [slc loadAnyCompatibleView];
+
     [tableViewController reloadTableView];
 	[subviewTableView selectRowIndexes:[NSIndexSet indexSetWithIndex:[layerControllers count]-1] byExtendingSelection:NO];
 	
@@ -373,7 +374,7 @@
 
     if(![layerControllers count])
         return nil;
-    return [[layerControllers lastObject]parameterOnYAxis];
+    return [[layerControllers objectAtIndex:0]parameterOnYAxis];
 }
 
 -(int)layerCount{
