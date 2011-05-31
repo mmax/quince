@@ -27,6 +27,7 @@
 #import "LayerController.h"
 #import "StripController.h"
 #import <QuinceApi/QuinceDocument.h>
+#import "EventInterceptView.h"
 
 @implementation LayerController
 
@@ -114,6 +115,8 @@
 	
 	if (![[viewMenu titleOfSelectedItem] isEqualToString:name])// if this method was called programatically,
 		[viewMenu selectItem:[viewMenu itemWithTitle:name]];  // make sure the current view's name is displayed in the popup...
+    
+    [(EventInterceptView *)[stripController interceptView]computeGuides];
 }
 
 -(BOOL)loadObjectWithController:(QuinceObjectController *)mc{
@@ -194,9 +197,9 @@
 	return [stripController newChildViewOfClassNamed:name];
 }
 
--(StripController *)stripController{
-	return stripController;
-}
+//-(StripController *)stripController{
+//	return stripController;
+//}
 
 -(void)addObjectToObjectPool:(QuinceObject *)quince{
 	[stripController addObjectToObjectPool:quince];

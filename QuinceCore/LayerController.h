@@ -25,6 +25,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+
 @class StripController, ContainerView, QuinceObject, ChildView, QuinceObjectController, MainController;
 
 @interface LayerController : NSObject {
