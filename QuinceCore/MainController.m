@@ -33,7 +33,7 @@
 
 -(MainController *)init{
 
-	if(self = [super init]){	
+	if((self = [super init])){	
 		stripControllScrollViews = [[NSMutableArray alloc]init];
 		count = 0;
 		quinceViewClasses = [[NSArray alloc]init];
@@ -151,6 +151,7 @@
 
 	StripController * stripController = 	[[StripController alloc]initWithNibName:@"StripControl" bundle:nil];
 	[stripController setController:self];
+    [stripController setDocument:doc];
 	NSView * stripControlView = [stripController view];
 	[stripControlView setFrame:stripControlRect];
 	 
@@ -315,7 +316,7 @@
 	NSView * sv = [aView superview];
 	NSEnumerator * e = [[sv subviews]objectEnumerator];
 	NSView * v;
-	while (v = [e nextObject])
+	while ((v = [e nextObject]))
 		[v setNeedsDisplayInRect:r];
 }
 

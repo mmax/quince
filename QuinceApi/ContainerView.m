@@ -689,7 +689,7 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 	[self createViewsForQuinceObjectController:mc];
 }
 
--(void)createViewsForQuinceObjectController:(QuinceObjectController *)mc{
+/*-(void)createViewsForQuinceObjectController:(QuinceObjectController *)mc{
 
 	NSArray * subControllers = [mc controllersForSubObjects];
 	//[document setIndeterminateProgressTask:[NSString stringWithFormat:@"%@: creating display...", [self className]]];
@@ -697,6 +697,30 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 	for(QuinceObjectController * mc in subControllers)
 		[self createChildViewForQuinceObjectController:mc];
 	//[document displayProgress:NO];	
+}*/
+
+-(void)createViewsForQuinceObjectController:(QuinceObjectController *)mc{
+    
+	NSArray * subControllers = [mc controllersForSubObjects];
+	QuinceObjectController * c;
+    float progress, max = [subControllers count];
+    //int iMax = max;
+    [document setProgressTask:[NSString stringWithFormat:@"%@: creating display...", [self className]]];
+	[document displayProgress:YES];
+    NSString * lx = [self keyForLocationOnXAxis];
+    NSString * sx = [self keyForSizeOnXAxis];
+    NSString * ly = [self keyForLocationOnYAxis];
+    
+    
+	for(int i=0; i<max;i++){//QuinceObjectController * mc in subControllers){
+        //[document setProgressTask:[NSString stringWithFormat:@"%@: creating display...%d/%d", [self className], i, iMax]];
+        c = [subControllers objectAtIndex:i];
+		//[self createChildViewForQuinceObjectController:c];
+        [self createChildViewForQuinceObjectController:c andBindWithKeysForLocationOnX:lx sizeOnX:sx locationOnY:ly];
+        progress = 100.0 * ((i+1)/(max));
+        [document setProgress:progress];
+    }
+	[document displayProgress:NO];	
 }
 
 -(void)clear{
@@ -710,13 +734,29 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 -(ChildView *)createChildViewForQuinceObjectController:(QuinceObjectController *)mc{
 	ChildView * childView = [layerController newChildViewOfClassNamed:[self defaultChildViewClassName]];
 	[childView setEnclosingView:self];
-	[childView setController:mc];
+	//[childView setController:mc];
+    
 	[mc registerChildView:childView];
 	//[childView setInteriorColor:[mc color]];
 	[childViews addObject:childView];
 	[self addSubview:childView];
 	return childView;	
 }
+
+-(ChildView *)createChildViewForQuinceObjectController:(QuinceObjectController *)mc andBindWithKeysForLocationOnX:(NSString *)lx sizeOnX:(NSString *)sx locationOnY:(NSString *)ly{
+    
+	ChildView * childView = [layerController newChildViewOfClassNamed:[self defaultChildViewClassName]];
+	[childView setEnclosingView:self];
+	[childView setController:mc andBindWithKeysForLocationOnX:lx sizeOnX:sx locationOnY:ly];
+    
+	[mc registerChildView:childView];
+	//[childView setInteriorColor:[mc color]];
+	[childViews addObject:childView];
+	[self addSubview:childView];
+	return childView;	
+}
+
+//-(void)setController:(QuinceObjectController *)mc andBindWithKeysForLocationOnX:(NSString *)lx sizeOnX:(NSString *)sx locationOnY:(NSString *)ly
 
 -(ChildView *)childViewWithController:(QuinceObjectController *)mc{
 
@@ -735,7 +775,7 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 	NSMutableArray * results = [[NSMutableArray alloc] init];
 	ChildView * child;
 	NSEnumerator * e = [childViews objectEnumerator];
-	while(child = [e nextObject]) {
+	while((child = [e nextObject])) {
 		if(NSIntersectsRect([child frame], rect))
 			[results addObject:child];
 	}

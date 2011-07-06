@@ -31,7 +31,7 @@
 
 @implementation LayerController
 
-@synthesize stripController, mainController;
+@synthesize stripController, mainController, document;
 
 + (id) controller{
     return [[[self alloc] init] autorelease];
@@ -231,7 +231,8 @@
 }
 
 -(ChildView *)newChildViewOfClassNamed:(NSString *)name{
-	return [stripController newChildViewOfClassNamed:name];
+//	return [stripController newChildViewOfClassNamed:name];
+  	return [document newChildViewOfClassNamed:name];
 }
 
 //-(StripController *)stripController{

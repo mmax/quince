@@ -44,8 +44,8 @@
 
 	if((self = [super init])){
 
-		dictionary = [[[NSMutableDictionary alloc] initWithDictionary:[quince dictionary]]retain];
-		[self setValue:[[[NSMutableArray alloc]init]autorelease] forKey:@"subObjects"];
+		dictionary = [[NSMutableDictionary alloc] initWithDictionary:[quince dictionary]];
+		[self setValue:[[NSMutableArray alloc]init] forKey:@"subObjects"];
 		[self setValue:nil forKey:@"superObject"];
 
 		[self setValue:[self createUUID] forKey:@"id"];
@@ -96,7 +96,7 @@
 		//[self setValue:[[NSMutableArray alloc]init] forKey:@"subObjects"];
 		//[[self valueForKey:@"subObjects"]removeAllObjects];// subObjects will be added by the controller!
 		//[dictionary removeObjectForKey:@"subObjects"];
-		[self setValue:[[[NSMutableArray alloc]init]autorelease] forKey:@"subObjects"];
+		[self setValue:[[NSMutableArray alloc]init] forKey:@"subObjects"];
 		//[[dictionary valueForKey:@"subObjects"]removeAllObjects]; 
 		
 		//dictionary = [[NSMutableDictionary alloc]initWithDictionary:xml];		

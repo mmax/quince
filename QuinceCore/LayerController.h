@@ -26,7 +26,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class StripController, ContainerView, QuinceObject, ChildView, QuinceObjectController, MainController;
+@class StripController, ContainerView, QuinceObject, ChildView, QuinceObjectController, MainController, QuinceDocument;
 
 @interface LayerController : NSObject {
 	
@@ -39,10 +39,13 @@
 	
 	StripController * stripController;
 	MainController * mainController;
+    QuinceDocument * document;
 }
 
 @property (assign) StripController * stripController;
 @property (assign) MainController * mainController;
+@property (assign) QuinceDocument * document;
+
 // Convenience factory method
 + (id) controller;
 

@@ -30,7 +30,7 @@
 
 #import <QuinceApi/ContainerView.h>
 
-@class StripLayerControlsArrayController, MainController, EventInterceptView, ChildView;
+@class StripLayerControlsArrayController, MainController, EventInterceptView, ChildView, QuinceDocument;
 
 
 @protocol SubviewTableViewControllerDataSourceProtocol 
@@ -51,13 +51,15 @@
     NSMutableArray * layerControllers;
     NSMutableArray * viewClassNames;	
 
-	
+
 	MainController * controller;
+    QuinceDocument * document;
 	
 	BOOL volumeGuides;
 }
 
 @property (assign) MainController * controller;
+@property (assign) QuinceDocument * document;
 
 -(NSMutableArray *)layerControllers;
 -(IBAction) addRow:(id) sender;

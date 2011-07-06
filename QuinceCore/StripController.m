@@ -34,7 +34,7 @@
 @implementation StripController
 
 @synthesize controller;
-
+@synthesize document;
 
 
 -(StripController *)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
@@ -107,6 +107,7 @@
 	[slc setViewClassNames:[controller containerViewClassNames]];
 	[slc setStripController:self];
 	[slc setMainController:controller];
+    [slc setDocument:document];
 		
 	[[self layerControllers] addObject: slc];
     [slc loadAnyCompatibleView];

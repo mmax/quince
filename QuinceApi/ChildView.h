@@ -91,6 +91,7 @@
 -(NSString *)description;
 -(BOOL)canBeDirectlyCreatedByUser;
 -(NSPoint)center;
+-(void)setController:(QuinceObjectController *)mc andBindWithKeysForLocationOnX:(NSString *)lx sizeOnX:(NSString *)sx locationOnY:(NSString *)ly;
 -(void)setController:(QuinceObjectController *)mc;
 -(QuinceObjectController *)controller;
 -(void)bindToController;
