@@ -37,7 +37,7 @@
 
 -(Player *)init{
 
-	if(self = [super init]){
+	if((self = [super init])){
 		[self setStartTime:[NSNumber numberWithInt:0]];
 		trackNodes = [[NSMutableArray alloc]init];
 		isPlaying = NO;
@@ -157,7 +157,7 @@ void sequenceUserCallback (
 	
 	// add it to the graph
 	err = AUGraphAddNode(graph, &cd, &outputNode);
-	if(err != noErr) NSLog(@"%@: error creating defaultOutput node: %d", [self className], err);
+	if(err != noErr) NSLog(@"%@: error creating defaultOutput node: %ld", [self className], err);
 		
 	// create a sequence
 	NewMusicSequence(&sequence); // error checking?!?!

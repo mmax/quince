@@ -48,6 +48,8 @@ typedef struct AQPlayerState {
     bool                          mIsRunning;					// 10
 	UInt64						  lastPacket;
 	void *						  player;
+    double                        index;
+    double                        frequency;
 } AQPlayerState;
 
 

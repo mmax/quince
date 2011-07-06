@@ -31,7 +31,7 @@
 
 -(CsoundPlayer *)init{
 
-	if(self = [super init]){
+	if((self = [super init])){
 		[NSBundle loadNibNamed:@"CsoundPlayerWindow" owner:self];
 		[self Clicks:nil];
 		[scoreView setRichText:NO];
