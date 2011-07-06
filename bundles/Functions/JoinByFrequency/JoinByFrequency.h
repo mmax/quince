@@ -33,6 +33,7 @@
 	
 	IBOutlet NSTextField * percentageField;
 	IBOutlet NSPanel * window;
+    NSArray * subs;
 	float maxCent;
 	QuinceObject * mom;
 	QuinceObject * source;

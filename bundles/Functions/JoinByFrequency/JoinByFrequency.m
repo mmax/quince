@@ -57,7 +57,8 @@
 	mom = [self outputObjectOfType:@"QuinceObject"];
 	source = [self objectForPurpose:@"source"];
 	[source sortChronologically];
-	[self joinNextFrom:0 into:nil];
+	subs = [source valueForKey:@"subObjects"];
+    [self joinNextFrom:0 into:nil];
 	NSString * s = [NSString stringWithFormat:@"%@_joined_%d%", [source valueForKey:@"name"], (int)maxCent];
 	[mom setValue:s forKey:@"name"];
 	[mom update];
@@ -73,13 +74,12 @@
 	if(index >= [[source valueForKey:@"subObjects"]count]-1)
 		return;
 	
-	//NSLog(@"here i am");
 	QuinceObject * a;
 	
 	if(j) a=j;
-	else a = [[source valueForKey:@"subObjects"]objectAtIndex:index];
+	else a = [subs objectAtIndex:index];
 	
-	QuinceObject * b = [[source valueForKey:@"subObjects"]objectAtIndex:index+1];
+	QuinceObject * b = [subs objectAtIndex:index+1];
 
 	double freqA = [[a valueForKey:@"frequency"]doubleValue];
 	double freqB = [[b valueForKey:@"frequency"]doubleValue];		
@@ -90,7 +90,7 @@
 		if(!j) // if we have a j we already copied it onto the new output object
 			[[mom controller]addSubObjectWithController:[[a copy]controller] withUpdate:NO];//copy the event as it was
 		
-		if(index == [[source valueForKey:@"subObjects"]count]-2){ // if b was the last event in the source
+		if(index == [subs count]-2){ // if b was the last event in the source
 			[[mom controller]addSubObjectWithController:[[b copy]controller] withUpdate:NO];//copy the event as it was
 			return;																			// and finish
 		}
