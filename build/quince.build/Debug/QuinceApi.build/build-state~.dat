@@ -1,1024 +1,0 @@
-TQuinceApi
-v7
-r0
-t327450185.618361
-cCheck dependencies
-cSymLink /Library/Frameworks/QuinceApi.framework/Versions/Current A
-cSymLink /Library/Frameworks/QuinceApi.framework/Resources Versions/Current/Resources
-cSymLink /Library/Frameworks/QuinceApi.framework/Headers Versions/Current/Headers
-cProcessInfoPlistFile /Library/Frameworks/QuinceApi.framework/Versions/A/Resources/Info.plist QuinceApi/QuinceApi-Info.plist
-cSymLink /users/max/SWProjects/quince/build/Debug/QuinceApi.framework /Library/Frameworks/QuinceApi.framework
-cCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/ChildView.h /Users/max/SWProjects/quince/QuinceApi/ChildView.h
-cCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/ContainerView.h /Users/max/SWProjects/quince/QuinceApi/ContainerView.h
-cCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/Function.h /Users/max/SWProjects/quince/QuinceApi/Function.h
-cCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/QuinceObject.h /Users/max/SWProjects/quince/QuinceApi/QuinceObject.h
-cCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/AudioFile.h /Users/max/SWProjects/quince/QuinceApi/AudioFile.h
-cCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/DataFile.h /Users/max/SWProjects/quince/QuinceApi/DataFile.h
-cCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/QuinceObjectController.h /Users/max/SWProjects/quince/QuinceApi/QuinceObjectController.h
-cCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/QuinceDocument.h QuinceCore/QuinceDocument.h
-cCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/FunctionLoader.h QuinceApi/FunctionLoader.h
-cCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/Envelope.h QuinceApi/Envelope.h
-cCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/FunctionGraph.h QuinceApi/FunctionGraph.h
-cCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/Player.h QuinceApi/Player.h
-cTouch /Library/Frameworks/QuinceApi.framework
-
-N/Developer/SDKs/MacOSX10.5.sdk
-c000000004B7D589B00000000000000EE
-t1266505883
-s238
-
-N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h
-c000000004864BB88000000000000170F
-t1214561160
-s5903
-
-N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.h
-c000000004864A73B000000000000095A
-t1214555963
-s2394
-
-N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AudioUnit.framework/Headers/AudioUnit.h
-c000000004864A72E00000000000003CC
-t1214555950
-s972
-
-N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
-c0000000040C4AA6800000000000001E5
-t1086630504
-s485
-
-N/Library/Frameworks/QuinceApi.framework
-t1305757385
-s170
-
-N/Library/Frameworks/QuinceApi.framework/Headers
-t3
-s24
-
-N/Library/Frameworks/QuinceApi.framework/QuinceApi
-t3
-s26
-
-N/Library/Frameworks/QuinceApi.framework/Resources
-t3
-s26
-
-N/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/AudioFile.h
-t1305757385
-s1223
-
-N/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/ChildView.h
-t1305757385
-s2675
-
-N/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/ContainerView.h
-t1305757385
-s6100
-
-N/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/DataFile.h
-t1305757385
-s1044
-
-N/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/Envelope.h
-t1305757385
-s1333
-
-N/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/Function.h
-t1305757385
-s6068
-
-N/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/FunctionGraph.h
-t1305757385
-s1212
-
-N/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/FunctionLoader.h
-t1305757385
-s1611
-
-N/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/Player.h
-t1305757385
-s4632
-
-N/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/QuinceDocument.h
-t1305757385
-s7744
-
-N/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/QuinceObject.h
-t1305757385
-s4360
-
-N/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/QuinceObjectController.h
-t1305757385
-s3592
-
-N/Library/Frameworks/QuinceApi.framework/Versions/A/QuinceApi
-t1302720721
-s203392
-
-N/Library/Frameworks/QuinceApi.framework/Versions/A/Resources/Info.plist
-t1305757385
-s1071
-
-N/Library/Frameworks/QuinceApi.framework/Versions/Current
-t3
-s1
-
-N/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-c000000004AD8432000000000004C9980
-t1255686944
-s5020032
-
-N/System/Library/Frameworks/AudioUnit.framework/AudioUnit
-c000000004AD8427F0000000000012150
-t1255686783
-s74064
-
-N/Users/max/SWProjects/quince/QuinceApi/AudioFile.h
-c000000004D7B68CE00000000000004C7
-t1299933390
-s1223
-i<Cocoa/Cocoa.h>
-i"DataFile.h"
-
-N/Users/max/SWProjects/quince/QuinceApi/AudioFile.m
-c000000004D7B68CE0000000000000B58
-t1299933390
-s2904
-i"AudioFile.h"
-
-N/Users/max/SWProjects/quince/QuinceApi/ChildView.h
-c000000004D7B674B0000000000000A73
-t1299933003
-s2675
-i<Cocoa/Cocoa.h>
-
-N/Users/max/SWProjects/quince/QuinceApi/ChildView.m
-c000000004D7B6B320000000000003A8D
-t1299934002
-s14989
-i"ChildView.h"
-i"ContainerView.h"
-i"QuinceObject.h"
-i"QuinceObjectController.h"
-
-N/Users/max/SWProjects/quince/QuinceApi/ContainerView.h
-c000000004D87ADCB00000000000017D4
-t1300737483
-s6100
-i<Cocoa/Cocoa.h>
-
-N/Users/max/SWProjects/quince/QuinceApi/ContainerView.m
-c000000004D87AEA60000000000007848
-t1300737702
-s30792
-i"ContainerView.h"
-i"QuinceObject.h"
-i"ChildView.h"
-i"QuinceDocument.h"
-i"LayerController.h"
-i"QuinceObjectController.h"
-i"MainController.h"
-
-N/Users/max/SWProjects/quince/QuinceApi/DataFile.h
-c000000004D7B68CE0000000000000414
-t1299933390
-s1044
-i<Cocoa/Cocoa.h>
-i"QuinceObject.h"
-
-N/Users/max/SWProjects/quince/QuinceApi/DataFile.m
-c000000004D7B68CE0000000000000647
-t1299933390
-s1607
-i"DataFile.h"
-
-N/Users/max/SWProjects/quince/QuinceApi/Envelope.h
-c000000004D74EAE90000000000000535
-t1299507945
-s1333
-i<Cocoa/Cocoa.h>
-i<QuinceApi/QuinceObject.h>
-
-N/Users/max/SWProjects/quince/QuinceApi/Envelope.m
-c000000004DA5DCA4000000000000180C
-t1302715556
-s6156
-i"Envelope.h"
-i<QuinceApi/AudioFile.h>
-i<QuinceApi/QuinceDocument.h>
-i<QuinceApi/QuinceObject.h>
-
-N/Users/max/SWProjects/quince/QuinceApi/Function.h
-c000000004D7B68CE00000000000017B4
-t1299933390
-s6068
-i<Cocoa/Cocoa.h>
-
-N/Users/max/SWProjects/quince/QuinceApi/Function.m
-c000000004D87C15300000000000012C1
-t1300742483
-s4801
-i"Function.h"
-i"QuinceObject.h"
-i"QuinceDocument.h"
-
-N/Users/max/SWProjects/quince/QuinceApi/FunctionGraph.h
-c000000004D74EAA300000000000004BC
-t1299507875
-s1212
-i<Cocoa/Cocoa.h>
-i<QuinceApi/Function.h>
-
-N/Users/max/SWProjects/quince/QuinceApi/FunctionGraph.m
-c000000004D8E9D3200000000000021A1
-t1301191986
-s8609
-i"FunctionGraph.h"
-
-N/Users/max/SWProjects/quince/QuinceApi/FunctionLoader.h
-c000000004D74EAA3000000000000064B
-t1299507875
-s1611
-i<Cocoa/Cocoa.h>
-
-N/Users/max/SWProjects/quince/QuinceApi/FunctionLoader.m
-c000000004D87C0040000000000000DA6
-t1300742148
-s3494
-i"FunctionLoader.h"
-i<QuinceApi/Function.h>
-i<QuinceApi/QuinceDocument.h>
-
-N/Users/max/SWProjects/quince/QuinceApi/Player.h
-c000000004D74EAA40000000000001218
-t1299507876
-s4632
-i<Cocoa/Cocoa.h>
-i<AudioToolbox/AudioToolbox.h>
-i<QuinceApi/QuinceObject.h>
-i<AudioUnit/AudioUnit.h>
-
-N/Users/max/SWProjects/quince/QuinceApi/Player.m
-c000000004D74EAA40000000000005A8C
-t1299507876
-s23180
-i<QuinceApi/Player.h>
-i<QuinceApi/QuinceDocument.h>
-
-N/Users/max/SWProjects/quince/QuinceApi/QuinceObject.h
-c000000004D7B68CE0000000000001108
-t1299933390
-s4360
-i<Cocoa/Cocoa.h>
-
-N/Users/max/SWProjects/quince/QuinceApi/QuinceObject.m
-c000000004DA5E5260000000000006E6E
-t1302717734
-s28270
-i"QuinceObject.h"
-i"QuinceDocument.h"
-
-N/Users/max/SWProjects/quince/QuinceApi/QuinceObjectController.h
-c000000004D7B68CE0000000000000E08
-t1299933390
-s3592
-i<Cocoa/Cocoa.h>
-i<QuinceApi/QuinceObject.h>
-i<QuinceApi/ContainerView.h>
-i<QuinceApi/QuinceDocument.h>
-
-N/Users/max/SWProjects/quince/QuinceApi/QuinceObjectController.m
-c000000004D7B68CE0000000000003DB0
-t1299933390
-s15792
-i"QuinceObjectController.h"
-
-N/Users/max/SWProjects/quince/QuinceCore/LayerController.h
-c000000004D74EAA300000000000009BC
-t1299507875
-s2492
-i<Cocoa/Cocoa.h>
-
-N/Users/max/SWProjects/quince/QuinceCore/MainController.h
-c000000004D87DB660000000000000E96
-t1300749158
-s3734
-i<Cocoa/Cocoa.h>
-i"StripController.h"
-
-N/Users/max/SWProjects/quince/QuinceCore/QuinceDocument.h
-c000000004D87CEA00000000000001E40
-t1300745888
-s7744
-i<Cocoa/Cocoa.h>
-i<QuinceApi/ContainerView.h>
-i<QuinceApi/AudioFile.h>
-i<QuinceApi/Function.h>
-i<QuinceApi/QuinceObjectController.h>
-i"LayerController.h"
-i"MainController.h"
-i<QuinceApi/Player.h>
-i<QuinceApi/FunctionGraph.h>
-i<QuinceApi/QuinceObject.h>
-
-N/Users/max/SWProjects/quince/QuinceCore/StripController.h
-c000000004D87DA350000000000000C60
-t1300748853
-s3168
-i<Cocoa/Cocoa.h>
-i"StripLayerControlsArrayController.h"
-i<QuinceApi/ContainerView.h>
-
-N/Users/max/SWProjects/quince/QuinceCore/StripLayerControlsArrayController.h
-c000000004D74EAA50000000000000BDD
-t1299507877
-s3037
-i"SubviewTableViewCell.h"
-i"StripController.h"
-
-N/Users/max/SWProjects/quince/QuinceCore/SubviewTableViewCell.h
-c000000004D74EAA500000000000003B4
-t1299507877
-s948
-i<AppKit/AppKit.h>
-
-N/Users/max/SWProjects/quince/build/Debug/QuinceApi.framework
-t3
-s39
-
-N/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/AudioFile.o
-t1301192423
-s15464
-
-N/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/ChildView.o
-t1301192424
-s83424
-
-N/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/ContainerView.o
-t1301192425
-s120020
-
-N/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/DataFile.o
-t1301192423
-s17104
-
-N/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/Envelope.o
-t1302715754
-s51988
-
-N/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/Function.o
-t1301192424
-s49280
-
-N/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/FunctionGraph.o
-t1301192423
-s23920
-
-N/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/FunctionLoader.o
-t1301192423
-s46664
-
-N/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/Player.o
-t1301192423
-s67608
-
-N/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/QuinceApi.LinkFileList
-c000000004D8E9EDB0000000000000479
-t1301192411
-s1145
-
-N/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/QuinceObject.o
-t1302720719
-s115172
-
-N/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/QuinceObjectController.o
-t1301192424
-s82940
-
-N/users/max/SWProjects/quince/QuinceApi/Envelope.h
-c000000004D74EAE90000000000000535
-t1299507945
-s1333
-i<Cocoa/Cocoa.h>
-i<QuinceApi/QuinceObject.h>
-
-N/users/max/SWProjects/quince/QuinceApi/Envelope.m
-c000000004D74EB36000000000000180C
-t1299508022
-s6156
-i"Envelope.h"
-i<QuinceApi/AudioFile.h>
-i<QuinceApi/QuinceDocument.h>
-i<QuinceApi/QuinceObject.h>
-
-N/users/max/SWProjects/quince/QuinceApi/FunctionGraph.h
-c000000004D74EAA300000000000004BC
-t1299507875
-s1212
-i<Cocoa/Cocoa.h>
-i<QuinceApi/Function.h>
-
-N/users/max/SWProjects/quince/QuinceApi/FunctionGraph.m
-c000000004D8E9D3200000000000021A1
-t1301191986
-s8609
-i"FunctionGraph.h"
-
-N/users/max/SWProjects/quince/QuinceApi/FunctionLoader.h
-c000000004D74EAA3000000000000064B
-t1299507875
-s1611
-i<Cocoa/Cocoa.h>
-
-N/users/max/SWProjects/quince/QuinceApi/FunctionLoader.m
-c000000004D87C0040000000000000DA6
-t1300742148
-s3494
-i"FunctionLoader.h"
-i<QuinceApi/Function.h>
-i<QuinceApi/QuinceDocument.h>
-
-N/users/max/SWProjects/quince/QuinceApi/Player.h
-c000000004D74EAA40000000000001218
-t1299507876
-s4632
-
-N/users/max/SWProjects/quince/QuinceApi/Player.m
-c000000004D74EAA40000000000005A8C
-t1299507876
-s23180
-i<QuinceApi/Player.h>
-i<QuinceApi/QuinceDocument.h>
-
-N/users/max/SWProjects/quince/QuinceCore/LayerController.h
-c000000004D74EAA300000000000009BC
-t1299507875
-s2492
-i<Cocoa/Cocoa.h>
-
-N/users/max/SWProjects/quince/QuinceCore/MainController.h
-c000000004D87DB660000000000000E96
-t1300749158
-s3734
-i<Cocoa/Cocoa.h>
-i"StripController.h"
-
-N/users/max/SWProjects/quince/QuinceCore/QuinceDocument.h
-c000000004D87CEA00000000000001E40
-t1300745888
-s7744
-i<Cocoa/Cocoa.h>
-i<QuinceApi/ContainerView.h>
-i<QuinceApi/AudioFile.h>
-i<QuinceApi/Function.h>
-i<QuinceApi/QuinceObjectController.h>
-i"LayerController.h"
-i"MainController.h"
-i<QuinceApi/Player.h>
-i<QuinceApi/FunctionGraph.h>
-i<QuinceApi/QuinceObject.h>
-
-N/users/max/SWProjects/quince/QuinceCore/StripController.h
-c000000004D87DA350000000000000C60
-t1300748853
-s3168
-i<Cocoa/Cocoa.h>
-i"StripLayerControlsArrayController.h"
-i<QuinceApi/ContainerView.h>
-
-N/users/max/SWProjects/quince/QuinceCore/StripLayerControlsArrayController.h
-c000000004D74EAA50000000000000BDD
-t1299507877
-s3037
-i"SubviewTableViewCell.h"
-i"StripController.h"
-
-N/users/max/SWProjects/quince/QuinceCore/SubviewTableViewCell.h
-c000000004D74EAA500000000000003B4
-t1299507877
-s948
-i<AppKit/AppKit.h>
-
-N/users/max/SWProjects/quince/build/Debug/QuinceApi.framework
-t3
-s39
-
-N/users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/AudioFile.o
-t1301192423
-s15464
-
-N/users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/ChildView.o
-t1301192424
-s83424
-
-N/users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/ContainerView.o
-t1301192425
-s120020
-
-N/users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/DataFile.o
-t1301192423
-s17104
-
-N/users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/Envelope.o
-t1301192423
-s51988
-
-N/users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/Function.o
-t1301192424
-s49280
-
-N/users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/FunctionGraph.o
-t1301192423
-s23920
-
-N/users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/FunctionLoader.o
-t1301192423
-s46664
-
-N/users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/Player.o
-t1301192423
-s67608
-
-N/users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/QuinceApi.LinkFileList
-c000000004D8E9EDB0000000000000479
-t1301192411
-s1145
-
-N/users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/QuinceObject.o
-t1301192424
-s115172
-
-N/users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/QuinceObjectController.o
-t1301192424
-s82940
-
-N/var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-aqscdlrkczkblafypjkbgmwjobyo/AppKit.h.gch
-t1290463322
-s53501680
-
-N/var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-ebuclixspxvnqygkvnjhdjwssbuh/AppKit.h.gch
-t1301192422
-s53501680
-
-NQuinceApi/QuinceApi-Info.plist
-c000000004C5749B600000000000002C1
-t1280788918
-s705
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies327450185#327450185#0(1507"[WARN]warning: no rule to process file '$(PROJECT_DIR)/QuinceApi/FunctionGraph.m' of type sourcecode.c.objc for architecture i386[WARN]warning: no rule to process file '$(PROJECT_DIR)/QuinceApi/FunctionLoader.m' of type sourcecode.c.objc for architecture i386[WARN]warning: no rule to process file '$(PROJECT_DIR)/QuinceApi/Envelope.m' of type sourcecode.c.objc for architecture i386[WARN]warning: no rule to process file '$(PROJECT_DIR)/QuinceApi/Player.m' of type sourcecode.c.objc for architecture i386[WARN]warning: no rule to process file '/Users/max/SWProjects/quince/QuinceApi/AudioFile.m' of type sourcecode.c.objc for architecture i386[WARN]warning: no rule to process file '/Users/max/SWProjects/quince/QuinceApi/DataFile.m' of type sourcecode.c.objc for architecture i386[WARN]warning: no rule to process file '/Users/max/SWProjects/quince/QuinceApi/Function.m' of type sourcecode.c.objc for architecture i386[WARN]warning: no rule to process file '/Users/max/SWProjects/quince/QuinceApi/QuinceObject.m' of type sourcecode.c.objc for architecture i386[WARN]warning: no rule to process file '/Users/max/SWProjects/quince/QuinceApi/QuinceObjectController.m' of type sourcecode.c.objc for architecture i386[WARN]warning: no rule to process file '/Users/max/SWProjects/quince/QuinceApi/ChildView.m' of type sourcecode.c.objc for architecture i386[WARN]warning: no rule to process file '/Users/max/SWProjects/quince/QuinceApi/ContainerView.m' of type sourcecode.c.objc for architecture i38611(22@123"warning: no rule to process file '$(PROJECT_DIR)/QuinceApi/FunctionGraph.m' of type sourcecode.c.objc for architecture i386327450185#18446744073709551615#0#0(1@0"0(22@124"warning: no rule to process file '$(PROJECT_DIR)/QuinceApi/FunctionLoader.m' of type sourcecode.c.objc for architecture i386327450185#18446744073709551615#0#0(1@0"0(22@118"warning: no rule to process file '$(PROJECT_DIR)/QuinceApi/Envelope.m' of type sourcecode.c.objc for architecture i386327450185#18446744073709551615#0#0(1@0"0(22@116"warning: no rule to process file '$(PROJECT_DIR)/QuinceApi/Player.m' of type sourcecode.c.objc for architecture i386327450185#18446744073709551615#0#0(1@0"0(22@133"warning: no rule to process file '/Users/max/SWProjects/quince/QuinceApi/AudioFile.m' of type sourcecode.c.objc for architecture i386327450185#18446744073709551615#0#0(1@0"0(22@132"warning: no rule to process file '/Users/max/SWProjects/quince/QuinceApi/DataFile.m' of type sourcecode.c.objc for architecture i386327450185#18446744073709551615#0#0(1@0"0(22@132"warning: no rule to process file '/Users/max/SWProjects/quince/QuinceApi/Function.m' of type sourcecode.c.objc for architecture i386327450185#18446744073709551615#0#0(1@0"0(22@136"warning: no rule to process file '/Users/max/SWProjects/quince/QuinceApi/QuinceObject.m' of type sourcecode.c.objc for architecture i386327450185#18446744073709551615#0#0(1@0"0(22@146"warning: no rule to process file '/Users/max/SWProjects/quince/QuinceApi/QuinceObjectController.m' of type sourcecode.c.objc for architecture i386327450185#18446744073709551615#0#0(1@0"0(22@133"warning: no rule to process file '/Users/max/SWProjects/quince/QuinceApi/ChildView.m' of type sourcecode.c.objc for architecture i386327450185#18446744073709551615#0#0(1@0"0(22@137"warning: no rule to process file '/Users/max/SWProjects/quince/QuinceApi/ContainerView.m' of type sourcecode.c.objc for architecture i386327450185#18446744073709551615#0#0(1@0"0(0#1#0"8638952448#0"0#
-
-CCompileC build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/AudioFile.o /Users/max/SWProjects/quince/QuinceApi/AudioFile.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322885223.513618
-e322885223.819229
-r1
-xCompileC
-xbuild/quince.build/Debug/QuinceApi.build/Objects-normal/i386/AudioFile.o
-x/Users/max/SWProjects/quince/QuinceApi/AudioFile.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@58"Compile /Users/max/SWProjects/quince/QuinceApi/AudioFile.m322885223#322885223#0(0"0(0#0#50"/Users/max/SWProjects/quince/QuinceApi/AudioFile.m4300911832#1439"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wunused-value -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -F/Developer/Library/Frameworks -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-ebuclixspxvnqygkvnjhdjwssbuh/AppKit.h -c /Users/max/SWProjects/quince/QuinceApi/AudioFile.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/AudioFile.o0#
-
-CCompileC build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/ChildView.o /Users/max/SWProjects/quince/QuinceApi/ChildView.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322885224.461278
-e322885224.884496
-r1
-xCompileC
-xbuild/quince.build/Debug/QuinceApi.build/Objects-normal/i386/ChildView.o
-x/Users/max/SWProjects/quince/QuinceApi/ChildView.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@58"Compile /Users/max/SWProjects/quince/QuinceApi/ChildView.m322885224#322885224#0(0"0(0#0#50"/Users/max/SWProjects/quince/QuinceApi/ChildView.m4300911832#1439"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wunused-value -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -F/Developer/Library/Frameworks -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-ebuclixspxvnqygkvnjhdjwssbuh/AppKit.h -c /Users/max/SWProjects/quince/QuinceApi/ChildView.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/ChildView.o0#
-
-CCompileC build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/ContainerView.o /Users/max/SWProjects/quince/QuinceApi/ContainerView.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322885224.534958
-e322885225.068264
-r1
-xCompileC
-xbuild/quince.build/Debug/QuinceApi.build/Objects-normal/i386/ContainerView.o
-x/Users/max/SWProjects/quince/QuinceApi/ContainerView.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@62"Compile /Users/max/SWProjects/quince/QuinceApi/ContainerView.m322885224#322885225#0(0"0(0#0#54"/Users/max/SWProjects/quince/QuinceApi/ContainerView.m4300911832#1447"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wunused-value -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -F/Developer/Library/Frameworks -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-ebuclixspxvnqygkvnjhdjwssbuh/AppKit.h -c /Users/max/SWProjects/quince/QuinceApi/ContainerView.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/ContainerView.o0#
-
-CCompileC build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/DataFile.o /Users/max/SWProjects/quince/QuinceApi/DataFile.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322885223.572298
-e322885223.792285
-r1
-xCompileC
-xbuild/quince.build/Debug/QuinceApi.build/Objects-normal/i386/DataFile.o
-x/Users/max/SWProjects/quince/QuinceApi/DataFile.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@57"Compile /Users/max/SWProjects/quince/QuinceApi/DataFile.m322885223#322885223#0(0"0(0#0#49"/Users/max/SWProjects/quince/QuinceApi/DataFile.m4300911832#1437"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wunused-value -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -F/Developer/Library/Frameworks -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-ebuclixspxvnqygkvnjhdjwssbuh/AppKit.h -c /Users/max/SWProjects/quince/QuinceApi/DataFile.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/DataFile.o0#
-
-CCompileC build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/Envelope.o /Users/max/SWProjects/quince/QuinceApi/Envelope.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s324408535.767061
-e324408554.373116
-r1
-xCompileC
-xbuild/quince.build/Debug/QuinceApi.build/Objects-normal/i386/Envelope.o
-x/Users/max/SWProjects/quince/QuinceApi/Envelope.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@57"Compile /Users/max/SWProjects/quince/QuinceApi/Envelope.m324408535#324408554#0(0"0(0#0#49"/Users/max/SWProjects/quince/QuinceApi/Envelope.m4300911832#1437"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wunused-value -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -F/Developer/Library/Frameworks -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-ebuclixspxvnqygkvnjhdjwssbuh/AppKit.h -c /Users/max/SWProjects/quince/QuinceApi/Envelope.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/Envelope.o0#
-
-CCompileC build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/Envelope.o /users/max/SWProjects/quince/QuinceApi/Envelope.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322441964.722356
-e322441965.345655
-r1
-xCompileC
-xbuild/quince.build/Debug/QuinceApi.build/Objects-normal/i386/Envelope.o
-x/users/max/SWProjects/quince/QuinceApi/Envelope.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@57"Compile /users/max/SWProjects/quince/QuinceApi/Envelope.m322441964#322441965#0(0"0(0#0#49"/users/max/SWProjects/quince/QuinceApi/Envelope.m4300911832#1437"    cd /users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wunused-value -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-generated-files.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-own-target-headers.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-all-target-headers.hmap -iquote /users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-project-headers.hmap -F/users/max/SWProjects/quince/build/Debug -F/Developer/Library/Frameworks -I/users/max/SWProjects/quince/build/Debug/include -I/users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources/i386 -I/users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-aqscdlrkczkblafypjkbgmwjobyo/AppKit.h -c /users/max/SWProjects/quince/QuinceApi/Envelope.m -o /users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/Envelope.o0#
-
-CCompileC build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/Function.o /Users/max/SWProjects/quince/QuinceApi/Function.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322885223.792414
-e322885224.124504
-r1
-xCompileC
-xbuild/quince.build/Debug/QuinceApi.build/Objects-normal/i386/Function.o
-x/Users/max/SWProjects/quince/QuinceApi/Function.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@57"Compile /Users/max/SWProjects/quince/QuinceApi/Function.m322885223#322885224#0(0"0(0#0#49"/Users/max/SWProjects/quince/QuinceApi/Function.m4300911832#1437"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wunused-value -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -F/Developer/Library/Frameworks -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-ebuclixspxvnqygkvnjhdjwssbuh/AppKit.h -c /Users/max/SWProjects/quince/QuinceApi/Function.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/Function.o0#
-
-CCompileC build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/FunctionGraph.o /Users/max/SWProjects/quince/QuinceApi/FunctionGraph.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322885222.751698
-e322885223.045076
-r1
-xCompileC
-xbuild/quince.build/Debug/QuinceApi.build/Objects-normal/i386/FunctionGraph.o
-x/Users/max/SWProjects/quince/QuinceApi/FunctionGraph.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@62"Compile /Users/max/SWProjects/quince/QuinceApi/FunctionGraph.m322885222#322885223#0(0"0(0#0#54"/Users/max/SWProjects/quince/QuinceApi/FunctionGraph.m4300911832#1447"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wunused-value -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -F/Developer/Library/Frameworks -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-ebuclixspxvnqygkvnjhdjwssbuh/AppKit.h -c /Users/max/SWProjects/quince/QuinceApi/FunctionGraph.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/FunctionGraph.o0#
-
-CCompileC build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/FunctionGraph.o /users/max/SWProjects/quince/QuinceApi/FunctionGraph.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
-CCompileC build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/FunctionLoader.o /Users/max/SWProjects/quince/QuinceApi/FunctionLoader.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322885222.765984
-e322885223.102101
-r1
-xCompileC
-xbuild/quince.build/Debug/QuinceApi.build/Objects-normal/i386/FunctionLoader.o
-x/Users/max/SWProjects/quince/QuinceApi/FunctionLoader.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@63"Compile /Users/max/SWProjects/quince/QuinceApi/FunctionLoader.m322885222#322885223#0(0"0(0#0#55"/Users/max/SWProjects/quince/QuinceApi/FunctionLoader.m4300911832#1449"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wunused-value -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -F/Developer/Library/Frameworks -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-ebuclixspxvnqygkvnjhdjwssbuh/AppKit.h -c /Users/max/SWProjects/quince/QuinceApi/FunctionLoader.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/FunctionLoader.o0#
-
-CCompileC build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/FunctionLoader.o /users/max/SWProjects/quince/QuinceApi/FunctionLoader.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322441964.721297
-e322441965.364258
-r1
-xCompileC
-xbuild/quince.build/Debug/QuinceApi.build/Objects-normal/i386/FunctionLoader.o
-x/users/max/SWProjects/quince/QuinceApi/FunctionLoader.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@63"Compile /users/max/SWProjects/quince/QuinceApi/FunctionLoader.m322441964#322441965#0(0"0(0#0#55"/users/max/SWProjects/quince/QuinceApi/FunctionLoader.m4300911832#1449"    cd /users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wunused-value -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-generated-files.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-own-target-headers.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-all-target-headers.hmap -iquote /users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-project-headers.hmap -F/users/max/SWProjects/quince/build/Debug -F/Developer/Library/Frameworks -I/users/max/SWProjects/quince/build/Debug/include -I/users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources/i386 -I/users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-aqscdlrkczkblafypjkbgmwjobyo/AppKit.h -c /users/max/SWProjects/quince/QuinceApi/FunctionLoader.m -o /users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/FunctionLoader.o0#
-
-CCompileC build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/Player.o /Users/max/SWProjects/quince/QuinceApi/Player.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322885223.102217
-e322885223.572185
-r1
-xCompileC
-xbuild/quince.build/Debug/QuinceApi.build/Objects-normal/i386/Player.o
-x/Users/max/SWProjects/quince/QuinceApi/Player.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@55"Compile /Users/max/SWProjects/quince/QuinceApi/Player.m322885223#322885223#0(0"0(0#0#47"/Users/max/SWProjects/quince/QuinceApi/Player.m4300911832#1433"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wunused-value -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -F/Developer/Library/Frameworks -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-ebuclixspxvnqygkvnjhdjwssbuh/AppKit.h -c /Users/max/SWProjects/quince/QuinceApi/Player.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/Player.o0#
-
-CCompileC build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/Player.o /users/max/SWProjects/quince/QuinceApi/Player.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322441965.345787
-e322441965.859239
-r1
-xCompileC
-xbuild/quince.build/Debug/QuinceApi.build/Objects-normal/i386/Player.o
-x/users/max/SWProjects/quince/QuinceApi/Player.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@55"Compile /users/max/SWProjects/quince/QuinceApi/Player.m322441965#322441965#0(0"0(0#0#47"/users/max/SWProjects/quince/QuinceApi/Player.m4300911832#1433"    cd /users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wunused-value -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-generated-files.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-own-target-headers.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-all-target-headers.hmap -iquote /users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-project-headers.hmap -F/users/max/SWProjects/quince/build/Debug -F/Developer/Library/Frameworks -I/users/max/SWProjects/quince/build/Debug/include -I/users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources/i386 -I/users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-aqscdlrkczkblafypjkbgmwjobyo/AppKit.h -c /users/max/SWProjects/quince/QuinceApi/Player.m -o /users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/Player.o0#
-
-CCompileC build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/QuinceObject.o /Users/max/SWProjects/quince/QuinceApi/QuinceObject.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s324413511.379391
-e324413520.050478
-r1
-xCompileC
-xbuild/quince.build/Debug/QuinceApi.build/Objects-normal/i386/QuinceObject.o
-x/Users/max/SWProjects/quince/QuinceApi/QuinceObject.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@61"Compile /Users/max/SWProjects/quince/QuinceApi/QuinceObject.m324413511#324413520#0(0"0(0#0#53"/Users/max/SWProjects/quince/QuinceApi/QuinceObject.m4300911832#1445"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wunused-value -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -F/Developer/Library/Frameworks -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-ebuclixspxvnqygkvnjhdjwssbuh/AppKit.h -c /Users/max/SWProjects/quince/QuinceApi/QuinceObject.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/QuinceObject.o0#
-
-CCompileC build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/QuinceObjectController.o /Users/max/SWProjects/quince/QuinceApi/QuinceObjectController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322885224.124615
-e322885224.534783
-r1
-xCompileC
-xbuild/quince.build/Debug/QuinceApi.build/Objects-normal/i386/QuinceObjectController.o
-x/Users/max/SWProjects/quince/QuinceApi/QuinceObjectController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@71"Compile /Users/max/SWProjects/quince/QuinceApi/QuinceObjectController.m322885224#322885224#0(0"0(0#0#63"/Users/max/SWProjects/quince/QuinceApi/QuinceObjectController.m4300911832#1465"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wunused-value -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -F/Developer/Library/Frameworks -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-ebuclixspxvnqygkvnjhdjwssbuh/AppKit.h -c /Users/max/SWProjects/quince/QuinceApi/QuinceObjectController.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/QuinceObjectController.o0#
-
-CCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/AudioFile.h /Users/max/SWProjects/quince/QuinceApi/AudioFile.h
-s327450185.600060
-e327450185.609556
-r1
-xCpHeader
-x/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/AudioFile.h
-x/Users/max/SWProjects/quince/QuinceApi/AudioFile.h
-lSLF07#2@55"Copy /Users/max/SWProjects/quince/QuinceApi/AudioFile.h327450185#327450185#0(0"0(0#0#50"/Users/max/SWProjects/quince/QuinceApi/AudioFile.h8637590880#308"    cd /users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/max/SWProjects/quince/QuinceApi/AudioFile.h /Library/Frameworks/QuinceApi.framework/Versions/A/Headers0#
-
-CCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/AudioFile.h QuinceApi/AudioFile.h
-s322888095.177164
-e322888095.197764
-r1
-xCpHeader
-x/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/AudioFile.h
-xQuinceApi/AudioFile.h
-lSLF07#2@26"Copy QuinceApi/AudioFile.h322888095#322888095#0(0"0(0#0#50"/Users/max/SWProjects/quince/QuinceApi/AudioFile.h4300911832#294"    cd /Users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/max/SWProjects/quince/QuinceApi/AudioFile.h /Library/Frameworks/QuinceApi.framework/Versions/A/Headers0#
-
-CCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/ChildView.h /Users/max/SWProjects/quince/QuinceApi/ChildView.h
-s327450185.597622
-e327450185.605602
-r1
-xCpHeader
-x/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/ChildView.h
-x/Users/max/SWProjects/quince/QuinceApi/ChildView.h
-lSLF07#2@55"Copy /Users/max/SWProjects/quince/QuinceApi/ChildView.h327450185#327450185#0(0"0(0#0#50"/Users/max/SWProjects/quince/QuinceApi/ChildView.h8639609184#308"    cd /users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/max/SWProjects/quince/QuinceApi/ChildView.h /Library/Frameworks/QuinceApi.framework/Versions/A/Headers0#
-
-CCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/ChildView.h QuinceApi/ChildView.h
-s322888095.171690
-e322888095.197261
-r1
-xCpHeader
-x/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/ChildView.h
-xQuinceApi/ChildView.h
-lSLF07#2@26"Copy QuinceApi/ChildView.h322888095#322888095#0(0"0(0#0#50"/Users/max/SWProjects/quince/QuinceApi/ChildView.h4300911832#294"    cd /Users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/max/SWProjects/quince/QuinceApi/ChildView.h /Library/Frameworks/QuinceApi.framework/Versions/A/Headers0#
-
-CCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/ContainerView.h /Users/max/SWProjects/quince/QuinceApi/ContainerView.h
-s327450185.598183
-e327450185.605771
-r1
-xCpHeader
-x/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/ContainerView.h
-x/Users/max/SWProjects/quince/QuinceApi/ContainerView.h
-lSLF07#2@59"Copy /Users/max/SWProjects/quince/QuinceApi/ContainerView.h327450185#327450185#0(0"0(0#0#54"/Users/max/SWProjects/quince/QuinceApi/ContainerView.h8639477408#312"    cd /users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/max/SWProjects/quince/QuinceApi/ContainerView.h /Library/Frameworks/QuinceApi.framework/Versions/A/Headers0#
-
-CCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/ContainerView.h QuinceApi/ContainerView.h
-s322888095.172552
-e322888095.197409
-r1
-xCpHeader
-x/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/ContainerView.h
-xQuinceApi/ContainerView.h
-lSLF07#2@30"Copy QuinceApi/ContainerView.h322888095#322888095#0(0"0(0#0#54"/Users/max/SWProjects/quince/QuinceApi/ContainerView.h4300911832#298"    cd /Users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/max/SWProjects/quince/QuinceApi/ContainerView.h /Library/Frameworks/QuinceApi.framework/Versions/A/Headers0#
-
-CCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/DataFile.h /Users/max/SWProjects/quince/QuinceApi/DataFile.h
-s327450185.600846
-e327450185.611111
-r1
-xCpHeader
-x/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/DataFile.h
-x/Users/max/SWProjects/quince/QuinceApi/DataFile.h
-lSLF07#2@54"Copy /Users/max/SWProjects/quince/QuinceApi/DataFile.h327450185#327450185#0(0"0(0#0#49"/Users/max/SWProjects/quince/QuinceApi/DataFile.h8634754368#307"    cd /users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/max/SWProjects/quince/QuinceApi/DataFile.h /Library/Frameworks/QuinceApi.framework/Versions/A/Headers0#
-
-CCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/DataFile.h QuinceApi/DataFile.h
-s322888095.178380
-e322888095.197886
-r1
-xCpHeader
-x/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/DataFile.h
-xQuinceApi/DataFile.h
-lSLF07#2@25"Copy QuinceApi/DataFile.h322888095#322888095#0(0"0(0#0#49"/Users/max/SWProjects/quince/QuinceApi/DataFile.h4300911832#293"    cd /Users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/max/SWProjects/quince/QuinceApi/DataFile.h /Library/Frameworks/QuinceApi.framework/Versions/A/Headers0#
-
-CCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/Envelope.h QuinceApi/Envelope.h
-s327450185.604805
-e327450185.613157
-r1
-xCpHeader
-x/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/Envelope.h
-xQuinceApi/Envelope.h
-lSLF07#2@25"Copy QuinceApi/Envelope.h327450185#327450185#0(0"0(0#0#49"/users/max/SWProjects/quince/QuinceApi/Envelope.h8639760160#307"    cd /users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /users/max/SWProjects/quince/QuinceApi/Envelope.h /Library/Frameworks/QuinceApi.framework/Versions/A/Headers0#
-
-CCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/Function.h /Users/max/SWProjects/quince/QuinceApi/Function.h
-s327450185.598650
-e327450185.605926
-r1
-xCpHeader
-x/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/Function.h
-x/Users/max/SWProjects/quince/QuinceApi/Function.h
-lSLF07#2@54"Copy /Users/max/SWProjects/quince/QuinceApi/Function.h327450185#327450185#0(0"0(0#0#49"/Users/max/SWProjects/quince/QuinceApi/Function.h8639132096#307"    cd /users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/max/SWProjects/quince/QuinceApi/Function.h /Library/Frameworks/QuinceApi.framework/Versions/A/Headers0#
-
-CCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/Function.h QuinceApi/Function.h
-s322888095.173438
-e322888095.197531
-r1
-xCpHeader
-x/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/Function.h
-xQuinceApi/Function.h
-lSLF07#2@25"Copy QuinceApi/Function.h322888095#322888095#0(0"0(0#0#49"/Users/max/SWProjects/quince/QuinceApi/Function.h4300911832#293"    cd /Users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/max/SWProjects/quince/QuinceApi/Function.h /Library/Frameworks/QuinceApi.framework/Versions/A/Headers0#
-
-CCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/FunctionGraph.h QuinceApi/FunctionGraph.h
-s327450185.606175
-e327450185.612869
-r1
-xCpHeader
-x/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/FunctionGraph.h
-xQuinceApi/FunctionGraph.h
-lSLF07#2@30"Copy QuinceApi/FunctionGraph.h327450185#327450185#0(0"0(0#0#54"/users/max/SWProjects/quince/QuinceApi/FunctionGraph.h8637321984#312"    cd /users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /users/max/SWProjects/quince/QuinceApi/FunctionGraph.h /Library/Frameworks/QuinceApi.framework/Versions/A/Headers0#
-
-CCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/FunctionLoader.h QuinceApi/FunctionLoader.h
-s327450185.604064
-e327450185.614278
-r1
-xCpHeader
-x/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/FunctionLoader.h
-xQuinceApi/FunctionLoader.h
-lSLF07#2@31"Copy QuinceApi/FunctionLoader.h327450185#327450185#0(0"0(0#0#55"/users/max/SWProjects/quince/QuinceApi/FunctionLoader.h8638796192#313"    cd /users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /users/max/SWProjects/quince/QuinceApi/FunctionLoader.h /Library/Frameworks/QuinceApi.framework/Versions/A/Headers0#
-
-CCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/Player.h QuinceApi/Player.h
-s327450185.606873
-e327450185.614660
-r1
-xCpHeader
-x/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/Player.h
-xQuinceApi/Player.h
-lSLF07#2@23"Copy QuinceApi/Player.h327450185#327450185#0(0"0(0#0#47"/users/max/SWProjects/quince/QuinceApi/Player.h8634748736#305"    cd /users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /users/max/SWProjects/quince/QuinceApi/Player.h /Library/Frameworks/QuinceApi.framework/Versions/A/Headers0#
-
-CCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/QuinceDocument.h QuinceCore/QuinceDocument.h
-s327450185.602289
-e327450185.613902
-r1
-xCpHeader
-x/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/QuinceDocument.h
-xQuinceCore/QuinceDocument.h
-lSLF07#2@32"Copy QuinceCore/QuinceDocument.h327450185#327450185#0(0"0(0#0#56"/users/max/SWProjects/quince/QuinceCore/QuinceDocument.h8638724064#314"    cd /users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /users/max/SWProjects/quince/QuinceCore/QuinceDocument.h /Library/Frameworks/QuinceApi.framework/Versions/A/Headers0#
-
-CCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/QuinceObject.h /Users/max/SWProjects/quince/QuinceApi/QuinceObject.h
-s327450185.599338
-e327450185.606080
-r1
-xCpHeader
-x/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/QuinceObject.h
-x/Users/max/SWProjects/quince/QuinceApi/QuinceObject.h
-lSLF07#2@58"Copy /Users/max/SWProjects/quince/QuinceApi/QuinceObject.h327450185#327450185#0(0"0(0#0#53"/Users/max/SWProjects/quince/QuinceApi/QuinceObject.h8638020000#311"    cd /users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/max/SWProjects/quince/QuinceApi/QuinceObject.h /Library/Frameworks/QuinceApi.framework/Versions/A/Headers0#
-
-CCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/QuinceObject.h QuinceApi/QuinceObject.h
-s322888095.175658
-e322888095.197645
-r1
-xCpHeader
-x/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/QuinceObject.h
-xQuinceApi/QuinceObject.h
-lSLF07#2@29"Copy QuinceApi/QuinceObject.h322888095#322888095#0(0"0(0#0#53"/Users/max/SWProjects/quince/QuinceApi/QuinceObject.h4300911832#297"    cd /Users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/max/SWProjects/quince/QuinceApi/QuinceObject.h /Library/Frameworks/QuinceApi.framework/Versions/A/Headers0#
-
-CCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/QuinceObjectController.h /Users/max/SWProjects/quince/QuinceApi/QuinceObjectController.h
-s327450185.601579
-e327450185.609833
-r1
-xCpHeader
-x/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/QuinceObjectController.h
-x/Users/max/SWProjects/quince/QuinceApi/QuinceObjectController.h
-lSLF07#2@68"Copy /Users/max/SWProjects/quince/QuinceApi/QuinceObjectController.h327450185#327450185#0(0"0(0#0#63"/Users/max/SWProjects/quince/QuinceApi/QuinceObjectController.h8616642208#321"    cd /users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/max/SWProjects/quince/QuinceApi/QuinceObjectController.h /Library/Frameworks/QuinceApi.framework/Versions/A/Headers0#
-
-CCpHeader /Library/Frameworks/QuinceApi.framework/Versions/A/Headers/QuinceObjectController.h QuinceApi/QuinceObjectController.h
-s322888095.185097
-e322888095.198009
-r1
-xCpHeader
-x/Library/Frameworks/QuinceApi.framework/Versions/A/Headers/QuinceObjectController.h
-xQuinceApi/QuinceObjectController.h
-lSLF07#2@39"Copy QuinceApi/QuinceObjectController.h322888095#322888095#0(0"0(0#0#63"/Users/max/SWProjects/quince/QuinceApi/QuinceObjectController.h4300911832#307"    cd /Users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/max/SWProjects/quince/QuinceApi/QuinceObjectController.h /Library/Frameworks/QuinceApi.framework/Versions/A/Headers0#
-
-CLd /Library/Frameworks/QuinceApi.framework/Versions/A/QuinceApi normal i386
-s324413520.050711
-e324413521.475647
-r1
-xLd
-x/Library/Frameworks/QuinceApi.framework/Versions/A/QuinceApi
-xnormal
-xi386
-lSLF07#2@65"Link /Library/Frameworks/QuinceApi.framework/Versions/A/QuinceApi324413520#324413521#0(0"0(0#0#0"4300911832#722"    cd /Users/max/SWProjects/quince    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -dynamiclib -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/max/SWProjects/quince/build/Debug -F/Users/max/SWProjects/quince/build/Debug -F/Developer/Library/Frameworks -filelist /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/Objects-normal/i386/QuinceApi.LinkFileList -install_name /Library/Frameworks/QuinceApi.framework/Versions/A/QuinceApi -mmacosx-version-min=10.5 -framework Foundation -framework AppKit -framework AudioToolbox -framework AudioUnit -single_module -compatibility_version 1 -current_version 1 -o /Library/Frameworks/QuinceApi.framework/Versions/A/QuinceApi0#
-
-CProcessInfoPlistFile /Library/Frameworks/QuinceApi.framework/Versions/A/Resources/Info.plist QuinceApi/QuinceApi-Info.plist
-s327450185.589664
-e327450185.597377
-r1
-xProcessInfoPlistFile
-x/Library/Frameworks/QuinceApi.framework/Versions/A/Resources/Info.plist
-xQuinceApi/QuinceApi-Info.plist
-lSLF07#2@38"Process QuinceApi/QuinceApi-Info.plist327450185#327450185#0(0"0(0#0#59"/users/max/SWProjects/quince/QuinceApi/QuinceApi-Info.plist8637196288#209"    cd /users/max/SWProjects/quince    builtin-infoPlistUtility QuinceApi/QuinceApi-Info.plist -expandbuildsettings -platform macosx -o /Library/Frameworks/QuinceApi.framework/Versions/A/Resources/Info.plist0#
-
-CProcessPCH /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-aqscdlrkczkblafypjkbgmwjobyo/AppKit.h.gch /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
-CProcessPCH /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-ebuclixspxvnqygkvnjhdjwssbuh/AppKit.h.gch /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal i386 objective-c com.apple.compilers.gcc.4_2
-s322885211.747942
-e322885222.751504
-r1
-xProcessPCH
-x/var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-ebuclixspxvnqygkvnjhdjwssbuh/AppKit.h.gch
-x/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@101"Precompile /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h322885211#322885222#0(0"0(0#0#90"/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h4300911832#1379"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wunused-value -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/QuinceApi-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -F/Developer/Library/Frameworks -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/QuinceApi.build/DerivedSources -c /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h -o /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-ebuclixspxvnqygkvnjhdjwssbuh/AppKit.h.gch0#
-
-CSymLink /Library/Frameworks/QuinceApi.framework/Headers Versions/Current/Headers
-s327450185.576165
-e327450185.589545
-r1
-xSymLink
-x/Library/Frameworks/QuinceApi.framework/Headers
-xVersions/Current/Headers
-lSLF07#2@55"Process /Library/Frameworks/QuinceApi.framework/Headers327450185#327450185#0(0"0(0#0#0"8637705088#125"    cd /users/max/SWProjects/quince    /bin/ln -sf Versions/Current/Headers /Library/Frameworks/QuinceApi.framework/Headers0#
-
-CSymLink /Library/Frameworks/QuinceApi.framework/QuinceApi Versions/Current/QuinceApi
-s322888095.135585
-e322888095.139032
-r1
-xSymLink
-x/Library/Frameworks/QuinceApi.framework/QuinceApi
-xVersions/Current/QuinceApi
-lSLF07#2@57"Process /Library/Frameworks/QuinceApi.framework/QuinceApi322888095#322888095#0(0"0(0#0#0"4300911832#129"    cd /Users/max/SWProjects/quince    /bin/ln -sf Versions/Current/QuinceApi /Library/Frameworks/QuinceApi.framework/QuinceApi0#
-
-CSymLink /Library/Frameworks/QuinceApi.framework/Resources Versions/Current/Resources
-s327450185.573725
-e327450185.577129
-r1
-xSymLink
-x/Library/Frameworks/QuinceApi.framework/Resources
-xVersions/Current/Resources
-lSLF07#2@57"Process /Library/Frameworks/QuinceApi.framework/Resources327450185#327450185#0(0"0(0#0#0"8637850624#129"    cd /users/max/SWProjects/quince    /bin/ln -sf Versions/Current/Resources /Library/Frameworks/QuinceApi.framework/Resources0#
-
-CSymLink /Library/Frameworks/QuinceApi.framework/Versions/Current A
-s327450185.572935
-e327450185.575940
-r1
-xSymLink
-x/Library/Frameworks/QuinceApi.framework/Versions/Current
-xA
-lSLF07#2@64"Process /Library/Frameworks/QuinceApi.framework/Versions/Current327450185#327450185#0(0"0(0#0#0"8638280960#111"    cd /users/max/SWProjects/quince    /bin/ln -sf A /Library/Frameworks/QuinceApi.framework/Versions/Current0#
-
-CSymLink /Users/max/SWProjects/quince/build/Debug/QuinceApi.framework /Library/Frameworks/QuinceApi.framework
-s322885211.549950
-e322885211.553641
-r1
-xSymLink
-x/Users/max/SWProjects/quince/build/Debug/QuinceApi.framework
-x/Library/Frameworks/QuinceApi.framework
-lSLF07#2@68"Process /Users/max/SWProjects/quince/build/Debug/QuinceApi.framework322885211#322885211#0(0"0(0#0#0"4300911832#153"    cd /Users/max/SWProjects/quince    /bin/ln -sf /Library/Frameworks/QuinceApi.framework /Users/max/SWProjects/quince/build/Debug/QuinceApi.framework0#
-
-CSymLink /users/max/SWProjects/quince/build/Debug/QuinceApi.framework /Library/Frameworks/QuinceApi.framework
-s327450185.590925
-e327450185.597573
-r1
-xSymLink
-x/users/max/SWProjects/quince/build/Debug/QuinceApi.framework
-x/Library/Frameworks/QuinceApi.framework
-lSLF07#2@68"Process /users/max/SWProjects/quince/build/Debug/QuinceApi.framework327450185#327450185#0(0"0(0#0#0"8636618016#153"    cd /users/max/SWProjects/quince    /bin/ln -sf /Library/Frameworks/QuinceApi.framework /users/max/SWProjects/quince/build/Debug/QuinceApi.framework0#
-
-CTouch /Library/Frameworks/QuinceApi.framework
-s327450185.614742
-e327450185.618305
-r1
-xTouch
-x/Library/Frameworks/QuinceApi.framework
-lSLF07#2@45"Touch /Library/Frameworks/QuinceApi.framework327450185#327450185#0(0"0(0#0#0"8636552160#98"    cd /users/max/SWProjects/quince    /usr/bin/touch -c /Library/Frameworks/QuinceApi.framework0#
-

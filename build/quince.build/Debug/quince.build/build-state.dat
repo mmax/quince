@@ -1,1174 +1,0 @@
-Tquince
-v7
-r0
-t324583078.669386
-cCheck dependencies
-
-N/Developer/SDKs/MacOSX10.5.sdk
-c000000004B7D589B00000000000000EE
-t1266505883
-s238
-
-N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h
-c000000004864BB88000000000000170F
-t1214561160
-s5903
-
-N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.h
-c000000004864A73B000000000000095A
-t1214555963
-s2394
-
-N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AudioUnit.framework/Headers/AudioUnit.h
-c000000004864A72E00000000000003CC
-t1214555950
-s972
-
-N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
-c0000000040C4AA6800000000000001E5
-t1086630504
-s485
-
-N/Library/Frameworks/QuinceApi.framework/QuinceApi
-c000000004DA5F0D10000000000031A80
-t1302720721
-s203392
-
-N/System/Library/Frameworks/Cocoa.framework/Cocoa
-c000000004A1F2D63000000000000A5E0
-t1243557219
-s42464
-
-N/Users/max/SWProjects/quince/English.lproj/Credits.rtf
-c000000004C69C7B20000000000000207
-t1282000818
-s519
-
-N/Users/max/SWProjects/quince/English.lproj/InfoPlist.strings
-c000000004B795EA7000000000000002D
-t1266245287
-s45
-
-N/Users/max/SWProjects/quince/English.lproj/LayerControlsView.nib
-c000000004BCA32AF0000000000000088
-t1271542447
-s136
-
-N/Users/max/SWProjects/quince/English.lproj/MainMenu.xib
-c000000004D790C4A0000000000025FA1
-t1299778634
-s155553
-
-N/Users/max/SWProjects/quince/English.lproj/QuinceDocument.xib
-c000000004D790C5C0000000000046DFB
-t1299778652
-s290299
-
-N/Users/max/SWProjects/quince/English.lproj/StripControl.xib
-c000000004C5C3700000000000000AD18
-t1281111808
-s44312
-
-N/Users/max/SWProjects/quince/QuinceApi/AudioFile.h
-c000000004D7B68CE00000000000004C7
-t1299933390
-s1223
-i<Cocoa/Cocoa.h>
-i"DataFile.h"
-
-N/Users/max/SWProjects/quince/QuinceApi/ChildView.h
-c000000004D7B674B0000000000000A73
-t1299933003
-s2675
-i<Cocoa/Cocoa.h>
-
-N/Users/max/SWProjects/quince/QuinceApi/ContainerView.h
-c000000004D87ADCB00000000000017D4
-t1300737483
-s6100
-i<Cocoa/Cocoa.h>
-
-N/Users/max/SWProjects/quince/QuinceApi/DataFile.h
-c000000004D7B68CE0000000000000414
-t1299933390
-s1044
-i<Cocoa/Cocoa.h>
-i"QuinceObject.h"
-
-N/Users/max/SWProjects/quince/QuinceApi/Function.h
-c000000004D7B68CE00000000000017B4
-t1299933390
-s6068
-i<Cocoa/Cocoa.h>
-
-N/Users/max/SWProjects/quince/QuinceApi/FunctionGraph.h
-c000000004D74EAA300000000000004BC
-t1299507875
-s1212
-i<Cocoa/Cocoa.h>
-i<QuinceApi/Function.h>
-
-N/Users/max/SWProjects/quince/QuinceApi/FunctionLoader.h
-c000000004D74EAA3000000000000064B
-t1299507875
-s1611
-i<Cocoa/Cocoa.h>
-
-N/Users/max/SWProjects/quince/QuinceApi/Player.h
-c000000004D74EAA40000000000001218
-t1299507876
-s4632
-i<Cocoa/Cocoa.h>
-i<AudioToolbox/AudioToolbox.h>
-i<QuinceApi/QuinceObject.h>
-i<AudioUnit/AudioUnit.h>
-
-N/Users/max/SWProjects/quince/QuinceApi/QuinceObject.h
-c000000004D7B68CE0000000000001108
-t1299933390
-s4360
-i<Cocoa/Cocoa.h>
-
-N/Users/max/SWProjects/quince/QuinceApi/QuinceObjectController.h
-c000000004D7B68CE0000000000000E08
-t1299933390
-s3592
-i<Cocoa/Cocoa.h>
-i<QuinceApi/QuinceObject.h>
-i<QuinceApi/ContainerView.h>
-i<QuinceApi/QuinceDocument.h>
-
-N/Users/max/SWProjects/quince/QuinceCore/EventInterceptView.h
-c000000004D74EAA3000000000000054C
-t1299507875
-s1356
-i<Cocoa/Cocoa.h>
-
-N/Users/max/SWProjects/quince/QuinceCore/EventInterceptView.m
-c000000004D74EAA3000000000000195C
-t1299507875
-s6492
-i"EventInterceptView.h"
-i"StripController.h"
-i<QuinceApi/QuinceDocument.h>
-
-N/Users/max/SWProjects/quince/QuinceCore/LayerController.h
-c000000004D74EAA300000000000009BC
-t1299507875
-s2492
-i<Cocoa/Cocoa.h>
-
-N/Users/max/SWProjects/quince/QuinceCore/LayerController.m
-c000000004D87DFF00000000000001C0D
-t1300750320
-s7181
-i"LayerController.h"
-i"StripController.h"
-i<QuinceApi/QuinceDocument.h>
-
-N/Users/max/SWProjects/quince/QuinceCore/MainController.h
-c000000004D87DB660000000000000E96
-t1300749158
-s3734
-i<Cocoa/Cocoa.h>
-i"StripController.h"
-
-N/Users/max/SWProjects/quince/QuinceCore/MainController.m
-c000000004D87DC700000000000004D2A
-t1300749424
-s19754
-i"MainController.h"
-i<QuinceApi/ContainerView.h>
-i"MainScrollerDocumentView.h"
-i<QuinceApi/QuinceDocument.h>
-
-N/Users/max/SWProjects/quince/QuinceCore/MainScrollerDocumentView.h
-c000000004D74EAA400000000000004C4
-t1299507876
-s1220
-i<Cocoa/Cocoa.h>
-
-N/Users/max/SWProjects/quince/QuinceCore/MainScrollerDocumentView.m
-c000000004D74EAA40000000000001485
-t1299507876
-s5253
-i"MainScrollerDocumentView.h"
-i"MainController.h"
-
-N/Users/max/SWProjects/quince/QuinceCore/QuinceDocument.h
-c000000004D87CEA00000000000001E40
-t1300745888
-s7744
-i<Cocoa/Cocoa.h>
-i<QuinceApi/ContainerView.h>
-i<QuinceApi/AudioFile.h>
-i<QuinceApi/Function.h>
-i<QuinceApi/QuinceObjectController.h>
-i"LayerController.h"
-i"MainController.h"
-i<QuinceApi/Player.h>
-i<QuinceApi/FunctionGraph.h>
-i<QuinceApi/QuinceObject.h>
-
-N/Users/max/SWProjects/quince/QuinceCore/QuinceDocument.m
-c000000004D87E08B000000000000E566
-t1300750475
-s58726
-i<QuinceApi/QuinceDocument.h>
-i<QuinceApi/FunctionLoader.h>
-
-N/Users/max/SWProjects/quince/QuinceCore/Quince_Prefix.pch
-c000000004D74EAA4000000000000008F
-t1299507876
-s143
-i<Cocoa/Cocoa.h>
-
-N/Users/max/SWProjects/quince/QuinceCore/StripController.h
-c000000004D87DA350000000000000C60
-t1300748853
-s3168
-i<Cocoa/Cocoa.h>
-i"StripLayerControlsArrayController.h"
-i<QuinceApi/ContainerView.h>
-
-N/Users/max/SWProjects/quince/QuinceCore/StripController.m
-c000000004D87E03D0000000000002828
-t1300750397
-s10280
-i"StripController.h"
-i"EventInterceptView.h"
-i<QuinceApi/ChildView.h>
-i<QuinceApi/QuinceObject.h>
-i<QuinceApi/QuinceDocument.h>
-i"MainController.h"
-
-N/Users/max/SWProjects/quince/QuinceCore/StripLayerControlsArrayController.h
-c000000004D74EAA50000000000000BDD
-t1299507877
-s3037
-i"SubviewTableViewCell.h"
-i"StripController.h"
-
-N/Users/max/SWProjects/quince/QuinceCore/StripLayerControlsArrayController.m
-c000000004D74EAA50000000000002038
-t1299507877
-s8248
-i"StripLayerControlsArrayController.h"
-i"StripController.h"
-
-N/Users/max/SWProjects/quince/QuinceCore/SubviewTableViewCell.h
-c000000004D74EAA500000000000003B4
-t1299507877
-s948
-i<AppKit/AppKit.h>
-
-N/Users/max/SWProjects/quince/QuinceCore/SubviewTableViewCell.m
-c000000004D74EAA500000000000005C5
-t1299507877
-s1477
-i"SubviewTableViewCell.h"
-i"StripLayerControlsArrayController.h"
-
-N/Users/max/SWProjects/quince/QuinceCore/main.m
-c000000004D74EAA500000000000003D4
-t1299507877
-s980
-i<Cocoa/Cocoa.h>
-
-N/Users/max/SWProjects/quince/build/Debug/quince.app
-t1302720730
-s102
-
-N/Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Info.plist
-t1301195076
-s1314
-
-N/Users/max/SWProjects/quince/build/Debug/quince.app/Contents/MacOS/quince
-t1302720730
-s152740
-
-N/Users/max/SWProjects/quince/build/Debug/quince.app/Contents/PkgInfo
-t1301195076
-s8
-
-N/Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/English.lproj/Credits.rtf
-t1301195076
-s519
-
-N/Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/English.lproj/InfoPlist.strings
-t1301195077
-s92
-
-N/Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/English.lproj/LayerControlsView.nib
-t1301195078
-s7185
-
-N/Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/English.lproj/MainMenu.nib
-t1301195077
-s25656
-
-N/Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/English.lproj/QuinceDocument.nib
-t1301195077
-s66220
-
-N/Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/English.lproj/StripControl.nib
-t1301195079
-s6932
-
-N/Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/graph2.png
-t1301195078
-s48493
-
-N/Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/play.gif
-t1301195078
-s3361
-
-N/Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/poolIcon.png
-t1301195078
-s3883
-
-N/Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/quince.icns
-t1301195078
-s269592
-
-N/Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/stop.gif
-t1301195078
-s121
-
-N/Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/stripControlBackground.tif
-t1301195078
-s3728868
-
-N/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/EventInterceptView.o
-t1301192488
-s61088
-
-N/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/LayerController.o
-t1301192488
-s59188
-
-N/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/MainController.o
-t1301192486
-s83576
-
-N/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/MainScrollerDocumentView.o
-t1301192488
-s37348
-
-N/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/QuinceDocument.o
-t1301192486
-s157988
-
-N/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/StripController.o
-t1301192488
-s70744
-
-N/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/StripLayerControlsArrayController.o
-t1301192488
-s40300
-
-N/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/SubviewTableViewCell.o
-t1301192488
-s16812
-
-N/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/main.o
-t1301192485
-s4856
-
-N/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/quince.LinkFileList
-c000000004D8E9F1400000000000003C7
-t1301192468
-s967
-
-N/Users/max/SWProjects/quince/graphics/graph2.png
-c000000004C16E3B1000000000000BD6D
-t1276568497
-s48493
-
-N/Users/max/SWProjects/quince/graphics/play.gif
-c000000004C5AAF100000000000000D21
-t1281011472
-s3361
-
-N/Users/max/SWProjects/quince/graphics/poolIcon.png
-c000000004BD87ED50000000000000F2B
-t1272479445
-s3883
-
-N/Users/max/SWProjects/quince/graphics/stop.gif
-c000000004C5AAF660000000000000079
-t1281011558
-s121
-
-N/Users/max/SWProjects/quince/graphics/stripControlBackground.tif
-c000000004BA7AAAA000000000038E5E4
-t1269279402
-s3728868
-
-N/Users/max/SWProjects/quince/icon/quince.icns
-c000000004C5C2D940000000000041D18
-t1281109396
-s269592
-
-N/users/max/SWProjects/quince/English.lproj/Credits.rtf
-c000000004C69C7B20000000000000207
-t1282000818
-s519
-
-N/users/max/SWProjects/quince/English.lproj/InfoPlist.strings
-c000000004B795EA7000000000000002D
-t1266245287
-s45
-
-N/users/max/SWProjects/quince/English.lproj/LayerControlsView.nib
-c000000004BCA32AF0000000000000088
-t1271542447
-s136
-
-N/users/max/SWProjects/quince/English.lproj/MainMenu.xib
-c000000004D790C4A0000000000025FA1
-t1299778634
-s155553
-
-N/users/max/SWProjects/quince/English.lproj/QuinceDocument.xib
-c000000004D790C5C0000000000046DFB
-t1299778652
-s290299
-
-N/users/max/SWProjects/quince/English.lproj/StripControl.xib
-c000000004C5C3700000000000000AD18
-t1281111808
-s44312
-
-N/users/max/SWProjects/quince/QuinceCore/EventInterceptView.h
-c000000004D74EAA3000000000000054C
-t1299507875
-s1356
-i<Cocoa/Cocoa.h>
-
-N/users/max/SWProjects/quince/QuinceCore/EventInterceptView.m
-c000000004D74EAA3000000000000195C
-t1299507875
-s6492
-i"EventInterceptView.h"
-i"StripController.h"
-i<QuinceApi/QuinceDocument.h>
-
-N/users/max/SWProjects/quince/QuinceCore/LayerController.h
-c000000004D74EAA300000000000009BC
-t1299507875
-s2492
-i<Cocoa/Cocoa.h>
-
-N/users/max/SWProjects/quince/QuinceCore/LayerController.m
-c000000004D87DFF00000000000001C0D
-t1300750320
-s7181
-i"LayerController.h"
-i"StripController.h"
-i<QuinceApi/QuinceDocument.h>
-
-N/users/max/SWProjects/quince/QuinceCore/MainController.h
-c000000004D87DB660000000000000E96
-t1300749158
-s3734
-i<Cocoa/Cocoa.h>
-i"StripController.h"
-
-N/users/max/SWProjects/quince/QuinceCore/MainController.m
-c000000004D87DC700000000000004D2A
-t1300749424
-s19754
-i"MainController.h"
-i<QuinceApi/ContainerView.h>
-i"MainScrollerDocumentView.h"
-i<QuinceApi/QuinceDocument.h>
-
-N/users/max/SWProjects/quince/QuinceCore/MainScrollerDocumentView.h
-c000000004D74EAA400000000000004C4
-t1299507876
-s1220
-i<Cocoa/Cocoa.h>
-
-N/users/max/SWProjects/quince/QuinceCore/MainScrollerDocumentView.m
-c000000004D74EAA40000000000001485
-t1299507876
-s5253
-i"MainScrollerDocumentView.h"
-i"MainController.h"
-
-N/users/max/SWProjects/quince/QuinceCore/QuinceDocument.h
-c000000004D87CEA00000000000001E40
-t1300745888
-s7744
-i<Cocoa/Cocoa.h>
-i<QuinceApi/ContainerView.h>
-i<QuinceApi/AudioFile.h>
-i<QuinceApi/Function.h>
-i<QuinceApi/QuinceObjectController.h>
-i"LayerController.h"
-i"MainController.h"
-i<QuinceApi/Player.h>
-i<QuinceApi/FunctionGraph.h>
-i<QuinceApi/QuinceObject.h>
-
-N/users/max/SWProjects/quince/QuinceCore/QuinceDocument.m
-c000000004D87E08B000000000000E566
-t1300750475
-s58726
-i<QuinceApi/QuinceDocument.h>
-i<QuinceApi/FunctionLoader.h>
-
-N/users/max/SWProjects/quince/QuinceCore/Quince_Prefix.pch
-c000000004D74EAA4000000000000008F
-t1299507876
-s143
-i<Cocoa/Cocoa.h>
-
-N/users/max/SWProjects/quince/QuinceCore/StripController.h
-c000000004D87DA350000000000000C60
-t1300748853
-s3168
-i<Cocoa/Cocoa.h>
-i"StripLayerControlsArrayController.h"
-i<QuinceApi/ContainerView.h>
-
-N/users/max/SWProjects/quince/QuinceCore/StripController.m
-c000000004D87E03D0000000000002828
-t1300750397
-s10280
-i"StripController.h"
-i"EventInterceptView.h"
-i<QuinceApi/ChildView.h>
-i<QuinceApi/QuinceObject.h>
-i<QuinceApi/QuinceDocument.h>
-i"MainController.h"
-
-N/users/max/SWProjects/quince/QuinceCore/StripLayerControlsArrayController.h
-c000000004D74EAA50000000000000BDD
-t1299507877
-s3037
-i"SubviewTableViewCell.h"
-i"StripController.h"
-
-N/users/max/SWProjects/quince/QuinceCore/StripLayerControlsArrayController.m
-c000000004D74EAA50000000000002038
-t1299507877
-s8248
-i"StripLayerControlsArrayController.h"
-i"StripController.h"
-
-N/users/max/SWProjects/quince/QuinceCore/SubviewTableViewCell.h
-c000000004D74EAA500000000000003B4
-t1299507877
-s948
-i<AppKit/AppKit.h>
-
-N/users/max/SWProjects/quince/QuinceCore/SubviewTableViewCell.m
-c000000004D74EAA500000000000005C5
-t1299507877
-s1477
-i"SubviewTableViewCell.h"
-i"StripLayerControlsArrayController.h"
-
-N/users/max/SWProjects/quince/QuinceCore/main.m
-c000000004D74EAA500000000000003D4
-t1299507877
-s980
-i<Cocoa/Cocoa.h>
-
-N/users/max/SWProjects/quince/build/Debug/quince.app
-t1302720730
-s102
-
-N/users/max/SWProjects/quince/build/Debug/quince.app/Contents/Info.plist
-t1301195076
-s1314
-
-N/users/max/SWProjects/quince/build/Debug/quince.app/Contents/MacOS/quince
-t1300750481
-s152740
-
-N/users/max/SWProjects/quince/build/Debug/quince.app/Contents/PkgInfo
-t1301195076
-s8
-
-N/users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/English.lproj/Credits.rtf
-t1301195076
-s519
-
-N/users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/English.lproj/InfoPlist.strings
-t1299526979
-s92
-
-N/users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/English.lproj/LayerControlsView.nib
-t1299526980
-s7185
-
-N/users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/English.lproj/MainMenu.nib
-t1299778679
-s25656
-
-N/users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/English.lproj/QuinceDocument.nib
-t1299778679
-s66220
-
-N/users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/English.lproj/StripControl.nib
-t1299526980
-s6932
-
-N/users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/graph2.png
-t1299526980
-s48493
-
-N/users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/play.gif
-t1299526980
-s3361
-
-N/users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/poolIcon.png
-t1299526980
-s3883
-
-N/users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/quince.icns
-t1299526980
-s269592
-
-N/users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/stop.gif
-t1299526980
-s121
-
-N/users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/stripControlBackground.tif
-t1299526979
-s3728868
-
-N/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/EventInterceptView.o
-t1300749182
-s61088
-
-N/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/LayerController.o
-t1300750326
-s59188
-
-N/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/MainController.o
-t1300749427
-s83576
-
-N/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/MainScrollerDocumentView.o
-t1300749181
-s37348
-
-N/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/QuinceDocument.o
-t1300750481
-s157988
-
-N/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/StripController.o
-t1300750480
-s70744
-
-N/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/StripLayerControlsArrayController.o
-t1300749181
-s40300
-
-N/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/SubviewTableViewCell.o
-t1300749182
-s16812
-
-N/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/main.o
-t1300276260
-s4856
-
-N/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/quince.LinkFileList
-c000000004D80A41F00000000000003C7
-t1300276255
-s967
-
-N/users/max/SWProjects/quince/graphics/graph2.png
-c000000004C16E3B1000000000000BD6D
-t1276568497
-s48493
-
-N/users/max/SWProjects/quince/graphics/play.gif
-c000000004C5AAF100000000000000D21
-t1281011472
-s3361
-
-N/users/max/SWProjects/quince/graphics/poolIcon.png
-c000000004BD87ED50000000000000F2B
-t1272479445
-s3883
-
-N/users/max/SWProjects/quince/graphics/stop.gif
-c000000004C5AAF660000000000000079
-t1281011558
-s121
-
-N/users/max/SWProjects/quince/graphics/stripControlBackground.tif
-c000000004BA7AAAA000000000038E5E4
-t1269279402
-s3728868
-
-N/users/max/SWProjects/quince/icon/quince.icns
-c000000004C5C2D940000000000041D18
-t1281109396
-s269592
-
-N/var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-excxtwlgddizdebtfisjyomxxvtu/Quince_Prefix.pch.gch
-t1300276260
-s54116784
-
-N/var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-fufsivfxwusrlmggtthfjpiqllas/Quince_Prefix.pch.gch
-t1301192483
-s54116784
-
-NQuinceCore/quince-Info.plist
-c000000004D8EA88900000000000005C0
-t1301194889
-s1472
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies327450189#327450189#0(2923"Internal error occurred while creating dependency graph: ASSERTION FAILURE in /SourceCache/DevToolsBase/DevToolsBase-2002/pbxcore/Target.subproj/PBXTargetBuildContext.m:2073Details:  Assertion failed: [filePath isAbsolutePath]Object:   <PBXTargetBuildContext:0x2005d8fa0>Method:   -setHeadermapToolInvocation:forFilePath:Thread:   <NSThread: 0x201067ea0>{name = (null), num = 5}Backtrace:  0  0x00000001002853a7 -[PBXTargetBuildContext(DependencyGraphEvents) handleFailureInMethod:object:fileName:lineNumber:messageFormat:arguments:] (in DevToolsCore)  1  0x00000001002df80a _XCAssertionFailureHandler (in DevToolsCore)  2  0x0000000100281f12 -[PBXTargetBuildContext setHeadermapToolInvocation:forFilePath:] (in DevToolsCore)  3  0x0000000100144cfb -[XCCompilerSpecification computeDependenciesForFilePath:ofType:outputDirectory:inTargetBuildContext:] (in DevToolsCore)  4  0x0000000100385ad6 -[XCBuildRuleDGSnapshot(DependencyGraphCreation) computeDependenciesForFilePath:ofType:forBuildFileReference:withOutputDirectory:additionalProperties:inTargetBuildContext:] (in DevToolsCore)  5  0x000000010015e7db -[XCResourcesBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesForBuildFileReference:inTargetBuildContext:] (in DevToolsCore)  6  0x00000001001407a3 -[XCBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesForAllBuildFileReferencesInTargetBuildContext:] (in DevToolsCore)  7  0x000000010015e4f5 -[XCBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesInTargetBuildContext:] (in DevToolsCore)  8  0x000000010015e443 -[XCResourcesBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesInTargetBuildContext:] (in DevToolsCore)  9  0x0000000100130521 -[XCProductTypeSpecification computeDependenciesInTargetBuildContext:] (in DevToolsCore) 10  0x000000010012bd08 -[XCNativeTargetDGSnapshot(DependencyGraphCreation) computeDependenciesInTargetBuildContext:] (in DevToolsCore) 11  0x0000000100127e7d -[PBXTargetBuildContext createDependencyGraphWithTargetDGSnapshot:] (in DevToolsCore) 12  0x0000000100126e28 -[PBXTargetBuildContext(DependencyGraphEvents) dg_setTargetSnapshot:] (in DevToolsCore) 13  0x00007fff8248296c __invoking___ (in CoreFoundation) 14  0x00007fff8248283d -[NSInvocation invoke] (in CoreFoundation) 15  0x0000000100126874 -[PBXTargetBuildContext(DependencyGraphEvents) processDependencyGraphEvents] (in DevToolsCore) 16  0x00007fff8248296c __invoking___ (in CoreFoundation) 17  0x00007fff8248283d -[NSInvocation invoke] (in CoreFoundation) 18  0x00000001001263dd -[XCInvocationQueue _processNextInvocationInThreadSlotNumber:] (in DevToolsCore) 19  0x0000000100126156 -[XCInvocationQueue _processInvocationsInThreadSlotNumber:] (in DevToolsCore) 20  0x00007fff80e12f28 __NSThread__main__ (in Foundation) 21  0x00007fff8509a4f6 _pthread_start (in libSystem.B.dylib) 22  0x00007fff8509a3a9 thread_start (in libSystem.B.dylib)1(4@2923"Internal error occurred while creating dependency graph: ASSERTION FAILURE in /SourceCache/DevToolsBase/DevToolsBase-2002/pbxcore/Target.subproj/PBXTargetBuildContext.m:2073Details:  Assertion failed: [filePath isAbsolutePath]Object:   <PBXTargetBuildContext:0x2005d8fa0>Method:   -setHeadermapToolInvocation:forFilePath:Thread:   <NSThread: 0x201067ea0>{name = (null), num = 5}Backtrace:  0  0x00000001002853a7 -[PBXTargetBuildContext(DependencyGraphEvents) handleFailureInMethod:object:fileName:lineNumber:messageFormat:arguments:] (in DevToolsCore)  1  0x00000001002df80a _XCAssertionFailureHandler (in DevToolsCore)  2  0x0000000100281f12 -[PBXTargetBuildContext setHeadermapToolInvocation:forFilePath:] (in DevToolsCore)  3  0x0000000100144cfb -[XCCompilerSpecification computeDependenciesForFilePath:ofType:outputDirectory:inTargetBuildContext:] (in DevToolsCore)  4  0x0000000100385ad6 -[XCBuildRuleDGSnapshot(DependencyGraphCreation) computeDependenciesForFilePath:ofType:forBuildFileReference:withOutputDirectory:additionalProperties:inTargetBuildContext:] (in DevToolsCore)  5  0x000000010015e7db -[XCResourcesBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesForBuildFileReference:inTargetBuildContext:] (in DevToolsCore)  6  0x00000001001407a3 -[XCBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesForAllBuildFileReferencesInTargetBuildContext:] (in DevToolsCore)  7  0x000000010015e4f5 -[XCBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesInTargetBuildContext:] (in DevToolsCore)  8  0x000000010015e443 -[XCResourcesBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesInTargetBuildContext:] (in DevToolsCore)  9  0x0000000100130521 -[XCProductTypeSpecification computeDependenciesInTargetBuildContext:] (in DevToolsCore) 10  0x000000010012bd08 -[XCNativeTargetDGSnapshot(DependencyGraphCreation) computeDependenciesInTargetBuildContext:] (in DevToolsCore) 11  0x0000000100127e7d -[PBXTargetBuildContext createDependencyGraphWithTargetDGSnapshot:] (in DevToolsCore) 12  0x0000000100126e28 -[PBXTargetBuildContext(DependencyGraphEvents) dg_setTargetSnapshot:] (in DevToolsCore) 13  0x00007fff8248296c __invoking___ (in CoreFoundation) 14  0x00007fff8248283d -[NSInvocation invoke] (in CoreFoundation) 15  0x0000000100126874 -[PBXTargetBuildContext(DependencyGraphEvents) processDependencyGraphEvents] (in DevToolsCore) 16  0x00007fff8248296c __invoking___ (in CoreFoundation) 17  0x00007fff8248283d -[NSInvocation invoke] (in CoreFoundation) 18  0x00000001001263dd -[XCInvocationQueue _processNextInvocationInThreadSlotNumber:] (in DevToolsCore) 19  0x0000000100126156 -[XCInvocationQueue _processInvocationsInThreadSlotNumber:] (in DevToolsCore) 20  0x00007fff80e12f28 __NSThread__main__ (in Foundation) 21  0x00007fff8509a4f6 _pthread_start (in libSystem.B.dylib) 22  0x00007fff8509a3a9 thread_start (in libSystem.B.dylib)327450189#18446744073709551615#0#0(1@0"0(0#1#0"8626717216#0"0#
-
-CCompileC build/quince.build/Debug/quince.build/Objects-normal/i386/EventInterceptView.o /Users/max/SWProjects/quince/QuinceCore/EventInterceptView.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322885288.394206
-e322885288.795809
-r1
-xCompileC
-xbuild/quince.build/Debug/quince.build/Objects-normal/i386/EventInterceptView.o
-x/Users/max/SWProjects/quince/QuinceCore/EventInterceptView.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@68"Compile /Users/max/SWProjects/quince/QuinceCore/EventInterceptView.m322885288#322885288#0(0"0(0#0#60"/Users/max/SWProjects/quince/QuinceCore/EventInterceptView.m4300911832#1361"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-fufsivfxwusrlmggtthfjpiqllas/Quince_Prefix.pch -c /Users/max/SWProjects/quince/QuinceCore/EventInterceptView.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/EventInterceptView.o0#
-
-CCompileC build/quince.build/Debug/quince.build/Objects-normal/i386/EventInterceptView.o /users/max/SWProjects/quince/QuinceCore/EventInterceptView.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322441982.141125
-e322441982.460683
-r1
-xCompileC
-xbuild/quince.build/Debug/quince.build/Objects-normal/i386/EventInterceptView.o
-x/users/max/SWProjects/quince/QuinceCore/EventInterceptView.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@68"Compile /users/max/SWProjects/quince/QuinceCore/EventInterceptView.m322441982#322441982#0(0"0(0#0#60"/users/max/SWProjects/quince/QuinceCore/EventInterceptView.m4300911832#1361"    cd /users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-generated-files.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-own-target-headers.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-all-target-headers.hmap -iquote /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-project-headers.hmap -F/users/max/SWProjects/quince/build/Debug -I/users/max/SWProjects/quince/build/Debug/include -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources/i386 -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-excxtwlgddizdebtfisjyomxxvtu/Quince_Prefix.pch -c /users/max/SWProjects/quince/QuinceCore/EventInterceptView.m -o /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/EventInterceptView.o0#
-
-CCompileC build/quince.build/Debug/quince.build/Objects-normal/i386/LayerController.o /Users/max/SWProjects/quince/QuinceCore/LayerController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322885288.023176
-e322885288.394096
-r1
-xCompileC
-xbuild/quince.build/Debug/quince.build/Objects-normal/i386/LayerController.o
-x/Users/max/SWProjects/quince/QuinceCore/LayerController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@65"Compile /Users/max/SWProjects/quince/QuinceCore/LayerController.m322885288#322885288#0(0"0(0#0#57"/Users/max/SWProjects/quince/QuinceCore/LayerController.m4300911832#1355"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-fufsivfxwusrlmggtthfjpiqllas/Quince_Prefix.pch -c /Users/max/SWProjects/quince/QuinceCore/LayerController.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/LayerController.o0#
-
-CCompileC build/quince.build/Debug/quince.build/Objects-normal/i386/LayerController.o /users/max/SWProjects/quince/QuinceCore/LayerController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322443125.724810
-e322443126.266797
-r1
-xCompileC
-xbuild/quince.build/Debug/quince.build/Objects-normal/i386/LayerController.o
-x/users/max/SWProjects/quince/QuinceCore/LayerController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@65"Compile /users/max/SWProjects/quince/QuinceCore/LayerController.m322443125#322443126#0(0"0(0#0#57"/users/max/SWProjects/quince/QuinceCore/LayerController.m4300911832#1355"    cd /users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-generated-files.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-own-target-headers.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-all-target-headers.hmap -iquote /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-project-headers.hmap -F/users/max/SWProjects/quince/build/Debug -I/users/max/SWProjects/quince/build/Debug/include -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources/i386 -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-excxtwlgddizdebtfisjyomxxvtu/Quince_Prefix.pch -c /users/max/SWProjects/quince/QuinceCore/LayerController.m -o /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/LayerController.o0#
-
-CCompileC build/quince.build/Debug/quince.build/Objects-normal/i386/MainController.o /Users/max/SWProjects/quince/QuinceCore/MainController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322885285.454073
-e322885287.204588
-r1
-xCompileC
-xbuild/quince.build/Debug/quince.build/Objects-normal/i386/MainController.o
-x/Users/max/SWProjects/quince/QuinceCore/MainController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@64"Compile /Users/max/SWProjects/quince/QuinceCore/MainController.m322885285#322885287#0(0"0(0#0#56"/Users/max/SWProjects/quince/QuinceCore/MainController.m4300911832#1353"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-fufsivfxwusrlmggtthfjpiqllas/Quince_Prefix.pch -c /Users/max/SWProjects/quince/QuinceCore/MainController.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/MainController.o0#
-
-CCompileC build/quince.build/Debug/quince.build/Objects-normal/i386/MainController.o /users/max/SWProjects/quince/QuinceCore/MainController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322442226.640691
-e322442227.148337
-r1
-xCompileC
-xbuild/quince.build/Debug/quince.build/Objects-normal/i386/MainController.o
-x/users/max/SWProjects/quince/QuinceCore/MainController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@64"Compile /users/max/SWProjects/quince/QuinceCore/MainController.m322442226#322442227#0(0"0(0#0#56"/users/max/SWProjects/quince/QuinceCore/MainController.m4300911832#1353"    cd /users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-generated-files.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-own-target-headers.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-all-target-headers.hmap -iquote /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-project-headers.hmap -F/users/max/SWProjects/quince/build/Debug -I/users/max/SWProjects/quince/build/Debug/include -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources/i386 -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-excxtwlgddizdebtfisjyomxxvtu/Quince_Prefix.pch -c /users/max/SWProjects/quince/QuinceCore/MainController.m -o /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/MainController.o0#
-
-CCompileC build/quince.build/Debug/quince.build/Objects-normal/i386/MainScrollerDocumentView.o /Users/max/SWProjects/quince/QuinceCore/MainScrollerDocumentView.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322885287.204742
-e322885288.023054
-r1
-xCompileC
-xbuild/quince.build/Debug/quince.build/Objects-normal/i386/MainScrollerDocumentView.o
-x/Users/max/SWProjects/quince/QuinceCore/MainScrollerDocumentView.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@74"Compile /Users/max/SWProjects/quince/QuinceCore/MainScrollerDocumentView.m322885287#322885288#0(0"0(0#0#66"/Users/max/SWProjects/quince/QuinceCore/MainScrollerDocumentView.m4300911832#1373"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-fufsivfxwusrlmggtthfjpiqllas/Quince_Prefix.pch -c /Users/max/SWProjects/quince/QuinceCore/MainScrollerDocumentView.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/MainScrollerDocumentView.o0#
-
-CCompileC build/quince.build/Debug/quince.build/Objects-normal/i386/MainScrollerDocumentView.o /users/max/SWProjects/quince/QuinceCore/MainScrollerDocumentView.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322441981.374979
-e322441981.647382
-r1
-xCompileC
-xbuild/quince.build/Debug/quince.build/Objects-normal/i386/MainScrollerDocumentView.o
-x/users/max/SWProjects/quince/QuinceCore/MainScrollerDocumentView.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@74"Compile /users/max/SWProjects/quince/QuinceCore/MainScrollerDocumentView.m322441981#322441981#0(0"0(0#0#66"/users/max/SWProjects/quince/QuinceCore/MainScrollerDocumentView.m4300911832#1373"    cd /users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-generated-files.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-own-target-headers.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-all-target-headers.hmap -iquote /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-project-headers.hmap -F/users/max/SWProjects/quince/build/Debug -I/users/max/SWProjects/quince/build/Debug/include -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources/i386 -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-excxtwlgddizdebtfisjyomxxvtu/Quince_Prefix.pch -c /users/max/SWProjects/quince/QuinceCore/MainScrollerDocumentView.m -o /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/MainScrollerDocumentView.o0#
-
-CCompileC build/quince.build/Debug/quince.build/Objects-normal/i386/QuinceDocument.o /Users/max/SWProjects/quince/QuinceCore/QuinceDocument.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322885283.761591
-e322885287.209237
-r1
-xCompileC
-xbuild/quince.build/Debug/quince.build/Objects-normal/i386/QuinceDocument.o
-x/Users/max/SWProjects/quince/QuinceCore/QuinceDocument.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@64"Compile /Users/max/SWProjects/quince/QuinceCore/QuinceDocument.m322885283#322885287#0(0"0(0#0#56"/Users/max/SWProjects/quince/QuinceCore/QuinceDocument.m4300911832#1353"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-fufsivfxwusrlmggtthfjpiqllas/Quince_Prefix.pch -c /Users/max/SWProjects/quince/QuinceCore/QuinceDocument.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/QuinceDocument.o0#
-
-CCompileC build/quince.build/Debug/quince.build/Objects-normal/i386/QuinceDocument.o /users/max/SWProjects/quince/QuinceCore/QuinceDocument.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322443280.212686
-e322443281.153882
-r1
-xCompileC
-xbuild/quince.build/Debug/quince.build/Objects-normal/i386/QuinceDocument.o
-x/users/max/SWProjects/quince/QuinceCore/QuinceDocument.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@64"Compile /users/max/SWProjects/quince/QuinceCore/QuinceDocument.m322443280#322443281#0(0"0(0#0#56"/users/max/SWProjects/quince/QuinceCore/QuinceDocument.m4300911832#1353"    cd /users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-generated-files.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-own-target-headers.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-all-target-headers.hmap -iquote /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-project-headers.hmap -F/users/max/SWProjects/quince/build/Debug -I/users/max/SWProjects/quince/build/Debug/include -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources/i386 -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-excxtwlgddizdebtfisjyomxxvtu/Quince_Prefix.pch -c /users/max/SWProjects/quince/QuinceCore/QuinceDocument.m -o /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/QuinceDocument.o0#
-
-CCompileC build/quince.build/Debug/quince.build/Objects-normal/i386/StripController.o /Users/max/SWProjects/quince/QuinceCore/StripController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322885288.257247
-e322885288.862740
-r1
-xCompileC
-xbuild/quince.build/Debug/quince.build/Objects-normal/i386/StripController.o
-x/Users/max/SWProjects/quince/QuinceCore/StripController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@65"Compile /Users/max/SWProjects/quince/QuinceCore/StripController.m322885288#322885288#0(0"0(0#0#57"/Users/max/SWProjects/quince/QuinceCore/StripController.m4300911832#1355"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-fufsivfxwusrlmggtthfjpiqllas/Quince_Prefix.pch -c /Users/max/SWProjects/quince/QuinceCore/StripController.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/StripController.o0#
-
-CCompileC build/quince.build/Debug/quince.build/Objects-normal/i386/StripController.o /users/max/SWProjects/quince/QuinceCore/StripController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322443280.532712
-e322443280.952909
-r1
-xCompileC
-xbuild/quince.build/Debug/quince.build/Objects-normal/i386/StripController.o
-x/users/max/SWProjects/quince/QuinceCore/StripController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@65"Compile /users/max/SWProjects/quince/QuinceCore/StripController.m322443280#322443280#0(0"0(0#0#57"/users/max/SWProjects/quince/QuinceCore/StripController.m4300911832#1355"    cd /users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-generated-files.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-own-target-headers.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-all-target-headers.hmap -iquote /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-project-headers.hmap -F/users/max/SWProjects/quince/build/Debug -I/users/max/SWProjects/quince/build/Debug/include -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources/i386 -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-excxtwlgddizdebtfisjyomxxvtu/Quince_Prefix.pch -c /users/max/SWProjects/quince/QuinceCore/StripController.m -o /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/StripController.o0#
-
-CCompileC build/quince.build/Debug/quince.build/Objects-normal/i386/StripLayerControlsArrayController.o /Users/max/SWProjects/quince/QuinceCore/StripLayerControlsArrayController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322885287.209362
-e322885288.034503
-r1
-xCompileC
-xbuild/quince.build/Debug/quince.build/Objects-normal/i386/StripLayerControlsArrayController.o
-x/Users/max/SWProjects/quince/QuinceCore/StripLayerControlsArrayController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@83"Compile /Users/max/SWProjects/quince/QuinceCore/StripLayerControlsArrayController.m322885287#322885288#0(0"0(0#0#75"/Users/max/SWProjects/quince/QuinceCore/StripLayerControlsArrayController.m4300911832#1391"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-fufsivfxwusrlmggtthfjpiqllas/Quince_Prefix.pch -c /Users/max/SWProjects/quince/QuinceCore/StripLayerControlsArrayController.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/StripLayerControlsArrayController.o0#
-
-CCompileC build/quince.build/Debug/quince.build/Objects-normal/i386/StripLayerControlsArrayController.o /users/max/SWProjects/quince/QuinceCore/StripLayerControlsArrayController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322441981.600759
-e322441981.927755
-r1
-xCompileC
-xbuild/quince.build/Debug/quince.build/Objects-normal/i386/StripLayerControlsArrayController.o
-x/users/max/SWProjects/quince/QuinceCore/StripLayerControlsArrayController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@83"Compile /users/max/SWProjects/quince/QuinceCore/StripLayerControlsArrayController.m322441981#322441981#0(0"0(0#0#75"/users/max/SWProjects/quince/QuinceCore/StripLayerControlsArrayController.m4300911832#1391"    cd /users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-generated-files.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-own-target-headers.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-all-target-headers.hmap -iquote /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-project-headers.hmap -F/users/max/SWProjects/quince/build/Debug -I/users/max/SWProjects/quince/build/Debug/include -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources/i386 -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-excxtwlgddizdebtfisjyomxxvtu/Quince_Prefix.pch -c /users/max/SWProjects/quince/QuinceCore/StripLayerControlsArrayController.m -o /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/StripLayerControlsArrayController.o0#
-
-CCompileC build/quince.build/Debug/quince.build/Objects-normal/i386/SubviewTableViewCell.o /Users/max/SWProjects/quince/QuinceCore/SubviewTableViewCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322885288.036644
-e322885288.257130
-r1
-xCompileC
-xbuild/quince.build/Debug/quince.build/Objects-normal/i386/SubviewTableViewCell.o
-x/Users/max/SWProjects/quince/QuinceCore/SubviewTableViewCell.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@70"Compile /Users/max/SWProjects/quince/QuinceCore/SubviewTableViewCell.m322885288#322885288#0(0"0(0#0#62"/Users/max/SWProjects/quince/QuinceCore/SubviewTableViewCell.m4300911832#1365"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-fufsivfxwusrlmggtthfjpiqllas/Quince_Prefix.pch -c /Users/max/SWProjects/quince/QuinceCore/SubviewTableViewCell.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/SubviewTableViewCell.o0#
-
-CCompileC build/quince.build/Debug/quince.build/Objects-normal/i386/SubviewTableViewCell.o /users/max/SWProjects/quince/QuinceCore/SubviewTableViewCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322441981.928047
-e322441982.141021
-r1
-xCompileC
-xbuild/quince.build/Debug/quince.build/Objects-normal/i386/SubviewTableViewCell.o
-x/users/max/SWProjects/quince/QuinceCore/SubviewTableViewCell.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@70"Compile /users/max/SWProjects/quince/QuinceCore/SubviewTableViewCell.m322441981#322441982#0(0"0(0#0#62"/users/max/SWProjects/quince/QuinceCore/SubviewTableViewCell.m4300911832#1365"    cd /users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-generated-files.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-own-target-headers.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-all-target-headers.hmap -iquote /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-project-headers.hmap -F/users/max/SWProjects/quince/build/Debug -I/users/max/SWProjects/quince/build/Debug/include -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources/i386 -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-excxtwlgddizdebtfisjyomxxvtu/Quince_Prefix.pch -c /users/max/SWProjects/quince/QuinceCore/SubviewTableViewCell.m -o /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/SubviewTableViewCell.o0#
-
-CCompileC build/quince.build/Debug/quince.build/Objects-normal/i386/main.o /Users/max/SWProjects/quince/QuinceCore/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s322885283.775690
-e322885285.453840
-r1
-xCompileC
-xbuild/quince.build/Debug/quince.build/Objects-normal/i386/main.o
-x/Users/max/SWProjects/quince/QuinceCore/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@54"Compile /Users/max/SWProjects/quince/QuinceCore/main.m322885283#322885285#0(0"0(0#0#46"/Users/max/SWProjects/quince/QuinceCore/main.m4300911832#1333"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-fufsivfxwusrlmggtthfjpiqllas/Quince_Prefix.pch -c /Users/max/SWProjects/quince/QuinceCore/main.m -o /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/main.o0#
-
-CCompileC build/quince.build/Debug/quince.build/Objects-normal/i386/main.o /users/max/SWProjects/quince/QuinceCore/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321969060.395466
-e321969060.677877
-r1
-xCompileC
-xbuild/quince.build/Debug/quince.build/Objects-normal/i386/main.o
-x/users/max/SWProjects/quince/QuinceCore/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@54"Compile /users/max/SWProjects/quince/QuinceCore/main.m321969060#321969060#0(0"0(0#0#46"/users/max/SWProjects/quince/QuinceCore/main.m4300911832#1333"    cd /users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-generated-files.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-own-target-headers.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-all-target-headers.hmap -iquote /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-project-headers.hmap -F/users/max/SWProjects/quince/build/Debug -I/users/max/SWProjects/quince/build/Debug/include -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources/i386 -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources -include /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-excxtwlgddizdebtfisjyomxxvtu/Quince_Prefix.pch -c /users/max/SWProjects/quince/QuinceCore/main.m -o /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/main.o0#
-
-CCompileXIB /Users/max/SWProjects/quince/English.lproj/MainMenu.xib
-s322887877.309259
-e322887878.095501
-r1
-xCompileXIB
-x/Users/max/SWProjects/quince/English.lproj/MainMenu.xib
-lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib322887877#322887878#0(0"0(0#0#55"/Users/max/SWProjects/quince/English.lproj/MainMenu.xib4300911832#296"    cd /Users/max/SWProjects/quince    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/English.lproj/MainMenu.nib /Users/max/SWProjects/quince/English.lproj/MainMenu.xib0#
-
-CCompileXIB /Users/max/SWProjects/quince/English.lproj/QuinceDocument.xib
-s322887876.829141
-e322887878.145043
-r1
-xCompileXIB
-x/Users/max/SWProjects/quince/English.lproj/QuinceDocument.xib
-o/* com.apple.ibtool.document.notices */
-o/Users/max/SWProjects/quince/English.lproj/QuinceDocument.xib:101357: note: This view is clipping its content.
-o/Users/max/SWProjects/quince/English.lproj/QuinceDocument.xib:101156: note: This view is clipping its content.
-o/Users/max/SWProjects/quince/English.lproj/QuinceDocument.xib:101361: note: This view is clipping its content.
-lSLF07#2@43"CompileXIB English.lproj/QuinceDocument.xib322887876#322887878#0(373"/* com.apple.ibtool.document.notices *//Users/max/SWProjects/quince/English.lproj/QuinceDocument.xib:101357: note: This view is clipping its content./Users/max/SWProjects/quince/English.lproj/QuinceDocument.xib:101156: note: This view is clipping its content./Users/max/SWProjects/quince/English.lproj/QuinceDocument.xib:101361: note: This view is clipping its content.3(13@34"This view is clipping its content.322887878#18446744073709551615#0#0(6@61"/Users/max/SWProjects/quince/English.lproj/QuinceDocument.xib321471452#101357#0#101357#0#0"0(13@34"This view is clipping its content.322887878#18446744073709551615#0#0(6@61"/Users/max/SWProjects/quince/English.lproj/QuinceDocument.xib321471452#101156#0#101156#0#0"0(13@34"This view is clipping its content.322887878#18446744073709551615#0#0(6@61"/Users/max/SWProjects/quince/English.lproj/QuinceDocument.xib321471452#101361#0#101361#0#0"0(0#0#61"/Users/max/SWProjects/quince/English.lproj/QuinceDocument.xib4300911832#308"    cd /Users/max/SWProjects/quince    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/English.lproj/QuinceDocument.nib /Users/max/SWProjects/quince/English.lproj/QuinceDocument.xib0#
-
-CCompileXIB /Users/max/SWProjects/quince/English.lproj/StripControl.xib
-s322887878.907057
-e322887879.243882
-r1
-xCompileXIB
-x/Users/max/SWProjects/quince/English.lproj/StripControl.xib
-o/* com.apple.ibtool.document.notices */
-o/Users/max/SWProjects/quince/English.lproj/StripControl.xib:12: note: This view is clipping its content.
-o/Users/max/SWProjects/quince/English.lproj/StripControl.xib:14: note: This view is clipping its content.
-lSLF07#2@41"CompileXIB English.lproj/StripControl.xib322887878#322887879#0(250"/* com.apple.ibtool.document.notices *//Users/max/SWProjects/quince/English.lproj/StripControl.xib:12: note: This view is clipping its content./Users/max/SWProjects/quince/English.lproj/StripControl.xib:14: note: This view is clipping its content.2(13@34"This view is clipping its content.322887879#18446744073709551615#0#0(6@59"/Users/max/SWProjects/quince/English.lproj/StripControl.xib302804608#12#0#12#0#0"0(13@34"This view is clipping its content.322887879#18446744073709551615#0#0(6@59"/Users/max/SWProjects/quince/English.lproj/StripControl.xib302804608#14#0#14#0#0"0(0#0#59"/Users/max/SWProjects/quince/English.lproj/StripControl.xib4300911832#304"    cd /Users/max/SWProjects/quince    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/English.lproj/StripControl.nib /Users/max/SWProjects/quince/English.lproj/StripControl.xib0#
-
-CCompileXIB /users/max/SWProjects/quince/English.lproj/MainMenu.xib
-r0
-
-CCompileXIB /users/max/SWProjects/quince/English.lproj/QuinceDocument.xib
-r0
-
-CCompileXIB /users/max/SWProjects/quince/English.lproj/StripControl.xib
-r0
-
-CCopyStringsFile /Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-s322887876.824830
-e322887877.308665
-r1
-xCopyStringsFile
-x/Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/English.lproj/InfoPlist.strings
-xEnglish.lproj/InfoPlist.strings
-lSLF07#2@36"Copy English.lproj/InfoPlist.strings322887876#322887877#0(0"0(0#0#60"/Users/max/SWProjects/quince/English.lproj/InfoPlist.strings4300911832#344"    cd /Users/max/SWProjects/quince    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/English.lproj0#
-
-CCopyStringsFile /users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-r0
-
-CCopyTiffFile /Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/stripControlBackground.tif graphics/stripControlBackground.tif
-s322887878.095606
-e322887878.924144
-r1
-xCopyTiffFile
-x/Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/stripControlBackground.tif
-xgraphics/stripControlBackground.tif
-lSLF07#2@40"Copy graphics/stripControlBackground.tif322887878#322887878#0(0"0(0#0#64"/Users/max/SWProjects/quince/graphics/stripControlBackground.tif4300911832#242"    cd /Users/max/SWProjects/quince    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copytiff graphics/stripControlBackground.tif --outdir /Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources0#
-
-CCopyTiffFile /users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/stripControlBackground.tif graphics/stripControlBackground.tif
-r0
-
-CCpResource build/Debug/quince.app/Contents/Resources/English.lproj/Credits.rtf English.lproj/Credits.rtf
-s322887876.823885
-e322887876.829041
-r1
-xCpResource
-xbuild/Debug/quince.app/Contents/Resources/English.lproj/Credits.rtf
-xEnglish.lproj/Credits.rtf
-lSLF07#2@30"Copy English.lproj/Credits.rtf322887876#322887876#0(0"0(0#0#54"/Users/max/SWProjects/quince/English.lproj/Credits.rtf4300911832#324"    cd /Users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/max/SWProjects/quince/English.lproj/Credits.rtf /Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/English.lproj0#
-
-CCpResource build/Debug/quince.app/Contents/Resources/graph2.png graphics/graph2.png
-s322887878.925450
-e322887878.940117
-r1
-xCpResource
-xbuild/Debug/quince.app/Contents/Resources/graph2.png
-xgraphics/graph2.png
-lSLF07#2@24"Copy graphics/graph2.png322887878#322887878#0(0"0(0#0#48"/Users/max/SWProjects/quince/graphics/graph2.png4300911832#304"    cd /Users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/max/SWProjects/quince/graphics/graph2.png /Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources0#
-
-CCpResource build/Debug/quince.app/Contents/Resources/play.gif graphics/play.gif
-s322887878.931452
-e322887878.940238
-r1
-xCpResource
-xbuild/Debug/quince.app/Contents/Resources/play.gif
-xgraphics/play.gif
-lSLF07#2@22"Copy graphics/play.gif322887878#322887878#0(0"0(0#0#46"/Users/max/SWProjects/quince/graphics/play.gif4300911832#302"    cd /Users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/max/SWProjects/quince/graphics/play.gif /Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources0#
-
-CCpResource build/Debug/quince.app/Contents/Resources/poolIcon.png graphics/poolIcon.png
-s322887878.924250
-e322887878.939923
-r1
-xCpResource
-xbuild/Debug/quince.app/Contents/Resources/poolIcon.png
-xgraphics/poolIcon.png
-lSLF07#2@26"Copy graphics/poolIcon.png322887878#322887878#0(0"0(0#0#50"/Users/max/SWProjects/quince/graphics/poolIcon.png4300911832#306"    cd /Users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/max/SWProjects/quince/graphics/poolIcon.png /Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources0#
-
-CCpResource build/Debug/quince.app/Contents/Resources/quince.icns icon/quince.icns
-s322887878.937236
-e322887879.011325
-r1
-xCpResource
-xbuild/Debug/quince.app/Contents/Resources/quince.icns
-xicon/quince.icns
-lSLF07#2@21"Copy icon/quince.icns322887878#322887879#0(0"0(0#0#45"/Users/max/SWProjects/quince/icon/quince.icns4300911832#301"    cd /Users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/max/SWProjects/quince/icon/quince.icns /Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources0#
-
-CCpResource build/Debug/quince.app/Contents/Resources/stop.gif graphics/stop.gif
-s322887878.932532
-e322887878.944356
-r1
-xCpResource
-xbuild/Debug/quince.app/Contents/Resources/stop.gif
-xgraphics/stop.gif
-lSLF07#2@22"Copy graphics/stop.gif322887878#322887878#0(0"0(0#0#46"/Users/max/SWProjects/quince/graphics/stop.gif4300911832#302"    cd /Users/max/SWProjects/quince    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/max/SWProjects/quince/graphics/stop.gif /Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources0#
-
-CLd /Users/max/SWProjects/quince/build/Debug/quince.app/Contents/MacOS/quince normal i386
-s324413530.348407
-e324413530.491215
-r1
-xLd
-x/Users/max/SWProjects/quince/build/Debug/quince.app/Contents/MacOS/quince
-xnormal
-xi386
-lSLF07#2@78"Link /Users/max/SWProjects/quince/build/Debug/quince.app/Contents/MacOS/quince324413530#324413530#0(0"0(0#0#0"4300911832#504"    cd /Users/max/SWProjects/quince    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/max/SWProjects/quince/build/Debug -F/Users/max/SWProjects/quince/build/Debug -filelist /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/quince.LinkFileList -mmacosx-version-min=10.5 -framework Cocoa -framework QuinceApi -o /Users/max/SWProjects/quince/build/Debug/quince.app/Contents/MacOS/quince0#
-
-CLd /users/max/SWProjects/quince/build/Debug/quince.app/Contents/MacOS/quince normal i386
-s322443281.153985
-e322443281.199693
-r1
-xLd
-x/users/max/SWProjects/quince/build/Debug/quince.app/Contents/MacOS/quince
-xnormal
-xi386
-lSLF07#2@78"Link /users/max/SWProjects/quince/build/Debug/quince.app/Contents/MacOS/quince322443281#322443281#0(0"0(0#0#0"4300911832#504"    cd /users/max/SWProjects/quince    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/users/max/SWProjects/quince/build/Debug -F/users/max/SWProjects/quince/build/Debug -filelist /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/Objects-normal/i386/quince.LinkFileList -mmacosx-version-min=10.5 -framework Cocoa -framework QuinceApi -o /users/max/SWProjects/quince/build/Debug/quince.app/Contents/MacOS/quince0#
-
-CProcessInfoPlistFile /Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Info.plist QuinceCore/quince-Info.plist
-s322887876.819523
-e322887876.823461
-r1
-xProcessInfoPlistFile
-x/Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Info.plist
-xQuinceCore/quince-Info.plist
-lSLF07#2@36"Process QuinceCore/quince-Info.plist322887876#322887876#0(0"0(0#0#57"/Users/max/SWProjects/quince/QuinceCore/quince-Info.plist4300911832#288"    cd /Users/max/SWProjects/quince    builtin-infoPlistUtility QuinceCore/quince-Info.plist -genpkginfo /Users/max/SWProjects/quince/build/Debug/quince.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Info.plist0#
-
-CProcessInfoPlistFile /users/max/SWProjects/quince/build/Debug/quince.app/Contents/Info.plist QuinceCore/quince-Info.plist
-s322442492.358888
-e322442492.502438
-r1
-xProcessInfoPlistFile
-x/users/max/SWProjects/quince/build/Debug/quince.app/Contents/Info.plist
-xQuinceCore/quince-Info.plist
-lSLF07#2@36"Process QuinceCore/quince-Info.plist322442492#322442492#0(0"0(0#0#57"/users/max/SWProjects/quince/QuinceCore/quince-Info.plist4300911832#288"    cd /users/max/SWProjects/quince    builtin-infoPlistUtility QuinceCore/quince-Info.plist -genpkginfo /users/max/SWProjects/quince/build/Debug/quince.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /users/max/SWProjects/quince/build/Debug/quince.app/Contents/Info.plist0#
-
-CProcessPCH /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-excxtwlgddizdebtfisjyomxxvtu/Quince_Prefix.pch.gch QuinceCore/Quince_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s321969055.962210
-e321969060.374820
-r1
-xProcessPCH
-x/var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-excxtwlgddizdebtfisjyomxxvtu/Quince_Prefix.pch.gch
-xQuinceCore/Quince_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@39"Precompile QuinceCore/Quince_Prefix.pch321969055#321969060#0(0"0(0#0#57"/users/max/SWProjects/quince/QuinceCore/Quince_Prefix.pch4300911832#1252"    cd /users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-generated-files.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-own-target-headers.hmap -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-all-target-headers.hmap -iquote /users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-project-headers.hmap -F/users/max/SWProjects/quince/build/Debug -I/users/max/SWProjects/quince/build/Debug/include -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources/i386 -I/users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources -c /users/max/SWProjects/quince/QuinceCore/Quince_Prefix.pch -o /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-excxtwlgddizdebtfisjyomxxvtu/Quince_Prefix.pch.gch0#
-
-CProcessPCH /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-fufsivfxwusrlmggtthfjpiqllas/Quince_Prefix.pch.gch QuinceCore/Quince_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s322885270.654884
-e322885283.761427
-r1
-xProcessPCH
-x/var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-fufsivfxwusrlmggtthfjpiqllas/Quince_Prefix.pch.gch
-xQuinceCore/Quince_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@39"Precompile QuinceCore/Quince_Prefix.pch322885270#322885283#0(0"0(0#0#57"/Users/max/SWProjects/quince/QuinceCore/Quince_Prefix.pch4300911832#1252"    cd /Users/max/SWProjects/quince    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-generated-files.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-own-target-headers.hmap -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-all-target-headers.hmap -iquote /Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/quince-project-headers.hmap -F/Users/max/SWProjects/quince/build/Debug -I/Users/max/SWProjects/quince/build/Debug/include -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources/i386 -I/Users/max/SWProjects/quince/build/quince.build/Debug/quince.build/DerivedSources -c /Users/max/SWProjects/quince/QuinceCore/Quince_Prefix.pch -o /var/folders/3A/3A-XYKxaHa4ZZUOWAB0VuE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quince_Prefix-fufsivfxwusrlmggtthfjpiqllas/Quince_Prefix.pch.gch0#
-
-CStripNIB /Users/max/SWProjects/quince/English.lproj/LayerControlsView.nib
-s322887878.145135
-e322887878.906757
-r1
-xStripNIB
-x/Users/max/SWProjects/quince/English.lproj/LayerControlsView.nib
-lSLF07#2@44"StripNIB English.lproj/LayerControlsView.nib322887878#322887878#0(0"0(0#0#64"/Users/max/SWProjects/quince/English.lproj/LayerControlsView.nib4300911832#282"    cd /Users/max/SWProjects/quince    /Developer/usr/bin/ibtool --strip /Users/max/SWProjects/quince/build/Debug/quince.app/Contents/Resources/English.lproj/LayerControlsView.nib --output-format human-readable-text /Users/max/SWProjects/quince/English.lproj/LayerControlsView.nib0#
-
-CStripNIB /users/max/SWProjects/quince/English.lproj/LayerControlsView.nib
-r0
-
-CTouch /Users/max/SWProjects/quince/build/Debug/quince.app
-s324413530.491466
-e324413530.495657
-r1
-xTouch
-x/Users/max/SWProjects/quince/build/Debug/quince.app
-lSLF07#2@57"Touch /Users/max/SWProjects/quince/build/Debug/quince.app324413530#324413530#0(0"0(0#0#0"4300911832#110"    cd /Users/max/SWProjects/quince    /usr/bin/touch -c /Users/max/SWProjects/quince/build/Debug/quince.app0#
-
-CTouch /users/max/SWProjects/quince/build/Debug/quince.app
-s322443281.199792
-e322443281.229867
-r1
-xTouch
-x/users/max/SWProjects/quince/build/Debug/quince.app
-lSLF07#2@57"Touch /users/max/SWProjects/quince/build/Debug/quince.app322443281#322443281#0(0"0(0#0#0"4300911832#110"    cd /users/max/SWProjects/quince    /usr/bin/touch -c /users/max/SWProjects/quince/build/Debug/quince.app0#
-

@@ -1,3 +1,13 @@
+
+
+_________________________________________________________________
+
+v 0.9.6
+- new feature: automatic hiding of incompatible functions / objects depending on the selection in the pool window
+- optimized creation of childviews by containerviews (objects are being loaded more quickly now)
+- optimized JoinByFrequency
+_________________________________________________________________
+
 v 0.9.5
 - added container: PitchContainer
 - added container: FrequencyStandardContainer
@@ -19,3 +29,4 @@ v 0.9.3.1
 - fixed a bug in the quantization function plug-in
 The quantized output now has the same parameters and values of the input sequence (exept for the subobjects of course).
 
+_________________________________________________________________
