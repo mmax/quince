@@ -115,6 +115,8 @@
 -(NSArray *)volumeValuesForTime:(NSNumber *)time;
 -(NSNumber *)mostIntenseFrequencyForTime:(NSNumber *)time;
 -(NSArray *)valuesForKey:(NSString *)key forTime:(NSNumber *)time;
+-(void)setIsCompatible:(BOOL)b recursively:(BOOL)r;
+-(void)setCompatibilityWithTypes:(NSArray *)types recursively:(BOOL)b;
 
 NSInteger compareStrings(NSString * a, NSString * b, void * context);
 -(QuinceObject *)superObject;

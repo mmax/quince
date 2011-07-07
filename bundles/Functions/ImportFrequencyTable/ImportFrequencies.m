@@ -67,7 +67,7 @@
 -(BOOL)needsInput{return NO;} 
 
 -(void)parsePraatFile:(DataFile *)file{	//VERY OLD CODE FROM MTC
-	NSLog(@" parse praat...");
+	//NSLog(@" parse praat...");
 	QuinceObject * mother = [self outputObjectOfType:@"QuinceObject"];
 
 	NSString * fileContents = [NSString stringWithContentsOfFile:[file filePath] encoding:NSASCIIStringEncoding error:nil];
@@ -190,7 +190,7 @@
 
 -(void)parseSpearFile:(DataFile *)file{
 	
-	NSLog(@" parse spear...");
+	//NSLog(@" parse spear...");
 	NSString * fileContents = [NSString stringWithContentsOfFile:[file filePath] encoding:NSASCIIStringEncoding error:nil];
 	NSArray * lines = [fileContents componentsSeparatedByString:@"\n"];
 	int i, bin, binCount=0, maxBinCount = -1, index;
@@ -209,7 +209,7 @@
 	[scanner scanDouble: &spearFramesDeltaX];
 	spearFramesDeltaX -= spearFramesOffsetX;
 	
-	NSLog(@"parseSpearFile: lines: %d", [lines count]);
+	//NSLog(@"parseSpearFile: lines: %d", [lines count]);
 
 	for(i=5;i<[lines count]-1;i++){//-1 weil sonst der letzte frame doppelt ist (???)
 		
@@ -255,5 +255,14 @@
 	[self done];
 }
 
+-(NSMutableArray *)inputDescriptors{
+	
+	NSMutableDictionary * dictA = [[NSMutableDictionary alloc]init];
+	[dictA setValue:[NSString stringWithString:@"empty"] forKey:@"purpose"];
+	[dictA setValue:[NSString stringWithString:@"empty"] forKey:@"type"];
+	NSMutableArray * ipd = [[NSMutableArray alloc]initWithObjects:dictA, nil];
+	[dictA release];
+	return [ipd autorelease];
+}
 
 @end

@@ -165,17 +165,17 @@ void HandleOutputBuffer (
 						 ) {
 	
 	//NSLog(@"HandleOutputBuffer");
-    AQPlayerState *pAqData = (AQPlayerState *) aData;        // 1
+   /* AQPlayerState *pAqData = (AQPlayerState *) aData;        // 1
     AQPlayerState * aqData = (AQPlayerState *) aData;
-    //if (pAqData->mIsRunning == 0) return;                     // 2
-    UInt32 numBytesReadFromFile;                              // 3
-   // UInt32 numPackets = pAqData->mNumPacketsToRead;           // 4
+    *///if (pAqData->mIsRunning == 0) return;                     // 2
+/* UInt32 numBytesReadFromFile;                              // 3
+    // UInt32 numPackets = pAqData->mNumPacketsToRead;           // 4
 	int index = aqData->index;
 	Player * player = (Player *)pAqData->player;
     double dIncr = aqData->frequency / aqData->mDataFormat.mSampleRate;
     UInt16 sample = 0;
-    
-    void* pBuffer = inBuffer->mAudioData;
+    */
+  //  void* pBuffer = inBuffer->mAudioData;
     UInt32 bytes = inBuffer->mAudioDataBytesCapacity;
     
     for(int i = 0;i<bytes;i+=4){
@@ -212,10 +212,10 @@ void HandleOutputBuffer (
 //		//NSLog(@"HandleOutputBuffer: nothing read");
 //    }
     
-    if([player isPlaying]){
+   /* if([player isPlaying]){
     
         
-    }
+    }*/
 }
 
 

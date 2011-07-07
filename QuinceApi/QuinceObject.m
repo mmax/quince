@@ -109,6 +109,7 @@
 }
 
 -(void)setInitialValues{
+    [self setIsCompatible:YES recursively:NO];
 	[self setValue:[self getType] forKey:@"type"];
 	[self setValue:@"untitled" forKey:@"name"];
 	[self setValue:@"_" forKey:@"description"];
@@ -908,6 +909,30 @@
 	
 	return nil;
 }
+
+-(void)setIsCompatible:(BOOL)b recursively:(BOOL)r{
+    
+    [self setValue:[NSNumber numberWithBool:b] forKey:@"compatible"];
+    if(r){
+        for(QuinceObject * q in [self valueForKey:@"subObjects"])
+            [q setIsCompatible:b recursively:r];
+    }
+}
+
+-(void)setCompatibilityWithTypes:(NSArray *)types recursively:(BOOL)b{
+
+    if([self isOneOfTypesInArray:types])
+        [self setIsCompatible:YES recursively:NO];
+    else
+        [self setIsCompatible:NO recursively:NO];
+    
+    if(b){
+    
+        for(QuinceObject * q in [self valueForKey:@"subObjects"])
+            [q setCompatibilityWithTypes:types recursively:b];
+    }
+}
+
 
 //(NSComparisonResult)localizedCompare:(NSString *)aString
 

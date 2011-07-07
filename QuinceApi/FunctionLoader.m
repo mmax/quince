@@ -32,7 +32,7 @@
 
 -(FunctionLoader *)init{
 
-	if(self = [super init]){
+	if((self = [super init])){
 		dictionary = [[NSMutableDictionary alloc]init];
 	}
 	return self;
@@ -84,6 +84,7 @@
 }
 
 -(id)valueForKey:(NSString *)key{
+//    NSLog(@"FunctionLoader valueForKey:%@",key);
 	return [dictionary valueForKey:key];
 }
 
@@ -127,6 +128,10 @@
 -(void)statusCheck{
 
 	[actionButton setEnabled:[self readyForAction]];
+}
+
+-(IBAction)functionPoolSelectionChanged:(id)sender{
+    [document functionPoolSelectionChanged:sender];
 }
 
 @end

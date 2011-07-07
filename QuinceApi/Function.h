@@ -142,6 +142,8 @@
 -(void)setDocument:(QuinceDocument *)doc;
 -(QuinceDocument *)document;
 -(BOOL)typeCheckPurpose:(NSString *)purpose withType:(NSString *)type;
+-(void)setIsCompatible:(BOOL)b;
+-(NSDictionary *)dictionary;
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @end

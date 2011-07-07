@@ -50,4 +50,5 @@
 - (void)didEndSheet:(NSWindow *)sheet returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo;
 -(BOOL)readyForAction;
 -(void)statusCheck;
+-(IBAction)functionPoolSelectionChanged:(id)sender;
 @end

@@ -33,10 +33,11 @@
 
 -(Function *)init{
 
-	if(self = [super init]){
+	if((self = [super init])){
 		
 		dictionary = [[NSMutableDictionary alloc]init];
 		[self setValue:[self className] forKey:@"name"];
+        [self setIsCompatible:YES];
 		//[self setValue:[self inputDescriptors] forKey:@"inputDescriptors"];
 		[self reset];
 		//addToPool = YES;
@@ -57,9 +58,13 @@
 }
 
 -(void)setValue:(id)value forKey:(NSString *)key{
-//	NSLog(@"MintFunction: (%@): setValue:... forKey:%@", [self className], key);
+	//NSLog(@"Function: (%@): setValue: %@ forKey:%@", [self className], value, key);
 //	NSLog(@"%@", dictionary);
+ //   [self willChangeValueForKey:@"dictionary"];
+    [self willChangeValueForKey:key];
 	[dictionary setValue:value forKey:key];
+    [self didChangeValueForKey:key];
+//    [self didChangeValueForKey:@"dictionary"];
 }
 
 
@@ -68,6 +73,9 @@
 	document = doc;
 }
 
+-(NSDictionary *)dictionary{
+    return dictionary;
+}
 -(QuinceDocument *)document{return document;}
 
 -(void)performActionWithInputDescriptors:(NSArray *)inputDescriptors{
@@ -144,6 +152,11 @@
 
 	[self setValue:[self objectForPurpose:purpose] forKey:@"output"];
 	//NSLog(@"%@: setOutputObjectToObjectWithPurpose: %@", [self className],purpose);
+}
+
+-(void)setIsCompatible:(BOOL)b{
+
+    [self setValue:[NSNumber numberWithBool:b] forKey:@"compatible"];
 }
 
 

@@ -119,7 +119,7 @@
 	
 	
 	if(![self isReady]){
-		NSLog(@"%@: performActionWithInputDescriptors: not ready!");
+		NSLog(@"%@: performActionWithInputDescriptors: not ready!", [self valueForKey:@"name"]);
 		return;
 	}
 	

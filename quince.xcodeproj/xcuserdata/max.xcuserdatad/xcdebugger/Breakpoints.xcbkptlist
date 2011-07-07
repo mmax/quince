@@ -81,11 +81,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "QuinceCore/QuinceDocument.m"
-         timestampString = "328549848.146601"
+         timestampString = "331744152.380794"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "1158"
-         endingLineNumber = "1158">
+         startingLineNumber = "1200"
+         endingLineNumber = "1200">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "Yes"
@@ -93,11 +93,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "QuinceCore/QuinceDocument.m"
-         timestampString = "328549848.146601"
+         timestampString = "331744152.380794"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "1189"
-         endingLineNumber = "1189">
+         startingLineNumber = "1231"
+         endingLineNumber = "1231">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"

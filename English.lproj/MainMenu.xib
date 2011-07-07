@@ -2,7 +2,7 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="7.10">
 	<data>
 		<int key="IBDocument.SystemTarget">1050</int>
-		<string key="IBDocument.SystemVersion">10J3250</string>
+		<string key="IBDocument.SystemVersion">10J4138</string>
 		<string key="IBDocument.InterfaceBuilderVersion">1306</string>
 		<string key="IBDocument.AppKitVersion">1038.35</string>
 		<string key="IBDocument.HIToolboxVersion">461.00</string>
@@ -814,6 +814,15 @@
 									<reference key="NSOnImage" ref="1033313550"/>
 									<reference key="NSMixedImage" ref="310636482"/>
 								</object>
+								<object class="NSMenuItem" id="991721215">
+									<reference key="NSMenu" ref="466310130"/>
+									<string key="NSTitle">clear pool selection</string>
+									<string key="NSKeyEquiv">c</string>
+									<int key="NSKeyEquivModMask">1572864</int>
+									<int key="NSMnemonicLoc">2147483647</int>
+									<reference key="NSOnImage" ref="1033313550"/>
+									<reference key="NSMixedImage" ref="310636482"/>
+								</object>
 							</object>
 						</object>
 					</object>
@@ -1458,6 +1467,14 @@
 					</object>
 					<int key="connectionID">621</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">clearCompatibilities:</string>
+						<reference key="source" ref="1014"/>
+						<reference key="destination" ref="991721215"/>
+					</object>
+					<int key="connectionID">623</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -1887,6 +1904,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="102151532"/>
 							<reference ref="237841660"/>
+							<reference ref="991721215"/>
 						</object>
 						<reference key="parent" ref="586577488"/>
 					</object>
@@ -2282,6 +2300,11 @@
 						<reference key="object" ref="406779097"/>
 						<reference key="parent" ref="622664007"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">622</int>
+						<reference key="object" ref="991721215"/>
+						<reference key="parent" ref="466310130"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -2475,6 +2498,7 @@
 					<string>614.IBPluginDependency</string>
 					<string>618.IBPluginDependency</string>
 					<string>620.IBPluginDependency</string>
+					<string>622.IBPluginDependency</string>
 					<string>72.IBPluginDependency</string>
 					<string>72.ImportedFromIB2</string>
 					<string>73.IBPluginDependency</string>
@@ -2690,6 +2714,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
@@ -2727,7 +2752,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">621</int>
+			<int key="maxID">623</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -2742,10 +2767,12 @@
 							<string>action:</string>
 							<string>cancel:</string>
 							<string>clear:</string>
+							<string>functionPoolSelectionChanged:</string>
 							<string>load:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -2759,6 +2786,7 @@
 							<string>action:</string>
 							<string>cancel:</string>
 							<string>clear:</string>
+							<string>functionPoolSelectionChanged:</string>
 							<string>load:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
@@ -2773,6 +2801,10 @@
 							</object>
 							<object class="IBActionInfo">
 								<string key="name">clear:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">functionPoolSelectionChanged:</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">
@@ -3027,11 +3059,13 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>addLayer:</string>
 							<string>changePlayer:</string>
+							<string>clearCompatibilities:</string>
 							<string>copySelectedObjects:</string>
 							<string>createEnvelopeForNewAudioFile:</string>
 							<string>createFunctionGraph:</string>
 							<string>foldSelectedObjectsInPool:</string>
 							<string>functionComposerTargetFunctionChanged:</string>
+							<string>functionPoolSelectionChanged:</string>
 							<string>importAudioFile:</string>
 							<string>inspectorAddParameter:</string>
 							<string>mixDownWithMenuItem:</string>
@@ -3057,6 +3091,8 @@
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -3094,11 +3130,13 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>addLayer:</string>
 							<string>changePlayer:</string>
+							<string>clearCompatibilities:</string>
 							<string>copySelectedObjects:</string>
 							<string>createEnvelopeForNewAudioFile:</string>
 							<string>createFunctionGraph:</string>
 							<string>foldSelectedObjectsInPool:</string>
 							<string>functionComposerTargetFunctionChanged:</string>
+							<string>functionPoolSelectionChanged:</string>
 							<string>importAudioFile:</string>
 							<string>inspectorAddParameter:</string>
 							<string>mixDownWithMenuItem:</string>
@@ -3133,6 +3171,10 @@
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">
+								<string key="name">clearCompatibilities:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
 								<string key="name">copySelectedObjects:</string>
 								<string key="candidateClassName">id</string>
 							</object>
@@ -3150,6 +3192,10 @@
 							</object>
 							<object class="IBActionInfo">
 								<string key="name">functionComposerTargetFunctionChanged:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">functionPoolSelectionChanged:</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">

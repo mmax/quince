@@ -694,8 +694,8 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 	NSArray * subControllers = [mc controllersForSubObjects];
 	//[document setIndeterminateProgressTask:[NSString stringWithFormat:@"%@: creating display...", [self className]]];
 	//[document displayProgress:YES];
-	for(QuinceObjectController * mc in subControllers)
-		[self createChildViewForQuinceObjectController:mc];
+	for(QuinceObjectController * c in subControllers)
+		[self createChildViewForQuinceObjectController:c];
 	//[document displayProgress:NO];	
 }*/
 
@@ -707,6 +707,7 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
     //int iMax = max;
     [document setProgressTask:[NSString stringWithFormat:@"%@: creating display...", [self className]]];
 	[document displayProgress:YES];
+   
     NSString * lx = [self keyForLocationOnXAxis];
     NSString * sx = [self keyForSizeOnXAxis];
     NSString * ly = [self keyForLocationOnYAxis];
@@ -730,11 +731,12 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 	[self setContentController:nil];
 	[self setNeedsDisplay:YES];
 }
-
+//////////////////////////////////////////////////
+// i guess this method is obsolete:
 -(ChildView *)createChildViewForQuinceObjectController:(QuinceObjectController *)mc{
 	ChildView * childView = [layerController newChildViewOfClassNamed:[self defaultChildViewClassName]];
 	[childView setEnclosingView:self];
-	//[childView setController:mc];
+	[childView setController:mc];
     
 	[mc registerChildView:childView];
 	//[childView setInteriorColor:[mc color]];
@@ -742,6 +744,9 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 	[self addSubview:childView];
 	return childView;	
 }
+//////////////////////////////////////////////////
+
+
 
 -(ChildView *)createChildViewForQuinceObjectController:(QuinceObjectController *)mc andBindWithKeysForLocationOnX:(NSString *)lx sizeOnX:(NSString *)sx locationOnY:(NSString *)ly{
     

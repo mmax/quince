@@ -119,5 +119,14 @@
 
 -(BOOL)needsInput{return NO;}
 
+-(NSMutableArray *)inputDescriptors{
+	
+	NSMutableDictionary * dictA = [[NSMutableDictionary alloc]init];
+	[dictA setValue:[NSString stringWithString:@"empty"] forKey:@"purpose"];
+	[dictA setValue:[NSString stringWithString:@"empty"] forKey:@"type"];
+	NSMutableArray * ipd = [[NSMutableArray alloc]initWithObjects:dictA, nil];
+	[dictA release];
+	return [ipd autorelease];
+}
 
 @end

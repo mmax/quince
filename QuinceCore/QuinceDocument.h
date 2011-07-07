@@ -157,7 +157,8 @@
 -(IBAction) inspectorAddParameter:(id)sender;
 -(IBAction)toggleFunctionComposer:(id)sender;
 -(IBAction)objectPoolSelectionChanged:(id)sender;
-
+-(IBAction)functionPoolSelectionChanged:(id)sender;
+-(IBAction)clearCompatibilities:(id)sender;
 -(IBAction)createFunctionGraph:(id)sender;	
 -(IBAction)functionComposerTargetFunctionChanged:(id)sender;
 -(IBAction)splitAtCursorTime:(id)sender;
@@ -179,6 +180,9 @@
 -(QuinceObject *)objectWithValue:(id)value forKey:(NSString *)key;
 -(NSMutableArray *)playbackObjectList;
 -(NSMutableArray *)removeDuplicatesInArrayOfQuinceObjectControllers:(NSMutableArray *)controllers;
+
+-(void)updateFunctionCompatibilityForQuinceObjectController:(QuinceObjectController *)qc;
+-(BOOL)isFunction:(Function *)fun compatibleWithType:(NSString *)type;
 
 -(FunctionGraph *)composeFunctionGraphWithSourceName:(NSString *)sourceName targetName:(NSString *)targetName purpose:(NSString *)purpose name:(NSString *)name;
 -(void)saveGraph:(FunctionGraph *)graph;

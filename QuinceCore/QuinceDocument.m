@@ -131,7 +131,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	
 	[self startSearch:nil];
 	[objectPoolTreeController bind:@"contentArray" toObject:self withKeyPath:@"objectNodes" options:nil];
-	[functionPoolController bind:@"contentArray" toObject:self withKeyPath:@"functionPool" options:nil];
+	//[functionPoolController bind:@"contentArray" toObject:self withKeyPath:@"functionPool" options:nil];
 	if(!functionComposerFunctionPoolController)NSLog(@"doc: windowControllerDidLoadNib: no functionComposerFunctionPoolController bad bad bad bad bad bad bad!");
 	[functionComposerFunctionPoolController bind:@"contentArray" toObject:self withKeyPath:@"functionPool" options:nil];
 	
@@ -488,7 +488,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 -(void)addFunctionToPool:(Function *)fun{
-
+    
 	[fun setDocument:self];
 	[functionPoolController addObject:fun];	
 //	NSLog(@"addFunctionToPool:%@", [fun valueForKey:@"name"]);
@@ -661,8 +661,14 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 -(IBAction)objectPoolSelectionChanged:(id)sender{
 
-
-	// validate interface items
+    for(QuinceObjectController * c in objectPool)
+        [[c content]setIsCompatible:YES recursively:YES];
+    // better way would be to set up a flag and to check wether this is actually necessary...
+    
+	
+    
+    
+    // now validate interface items
 	
 	int count = [[objectPoolTreeController selectedObjects]count];
 	if(count>1 || ![[[self getSingleSelectedObjectController]content]isOfType:@"AudioFile"]){
@@ -686,7 +692,11 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	QuinceObjectController * mc = [self getSingleSelectedObjectController];
 	[self setValue:mc forKey:@"selectedObject"];
 	
+    [self updateFunctionCompatibilityForQuinceObjectController:[self getSingleSelectedObjectController]];
 	
+    
+
+    
 	//enabling/disabling pool entries...
 	
 	/* NSArray * columns = [outlineView tableColumns];
@@ -697,6 +707,38 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 		}
 	 */	
 	//NSLog(@"row: %d", row);
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-(IBAction)functionPoolSelectionChanged:(id)sender{ // will be called by functionLoader because functionLoader is Target of functionPoolTable!
+    
+    for(Function * f in functionPool)
+        [f setIsCompatible:YES];
+    
+    Function * f = [self getSingleSelectedFunction];
+    
+    NSMutableArray * types = [[NSMutableArray alloc]init];
+    
+    NSArray * desc = [f inputDescriptors];
+    
+    for(NSDictionary * d in desc)
+        [types addObject:[d valueForKey:@"type"]];
+    
+    for(QuinceObjectController * c in objectPool){
+        [[c content]setCompatibilityWithTypes:types recursively:YES];
+        
+    }
+    
+}
+
+-(IBAction)clearCompatibilities:(id)sender{
+
+    for(Function * f in functionPool)
+        [f setIsCompatible:YES];
+    
+    for(QuinceObjectController * c in objectPool)
+        [[c content]setIsCompatible:YES recursively:YES];
+        
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1519,8 +1561,48 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	QuinceObject * quince = [objectInspectorController content];
 	[objectInspectorController setContent:quince];
 }
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-(void)updateFunctionCompatibilityForQuinceObjectController:(QuinceObjectController *)qc{
 
 
+    NSString * type = [[qc content] type];
+    BOOL comp = NO;
+    
+    NSLog(@"updating compatibilities...");
+    Function * f;
+    for(f in functionPool){
+        if([self isFunction:f compatibleWithType:type])
+            comp = YES;
+        else
+            comp = NO;
+        
+        [f setIsCompatible:comp];//] :[NSNumber numberWithBool:comp] forKey:@"compatible"];
+        //NSLog(@"%@: compatible With %@: %@", [f valueForKey:@"name"], type, [f valueForKey:@"compatible"]);
+        
+       //        [functionPoolTable reloadData];
+    
+       // NSLog(@"%@", [f dictionary]);
+    }
+    //[functionPoolController rearrangeObjects];
+    
+
+
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-(BOOL)isFunction:(Function *)fun compatibleWithType:(NSString *)type{
+    
+    NSArray * desc = [fun inputDescriptors];
+    
+    for(NSDictionary * d in desc){
+        if([[d valueForKey:@"type"]isEqualToString:type])
+            return YES;
+    }
+    return NO;
+}
+        
 #pragma mark perform functions
 
 

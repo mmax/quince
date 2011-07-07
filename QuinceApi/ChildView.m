@@ -452,6 +452,7 @@
 
 -(void)setController:(QuinceObjectController *)mc andBindWithKeysForLocationOnX:(NSString *)lx sizeOnX:(NSString *)sx locationOnY:(NSString *)ly{
     controller = mc;
+    
     [self bind:lx toObject:controller withKeyPath:[NSString stringWithFormat:@"selection.%@", lx] options:nil];	
 	[self bind:sx toObject:controller withKeyPath:[NSString stringWithFormat:@"selection.%@", sx] options:nil];	
 	[self bind:ly toObject:controller withKeyPath:[NSString stringWithFormat:@"selection.%@", ly] options:nil];	
