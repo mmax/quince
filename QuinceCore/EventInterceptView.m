@@ -165,9 +165,8 @@
 		[guide setValue:zero forKey:@"path"];
 		
 		NSMutableAttributedString * s = [[[NSMutableAttributedString alloc]initWithString:[NSString stringWithFormat:@"%d dB", dB]]autorelease];
-       // NSLog(@"intercept:error_now?");
+
 		tRange = NSMakeRange(0, [s length]);	
-      //  NSLog(@"intercept:error_no!");
 		[s addAttribute:NSForegroundColorAttributeName value:[NSColor whiteColor] range:tRange];
 		[s addAttribute:NSFontAttributeName value:font range:tRange];
 		point = NSMakePoint([self bounds].origin.x+1,y+1);
@@ -325,14 +324,11 @@
 }
 
 -(void)setFrameSize:(NSSize)newSize{
-
-	if(newSize.width > [self frame].size.width){
-		[super setFrameSize:newSize];
+	[super setFrameSize:newSize];
+    
+	if(newSize.width > [self frame].size.width)
 		[self computeGuides];
-	}
-	else
-		[super setFrameSize:newSize];
-
+	
 }
 
 -(void)computeGuides{
@@ -347,12 +343,14 @@
     else if ([yP isEqualToString:@"pitch"])
         [self computePitchGuides];
     
+    [self setNeedsDisplay:YES];
 
 }
 
 -(void)setFrame:(NSRect)frameRect{
 	[super setFrame:frameRect];
 	[self computeGuides];
+    
 	/* if(volumeGuides){
 			NSAffineTransform * trans = [NSAffineTransform transform];
 			[trans scaleXBy:diffX yBy:1];

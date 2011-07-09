@@ -33,7 +33,7 @@
 
 -(Audio2Envelope *)init{
 
-	if(self = [super init]){
+	if((self = [super init])){
 		sr = 44100;
 	}
    return self;
@@ -132,6 +132,12 @@
 	//int samplesPerWindow = kSamplesPerWindow;
 	err = ExtAudioFileOpenURL(CFURLCreateFromFSRef(NULL, &soundRef), &inFile);
 	
+//    kExtAudioFileProperty_FileLengthFrames
+    
+    SInt64 totalFrameCount;
+    UInt32 tfcs = sizeof(totalFrameCount);
+    
+    err = ExtAudioFileGetProperty(inFile, kExtAudioFileProperty_FileLengthFrames, &tfcs, &totalFrameCount);
 	UInt32 propSize;
 	
 	AudioStreamBasicDescription clientFormat;
@@ -173,6 +179,9 @@
 	bufList.mBuffers[0].mDataByteSize = samples * sizeof(Float32);
 	
 	UInt32 loadedPackets = numPackets;
+    float progress = 0, old = 0;
+    [document setProgressTask:@"reading frames..."];
+    [document displayProgress:YES];
 	while(1){
 		err = ExtAudioFileRead(inFile, &loadedPackets, &bufList);
 		if (err)
@@ -190,9 +199,16 @@
 					frameCount +=N;
 				} */
 		for(i=0;i<loadedPackets;i++){
-			[data addObject:[NSNumber numberWithFloat:maxabs(srcBuffer[i])]];
-			frameCount++;
+			[data addObject:[NSNumber numberWithFloat:fabs(srcBuffer[i])]];
+            frameCount++;
 		}
+        progress = (100.0/totalFrameCount)*frameCount;
+        if(progress >= old+.2){
+            old = progress;
+            [document setProgress:progress];
+        }
+        
+
 	}
 	
 	ExtAudioFileDispose(inFile);

@@ -8797,7 +8797,7 @@
 				GCC_PREFIX_HEADER = QuinceCore/Quince_Prefix.pch;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "QuinceCore/quince-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
+				INSTALL_PATH = "$(PROJECT_DIR)/build";
 				PRODUCT_NAME = quince;
 				SDKROOT = macosx;
 			};
@@ -8812,7 +8812,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MINT_Prefix.pch;
 				INFOPLIST_FILE = "quince-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
+				INSTALL_PATH = "$(PROJECT)/build";
 				PRODUCT_NAME = MINT;
 				SDKROOT = macosx;
 			};

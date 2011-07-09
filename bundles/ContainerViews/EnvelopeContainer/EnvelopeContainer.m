@@ -80,11 +80,13 @@
 	 }
 
 	 [self createViewsForQuinceObjectController:mc];
+     [document displayProgress:NO];
 }
 
 
 -(void)createViewsForQuinceObjectController:(QuinceObjectController *)mc{
 
+    
 	[self createWindows];
 	if(fillPaths) [fillPaths removeAllObjects];
 	else fillPaths = [[NSMutableArray alloc]init];
@@ -104,7 +106,12 @@
 	double /* prevX=0, prevY=0,  */x=0,y=0, time;//,time, spw = [[[[self contentController]content] valueForKey:@"samplesPerWindow"]doubleValue];
 	NSPoint startPoint = NSMakePoint(x, y);
 	NSPoint point;
+    [document setProgressTask:@"creating view..."];
+    [document displayProgress:YES];
+    
 	for(long i = 0;i<[windows count];i+= N){
+        [document setProgress:(100.0/[windows count])*i];
+         
 		NSBezierPath * p = [[NSBezierPath alloc]init];
 		NSBezierPath * q = [[NSBezierPath alloc]init];
 		[p moveToPoint:startPoint];
@@ -163,6 +170,11 @@
 
 
 -(void)createWindows{
+    
+    [document setProgressTask:@"EnvelopeContainer: creating envelope windows..."];
+    [document setProgress:0];
+    [document displayProgress:YES];
+    
 	if(windows){
 		//[windows makeObjectsPerformSelector:@selector(release)];
 		[windows removeAllObjects];
@@ -206,6 +218,9 @@
 	
 	int framesPerWindowI = framesPerWindow+0.5;
 	for(long i=0;i<[audio count];i+= N) {
+        
+        [document setProgress:(100.0/[audio count])*i];
+        
 		N = [audio count] < i+framesPerWindowI ? [audio count]-i : framesPerWindowI;
 		max = 0;
 		for(int a=0;a<N;a++){

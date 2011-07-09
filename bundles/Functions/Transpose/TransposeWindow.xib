@@ -255,7 +255,7 @@
 											<object class="NSPopUpButton" id="736802934">
 												<reference key="NSNextResponder" ref="326226990"/>
 												<int key="NSvFlags">268</int>
-												<string key="NSFrame">{{72, 56}, {63, 22}}</string>
+												<string key="NSFrame">{{72, 56}, {76, 22}}</string>
 												<reference key="NSSuperview" ref="326226990"/>
 												<reference key="NSWindow"/>
 												<reference key="NSNextKeyView" ref="539260870"/>
