@@ -31,7 +31,7 @@
 
 -(TimeGridContainer *)init{
 
-	if(self = [super init]){
+	if((self = [super init])){
 		path = [[NSBezierPath alloc]init];
 		regions = [[NSMutableArray alloc]init];
 		paths = [[NSMutableArray alloc]init];
@@ -195,5 +195,7 @@
 	for(NSBezierPath * p in regions)
 		[p transformUsingAffineTransform:t];
 }
+
+-(BOOL)allowsPlayback{return NO;}
 
 @end

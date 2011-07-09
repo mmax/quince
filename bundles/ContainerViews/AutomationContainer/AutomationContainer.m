@@ -40,7 +40,7 @@
   */
 
  -(id)initWithFrame:(NSRect)frame{	
-	if (self = [super initWithFrame:frame]) {
+	if ((self = [super initWithFrame:frame])) {
 		paths = [[NSMutableArray alloc]init];
 	}
 	return self;
@@ -191,5 +191,6 @@
 	// do nothing
 }
 
+-(BOOL)allowsPlayback{return NO;}
 
 @end

@@ -705,7 +705,7 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 	QuinceObjectController * c;
     float progress, max = [subControllers count];
     //int iMax = max;
-    [document setProgressTask:[NSString stringWithFormat:@"%@: creating display...", [self className]]];
+    [document setProgressTask:[NSString stringWithFormat:@"%@: processing objects...", [self className]]];
 	[document displayProgress:YES];
    
     NSString * lx = [self keyForLocationOnXAxis];

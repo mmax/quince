@@ -32,6 +32,9 @@
 		501C286111CE92F90097B5F0 /* ResampleEnvelopeWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501C286011CE92F90097B5F0 /* ResampleEnvelopeWindow.xib */; };
 		5020C6A013C7A23600D58742 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
 		5020C6A613C7A23600D58742 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5020C6A413C7A23600D58742 /* InfoPlist.strings */; };
+		5020C6AC13C7A32A00D58742 /* TransposeWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5020C6AB13C7A32A00D58742 /* TransposeWindow.xib */; };
+		5020C6B113C7A5AA00D58742 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		5020C6B413C7A5C600D58742 /* Transpose.m in Sources */ = {isa = PBXBuildFile; fileRef = 5020C6B313C7A5C600D58742 /* Transpose.m */; };
 		5027F13A13951CED00A9389A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
 		5027F14F13951E3600A9389A /* PitchContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5027F14E13951E3600A9389A /* PitchContainer.m */; };
 		5027F15013951EFC00A9389A /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
@@ -83,6 +86,8 @@
 		505B498E1207745D0050CFB7 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B49701207745C0050CFB7 /* QuinceApi.framework */; };
 		505C6C75119F1FFD0086B612 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505C6C74119F1FFD0086B612 /* AudioUnit.framework */; };
 		506009551131BC7A00E75717 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506009541131BC7A00E75717 /* MainController.m */; };
+		5069D9F713C7BDCD00B0B6E5 /* PitchQuantization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5069D9F613C7BDCD00B0B6E5 /* PitchQuantization.m */; };
+		5069D9FA13C7BE2600B0B6E5 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		506BF80F117A597200ECBC4E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506BF7B1117A56DA00ECBC4E /* SenTestingKit.framework */; };
 		506BF84C117A5AF500ECBC4E /* AutomationContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 506BF84B117A5AF500ECBC4E /* AutomationContainer.m */; };
 		506BF859117A5B3400ECBC4E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506BF7B1117A56DA00ECBC4E /* SenTestingKit.framework */; };
@@ -134,6 +139,8 @@
 		508C44F21295E66B00875B93 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		508C44F51295E6A900875B93 /* JoinByFrequency.m in Sources */ = {isa = PBXBuildFile; fileRef = 508C44F41295E6A900875B93 /* JoinByFrequency.m */; };
 		508C45661295E90400875B93 /* JoinByFrequencyWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 508C45651295E90400875B93 /* JoinByFrequencyWindow.xib */; };
+		508CB8C413C7BABD00F43AED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		508CB8CA13C7BABD00F43AED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 508CB8C813C7BABD00F43AED /* InfoPlist.strings */; };
 		50999AAD127642FB00AD0D65 /* AlignOnVolume.m in Sources */ = {isa = PBXBuildFile; fileRef = 50999A1F127640C000AD0D65 /* AlignOnVolume.m */; };
 		50999ABC1276431A00AD0D65 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		50999B2A127645A300AD0D65 /* AudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 50999B26127645A300AD0D65 /* AudioFile.m */; };
@@ -286,6 +293,20 @@
 			remoteGlobalIDString = 501C284011CE8D920097B5F0;
 			remoteInfo = ResampleEnvelope;
 		};
+		5020C6AD13C7A59300D58742 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5020C69E13C7A23500D58742;
+			remoteInfo = Transpose;
+		};
+		5020C6AF13C7A5A200D58742 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
 		5027F14513951D0600A9389A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
@@ -334,6 +355,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 50325E9F1226947500E22031;
 			remoteInfo = CSoundPlayer;
+		};
+		5069D9F813C7BE1D00B0B6E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
 		};
 		506BF7DD117A585700ECBC4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -607,6 +635,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 508C44EA1295E65E00875B93;
 			remoteInfo = JoinByFrequency;
+		};
+		508CB8CF13C7BB0100F43AED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 508CB8C213C7BABC00F43AED;
+			remoteInfo = PitchQuantization;
 		};
 		50999ABA1276431700AD0D65 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1045,9 +1080,12 @@
 		501E41FF11B5639E000072FA /* FunctionGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FunctionGraph.h; path = QuinceApi/FunctionGraph.h; sourceTree = "<group>"; };
 		501E420011B5639E000072FA /* FunctionGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FunctionGraph.m; path = QuinceApi/FunctionGraph.m; sourceTree = "<group>"; };
 		5020C69F13C7A23500D58742 /* Transpose.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Transpose.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		5020C6A313C7A23600D58742 /* Transpose-Info.plist */ = {isa = PBXFileReference; path = "Transpose-Info.plist"; sourceTree = "<group>"; };
+		5020C6A313C7A23600D58742 /* Transpose-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Transpose-Info.plist"; path = "bundles/Functions/Transpose/Transpose-Info.plist"; sourceTree = SOURCE_ROOT; };
 		5020C6A513C7A23600D58742 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5020C6A713C7A23600D58742 /* Transpose-Prefix.pch */ = {isa = PBXFileReference; path = "Transpose-Prefix.pch"; sourceTree = "<group>"; };
+		5020C6A713C7A23600D58742 /* Transpose-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Transpose-Prefix.pch"; path = "bundles/Functions/Transpose/Transpose-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		5020C6AB13C7A32A00D58742 /* TransposeWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TransposeWindow.xib; path = bundles/Functions/Transpose/TransposeWindow.xib; sourceTree = SOURCE_ROOT; };
+		5020C6B213C7A5C600D58742 /* Transpose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Transpose.h; path = bundles/Functions/Transpose/Transpose.h; sourceTree = SOURCE_ROOT; };
+		5020C6B313C7A5C600D58742 /* Transpose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Transpose.m; path = bundles/Functions/Transpose/Transpose.m; sourceTree = SOURCE_ROOT; };
 		5027F13913951CED00A9389A /* PitchContainer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PitchContainer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		5027F14713951D3E00A9389A /* PitchContainer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "PitchContainer-Info.plist"; path = "bundles/ContainerViews/PitchContainer/PitchContainer-Info.plist"; sourceTree = SOURCE_ROOT; };
 		5027F14913951D4F00A9389A /* PitchContainer-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PitchContainer-Prefix.pch"; path = "bundles/ContainerViews/PitchContainer/PitchContainer-Prefix.pch"; sourceTree = SOURCE_ROOT; };
@@ -1087,6 +1125,8 @@
 		505C6C74119F1FFD0086B612 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = /System/Library/Frameworks/AudioUnit.framework; sourceTree = "<absolute>"; };
 		506009531131BC7A00E75717 /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainController.h; path = QuinceCore/MainController.h; sourceTree = "<group>"; };
 		506009541131BC7A00E75717 /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainController.m; path = QuinceCore/MainController.m; sourceTree = "<group>"; };
+		5069D9F513C7BDCD00B0B6E5 /* PitchQuantization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PitchQuantization.h; path = bundles/Functions/PitchQuantization/PitchQuantization.h; sourceTree = SOURCE_ROOT; };
+		5069D9F613C7BDCD00B0B6E5 /* PitchQuantization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PitchQuantization.m; path = bundles/Functions/PitchQuantization/PitchQuantization.m; sourceTree = SOURCE_ROOT; };
 		506BF7B1117A56DA00ECBC4E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		506BF833117A5A9700ECBC4E /* AutomationView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutomationView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		506BF834117A5A9700ECBC4E /* AutomationView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "AutomationView-Info.plist"; path = "bundles/ContainerViews/AutomationContainer/AutomationView-Info.plist"; sourceTree = "<group>"; };
@@ -1190,6 +1230,10 @@
 		508C44F31295E6A900875B93 /* JoinByFrequency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JoinByFrequency.h; path = /Users/max/SWProjects/quince/bundles/Functions/JoinByFrequency/JoinByFrequency.h; sourceTree = "<absolute>"; };
 		508C44F41295E6A900875B93 /* JoinByFrequency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JoinByFrequency.m; path = /Users/max/SWProjects/quince/bundles/Functions/JoinByFrequency/JoinByFrequency.m; sourceTree = "<absolute>"; };
 		508C45651295E90400875B93 /* JoinByFrequencyWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = JoinByFrequencyWindow.xib; path = bundles/Functions/JoinByFrequency/JoinByFrequencyWindow.xib; sourceTree = "<group>"; };
+		508CB8C313C7BABC00F43AED /* PitchQuantization.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PitchQuantization.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		508CB8C713C7BABD00F43AED /* PitchQuantization-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "PitchQuantization-Info.plist"; path = "bundles/Functions/PitchQuantization/PitchQuantization-Info.plist"; sourceTree = "<group>"; };
+		508CB8C913C7BABD00F43AED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		508CB8CB13C7BABD00F43AED /* PitchQuantization-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PitchQuantization-Prefix.pch"; path = "bundles/Functions/PitchQuantization/PitchQuantization-Prefix.pch"; sourceTree = "<group>"; };
 		50999A1E127640C000AD0D65 /* AlignOnVolume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlignOnVolume.h; path = /Users/max/SWProjects/quince/bundles/Functions/AlignOnVolume/AlignOnVolume.h; sourceTree = "<absolute>"; };
 		50999A1F127640C000AD0D65 /* AlignOnVolume.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlignOnVolume.m; path = /Users/max/SWProjects/quince/bundles/Functions/AlignOnVolume/AlignOnVolume.m; sourceTree = "<absolute>"; };
 		50999A9E1276425E00AD0D65 /* AlignOnVolume-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "AlignOnVolume-Info.plist"; path = "/Users/max/SWProjects/quince/bundles/Functions/AlignOnVolume/AlignOnVolume-Info.plist"; sourceTree = "<absolute>"; };
@@ -1382,6 +1426,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5020C6B113C7A5AA00D58742 /* QuinceApi.framework in Frameworks */,
 				5020C6A013C7A23600D58742 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1609,6 +1654,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				508C44F21295E66B00875B93 /* QuinceApi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		508CB8C013C7BABC00F43AED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5069D9FA13C7BE2600B0B6E5 /* QuinceApi.framework in Frameworks */,
+				508CB8C413C7BABD00F43AED /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1862,6 +1916,7 @@
 				5027F13913951CED00A9389A /* PitchContainer.bundle */,
 				504FDE8813BCC3A500470C77 /* OscilPlayer.bundle */,
 				5020C69F13C7A23500D58742 /* Transpose.bundle */,
+				508CB8C313C7BABC00F43AED /* PitchQuantization.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1869,8 +1924,8 @@
 		2A37F4AAFDCFA73011CA2CEA /* MINT */ = {
 			isa = PBXGroup;
 			children = (
-				504FDE9D13BCCCDA00470C77 /* AudioToolbox.framework */,
 				50A522B5117A52560072FB09 /* QuinceApi.framework */,
+				504FDE9D13BCCCDA00470C77 /* AudioToolbox.framework */,
 				2A37F4ABFDCFA73011CA2CEA /* Model */,
 				50A5229B117A51BA0072FB09 /* ModelControllers */,
 				50BB629C116F987D0056C410 /* ViewControllers */,
@@ -1879,7 +1934,6 @@
 				2A37F4AFFDCFA73011CA2CEA /* Plug-Ins */,
 				506BF818117A59F100ECBC4E /* Other Sources */,
 				2A37F4B8FDCFA73011CA2CEA /* Resources */,
-				5020C6A113C7A23600D58742 /* Transpose */,
 				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
 				19C28FB0FE9D524F11CA2CBB /* Products */,
 			);
@@ -2083,6 +2137,9 @@
 			isa = PBXGroup;
 			children = (
 				5020C6A213C7A23600D58742 /* Supporting Files */,
+				5020C6AB13C7A32A00D58742 /* TransposeWindow.xib */,
+				5020C6B213C7A5C600D58742 /* Transpose.h */,
+				5020C6B313C7A5C600D58742 /* Transpose.m */,
 			);
 			path = Transpose;
 			sourceTree = "<group>";
@@ -2168,6 +2225,7 @@
 				50D194DF123045C100C3FC2C /* MapDynamicExpr */,
 				504A69D111A9F707007F60FF /* Normalize */,
 				508C43BE129559D700875B93 /* OneVoice_Loudest */,
+				508CB8C513C7BABD00F43AED /* PitchQuantization */,
 				506BF9A6117A665300ECBC4E /* Quantization */,
 				50E860BF11F858780014CFE9 /* RemoveParameter */,
 				501C285B11CE8E630097B5F0 /* ResampleEnvelope */,
@@ -2178,6 +2236,7 @@
 				50D1966C1230692D00C3FC2C /* Sets_UnionNoDoubles */,
 				5074FE631238E20200BB60C6 /* SetParameter */,
 				50B8F5E01231003300E444BC /* TempoChange */,
+				5020C6A113C7A23600D58742 /* Transpose */,
 			);
 			name = Functions;
 			sourceTree = "<group>";
@@ -2401,6 +2460,26 @@
 				508C44F41295E6A900875B93 /* JoinByFrequency.m */,
 			);
 			name = JoinByFrequency;
+			sourceTree = "<group>";
+		};
+		508CB8C513C7BABD00F43AED /* PitchQuantization */ = {
+			isa = PBXGroup;
+			children = (
+				508CB8C613C7BABD00F43AED /* Supporting Files */,
+				5069D9F513C7BDCD00B0B6E5 /* PitchQuantization.h */,
+				5069D9F613C7BDCD00B0B6E5 /* PitchQuantization.m */,
+			);
+			path = PitchQuantization;
+			sourceTree = "<group>";
+		};
+		508CB8C613C7BABD00F43AED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				508CB8C713C7BABD00F43AED /* PitchQuantization-Info.plist */,
+				508CB8C813C7BABD00F43AED /* InfoPlist.strings */,
+				508CB8CB13C7BABD00F43AED /* PitchQuantization-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		50A362E6126EF700004D360B /* ExportDescriptionListing */ = {
@@ -2827,6 +2906,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5020C6B013C7A5A200D58742 /* PBXTargetDependency */,
 			);
 			name = Transpose;
 			productName = Transpose;
@@ -3327,6 +3407,24 @@
 			productReference = 508C44EB1295E65E00875B93 /* JoinByFrequency.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
+		508CB8C213C7BABC00F43AED /* PitchQuantization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 508CB8CC13C7BABD00F43AED /* Build configuration list for PBXNativeTarget "PitchQuantization" */;
+			buildPhases = (
+				508CB8BF13C7BABC00F43AED /* Sources */,
+				508CB8C013C7BABC00F43AED /* Frameworks */,
+				508CB8C113C7BABC00F43AED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5069D9F913C7BE1D00B0B6E5 /* PBXTargetDependency */,
+			);
+			name = PitchQuantization;
+			productName = PitchQuantization;
+			productReference = 508CB8C313C7BABC00F43AED /* PitchQuantization.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		50999AA6127642A200AD0D65 /* AlignOnVolume */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50999AAB127642A300AD0D65 /* Build configuration list for PBXNativeTarget "AlignOnVolume" */;
@@ -3682,7 +3780,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				50D322B913C667D000F09158 /* PBXTargetDependency */,
 				506BF7DE117A585700ECBC4E /* PBXTargetDependency */,
 				50999BF5127650AC00AD0D65 /* PBXTargetDependency */,
 				506BF8AA117A5E6200ECBC4E /* PBXTargetDependency */,
@@ -3736,6 +3833,9 @@
 				506C6B47135629E30060BD9D /* PBXTargetDependency */,
 				5035B90A13563F9D003E8570 /* PBXTargetDependency */,
 				5027F14613951D0600A9389A /* PBXTargetDependency */,
+				50D322B913C667D000F09158 /* PBXTargetDependency */,
+				5020C6AE13C7A59300D58742 /* PBXTargetDependency */,
+				508CB8D013C7BB0100F43AED /* PBXTargetDependency */,
 			);
 			name = quince;
 			productInstallPath = "$(HOME)/Applications";
@@ -3798,6 +3898,7 @@
 				504A69A911A9F692007F60FF /* Normalize */,
 				504FDE8713BCC3A500470C77 /* OscilPlayer */,
 				5027F13813951CED00A9389A /* PitchContainer */,
+				508CB8C213C7BABC00F43AED /* PitchQuantization */,
 				506BF99B117A660A00ECBC4E /* Quantization */,
 				8D15AC270486D014006FF6A4 /* quince */,
 				50A522B4117A52560072FB09 /* QuinceApi */,
@@ -3815,9 +3916,9 @@
 				50D196021230669B00C3FC2C /* Sets_UnionNoDoubles */,
 				50B8F5801230FF7700E444BC /* TempoChange */,
 				506BF8C2117A5F6300ECBC4E /* TimeGridContainer */,
+				5020C69E13C7A23500D58742 /* Transpose */,
 				506BF8E8117A606600ECBC4E /* VolumeStandardContainer */,
 				506BF8F6117A60DD00ECBC4E /* VolumeStandardContainerTestUnit */,
-				5020C69E13C7A23500D58742 /* Transpose */,
 			);
 		};
 /* End PBXProject section */
@@ -3888,6 +3989,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5020C6A613C7A23600D58742 /* InfoPlist.strings in Resources */,
+				5020C6AC13C7A32A00D58742 /* TransposeWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4087,6 +4189,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				508C45661295E90400875B93 /* JoinByFrequencyWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		508CB8C113C7BABC00F43AED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				508CB8CA13C7BABD00F43AED /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4401,6 +4511,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5020C6B413C7A5C600D58742 /* Transpose.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4623,6 +4734,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				508C44F51295E6A900875B93 /* JoinByFrequency.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		508CB8BF13C7BABC00F43AED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5069D9F713C7BDCD00B0B6E5 /* PitchQuantization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4864,6 +4983,16 @@
 			target = 501C284011CE8D920097B5F0 /* ResampleEnvelope */;
 			targetProxy = 501C285E11CE8E990097B5F0 /* PBXContainerItemProxy */;
 		};
+		5020C6AE13C7A59300D58742 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5020C69E13C7A23500D58742 /* Transpose */;
+			targetProxy = 5020C6AD13C7A59300D58742 /* PBXContainerItemProxy */;
+		};
+		5020C6B013C7A5A200D58742 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 5020C6AF13C7A5A200D58742 /* PBXContainerItemProxy */;
+		};
 		5027F14613951D0600A9389A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5027F13813951CED00A9389A /* PitchContainer */;
@@ -4898,6 +5027,11 @@
 			isa = PBXTargetDependency;
 			target = 50325E9F1226947500E22031 /* CsoundPlayer */;
 			targetProxy = 5066E5BC122C522500929AA4 /* PBXContainerItemProxy */;
+		};
+		5069D9F913C7BE1D00B0B6E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 5069D9F813C7BE1D00B0B6E5 /* PBXContainerItemProxy */;
 		};
 		506BF7DE117A585700ECBC4E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5093,6 +5227,11 @@
 			isa = PBXTargetDependency;
 			target = 508C44EA1295E65E00875B93 /* JoinByFrequency */;
 			targetProxy = 508C44F61295E6B300875B93 /* PBXContainerItemProxy */;
+		};
+		508CB8D013C7BB0100F43AED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 508CB8C213C7BABC00F43AED /* PitchQuantization */;
+			targetProxy = 508CB8CF13C7BB0100F43AED /* PBXContainerItemProxy */;
 		};
 		50999ABB1276431700AD0D65 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5410,7 +5549,8 @@
 				5020C6A513C7A23600D58742 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
+			path = bundles/Functions/Transpose;
+			sourceTree = SOURCE_ROOT;
 		};
 		5027F14A13951D7300A9389A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -5427,6 +5567,15 @@
 			);
 			name = InfoPlist.strings;
 			path = bundles/Players/OscilPlayer;
+			sourceTree = SOURCE_ROOT;
+		};
+		508CB8C813C7BABD00F43AED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				508CB8C913C7BABD00F43AED /* en */,
+			);
+			name = InfoPlist.strings;
+			path = bundles/Functions/PitchQuantization;
 			sourceTree = SOURCE_ROOT;
 		};
 		50BB627F116F958E0056C410 /* LayerControlsView.nib */ = {
@@ -5895,16 +6044,18 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Transpose/Transpose-Prefix.pch";
+				GCC_PREFIX_HEADER = "bundles/Functions/Transpose/Transpose-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				INFOPLIST_FILE = "Transpose/Transpose-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INFOPLIST_FILE = "bundles/Functions/Transpose/Transpose-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
@@ -5918,12 +6069,14 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Transpose/Transpose-Prefix.pch";
+				GCC_PREFIX_HEADER = "bundles/Functions/Transpose/Transpose-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				INFOPLIST_FILE = "Transpose/Transpose-Info.plist";
+				INFOPLIST_FILE = "bundles/Functions/Transpose/Transpose-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -7398,6 +7551,48 @@
 			};
 			name = Release;
 		};
+		508CB8CD13C7BABD00F43AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/PitchQuantization/PitchQuantization-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/Functions/PitchQuantization/PitchQuantization-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		508CB8CE13C7BABD00F43AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/PitchQuantization/PitchQuantization-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/Functions/PitchQuantization/PitchQuantization-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		50999AA9127642A300AD0D65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -8475,6 +8670,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -8490,6 +8687,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -8582,6 +8781,7 @@
 				5020C6A913C7A23600D58742 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5027F14413951CED00A9389A /* Build configuration list for PBXNativeTarget "PitchContainer" */ = {
 			isa = XCConfigurationList;
@@ -8822,6 +9022,15 @@
 			buildConfigurations = (
 				508C44ED1295E65F00875B93 /* Debug */,
 				508C44EE1295E65F00875B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		508CB8CC13C7BABD00F43AED /* Build configuration list for PBXNativeTarget "PitchQuantization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				508CB8CD13C7BABD00F43AED /* Debug */,
+				508CB8CE13C7BABD00F43AED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

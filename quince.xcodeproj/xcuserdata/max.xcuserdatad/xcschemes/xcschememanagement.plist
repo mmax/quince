@@ -184,6 +184,11 @@
 			<key>orderHint</key>
 			<integer>50</integer>
 		</dict>
+		<key>PitchQuantization.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>53</integer>
+		</dict>
 		<key>Quantization.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -448,6 +453,11 @@
 			<true/>
 		</dict>
 		<key>508C44EA1295E65E00875B93</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>508CB8C213C7BABC00F43AED</key>
 		<dict>
 			<key>primary</key>
 			<true/>

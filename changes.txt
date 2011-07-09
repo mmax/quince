@@ -1,5 +1,7 @@
 
-
+- optimized CsoundPlayer performance
+- added function: PitchQuantization
+- added function: Transpose
 - optimized progress display
 - fixed a bug preventing the function pool table from resizing correctly
 _________________________________________________________________

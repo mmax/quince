@@ -31,7 +31,7 @@
 
 -(TempoChange *)init{
 	
-	if(self = [super init]){
+	if((self = [super init])){
 		[NSBundle loadNibNamed:@"TempoChangeWindow" owner:self];
 	}
 	return self;
