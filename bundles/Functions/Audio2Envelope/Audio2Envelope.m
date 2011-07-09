@@ -180,7 +180,7 @@
 	
 	UInt32 loadedPackets = numPackets;
     float progress = 0, old = 0;
-    [document setProgressTask:@"reading frames..."];
+    [document setProgressTask:@"Reading Frames..."];
     [document displayProgress:YES];
 	while(1){
 		err = ExtAudioFileRead(inFile, &loadedPackets, &bufList);
@@ -430,7 +430,7 @@ float maxabs(float x){
 	double val, max, progress, duration = [self envelopeWindowDuration];
 	long i,a, samplesInWindow , w=0, y=100;
 	samplesInWindow= sr * duration;
-	NSLog(@"samplesInWindow: %d", samplesInWindow);
+	NSLog(@"samplesInWindow: %ld", samplesInWindow);
 	long windowCount = [data count] / samplesInWindow + 1;
 	NSBezierPath *p = [[NSBezierPath alloc]init];									
 	a=0;
