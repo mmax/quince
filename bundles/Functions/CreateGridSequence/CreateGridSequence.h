@@ -49,11 +49,17 @@
 	IBOutlet NSButton * checkBox8;
 	
 	IBOutlet NSButton * repeatBox;
+    
+    
+    IBOutlet NSTextField * temperedCentField;
+    IBOutlet NSTextField * temperedAField;
+    
 }
 
 -(IBAction)changeMeasure:(id)sender;
 -(IBAction)toggleMeasure:(id)sender;
--(IBAction)done:(id)sender;
+-(IBAction)doneTime:(id)sender;
+-(IBAction)donePitchTempered:(id)sender;
 -(NSString *)descriptionStringwithMeasures:(NSArray *)measures;
 -(BOOL)newLock:(NSNumber *)lock inGrid:(QuinceObject *)quince;
 @end

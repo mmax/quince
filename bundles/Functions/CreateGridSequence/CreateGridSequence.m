@@ -54,7 +54,7 @@
 		[gridView removeMeasure:divider];
 }
 
--(IBAction)done:(id)sender{
+-(IBAction)doneTime:(id)sender{
 
 	QuinceObjectController * mc = [[self outputObjectOfType:@"QuinceObject"]controller];
 	
@@ -95,7 +95,7 @@
 	
 	[mc update];
 	[mc setValue:[self descriptionStringwithMeasures:measures] forKeyPath:@"selection.description"];
-	[mc setValue:@"grid" forKeyPath:@"selection.name"];
+	[mc setValue:@"timeGrid" forKeyPath:@"selection.name"];
 	//[document addObjectToObjectPool:[mc content]];
 	//b[[mc content]release]; // the pool is now the only owner
 	[window orderOut:nil];
@@ -187,4 +187,87 @@
 	[dictA release];
 	return [ipd autorelease];
 }
+
+-(IBAction)donePitchTempered:(id)sender{
+    [window orderOut:nil];
+
+    
+    QuinceObjectController * mc = [[self outputObjectOfType:@"QuinceObject"]controller];
+    
+    int cent = [temperedCentField intValue];
+    double a = [temperedAField doubleValue];
+    
+    double oneCent = pow(2, 1.0/1200);
+    double factor = pow(oneCent, cent);
+    double invFactor = 1.0/factor;
+    double time=0;
+    double candidate=a;
+    
+   
+    [document setIndeterminateProgressTask:@"Creating Pitch Grid..."];
+    [document displayProgress:YES];
+
+    
+    QuinceObject* q;
+    candidate = a;
+    
+    while(candidate < 20000){   //start at 440 and go up
+        q = [document newObjectOfClassNamed:@"QuinceObject" inPool:NO];
+        [q setValue:[NSNumber numberWithDouble:candidate] forKey:@"frequency"];
+        [q setValue:[NSNumber numberWithDouble:time] forKey:@"start"];
+        [q setValue:[NSNumber numberWithDouble:.1] forKey:@"duration"];
+        //[q setValue:[NSNumber numberWithInt:-1 * (rand()%30)]forKey:@"volume"];
+        [mc addSubObjectWithController:[q controller] withUpdate:NO];
+
+        time +=0.1;
+        
+        candidate *= factor;
+    }
+    candidate = a;
+    
+    while(candidate > 20){ // start below 440 and go down
+    
+        candidate *=invFactor;
+        q = [document newObjectOfClassNamed:@"QuinceObject" inPool:NO];
+        [q setValue:[NSNumber numberWithDouble:candidate] forKey:@"frequency"];
+        [q setValue:[NSNumber numberWithDouble:time] forKey:@"start"];
+        [q setValue:[NSNumber numberWithDouble:.1] forKey:@"duration"];
+       // [q setValue:[NSNumber numberWithInt:-1 * (rand()%30)]forKey:@"volume"];
+        [mc addSubObjectWithController:[q controller] withUpdate:NO];
+        time +=0.1;
+    }
+    
+    [mc setValue:@"pitchGrid" forKeyPath:@"selection.name"];
+    
+    [[mc content]sortByKey:@"frequency" ascending:YES];
+    [mc update];
+    [document displayProgress:NO];
+    [self done];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @end
