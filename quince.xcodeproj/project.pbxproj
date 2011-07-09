@@ -30,6 +30,8 @@
 		501BFA2011C83E6D00A7BDCD /* ColorByKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 501BFA1F11C83E6D00A7BDCD /* ColorByKey.m */; };
 		501C285A11CE8E5D0097B5F0 /* ResampleEnvelope.m in Sources */ = {isa = PBXBuildFile; fileRef = 501C285911CE8E5D0097B5F0 /* ResampleEnvelope.m */; };
 		501C286111CE92F90097B5F0 /* ResampleEnvelopeWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501C286011CE92F90097B5F0 /* ResampleEnvelopeWindow.xib */; };
+		5020C6A013C7A23600D58742 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		5020C6A613C7A23600D58742 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5020C6A413C7A23600D58742 /* InfoPlist.strings */; };
 		5027F13A13951CED00A9389A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
 		5027F14F13951E3600A9389A /* PitchContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5027F14E13951E3600A9389A /* PitchContainer.m */; };
 		5027F15013951EFC00A9389A /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
@@ -325,13 +327,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 50A522B4117A52560072FB09;
 			remoteInfo = QuinceApi;
-		};
-		504FDE9713BCC49200470C77 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 504FDE8713BCC3A500470C77;
-			remoteInfo = OscilPlayer;
 		};
 		5066E5BC122C522500929AA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -935,6 +930,13 @@
 			remoteGlobalIDString = 50D196A012306E8400C3FC2C;
 			remoteInfo = Sets_Intersection;
 		};
+		50D322B813C667D000F09158 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 504FDE8713BCC3A500470C77;
+			remoteInfo = OscilPlayer;
+		};
 		50D393A911C838BA0080B427 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
@@ -1042,6 +1044,10 @@
 		501C286011CE92F90097B5F0 /* ResampleEnvelopeWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ResampleEnvelopeWindow.xib; path = bundles/Functions/ResampleEnvelope/ResampleEnvelopeWindow.xib; sourceTree = "<group>"; };
 		501E41FF11B5639E000072FA /* FunctionGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FunctionGraph.h; path = QuinceApi/FunctionGraph.h; sourceTree = "<group>"; };
 		501E420011B5639E000072FA /* FunctionGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FunctionGraph.m; path = QuinceApi/FunctionGraph.m; sourceTree = "<group>"; };
+		5020C69F13C7A23500D58742 /* Transpose.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Transpose.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5020C6A313C7A23600D58742 /* Transpose-Info.plist */ = {isa = PBXFileReference; path = "Transpose-Info.plist"; sourceTree = "<group>"; };
+		5020C6A513C7A23600D58742 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5020C6A713C7A23600D58742 /* Transpose-Prefix.pch */ = {isa = PBXFileReference; path = "Transpose-Prefix.pch"; sourceTree = "<group>"; };
 		5027F13913951CED00A9389A /* PitchContainer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PitchContainer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		5027F14713951D3E00A9389A /* PitchContainer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "PitchContainer-Info.plist"; path = "bundles/ContainerViews/PitchContainer/PitchContainer-Info.plist"; sourceTree = SOURCE_ROOT; };
 		5027F14913951D4F00A9389A /* PitchContainer-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PitchContainer-Prefix.pch"; path = "bundles/ContainerViews/PitchContainer/PitchContainer-Prefix.pch"; sourceTree = SOURCE_ROOT; };
@@ -1369,6 +1375,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				505B49731207745C0050CFB7 /* QuinceApi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5020C69C13C7A23500D58742 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5020C6A013C7A23600D58742 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1847,6 +1861,7 @@
 				50EAF2C81393BAD200258AD1 /* FrequencyStandardContainer.bundle */,
 				5027F13913951CED00A9389A /* PitchContainer.bundle */,
 				504FDE8813BCC3A500470C77 /* OscilPlayer.bundle */,
+				5020C69F13C7A23500D58742 /* Transpose.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1864,6 +1879,7 @@
 				2A37F4AFFDCFA73011CA2CEA /* Plug-Ins */,
 				506BF818117A59F100ECBC4E /* Other Sources */,
 				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				5020C6A113C7A23600D58742 /* Transpose */,
 				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
 				19C28FB0FE9D524F11CA2CBB /* Products */,
 			);
@@ -2061,6 +2077,24 @@
 				501C285911CE8E5D0097B5F0 /* ResampleEnvelope.m */,
 			);
 			name = ResampleEnvelope;
+			sourceTree = "<group>";
+		};
+		5020C6A113C7A23600D58742 /* Transpose */ = {
+			isa = PBXGroup;
+			children = (
+				5020C6A213C7A23600D58742 /* Supporting Files */,
+			);
+			path = Transpose;
+			sourceTree = "<group>";
+		};
+		5020C6A213C7A23600D58742 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5020C6A313C7A23600D58742 /* Transpose-Info.plist */,
+				5020C6A413C7A23600D58742 /* InfoPlist.strings */,
+				5020C6A713C7A23600D58742 /* Transpose-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		5027F13B13951CED00A9389A /* PitchContainer */ = {
@@ -2780,6 +2814,23 @@
 			name = ResampleEnvelope;
 			productName = ResampleEnvelope;
 			productReference = 501C284111CE8D920097B5F0 /* ResampleEnvelope.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		5020C69E13C7A23500D58742 /* Transpose */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5020C6AA13C7A23600D58742 /* Build configuration list for PBXNativeTarget "Transpose" */;
+			buildPhases = (
+				5020C69B13C7A23500D58742 /* Sources */,
+				5020C69C13C7A23500D58742 /* Frameworks */,
+				5020C69D13C7A23500D58742 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Transpose;
+			productName = Transpose;
+			productReference = 5020C69F13C7A23500D58742 /* Transpose.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		5027F13813951CED00A9389A /* PitchContainer */ = {
@@ -3631,6 +3682,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				50D322B913C667D000F09158 /* PBXTargetDependency */,
 				506BF7DE117A585700ECBC4E /* PBXTargetDependency */,
 				50999BF5127650AC00AD0D65 /* PBXTargetDependency */,
 				506BF8AA117A5E6200ECBC4E /* PBXTargetDependency */,
@@ -3683,7 +3735,6 @@
 				5015B00B133EAA3D006C85AA /* PBXTargetDependency */,
 				506C6B47135629E30060BD9D /* PBXTargetDependency */,
 				5035B90A13563F9D003E8570 /* PBXTargetDependency */,
-				504FDE9813BCC49200470C77 /* PBXTargetDependency */,
 				5027F14613951D0600A9389A /* PBXTargetDependency */,
 			);
 			name = quince;
@@ -3766,6 +3817,7 @@
 				506BF8C2117A5F6300ECBC4E /* TimeGridContainer */,
 				506BF8E8117A606600ECBC4E /* VolumeStandardContainer */,
 				506BF8F6117A60DD00ECBC4E /* VolumeStandardContainerTestUnit */,
+				5020C69E13C7A23500D58742 /* Transpose */,
 			);
 		};
 /* End PBXProject section */
@@ -3828,6 +3880,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				501C286111CE92F90097B5F0 /* ResampleEnvelopeWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5020C69D13C7A23500D58742 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5020C6A613C7A23600D58742 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4337,6 +4397,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5020C69B13C7A23500D58742 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5027F13513951CED00A9389A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -4827,11 +4894,6 @@
 			target = 50A522B4117A52560072FB09 /* QuinceApi */;
 			targetProxy = 504FDE9413BCC45800470C77 /* PBXContainerItemProxy */;
 		};
-		504FDE9813BCC49200470C77 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 504FDE8713BCC3A500470C77 /* OscilPlayer */;
-			targetProxy = 504FDE9713BCC49200470C77 /* PBXContainerItemProxy */;
-		};
 		5066E5BD122C522500929AA4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 50325E9F1226947500E22031 /* CsoundPlayer */;
@@ -5262,6 +5324,11 @@
 			target = 50D196A012306E8400C3FC2C /* Sets_Intersection */;
 			targetProxy = 50D196A712306EB500C3FC2C /* PBXContainerItemProxy */;
 		};
+		50D322B913C667D000F09158 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 504FDE8713BCC3A500470C77 /* OscilPlayer */;
+			targetProxy = 50D322B813C667D000F09158 /* PBXContainerItemProxy */;
+		};
 		50D393AA11C838BA0080B427 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 50D3937011C837BA0080B427 /* ColorByKey */;
@@ -5335,6 +5402,14 @@
 				2A37F4BAFDCFA73011CA2CEA /* English */,
 			);
 			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		5020C6A413C7A23600D58742 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5020C6A513C7A23600D58742 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		5027F14A13951D7300A9389A /* InfoPlist.strings */ = {
@@ -5811,6 +5886,48 @@
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		5020C6A813C7A23600D58742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Transpose/Transpose-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "Transpose/Transpose-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		5020C6A913C7A23600D58742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Transpose/Transpose-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "Transpose/Transpose-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -8458,6 +8575,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		5020C6AA13C7A23600D58742 /* Build configuration list for PBXNativeTarget "Transpose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5020C6A813C7A23600D58742 /* Debug */,
+				5020C6A913C7A23600D58742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		5027F14413951CED00A9389A /* Build configuration list for PBXNativeTarget "PitchContainer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -8510,6 +8635,7 @@
 				504FDE9213BCC3A600470C77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		506BF837117A5A9700ECBC4E /* Build configuration list for PBXNativeTarget "AutomationContainer" */ = {
 			isa = XCConfigurationList;

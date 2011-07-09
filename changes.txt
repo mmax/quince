@@ -1,5 +1,7 @@
 
 
+- optimized progress display
+- fixed a bug preventing the function pool table from resizing correctly
 _________________________________________________________________
 
 v 0.9.6

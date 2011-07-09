@@ -111,6 +111,7 @@ OSStatus MintPlayerAURenderCallback (
 	Float64 sampleTimeBase;
 	
 	QuinceDocument * document;
+    NSMutableDictionary * dictionary;
 	NSNumber * startTime;
 	
 	NSMutableArray * flatQuinceList;
@@ -153,4 +154,10 @@ void HandleOutputBuffer (
 								AudioQueueBufferRef inBuffer
 								);
 
+
+-(void)setValue:(id)aValue forKey:(NSString *)aKey;
+-(id)valueForKey:(NSString *)key;
+-(id)valueForKeyPath:(NSString *)keyPath;
+-(void)removeObjectForKey:(NSString *)key;
+-(NSDictionary *)dictionary;
 @end

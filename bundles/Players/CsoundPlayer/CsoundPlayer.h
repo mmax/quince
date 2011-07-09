@@ -42,13 +42,16 @@ typedef struct _userData {
 
 @interface CsoundPlayer : Player {
 
-	NSMutableArray * commonParameters;
+	//NSMutableArray * commonParameters;
 	CSOUND *csound;
 	NSTimer * timer;
 	IBOutlet NSPanel * window;
 	IBOutlet NSTextView * orcView;
 	IBOutlet NSTextView * scoreView;
 }
+//-(void)fetchCommonParametersForControllers:(NSArray *)controllers;
+-(void)fetchCommonParametersForArrayOfQuinces:(NSArray *)a;
+-(BOOL)doAllObjectsInArray:(NSArray *)a haveAValueForKey:(NSString *)key;
 -(void)prepare;
 -(IBAction)Clicks:(id)sender;
 -(IBAction)SampWin:(id)sender;

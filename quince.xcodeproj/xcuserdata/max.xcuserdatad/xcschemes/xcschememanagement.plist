@@ -254,6 +254,11 @@
 			<key>orderHint</key>
 			<integer>15</integer>
 		</dict>
+		<key>Transpose.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>52</integer>
+		</dict>
 		<key>VolumeStandardContainer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -303,6 +308,11 @@
 			<true/>
 		</dict>
 		<key>501C284011CE8D920097B5F0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5020C69E13C7A23500D58742</key>
 		<dict>
 			<key>primary</key>
 			<true/>

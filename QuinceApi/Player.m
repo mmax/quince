@@ -41,9 +41,17 @@
 		[self setStartTime:[NSNumber numberWithInt:0]];
 		trackNodes = [[NSMutableArray alloc]init];
 		isPlaying = NO;
+        dictionary = [[NSMutableDictionary alloc]init];
 		
 	}
 	return self;
+}
+
+-(void)dealloc{
+
+    [dictionary release];
+    [trackNodes release];
+    [super dealloc];
 }
 
 OSStatus playbackCallback(void *inRefCon, 
@@ -436,6 +444,45 @@ void DeriveBufferSize (
 	[document presentAlertWithText:@"not implemented"];
 }
 
+
+#pragma mark KVC
+
+-(void)setValue:(id)aValue forKey:(NSString *)aKey{
+	
+	[self willChangeValueForKey:aKey];
+	[self willChangeValueForKey:@"dictionary"];
+	[dictionary setValue:aValue forKey:aKey];
+	
+	[self didChangeValueForKey:aKey];
+	[self didChangeValueForKey:@"dictionary"];
+	
+}
+
+
+
+-(id)valueForKey:(NSString *)key{
+
+	if([key isEqualToString:@"dictionary"])
+		return [self dictionary];
+    return [dictionary valueForKey:key];
+}
+
+-(id)valueForKeyPath:(NSString *)keyPath{
+	NSArray * keys = [keyPath componentsSeparatedByString:@"."];
+	id val = self;
+	for(NSString * key in keys)
+		val = [val valueForKey:key];
+	return val;
+} 
+
+-(void)removeObjectForKey:(NSString *)key{
+	[self willChangeValueForKey:key];
+	[dictionary removeObjectForKey:key];
+	[self didChangeValueForKey:key];
+}
+
+
+-(NSDictionary *)dictionary{return dictionary;}
 @end
 
 

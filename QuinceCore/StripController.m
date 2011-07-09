@@ -326,10 +326,8 @@
 -(NSMutableArray *)topLevelPlaybackList{
 	NSMutableArray * tlp = [[NSMutableArray alloc]init];
 	for(LayerController * lc in layerControllers){
-		if([[lc view]contentController]){
-			if([[lc view]allowsPlayback])
-			   [tlp addObject:[[controller document] controllerForCopyOfQuinceObjectController:[[lc view]contentController] inPool:NO]];//[[lc view]contentController]]; // SHOULD ADD COPIES!!!
-		}
+		if([[lc view]contentController] && [[lc view]allowsPlayback] )
+			   [tlp addObject:[[controller document] controllerForCopyOfQuinceObjectController:[[lc view]contentController] inPool:NO]];
 	}
 	return [tlp autorelease];
 }

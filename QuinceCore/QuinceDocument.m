@@ -1198,6 +1198,8 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 
 -(NSMutableArray *)playbackObjectList{
 
+    [self setIndeterminateProgressTask:@"preparing copies..."];
+    
 	NSMutableArray * topLevel = [mainController topLevelPlaybackList]; // an array with arrays for strips with top-level quinceObjectControllers
 
 	NSMutableArray * tl2 = [[NSMutableArray alloc]init];
@@ -1214,9 +1216,10 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 		[[tlo content]hardSetMediaFileAssociations];
 	
 	// create flat list
+    [self setIndeterminateProgressTask:@"creating flat object list..."];
 	for(QuinceObjectController * tlo in topLevel){
 		
-		QuinceObject * copy = [[tlo content]copy];
+		QuinceObject * copy = [tlo content];//[[tlo content]copy]; // actually we already have copies (see StripController:TopLevelPlaybackList)
 		[copy flatten];
 		NSArray * subs = [copy valueForKey:@"subObjects"];
 		if([subs count]){
@@ -1234,6 +1237,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	[flat sortUsingDescriptors:descriptors];
 	[sd release];
 	[tl2 release];
+    
 //	NSLog(@"doc: playbackObjectList: %@", flat);		
 	return [flat autorelease];
 }
@@ -1472,8 +1476,9 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 
 -(void) setProgress:(float)progress {
 	
-	[progressBar setDoubleValue:progress];
-	[progressBar displayIfNeeded];
+    [self setValue:[NSNumber numberWithFloat:progress] forKey:@"progress"];
+	//[progressBar setDoubleValue:progress];
+	//[progressBar displayIfNeeded];
 } 
 
 
@@ -1569,7 +1574,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
     NSString * type = [[qc content] type];
     BOOL comp = NO;
     
-    NSLog(@"updating compatibilities...");
+    //NSLog(@"updating compatibilities...");
     Function * f;
     for(f in functionPool){
         if([self isFunction:f compatibleWithType:type])
