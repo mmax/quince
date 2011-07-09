@@ -1,4 +1,5 @@
 
+- added container: PitchGridContainer
 - optimized CsoundPlayer performance
 - added function: PitchQuantization
 - added function: Transpose

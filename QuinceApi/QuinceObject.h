@@ -126,7 +126,7 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context);
 -(double)mToF:(int)f;
 -(int)fToC:(double)f;
 -(int)fToM:(double)f;
-
+-(double)centDifferenceBetweenFrequency:(double)a and:(double)b;
 -(BOOL)isSuperOf:(QuinceObject *)child;
 
 -(BOOL)isEqualTo:(QuinceObject *)q;

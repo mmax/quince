@@ -161,6 +161,10 @@
 		50999BB912764BA700AD0D65 /* ChildView.h in Headers */ = {isa = PBXBuildFile; fileRef = 50999B39127645EC00AD0D65 /* ChildView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50999BBA12764BA700AD0D65 /* ContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 50999B3B127645EC00AD0D65 /* ContainerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50999BF11276508A00AD0D65 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		509E993513C8A2D90032AEF9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		509E993B13C8A2DA0032AEF9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 509E993913C8A2DA0032AEF9 /* InfoPlist.strings */; };
+		509E994213C8A3C60032AEF9 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		509E994713C8A4570032AEF9 /* PitchGridContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 509E994613C8A4570032AEF9 /* PitchGridContainer.m */; };
 		50A362D6126EF68E004D360B /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		50A362E5126EF6F8004D360B /* ExportDescriptionListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A362E4126EF6F8004D360B /* ExportDescriptionListing.m */; };
 		50A52330117A541F0072FB09 /* QuinceDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A37F4AEFDCFA73011CA2CEA /* QuinceDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -713,6 +717,20 @@
 			remoteGlobalIDString = 50717023117A7F1800357470;
 			remoteInfo = SequenceChildTestUnit;
 		};
+		509E994013C8A3BB0032AEF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
+		509E994313C8A3D00032AEF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 509E993313C8A2D90032AEF9;
+			remoteInfo = PitchGridContainer;
+		};
 		50A362D4126EF68B004D360B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
@@ -1258,6 +1276,12 @@
 		50999B451276462A00AD0D65 /* ChildViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChildViewTest.m; path = /Users/max/SWProjects/quince/QuinceApi/ChildViewTest.m; sourceTree = "<absolute>"; };
 		50999B461276462A00AD0D65 /* ContainerViewTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContainerViewTest.h; path = /Users/max/SWProjects/quince/QuinceApi/ContainerViewTest.h; sourceTree = "<absolute>"; };
 		50999B471276462A00AD0D65 /* ContainerViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContainerViewTest.m; path = /Users/max/SWProjects/quince/QuinceApi/ContainerViewTest.m; sourceTree = "<absolute>"; };
+		509E993413C8A2D90032AEF9 /* PitchGridContainer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PitchGridContainer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		509E993813C8A2DA0032AEF9 /* PitchGridContainer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PitchGridContainer-Info.plist"; path = "../bundles/ContainerViews/PitchGridContainer/PitchGridContainer-Info.plist"; sourceTree = "<group>"; };
+		509E993A13C8A2DA0032AEF9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		509E993C13C8A2DE0032AEF9 /* PitchGridContainer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PitchGridContainer-Prefix.pch"; path = "../bundles/ContainerViews/PitchGridContainer/PitchGridContainer-Prefix.pch"; sourceTree = "<group>"; };
+		509E994513C8A4570032AEF9 /* PitchGridContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PitchGridContainer.h; path = bundles/ContainerViews/PitchGridContainer/PitchGridContainer.h; sourceTree = SOURCE_ROOT; };
+		509E994613C8A4570032AEF9 /* PitchGridContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PitchGridContainer.m; path = bundles/ContainerViews/PitchGridContainer/PitchGridContainer.m; sourceTree = SOURCE_ROOT; };
 		50A362CD126EF67B004D360B /* ExportDescriptionListing.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExportDescriptionListing.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A362CE126EF67B004D360B /* ExportDescriptionListing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ExportDescriptionListing-Info.plist"; path = "bundles/Functions/ExportDescriptionListing/ExportDescriptionListing-Info.plist"; sourceTree = "<group>"; };
 		50A362E3126EF6F8004D360B /* ExportDescriptionListing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExportDescriptionListing.h; path = bundles/Functions/ExportDescriptionListing/ExportDescriptionListing.h; sourceTree = "<group>"; };
@@ -1674,6 +1698,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		509E993113C8A2D90032AEF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				509E994213C8A3C60032AEF9 /* QuinceApi.framework in Frameworks */,
+				509E993513C8A2D90032AEF9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50A362CB126EF67B004D360B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1917,6 +1950,7 @@
 				504FDE8813BCC3A500470C77 /* OscilPlayer.bundle */,
 				5020C69F13C7A23500D58742 /* Transpose.bundle */,
 				508CB8C313C7BABC00F43AED /* PitchQuantization.bundle */,
+				509E993413C8A2D90032AEF9 /* PitchGridContainer.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2193,6 +2227,7 @@
 				50EAF2CB1393BAD200258AD1 /* FrequencyStandardContainer */,
 				500CADCE122D5B3700B980B8 /* MarkContainer */,
 				5027F13B13951CED00A9389A /* PitchContainer */,
+				509E993613C8A2D90032AEF9 /* PitchGridContainer */,
 				506BF8CD117A5FA700ECBC4E /* TimeGridView */,
 				506BF908117A612000ECBC4E /* VolumeStandard */,
 			);
@@ -2478,6 +2513,26 @@
 				508CB8C713C7BABD00F43AED /* PitchQuantization-Info.plist */,
 				508CB8C813C7BABD00F43AED /* InfoPlist.strings */,
 				508CB8CB13C7BABD00F43AED /* PitchQuantization-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		509E993613C8A2D90032AEF9 /* PitchGridContainer */ = {
+			isa = PBXGroup;
+			children = (
+				509E993713C8A2DA0032AEF9 /* Supporting Files */,
+				509E994513C8A4570032AEF9 /* PitchGridContainer.h */,
+				509E994613C8A4570032AEF9 /* PitchGridContainer.m */,
+			);
+			path = PitchGridContainer;
+			sourceTree = "<group>";
+		};
+		509E993713C8A2DA0032AEF9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				509E993813C8A2DA0032AEF9 /* PitchGridContainer-Info.plist */,
+				509E993913C8A2DA0032AEF9 /* InfoPlist.strings */,
+				509E993C13C8A2DE0032AEF9 /* PitchGridContainer-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -3443,6 +3498,24 @@
 			productReference = 50999AA7127642A200AD0D65 /* AlignOnVolume.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
+		509E993313C8A2D90032AEF9 /* PitchGridContainer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 509E993F13C8A2DE0032AEF9 /* Build configuration list for PBXNativeTarget "PitchGridContainer" */;
+			buildPhases = (
+				509E993013C8A2D90032AEF9 /* Sources */,
+				509E993113C8A2D90032AEF9 /* Frameworks */,
+				509E993213C8A2D90032AEF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				509E994113C8A3BB0032AEF9 /* PBXTargetDependency */,
+			);
+			name = PitchGridContainer;
+			productName = PitchGridContainer;
+			productReference = 509E993413C8A2D90032AEF9 /* PitchGridContainer.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		50A362CC126EF67B004D360B /* ExportDescriptionListing */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50A362D1126EF67C004D360B /* Build configuration list for PBXNativeTarget "ExportDescriptionListing" */;
@@ -3780,6 +3853,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				509E994413C8A3D00032AEF9 /* PBXTargetDependency */,
 				506BF7DE117A585700ECBC4E /* PBXTargetDependency */,
 				50999BF5127650AC00AD0D65 /* PBXTargetDependency */,
 				506BF8AA117A5E6200ECBC4E /* PBXTargetDependency */,
@@ -3898,6 +3972,7 @@
 				504A69A911A9F692007F60FF /* Normalize */,
 				504FDE8713BCC3A500470C77 /* OscilPlayer */,
 				5027F13813951CED00A9389A /* PitchContainer */,
+				509E993313C8A2D90032AEF9 /* PitchGridContainer */,
 				508CB8C213C7BABC00F43AED /* PitchQuantization */,
 				506BF99B117A660A00ECBC4E /* Quantization */,
 				8D15AC270486D014006FF6A4 /* quince */,
@@ -4204,6 +4279,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		509E993213C8A2D90032AEF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				509E993B13C8A2DA0032AEF9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4753,6 +4836,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		509E993013C8A2D90032AEF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				509E994713C8A4570032AEF9 /* PitchGridContainer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50A362CA126EF67B004D360B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5283,6 +5374,16 @@
 			target = 50717023117A7F1800357470 /* SequenceChildTestUnit */;
 			targetProxy = 50999C021276510700AD0D65 /* PBXContainerItemProxy */;
 		};
+		509E994113C8A3BB0032AEF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 509E994013C8A3BB0032AEF9 /* PBXContainerItemProxy */;
+		};
+		509E994413C8A3D00032AEF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 509E993313C8A2D90032AEF9 /* PitchGridContainer */;
+			targetProxy = 509E994313C8A3D00032AEF9 /* PBXContainerItemProxy */;
+		};
 		50A362D5126EF68B004D360B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 50A522B4117A52560072FB09 /* QuinceApi */;
@@ -5576,6 +5677,15 @@
 			);
 			name = InfoPlist.strings;
 			path = bundles/Functions/PitchQuantization;
+			sourceTree = SOURCE_ROOT;
+		};
+		509E993913C8A2DA0032AEF9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				509E993A13C8A2DA0032AEF9 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = bundles/ContainerViews/PitchGridContainer;
 			sourceTree = SOURCE_ROOT;
 		};
 		50BB627F116F958E0056C410 /* LayerControlsView.nib */ = {
@@ -7647,6 +7757,48 @@
 			};
 			name = Release;
 		};
+		509E993D13C8A2DE0032AEF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/ContainerViews/PitchGridContainer/PitchGridContainer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/ContainerViews/PitchGridContainer/PitchGridContainer-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/ContainerViews/";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		509E993E13C8A2DE0032AEF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/ContainerViews/PitchGridContainer/PitchGridContainer-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/ContainerViews/PitchGridContainer/PitchGridContainer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		50A362CF126EF67B004D360B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -9043,6 +9195,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		509E993F13C8A2DE0032AEF9 /* Build configuration list for PBXNativeTarget "PitchGridContainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				509E993D13C8A2DE0032AEF9 /* Debug */,
+				509E993E13C8A2DE0032AEF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		50A362D1126EF67C004D360B /* Build configuration list for PBXNativeTarget "ExportDescriptionListing" */ = {
 			isa = XCConfigurationList;

@@ -1028,7 +1028,12 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context){
     else return(pow(2,(f-69)/12.0)*440.0); 
 }
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////
 
+-(double)centDifferenceBetweenFrequency:(double)a and:(double)b{
+    
+    return fabs(1200*log2(a/b));
+}
 
 #pragma mark finish
 

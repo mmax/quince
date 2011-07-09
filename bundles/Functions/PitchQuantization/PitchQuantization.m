@@ -77,8 +77,8 @@
     if([pair count] == 1)
         freq = [pair lastObject];
     else if([pair count] ==2){
-        deltaA = [self centDifferenceBetweenFrequency:[freq doubleValue] and:[[pair objectAtIndex:0]doubleValue]];
-        deltaB = [self centDifferenceBetweenFrequency:[freq doubleValue] and:[[pair lastObject]doubleValue]];
+        deltaA = [q centDifferenceBetweenFrequency:[freq doubleValue] and:[[pair objectAtIndex:0]doubleValue]];
+        deltaB = [q centDifferenceBetweenFrequency:[freq doubleValue] and:[[pair lastObject]doubleValue]];
         
         if(deltaA < deltaB)
             freq = [pair objectAtIndex:0];
@@ -123,10 +123,7 @@
     return NO;
 }
 
--(double)centDifferenceBetweenFrequency:(double)a and:(double)b{
 
-    return fabs(1200*log2(a/b));
-}
 
 -(NSArray *)enclosingFrequenciesForCandidate:(NSNumber *)nf{
 

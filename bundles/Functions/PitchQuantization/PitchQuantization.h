@@ -37,7 +37,6 @@
 -(void)quantizeQuince:(QuinceObject *)q;
 -(BOOL)isFrequency:(NSNumber *)f inGrid:(NSArray *)grid;
 -(void)createGrid;
--(double)centDifferenceBetweenFrequency:(double)a and:(double)b;
 -(NSArray *)enclosingFrequenciesForCandidate:(NSNumber *)f;
 -(void)copyParamsOf:(QuinceObject*)source into:(QuinceObject*)target;
 @end

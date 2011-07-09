@@ -184,6 +184,11 @@
 			<key>orderHint</key>
 			<integer>50</integer>
 		</dict>
+		<key>PitchGridContainer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>54</integer>
+		</dict>
 		<key>PitchQuantization.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -463,6 +468,11 @@
 			<true/>
 		</dict>
 		<key>50999AA6127642A200AD0D65</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>509E993313C8A2D90032AEF9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

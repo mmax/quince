@@ -732,9 +732,12 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 	[self setNeedsDisplay:YES];
 }
 //////////////////////////////////////////////////
-// i guess this method is obsolete:
+// used by QuinceObjectController
 -(ChildView *)createChildViewForQuinceObjectController:(QuinceObjectController *)mc{
-	ChildView * childView = [layerController newChildViewOfClassNamed:[self defaultChildViewClassName]];
+
+	return [self createChildViewForQuinceObjectController:mc andBindWithKeysForLocationOnX:[self keyForLocationOnXAxis] sizeOnX:[self keyForSizeOnXAxis] locationOnY:[self keyForLocationOnYAxis]];
+    
+    /*ChildView * childView = [layerController newChildViewOfClassNamed:[self defaultChildViewClassName]];
 	[childView setEnclosingView:self];
 	[childView setController:mc];
     
@@ -742,7 +745,7 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 	//[childView setInteriorColor:[mc color]];
 	[childViews addObject:childView];
 	[self addSubview:childView];
-	return childView;	
+	return childView;*/
 }
 //////////////////////////////////////////////////
 

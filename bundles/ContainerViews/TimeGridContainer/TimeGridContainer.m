@@ -90,7 +90,7 @@
 	QuinceObject * model = [mc content];
 	[[mc content]sortChronologically];
 	NSArray * subs = [model valueForKey:@"subObjects"];
-	[document setProgressTask:[NSString stringWithFormat:@"%@: creating display...", [self className]]];
+	[document setProgressTask:[NSString stringWithFormat:@"%@: processing objects...", [self className]]];
 	[document displayProgress:YES];
 	float y = [self frame].size.height;
 	[path release];
