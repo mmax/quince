@@ -264,6 +264,11 @@
 			<key>orderHint</key>
 			<integer>15</integer>
 		</dict>
+		<key>TimeQuantization.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>55</integer>
+		</dict>
 		<key>Transpose.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -493,6 +498,11 @@
 			<true/>
 		</dict>
 		<key>50AEBF6F11CEC6AE0055CA29</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>50B171F813CB336400C9F105</key>
 		<dict>
 			<key>primary</key>
 			<true/>

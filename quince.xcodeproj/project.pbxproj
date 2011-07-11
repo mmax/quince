@@ -80,7 +80,6 @@
 		505B49881207745D0050CFB7 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B49701207745C0050CFB7 /* QuinceApi.framework */; };
 		505B49891207745D0050CFB7 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B49701207745C0050CFB7 /* QuinceApi.framework */; };
 		505B498A1207745D0050CFB7 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B49701207745C0050CFB7 /* QuinceApi.framework */; };
-		505B498B1207745D0050CFB7 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B49701207745C0050CFB7 /* QuinceApi.framework */; };
 		505B498C1207745D0050CFB7 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B49701207745C0050CFB7 /* QuinceApi.framework */; };
 		505B498D1207745D0050CFB7 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B49701207745C0050CFB7 /* QuinceApi.framework */; };
 		505B498E1207745D0050CFB7 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B49701207745C0050CFB7 /* QuinceApi.framework */; };
@@ -108,7 +107,6 @@
 		506BF979117A64F700ECBC4E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506BF7B1117A56DA00ECBC4E /* SenTestingKit.framework */; };
 		506BF987117A653D00ECBC4E /* LilyPondExportWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 506BF986117A653D00ECBC4E /* LilyPondExportWindow.xib */; };
 		506BF988117A653D00ECBC4E /* LilyPondExportWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 506BF986117A653D00ECBC4E /* LilyPondExportWindow.xib */; };
-		506BF9A5117A664E00ECBC4E /* Quantization.m in Sources */ = {isa = PBXBuildFile; fileRef = 506BF9A4117A664E00ECBC4E /* Quantization.m */; };
 		506C6B36135617020060BD9D /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		506C6B3D135617C20060BD9D /* ExtractEnvSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C6B3C135617C20060BD9D /* ExtractEnvSequence.m */; };
 		506D0BB4120AE63400F3F602 /* play.gif in Resources */ = {isa = PBXBuildFile; fileRef = 506D0BB3120AE63400F3F602 /* play.gif */; };
@@ -170,6 +168,10 @@
 		50A52330117A541F0072FB09 /* QuinceDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A37F4AEFDCFA73011CA2CEA /* QuinceDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50AEBF7F11CEC8680055CA29 /* EnvelopeGate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AEBF7E11CEC8680055CA29 /* EnvelopeGate.m */; };
 		50AEBF9311CECB860055CA29 /* EnvelopeGateWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50AEBF9211CECB860055CA29 /* EnvelopeGateWindow.xib */; };
+		50B171FA13CB336400C9F105 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		50B1720013CB336400C9F105 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50B171FE13CB336400C9F105 /* InfoPlist.strings */; };
+		50B1720713CB342A00C9F105 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		50B1720913CB344F00C9F105 /* TimeQuantization.m in Sources */ = {isa = PBXBuildFile; fileRef = 506BF9A4117A664E00ECBC4E /* TimeQuantization.m */; };
 		50B5BB5113870A300031A3DF /* CsoundLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B5BB5013870A300031A3DF /* CsoundLib.framework */; };
 		50B86D3F1190388C00D235AA /* EqlDstrbtn_Start.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B86D3E1190388C00D235AA /* EqlDstrbtn_Start.m */; };
 		50B8F4991230F2F300E444BC /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
@@ -479,20 +481,6 @@
 			remoteGlobalIDString = 506BF95A117A646200ECBC4E;
 			remoteInfo = LilyPondExport;
 		};
-		506BF9A1117A660E00ECBC4E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 50A522B4117A52560072FB09;
-			remoteInfo = MintApi;
-		};
-		506BF9A7117A666800ECBC4E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 506BF99B117A660A00ECBC4E;
-			remoteInfo = Quantization;
-		};
 		506C6B34135616FF0060BD9D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
@@ -751,6 +739,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 50AEBF6F11CEC6AE0055CA29;
 			remoteInfo = EnvelopeGate;
+		};
+		50B1720513CB342300C9F105 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
+		50B1720A13CB345B00C9F105 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50B171F813CB336400C9F105;
+			remoteInfo = TimeQuantization;
 		};
 		50B86D391190386700D235AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1184,10 +1186,9 @@
 		506BF973117A64E000ECBC4E /* LilyPondExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LilyPondExport.h; path = bundles/functions/LilyPondExport/LilyPondExport.h; sourceTree = "<group>"; };
 		506BF974117A64E000ECBC4E /* LilyPondExport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LilyPondExport.m; path = bundles/functions/LilyPondExport/LilyPondExport.m; sourceTree = "<group>"; };
 		506BF986117A653D00ECBC4E /* LilyPondExportWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LilyPondExportWindow.xib; path = bundles/functions/LilyPondExport/LilyPondExportWindow.xib; sourceTree = "<group>"; };
-		506BF99C117A660A00ECBC4E /* Quantization.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Quantization.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		506BF99D117A660A00ECBC4E /* Quantization-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Quantization-Info.plist"; path = "bundles/Functions/Quantization/Quantization-Info.plist"; sourceTree = "<group>"; };
-		506BF9A3117A664E00ECBC4E /* Quantization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Quantization.h; path = bundles/functions/Quantization/Quantization.h; sourceTree = "<group>"; };
-		506BF9A4117A664E00ECBC4E /* Quantization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Quantization.m; path = bundles/functions/Quantization/Quantization.m; sourceTree = "<group>"; };
+		506BF99D117A660A00ECBC4E /* TimeQuantization-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TimeQuantization-Info.plist"; path = "bundles/Functions/TimeQuantization/TimeQuantization-Info.plist"; sourceTree = SOURCE_ROOT; };
+		506BF9A3117A664E00ECBC4E /* TimeQuantization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimeQuantization.h; path = bundles/Functions/TimeQuantization/TimeQuantization.h; sourceTree = "<group>"; };
+		506BF9A4117A664E00ECBC4E /* TimeQuantization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeQuantization.m; path = bundles/Functions/TimeQuantization/TimeQuantization.m; sourceTree = "<group>"; };
 		506BF9BB117A66C900ECBC4E /* Audio2Envelope.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Audio2Envelope.plist; path = bundles/Functions/Audio2Envelope/Audio2Envelope.plist; sourceTree = "<group>"; };
 		506BF9C1117A670500ECBC4E /* Audio2Envelope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Audio2Envelope.h; path = bundles/Functions/Audio2Envelope/Audio2Envelope.h; sourceTree = "<group>"; };
 		506BF9C2117A670500ECBC4E /* Audio2Envelope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Audio2Envelope.m; path = bundles/Functions/Audio2Envelope/Audio2Envelope.m; sourceTree = "<group>"; };
@@ -1295,6 +1296,10 @@
 		50AEBF7D11CEC8680055CA29 /* EnvelopeGate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EnvelopeGate.h; path = bundles/Functions/EnvelopeGate/EnvelopeGate.h; sourceTree = "<group>"; };
 		50AEBF7E11CEC8680055CA29 /* EnvelopeGate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EnvelopeGate.m; path = bundles/Functions/EnvelopeGate/EnvelopeGate.m; sourceTree = "<group>"; };
 		50AEBF9211CECB860055CA29 /* EnvelopeGateWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = EnvelopeGateWindow.xib; path = bundles/Functions/EnvelopeGate/EnvelopeGateWindow.xib; sourceTree = "<group>"; };
+		50B171F913CB336400C9F105 /* TimeQuantization.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeQuantization.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B171FD13CB336400C9F105 /* TimeQuantization-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TimeQuantization-Info.plist"; path = "bundles/Functions/TimeQuantization/TimeQuantization-Info.plist"; sourceTree = SOURCE_ROOT; };
+		50B171FF13CB336400C9F105 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		50B1720113CB336400C9F105 /* TimeQuantization-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TimeQuantization-Prefix.pch"; path = "bundles/Functions/TimeQuantization/TimeQuantization-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		50B5BB5013870A300031A3DF /* CsoundLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CsoundLib.framework; path = Library/Frameworks/CsoundLib.framework; sourceTree = SDKROOT; };
 		50B86D321190383D00D235AA /* EqlDstrbtn_Start.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EqlDstrbtn_Start.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B86D331190383D00D235AA /* EqlDstrbtn_Start-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EqlDstrbtn_Start-Info.plist"; path = "bundles/Functions/EqlDstrbtn_Start/EqlDstrbtn_Start-Info.plist"; sourceTree = "<group>"; };
@@ -1583,14 +1588,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		506BF99A117A660A00ECBC4E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				505B498B1207745D0050CFB7 /* QuinceApi.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		506C6B2C135616F60060BD9D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1738,6 +1735,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				505B49721207745C0050CFB7 /* QuinceApi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50B171F613CB336400C9F105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B1720713CB342A00C9F105 /* QuinceApi.framework in Frameworks */,
+				50B171FA13CB336400C9F105 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1905,7 +1911,6 @@
 				506BF92E117A629800ECBC4E /* CreateGridSequence.bundle */,
 				506BF95B117A646200ECBC4E /* LilyPondExport.bundle */,
 				506BF968117A64B200ECBC4E /* LilyPondExportTestUnit.octest */,
-				506BF99C117A660A00ECBC4E /* Quantization.bundle */,
 				50716F7D117A77E600357470 /* AutomationChildView.bundle */,
 				50716F97117A78C400357470 /* AutomationChildViewTestUnit.octest */,
 				50717009117A7E0F00357470 /* EnvelopeChild.bundle */,
@@ -1951,6 +1956,7 @@
 				5020C69F13C7A23500D58742 /* Transpose.bundle */,
 				508CB8C313C7BABC00F43AED /* PitchQuantization.bundle */,
 				509E993413C8A2D90032AEF9 /* PitchGridContainer.bundle */,
+				50B171F913CB336400C9F105 /* TimeQuantization.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2063,7 +2069,7 @@
 				508C43B31295596F00875B93 /* OneVoice_Loudest-Info.plist */,
 				506D0BB3120AE63400F3F602 /* play.gif */,
 				50D512841188B69D00B149A5 /* poolIcon.png */,
-				506BF99D117A660A00ECBC4E /* Quantization-Info.plist */,
+				506BF99D117A660A00ECBC4E /* TimeQuantization-Info.plist */,
 				506D0DE9120C62F000F3F602 /* quince.icns */,
 				8D15AC360486D014006FF6A4 /* quince-Info.plist */,
 				50A522B6117A52560072FB09 /* QuinceApi-Info.plist */,
@@ -2261,7 +2267,6 @@
 				504A69D111A9F707007F60FF /* Normalize */,
 				508C43BE129559D700875B93 /* OneVoice_Loudest */,
 				508CB8C513C7BABD00F43AED /* PitchQuantization */,
-				506BF9A6117A665300ECBC4E /* Quantization */,
 				50E860BF11F858780014CFE9 /* RemoveParameter */,
 				501C285B11CE8E630097B5F0 /* ResampleEnvelope */,
 				50B8F4A11230F32A00E444BC /* Sets_Difference */,
@@ -2271,6 +2276,7 @@
 				50D1966C1230692D00C3FC2C /* Sets_UnionNoDoubles */,
 				5074FE631238E20200BB60C6 /* SetParameter */,
 				50B8F5E01231003300E444BC /* TempoChange */,
+				506BF9A6117A665300ECBC4E /* TimeQuantization */,
 				5020C6A113C7A23600D58742 /* Transpose */,
 			);
 			name = Functions;
@@ -2398,13 +2404,14 @@
 			name = LilyPondExport;
 			sourceTree = "<group>";
 		};
-		506BF9A6117A665300ECBC4E /* Quantization */ = {
+		506BF9A6117A665300ECBC4E /* TimeQuantization */ = {
 			isa = PBXGroup;
 			children = (
-				506BF9A3117A664E00ECBC4E /* Quantization.h */,
-				506BF9A4117A664E00ECBC4E /* Quantization.m */,
+				50B171FC13CB336400C9F105 /* Supporting Files */,
+				506BF9A3117A664E00ECBC4E /* TimeQuantization.h */,
+				506BF9A4117A664E00ECBC4E /* TimeQuantization.m */,
 			);
-			name = Quantization;
+			name = TimeQuantization;
 			sourceTree = "<group>";
 		};
 		506BF9C4117A670A00ECBC4E /* Audio2Envelope */ = {
@@ -2589,6 +2596,17 @@
 				50AEBF7E11CEC8680055CA29 /* EnvelopeGate.m */,
 			);
 			name = EnvelopeGate;
+			sourceTree = "<group>";
+		};
+		50B171FC13CB336400C9F105 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50B171FD13CB336400C9F105 /* TimeQuantization-Info.plist */,
+				50B171FE13CB336400C9F105 /* InfoPlist.strings */,
+				50B1720113CB336400C9F105 /* TimeQuantization-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = TimeQuantization;
 			sourceTree = "<group>";
 		};
 		50B86D581190390800D235AA /* EqlDstrbtn_Start */ = {
@@ -3242,24 +3260,6 @@
 			productReference = 506BF968117A64B200ECBC4E /* LilyPondExportTestUnit.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
-		506BF99B117A660A00ECBC4E /* Quantization */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 506BF9A0117A660B00ECBC4E /* Build configuration list for PBXNativeTarget "Quantization" */;
-			buildPhases = (
-				506BF998117A660A00ECBC4E /* Resources */,
-				506BF999117A660A00ECBC4E /* Sources */,
-				506BF99A117A660A00ECBC4E /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				506BF9A2117A660E00ECBC4E /* PBXTargetDependency */,
-			);
-			name = Quantization;
-			productName = Quantization;
-			productReference = 506BF99C117A660A00ECBC4E /* Quantization.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 		506C6B2D135616F60060BD9D /* ExtractEnvSequence */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 506C6B33135616F70060BD9D /* Build configuration list for PBXNativeTarget "ExtractEnvSequence" */;
@@ -3590,6 +3590,24 @@
 			productReference = 50AEBF7011CEC6AE0055CA29 /* EnvelopeGate.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
+		50B171F813CB336400C9F105 /* TimeQuantization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50B1720213CB336400C9F105 /* Build configuration list for PBXNativeTarget "TimeQuantization" */;
+			buildPhases = (
+				50B171F513CB336400C9F105 /* Sources */,
+				50B171F613CB336400C9F105 /* Frameworks */,
+				50B171F713CB336400C9F105 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50B1720613CB342300C9F105 /* PBXTargetDependency */,
+			);
+			name = TimeQuantization;
+			productName = TimeQuantization;
+			productReference = 50B171F913CB336400C9F105 /* TimeQuantization.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		50B86D311190383D00D235AA /* EqlDstrbtn_Start */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50B86D361190384000D235AA /* Build configuration list for PBXNativeTarget "EqlDstrbtn_Start" */;
@@ -3853,6 +3871,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				50B1720B13CB345B00C9F105 /* PBXTargetDependency */,
 				509E994413C8A3D00032AEF9 /* PBXTargetDependency */,
 				506BF7DE117A585700ECBC4E /* PBXTargetDependency */,
 				50999BF5127650AC00AD0D65 /* PBXTargetDependency */,
@@ -3862,7 +3881,6 @@
 				50EAF2E61393BC6B00258AD1 /* PBXTargetDependency */,
 				506BF948117A636F00ECBC4E /* PBXTargetDependency */,
 				506BF97D117A650600ECBC4E /* PBXTargetDependency */,
-				506BF9A8117A666800ECBC4E /* PBXTargetDependency */,
 				50716FE5117A7C2000357470 /* PBXTargetDependency */,
 				50717044117A7FF700357470 /* PBXTargetDependency */,
 				50717016117A7E9900357470 /* PBXTargetDependency */,
@@ -3974,7 +3992,6 @@
 				5027F13813951CED00A9389A /* PitchContainer */,
 				509E993313C8A2D90032AEF9 /* PitchGridContainer */,
 				508CB8C213C7BABC00F43AED /* PitchQuantization */,
-				506BF99B117A660A00ECBC4E /* Quantization */,
 				8D15AC270486D014006FF6A4 /* quince */,
 				50A522B4117A52560072FB09 /* QuinceApi */,
 				50A522FA117A52F60072FB09 /* QuinceApiTestUnit */,
@@ -3991,6 +4008,7 @@
 				50D196021230669B00C3FC2C /* Sets_UnionNoDoubles */,
 				50B8F5801230FF7700E444BC /* TempoChange */,
 				506BF8C2117A5F6300ECBC4E /* TimeGridContainer */,
+				50B171F813CB336400C9F105 /* TimeQuantization */,
 				5020C69E13C7A23500D58742 /* Transpose */,
 				506BF8E8117A606600ECBC4E /* VolumeStandardContainer */,
 				506BF8F6117A60DD00ECBC4E /* VolumeStandardContainerTestUnit */,
@@ -4180,13 +4198,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		506BF998117A660A00ECBC4E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		506C6B2A135616F60060BD9D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -4316,6 +4327,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				50AEBF9311CECB860055CA29 /* EnvelopeGateWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50B171F713CB336400C9F105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B1720013CB336400C9F105 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4722,14 +4741,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		506BF999117A660A00ECBC4E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				506BF9A5117A664E00ECBC4E /* Quantization.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		506C6B2B135616F60060BD9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -4885,6 +4896,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				50AEBF7F11CEC8680055CA29 /* EnvelopeGate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50B171F513CB336400C9F105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B1720913CB344F00C9F105 /* TimeQuantization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5204,16 +5223,6 @@
 			target = 506BF95A117A646200ECBC4E /* LilyPondExport */;
 			targetProxy = 506BF97C117A650600ECBC4E /* PBXContainerItemProxy */;
 		};
-		506BF9A2117A660E00ECBC4E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 50A522B4117A52560072FB09 /* QuinceApi */;
-			targetProxy = 506BF9A1117A660E00ECBC4E /* PBXContainerItemProxy */;
-		};
-		506BF9A8117A666800ECBC4E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 506BF99B117A660A00ECBC4E /* Quantization */;
-			targetProxy = 506BF9A7117A666800ECBC4E /* PBXContainerItemProxy */;
-		};
 		506C6B35135616FF0060BD9D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 50A522B4117A52560072FB09 /* QuinceApi */;
@@ -5398,6 +5407,16 @@
 			isa = PBXTargetDependency;
 			target = 50AEBF6F11CEC6AE0055CA29 /* EnvelopeGate */;
 			targetProxy = 50AEBF8111CEC8DC0055CA29 /* PBXContainerItemProxy */;
+		};
+		50B1720613CB342300C9F105 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 50B1720513CB342300C9F105 /* PBXContainerItemProxy */;
+		};
+		50B1720B13CB345B00C9F105 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50B171F813CB336400C9F105 /* TimeQuantization */;
+			targetProxy = 50B1720A13CB345B00C9F105 /* PBXContainerItemProxy */;
 		};
 		50B86D3A1190386700D235AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5686,6 +5705,15 @@
 			);
 			name = InfoPlist.strings;
 			path = bundles/ContainerViews/PitchGridContainer;
+			sourceTree = SOURCE_ROOT;
+		};
+		50B171FE13CB336400C9F105 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50B171FF13CB336400C9F105 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = bundles/Functions/TimeQuantization;
 			sourceTree = SOURCE_ROOT;
 		};
 		50BB627F116F958E0056C410 /* LayerControlsView.nib */ = {
@@ -7007,61 +7035,6 @@
 			};
 			name = Release;
 		};
-		506BF99E117A660A00ECBC4E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DEPLOYMENT_LOCATION = YES;
-				DSTROOT = /;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				INFOPLIST_FILE = "bundles/Functions/Quantization/Quantization-Info.plist";
-				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = Quantization;
-				SDKROOT = macosx;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		506BF99F117A660A00ECBC4E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "Quantization-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = Quantization;
-				SDKROOT = macosx;
-				WRAPPER_EXTENSION = bundle;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
 		506C6B31135616F70060BD9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -8032,6 +8005,48 @@
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		50B1720313CB336400C9F105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/TimeQuantization/TimeQuantization-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/Functions/TimeQuantization/TimeQuantization-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		50B1720413CB336400C9F105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/TimeQuantization/TimeQuantization-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/Functions/TimeQuantization/TimeQuantization-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -9070,15 +9085,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		506BF9A0117A660B00ECBC4E /* Build configuration list for PBXNativeTarget "Quantization" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				506BF99E117A660A00ECBC4E /* Debug */,
-				506BF99F117A660A00ECBC4E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		506C6B33135616F70060BD9D /* Build configuration list for PBXNativeTarget "ExtractEnvSequence" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -9203,6 +9209,7 @@
 				509E993E13C8A2DE0032AEF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50A362D1126EF67C004D360B /* Build configuration list for PBXNativeTarget "ExportDescriptionListing" */ = {
 			isa = XCConfigurationList;
@@ -9239,6 +9246,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		50B1720213CB336400C9F105 /* Build configuration list for PBXNativeTarget "TimeQuantization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50B1720313CB336400C9F105 /* Debug */,
+				50B1720413CB336400C9F105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		50B86D361190384000D235AA /* Build configuration list for PBXNativeTarget "EqlDstrbtn_Start" */ = {
 			isa = XCConfigurationList;

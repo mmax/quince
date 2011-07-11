@@ -1,5 +1,5 @@
 //
-//  Quantization.h
+//  TimeQuantization.h
 //  quince
 //
 //  Created by max on 3/26/10.
@@ -28,7 +28,7 @@
 #import <QuinceApi/Function.h>
 #import <QuinceApi/QuinceDocument.h>
 
-@interface Quantization : Function {
+@interface TimeQuantization : Function {
 
 		double startOffset;
 }

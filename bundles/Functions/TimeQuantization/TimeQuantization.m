@@ -1,5 +1,5 @@
 //
-//  Quantization.m
+//  TimeQuantization.m
 //  quince
 //
 //  Created by max on 3/26/10.
@@ -24,9 +24,9 @@
 //	along with quince.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-#import "Quantization.h"
+#import "TimeQuantization.h"
 
-@implementation Quantization
+@implementation TimeQuantization
 
 
 -(void)perform{
@@ -70,7 +70,7 @@
 
 
 //	double , startOffset = [[candidate offsetForKey:@"start"]doubleValue];
-//	NSLog(@"Quantization: quantizeMint: startOffset %f", startOffset);
+//	NSLog(@"TimeQuantization: quantizeMint: startOffset %f", startOffset);
 	double a, deltaA, b, deltaB, aFrac, bFrac, start = [[candidate valueForKey:@"start"]doubleValue]+ startOffset;
 	double deltaDur, duration = [[candidate valueForKey:@"duration"]doubleValue], end = [[candidate end]doubleValue]+startOffset;
 	long i, nextIndex, aInt, bInt;
@@ -97,7 +97,7 @@
 			break;
 		}
 		else if(b>start && i==0){
-			NSLog(@"Quantization: something went awfully wrong! ->->");
+			NSLog(@"TimeQuantization: something went awfully wrong! ->->");
 			NSLog(@"start: %f b: %f i: %d", start, b, i);
 		}
 	}
