@@ -98,7 +98,7 @@
 		}
 		else if(b>start && i==0){
 			NSLog(@"TimeQuantization: something went awfully wrong! ->->");
-			NSLog(@"start: %f b: %f i: %d", start, b, i);
+			NSLog(@"start: %f b: %f i: %ld", start, b, i);
 		}
 	}
 	

@@ -203,6 +203,10 @@
 		50D512851188B69D00B149A5 /* poolIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50D512841188B69D00B149A5 /* poolIcon.png */; };
 		50D57E9B11963053005F23FD /* Player.h in Headers */ = {isa = PBXBuildFile; fileRef = 50D57E9911963053005F23FD /* Player.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50D57E9C11963053005F23FD /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D57E9A11963053005F23FD /* Player.m */; };
+		50DE7B0313CC473D00FD4F35 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		50DE7B0913CC473D00FD4F35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50DE7B0713CC473D00FD4F35 /* InfoPlist.strings */; };
+		50DE7B1013CC480300FD4F35 /* AlignOnFreq.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DE7B0F13CC480300FD4F35 /* AlignOnFreq.m */; };
+		50DE7B1313CC482500FD4F35 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		50E860BD11F8586A0014CFE9 /* RemoveParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E860BC11F8586A0014CFE9 /* RemoveParameter.m */; };
 		50E8610611F88C890014CFE9 /* RemoveParameterWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50E8610511F88C890014CFE9 /* RemoveParameterWindow.xib */; };
 		50E8775911709A4E00FFA57E /* StripControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50E8775711709A4E00FFA57E /* StripControl.xib */; };
@@ -999,6 +1003,20 @@
 			remoteGlobalIDString = 50D3937011C837BA0080B427;
 			remoteInfo = ColorByKey;
 		};
+		50DE7B1113CC481D00FD4F35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
+		50DE7B1413CC485C00FD4F35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50DE7B0113CC473D00FD4F35;
+			remoteInfo = AlignOnFreq;
+		};
 		50E860B911F857EF0014CFE9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
@@ -1358,6 +1376,12 @@
 		50D512841188B69D00B149A5 /* poolIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = poolIcon.png; path = graphics/poolIcon.png; sourceTree = "<group>"; };
 		50D57E9911963053005F23FD /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = QuinceApi/Player.h; sourceTree = "<group>"; };
 		50D57E9A11963053005F23FD /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = QuinceApi/Player.m; sourceTree = "<group>"; };
+		50DE7B0213CC473D00FD4F35 /* AlignOnFreq.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlignOnFreq.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		50DE7B0613CC473D00FD4F35 /* AlignOnFreq-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "AlignOnFreq-Info.plist"; path = "bundles/Functions/AlignOnFreq/AlignOnFreq-Info.plist"; sourceTree = SOURCE_ROOT; };
+		50DE7B0813CC473D00FD4F35 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		50DE7B0A13CC473D00FD4F35 /* AlignOnFreq-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AlignOnFreq-Prefix.pch"; path = "bundles/Functions/AlignOnFreq/AlignOnFreq-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		50DE7B0E13CC480300FD4F35 /* AlignOnFreq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlignOnFreq.h; path = bundles/Functions/AlignOnFreq/AlignOnFreq.h; sourceTree = SOURCE_ROOT; };
+		50DE7B0F13CC480300FD4F35 /* AlignOnFreq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlignOnFreq.m; path = bundles/Functions/AlignOnFreq/AlignOnFreq.m; sourceTree = SOURCE_ROOT; };
 		50E860B011F857A20014CFE9 /* RemoveParameter.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoveParameter.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E860B111F857A20014CFE9 /* RemoveParameter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RemoveParameter-Info.plist"; path = "bundles/Functions/RemoveParameter/RemoveParameter-Info.plist"; sourceTree = "<group>"; };
 		50E860BB11F8586A0014CFE9 /* RemoveParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoveParameter.h; path = bundles/Functions/RemoveParameter/RemoveParameter.h; sourceTree = "<group>"; };
@@ -1827,6 +1851,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50DE7AFF13CC473D00FD4F35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50DE7B1313CC482500FD4F35 /* QuinceApi.framework in Frameworks */,
+				50DE7B0313CC473D00FD4F35 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50E860AE11F857A20014CFE9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1957,6 +1990,7 @@
 				508CB8C313C7BABC00F43AED /* PitchQuantization.bundle */,
 				509E993413C8A2D90032AEF9 /* PitchGridContainer.bundle */,
 				50B171F913CB336400C9F105 /* TimeQuantization.bundle */,
+				50DE7B0213CC473D00FD4F35 /* AlignOnFreq.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2243,6 +2277,7 @@
 		50299DEF114EA08A003A2185 /* Functions */ = {
 			isa = PBXGroup;
 			children = (
+				50DE7B0413CC473D00FD4F35 /* AlignOnFreq */,
 				50BD9B8B118FA0F50093F197 /* AlignOnVolume */,
 				504A694311A9C1D1007F60FF /* ApplyEnvelope */,
 				5015B018133EAB90006C85AA /* ApplyValueList */,
@@ -2722,6 +2757,26 @@
 				501BFA1F11C83E6D00A7BDCD /* ColorByKey.m */,
 			);
 			name = ColorByKey;
+			sourceTree = "<group>";
+		};
+		50DE7B0413CC473D00FD4F35 /* AlignOnFreq */ = {
+			isa = PBXGroup;
+			children = (
+				50DE7B0513CC473D00FD4F35 /* Supporting Files */,
+				50DE7B0E13CC480300FD4F35 /* AlignOnFreq.h */,
+				50DE7B0F13CC480300FD4F35 /* AlignOnFreq.m */,
+			);
+			path = AlignOnFreq;
+			sourceTree = "<group>";
+		};
+		50DE7B0513CC473D00FD4F35 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50DE7B0613CC473D00FD4F35 /* AlignOnFreq-Info.plist */,
+				50DE7B0713CC473D00FD4F35 /* InfoPlist.strings */,
+				50DE7B0A13CC473D00FD4F35 /* AlignOnFreq-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		50E860BF11F858780014CFE9 /* RemoveParameter */ = {
@@ -3788,6 +3843,24 @@
 			productReference = 50D3937111C837BA0080B427 /* ColorByKey.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
+		50DE7B0113CC473D00FD4F35 /* AlignOnFreq */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50DE7B0D13CC473D00FD4F35 /* Build configuration list for PBXNativeTarget "AlignOnFreq" */;
+			buildPhases = (
+				50DE7AFE13CC473D00FD4F35 /* Sources */,
+				50DE7AFF13CC473D00FD4F35 /* Frameworks */,
+				50DE7B0013CC473D00FD4F35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50DE7B1213CC481D00FD4F35 /* PBXTargetDependency */,
+			);
+			name = AlignOnFreq;
+			productName = AlignOnFreq;
+			productReference = 50DE7B0213CC473D00FD4F35 /* AlignOnFreq.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		50E860AF11F857A20014CFE9 /* RemoveParameter */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50E860B411F857A30014CFE9 /* Build configuration list for PBXNativeTarget "RemoveParameter" */;
@@ -3871,8 +3944,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				50B1720B13CB345B00C9F105 /* PBXTargetDependency */,
-				509E994413C8A3D00032AEF9 /* PBXTargetDependency */,
 				506BF7DE117A585700ECBC4E /* PBXTargetDependency */,
 				50999BF5127650AC00AD0D65 /* PBXTargetDependency */,
 				506BF8AA117A5E6200ECBC4E /* PBXTargetDependency */,
@@ -3928,6 +3999,9 @@
 				50D322B913C667D000F09158 /* PBXTargetDependency */,
 				5020C6AE13C7A59300D58742 /* PBXTargetDependency */,
 				508CB8D013C7BB0100F43AED /* PBXTargetDependency */,
+				50DE7B1513CC485C00FD4F35 /* PBXTargetDependency */,
+				50B1720B13CB345B00C9F105 /* PBXTargetDependency */,
+				509E994413C8A3D00032AEF9 /* PBXTargetDependency */,
 			);
 			name = quince;
 			productInstallPath = "$(HOME)/Applications";
@@ -3954,6 +4028,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				50DE7B0113CC473D00FD4F35 /* AlignOnFreq */,
 				50999AA6127642A200AD0D65 /* AlignOnVolume */,
 				504A692311A9C0E5007F60FF /* ApplyEnvelope */,
 				5015AFFB133EA9A4006C85AA /* ApplyValueList */,
@@ -4409,6 +4484,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				506D0D5E120B9BBD00F3F602 /* ColorByKey.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50DE7B0013CC473D00FD4F35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50DE7B0913CC473D00FD4F35 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4984,6 +5067,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				501BFA2011C83E6D00A7BDCD /* ColorByKey.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50DE7AFE13CC473D00FD4F35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50DE7B1013CC480300FD4F35 /* AlignOnFreq.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5593,6 +5684,16 @@
 			target = 50D3937011C837BA0080B427 /* ColorByKey */;
 			targetProxy = 50D393A911C838BA0080B427 /* PBXContainerItemProxy */;
 		};
+		50DE7B1213CC481D00FD4F35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 50DE7B1113CC481D00FD4F35 /* PBXContainerItemProxy */;
+		};
+		50DE7B1513CC485C00FD4F35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50DE7B0113CC473D00FD4F35 /* AlignOnFreq */;
+			targetProxy = 50DE7B1413CC485C00FD4F35 /* PBXContainerItemProxy */;
+		};
 		50E860BA11F857EF0014CFE9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 50E860AF11F857A20014CFE9 /* RemoveParameter */;
@@ -5723,6 +5824,15 @@
 			);
 			name = LayerControlsView.nib;
 			sourceTree = "<group>";
+		};
+		50DE7B0713CC473D00FD4F35 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50DE7B0813CC473D00FD4F35 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = bundles/Functions/AlignOnFreq;
+			sourceTree = SOURCE_ROOT;
 		};
 		50E8775711709A4E00FFA57E /* StripControl.xib */ = {
 			isa = PBXVariantGroup;
@@ -8590,6 +8700,48 @@
 			};
 			name = Release;
 		};
+		50DE7B0B13CC473D00FD4F35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/AlignOnFreq/AlignOnFreq-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/Functions/AlignOnFreq/AlignOnFreq-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		50DE7B0C13CC473D00FD4F35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/AlignOnFreq/AlignOnFreq-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/Functions/AlignOnFreq/AlignOnFreq-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		50E860B211F857A30014CFE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -9254,6 +9406,7 @@
 				50B1720413CB336400C9F105 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50B86D361190384000D235AA /* Build configuration list for PBXNativeTarget "EqlDstrbtn_Start" */ = {
 			isa = XCConfigurationList;
@@ -9344,6 +9497,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		50DE7B0D13CC473D00FD4F35 /* Build configuration list for PBXNativeTarget "AlignOnFreq" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50DE7B0B13CC473D00FD4F35 /* Debug */,
+				50DE7B0C13CC473D00FD4F35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		50E860B411F857A30014CFE9 /* Build configuration list for PBXNativeTarget "RemoveParameter" */ = {
 			isa = XCConfigurationList;

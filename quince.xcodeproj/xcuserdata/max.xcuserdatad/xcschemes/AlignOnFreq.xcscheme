@@ -13,9 +13,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "50B171F813CB336400C9F105"
-               BuildableName = "TimeQuantization.bundle"
-               BlueprintName = "TimeQuantization"
+               BlueprintIdentifier = "50DE7B0113CC473D00FD4F35"
+               BuildableName = "AlignOnFreq.bundle"
+               BlueprintName = "AlignOnFreq"
                ReferencedContainer = "container:quince.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

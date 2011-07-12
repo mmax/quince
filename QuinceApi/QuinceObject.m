@@ -989,6 +989,12 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context){
     if(!b)
         [self willChangeValueForKey:@"dictionary"];
 
+    
+    if(fabs([c floatValue]) > 50){
+        NSLog(@" QuinceObject: setCent:  |cent| > 50");
+        //...
+    }
+    
     [self willChangeValueForKey:@"cent"];
 	[dictionary setValue:c forKey:@"cent"];
     [self didChangeValueForKey:@"cent"];
