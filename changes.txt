@@ -1,5 +1,5 @@
 
-
+- added function: EqlDstrbtn_Freq
 - added function: EqlDstrbtn_Pitch
 - added function: AlignOnFreq
 - added a pitch tab to CreateGridSequence

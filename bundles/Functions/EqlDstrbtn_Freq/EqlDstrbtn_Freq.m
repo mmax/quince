@@ -1,5 +1,5 @@
 //
-//  EqlDstrbtn_Pitch.m
+//  EqlDstrbtn_Freq.m
 //  quince
 //
 //  Created by max on 7/12/11.
@@ -24,36 +24,35 @@
 //	along with quince.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-#import "EqlDstrbtn_Pitch.h"
+#import "EqlDstrbtn_Freq.h"
 
 
-@implementation EqlDstrbtn_Pitch
-
+@implementation EqlDstrbtn_Freq
 
 -(void)perform{
 	
 	QuinceObject * quince, * mother = [self objectForPurpose:@"source"];
 	[mother sortByKey:@"frequency" ascending:YES];
 	
-	double max  = -1000, incrementCent, min = [[[[mother valueForKey:@"subObjects"]objectAtIndex:0]valueForKey:@"frequency"]doubleValue], f , factor;
+	double max  = -1000, increment, min = [[[[mother valueForKey:@"subObjects"]objectAtIndex:0]valueForKey:@"frequency"]doubleValue];
 	int i, count = [mother subObjectsCount];
 	for(quince in [mother valueForKey:@"subObjects"]){
 		if([[quince valueForKey:@"frequency"]doubleValue]>max)
 			max = [[quince valueForKey:@"frequency"]doubleValue];
 	}
 	
-	incrementCent = 1200 * log2(max/min) / (count-1);
+	increment = (max-min) / (count-1);
 	
 	for(i=0;i<count;i++){
 		quince = [[mother valueForKey:@"subObjects"]objectAtIndex:i];
-        factor = pow(pow(pow(2, 1.0/1200.0), incrementCent), i);
-        f = min * factor;
-		[quince setValue:[NSNumber numberWithDouble:f] forKey:@"frequency"];
+		[quince setValue:[NSNumber numberWithDouble:increment*i+min] forKey:@"frequency"];
 	}
 	
     [mother update];
 	[self setOutputObjectToObjectWithPurpose:@"source"];
 	[self done];
 }
+
+
 
 @end

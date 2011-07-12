@@ -211,6 +211,10 @@
 		50DE7B2113CC4ACC00FD4F35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50DE7B1F13CC4ACC00FD4F35 /* InfoPlist.strings */; };
 		50DE7B2813CC4BB600FD4F35 /* EqlDstrbtn_Pitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DE7B2713CC4BB600FD4F35 /* EqlDstrbtn_Pitch.m */; };
 		50DE7B2B13CC4E2700FD4F35 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		50DE7B3313CC50AC00FD4F35 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		50DE7B3913CC50AC00FD4F35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50DE7B3713CC50AC00FD4F35 /* InfoPlist.strings */; };
+		50DE7B4013CC514700FD4F35 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		50DE7B4313CC517E00FD4F35 /* EqlDstrbtn_Freq.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DE7B4213CC517E00FD4F35 /* EqlDstrbtn_Freq.m */; };
 		50E860BD11F8586A0014CFE9 /* RemoveParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E860BC11F8586A0014CFE9 /* RemoveParameter.m */; };
 		50E8610611F88C890014CFE9 /* RemoveParameterWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50E8610511F88C890014CFE9 /* RemoveParameterWindow.xib */; };
 		50E8775911709A4E00FFA57E /* StripControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50E8775711709A4E00FFA57E /* StripControl.xib */; };
@@ -1035,6 +1039,20 @@
 			remoteGlobalIDString = 50DE7B1913CC4ACC00FD4F35;
 			remoteInfo = EqlDstrbtn_Pitch;
 		};
+		50DE7B3E13CC514200FD4F35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
+		50DE7B4413CC51C600FD4F35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50DE7B3113CC50AC00FD4F35;
+			remoteInfo = EqlDstrbtn_Freq;
+		};
 		50E860B911F857EF0014CFE9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
@@ -1406,6 +1424,12 @@
 		50DE7B2213CC4ACC00FD4F35 /* EqlDstrbtn_Pitch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "EqlDstrbtn_Pitch-Prefix.pch"; path = "bundles/Functions/EqlDstrbtn_Pitch/EqlDstrbtn_Pitch-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		50DE7B2613CC4BB600FD4F35 /* EqlDstrbtn_Pitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EqlDstrbtn_Pitch.h; path = bundles/Functions/EqlDstrbtn_Pitch/EqlDstrbtn_Pitch.h; sourceTree = SOURCE_ROOT; };
 		50DE7B2713CC4BB600FD4F35 /* EqlDstrbtn_Pitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EqlDstrbtn_Pitch.m; path = bundles/Functions/EqlDstrbtn_Pitch/EqlDstrbtn_Pitch.m; sourceTree = SOURCE_ROOT; };
+		50DE7B3213CC50AC00FD4F35 /* EqlDstrbtn_Freq.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EqlDstrbtn_Freq.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		50DE7B3613CC50AC00FD4F35 /* EqlDstrbtn_Freq-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EqlDstrbtn_Freq-Info.plist"; path = "bundles/Functions/EqlDstrbtn_Freq/EqlDstrbtn_Freq-Info.plist"; sourceTree = SOURCE_ROOT; };
+		50DE7B3813CC50AC00FD4F35 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		50DE7B3A13CC50AC00FD4F35 /* EqlDstrbtn_Freq-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "EqlDstrbtn_Freq-Prefix.pch"; path = "../bundles/Functions/EqlDstrbtn_Freq/EqlDstrbtn_Freq-Prefix.pch"; sourceTree = "<group>"; };
+		50DE7B4113CC517E00FD4F35 /* EqlDstrbtn_Freq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EqlDstrbtn_Freq.h; path = ../bundles/Functions/EqlDstrbtn_Freq/EqlDstrbtn_Freq.h; sourceTree = "<group>"; };
+		50DE7B4213CC517E00FD4F35 /* EqlDstrbtn_Freq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EqlDstrbtn_Freq.m; path = bundles/Functions/EqlDstrbtn_Freq/EqlDstrbtn_Freq.m; sourceTree = SOURCE_ROOT; };
 		50E860B011F857A20014CFE9 /* RemoveParameter.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoveParameter.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E860B111F857A20014CFE9 /* RemoveParameter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RemoveParameter-Info.plist"; path = "bundles/Functions/RemoveParameter/RemoveParameter-Info.plist"; sourceTree = "<group>"; };
 		50E860BB11F8586A0014CFE9 /* RemoveParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoveParameter.h; path = bundles/Functions/RemoveParameter/RemoveParameter.h; sourceTree = "<group>"; };
@@ -1893,6 +1917,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50DE7B2F13CC50AC00FD4F35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50DE7B4013CC514700FD4F35 /* QuinceApi.framework in Frameworks */,
+				50DE7B3313CC50AC00FD4F35 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50E860AE11F857A20014CFE9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2025,6 +2058,7 @@
 				50B171F913CB336400C9F105 /* TimeQuantization.bundle */,
 				50DE7B0213CC473D00FD4F35 /* AlignOnFreq.bundle */,
 				50DE7B1A13CC4ACC00FD4F35 /* EqlDstrbtn_Pitch.bundle */,
+				50DE7B3213CC50AC00FD4F35 /* EqlDstrbtn_Freq.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2321,6 +2355,7 @@
 				506BF94F117A642F00ECBC4E /* CreateGridSequence */,
 				500CACF4122D4B3D00B980B8 /* EnvToSeq */,
 				50AEBF8011CEC8A90055CA29 /* EnvelopeGate */,
+				50DE7B3413CC50AC00FD4F35 /* EqlDstrbtn_Freq */,
 				50DE7B1C13CC4ACC00FD4F35 /* EqlDstrbtn_Pitch */,
 				50B86D581190390800D235AA /* EqlDstrbtn_Start */,
 				50E93C011190666000A63246 /* EqlDstrbtn_Volume */,
@@ -2830,6 +2865,26 @@
 				50DE7B1E13CC4ACC00FD4F35 /* EqlDstrbtn_Pitch-Info.plist */,
 				50DE7B1F13CC4ACC00FD4F35 /* InfoPlist.strings */,
 				50DE7B2213CC4ACC00FD4F35 /* EqlDstrbtn_Pitch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50DE7B3413CC50AC00FD4F35 /* EqlDstrbtn_Freq */ = {
+			isa = PBXGroup;
+			children = (
+				50DE7B4113CC517E00FD4F35 /* EqlDstrbtn_Freq.h */,
+				50DE7B4213CC517E00FD4F35 /* EqlDstrbtn_Freq.m */,
+				50DE7B3513CC50AC00FD4F35 /* Supporting Files */,
+			);
+			path = EqlDstrbtn_Freq;
+			sourceTree = "<group>";
+		};
+		50DE7B3513CC50AC00FD4F35 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50DE7B3613CC50AC00FD4F35 /* EqlDstrbtn_Freq-Info.plist */,
+				50DE7B3713CC50AC00FD4F35 /* InfoPlist.strings */,
+				50DE7B3A13CC50AC00FD4F35 /* EqlDstrbtn_Freq-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -3934,6 +3989,24 @@
 			productReference = 50DE7B1A13CC4ACC00FD4F35 /* EqlDstrbtn_Pitch.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
+		50DE7B3113CC50AC00FD4F35 /* EqlDstrbtn_Freq */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50DE7B3B13CC50AC00FD4F35 /* Build configuration list for PBXNativeTarget "EqlDstrbtn_Freq" */;
+			buildPhases = (
+				50DE7B2E13CC50AC00FD4F35 /* Sources */,
+				50DE7B2F13CC50AC00FD4F35 /* Frameworks */,
+				50DE7B3013CC50AC00FD4F35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50DE7B3F13CC514200FD4F35 /* PBXTargetDependency */,
+			);
+			name = EqlDstrbtn_Freq;
+			productName = EqlDstrbtn_Freq;
+			productReference = 50DE7B3213CC50AC00FD4F35 /* EqlDstrbtn_Freq.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		50E860AF11F857A20014CFE9 /* RemoveParameter */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50E860B411F857A30014CFE9 /* Build configuration list for PBXNativeTarget "RemoveParameter" */;
@@ -4076,6 +4149,7 @@
 				50B1720B13CB345B00C9F105 /* PBXTargetDependency */,
 				509E994413C8A3D00032AEF9 /* PBXTargetDependency */,
 				50DE7B2D13CC4E3000FD4F35 /* PBXTargetDependency */,
+				50DE7B4513CC51C600FD4F35 /* PBXTargetDependency */,
 			);
 			name = quince;
 			productInstallPath = "$(HOME)/Applications";
@@ -4120,6 +4194,7 @@
 				506BF899117A5DD500ECBC4E /* EnvelopeContainer */,
 				50AEBF6F11CEC6AE0055CA29 /* EnvelopeGate */,
 				500CACDF122D4AD600B980B8 /* EnvToSeq */,
+				50DE7B3113CC50AC00FD4F35 /* EqlDstrbtn_Freq */,
 				50DE7B1913CC4ACC00FD4F35 /* EqlDstrbtn_Pitch */,
 				50B86D311190383D00D235AA /* EqlDstrbtn_Start */,
 				50E93BD8119065CD00A63246 /* EqlDstrbtn_Volume */,
@@ -4575,6 +4650,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				50DE7B2113CC4ACC00FD4F35 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50DE7B3013CC50AC00FD4F35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50DE7B3913CC50AC00FD4F35 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5166,6 +5249,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				50DE7B2813CC4BB600FD4F35 /* EqlDstrbtn_Pitch.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50DE7B2E13CC50AC00FD4F35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50DE7B4313CC517E00FD4F35 /* EqlDstrbtn_Freq.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5795,6 +5886,16 @@
 			target = 50DE7B1913CC4ACC00FD4F35 /* EqlDstrbtn_Pitch */;
 			targetProxy = 50DE7B2C13CC4E3000FD4F35 /* PBXContainerItemProxy */;
 		};
+		50DE7B3F13CC514200FD4F35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 50DE7B3E13CC514200FD4F35 /* PBXContainerItemProxy */;
+		};
+		50DE7B4513CC51C600FD4F35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50DE7B3113CC50AC00FD4F35 /* EqlDstrbtn_Freq */;
+			targetProxy = 50DE7B4413CC51C600FD4F35 /* PBXContainerItemProxy */;
+		};
 		50E860BA11F857EF0014CFE9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 50E860AF11F857A20014CFE9 /* RemoveParameter */;
@@ -5942,6 +6043,15 @@
 			);
 			name = InfoPlist.strings;
 			path = bundles/Functions/EqlDstrbtn_Pitch;
+			sourceTree = SOURCE_ROOT;
+		};
+		50DE7B3713CC50AC00FD4F35 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50DE7B3813CC50AC00FD4F35 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = bundles/Functions/EqlDstrbtn_Freq;
 			sourceTree = SOURCE_ROOT;
 		};
 		50E8775711709A4E00FFA57E /* StripControl.xib */ = {
@@ -8894,6 +9004,48 @@
 			};
 			name = Release;
 		};
+		50DE7B3C13CC50AC00FD4F35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/EqlDstrbtn_Freq/EqlDstrbtn_Freq-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/Functions/EqlDstrbtn_Freq/EqlDstrbtn_Freq-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		50DE7B3D13CC50AC00FD4F35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/EqlDstrbtn_Freq/EqlDstrbtn_Freq-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/Functions/EqlDstrbtn_Freq/EqlDstrbtn_Freq-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		50E860B211F857A30014CFE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -9663,6 +9815,14 @@
 			buildConfigurations = (
 				50DE7B2413CC4ACD00FD4F35 /* Debug */,
 				50DE7B2513CC4ACD00FD4F35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		50DE7B3B13CC50AC00FD4F35 /* Build configuration list for PBXNativeTarget "EqlDstrbtn_Freq" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50DE7B3C13CC50AC00FD4F35 /* Debug */,
+				50DE7B3D13CC50AC00FD4F35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

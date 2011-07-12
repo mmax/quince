@@ -94,6 +94,11 @@
 			<key>orderHint</key>
 			<integer>9</integer>
 		</dict>
+		<key>EqlDstrbtn_Freq.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>58</integer>
+		</dict>
 		<key>EqlDstrbtn_Pitch.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -573,6 +578,11 @@
 			<true/>
 		</dict>
 		<key>50DE7B1913CC4ACC00FD4F35</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>50DE7B3113CC50AC00FD4F35</key>
 		<dict>
 			<key>primary</key>
 			<true/>

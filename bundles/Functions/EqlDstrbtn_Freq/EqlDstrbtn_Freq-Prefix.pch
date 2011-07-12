@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'EqlDstrbtn_Freq' target in the 'EqlDstrbtn_Freq' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
