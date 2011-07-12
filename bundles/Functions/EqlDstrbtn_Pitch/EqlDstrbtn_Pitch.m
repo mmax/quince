@@ -50,7 +50,7 @@
         f = min * factor;
 		[quince setValue:[NSNumber numberWithDouble:f] forKey:@"frequency"];
 	}
-	
+	[mother sortChronologically];
     [mother update];
 	[self setOutputObjectToObjectWithPurpose:@"source"];
 	[self done];

@@ -366,6 +366,13 @@
 	return value;
 }
 
+-(BOOL)hasValueForKey:(NSString *)key{
+
+    if([self valueForKey:key] == nil)
+        return NO;
+    return YES;
+}
+
 #pragma mark object management
 
 -(void)update{

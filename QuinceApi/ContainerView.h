@@ -167,6 +167,9 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2);
 -(NSNumber *)yForParameterValue:(NSNumber *)p;
 -(NSNumber *)xDeltaForParameterValue:(NSNumber *)p;
 -(NSNumber *)yDeltaForParameterValue:(NSNumber *)p;
+
+-(double)minimumYValue;
+-(double)maximumYValue;
 float maxabs_float(float x);
 
 -(void)reload;

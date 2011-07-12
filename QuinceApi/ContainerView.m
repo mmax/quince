@@ -757,6 +757,9 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 	[childView setEnclosingView:self];
 	[childView setController:mc andBindWithKeysForLocationOnX:lx sizeOnX:sx locationOnY:ly];
     
+    if(![[mc content] hasValueForKey:[self keyForLocationOnYAxis]])
+        [[mc content] setValue:[NSNumber numberWithDouble:[self minimumYValue]] forKey:[self keyForLocationOnYAxis]];
+    
 	[mc registerChildView:childView];
 	//[childView setInteriorColor:[mc color]];
 	[childViews addObject:childView];
@@ -1116,6 +1119,10 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 -(NSNumber *)yDeltaForParameterValue:(NSNumber *)p{
 	return [self convertVolumeToYDelta:p];
 }
+
+-(double)minimumYValue{return -90;}
+
+-(double)maximumYValue{return 30;}
 
 float maxabs_float(float x){
 	return x<0?x*(-1):x;

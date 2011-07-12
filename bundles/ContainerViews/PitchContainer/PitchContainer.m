@@ -61,7 +61,7 @@
 	
 	//float sizeY = [self frame].size.height-[[self valueForKey:@"yAxisHeadRoom"]floatValue];
 	double ppy = [[self valueForKey:@"pixelsPerUnitY"]doubleValue];
-	float p = 16 + ([y doubleValue] / ppy);//((sizeY - [y doubleValue]) / ppy);
+	float p = [self minimumYValue] + ([y doubleValue] / ppy);//((sizeY - [y doubleValue]) / ppy);
 	return [NSNumber numberWithFloat: p] ;
 	
 }
@@ -70,8 +70,13 @@
 	
     //	float sizeY = [self frame].size.height-[[self valueForKey:@"yAxisHeadRoom"]floatValue];
 	double ppy = [[self valueForKey:@"pixelsPerUnitY"]doubleValue];
-	double y = ([f doubleValue]-16)*ppy;// sizeY + 
+	double y = ([f doubleValue]-[self minimumYValue])*ppy;// sizeY + 
 	return [NSNumber numberWithFloat: y];
 }
+
+-(double)minimumYValue{return 16;}
+
+-(double)maximumYValue{return 130;}
+
 
 @end

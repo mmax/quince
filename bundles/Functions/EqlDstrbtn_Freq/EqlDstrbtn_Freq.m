@@ -47,7 +47,8 @@
 		quince = [[mother valueForKey:@"subObjects"]objectAtIndex:i];
 		[quince setValue:[NSNumber numberWithDouble:increment*i+min] forKey:@"frequency"];
 	}
-	
+
+	[mother sortChronologically];
     [mother update];
 	[self setOutputObjectToObjectWithPurpose:@"source"];
 	[self done];

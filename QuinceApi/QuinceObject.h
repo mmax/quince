@@ -61,6 +61,7 @@
 -(void)checkAndUpdateSubsForKey:(NSString *)aKey;
 -(id)valueForKey:(NSString *)key;
 -(NSValue *)constrainValue:(id)value forKey:(NSString *)key;
+-(BOOL)hasValueForKey:(NSString *)key;
 -(NSMutableDictionary *)dictionary;
 -(BOOL)isOneOfTypesInArray:(NSArray *)typeNames;
 -(BOOL)isOfType:(NSString *)name;
