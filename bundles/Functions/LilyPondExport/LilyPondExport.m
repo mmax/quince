@@ -31,7 +31,7 @@
 
 -(LilyPondExport *)init{
 
-	if(self = [super init]){
+	if((self = [super init])){
 		[NSBundle loadNibNamed:@"LilyPondExportWindow" owner:self];
 		topKeys = [[NSMutableArray alloc]init];
 		bottomKeys = [[NSMutableArray alloc]init];					
@@ -789,7 +789,7 @@ double maxabs(double d){return d<0?d*(-1):d;}
 		}
 		else if(b>startFractionalPart && i==0){
 			NSLog(@"LilyPondExport:quantizeMint: something went awfully wrong! ->->");
-			NSLog(@"start: %f startFractionalPart: %f b: %f i: %d", start, startFractionalPart, b, i);
+			NSLog(@"start: %f startFractionalPart: %f b: %f i: %ld", start, startFractionalPart, b, i);
 		}
 	}
 	
