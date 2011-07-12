@@ -101,6 +101,7 @@
 		interceptView = [[EventInterceptView alloc]initWithFrame:[controller frameForStripWithStripControl:self]];
 		[interceptView setStripController:self];
 		[[controller contentView]addSubview:interceptView];
+        [interceptView computeGuides];
 	}
 	
 	LayerController * slc = [LayerController controller];
@@ -262,9 +263,9 @@
 	[controller addObjectToObjectPool:quince];
 }
 
--(QuinceDocument *)document{
+/*-(QuinceDocument *)document{
 	return [controller document];
-}
+}*/
 
 -(QuinceObjectController *)getSingleSelectedObjectController{
 

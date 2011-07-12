@@ -1,8 +1,8 @@
 //
-//  FrequencyStandardContainer.m
+//  CentContainer.m
 //  quince
 //
-//  Created by max on 5/30/11.
+//  Created by max on 7/12/11.
 //  Copyright 2011 Maximilian Marcoll. All rights reserved.
 //
 //
@@ -24,14 +24,16 @@
 //	along with quince.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-#import "FrequencyStandardContainer.h"
+
+#import "CentContainer.h"
 
 
-@implementation FrequencyStandardContainer
+@implementation CentContainer
+
 
 -(id)initWithFrame:(NSRect)frame{	
 	if ((self = [super initWithFrame:frame])) 
-        [self setValue:[NSNumber numberWithFloat:(frame.size.height-kDefaultYAxisHeadRoom)/15020] forKey:@"pixelsPerUnitY"];
+        [self setValue:[NSNumber numberWithFloat:(frame.size.height-5)/100] forKey:@"pixelsPerUnitY"];
     
     return self;
 }
@@ -40,40 +42,40 @@
 
 
 -(NSString *)parameterOnY{
-	return [NSString stringWithString:@"frequency"];
+	return [NSString stringWithString:@"cent"];
 }
 
 -(NSString *)keyForLocationOnYAxis{
-    return [NSString stringWithString:@"frequency"];
+    return [NSString stringWithString:@"cent"];
 }
 
 -(NSNumber *)parameterValueForY:(NSNumber *)y{
-	return [self convertYToFrequency:y];
+	return [self convertYToCent:y];
 }
 
 -(NSNumber *)yForParameterValue:(NSNumber *)p{
-	return [self convertFrequencyToY:p];
+	return [self convertCentToY:p];
 }
 
--(NSNumber *)convertYToFrequency:(NSNumber *)y {
+
+-(NSNumber *)convertYToCent:(NSNumber *)y {
 	
-	//float sizeY = [self frame].size.height-[[self valueForKey:@"yAxisHeadRoom"]floatValue];
+
 	double ppy = [[self valueForKey:@"pixelsPerUnitY"]doubleValue];
 	float f = [self minimumYValue] + ([y doubleValue] / ppy);//((sizeY - [y doubleValue]) / ppy);
 	return [NSNumber numberWithFloat: f] ;
 	
 }
 
--(NSNumber *)convertFrequencyToY:(NSNumber *)f{
+-(NSNumber *)convertCentToY:(NSNumber *)f{
 	
-//	float sizeY = [self frame].size.height-[[self valueForKey:@"yAxisHeadRoom"]floatValue];
 	double ppy = [[self valueForKey:@"pixelsPerUnitY"]doubleValue];
 	double y = ([f doubleValue]-[self minimumYValue])*ppy;// sizeY + 
 	return [NSNumber numberWithFloat: y];
 }
 
--(double)minimumYValue{return 20;}
+-(double)minimumYValue{return -50;}
 
--(double)maximumYValue{return 20000;}
+-(double)maximumYValue{return +50;}
 
 @end

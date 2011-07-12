@@ -215,6 +215,10 @@
 		50DE7B3913CC50AC00FD4F35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50DE7B3713CC50AC00FD4F35 /* InfoPlist.strings */; };
 		50DE7B4013CC514700FD4F35 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		50DE7B4313CC517E00FD4F35 /* EqlDstrbtn_Freq.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DE7B4213CC517E00FD4F35 /* EqlDstrbtn_Freq.m */; };
+		50DE7B4B13CC675100FD4F35 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		50DE7B5113CC675100FD4F35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50DE7B4F13CC675100FD4F35 /* InfoPlist.strings */; };
+		50DE7B5813CC677900FD4F35 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		50DE7B5D13CC681200FD4F35 /* CentContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DE7B5C13CC681200FD4F35 /* CentContainer.m */; };
 		50E860BD11F8586A0014CFE9 /* RemoveParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E860BC11F8586A0014CFE9 /* RemoveParameter.m */; };
 		50E8610611F88C890014CFE9 /* RemoveParameterWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50E8610511F88C890014CFE9 /* RemoveParameterWindow.xib */; };
 		50E8775911709A4E00FFA57E /* StripControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50E8775711709A4E00FFA57E /* StripControl.xib */; };
@@ -1053,6 +1057,20 @@
 			remoteGlobalIDString = 50DE7B3113CC50AC00FD4F35;
 			remoteInfo = EqlDstrbtn_Freq;
 		};
+		50DE7B5613CC677500FD4F35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
+		50DE7B5913CC678300FD4F35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50DE7B4913CC675000FD4F35;
+			remoteInfo = CentContainer;
+		};
 		50E860B911F857EF0014CFE9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
@@ -1430,6 +1448,12 @@
 		50DE7B3A13CC50AC00FD4F35 /* EqlDstrbtn_Freq-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "EqlDstrbtn_Freq-Prefix.pch"; path = "../bundles/Functions/EqlDstrbtn_Freq/EqlDstrbtn_Freq-Prefix.pch"; sourceTree = "<group>"; };
 		50DE7B4113CC517E00FD4F35 /* EqlDstrbtn_Freq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EqlDstrbtn_Freq.h; path = ../bundles/Functions/EqlDstrbtn_Freq/EqlDstrbtn_Freq.h; sourceTree = "<group>"; };
 		50DE7B4213CC517E00FD4F35 /* EqlDstrbtn_Freq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EqlDstrbtn_Freq.m; path = bundles/Functions/EqlDstrbtn_Freq/EqlDstrbtn_Freq.m; sourceTree = SOURCE_ROOT; };
+		50DE7B4A13CC675000FD4F35 /* CentContainer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CentContainer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		50DE7B4E13CC675100FD4F35 /* CentContainer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CentContainer-Info.plist"; path = "bundles/ContainerViews/CentContainer/CentContainer-Info.plist"; sourceTree = SOURCE_ROOT; };
+		50DE7B5013CC675100FD4F35 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		50DE7B5213CC675100FD4F35 /* CentContainer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CentContainer-Prefix.pch"; path = "bundles/ContainerViews/CentContainer/CentContainer-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		50DE7B5B13CC681200FD4F35 /* CentContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CentContainer.h; path = bundles/ContainerViews/CentContainer/CentContainer.h; sourceTree = SOURCE_ROOT; };
+		50DE7B5C13CC681200FD4F35 /* CentContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CentContainer.m; path = bundles/ContainerViews/CentContainer/CentContainer.m; sourceTree = SOURCE_ROOT; };
 		50E860B011F857A20014CFE9 /* RemoveParameter.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoveParameter.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E860B111F857A20014CFE9 /* RemoveParameter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RemoveParameter-Info.plist"; path = "bundles/Functions/RemoveParameter/RemoveParameter-Info.plist"; sourceTree = "<group>"; };
 		50E860BB11F8586A0014CFE9 /* RemoveParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoveParameter.h; path = bundles/Functions/RemoveParameter/RemoveParameter.h; sourceTree = "<group>"; };
@@ -1926,6 +1950,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50DE7B4713CC675000FD4F35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50DE7B5813CC677900FD4F35 /* QuinceApi.framework in Frameworks */,
+				50DE7B4B13CC675100FD4F35 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50E860AE11F857A20014CFE9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2059,6 +2092,7 @@
 				50DE7B0213CC473D00FD4F35 /* AlignOnFreq.bundle */,
 				50DE7B1A13CC4ACC00FD4F35 /* EqlDstrbtn_Pitch.bundle */,
 				50DE7B3213CC50AC00FD4F35 /* EqlDstrbtn_Freq.bundle */,
+				50DE7B4A13CC675000FD4F35 /* CentContainer.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2072,7 +2106,6 @@
 				50A5229B117A51BA0072FB09 /* ModelControllers */,
 				50BB629C116F987D0056C410 /* ViewControllers */,
 				50E87AD31170FF9000FFA57E /* View */,
-				50A522F3117A52B10072FB09 /* Test */,
 				2A37F4AFFDCFA73011CA2CEA /* Plug-Ins */,
 				506BF818117A59F100ECBC4E /* Other Sources */,
 				2A37F4B8FDCFA73011CA2CEA /* Resources */,
@@ -2331,6 +2364,7 @@
 			isa = PBXGroup;
 			children = (
 				506BF85E117A5B7800ECBC4E /* AutomationView */,
+				50DE7B4C13CC675100FD4F35 /* CentContainer */,
 				506BF8A5117A5E3D00ECBC4E /* EnvelopeContainer */,
 				50EAF2CB1393BAD200258AD1 /* FrequencyStandardContainer */,
 				500CADCE122D5B3700B980B8 /* MarkContainer */,
@@ -2465,6 +2499,7 @@
 		506BF8A5117A5E3D00ECBC4E /* EnvelopeContainer */ = {
 			isa = PBXGroup;
 			children = (
+				50A522F3117A52B10072FB09 /* Test */,
 				506BF8A2117A5E3900ECBC4E /* EnvelopeContainer.h */,
 				506BF8A3117A5E3900ECBC4E /* EnvelopeContainer.m */,
 			);
@@ -2885,6 +2920,26 @@
 				50DE7B3613CC50AC00FD4F35 /* EqlDstrbtn_Freq-Info.plist */,
 				50DE7B3713CC50AC00FD4F35 /* InfoPlist.strings */,
 				50DE7B3A13CC50AC00FD4F35 /* EqlDstrbtn_Freq-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50DE7B4C13CC675100FD4F35 /* CentContainer */ = {
+			isa = PBXGroup;
+			children = (
+				50DE7B5B13CC681200FD4F35 /* CentContainer.h */,
+				50DE7B5C13CC681200FD4F35 /* CentContainer.m */,
+				50DE7B4D13CC675100FD4F35 /* Supporting Files */,
+			);
+			path = CentContainer;
+			sourceTree = "<group>";
+		};
+		50DE7B4D13CC675100FD4F35 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50DE7B4E13CC675100FD4F35 /* CentContainer-Info.plist */,
+				50DE7B4F13CC675100FD4F35 /* InfoPlist.strings */,
+				50DE7B5213CC675100FD4F35 /* CentContainer-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -4007,6 +4062,24 @@
 			productReference = 50DE7B3213CC50AC00FD4F35 /* EqlDstrbtn_Freq.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
+		50DE7B4913CC675000FD4F35 /* CentContainer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50DE7B5313CC675100FD4F35 /* Build configuration list for PBXNativeTarget "CentContainer" */;
+			buildPhases = (
+				50DE7B4613CC675000FD4F35 /* Sources */,
+				50DE7B4713CC675000FD4F35 /* Frameworks */,
+				50DE7B4813CC675000FD4F35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50DE7B5713CC677500FD4F35 /* PBXTargetDependency */,
+			);
+			name = CentContainer;
+			productName = CentContainer;
+			productReference = 50DE7B4A13CC675000FD4F35 /* CentContainer.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		50E860AF11F857A20014CFE9 /* RemoveParameter */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50E860B411F857A30014CFE9 /* Build configuration list for PBXNativeTarget "RemoveParameter" */;
@@ -4091,8 +4164,8 @@
 			);
 			dependencies = (
 				506BF7DE117A585700ECBC4E /* PBXTargetDependency */,
-				50999BF5127650AC00AD0D65 /* PBXTargetDependency */,
 				506BF8AA117A5E6200ECBC4E /* PBXTargetDependency */,
+				50999BF5127650AC00AD0D65 /* PBXTargetDependency */,
 				506BF8D0117A5FD000ECBC4E /* PBXTargetDependency */,
 				506BF90A117A613100ECBC4E /* PBXTargetDependency */,
 				50EAF2E61393BC6B00258AD1 /* PBXTargetDependency */,
@@ -4150,6 +4223,7 @@
 				509E994413C8A3D00032AEF9 /* PBXTargetDependency */,
 				50DE7B2D13CC4E3000FD4F35 /* PBXTargetDependency */,
 				50DE7B4513CC51C600FD4F35 /* PBXTargetDependency */,
+				50DE7B5A13CC678300FD4F35 /* PBXTargetDependency */,
 			);
 			name = quince;
 			productInstallPath = "$(HOME)/Applications";
@@ -4187,6 +4261,7 @@
 				50716F96117A78C400357470 /* AutomationChildTestUnit */,
 				506BF832117A5A9700ECBC4E /* AutomationContainer */,
 				506BF853117A5B1A00ECBC4E /* AutomationContainerTestUnit */,
+				50DE7B4913CC675000FD4F35 /* CentContainer */,
 				50D3937011C837BA0080B427 /* ColorByKey */,
 				506BF92D117A629800ECBC4E /* CreateGridSequence */,
 				50325E9F1226947500E22031 /* CsoundPlayer */,
@@ -4658,6 +4733,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				50DE7B3913CC50AC00FD4F35 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50DE7B4813CC675000FD4F35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50DE7B5113CC675100FD4F35 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5257,6 +5340,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				50DE7B4313CC517E00FD4F35 /* EqlDstrbtn_Freq.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50DE7B4613CC675000FD4F35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50DE7B5D13CC681200FD4F35 /* CentContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5896,6 +5987,16 @@
 			target = 50DE7B3113CC50AC00FD4F35 /* EqlDstrbtn_Freq */;
 			targetProxy = 50DE7B4413CC51C600FD4F35 /* PBXContainerItemProxy */;
 		};
+		50DE7B5713CC677500FD4F35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 50DE7B5613CC677500FD4F35 /* PBXContainerItemProxy */;
+		};
+		50DE7B5A13CC678300FD4F35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50DE7B4913CC675000FD4F35 /* CentContainer */;
+			targetProxy = 50DE7B5913CC678300FD4F35 /* PBXContainerItemProxy */;
+		};
 		50E860BA11F857EF0014CFE9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 50E860AF11F857A20014CFE9 /* RemoveParameter */;
@@ -6052,6 +6153,15 @@
 			);
 			name = InfoPlist.strings;
 			path = bundles/Functions/EqlDstrbtn_Freq;
+			sourceTree = SOURCE_ROOT;
+		};
+		50DE7B4F13CC675100FD4F35 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50DE7B5013CC675100FD4F35 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = bundles/ContainerViews/CentContainer;
 			sourceTree = SOURCE_ROOT;
 		};
 		50E8775711709A4E00FFA57E /* StripControl.xib */ = {
@@ -9046,6 +9156,48 @@
 			};
 			name = Release;
 		};
+		50DE7B5413CC675100FD4F35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/ContainerViews/CentContainer/CentContainer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/ContainerViews/CentContainer/CentContainer-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/ContainerViews/";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		50DE7B5513CC675100FD4F35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/ContainerViews/CentContainer/CentContainer-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/ContainerViews/CentContainer/CentContainer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		50E860B211F857A30014CFE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -9823,6 +9975,14 @@
 			buildConfigurations = (
 				50DE7B3C13CC50AC00FD4F35 /* Debug */,
 				50DE7B3D13CC50AC00FD4F35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		50DE7B5313CC675100FD4F35 /* Build configuration list for PBXNativeTarget "CentContainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50DE7B5413CC675100FD4F35 /* Debug */,
+				50DE7B5513CC675100FD4F35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

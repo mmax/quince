@@ -32,7 +32,7 @@
 
 -(id)initWithFrame:(NSRect)frame{	
 	if ((self = [super initWithFrame:frame])) 
-        [self setValue:[NSNumber numberWithFloat:(frame.size.height-5)/115] forKey:@"pixelsPerUnitY"];
+        [self setValue:[NSNumber numberWithFloat:(frame.size.height-kDefaultYAxisHeadRoom)/115] forKey:@"pixelsPerUnitY"];
 //    NSLog(@"%f", frame.size.height);
     
     return self;

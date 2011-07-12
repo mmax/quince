@@ -1,6 +1,7 @@
 
+- added container: CentContainer
 - fixed a bug in PitchContainer and FrequencyStandardContainer
-(erratic behaviour without values for pitch / frequency parameters...)
+(erratic behaviour without values for pitch / frequency parameters…)
 - fixed a bug regarding pitch and cent updating
 - added function: EqlDstrbtn_Freq
 - added function: EqlDstrbtn_Pitch

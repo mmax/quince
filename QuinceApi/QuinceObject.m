@@ -1029,8 +1029,9 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context){
 	    
     if(b){
 		int pitch = [[self valueForKey:@"pitch"]intValue];
-		double newFreq = [self mToF:pitch]*pow(pow(2, 1/1200), [c intValue]);
+		double newFreq = [self mToF:pitch]*pow(pow(2, 1.0/1200), [c intValue]);
 		[self setFrequency:[NSNumber numberWithDouble:newFreq] withUpdate:NO];
+       // NSLog(@"JUST UPDATED FREQ: %f", newFreq);
 	}
     else
         [self didChangeValueForKey:@"dictionary"];

@@ -59,6 +59,11 @@
 			<key>orderHint</key>
 			<integer>36</integer>
 		</dict>
+		<key>CentContainer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>59</integer>
+		</dict>
 		<key>ColorByKey.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -583,6 +588,11 @@
 			<true/>
 		</dict>
 		<key>50DE7B3113CC50AC00FD4F35</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>50DE7B4913CC675000FD4F35</key>
 		<dict>
 			<key>primary</key>
 			<true/>

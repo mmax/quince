@@ -67,8 +67,12 @@
 	
 	//if(volumeGuides)
 	//	[self drawVolumeGuidesInRect:dirtyRect];
-    if(guides)
+    if(guides){
+        if(![[self valueForKey:@"parameter"]isEqualToString:[stripController parameterOnYAxis]])
+            [self computeGuides];
         [self drawGuidesInRect:dirtyRect];
+    }
+
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -182,7 +186,7 @@
     
    // NSLog(@"computeFreqGuides...");
     float y, alpha;
-	int fontSize=8,  frequencyRange = 15000;//[[stripController volumeRange]integerValue];
+	int fontSize=8,  frequencyRange = 15020;//[[stripController volumeRange]integerValue];
 	NSFont *font = [NSFont systemFontOfSize:fontSize];
 	NSRange tRange;
 	NSPoint point;
@@ -260,6 +264,47 @@
 
 }
 
+-(void)computeCentGuides{
+    float y, alpha;
+	int fontSize=8;//,  frequencyRange = 15000;//[[stripController volumeRange]integerValue];
+	NSFont *font = [NSFont systemFontOfSize:fontSize];
+	NSRange tRange;
+	NSPoint point;
+	NSBezierPath * zero;
+	[[self valueForKey:@"guides"] removeAllObjects];
+	
+	for(int p = -40;p<=40;p+=10){
+		NSMutableDictionary * guide = [[NSMutableDictionary alloc]init];
+		ContainerView * view = [(LayerController * )[[stripController layerControllers] lastObject]view];
+		y = [[view yForParameterValue:[NSNumber numberWithInt:p]]floatValue];
+        //NSLog(@"f: %f, y: %f", f, y);
+		alpha = 0.5;
+		NSColor * color = [NSColor colorWithDeviceWhite:1 alpha:alpha];
+		[guide setValue:color forKey:@"color" ];
+		
+		zero = [[[NSBezierPath alloc]init]autorelease];
+		[zero moveToPoint:NSMakePoint(0,y)];
+		[zero lineToPoint:NSMakePoint([self bounds].size.width, y)];
+		[zero setLineWidth:0];
+		[guide setValue:zero forKey:@"path"];
+		
+		NSMutableAttributedString * s = [[[NSMutableAttributedString alloc]initWithString:[NSString stringWithFormat:@"%d c", p]]autorelease];
+
+		tRange = NSMakeRange(0, [s length]);	
+
+		[s addAttribute:NSForegroundColorAttributeName value:[NSColor whiteColor] range:tRange];
+		[s addAttribute:NSFontAttributeName value:font range:tRange];
+		point = NSMakePoint([self bounds].origin.x+1,y+1);
+
+		[guide setValue:[NSValue valueWithPoint:point]forKey:@"point"];
+		[guide setValue:s forKey:@"string"];
+		[[self valueForKey:@"guides"] addObject:guide];
+	}
+    
+
+}
+
+
 -(void)drawVolumeGuides{
 	NSLog(@"drawVolumeGuides...");
 	/* for(NSDictionary * d in volumeGuides){
@@ -272,7 +317,7 @@
 
 -(void)drawGuidesInRect:(NSRect) r{
 
-    NSString * yP = [stripController parameterOnYAxis];
+   /* NSString * yP = [stripController parameterOnYAxis];
     
     if([yP isEqualToString:@"volume"])
         [self drawVolumeGuidesInRect:r];
@@ -280,11 +325,20 @@
         [self drawFrequencyGuidesInRect:r];
     else if ([yP isEqualToString:@"pitch"])
         [self drawPitchGuidesInRect:r];
-
+*/
+    for(NSDictionary * d in [self valueForKey:@"guides"]){
+        
+		[[d valueForKey:@"color"]set];
+		[[d valueForKey:@"path"]stroke];
+		NSMutableAttributedString * s = [d valueForKey:@"string"];
+		NSRect frame = [s boundingRectWithSize:[s size] options:NSStringDrawingUsesFontLeading];
+		if(NSIntersectsRect(frame,r))
+            [s drawAtPoint:[[d valueForKey:@"point"]pointValue]];
+    }
 
 }
 
--(void)drawFrequencyGuidesInRect:(NSRect) r{
+/*-(void)drawFrequencyGuidesInRect:(NSRect) r{
     
     for(NSDictionary * d in [self valueForKey:@"guides"]){
         
@@ -321,7 +375,7 @@
 		if(NSIntersectsRect(frame,r))
 		   [s drawAtPoint:[[d valueForKey:@"point"]pointValue]];
 	 }
-}
+}*/
 
 -(void)setFrameSize:(NSSize)newSize{
 	[super setFrameSize:newSize];
@@ -342,7 +396,10 @@
         [self computeFrequencyGuides];
     else if ([yP isEqualToString:@"pitch"])
         [self computePitchGuides];
+    else if ([yP isEqualToString:@"cent"])
+        [self computeCentGuides];
     
+    [self setValue:yP forKey:@"parameter"];
     [self setNeedsDisplay:YES];
 
 }
