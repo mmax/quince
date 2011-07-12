@@ -123,7 +123,7 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context);
 -(void)setFrequency:(NSNumber *)f withUpdate:(BOOL)b;
 -(void)setPitch:(NSNumber *)p withUpdate:(BOOL)b;
 -(void)setCent:(NSNumber *)c withUpdate:(BOOL)b;
--(double)mToF:(int)f;
+-(double)mToF:(double)f;
 -(int)fToC:(double)f;
 -(int)fToM:(double)f;
 -(double)centDifferenceBetweenFrequency:(double)a and:(double)b;

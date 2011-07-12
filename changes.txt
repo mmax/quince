@@ -1,4 +1,5 @@
 
+- fixed a bug regarding pitch and cent updating
 - added function: EqlDstrbtn_Freq
 - added function: EqlDstrbtn_Pitch
 - added function: AlignOnFreq

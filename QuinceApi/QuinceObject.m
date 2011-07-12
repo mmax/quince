@@ -946,7 +946,7 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context){
 
 -(void)setFrequency:(NSNumber *)f withUpdate:(BOOL)b{
     
-    if(!b)
+   // if(!b)
         [self willChangeValueForKey:@"dictionary"];
 
     [self willChangeValueForKey:@"frequency"];
@@ -957,7 +957,7 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context){
 		[self setPitch:[NSNumber numberWithInt:[self fToM:[f doubleValue]]] withUpdate:NO];
 		[self setCent:[NSNumber numberWithInt:[self fToC:[f doubleValue]]] withUpdate:NO];
 	}
-    else
+    //else
         [self didChangeValueForKey:@"dictionary"];
 }
 
@@ -965,6 +965,13 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context){
 
 -(void)setPitch:(NSNumber *)p withUpdate:(BOOL)b{	
   
+    int cent = ([p floatValue] - [p intValue]) * 100.0;
+
+    if(cent >= 1.0)
+        b = YES; 
+    
+    NSNumber * doubleP = p;
+    p = [NSNumber numberWithInt:[p intValue]];
     
 	if(!b)
         [self willChangeValueForKey:@"dictionary"];
@@ -974,8 +981,8 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context){
 	[self didChangeValueForKey:@"pitch"];
 
 	if(b) {
-		[self setFrequency:[NSNumber numberWithDouble:[self mToF:[p intValue]]] withUpdate:NO];
-		[self setCent:[NSNumber numberWithInt:0] withUpdate:NO];
+		[self setFrequency:[NSNumber numberWithDouble:[self mToF:[doubleP doubleValue]]] withUpdate:NO];
+		[self setCent:[NSNumber numberWithInt:cent] withUpdate:NO];
 	}
     
 	else
@@ -986,13 +993,26 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context){
     
 -(void)setCent:(NSNumber *)c withUpdate:(BOOL)b{	
 
+
     if(!b)
         [self willChangeValueForKey:@"dictionary"];
 
     
     if(fabs([c floatValue]) > 50){
-        NSLog(@" QuinceObject: setCent:  |cent| > 50");
+        //NSLog(@" QuinceObject: setCent:  |cent| > 50 : %d, switching...", [c intValue]);
         //...
+        if([c intValue]>50){
+            int pitch = [[self valueForKey:@"pitch"]intValue]+1;
+            [self setPitch:[NSNumber numberWithInt:pitch] withUpdate:NO];
+            [self setCent: [NSNumber numberWithInt:[c intValue]-100] withUpdate:NO];
+            return;
+        }
+        else if([c intValue]<-50){
+            int pitch = [[self valueForKey:@"pitch"]intValue]-1;
+            [self setPitch:[NSNumber numberWithInt:pitch] withUpdate:NO];
+            [self setCent: [NSNumber numberWithInt:[c intValue]+100] withUpdate:NO];
+            return;
+        }
     }
     
     [self willChangeValueForKey:@"cent"];
@@ -1027,7 +1047,7 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context){
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
--(double)mToF:(int)f{
+-(double)mToF:(double)f{
 	
 	if(f<=0) return (0);
     else if(f>1499) return [self mToF: 1499];
