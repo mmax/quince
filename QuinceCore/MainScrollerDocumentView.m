@@ -31,7 +31,7 @@
 
 -(MainScrollerDocumentView *)initWithFrame:(NSRect)frameRect{
 
-	if(self = [super initWithFrame:frameRect]){
+	if((self = [super initWithFrame:frameRect])){
 		separators = [[NSMutableArray alloc]init];
 		stripHeight = 0;
 		stripOffset = 0;
@@ -99,6 +99,7 @@
 -(void)drawRect:(NSRect)rect{
 
 	[[NSColor colorWithDeviceRed:.8 green:.8 blue:.81 alpha:1]set];
+    //[[NSColor colorWithDeviceRed:.3 green:.3 blue:.3 alpha:1]set];
 	[NSBezierPath fillRect:[self bounds]];	
 	if(stripHeight)[self drawSeparatorsForStripsWithHeight:stripHeight andOffset:stripOffset];
 	[[NSColor colorWithDeviceRed:.4 green:.4 blue:.4 alpha:1]set];

@@ -43,6 +43,8 @@
 		[self setValue:[NSValue valueWithSize:NSMakeSize(kDefaultWidth, kDefaultHeight)] forKey:@"size"];
 		[self setValue:[NSValue valueWithPoint:NSMakePoint(0, 0)] forKey:@"location"];
 		[self setValue:[NSColor colorWithDeviceRed:0 green:.5 blue:1 alpha:1] forKey:@"selectionColor"];
+
+   		//[self setValue:[NSColor colorWithDeviceRed:0 green:.7 blue:0 alpha:1] forKey:@"selectionColor"];
 		[self setValue:[NSColor colorWithDeviceRed:0.5 green:.5 blue:1 alpha:1] forKey:@"mutedSelectionColor"];
 		[self setValue:[NSColor colorWithDeviceRed:0.5 green:.5 blue:0.5 alpha:1] forKey:@"mutedColor"];
 		[self setValue:[NSColor blackColor] forKey:@"frameColor"];
