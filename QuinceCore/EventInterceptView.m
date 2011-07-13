@@ -193,7 +193,7 @@
 	NSBezierPath * zero;
 	[[self valueForKey:@"guides"] removeAllObjects];
 	
-	for(float f = 2;f<frequencyRange;f*=1.259921049894872){
+	for(float f = 220;f<frequencyRange;f*=1.5){//1.259921049894872){
 		NSMutableDictionary * guide = [[NSMutableDictionary alloc]init];
 		ContainerView * view = [(LayerController * )[[stripController layerControllers] lastObject]view];
 		y = [[view yForParameterValue:[NSNumber numberWithInt:f]]floatValue];
@@ -271,6 +271,8 @@
 	NSRange tRange;
 	NSPoint point;
 	NSBezierPath * zero;
+    NSString * sign = @"";
+    
 	[[self valueForKey:@"guides"] removeAllObjects];
 	
 	for(int p = -40;p<=40;p+=10){
@@ -287,8 +289,11 @@
 		[zero lineToPoint:NSMakePoint([self bounds].size.width, y)];
 		[zero setLineWidth:0];
 		[guide setValue:zero forKey:@"path"];
-		
-		NSMutableAttributedString * s = [[[NSMutableAttributedString alloc]initWithString:[NSString stringWithFormat:@"%d c", p]]autorelease];
+		if(p>0)
+            sign =@"+";
+        if(p==0)
+           sign = @"± ";
+		NSMutableAttributedString * s = [[[NSMutableAttributedString alloc]initWithString:[NSString stringWithFormat:@"%@%d c", sign, p]]autorelease];
 
 		tRange = NSMakeRange(0, [s length]);	
 
@@ -327,11 +332,12 @@
         [self drawPitchGuidesInRect:r];
 */
     for(NSDictionary * d in [self valueForKey:@"guides"]){
-        
+     	[[NSGraphicsContext currentContext]setShouldAntialias:NO];   
 		[[d valueForKey:@"color"]set];
 		[[d valueForKey:@"path"]stroke];
 		NSMutableAttributedString * s = [d valueForKey:@"string"];
 		NSRect frame = [s boundingRectWithSize:[s size] options:NSStringDrawingUsesFontLeading];
+       	[[NSGraphicsContext currentContext]setShouldAntialias:YES];
 		if(NSIntersectsRect(frame,r))
             [s drawAtPoint:[[d valueForKey:@"point"]pointValue]];
     }
