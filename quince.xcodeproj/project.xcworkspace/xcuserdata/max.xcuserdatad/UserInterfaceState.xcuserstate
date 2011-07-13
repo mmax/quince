@@ -23304,7 +23304,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>1236</real>
+		<real>596</real>
 		<string>Xcode3BuildSettingsEditor</string>
 		<dict>
 			<key>$class</key>
@@ -23343,7 +23343,7 @@
 			</dict>
 		</dict>
 		<string>file://localhost/Users/max/SWProjects/quince/quince.xcodeproj/</string>
-		<real>332241119.210379</real>
+		<real>332244840.90273798</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -47200,7 +47200,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>662</real>
+		<real>465</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -47230,7 +47230,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>22</real>
+		<real>211</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -48805,7 +48805,7 @@
 		<string>IDESCMStatusFilteringEnabled</string>
 		<string>IDESelectedObjects</string>
 		<string>IDEExpandedItemsSet</string>
-		<string>{{0, 0}, {218, 640}}</string>
+		<string>{{0, 0}, {218, 632}}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -49033,7 +49033,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>1441</real>
+		<real>801</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -49692,7 +49692,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>1236</real>
+		<real>596</real>
 		<string>Xcode3BuildSettingsEditor</string>
 		<dict>
 			<key>$class</key>
@@ -49730,7 +49730,7 @@
 				<integer>3035</integer>
 			</dict>
 		</dict>
-		<real>332241119.21852601</real>
+		<real>332244840.90777999</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -52262,7 +52262,7 @@
 				</dict>
 			</array>
 		</dict>
-		<string>{{0, 0}, {1441, 684}}</string>
+		<string>{{0, 0}, {801, 676}}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -52474,7 +52474,7 @@
 			</array>
 		</dict>
 		<string>ConsoleArea</string>
-		<real>1190</real>
+		<real>550</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -52573,7 +52573,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>1190</real>
+		<real>550</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -52686,7 +52686,7 @@
 			<key>NS.objects</key>
 			<array/>
 		</dict>
-		<string>{{6, 326}, {1920, 782}}</string>
+		<string>{{0, 4}, {1280, 774}}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
