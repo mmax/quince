@@ -82,6 +82,8 @@
 -(void)updateOffsetForKey:(NSString *)key;
 -(NSNumber *)offsetForKey:(NSString *)key;
 -(BOOL)canCreateOffsetForKey:(NSString *)key;
+-(void)updateBaseFreq;
+-(void)updatePitchRange;
 -(NSNumber*) amplitude;
 
 -(void)sortByKey:(NSString *)key ascending:(BOOL)asc;
@@ -127,7 +129,12 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context);
 -(double)mToF:(double)f;
 -(int)fToC:(double)f;
 -(int)fToM:(double)f;
+-(double)fToMD:(double)f;
 -(double)centDifferenceBetweenFrequency:(double)a and:(double)b;
+-(void)createFreqEntry;
+-(void)createFreqBEntry;
+    
+    
 -(BOOL)isSuperOf:(QuinceObject *)child;
 
 -(BOOL)isEqualTo:(QuinceObject *)q;

@@ -245,10 +245,10 @@
 -(void)setValue:(id)aValue forKey:(NSString *)aKey{
 	//NSLog(@"QuinceObject:setValue:forKey:%@", aKey);
 	if([aKey isEqualToString:@"dictionary"]){                   // set by ObjectInspector (NSDictionaryController)
-		//NSArray * keys = [aValue allKeys];                      // since we don't know if some changed parameters are dependant on one another (like frequency and pitch
+		//NSArray * keys = [aValue allKeys];                      // since we don't know if some changed parameters are dependent on one another (like frequency and pitch
         id changedParameter = [controller changedParameter];    // we can not simply copy all values of the dictionary but we have to find the changed parameter and 
-       [self setValue:[changedParameter valueForKey:@"value"] forKey:[changedParameter valueForKey:@"key"]]; //set that parameter's value (and dependant parameter's values)
-        NSLog(@"changedParameter:%@", changedParameter);        // that's both secure and efficient
+       [self setValue:[changedParameter valueForKey:@"value"] forKey:[changedParameter valueForKey:@"key"]]; //set that parameter's value (and dependent parameter's values)
+       // NSLog(@"changedParameter:%@", changedParameter);        // that's both secure and efficient
       //  for(NSString * dictKey in keys)    // to make sure we have the correct values before changing all the other values...
       //    [self setValue:[aValue valueForKey:dictKey] forKey:dictKey];
         
@@ -261,6 +261,7 @@
 	
 	if([aKey isEqualToString:@"frequency"]){
 		[self setFrequency:aValue withUpdate:YES];
+        [self updateBaseFreq]; // just in case...
         [self checkAndUpdateSubsForKey:aKey];
         return;
 		//[self setValue:[NSNumber numberWithInt:[self fToM:[aValue doubleValue]]] forKey:@"pitch"];
@@ -301,6 +302,12 @@
 	[self didChangeValueForKey:aKey];
 	[self didChangeValueForKey:@"dictionary"];
 	
+    
+    if([aKey isEqualToString:@"frequencyB"]){
+        //[self updateBaseFreq];
+        [self updatePitchRange];
+    }
+    
     [self checkAndUpdateSubsForKey:aKey];
 	
 }
@@ -310,6 +317,9 @@
         //		NSLog(@"QuinceObject: telling subObjects to updateOffsetForKey:%@", aKey);
 		[[self valueForKey:@"subObjects"] makeObjectsPerformSelector:@selector(updateOffsetForKey:) withObject:aKey];
 	}
+    
+    
+
 }
 
 
@@ -440,6 +450,28 @@
 		return [NSNumber numberWithFloat:[[superMint offsetForKey:key]doubleValue] + [[superMint valueForKey:key]doubleValue]];
 	else
 		return [NSNumber numberWithInt:0];
+}
+
+-(void)updateBaseFreq{
+
+    NSNumber * freq = [self valueForKey:@"frequency"];
+    NSNumber * endFreq = [self valueForKey:@"frequencyB"];
+    if(!freq || ! endFreq) return;
+    
+    if([freq doubleValue]<=[endFreq doubleValue])
+        [self setValue:freq forKey:@"baseFreq"];
+    else
+        [self setValue:endFreq forKey:@"baseFreq"];
+    
+}
+
+-(void)updatePitchRange{
+    NSNumber * freq = [self valueForKey:@"frequency"];
+    NSNumber * endFreq = [self valueForKey:@"frequencyB"];
+    
+    if(!freq || ! endFreq) return;
+
+    [self setValue:[NSNumber numberWithDouble:fabs([self fToMD:[freq doubleValue]] - [self fToMD:[endFreq doubleValue]])] forKey:@"pitchRange"];
 }
 
 -(NSNumber *)mediaFileStart{
@@ -1045,7 +1077,17 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context){
 	return (f>0)?log2(f/440)*12+69:0;
 }
 
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-(double)fToMD:(double)f{
+	
+    double a = 440.0;
+	return (f>0)?log2(f/a)*12.0+69:0;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 -(int)fToC:(double)f{ 
 	
@@ -1068,6 +1110,23 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context){
     
     return fabs(1200*log2(a/b));
 }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-(void)createFreqBEntry{
+
+    NSNumber * f =  [self valueForKey:@"frequency"];
+    if(f)
+        [self setValue:f forKey:@"frequencyB"];
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+-(void)createFreqEntry{
+    [self setValue:[NSNumber numberWithFloat:781] forKey:@"frequency"];//createFreqEntry];
+}
+
 
 #pragma mark finish
 

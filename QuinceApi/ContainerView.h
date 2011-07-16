@@ -159,10 +159,12 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2);
 -(NSNumber *)convertTimeToX:(NSNumber *)time;
 -(NSNumber *)convertYToVolume:(NSNumber *)y;
 -(NSNumber *)convertVolumeToY:(NSNumber *)dB;
--(NSNumber *)convertVolumeToYDelta:(NSNumber *)dB;
+//-(NSNumber *)convertVolumeToYDelta:(NSNumber *)dB;
+//-(NSNumber *)convertDeltaYToDeltaVolume:(NSNumber *)y;
 
 -(NSNumber *)parameterValueForX:(NSNumber *)x;
 -(NSNumber *)parameterValueForY:(NSNumber *)y;
+-(NSNumber *)parameterValueForDeltaY:(NSNumber *)y;
 -(NSNumber *)xForParameterValue:(NSNumber *)p;
 -(NSNumber *)yForParameterValue:(NSNumber *)p;
 -(NSNumber *)xDeltaForParameterValue:(NSNumber *)p;

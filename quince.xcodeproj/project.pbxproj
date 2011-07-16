@@ -229,6 +229,14 @@
 		50EAF2E71393BDCD00258AD1 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		50F420001198B2DD009F695A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506BF9E5117A677800ECBC4E /* AudioToolbox.framework */; };
 		50F4206E1198BF96009F695A /* AudioFilePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F4206D1198BF96009F695A /* AudioFilePlayer.m */; };
+		50F471D213D0D815005CB978 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		50F471D813D0D815005CB978 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50F471D613D0D815005CB978 /* InfoPlist.strings */; };
+		50F471DF13D0D8AB005CB978 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		50F471E413D0D9DD005CB978 /* GlissandoContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F471E313D0D9DD005CB978 /* GlissandoContainer.m */; };
+		50F471EA13D0E2DB005CB978 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		50F471F013D0E2DB005CB978 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50F471EE13D0E2DB005CB978 /* InfoPlist.strings */; };
+		50F471F713D0E35D005CB978 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		50F471FC13D0E3BC005CB978 /* GlissandoChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F471FB13D0E3BC005CB978 /* GlissandoChild.m */; };
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
 		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
 		8D15AC310486D014006FF6A4 /* QuinceDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* QuinceDocument.m */; settings = {ATTRIBUTES = (); }; };
@@ -1119,6 +1127,34 @@
 			remoteGlobalIDString = 50F420541198BF3C009F695A;
 			remoteInfo = SimpleAudio;
 		};
+		50F471DD13D0D8A4005CB978 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
+		50F471E013D0D8B6005CB978 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50F471D013D0D815005CB978;
+			remoteInfo = GlissandoContainer;
+		};
+		50F471F513D0E359005CB978 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
+		50F471F813D0E36B005CB978 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50F471E813D0E2DA005CB978;
+			remoteInfo = GlissandoChild;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -1475,6 +1511,18 @@
 		50F420561198BF3C009F695A /* AudioFilePlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "AudioFilePlayer-Info.plist"; path = "bundles/Players/AudioFilePlayer/AudioFilePlayer-Info.plist"; sourceTree = "<group>"; };
 		50F4206C1198BF96009F695A /* AudioFilePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioFilePlayer.h; path = bundles/Players/AudioFilePlayer/AudioFilePlayer.h; sourceTree = "<group>"; };
 		50F4206D1198BF96009F695A /* AudioFilePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioFilePlayer.m; path = bundles/Players/AudioFilePlayer/AudioFilePlayer.m; sourceTree = "<group>"; };
+		50F471D113D0D815005CB978 /* GlissandoContainer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlissandoContainer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		50F471D513D0D815005CB978 /* GlissandoContainer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GlissandoContainer-Info.plist"; path = "bundles/ContainerViews/GlissandoContainer/GlissandoContainer-Info.plist"; sourceTree = SOURCE_ROOT; };
+		50F471D713D0D815005CB978 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		50F471D913D0D815005CB978 /* GlissandoContainer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GlissandoContainer-Prefix.pch"; path = "bundles/ContainerViews/GlissandoContainer/GlissandoContainer-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		50F471E213D0D9DD005CB978 /* GlissandoContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlissandoContainer.h; path = bundles/ContainerViews/GlissandoContainer/GlissandoContainer.h; sourceTree = SOURCE_ROOT; };
+		50F471E313D0D9DD005CB978 /* GlissandoContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlissandoContainer.m; path = bundles/ContainerViews/GlissandoContainer/GlissandoContainer.m; sourceTree = SOURCE_ROOT; };
+		50F471E913D0E2DA005CB978 /* GlissandoChild.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlissandoChild.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		50F471ED13D0E2DB005CB978 /* GlissandoChild-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GlissandoChild-Info.plist"; path = "bundles/ChildViews/GlissandoChild/GlissandoChild-Info.plist"; sourceTree = SOURCE_ROOT; };
+		50F471EF13D0E2DB005CB978 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		50F471F113D0E2DB005CB978 /* GlissandoChild-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GlissandoChild-Prefix.pch"; path = "bundles/ChildViews/GlissandoChild/GlissandoChild-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		50F471FA13D0E3BC005CB978 /* GlissandoChild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlissandoChild.h; path = bundles/ChildViews/GlissandoChild/GlissandoChild.h; sourceTree = SOURCE_ROOT; };
+		50F471FB13D0E3BC005CB978 /* GlissandoChild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlissandoChild.m; path = bundles/ChildViews/GlissandoChild/GlissandoChild.m; sourceTree = SOURCE_ROOT; };
 		8D15AC360486D014006FF6A4 /* quince-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "quince-Info.plist"; path = "QuinceCore/quince-Info.plist"; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* quince.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quince.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -1991,6 +2039,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50F471CE13D0D815005CB978 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50F471DF13D0D8AB005CB978 /* QuinceApi.framework in Frameworks */,
+				50F471D213D0D815005CB978 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50F471E613D0E2DA005CB978 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50F471F713D0E35D005CB978 /* QuinceApi.framework in Frameworks */,
+				50F471EA13D0E2DB005CB978 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D15AC330486D014006FF6A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2091,6 +2157,8 @@
 				50DE7B1A13CC4ACC00FD4F35 /* EqlDstrbtn_Pitch.bundle */,
 				50DE7B3213CC50AC00FD4F35 /* EqlDstrbtn_Freq.bundle */,
 				50DE7B4A13CC675000FD4F35 /* CentContainer.bundle */,
+				50F471D113D0D815005CB978 /* GlissandoContainer.bundle */,
+				50F471E913D0E2DA005CB978 /* GlissandoChild.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2349,10 +2417,11 @@
 		50299DE1114EA07C003A2185 /* ChildViews */ = {
 			isa = PBXGroup;
 			children = (
-				50717042117A7FEA00357470 /* SequenceChild */,
-				5071703D117A7F8300357470 /* EnvelopeChild */,
 				50717010117A7E7100357470 /* AutomationChild */,
+				5071703D117A7F8300357470 /* EnvelopeChild */,
+				50F471EB13D0E2DB005CB978 /* GlissandoChild */,
 				500CADB5122D5A7A00B980B8 /* MarkChild */,
+				50717042117A7FEA00357470 /* SequenceChild */,
 			);
 			name = ChildViews;
 			sourceTree = "<group>";
@@ -2364,6 +2433,7 @@
 				50DE7B4C13CC675100FD4F35 /* CentContainer */,
 				506BF8A5117A5E3D00ECBC4E /* EnvelopeContainer */,
 				50EAF2CB1393BAD200258AD1 /* FrequencyStandardContainer */,
+				50F471D313D0D815005CB978 /* GlissandoContainer */,
 				500CADCE122D5B3700B980B8 /* MarkContainer */,
 				5027F13B13951CED00A9389A /* PitchContainer */,
 				509E993613C8A2D90032AEF9 /* PitchGridContainer */,
@@ -3013,6 +3083,46 @@
 				504FDE9C13BCC55800470C77 /* OscilPlayer */,
 			);
 			name = Players;
+			sourceTree = "<group>";
+		};
+		50F471D313D0D815005CB978 /* GlissandoContainer */ = {
+			isa = PBXGroup;
+			children = (
+				50F471D413D0D815005CB978 /* Supporting Files */,
+				50F471E213D0D9DD005CB978 /* GlissandoContainer.h */,
+				50F471E313D0D9DD005CB978 /* GlissandoContainer.m */,
+			);
+			path = GlissandoContainer;
+			sourceTree = "<group>";
+		};
+		50F471D413D0D815005CB978 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50F471D513D0D815005CB978 /* GlissandoContainer-Info.plist */,
+				50F471D613D0D815005CB978 /* InfoPlist.strings */,
+				50F471D913D0D815005CB978 /* GlissandoContainer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50F471EB13D0E2DB005CB978 /* GlissandoChild */ = {
+			isa = PBXGroup;
+			children = (
+				50F471EC13D0E2DB005CB978 /* Supporting Files */,
+				50F471FA13D0E3BC005CB978 /* GlissandoChild.h */,
+				50F471FB13D0E3BC005CB978 /* GlissandoChild.m */,
+			);
+			path = GlissandoChild;
+			sourceTree = "<group>";
+		};
+		50F471EC13D0E2DB005CB978 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50F471ED13D0E2DB005CB978 /* GlissandoChild-Info.plist */,
+				50F471EE13D0E2DB005CB978 /* InfoPlist.strings */,
+				50F471F113D0E2DB005CB978 /* GlissandoChild-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -4149,6 +4259,42 @@
 			productReference = 50F420551198BF3C009F695A /* AudioFilePlayer.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
+		50F471D013D0D815005CB978 /* GlissandoContainer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50F471DC13D0D815005CB978 /* Build configuration list for PBXNativeTarget "GlissandoContainer" */;
+			buildPhases = (
+				50F471CD13D0D815005CB978 /* Sources */,
+				50F471CE13D0D815005CB978 /* Frameworks */,
+				50F471CF13D0D815005CB978 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50F471DE13D0D8A4005CB978 /* PBXTargetDependency */,
+			);
+			name = GlissandoContainer;
+			productName = GlissandoContainer;
+			productReference = 50F471D113D0D815005CB978 /* GlissandoContainer.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		50F471E813D0E2DA005CB978 /* GlissandoChild */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50F471F213D0E2DB005CB978 /* Build configuration list for PBXNativeTarget "GlissandoChild" */;
+			buildPhases = (
+				50F471E513D0E2DA005CB978 /* Sources */,
+				50F471E613D0E2DA005CB978 /* Frameworks */,
+				50F471E713D0E2DA005CB978 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50F471F613D0E359005CB978 /* PBXTargetDependency */,
+			);
+			name = GlissandoChild;
+			productName = GlissandoChild;
+			productReference = 50F471E913D0E2DA005CB978 /* GlissandoChild.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		8D15AC270486D014006FF6A4 /* quince */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "quince" */;
@@ -4221,6 +4367,8 @@
 				50DE7B2D13CC4E3000FD4F35 /* PBXTargetDependency */,
 				50DE7B4513CC51C600FD4F35 /* PBXTargetDependency */,
 				50DE7B5A13CC678300FD4F35 /* PBXTargetDependency */,
+				50F471E113D0D8B6005CB978 /* PBXTargetDependency */,
+				50F471F913D0E36B005CB978 /* PBXTargetDependency */,
 			);
 			name = quince;
 			productInstallPath = "$(HOME)/Applications";
@@ -4275,6 +4423,8 @@
 				5015AEAD133E70DA006C85AA /* FoldByParameter */,
 				50EAF2C71393BAD200258AD1 /* FrequencyStandardContainer */,
 				507750B61268DCE700AF7956 /* Gate */,
+				50F471E813D0E2DA005CB978 /* GlissandoChild */,
+				50F471D013D0D815005CB978 /* GlissandoContainer */,
 				50035ADD11C97C37008D4F11 /* ImportFrequencies */,
 				50BFCB7B129987DB00618422 /* ImportMaxMSPCollForSingleParameter */,
 				508C44EA1295E65E00875B93 /* JoinByFrequency */,
@@ -4768,6 +4918,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50F471CF13D0D815005CB978 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50F471D813D0D815005CB978 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50F471E713D0E2DA005CB978 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50F471F013D0E2DB005CB978 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5376,6 +5542,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				50F4206E1198BF96009F695A /* AudioFilePlayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50F471CD13D0D815005CB978 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50F471E413D0D9DD005CB978 /* GlissandoContainer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50F471E513D0E2DA005CB978 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50F471FC13D0E3BC005CB978 /* GlissandoChild.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6028,6 +6210,26 @@
 			target = 50F420541198BF3C009F695A /* AudioFilePlayer */;
 			targetProxy = 50F4206A1198BF80009F695A /* PBXContainerItemProxy */;
 		};
+		50F471DE13D0D8A4005CB978 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 50F471DD13D0D8A4005CB978 /* PBXContainerItemProxy */;
+		};
+		50F471E113D0D8B6005CB978 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50F471D013D0D815005CB978 /* GlissandoContainer */;
+			targetProxy = 50F471E013D0D8B6005CB978 /* PBXContainerItemProxy */;
+		};
+		50F471F613D0E359005CB978 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 50F471F513D0E359005CB978 /* PBXContainerItemProxy */;
+		};
+		50F471F913D0E36B005CB978 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50F471E813D0E2DA005CB978 /* GlissandoChild */;
+			targetProxy = 50F471F813D0E36B005CB978 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -6175,6 +6377,24 @@
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
+		};
+		50F471D613D0D815005CB978 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50F471D713D0D815005CB978 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = bundles/ContainerViews/GlissandoContainer;
+			sourceTree = SOURCE_ROOT;
+		};
+		50F471EE13D0E2DB005CB978 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50F471EF13D0E2DB005CB978 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = bundles/ChildViews/GlissandoChild;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXVariantGroup section */
 
@@ -9402,6 +9622,90 @@
 			};
 			name = Release;
 		};
+		50F471DA13D0D815005CB978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/ContainerViews/GlissandoContainer/GlissandoContainer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/ContainerViews/GlissandoContainer/GlissandoContainer-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/ContainerViews/";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		50F471DB13D0D815005CB978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/ContainerViews/GlissandoContainer/GlissandoContainer-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/ContainerViews/GlissandoContainer/GlissandoContainer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		50F471F313D0E2DB005CB978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/ChildViews/GlissandoChild/GlissandoChild-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/ChildViews/GlissandoChild/GlissandoChild-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/ChildViews/";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		50F471F413D0E2DB005CB978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/ChildViews/GlissandoChild/GlissandoChild-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/ChildViews/GlissandoChild/GlissandoChild-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		C05733C808A9546B00998B17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -10021,6 +10325,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		50F471DC13D0D815005CB978 /* Build configuration list for PBXNativeTarget "GlissandoContainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50F471DA13D0D815005CB978 /* Debug */,
+				50F471DB13D0D815005CB978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		50F471F213D0E2DB005CB978 /* Build configuration list for PBXNativeTarget "GlissandoChild" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50F471F313D0E2DB005CB978 /* Debug */,
+				50F471F413D0E2DB005CB978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "quince" */ = {
 			isa = XCConfigurationList;

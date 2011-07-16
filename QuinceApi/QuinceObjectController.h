@@ -81,4 +81,6 @@
 -(void)registerChildView:(ChildView *)child;
 -(id)changedParameter;
 -(void)updateObjectInspector;
+-(void)createFreqEntry;
+-(void)createFreqBEntry;
 @end

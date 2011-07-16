@@ -484,4 +484,12 @@
     [document updateObjectInspector];
 }
 
+-(void)createFreqEntry{
+    [[self content]createFreqEntry];
+}
+
+-(void)createFreqBEntry{
+    [[self content]createFreqBEntry];
+}
+
 @end

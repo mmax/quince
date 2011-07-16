@@ -144,6 +144,16 @@
 			<key>orderHint</key>
 			<integer>48</integer>
 		</dict>
+		<key>GlissandoChild.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>61</integer>
+		</dict>
+		<key>GlissandoContainer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>60</integer>
+		</dict>
 		<key>ImportFrequencies.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -613,6 +623,16 @@
 			<true/>
 		</dict>
 		<key>50F420541198BF3C009F695A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>50F471D013D0D815005CB978</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>50F471E813D0E2DA005CB978</key>
 		<dict>
 			<key>primary</key>
 			<true/>

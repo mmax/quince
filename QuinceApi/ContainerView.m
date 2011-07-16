@@ -1091,10 +1091,13 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 	return [NSNumber numberWithDouble: y];
 }
 
--(NSNumber *)convertVolumeToYDelta:(NSNumber *)dB{
-	return [NSNumber numberWithFloat: [dB doubleValue]*[[self valueForKey:@"pixelsPerUnitY"]doubleValue]];	
-}
+//-(NSNumber *)convertVolumeToYDelta:(NSNumber *)dB{
+//	return [NSNumber numberWithFloat: [dB doubleValue]*[[self valueForKey:@"pixelsPerUnitY"]doubleValue]];	
+//}
 
+//-(NSNumber *)convertDeltaYToDeltaVolume:(NSNumber *)y{
+//    return [NSNumber numberWithDouble: [y doubleValue] / [[self valueForKey:@"pixelsPerUnitY"]doubleValue]];
+//}
 
 -(NSNumber *)parameterValueForX:(NSNumber *)x{
 	return [self convertXToTime:x];
@@ -1102,6 +1105,10 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 
 -(NSNumber *)parameterValueForY:(NSNumber *)y{
 	return [self convertYToVolume:y];
+}
+
+-(NSNumber *)parameterValueForDeltaY:(NSNumber *)y{
+    return [NSNumber numberWithDouble: [y doubleValue] / [[self valueForKey:@"pixelsPerUnitY"]doubleValue]];	//return [self convertDeltaYToDeltaVolume:y];
 }
 
 -(NSNumber *)xForParameterValue:(NSNumber *)p{
@@ -1117,7 +1124,7 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 }
 
 -(NSNumber *)yDeltaForParameterValue:(NSNumber *)p{
-	return [self convertVolumeToYDelta:p];
+	return [NSNumber numberWithFloat: [p doubleValue]*[[self valueForKey:@"pixelsPerUnitY"]doubleValue]];	//return [self convertVolumeToYDelta:p];
 }
 
 -(double)minimumYValue{return -90;}

@@ -1,9 +1,9 @@
 //
-//  SequenceChild.m
+//  GlissandoChild.h
 //  quince
 //
-//  Created by max on 2/19/10.
-//  Copyright 2010 Maximilian Marcoll. All rights reserved.
+//  Created by max on 7/15/11.
+//  Copyright 2011 Maximilian Marcoll. All rights reserved.
 //
 //
 //	If you have any questions contact quince@maximilianmarcoll.de
@@ -24,24 +24,18 @@
 //	along with quince.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-#import "SequenceChild.h"
 
-@implementation SequenceChild
 
- -(SequenceChild *)init{
-	
-	if((self = [super init])){
+#import <QuinceApi/ChildView.h>
+#import <QuinceApi/ContainerView.h>
+#import <Foundation/Foundation.h>
 
-		[self setValue:[NSColor blackColor] forKey:@"frameColor"];
-		[self setValue:[NSColor whiteColor] forKey:@"interiorColor"];
-	}
-	
-	return self;
+
+@interface GlissandoChild : ChildView {
+@private
+    
 }
-
-/* -(float)foldedItemHeight{
-	return 9;
-} */
-
+-(void)updateEnd;
+-(NSPoint)pointForStartFreq;
+-(NSPoint)pointForEndFreq;
 @end
-

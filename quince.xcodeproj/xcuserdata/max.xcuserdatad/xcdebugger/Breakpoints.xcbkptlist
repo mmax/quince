@@ -9,23 +9,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "QuinceApi/ChildView.m"
-         timestampString = "332202348.21789"
+         timestampString = "332466100.421183"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "132"
-         endingLineNumber = "132">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "QuinceApi/QuinceObjectController.m"
-         timestampString = "321197365.238304"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "451"
-         endingLineNumber = "451">
+         startingLineNumber = "134"
+         endingLineNumber = "134">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "Yes"

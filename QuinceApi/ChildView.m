@@ -97,8 +97,10 @@
 
 -(void)	setHeight:(float)h withUpdate:(BOOL)b{
 	
-	if([self height] == h || (h<[self minimumHeight]))
+	if([self height] == h || h<[self minimumHeight])
 		return;
+//    if(h<[self minimumHeight])
+//        h = [self minimumHeight];
 	
 	NSRect f = [self frame];
 	NSRect nf = NSMakeRect(f.origin.x, f.origin.y, f.size.width, h);
@@ -369,7 +371,7 @@
 		[self rect];
 	}
 	else if([key isEqualToString:[enclosingView keyForSizeOnYAxis]]){
-		[self setHeight:[[enclosingView yForParameterValue:value]floatValue] withUpdate:YES];
+		[self setHeight:[[enclosingView yDeltaForParameterValue:value]floatValue] withUpdate:YES];//[self setHeight:[[enclosingView yForParameterValue:value]floatValue] withUpdate:YES];
 	}
 	else{
 		[dict setValue:value forKey:key];
@@ -415,7 +417,7 @@
 
 	
 	//convert y value to parameter-on-y-axis
-	NSNumber * y = [enclosingView parameterValueForY:[NSNumber numberWithFloat:[self height]]];
+	NSNumber * y = [enclosingView parameterValueForDeltaY:[NSNumber numberWithFloat:[self height]]];
 	NSString * keyY = [enclosingView keyForSizeOnYAxis];
 
 	//then setValue in model, which in turn will cause this object's setValue:forKey: method to be called with the appropiate value and key.

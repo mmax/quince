@@ -77,6 +77,7 @@
 -(void)select;
 -(void)deselect;
 -(BOOL)selected;
+-(BOOL)muted;
 
 -(void)resize:(NSValue *)deltaValue;
 -(void)scaleByFactorsInSize:(NSValue*)val;

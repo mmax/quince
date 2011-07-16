@@ -41,7 +41,7 @@
 
 -(AutomationChild *)init{
 
-	if(self = [super init]){
+	if((self = [super init])){
 	
 		[self setValue:[NSColor colorWithDeviceRed:0 green:.7 blue:1 alpha:1] forKey:@"selectionColor"];
 		[self setValue:[NSColor colorWithDeviceRed:1 green:.6 blue:0 alpha:1]forKey:@"interiorColor"];

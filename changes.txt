@@ -1,5 +1,6 @@
 
 
+- minor gui design improvements
 - added container: CentContainer
 - fixed a bug in PitchContainer and FrequencyStandardContainer
 (erratic behaviour with objects without values for pitch / frequency parameters…)
