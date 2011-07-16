@@ -24,7 +24,7 @@
 //	along with quince.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-
+#import <QuinceApi/QuinceObjectController.h>
 #import "GlissandoChild.h"
 
 
@@ -33,46 +33,60 @@
 -(void)setController:(QuinceObjectController *)mc andBindWithKeysForLocationOnX:(NSString *)lx sizeOnX:(NSString *)sx locationOnY:(NSString *)ly{
    [self bind:[enclosingView keyForSizeOnYAxis] toObject:mc withKeyPath:[NSString stringWithFormat:@"selection.%@", [enclosingView keyForSizeOnYAxis]] options:nil];	
     [super setController:mc andBindWithKeysForLocationOnX:lx sizeOnX:sx locationOnY:ly];
+
+    [self unbind:@"interiorColor"];
+    [self setInteriorColor:[NSColor colorWithDeviceRed:0.1 green:.3 blue:0.3 alpha:0.4]];
+    [self resetCursorRects];
    //[self bind:@"pitchRange" toObject:controller withKeyPath:[NSString stringWithFormat:@"selection.endFreq"] options:nil];	
 }
 
+
+-(void)resetCursorRects{
+	resizeXCursorRect = NSMakeRect([self frame].size.width-4, (int)([self frame].size.height*0.5)-2, 4, 4);
+	[self addCursorRect:resizeXCursorRect cursor:resizeXCursor];
+	
+    resizeYCursorRect = NSMakeRect((int)([self frame].size.width*0.5)-2, [self frame].size.height-4, 4, 4);
+    [self addCursorRect:resizeYCursorRect cursor:resizeYCursor];
+}
+
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
+-(void)draw{
+    [super draw];
+    [[NSGraphicsContext currentContext]setShouldAntialias:YES];
+    BOOL dir = [[[[self controller]content]valueForKey:@"glissandoDirection"]boolValue];
+    NSBezierPath * p = [NSBezierPath bezierPath];
 
-
--(void)setValue:(id)value forKey:(NSString *)key{
- 
-    if ([key isEqualToString:@"frequencyB"]) {
-        
-      //  [self setValue:[NSNumber numberWithDouble:[self fToMD:[value doubleValue]]] forKey:@"endPitch"];
-        [self updateEnd];
+    if(dir){
+        [p moveToPoint:NSMakePoint([self bounds].origin.x+2, [self bounds].origin.y+2)];
+        [p lineToPoint:NSMakePoint([self bounds].origin.x+[self bounds].size.width-1, [self bounds].origin.y+[self bounds].size.height-2)];
     }
-    [super setValue:value forKey:key];
-}
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-
--(void)updateEnd{
-
-
-}
-
-
--(NSPoint)pointForEndFreq{
-
-    double x = [self bounds].origin.x + [self bounds].size.width;
-    double y = [[enclosingView yForParameterValue:[self valueForKey:@"frequencyB"]]doubleValue] + [[enclosingView yDeltaForParameterValue:[controller valueForKeyPath:[NSString stringWithFormat:@"selection.frequencyBOffset"]]]doubleValue];
-                
+    else{
+        [p moveToPoint:NSMakePoint([self bounds].origin.x+2, [self bounds].origin.y+[self bounds].size.height-2)];
+        [p lineToPoint:NSMakePoint([self bounds].origin.x+[self bounds].size.width-1, [self bounds].origin.y+2)];
+    }
     
-    return NSMakePoint(x, y);
-}
-
--(NSPoint)pointForStartFreq{
-
-    double x = [self bounds].origin.x, y= [self bounds].origin.y;
+//    NSRect r = [self resizeXCursorRect];
+   // [[self interiorColor]set];
+    [p setLineWidth:0];
+    [[NSColor redColor]set];
+    [p stroke];
     
-   return NSMakePoint(x, y);
+    [[NSColor orangeColor]set];
+	[NSBezierPath fillRect:[self resizeXCursorRect]];
+    [NSBezierPath fillRect:[self resizeYCursorRect]];
+    
 }
+
+
+-(BOOL)allowsVerticalResize{return YES;}
+
+-(void)commandClick{
+    [[self controller] switchGlissandoDirection];
+}
+
+
+
 
 @end

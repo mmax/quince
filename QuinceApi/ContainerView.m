@@ -232,10 +232,12 @@ NSString* const kMuteString = @"m";
 	if(childHit	&& !([event modifierFlags] & NSShiftKeyMask) // not shift-click, 
 	   && !([event modifierFlags] & NSControlKeyMask) //not control-click, 
 	   && ([event clickCount] == 1)					// single click,
-	   && !([event modifierFlags] & NSAlternateKeyMask)) { // not alt-click
+	   && !([event modifierFlags] & NSAlternateKeyMask)
+       && !([event modifierFlags] & NSCommandKeyMask)){ // not command-click
 		
 		if(NSPointInRect([self convertPoint:clickLocation toView:child], [child resizeXCursorRect])){
-			resizeDragging = YES;
+			resizeXDragging = YES;
+            resizeYDragging = NO;
 			lastDragLocation=clickLocation;
 			
 
@@ -245,11 +247,25 @@ NSString* const kMuteString = @"m";
 				[self selectChildView:child];	
 			}
 		}
+        else if(NSPointInRect([self convertPoint:clickLocation toView:child], [child resizeYCursorRect])){
+            resizeXDragging = NO;
+            resizeYDragging = YES;
+			lastDragLocation=clickLocation;
+			
+            
+			
+			if(![selection containsObject:child]) {
+				[self deselectAllChildViews];
+				[self selectChildView:child];	
+			}
+
+        }
 		else{
 		
 			dragging = YES;
 			selDragging = NO;
-			resizeDragging= NO;	
+			resizeXDragging= NO;	
+            resizeYDragging = NO;
 			if(![selection containsObject:child]){
 				[self deselectAllChildViews];			
 				[self selectChildView:child];
@@ -261,7 +277,8 @@ NSString* const kMuteString = @"m";
 	else if(childHit  && ([event modifierFlags] & NSShiftKeyMask)){ // shift_click
 		dragging = YES;
 		selDragging = NO;
-		resizeDragging= NO;	
+		resizeXDragging= NO;
+        resizeYDragging = NO;
 		if([selection containsObject:child]){
 			[self deselectChild:child];
 		}
@@ -273,7 +290,8 @@ NSString* const kMuteString = @"m";
 	else if(!childHit  && ([event clickCount] == 1)	){		// begin selDrag....
 		BOOL extending = (([event modifierFlags] & NSShiftKeyMask) ? YES : NO);
 		selDragging = YES;
-		resizeDragging= NO;
+		resizeXDragging= NO;
+        resizeYDragging = NO;
 		lastDragLocation = clickLocation;
 		selectionRectOrigin = clickLocation;
 		if(!extending){
@@ -286,7 +304,8 @@ NSString* const kMuteString = @"m";
 	}
 	else if (childHit && [event modifierFlags] & NSControlKeyMask && [event clickCount] == 1) { // control-click in child 
 	
-		resizeDragging = YES;
+		resizeXDragging = YES;
+        resizeYDragging = NO;
 		lastDragLocation=clickLocation;
 		if(![selection containsObject:child]) {
 			[self deselectAllChildViews];
@@ -294,9 +313,13 @@ NSString* const kMuteString = @"m";
 		}
 		
 	}
+    else if (childHit && [event modifierFlags] & NSCommandKeyMask && [event clickCount] == 1){ // command-click
+        [child commandClick];
+    }
 	else if (childHit && [event modifierFlags] & NSAlternateKeyMask && [event clickCount] == 1){ // option(alt)-click
 	
-		resizeDragging = NO;
+		resizeXDragging = NO;
+        resizeYDragging = NO;
 		dragging = YES;
 		lastDragLocation = clickLocation;
 		
@@ -307,7 +330,8 @@ NSString* const kMuteString = @"m";
 		}
 		[self duplicateSelection];
 	}
-	else if(childHit && [event clickCount]==2){
+   
+	else if(childHit && [event clickCount]==2 && !([event modifierFlags] & NSCommandKeyMask)){
 		[self selectChildView:child];
 		[document showInspector:nil];
 	
@@ -363,12 +387,17 @@ NSString* const kMuteString = @"m";
 		selRect = RectFromPoints(selectionRectOrigin, newDragLocation);
 		[self setNeedsDisplayInRect:selRect];
 	}
-	else if(resizeDragging){
+	else if(resizeXDragging){
 		newDragLocation=[self convertPoint:[event locationInWindow]
 								  fromView:nil];
-		[self resizeSelectedChildViewsByValuesInSize:[NSValue valueWithSize:NSMakeSize(newDragLocation.x-lastDragLocation.x, newDragLocation.y-lastDragLocation.y)]];
+		[self resizeSelectedChildViewsByValuesInSize:[NSValue valueWithSize:NSMakeSize(newDragLocation.x-lastDragLocation.x, 0)]];//newDragLocation.y-lastDragLocation.y)]];
 //		[self resizeSelectedChildViewsByX:newDragLocation.x-lastDragLocation.x andY: newDragLocation.y-lastDragLocation.y];
 	}
+    else if(resizeYDragging){
+        newDragLocation=[self convertPoint:[event locationInWindow] fromView:nil];
+        [self resizeSelectedChildViewsByValuesInSize:[NSValue valueWithSize:NSMakeSize(0, newDragLocation.y-lastDragLocation.y)]];
+    }
+    
 	lastDragLocation=newDragLocation;
 }
 

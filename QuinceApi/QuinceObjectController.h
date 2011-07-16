@@ -83,4 +83,5 @@
 -(void)updateObjectInspector;
 -(void)createFreqEntry;
 -(void)createFreqBEntry;
+-(void)switchGlissandoDirection;
 @end

@@ -245,13 +245,10 @@
 -(void)setValue:(id)aValue forKey:(NSString *)aKey{
 	//NSLog(@"QuinceObject:setValue:forKey:%@", aKey);
 	if([aKey isEqualToString:@"dictionary"]){                   // set by ObjectInspector (NSDictionaryController)
-		//NSArray * keys = [aValue allKeys];                      // since we don't know if some changed parameters are dependent on one another (like frequency and pitch
+                                                                // since we don't know if some changed parameters are dependent on one another (like frequency and pitch)
         id changedParameter = [controller changedParameter];    // we can not simply copy all values of the dictionary but we have to find the changed parameter and 
        [self setValue:[changedParameter valueForKey:@"value"] forKey:[changedParameter valueForKey:@"key"]]; //set that parameter's value (and dependent parameter's values)
-       // NSLog(@"changedParameter:%@", changedParameter);        // that's both secure and efficient
-      //  for(NSString * dictKey in keys)    // to make sure we have the correct values before changing all the other values...
-      //    [self setValue:[aValue valueForKey:dictKey] forKey:dictKey];
-        
+               
         [controller updateObjectInspector];
 		return;
 	}
@@ -261,39 +258,20 @@
 	
 	if([aKey isEqualToString:@"frequency"]){
 		[self setFrequency:aValue withUpdate:YES];
-        [self updateBaseFreq]; // just in case...
+        //[self updateBaseFreq]; // just in case...
         [self checkAndUpdateSubsForKey:aKey];
         return;
-		//[self setValue:[NSNumber numberWithInt:[self fToM:[aValue doubleValue]]] forKey:@"pitch"];
-		//[self setValue:[NSNumber numberWithInt:[self fToC:[aValue doubleValue]]] forKey:@"cent"];
-        
 	}
 	else if([aKey isEqualToString:@"pitch"]){
         [self setPitch:aValue withUpdate:YES];
         [self checkAndUpdateSubsForKey:aKey];
         return;
-        //[self setValue:[NSNumber numberWithDouble:[self mToF:[aValue intValue]]] forKey:@"frequency"];
-		//[self setValue:[NSNumber numberWithInt:0] forKey:@"cent"];
     }
     else if([aKey isEqualToString:@"cent"]){
         [self setCent:aValue withUpdate:YES];
         [self checkAndUpdateSubsForKey:aKey];
         return;
     }
-//	
-//        [self willChangeValueForKey:@"frequency"];
-//        [self willChangeValueForKey:@"dictionary"];
-//        [dictionary setValue:[NSNumber numberWithDouble:[self mToF:[aValue intValue]]] forKey:@"frequency"];
-//        [self didChangeValueForKey:@"frequency"];
-//        [self didChangeValueForKey:@"dictionary"];
-	//}
-	/* else if([aKey isEqualToString:@"cent"]){
-		int pitch = [[self valueForKey:@"pitch"]intValue];
-		double newFreq = [self mToF:pitch]*pow(pow(2, 1/1200), [c intValue]);
-		[self setValue:[NSNumber numberWithDouble:newFreq] forKey:@"frequency"];
-	} */
-	//	[self setCent:aValue withUpdate:YES];
-
 	
 	[self willChangeValueForKey:aKey];
 	[self willChangeValueForKey:@"dictionary"];
@@ -304,8 +282,14 @@
 	
     
     if([aKey isEqualToString:@"frequencyB"]){
-        //[self updateBaseFreq];
+        [self updateGlissando];
         [self updatePitchRange];
+    }
+    
+    if([aKey isEqualToString:@"pitchRange"]){
+        [self updateFrequencyB];
+        if(![self valueForKey:@"glissandoDirection"])
+            [self updateGlissando];
     }
     
     [self checkAndUpdateSubsForKey:aKey];
@@ -452,16 +436,21 @@
 		return [NSNumber numberWithInt:0];
 }
 
--(void)updateBaseFreq{
+-(void)updateGlissando{
 
     NSNumber * freq = [self valueForKey:@"frequency"];
-    NSNumber * endFreq = [self valueForKey:@"frequencyB"];
-    if(!freq || ! endFreq) return;
+    NSNumber * freqB = [self valueForKey:@"frequencyB"];
+    if(!freq || ! freqB) return;
     
-    if([freq doubleValue]<=[endFreq doubleValue])
-        [self setValue:freq forKey:@"baseFreq"];
+    if([freq doubleValue]>=[freqB doubleValue]){
+
+        NSNumber * temp = freq;
+        [self setValue:freqB forKey:@"frequency"];
+        [self setValue:temp forKey:@"frequencyB"];
+        [self setValue:[NSNumber numberWithInt:0] forKey:@"glissandoDirection"];
+    }
     else
-        [self setValue:endFreq forKey:@"baseFreq"];
+        [self setValue:[NSNumber numberWithInt:1] forKey:@"glissandoDirection"];
     
 }
 
@@ -470,8 +459,40 @@
     NSNumber * endFreq = [self valueForKey:@"frequencyB"];
     
     if(!freq || ! endFreq) return;
+    NSNumber * pr = [NSNumber numberWithDouble:fabs([self fToMD:[freq doubleValue]] - [self fToMD:[endFreq doubleValue]])];
+    
+    //[self setValue:[NSNumber numberWithDouble:fabs([self fToMD:[freq doubleValue]] - [self fToMD:[endFreq doubleValue]])] forKey:@"pitchRange"];
+    
+    [self willChangeValueForKey:@"dictionary"];
+    
+    [self willChangeValueForKey:@"pitchRange"];
+	[dictionary setValue:pr forKey:@"pitchRange"];
+    [self didChangeValueForKey:@"pitchRange"];
+    
+    [self didChangeValueForKey:@"dictionary"];
+}
 
-    [self setValue:[NSNumber numberWithDouble:fabs([self fToMD:[freq doubleValue]] - [self fToMD:[endFreq doubleValue]])] forKey:@"pitchRange"];
+-(void)updateFrequencyB{
+    
+    NSNumber * freq = [self valueForKey:@"frequency"];
+    NSNumber * pr = [self valueForKey:@"pitchRange"];
+    double st = pow(2.0, 1.0/12.0);
+    double factor = pow(st, [pr doubleValue]);
+    double freqB = [freq doubleValue]*factor;
+    [self willChangeValueForKey:@"dictionary"];
+    
+    [self willChangeValueForKey:@"frequencyB"];
+	[dictionary setValue:[NSNumber numberWithDouble:freqB] forKey:@"frequencyB"];
+    [self didChangeValueForKey:@"frequencyB"];
+    
+    [self didChangeValueForKey:@"dictionary"];
+}
+
+-(void)switchGlissandoDirection{
+    if([[self valueForKey:@"glissandoDirection"]intValue]>0)
+        [self setValue:[NSNumber numberWithInt:0]forKey:@"glissandoDirection"];
+    else
+        [self setValue:[NSNumber numberWithInt:1]forKey:@"glissandoDirection"];
 }
 
 -(NSNumber *)mediaFileStart{
@@ -995,6 +1016,7 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context){
     if(b) {
 		[self setPitch:[NSNumber numberWithInt:[self fToM:[f doubleValue]]] withUpdate:NO];
 		[self setCent:[NSNumber numberWithInt:[self fToC:[f doubleValue]]] withUpdate:NO];
+        [self updateFrequencyB];
 	}
     //else
         [self didChangeValueForKey:@"dictionary"];
@@ -1022,6 +1044,7 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context){
 	if(b) {
 		[self setFrequency:[NSNumber numberWithDouble:[self mToF:[doubleP doubleValue]]] withUpdate:NO];
 		[self setCent:[NSNumber numberWithInt:cent] withUpdate:NO];
+        [self updateFrequencyB];
 	}
     
 	else
@@ -1063,6 +1086,7 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context){
 		int pitch = [[self valueForKey:@"pitch"]intValue];
 		double newFreq = [self mToF:pitch]*pow(pow(2, 1.0/1200), [c intValue]);
 		[self setFrequency:[NSNumber numberWithDouble:newFreq] withUpdate:NO];
+        [self updateFrequencyB];
        // NSLog(@"JUST UPDATED FREQ: %f", newFreq);
 	}
     else

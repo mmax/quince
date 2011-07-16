@@ -39,7 +39,8 @@
 	
 	BOOL dragging;
 	BOOL selDragging;
-	BOOL resizeDragging;
+	BOOL resizeXDragging;
+	BOOL resizeYDragging;
 	BOOL liveResize;
 	BOOL findShiftDragDirection;
 	BOOL shiftDragDirectionX;

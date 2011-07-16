@@ -52,6 +52,10 @@
 		 
 		resizeXCursorRect = NSZeroRect;
 		resizeXCursor = [NSCursor resizeLeftRightCursor];
+        
+        resizeYCursorRect = NSZeroRect;
+		resizeYCursor = [NSCursor resizeUpDownCursor];
+        
 	}
 	return self;
 }
@@ -167,6 +171,10 @@
 -(NSRect) resizeXCursorRect{
 	return resizeXCursorRect;
 }
+
+-(NSRect) resizeYCursorRect{
+	return resizeYCursorRect;
+}
 //////////////////////////////////////////
 
 #pragma mark drawing, moving etc.
@@ -194,7 +202,7 @@
 	
 	[NSBezierPath strokeRect:r];
 		
-	if([[controller valueForKeyPath:@"selection.isFolded"]boolValue]==YES){
+	if([[controller valueForKeyPath:@"selection.isFolded"]boolValue]==YES ){
 	
 		int fontSize=[self foldedItemHeight]-3;
 		NSFont *font = [NSFont systemFontOfSize:fontSize];
@@ -270,8 +278,8 @@
 -(void)resetCursorRects{
 	resizeXCursorRect = NSMakeRect([self frame].size.width-3, 0, 3, [self bounds].size.height);
 	[self addCursorRect:resizeXCursorRect cursor:resizeXCursor];
-	
 }
+
 -(NSRect) redrawRect{// need a slightly bigger rect for redrawing
 
 	return [self frame];
@@ -409,19 +417,20 @@
 	//convert x value to parameter-on-x-axis
 	NSNumber * x = [enclosingView parameterValueForX:[NSNumber numberWithFloat:[self width]]];
 	NSString * keyX = [enclosingView keyForSizeOnXAxis];
+    id infoX = [self infoForBinding:keyX];
 	//double w = [[enclosingView convertTimeToX:x]doubleValue];
 
 	
 	//then setValue in model, which in turn will cause this object's setValue:forKey: method to be called with the appropiate value and key.
-	[[[self infoForBinding:keyX] valueForKey:@"NSObservedObject"] setValue:x forKeyPath:[[self infoForBinding:keyX] valueForKey:@"NSObservedKeyPath"]];
+	[[infoX valueForKey:@"NSObservedObject"] setValue:x forKeyPath:[infoX valueForKey:@"NSObservedKeyPath"]];
 
 	
 	//convert y value to parameter-on-y-axis
 	NSNumber * y = [enclosingView parameterValueForDeltaY:[NSNumber numberWithFloat:[self height]]];
 	NSString * keyY = [enclosingView keyForSizeOnYAxis];
-
+    id infoY = [self infoForBinding:keyY];
 	//then setValue in model, which in turn will cause this object's setValue:forKey: method to be called with the appropiate value and key.
-	[[[self infoForBinding:keyY] valueForKey:@"NSObservedObject"] setValue:y forKeyPath:[[self infoForBinding:keyY] valueForKey:@"NSObservedKeyPath"]];
+	[[infoY valueForKey:@"NSObservedObject"] setValue:y forKeyPath:[infoY valueForKey:@"NSObservedKeyPath"]];
 }
 
 #pragma mark constants
@@ -505,4 +514,5 @@
 	[self setValue:[NSNumber numberWithBool:YES] forKey:@"muted"];
 }
  */
+-(void)commandClick{}
 @end

@@ -115,6 +115,6 @@
 
 -(double)maximumYValue{return 130;}
 
-
+-(BOOL)allowsVerticalResize{return YES;}
 
 @end

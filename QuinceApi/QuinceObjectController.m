@@ -492,4 +492,8 @@
     [[self content]createFreqBEntry];
 }
 
+-(void)switchGlissandoDirection{
+    [[self content]switchGlissandoDirection];
+}
+
 @end

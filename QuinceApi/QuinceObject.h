@@ -82,8 +82,10 @@
 -(void)updateOffsetForKey:(NSString *)key;
 -(NSNumber *)offsetForKey:(NSString *)key;
 -(BOOL)canCreateOffsetForKey:(NSString *)key;
--(void)updateBaseFreq;
+-(void)updateGlissando;
 -(void)updatePitchRange;
+-(void)updateFrequencyB;
+-(void)switchGlissandoDirection;
 -(NSNumber*) amplitude;
 
 -(void)sortByKey:(NSString *)key ascending:(BOOL)asc;

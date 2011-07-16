@@ -35,7 +35,5 @@
 @private
     
 }
--(void)updateEnd;
--(NSPoint)pointForStartFreq;
--(NSPoint)pointForEndFreq;
+
 @end

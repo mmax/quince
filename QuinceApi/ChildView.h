@@ -43,6 +43,8 @@
 	NSMutableDictionary * dict;
 	NSRect resizeXCursorRect;
 	NSCursor * resizeXCursor;
+    NSRect resizeYCursorRect;
+	NSCursor * resizeYCursor;
 }
 
 -(NSRect)	rect;
@@ -62,6 +64,7 @@
 -(NSSize)	size;
 -(float)	foldedItemHeight;
 -(NSRect) resizeXCursorRect;
+-(NSRect) resizeYCursorRect;
 -(void)		draw;
 -(void)		moveX:(float)x;
 -(void)		moveY:(float)y;
@@ -84,7 +87,7 @@
 -(void)scaleX:(float)x;
 -(void)scaleY:(float)y;
 -(BOOL)allowsHorizontalResize;		//default : YES
--(BOOL)allowsVerticalResize;			//default : YES
+-(BOOL)allowsVerticalResize;			//default : NO
 -(int)minimumWidth;
 -(int)minimumHeight;
 -(int)maximumHeight;
@@ -97,6 +100,8 @@
 -(QuinceObjectController *)controller;
 -(void)bindToController;
 -(void)setVisible:(NSNumber *)v;
+
+-(void)commandClick;
 @end
 
 
