@@ -513,7 +513,8 @@
 	}
 	
 	for(StripController * sc in stripControllers){
-		[sc setVolumeRange:[[self valueForKey:@"volumeRange"]intValue]];	
+		[sc setVolumeRange:[[self valueForKey:@"volumeRange"]intValue]];
+        [[sc interceptView]setFrame:[self frameForStripWithStripControl:sc]];//otherwise guides are not drawn properly
 	}
 
 }
