@@ -43,6 +43,10 @@
 		50325EA9122694A000E22031 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		50325EAB122694AD00E22031 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50325EAA122694AD00E22031 /* AudioToolbox.framework */; };
 		50325EAE122694E900E22031 /* CsoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50325EAD122694E900E22031 /* CsoundPlayer.m */; };
+		5034A0CA13D386D5008EB6C4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		5034A0D013D386D5008EB6C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5034A0CE13D386D5008EB6C4 /* InfoPlist.strings */; };
+		5034A0D713D38759008EB6C4 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		5034A0DC13D38798008EB6C4 /* FixGlissandoStartPoints.m in Sources */ = {isa = PBXBuildFile; fileRef = 5034A0DB13D38798008EB6C4 /* FixGlissandoStartPoints.m */; };
 		5035B90413563F57003E8570 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		5035B90713563F86003E8570 /* ApplyValuesFromSeq.m in Sources */ = {isa = PBXBuildFile; fileRef = 5035B90613563F86003E8570 /* ApplyValuesFromSeq.m */; };
 		5035B90C135643CA003E8570 /* AVFS_win.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5035B90B135643CA003E8570 /* AVFS_win.xib */; };
@@ -342,6 +346,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5027F13813951CED00A9389A;
 			remoteInfo = PitchContainer;
+		};
+		5034A0D513D38752008EB6C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
+		5034A0D813D38763008EB6C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5034A0C813D386D4008EB6C4;
+			remoteInfo = FixGlissandoStartPoints;
 		};
 		5035B90213563F53003E8570 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1225,6 +1243,12 @@
 		50325EAA122694AD00E22031 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		50325EAC122694E900E22031 /* CsoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CsoundPlayer.h; path = bundles/Players/CsoundPlayer/CsoundPlayer.h; sourceTree = "<group>"; };
 		50325EAD122694E900E22031 /* CsoundPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CsoundPlayer.m; path = bundles/Players/CsoundPlayer/CsoundPlayer.m; sourceTree = "<group>"; };
+		5034A0C913D386D4008EB6C4 /* FixGlissandoStartPoints.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FixGlissandoStartPoints.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5034A0CD13D386D5008EB6C4 /* FixGlissandoStartPoints-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FixGlissandoStartPoints-Info.plist"; path = "bundles/Functions/FixGlissandoStartPoints/FixGlissandoStartPoints-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5034A0CF13D386D5008EB6C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5034A0D113D386D5008EB6C4 /* FixGlissandoStartPoints-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "FixGlissandoStartPoints-Prefix.pch"; path = "bundles/Functions/FixGlissandoStartPoints/FixGlissandoStartPoints-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		5034A0DA13D38798008EB6C4 /* FixGlissandoStartPoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FixGlissandoStartPoints.h; path = bundles/Functions/FixGlissandoStartPoints/FixGlissandoStartPoints.h; sourceTree = SOURCE_ROOT; };
+		5034A0DB13D38798008EB6C4 /* FixGlissandoStartPoints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FixGlissandoStartPoints.m; path = bundles/Functions/FixGlissandoStartPoints/FixGlissandoStartPoints.m; sourceTree = SOURCE_ROOT; };
 		5035B8F013563EBE003E8570 /* ApplyValuesFromSeq.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplyValuesFromSeq.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		5035B8F113563EBE003E8570 /* ApplyValuesFromSeq-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ApplyValuesFromSeq-Info.plist"; path = "bundles/Functions/ApplyValuesFromSeq/ApplyValuesFromSeq-Info.plist"; sourceTree = "<group>"; };
 		5035B90513563F86003E8570 /* ApplyValuesFromSeq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplyValuesFromSeq.h; path = bundles/Functions/ApplyValuesFromSeq/ApplyValuesFromSeq.h; sourceTree = "<group>"; };
@@ -1618,6 +1642,15 @@
 				50B5BB5113870A300031A3DF /* CsoundLib.framework in Frameworks */,
 				50325EA9122694A000E22031 /* QuinceApi.framework in Frameworks */,
 				50325EAB122694AD00E22031 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5034A0C613D386D4008EB6C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5034A0D713D38759008EB6C4 /* QuinceApi.framework in Frameworks */,
+				5034A0CA13D386D5008EB6C4 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2159,6 +2192,7 @@
 				50DE7B4A13CC675000FD4F35 /* CentContainer.bundle */,
 				50F471D113D0D815005CB978 /* GlissandoContainer.bundle */,
 				50F471E913D0E2DA005CB978 /* GlissandoChild.bundle */,
+				5034A0C913D386D4008EB6C4 /* FixGlissandoStartPoints.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2462,6 +2496,7 @@
 				50E93C011190666000A63246 /* EqlDstrbtn_Volume */,
 				50A362E6126EF700004D360B /* ExportDescriptionListing */,
 				506C6B3F135618030060BD9D /* ExtractEnvSequence */,
+				5034A0CB13D386D5008EB6C4 /* FixGlissandoStartPoints */,
 				5015AF35133E722A006C85AA /* FoldByParameter */,
 				507750C51268DD4F00AF7956 /* Gate */,
 				50035AF211C97CE9008D4F11 /* ImportFrequencies */,
@@ -2495,6 +2530,26 @@
 				50325EAD122694E900E22031 /* CsoundPlayer.m */,
 			);
 			name = CSoundPlayer;
+			sourceTree = "<group>";
+		};
+		5034A0CB13D386D5008EB6C4 /* FixGlissandoStartPoints */ = {
+			isa = PBXGroup;
+			children = (
+				5034A0CC13D386D5008EB6C4 /* Supporting Files */,
+				5034A0DA13D38798008EB6C4 /* FixGlissandoStartPoints.h */,
+				5034A0DB13D38798008EB6C4 /* FixGlissandoStartPoints.m */,
+			);
+			path = FixGlissandoStartPoints;
+			sourceTree = "<group>";
+		};
+		5034A0CC13D386D5008EB6C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5034A0CD13D386D5008EB6C4 /* FixGlissandoStartPoints-Info.plist */,
+				5034A0CE13D386D5008EB6C4 /* InfoPlist.strings */,
+				5034A0D113D386D5008EB6C4 /* FixGlissandoStartPoints-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		5035B90813563F89003E8570 /* ApplyValuesFromSeq */ = {
@@ -3346,6 +3401,24 @@
 			name = CsoundPlayer;
 			productName = CSoundPlayer;
 			productReference = 50325EA01226947500E22031 /* CSoundPlayer.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		5034A0C813D386D4008EB6C4 /* FixGlissandoStartPoints */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5034A0D413D386D5008EB6C4 /* Build configuration list for PBXNativeTarget "FixGlissandoStartPoints" */;
+			buildPhases = (
+				5034A0C513D386D4008EB6C4 /* Sources */,
+				5034A0C613D386D4008EB6C4 /* Frameworks */,
+				5034A0C713D386D4008EB6C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5034A0D613D38752008EB6C4 /* PBXTargetDependency */,
+			);
+			name = FixGlissandoStartPoints;
+			productName = FixGlissandoStartPoints;
+			productReference = 5034A0C913D386D4008EB6C4 /* FixGlissandoStartPoints.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		5035B8EF13563EBE003E8570 /* ApplyValuesFromSeq */ = {
@@ -4369,6 +4442,7 @@
 				50DE7B5A13CC678300FD4F35 /* PBXTargetDependency */,
 				50F471E113D0D8B6005CB978 /* PBXTargetDependency */,
 				50F471F913D0E36B005CB978 /* PBXTargetDependency */,
+				5034A0D913D38763008EB6C4 /* PBXTargetDependency */,
 			);
 			name = quince;
 			productInstallPath = "$(HOME)/Applications";
@@ -4420,6 +4494,7 @@
 				50E93BD8119065CD00A63246 /* EqlDstrbtn_Volume */,
 				50A362CC126EF67B004D360B /* ExportDescriptionListing */,
 				506C6B2D135616F60060BD9D /* ExtractEnvSequence */,
+				5034A0C813D386D4008EB6C4 /* FixGlissandoStartPoints */,
 				5015AEAD133E70DA006C85AA /* FoldByParameter */,
 				50EAF2C71393BAD200258AD1 /* FrequencyStandardContainer */,
 				507750B61268DCE700AF7956 /* Gate */,
@@ -4545,6 +4620,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				50D07A04122D98280061F0E5 /* CsoundPlayerWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5034A0C713D386D4008EB6C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5034A0D013D386D5008EB6C4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5127,6 +5210,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5034A0C513D386D4008EB6C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5034A0DC13D38798008EB6C4 /* FixGlissandoStartPoints.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5035B8ED13563EBE003E8570 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5649,6 +5740,16 @@
 			isa = PBXTargetDependency;
 			target = 5027F13813951CED00A9389A /* PitchContainer */;
 			targetProxy = 5027F14513951D0600A9389A /* PBXContainerItemProxy */;
+		};
+		5034A0D613D38752008EB6C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 5034A0D513D38752008EB6C4 /* PBXContainerItemProxy */;
+		};
+		5034A0D913D38763008EB6C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5034A0C813D386D4008EB6C4 /* FixGlissandoStartPoints */;
+			targetProxy = 5034A0D813D38763008EB6C4 /* PBXContainerItemProxy */;
 		};
 		5035B90313563F53003E8570 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -6281,6 +6382,15 @@
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
+		};
+		5034A0CE13D386D5008EB6C4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5034A0CF13D386D5008EB6C4 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = bundles/Functions/FixGlissandoStartPoints;
+			sourceTree = SOURCE_ROOT;
 		};
 		504FDE8D13BCC3A600470C77 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -6979,6 +7089,48 @@
 				VALID_ARCHS = i386;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		5034A0D213D386D5008EB6C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/FixGlissandoStartPoints/FixGlissandoStartPoints-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/Functions/FixGlissandoStartPoints/FixGlissandoStartPoints-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		5034A0D313D386D5008EB6C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/FixGlissandoStartPoints/FixGlissandoStartPoints-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/Functions/FixGlissandoStartPoints/FixGlissandoStartPoints-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -9876,6 +10028,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		5034A0D413D386D5008EB6C4 /* Build configuration list for PBXNativeTarget "FixGlissandoStartPoints" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5034A0D213D386D5008EB6C4 /* Debug */,
+				5034A0D313D386D5008EB6C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		5035B8F413563EC0003E8570 /* Build configuration list for PBXNativeTarget "ApplyValuesFromSeq" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -10333,6 +10493,7 @@
 				50F471DB13D0D815005CB978 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50F471F213D0E2DB005CB978 /* Build configuration list for PBXNativeTarget "GlissandoChild" */ = {
 			isa = XCConfigurationList;
@@ -10341,6 +10502,7 @@
 				50F471F413D0E2DB005CB978 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "quince" */ = {
 			isa = XCConfigurationList;

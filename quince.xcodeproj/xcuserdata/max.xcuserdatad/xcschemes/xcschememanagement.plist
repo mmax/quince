@@ -129,6 +129,11 @@
 			<key>orderHint</key>
 			<integer>13</integer>
 		</dict>
+		<key>FixGlissandoStartPoints.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>62</integer>
+		</dict>
 		<key>FoldByParameter.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -368,6 +373,11 @@
 			<true/>
 		</dict>
 		<key>50325E9F1226947500E22031</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5034A0C813D386D4008EB6C4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
