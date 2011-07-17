@@ -1,4 +1,5 @@
 
+- added function: FixGlissandoEndPoints
 - added function: FixGlissandoStartPoints
 - added GlissandoChild
 - added GlissandoContainer

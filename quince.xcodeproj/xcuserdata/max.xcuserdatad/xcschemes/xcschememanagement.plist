@@ -129,6 +129,11 @@
 			<key>orderHint</key>
 			<integer>13</integer>
 		</dict>
+		<key>FixGlissandoEndPoints.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>63</integer>
+		</dict>
 		<key>FixGlissandoStartPoints.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -378,6 +383,11 @@
 			<true/>
 		</dict>
 		<key>5034A0C813D386D4008EB6C4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5034A0E013D39399008EB6C4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
