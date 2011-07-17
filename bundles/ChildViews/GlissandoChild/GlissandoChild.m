@@ -67,8 +67,6 @@
         [p lineToPoint:NSMakePoint([self bounds].origin.x+[self bounds].size.width-1, [self bounds].origin.y+2)];
     }
     
-//    NSRect r = [self resizeXCursorRect];
-   // [[self interiorColor]set];
     [p setLineWidth:0];
     [[NSColor redColor]set];
     [p stroke];
@@ -76,7 +74,6 @@
     [[NSColor orangeColor]set];
 	[NSBezierPath fillRect:[self resizeXCursorRect]];
     [NSBezierPath fillRect:[self resizeYCursorRect]];
-    
 }
 
 
@@ -87,6 +84,9 @@
 }
 
 
-
+-(void)scaleByFactorsInSize:(NSValue *)val{
+    [super scaleByFactorsInSize:val];   
+    [self resetCursorRects];
+}
 
 @end
