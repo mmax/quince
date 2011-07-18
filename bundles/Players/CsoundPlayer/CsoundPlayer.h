@@ -48,6 +48,7 @@ typedef struct _userData {
 	IBOutlet NSPanel * window;
 	IBOutlet NSTextView * orcView;
 	IBOutlet NSTextView * scoreView;
+	NSAutoreleasePool * pool;    
 }
 //-(void)fetchCommonParametersForControllers:(NSArray *)controllers;
 -(void)fetchCommonParametersForArrayOfQuinces:(NSArray *)a;
@@ -56,6 +57,7 @@ typedef struct _userData {
 -(IBAction)Clicks:(id)sender;
 -(IBAction)SampWin:(id)sender;
 -(IBAction)Pitches:(id)sender;
+-(IBAction)Glissando:(id)sender;
 -(IBAction)Custom:(id)sender;
 -(NSArray *)excludedParameters;
 -(BOOL)excludedParametersInclude:(NSString *)pam;
@@ -70,4 +72,12 @@ typedef struct _userData {
 static void * csoundCallback(CSOUND * csound,int attr, const char *format, va_list valist);
 uintptr_t csThread(void *data);
 -(CSOUND *)csound;
+-(IBAction)saveCustomOrc:(id)sender;
+-(void)setOrcs;
+-(void)setClickOrc;
+-(void)setWinOrc;
+-(void)setPitchOrc;
+-(void)setGlissOrc;
+-(void)setCustomOrc;
+
 @end

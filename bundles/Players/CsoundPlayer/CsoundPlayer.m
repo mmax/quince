@@ -36,6 +36,7 @@
 		[self Clicks:nil];
 		[scoreView setRichText:NO];
 
+
 		/* NSTextContainer *   container = [scoreView textContainer];
 				[container setWidthTracksTextView: NO];
 				NSSize size = [container containerSize];
@@ -48,6 +49,7 @@
 				[scoreView setFrame: frame];
 		 */		
 		[[scoreView textContainer] setContainerSize:NSMakeSize(FLT_MAX, FLT_MAX)];
+        [self setOrcs];
 	}
 	return self;
 }
@@ -112,6 +114,7 @@
             }
         }
     }
+    [common sortUsingSelector:@selector(compare:)];
     [self setValue:common forKey:@"commonParameters"];
 }
 
@@ -147,7 +150,11 @@
 
 -(void)play{
 	[self setup];
-    
+
+    NSLog(@"resetting...");
+	csoundReset(csound);
+	NSLog(@"CSoundPlayer:reset");
+
     [document setIndeterminateProgressTask:@"setting up csound..."];
     [document displayProgress:YES];
     
@@ -210,10 +217,7 @@ static void * csoundCallback(CSOUND * csound,int attr, const char *format, va_li
 	[document setCursorTime:[document valueForKey:@"playbackStartTime"]];
     NSLog(@"CSoundPlayer:stopped");
 	[self setIsPlaying:NO];
-	
-	csoundReset(csound);
-	NSLog(@"CSoundPlayer:reset");
-    [document displayProgress:NO];
+	    [document displayProgress:NO];
 	//csoundDestroy(csound);
 }
 
@@ -358,64 +362,28 @@ static void * csoundCallback(CSOUND * csound,int attr, const char *format, va_li
 }
 
 -(IBAction)Clicks:(id)sender{
-	NSMutableString * orc = [[[NSMutableString alloc]init]autorelease];
-	[orc appendFormat:@"\n\n\nsr = 44100\nkr = 44100\nksmps = 1\nnchnls = 2\n\n"];
-	//instruments
-	[orc appendFormat:@";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n\n"];
-	[orc appendFormat:@"instr 1			;Clicks\n\n"];
-	[orc appendFormat:@"iamp\t=\tampdb(p4+90)\n"];
-	[orc appendFormat:@"kenv\tlinseg\tiamp, .01, 0\n"];
-	[orc appendFormat:@"a1\trand\tkenv\n"];
-	[orc appendFormat:@"\touts\ta1, a1\n"];
-	[orc appendFormat:@"endin\n\n"];
-    [self setValue:orc forKey:@"orcString"];
-//	[orcView setString:orc];
+
+    [self setValue:[self valueForKey:@"clickOrc"] forKey:@"orcString"];
 }
 
 -(IBAction)SampWin:(id)sender{
-	NSMutableString * orc = [[[NSMutableString alloc]init]autorelease];
-	[orc appendFormat:@"\n\n\nsr = 44100\nkr = 44100\nksmps = 1\nnchnls = 2\n\n"];
-	//instruments
-	[orc appendFormat:@"instr 1			;Windowing\n\n"];
-	
-	[orc appendFormat:@"iamp\t=\tampdb(p4)\n"];
-	[orc appendFormat:@"a1\tdiskin\tp8, 1, p2\n"];
-	[orc appendFormat:@"kenv\tlinseg\t0, .004, 1, p3-.008, 1, .004, 0\n"];
-	[orc appendFormat:@"\t\touts a1*kenv*iamp, a1*kenv*iamp\n"];
-	[orc appendFormat:@"endin\n\n"];
-	
-    [self setValue:orc forKey:@"orcString"];
-	//[orcView setString:orc];
-	
+
+    [self setValue:[self valueForKey:@"winOrc"] forKey:@"orcString"];	
 }
+
 -(IBAction)Pitches:(id)sender{
-	NSMutableString * orc = [[[NSMutableString alloc]init]autorelease];
-	[orc appendFormat:@"\n\n\nsr = 44100\nkr = 44100\nksmps = 1\nnchnls = 2\n\n"];
-	//instruments
-	[orc appendFormat:@";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n\n"];
-	[orc appendFormat:@"instr 1			;Pitches\n\n"];
-	[orc appendFormat:@"iamp\t=\tampdb(p4+90)\n"];
-	[orc appendFormat:@"kenv\tlinseg\t0, .005, 1, p3-.01, 1, .005, 0\n"];
-	[orc appendFormat:@"a1\toscil\tiamp, p7, 1\n"];
-	[orc appendFormat:@"\touts\ta1*kenv, a1*kenv\n"];
-	[orc appendFormat:@"endin\n\n"];
-	//[orcView setString:orc];
-    [self setValue:orc forKey:@"orcString"];
+ 
+    [self setValue:[self valueForKey:@"pitchOrc"] forKey:@"orcString"];
 	
 }
 -(IBAction)Custom:(id)sender{
-	NSMutableString * orc = [[[NSMutableString alloc]init]autorelease];
-	[orc appendFormat:@"\n\n\nsr = 44100\nkr = 44100\nksmps = 1\nnchnls = 2\n\n"];
-	//instruments
-	[orc appendFormat:@";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n\n"];
-	[orc appendFormat:@"instr 1			;\n\n"];
+   
+    [self setValue:[self valueForKey:@"customOrc"] forKey:@"orcString"];
+}
 
-	
-	[orc appendFormat:@"\touts\ta1, a1\n"];
-	[orc appendFormat:@"endin\n\n"];
-	//[orcView setString:orc];
-    [self setValue:orc forKey:@"orcString"];
-	
+-(IBAction)Glissando:(id)sender{
+
+    [self setValue:[self valueForKey:@"glissOrc"] forKey:@"orcString"];
 }
 
 -(NSDictionary *)settings{
@@ -427,7 +395,122 @@ static void * csoundCallback(CSOUND * csound,int attr, const char *format, va_li
 }
 
 -(void)setSettings:(NSDictionary *)settings{
-	[orcView setString:[NSString stringWithString:[settings valueForKey:@"orc"]]];
+	//[orcView setString:[NSString stringWithString:[settings valueForKey:@"orc"]]];
+    [self setValue:[settings valueForKey:@"orc"] forKey:@"orcString"];
+}
+
+-(IBAction)ok:(id)sender{
+    
+    [super ok:sender];
+
+}
+
+-(IBAction)saveCustomOrc:(id)sender{
+   
+    [self setValue: [[orcView string]copy]/*[self valueForKey:@"orcString"]*/ forKey:@"customOrc"];        
+}
+
+-(void)setOrcs{
+
+    [self setClickOrc];
+    [self setWinOrc];    
+    [self setPitchOrc];
+    [self setGlissOrc];
+    [self setCustomOrc];
+}
+
+-(void)setClickOrc{
+
+	NSMutableString * orc = [[NSMutableString alloc]init];
+	[orc appendFormat:@"\n\n\nsr = 44100\nkr = 44100\nksmps = 1\nnchnls = 2\n\n"];
+	//instruments
+	[orc appendFormat:@";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n\n"];
+	[orc appendFormat:@"instr 1			;Clicks\n\n"];
+	[orc appendFormat:@"iamp\t=\tampdb(p4+90)\n"];
+	[orc appendFormat:@"kenv\tlinseg\tiamp, .01, 0\n"];
+	[orc appendFormat:@"a1\trand\tkenv\n"];
+	[orc appendFormat:@"\touts\ta1, a1\n"];
+	[orc appendFormat:@"endin\n\n"];
+    [self setValue:orc forKey:@"clickOrc"];
+    //	[orcView setString:orc];
+}
+
+-(void)setWinOrc{
+	NSMutableString * orc = [[NSMutableString alloc]init];
+	[orc appendFormat:@"\n\n\nsr = 44100\nkr = 44100\nksmps = 1\nnchnls = 2\n\n"];
+	//instruments
+	[orc appendFormat:@"instr 1			;Windowing\n\n"];
+	
+	[orc appendFormat:@"iamp\t=\tampdb(p4)\n"];
+	[orc appendFormat:@"a1\tdiskin\tp8, 1, p2\n"];
+	[orc appendFormat:@"kenv\tlinseg\t0, .004, 1, p3-.008, 1, .004, 0\n"];
+	[orc appendFormat:@"\t\touts a1*kenv*iamp, a1*kenv*iamp\n"];
+	[orc appendFormat:@"endin\n\n"];
+	
+    [self setValue:orc forKey:@"winOrc"];
+	//[orcView setString:orc];
+	
+}
+-(void)setPitchOrc{
+	NSMutableString * orc = [[NSMutableString alloc]init];
+	[orc appendFormat:@"\n\n\nsr = 44100\nkr = 44100\nksmps = 1\nnchnls = 2\n\n"];
+	//instruments
+	[orc appendFormat:@";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n\n"];
+	[orc appendFormat:@"instr 1			;Pitches\n\n"];
+	[orc appendFormat:@"iamp\t=\tampdb(p4+90)\n"];
+	[orc appendFormat:@"kenv\tlinseg\t0, .005, 1, p3-.01, 1, .005, 0\n"];
+	[orc appendFormat:@"a1\toscil\tiamp, p7, 1\n"];
+	[orc appendFormat:@"\touts\ta1*kenv, a1*kenv\n"];
+	[orc appendFormat:@"endin\n\n"];
+	//[orcView setString:orc];
+    [self setValue:orc forKey:@"pitchOrc"];
+	
+}
+-(void)setCustomOrc{
+    
+
+	NSMutableString * orc = [self valueForKey:@"customOrc"];
+    
+    
+    orc = [[NSMutableString alloc]init];
+    
+    [orc appendFormat:@";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n"];
+    [orc appendFormat:@";;;;;;;; PLEASE CLICK ON \"SAVE CUSTOM\" TO SAVE YOUR CUSTOM ORC!!!!;;;;\n"];
+    [orc appendFormat:@";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n\n"];
+    [orc appendFormat:@"\n\n\nsr = 44100\nkr = 44100\nksmps = 1\nnchnls = 2\n\n"];
+    //instruments
+    [orc appendFormat:@";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n\n"];
+    [orc appendFormat:@"instr 1			;\n\n"];
+    
+    
+    [orc appendFormat:@"\touts\ta1, a1\n"];
+    [orc appendFormat:@"endin\n\n"];
+    
+       
+    [self setValue:orc forKey:@"customOrc"];
+
+}
+
+-(void)setGlissOrc{
+	NSMutableString * orc = [[NSMutableString alloc]init];
+	[orc appendFormat:@"\n\n\nsr = 44100\nkr = 44100\nksmps = 1\nnchnls = 2\n\n"];
+	//instruments
+	[orc appendFormat:@";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n\n"];
+    [orc appendFormat:@"instr 1			;glissando\n\n"];
+	[orc appendFormat:@"iamp\t=\tampdb(p4+90)\n"];
+	[orc appendFormat:@"ifl\t=\tp7\n"];
+	[orc appendFormat:@"ifh\t=\tp8\n"];
+	[orc appendFormat:@"idir\t=\tp9\n"];    
+    [orc appendFormat:@"if (idir == 0) then\n"];
+    [orc appendFormat:@"kfreq\texpon\tifh, p3, ifl\n"];
+    [orc appendFormat:@"elseif (idir > 0) then\n"];
+    [orc appendFormat:@"kfreq expon ifl, p3, ifh\nendif\n"];
+    [orc appendFormat:@"kenv\tlinseg\t0, .005, 1, p3-.01, 1, .005, 0\n"];
+	[orc appendFormat:@"a1\toscil\tiamp, kfreq, 1\n"];
+	[orc appendFormat:@"\touts\ta1*kenv, a1*kenv\n"];
+	[orc appendFormat:@"endin\n\n"];
+    
+    [self setValue:orc forKey:@"glissOrc"];
 }
 
 @end

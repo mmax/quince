@@ -2302,8 +2302,6 @@
 				506BF92F117A629800ECBC4E /* CreateGridSequence-Info.plist */,
 				506BF942117A631E00ECBC4E /* CreateGridSequenceWindow.xib */,
 				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
-				50C5C5761324FB6D00C145D0 /* CSoundPlayer-Info.plist */,
-				50D07A03122D98280061F0E5 /* CsoundPlayerWindow.xib */,
 				506BF89B117A5DD500ECBC4E /* EnvelopeBasic-Info.plist */,
 				5071700A117A7E0F00357470 /* EnvelopeChild-Info.plist */,
 				50AEBF7911CEC6AE0055CA29 /* EnvelopeGate-Info.plist */,
@@ -2561,6 +2559,8 @@
 		50325EB21226951400E22031 /* CSoundPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				50A89B5713D46FAD0078F739 /* Supporting Files */,
+				50D07A03122D98280061F0E5 /* CsoundPlayerWindow.xib */,
 				50325EAC122694E900E22031 /* CsoundPlayer.h */,
 				50325EAD122694E900E22031 /* CsoundPlayer.m */,
 			);
@@ -2904,6 +2904,14 @@
 				506BF906117A611500ECBC4E /* VolumeStandardContainerTest.m */,
 			);
 			name = Test;
+			sourceTree = "<group>";
+		};
+		50A89B5713D46FAD0078F739 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50C5C5761324FB6D00C145D0 /* CSoundPlayer-Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		50AEBF8011CEC8A90055CA29 /* EnvelopeGate */ = {
@@ -10187,6 +10195,7 @@
 				5034A0D313D386D5008EB6C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5034A0EA13D3939A008EB6C4 /* Build configuration list for PBXNativeTarget "FixGlissandoEndPoints" */ = {
 			isa = XCConfigurationList;
@@ -10195,6 +10204,7 @@
 				5034A0EC13D3939A008EB6C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5035B8F413563EC0003E8570 /* Build configuration list for PBXNativeTarget "ApplyValuesFromSeq" */ = {
 			isa = XCConfigurationList;
