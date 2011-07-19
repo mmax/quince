@@ -27,7 +27,7 @@
 #import <Cocoa/Cocoa.h>
 #import <QuinceApi/ContainerView.h>
 #import <QuinceApi/QuinceObjectController.h>
-
+#import <QuinceApi/ChildView.h>
 
 @interface GlissandoContainer : ContainerView {
 @private

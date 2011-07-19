@@ -34,7 +34,7 @@
 	float	cursorX;
 	StripController * stripController;
 	NSMutableArray * volumeGuides; // array containing dictionaries with path, colour, string, point (value)
-    BOOL guides;
+    //BOOL guides;
     NSMutableDictionary * dictionary;
 }
 

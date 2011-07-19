@@ -1032,7 +1032,7 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context){
         b = YES; 
     
     NSNumber * doubleP = p;
-    p = [NSNumber numberWithInt:[p intValue]];
+    p = [NSNumber numberWithDouble:[p doubleValue]];
     
 	if(!b)
         [self willChangeValueForKey:@"dictionary"];

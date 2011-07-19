@@ -59,7 +59,7 @@ NSString* const kMuteString = @"m";
 		[self setValue:[NSNumber numberWithInt:kDefaultYAxisHeadRoom]forKey:@"yAxisHeadRoom"];
 		[self setValue:[NSNumber numberWithBool:YES] forKey:@"visible"];
 		[self setValue:[NSNumber numberWithBool:NO] forKey:@"active"];
-		[self setValue:[NSNumber numberWithFloat:(frame.size.height-kDefaultYAxisHeadRoom)/kDefaultVolumeRange] forKey:@"pixelsPerUnitY"];
+		[self setValue:[NSNumber numberWithFloat:(frame.size.height-kDefaultYAxisHeadRoom)/fabs([self maximumYValue]-[self minimumYValue])] forKey:@"pixelsPerUnitY"];
 
 		//[self setWantsLayer:YES];
     }
@@ -96,8 +96,16 @@ NSString* const kMuteString = @"m";
 	
 	 if([key isEqualToString:@"pixelsPerUnitX"])
 		 [self setPixelsPerUnitX:value];	
-	 else if([key isEqualToString:@"volumeRange"])
-		 [self setVolumeRange:value];
+     else if([key isEqualToString:@"pixelsPerUnitY"]){
+        // NSLog(@"%@: new ppuy", [self className]);
+         [self setNeedsDisplay:YES];
+     }
+     else if([key isEqualToString:@"yParameterValueOffset"]){
+         [self setNeedsDisplay:YES];
+     }
+
+	// else if([key isEqualToString:@"volumeRange"])
+	//	 [self setVolumeRange:value];
 	 
 	 [dict setValue:value forKey:key];
 }
@@ -440,12 +448,21 @@ NSString* const kMuteString = @"m";
 -(IBAction)moveUp:(id)sender{
 
 	NSValue * v = [NSValue valueWithSize:NSMakeSize(0, 1)];
+    double ppy = [[self valueForKey:@"pixelsPerUnitY"]doubleValue];
+    if(ppy>1.0){
+        v = [NSValue valueWithSize:NSMakeSize(0, ppy)];
+    }
+    
 	[self moveSelectionByValuesInSize:v];
 //	[self moveSelectionByX:0 andY:1];
 }
 
 -(IBAction)moveDown:(id)sender{
 	NSValue * v = [NSValue valueWithSize:NSMakeSize(0, -1)];
+    double ppy = [[self valueForKey:@"pixelsPerUnitY"]doubleValue];
+    if(ppy>1.0){
+        v = [NSValue valueWithSize:NSMakeSize(0, ppy*-1)];
+    }
 	[self moveSelectionByValuesInSize:v];
 //	[self moveSelectionByX:0 andY:-1];
 }
@@ -617,7 +634,7 @@ NSString* const kMuteString = @"m";
 	[self setNeedsDisplay:YES];
 }
 
--(void)setVolumeRange:(NSNumber *)volumeRange{
+/*-(void)setVolumeRange:(NSNumber *)volumeRange{
 	if(![[self parameterOnY]isEqualToString:@"volume"])
 		return;
 	
@@ -635,7 +652,7 @@ NSString* const kMuteString = @"m";
 	//[self computeVolumeGuides];
 	[self setNeedsDisplay:YES];
 	
-}
+}*/
 
 -(void)setDocument:(QuinceDocument *)doc{
 	document = doc;
@@ -1105,18 +1122,21 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 
 -(NSNumber *)convertYToVolume:(NSNumber *)y {
 	
-	float sizeY = [self frame].size.height-[[self valueForKey:@"yAxisHeadRoom"]floatValue];
+//	float sizeY = [self frame].size.height-[[self valueForKey:@"yAxisHeadRoom"]floatValue];
 	double ppy = [[self valueForKey:@"pixelsPerUnitY"]doubleValue];
-	float dB = 0 - ((sizeY - [y doubleValue]) / ppy);
+    double os = [[self valueForKey:@"minYValue"]doubleValue];
+	float dB =  ([y doubleValue]/ppy) + os;//0 - ((sizeY - [y doubleValue]) / ppy) + [[self valueForKey:@"yParameterValueOffset"]doubleValue];
 	return [NSNumber numberWithDouble: dB] ;
 	
 }
 
 -(NSNumber *)convertVolumeToY:(NSNumber *)dB{
 	
-	float sizeY = [self frame].size.height-[[self valueForKey:@"yAxisHeadRoom"]floatValue];
+	//float sizeY = [self frame].size.height-[[self valueForKey:@"yAxisHeadRoom"]floatValue];
 	double ppy = [[self valueForKey:@"pixelsPerUnitY"]doubleValue];
-	double y = sizeY + [dB doubleValue]*ppy;
+    double os = [[self valueForKey:@"minYValue"]doubleValue];
+	double y = ([dB doubleValue] - os)*ppy;
+    //sizeY + [dB doubleValue]*ppy ;//+ [[self valueForKey:@"yParameterValueOffset"]doubleValue]*ppy;
 	return [NSNumber numberWithDouble: y];
 }
 
@@ -1156,9 +1176,9 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 	return [NSNumber numberWithFloat: [p doubleValue]*[[self valueForKey:@"pixelsPerUnitY"]doubleValue]];	//return [self convertVolumeToYDelta:p];
 }
 
--(double)minimumYValue{return -90;}
+-(double)minimumYValue{return -80;}
 
--(double)maximumYValue{return 30;}
+-(double)maximumYValue{return 6;}
 
 float maxabs_float(float x){
 	return x<0?x*(-1):x;

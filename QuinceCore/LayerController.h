@@ -76,4 +76,6 @@
 -(void)updateViewForCurrentSize;
 -(void)moveLayerToNewY:(float)y;
 -(NSString *)parameterOnYAxis;
+//-(void)redrawView;
+-(void)reload;
 @end

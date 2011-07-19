@@ -45,6 +45,8 @@
 	IBOutlet NSTableView * subviewTableView;
 	IBOutlet NSTableColumn *layerColumn;
 	IBOutlet NSButton * removeRowButton;
+    IBOutlet NSButton * guidesButton;
+    NSMutableDictionary * dictionary;
 	StripLayerControlsArrayController * tableViewController;
 	EventInterceptView * interceptView;
 
@@ -92,12 +94,16 @@
 -(void)drawCursorForX:(double)x;
 -(void)moveStripToNewY:(float)y;
 -(void)relocate;
--(void)setVolumeRange:(int)db;
--(NSNumber *)volumeRange;
--(void)updateVolumeGuideFlag;
+//-(void)setVolumeRange:(int)db;
+//-(NSNumber *)volumeRange;
+//-(void)updateVolumeGuideFlag;
 -(NSArray *)xml_layers;
 -(NSString *)parameterOnYAxis;
 -(int)layerCount;
+-(id)valueForKeyPath:(NSString *)keyPath;
+-(id)valueForKey:(NSString *)key;
+-(void)setValue:(id)aValue forKey:(NSString *)aKey;
+-(void)resetPPUY;
 @end
 
 

@@ -140,8 +140,10 @@
 	[newView setLayerController:self];
 	[newView setDocument:[stripController document]];
 	[newView bind:@"pixelsPerUnitX" toObject:[stripController controller] withKeyPath:@"pixelsPerUnitX" options:nil];
-	[newView bind:@"volumeRange" toObject:[stripController controller] withKeyPath:@"volumeRange" options:nil];
-	
+//	[newView bind:@"volumeRange" toObject:[stripController controller] withKeyPath:@"volumeRange" options:nil];
+    [newView bind:@"pixelsPerUnitY" toObject:stripController withKeyPath:@"pixelsPerUnitY" options:nil];
+    [newView bind:@"minYValue" toObject:stripController withKeyPath:@"minYValue" options:nil];
+
 	[self setValue:newView forKey:@"view"];
 	if(mc){
 		if(![self loadObjectWithController:mc]){
@@ -150,8 +152,29 @@
 		}
 	}	
 	
+    
 	if (![[viewMenu titleOfSelectedItem] isEqualToString:name])// if this method was called programatically,
 		[viewMenu selectItem:[viewMenu itemWithTitle:name]];  // make sure the current view's name is displayed in the popup...
+    
+    ///// set y zoom settings
+   
+    double min, max;
+
+    if ([stripController layerCount]>1) {
+        min = [[stripController valueForKey:@"minYValue"]doubleValue];
+        max = [[stripController valueForKey:@"maxYValue"]doubleValue];
+    }
+    else{
+        min = [newView minimumYValue];
+        max = [newView maximumYValue];
+        [stripController setValue:[NSNumber numberWithDouble:min] forKey:@"minYValue"];
+        [stripController setValue:[NSNumber numberWithDouble:max] forKey:@"maxYValue"];
+    }
+    
+    
+    
+    //NSLog(@"after binding: sc min: %@, view os: %@", [stripController valueForKey:@"minYValue"], [newView valueForKey:@"minYValue"]);
+
     
     [(EventInterceptView *)[stripController interceptView]computeGuides];
 }
@@ -179,7 +202,7 @@
 		[self didChangeValueForKey:@"content"];
 		//NSLog(@"%@: loadObjectWithControler: content: ", [self className]);
 		//[quince log];
-		[view setValue:[[stripController controller]valueForKey:@"volumeRange"] forKey:@"volumeRange"];
+//		[view setValue:[[stripController controller]valueForKey:@"volumeRange"] forKey:@"volumeRange"];
 		[view prepareToDisplayObjectWithController:mc];
 		
 		return YES;
@@ -307,4 +330,9 @@
     if(!view)return nil;
     return [view parameterOnY];
 }
+
+-(void)reload{
+    [[self view] reload];
+}
+
 @end

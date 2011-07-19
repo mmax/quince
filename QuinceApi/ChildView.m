@@ -409,6 +409,7 @@
 	double offsetYLocation = [[enclosingView yDeltaForParameterValue:[controller valueForKeyPath:[NSString stringWithFormat:@"selection.%@Offset", keyY]]]doubleValue];
 	//convert y value to parameter-on-y-axis
 	NSNumber * y = [enclosingView parameterValueForY:[NSNumber numberWithFloat:[self location].y - offsetYLocation]];
+
 	//then setValue in model, which in turn will cause this object's setValue:forKey: method to be called with the appropiate value and key.
 	[[[self infoForBinding:keyY] valueForKey:@"NSObservedObject"] setValue:y forKeyPath:[[self infoForBinding:keyY] valueForKey:@"NSObservedKeyPath"]];
 }

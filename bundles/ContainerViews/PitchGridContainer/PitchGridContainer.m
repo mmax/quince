@@ -175,20 +175,22 @@
 
 -(NSNumber *)convertYToPitch:(NSNumber *)y {
 	
-
+	//float sizeY = [self frame].size.height-[[self valueForKey:@"yAxisHeadRoom"]floatValue];
 	double ppy = [[self valueForKey:@"pixelsPerUnitY"]doubleValue];
-	float p = 16 + ([y doubleValue] / ppy);
+    double os = [[self valueForKey:@"minYValue"]doubleValue];
+	float p = ([y doubleValue]/ppy)+os;//[self minimumYValue] + ([y doubleValue] / ppy);//((sizeY - [y doubleValue]) / ppy);
 	return [NSNumber numberWithFloat: p] ;
 	
 }
 
 -(NSNumber *)convertPitchToY:(NSNumber *)f{
 	
+    //	float sizeY = [self frame].size.height-[[self valueForKey:@"yAxisHeadRoom"]floatValue];
 	double ppy = [[self valueForKey:@"pixelsPerUnitY"]doubleValue];
-	double y = ([f doubleValue]-16)*ppy;
+    double os = [[self valueForKey:@"minYValue"]doubleValue];
+	double y = ([f doubleValue]-os)*ppy;//([f doubleValue]-[self minimumYValue])*ppy;// sizeY + 
 	return [NSNumber numberWithFloat: y];
 }
-
 -(NSArray *)regionPathsInRect:(NSRect)r{
     
 	NSMutableArray * a = [[NSMutableArray alloc]init];
@@ -217,4 +219,9 @@
     [super setFrameSize:newSize];
     [self createViewsForQuinceObjectController:[self contentController]];
 }
+
+-(double)minimumYValue{return 16;}
+
+-(double)maximumYValue{return 129;}
+
 @end

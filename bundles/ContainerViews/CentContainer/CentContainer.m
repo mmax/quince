@@ -33,7 +33,7 @@
 
 -(id)initWithFrame:(NSRect)frame{	
 	if ((self = [super initWithFrame:frame])) 
-        [self setValue:[NSNumber numberWithFloat:(frame.size.height-5)/100] forKey:@"pixelsPerUnitY"];
+        [self setValue:[NSNumber numberWithFloat:(frame.size.height-kDefaultYAxisHeadRoom)/100] forKey:@"pixelsPerUnitY"];
     
     return self;
 }
@@ -62,7 +62,12 @@
 	
 
 	double ppy = [[self valueForKey:@"pixelsPerUnitY"]doubleValue];
-	float f = [self minimumYValue] + ([y doubleValue] / ppy);//((sizeY - [y doubleValue]) / ppy);
+    if(![self valueForKey:@"minYValue"])
+        NSLog(@"CentContainer: no minYValue!");
+    double os = [[self valueForKey:@"minYValue"]doubleValue];
+	float f = ([y doubleValue]/ppy)+os;
+    //[self minimumYValue] + ([y doubleValue] / ppy);//((sizeY - [y doubleValue]) / ppy);
+    //NSLog(@"CentCont: converting y:%@ to Cent, ppy:%f, c: %f, offset: %f", y, ppy, f, os);
 	return [NSNumber numberWithFloat: f] ;
 	
 }
@@ -70,12 +75,13 @@
 -(NSNumber *)convertCentToY:(NSNumber *)f{
 	
 	double ppy = [[self valueForKey:@"pixelsPerUnitY"]doubleValue];
-	double y = ([f doubleValue]-[self minimumYValue])*ppy;// sizeY + 
+	double y = ([f doubleValue] - [[self valueForKey:@"minYValue"]doubleValue])*ppy;
+    //([f doubleValue]-[self minimumYValue])*ppy;// sizeY + 
 	return [NSNumber numberWithFloat: y];
 }
 
--(double)minimumYValue{return -50;}
+-(double)minimumYValue{return -50.0;}
 
--(double)maximumYValue{return +50;}
+-(double)maximumYValue{return +50.0;}
 
 @end

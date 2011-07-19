@@ -31,13 +31,6 @@
 
 -(NSString *)defaultChildViewClassName{return @"GlissandoChild";}
 
--(id)initWithFrame:(NSRect)frame{	
-	if ((self = [super initWithFrame:frame])) 
-        [self setValue:[NSNumber numberWithFloat:(frame.size.height-kDefaultYAxisHeadRoom)/115] forKey:@"pixelsPerUnitY"];
-    //    NSLog(@"%f", frame.size.height);
-    
-    return self;
-}
 
 
 -(ChildView *)createChildViewForQuinceObjectController:(QuinceObjectController *)mc andBindWithKeysForLocationOnX:(NSString *)lx sizeOnX:(NSString *)sx locationOnY:(NSString *)ly{
@@ -81,7 +74,9 @@
 	
 	//float sizeY = [self frame].size.height-[[self valueForKey:@"yAxisHeadRoom"]floatValue];
 	double ppy = [[self valueForKey:@"pixelsPerUnitY"]doubleValue];
-	float p = [self minimumYValue] + ([y doubleValue] / ppy);//((sizeY - [y doubleValue]) / ppy);
+    double os = [[self valueForKey:@"minYValue"]doubleValue];
+	float p = ([y doubleValue]/ppy)+os;//[self minimumYValue] + ([y doubleValue] / ppy);//((sizeY - [y doubleValue]) / ppy);
+    //NSLog(@"p:%f", p);
 	return [NSNumber numberWithFloat: p] ;
 	
 }
@@ -90,9 +85,31 @@
 	
     //	float sizeY = [self frame].size.height-[[self valueForKey:@"yAxisHeadRoom"]floatValue];
 	double ppy = [[self valueForKey:@"pixelsPerUnitY"]doubleValue];
-	double y = ([f doubleValue]-[self minimumYValue])*ppy;// sizeY + 
+    double os = [[self valueForKey:@"minYValue"]doubleValue];
+	double y = ([f doubleValue]-os)*ppy;// + ppy * [[self valueForKey:@"cent"]doubleValue]/100.0;//([f doubleValue]-[self minimumYValue])*ppy;// sizeY + 
+    //NSLog(@"f:%f, y: %f", [f doubleValue], y);
 	return [NSNumber numberWithFloat: y];
 }
+
+
+//-(void)moveSelectionByX:(float)x andY:(float)y{
+//	
+//	//NSRect before = [self unionRectForSelection];
+//	ChildView * child;
+//    double ppy = [[self valueForKey:@"pixelsPerUnitY"]doubleValue];
+//    
+//    if(y!=0 && fabs(y)<ppy)
+//        y = ppy * y>0?1:-1;
+//    
+//	for(child in selection){
+//		[child moveX:x];
+//		[child moveY:y];
+//	}
+//	[contentController update];
+//	
+//	//NSRect after = [self unionRectForSelection]; 
+//	//[self setNeedsDisplayInRect:NSUnionRect(before, after)];
+//} 
 
 //-(NSNumber *)yDeltaForParameterValue:(NSNumber *)p{
 //	return [self convertPitchToYDelta:p];
@@ -113,7 +130,7 @@
 
 -(double)minimumYValue{return 16;}
 
--(double)maximumYValue{return 130;}
+-(double)maximumYValue{return 129;}
 
 -(BOOL)allowsVerticalResize{return YES;}
 

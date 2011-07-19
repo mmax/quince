@@ -146,7 +146,7 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2);
 -(void)updateViewsForCurrentSize; // override this to provide different display resolutions depending on current zoom
 -(void)updateDict;
 -(void)setPixelsPerUnitX:(NSNumber *)newPpx;
--(void)setVolumeRange:(NSNumber *)volumeRange;
+//-(void)setVolumeRange:(NSNumber *)volumeRange;
 -(NSNumber *)convertTimeToX:(NSNumber *)time;
 -(BOOL)typeCheckModel:(QuinceObject *)model;
 -(void)presentAlertWithText:(NSString *)message;

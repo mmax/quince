@@ -42,7 +42,7 @@
 		stripControllers = [[NSMutableArray alloc]init];
 		activeStripController = nil;
 		zoomSliderValue = 0;
-		[self setValue:[NSNumber numberWithInt:40]forKey:@"volumeRange"];
+		//[self setValue:[NSNumber numberWithInt:40]forKey:@"volumeRange"];
 		cursorTime = 0;
 	}
 	return self;
@@ -159,6 +159,7 @@
 	[stripControllers addObject:stripController];
 	[stripControlDocumentView addSubview:stripControlView];
 	
+
 	// we do have a new strip, so increment the count NOW
 	count++;
 	
@@ -183,8 +184,9 @@
 	if([stripControllers count] == 1)
 		[self setActiveStripController:[stripControllers lastObject]];
 	
-	for(StripController * sc in stripControllers)
+	/*for(StripController * sc in stripControllers)
 		[sc setVolumeRange:[[self valueForKey:@"volumeRange"]intValue] ];
+     */
 
 	[[doc undoManager]registerUndoWithTarget:self selector:@selector(removeStripWithStripController:) object:stripController];
 	[[doc undoManager]setActionName:@"New Strip"];
@@ -206,7 +208,9 @@
 	[[sc interceptView]removeFromSuperview];
 	[[sc view]removeFromSuperview];
 	activeStripController = nil;
+//    NSLog(@"now?");
 	[stripControllers removeObject:sc];
+//    NSLog(@"or now?");
 	if([stripControllers count])
 		[self setActiveStripController:[stripControllers objectAtIndex:0]];	
 	
@@ -345,7 +349,7 @@
 }
 
 -(IBAction)changeVolumeRangeWithSlider:(id)sender{
-	int db = [sender intValue];
+	/*int db = [sender intValue];
 	NSString * fb = [NSString stringWithFormat:@"%d dB", db];
 	[volumeRangeTextField setStringValue:fb];
 	//NSNumber *newPPY = [NSNumber numberWithFloat:(kDefaultStripHeight-kDefaultYAxisHeadRoom)/kDefaultVolumeRange];
@@ -355,7 +359,7 @@
 	
 	for(StripController * sc in stripControllers){
 		[sc setVolumeRange:db];
-	}
+	}*/
 }
 
 
@@ -513,7 +517,7 @@
 	}
 	
 	for(StripController * sc in stripControllers){
-		[sc setVolumeRange:[[self valueForKey:@"volumeRange"]intValue]];
+		//[sc setVolumeRange:[[self valueForKey:@"volumeRange"]intValue]];
         [[sc interceptView]setFrame:[self frameForStripWithStripControl:sc]];//otherwise guides are not drawn properly
 	}
 

@@ -40,30 +40,23 @@
 -(StripController *)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
 	
 	if((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])){
-		volumeGuides = NO;
+        dictionary = [[NSMutableDictionary alloc]init];
+        [self setValue:[NSNumber numberWithBool:YES] forKey:@"drawGuides"];
 		[self loadView];
 		layerControllers = [[NSMutableArray alloc] init];
-
-	}
-	return self;
-}
-
--(StripController *)init{
-	
-	if((self = [super init])){
-		layerControllers = [[NSMutableArray alloc] init];
-		volumeGuides = NO;
+        [guidesButton bind:@"value" toObject:self withKeyPath:@"drawGuides" options:nil];
 	}
 	return self;
 }
 
 - (void) dealloc{
+
 	[self clear];
 	[tableViewController release]; // is retained in awakeFromNib
     [layerControllers release];
 	 if(interceptView)
 			[interceptView release];
-	
+	//[dictionary release];
     [super dealloc];
 }
 
@@ -116,13 +109,13 @@
     [tableViewController reloadTableView];
 	[subviewTableView selectRowIndexes:[NSIndexSet indexSetWithIndex:[layerControllers count]-1] byExtendingSelection:NO];
 	
-	[self updateVolumeGuideFlag];
+	//[self updateVolumeGuideFlag];
 	
 	
 	return;
 }
 
--(void)updateVolumeGuideFlag{
+/*-(void)updateVolumeGuideFlag{
 	for(LayerController * lc in layerControllers){
 		volumeGuides = NO;
 		if([[[lc view] parameterOnY]isEqualToString:@"volume"] && [[lc view] showGuides]){
@@ -131,7 +124,7 @@
 			break;
 		}
 	}
-}
+}*/
 
  - (IBAction) removeRow:(id) sender{
 	 [[[controller document]undoManager]registerUndoWithTarget:self selector:@selector(createLayersFromArray:) object:[self xml_layers]];
@@ -143,7 +136,7 @@
 	[[self layerControllers] removeObjectAtIndex: index];
 	[tableViewController reloadTableView];
 	[self validateButtons];
- 	[self updateVolumeGuideFlag];
+// 	[self updateVolumeGuideFlag];
 } 
 
 - (NSView *) tableView:(NSTableView *) tableView viewForRow:(int) row{
@@ -205,7 +198,7 @@
 
 	
 	[cv addSubview:newView positioned:NSWindowBelow relativeTo:interceptView];		// this line was inserted replacing the following if-else
-																					// it fixed a bug where dome user events where not received by the view in the selected layer
+																					// it fixed a bug where some user events where not received by the view in the selected layer
 	
 	/* 
 		if([subviews count])
@@ -298,18 +291,18 @@
 		[lc setViewWithName:[layer valueForKey:@"containerViewClass"]];
 		[lc loadObjectWithController:contentController];
 	}
-	[self updateVolumeGuideFlag];
+//	[self updateVolumeGuideFlag];
 }
 
 -(void)clear{
-
+    [guidesButton unbind:@"value"];
 	for(LayerController * lc in layerControllers)
 		[[lc valueForKey:@"view" ] removeFromSuperview];
 
 	[layerControllers removeAllObjects];
 	[tableViewController reloadTableView];
 	[self validateButtons];
-	[self updateVolumeGuideFlag];
+//	[self updateVolumeGuideFlag];
 }
 
 -(NSView *)interceptView{
@@ -353,9 +346,9 @@
 	[self setFrame:[controller frameForStripWithStripControl:self]];
 }
 
--(void)setVolumeRange:(int)db{
+/*-(void)setVolumeRange:(int)db{
 	[interceptView computeVolumeGuides];
-}
+}*/
 
 -(NSNumber *)volumeRange{
 	return [controller valueForKey:@"volumeRange"];
@@ -382,4 +375,61 @@
     return [layerControllers count];
 }
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+#pragma mark KVC
+
+-(id)valueForKey:(NSString *)key{
+    //	NSLog(@"Doc: key: %@", key);
+	return [dictionary valueForKey:key];
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-(id)valueForKeyPath:(NSString *)keyPath{
+    
+	
+	NSArray * keys = [keyPath componentsSeparatedByString:@"."];
+	id val = dictionary;
+    
+	for(NSString * key in keys){	
+		val = [val valueForKey:key];
+	}
+	return val;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-(void)setValue:(id)aValue forKey:(NSString *)aKey{
+	
+	[self willChangeValueForKey:aKey];
+	[dictionary setValue:aValue forKey:aKey];
+	[self didChangeValueForKey:aKey];
+    
+    if([aKey isEqualToString:@"drawGuides"])
+        [interceptView setNeedsDisplay:YES];
+
+    if([aKey isEqualToString:@"minYValue"] || [aKey isEqualToString:@"maxYValue"]){
+        //
+        //NSLog(@"StripController:new ppuy -> redraw!");
+        //[layerControllers makeObjectsPerformSelector:@selector(redrawView)];
+        [self resetPPUY];
+    }
+    
+    if([aKey isEqualToString:@"pixelsPerUnitY"])
+        [layerControllers makeObjectsPerformSelector:@selector(reload)];
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-(void)resetPPUY{
+   //NSLog(@"resetPPUY");
+    double min = [[self valueForKey:@"minYValue"]doubleValue];
+    double max = [[self valueForKey:@"maxYValue"]doubleValue];
+    double ppuy = ([[[layerControllers lastObject] view]frame].size.height-kDefaultYAxisHeadRoom)/fabs(max-min);
+    [self setValue:[NSNumber numberWithDouble:ppuy] forKey:@"pixelsPerUnitY"];
+    [interceptView computeGuides];
+    
+}
 @end

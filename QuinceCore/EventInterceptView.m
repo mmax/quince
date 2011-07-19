@@ -36,7 +36,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         cursorX = 0;
-        guides = YES;
+        //[self setValue:[NSNumber numberWithBool:YES]forKey:@"drawGuides"];
         dictionary = [[NSMutableDictionary alloc]init];
 		[self setValue:[[[NSMutableArray alloc]init]autorelease] forKey:@"guides"];
     }
@@ -67,7 +67,7 @@
 	
 	//if(volumeGuides)
 	//	[self drawVolumeGuidesInRect:dirtyRect];
-    if(guides){
+    if([[stripController valueForKey:@"drawGuides"]boolValue]){
         if(![[self valueForKey:@"parameter"]isEqualToString:[stripController parameterOnYAxis]])
             [self computeGuides];
         [self drawGuidesInRect:dirtyRect];
@@ -147,18 +147,18 @@
 -(void)computeVolumeGuides{
 	//NSLog(@"computeVolumeGuides...");
 	float y, alpha;
-	int fontSize=8,  volumeRange = [[stripController volumeRange]integerValue];
+	int fontSize=8;//,  volumeRange = [[stripController volumeRange]integerValue];
 	NSFont *font = [NSFont systemFontOfSize:fontSize];
 	NSRange tRange;
 	NSPoint point;
 	NSBezierPath * zero;
 	[[self valueForKey:@"guides"] removeAllObjects];
 	
-	for(int dB = 0;maxabs_float(dB)<volumeRange;dB-=6){
+	for(int dB = 0;maxabs_float(dB)<90;dB-=6){
 		NSMutableDictionary * guide = [[NSMutableDictionary alloc]init];
 		ContainerView * view = [(LayerController * )[[stripController layerControllers] lastObject]view];
 		y = [[view convertVolumeToY:[NSNumber numberWithInt:dB]]floatValue];
-		alpha = (0.4/volumeRange)*(volumeRange-maxabs_float(dB))+0.1;
+		alpha = (0.4/90)*(90-maxabs_float(dB))+0.1;
 		NSColor * color = [NSColor colorWithDeviceWhite:1 alpha:alpha];
 		[guide setValue:color forKey:@"color"];
 		
@@ -438,6 +438,7 @@
 	
 	[self didChangeValueForKey:aKey];
 	[self didChangeValueForKey:@"dictionary"];
+
 
 }
 
