@@ -41,13 +41,17 @@
 	
 	double time = -1;
 	
-	[document setIndeterminateProgressTask:@"reducing..."];
+	[document setProgressTask:@"reducing..."];
 	[document displayProgress:YES];
 	while (1) {
 		time = [self nextSubTimeAfter:time];
 		if(time<0) break;
 		//NSLog(@"time: %f", time);
-		[[new controller] addSubObjectWithController:[[self loudestQuinceInArray:[self subObjectsStartingAtTime:time]]controller] withUpdate:NO];
+        QuinceObjectController *c = [[self loudestQuinceInArray:[self subObjectsStartingAtTime:time]]controller];
+        float i = [[mom valueForKey:@"subObjects"]indexOfObject:[c content]];
+        float progress = i/[mom subObjectsCount]*100.0;
+        [document setProgress:progress];
+		[[new controller] addSubObjectWithController:c withUpdate:NO];
 	}
 	
 	[new update];
@@ -63,16 +67,21 @@
 
 -(QuinceObject*)loudestQuinceInArray:(NSArray *)fruit{
 
-	double max = -1000000;
-	QuinceObject * m = nil;
+	//double max = -1000000;
+	//QuinceObject * m = nil;
 	
-	for(QuinceObject * q in fruit){
-		if([[q valueForKey:@"volume"]doubleValue]>max){
-			max = [[q valueForKey:@"volume"]doubleValue];
-			m = q;
-		}
-	}
-	return m;
+    NSSortDescriptor * desc = [NSSortDescriptor sortDescriptorWithKey:@"volume" ascending:YES];
+    
+    NSArray * sorted = [fruit sortedArrayUsingDescriptors:[NSArray arrayWithObject:desc]];
+	
+    return [sorted lastObject];
+//    for(QuinceObject * q in fruit){
+//		if([[q valueForKey:@"volume"]doubleValue]>max){
+//			max = [[q valueForKey:@"volume"]doubleValue];
+//			m = q;
+//		}
+//	}
+//	return m;
 	
 }
 	
@@ -82,11 +91,15 @@
 	NSArray * subs = [mom valueForKey:@"subObjects"];
 	
 	NSMutableArray * basket = [[[NSMutableArray alloc]init]autorelease];
-	
+	double start;
+    
 	for(QuinceObject * q in subs){
-	
-		if([[q valueForKey:@"start"]doubleValue] == t)
+        start = [[q valueForKey:@"start"]doubleValue];
+		if(start == t)
 			[basket addObject:q];
+
+        if(start>t)
+            break;
 	}
 	//NSLog(@"subObjectsStartingAtTime: %d objects in basket", [basket count]);
 	return basket;
@@ -96,14 +109,14 @@
 -(double)nextSubTimeAfter:(double)t{
 	
 	NSArray * subs = [mom valueForKey:@"subObjects"];
+    double start;
 	for(QuinceObject * s in subs){
-	
-		if ([[s valueForKey:@"start"]doubleValue]>t)
-			return [[s valueForKey:@"start"]doubleValue];
+        start =[[s valueForKey:@"start"]doubleValue];
+		if (start>t)
+			return start;
 	}
 	
 	return -1;
-
 }
 
 @end

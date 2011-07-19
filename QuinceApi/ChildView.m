@@ -360,7 +360,7 @@
 
 
 -(void)setValue:(id)value forKey:(NSString *)key{
-	
+	//[key retain];
 	if([key isEqualToString:[enclosingView keyForLocationOnXAxis]]){
 		float x = [[enclosingView xForParameterValue:value]floatValue] + [[enclosingView xDeltaForParameterValue:[controller valueForKeyPath:[NSString stringWithFormat:@"selection.%@Offset", key]]]floatValue];
 		float y = [self frame].origin.y;
@@ -369,7 +369,13 @@
 	}
 	else if([key isEqualToString:[enclosingView keyForLocationOnYAxis]]){
 		float x = [self frame].origin.x; 
-		float y = [[enclosingView yForParameterValue:value]floatValue] + [[enclosingView yDeltaForParameterValue:[controller valueForKeyPath:[NSString stringWithFormat:@"selection.%@Offset", key]]]floatValue];
+       // NSLog(@"key:%@", key);
+        NSString * keypath = [NSString stringWithFormat:@"selection.%@Offset", key];
+        NSNumber * offset = [controller valueForKeyPath:keypath];
+		float y = [[enclosingView yForParameterValue:value]floatValue];
+        if(offset)
+            y+= [[enclosingView yDeltaForParameterValue:offset] floatValue];
+        
 		NSPoint origin=NSMakePoint(x, y);
 		[self setFrameOrigin:origin];
 	}
@@ -387,7 +393,7 @@
 	}
 	[self setNeedsDisplay:YES];
 	[enclosingView setNeedsDisplayInRect:[self redrawRect]];
-	
+	//[key release];
 	//NSLog(@"%@: setValueForKey: %@", [self className], key);
 	
 }

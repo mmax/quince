@@ -31,7 +31,7 @@
 
 -(JoinByFrequency *)init{
 	
-	if(self = [super init]){
+	if((self = [super init])){
 		[NSBundle loadNibNamed:@"JoinByFrequencyWindow" owner:self];
 		maxCent = 0;
 	}
@@ -51,7 +51,8 @@
 }
 
 -(IBAction)go:(id)sender{
-	[document setIndeterminateProgressTask:@"processing..."];
+   	[window orderOut:nil];
+	[document setProgressTask:@"processing..."];
 	[document displayProgress:YES];
 	maxCent = [percentageField floatValue];
 	mom = [self outputObjectOfType:@"QuinceObject"];
@@ -63,13 +64,16 @@
 	[mom setValue:s forKey:@"name"];
 	[mom update];
 	[document displayProgress:NO];
-	[window orderOut:nil];
+
 	[self done];
 }
 
 
 -(void)joinNextFrom:(int)index into:(QuinceObject *)j{ // index is the index of the object being joined into
 	
+    float nx = index, cnt = [subs count];
+    float prog = nx / cnt * 100.0;
+    [document setProgress:prog];
 	
 	if(index >= [[source valueForKey:@"subObjects"]count]-1)
 		return;

@@ -64,8 +64,8 @@
     
 	NSArray * subs = [model valueForKey:@"subObjects"];
 	
-    [document setProgressTask:[NSString stringWithFormat:@"%@: processing objects...", [self className]]];
-	[document displayProgress:YES];
+   // [document setProgressTask:[NSString stringWithFormat:@"%@: processing objects...", [self className]]];
+//	[document displayProgress:YES];
 	
     float x = [self frame].size.width;
 	
@@ -100,7 +100,7 @@
 	
 	float startY, endY = 0, a, b, c;
 	QuinceObject * quince;
-    
+
 	for(int i = 0;i<[subs count];i++){
 		startY = endY;
 		
@@ -122,7 +122,7 @@
 	}
 	
 	
-	[document displayProgress:NO];
+	//[document displayProgress:NO];
 }
 
 

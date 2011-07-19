@@ -716,7 +716,7 @@
 												<string key="NSFrame">{{361, 13}, {41, 32}}</string>
 												<reference key="NSSuperview" ref="634656224"/>
 												<reference key="NSWindow"/>
-												<reference key="NSNextKeyView" ref="956284068"/>
+												<reference key="NSNextKeyView"/>
 												<bool key="NSEnabled">YES</bool>
 												<object class="NSButtonCell" key="NSCell" id="415376883">
 													<int key="NSCellFlags">67239424</int>
@@ -727,7 +727,7 @@
 													<int key="NSButtonFlags">-2033434369</int>
 													<int key="NSButtonFlags2">160</int>
 													<string key="NSAlternateContents"/>
-													<string type="base64-UTF8" key="NSKeyEquivalent">DQ</string>
+													<string key="NSKeyEquivalent"/>
 													<int key="NSPeriodicDelay">400</int>
 													<int key="NSPeriodicInterval">75</int>
 												</object>
