@@ -42,23 +42,18 @@ typedef struct _userData {
 
 @interface CsoundPlayer : Player {
 
-	//NSMutableArray * commonParameters;
 	CSOUND *csound;
 	NSTimer * timer;
 	IBOutlet NSPanel * window;
 	IBOutlet NSTextView * orcView;
 	IBOutlet NSTextView * scoreView;
+    IBOutlet NSPopUpButton * modeMenu;
 	NSAutoreleasePool * pool;    
 }
-//-(void)fetchCommonParametersForControllers:(NSArray *)controllers;
+
 -(void)fetchCommonParametersForArrayOfQuinces:(NSArray *)a;
 -(BOOL)doAllObjectsInArray:(NSArray *)a haveAValueForKey:(NSString *)key;
 -(void)prepare;
--(IBAction)Clicks:(id)sender;
--(IBAction)SampWin:(id)sender;
--(IBAction)Pitches:(id)sender;
--(IBAction)Glissando:(id)sender;
--(IBAction)Custom:(id)sender;
 -(NSArray *)excludedParameters;
 -(BOOL)excludedParametersInclude:(NSString *)pam;
 -(void)removeExcludedKeysFromArray:(NSMutableArray*)pams;
@@ -72,12 +67,14 @@ typedef struct _userData {
 static void * csoundCallback(CSOUND * csound,int attr, const char *format, va_list valist);
 uintptr_t csThread(void *data);
 -(CSOUND *)csound;
--(IBAction)saveCustomOrc:(id)sender;
 -(void)setOrcs;
--(void)setClickOrc;
--(void)setWinOrc;
--(void)setPitchOrc;
--(void)setGlissOrc;
--(void)setCustomOrc;
-
+-(void)setClickOrc:(NSMutableString*)s;
+-(void)setWinOrc:(NSMutableString*)s;
+-(void)setPitchOrc:(NSMutableString*)s;
+-(void)setGlissOrc:(NSMutableString*)s;
+-(void)writeHeader:(NSMutableString *)s;
+-(int)instrumentNumberForMode:(NSString *)mode;
+-(int)modeForQuince:(QuinceObject *)q;
+-(IBAction)setDefaultMode:(id)sender;
+-(void)initModes;
 @end

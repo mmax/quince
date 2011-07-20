@@ -33,42 +33,18 @@
 
 	if((self = [super init])){
 		[NSBundle loadNibNamed:@"CsoundPlayerWindow" owner:self];
-		[self Clicks:nil];
 		[scoreView setRichText:NO];
-
-
-		/* NSTextContainer *   container = [scoreView textContainer];
-				[container setWidthTracksTextView: NO];
-				NSSize size = [container containerSize];
-				size.width = 100000000;//.0e5;
-				[container setContainerSize: size];
-				NSScrollView *	scroller = [scoreView enclosingScrollView];
-				[scroller setHasHorizontalScroller: YES];
-				NSRect frame = [scoreView frame];
-				frame.size.width = 3000.0;
-				[scoreView setFrame: frame];
-		 */		
 		[[scoreView textContainer] setContainerSize:NSMakeSize(FLT_MAX, FLT_MAX)];
+        [self initModes];
         [self setOrcs];
+        [self setDefaultMode:nil];
 	}
 	return self;
 }
 
-/*-(void)fetchCommonParametersForControllers:(NSArray *)controllers{
-    [document setIndeterminateProgressTask:@"fetching common parameters..."];
-	QuinceObjectController * c = [document controllerForNewObjectOfClassNamed:@"QuinceObject" inPool:NO];
-	for(QuinceObjectController * q in controllers)
-		[c addSubObjectWithController:q withUpdate:NO];
-	[c update];
-	if(commonParameters)[commonParameters release];
-	commonParameters = [[NSMutableArray arrayWithArray:[[c content]allKeysRecursively]]retain];
-	
-
-}*/
 
 -(void)dealloc{
 
-	//if(commonParameters)[commonParameters release];
 	if(csound){
 		csoundStop(csound);
 		csoundReset(csound);
@@ -77,19 +53,11 @@
 	[super dealloc];
 }
 
+
 -(void)prepare{
     [document setIndeterminateProgressTask:@"preparing objects..."];
 	flatQuinceList = [document playbackObjectList];
-	/*NSMutableArray * flatQuinceControllerList = [[[NSMutableArray alloc]init]autorelease];
-	for(QuinceObject * q in flatQuinceList)
-		[flatQuinceControllerList addObject:[q controller]];
-	
-	[self fetchCommonParametersForControllers:flatQuinceControllerList];*/
-    
     [self fetchCommonParametersForArrayOfQuinces:flatQuinceList];
-    
-	//[self removeExcludedKeysFromArray:[self valueForKey:@"commonParameters"]];
-	
 }
 
 -(void)fetchCommonParametersForArrayOfQuinces:(NSArray *)a{
@@ -118,6 +86,7 @@
     [self setValue:common forKey:@"commonParameters"];
 }
 
+
 -(BOOL)doAllObjectsInArray:(NSArray *)a haveAValueForKey:(NSString *)key{
     
     for(QuinceObject * q in a){
@@ -134,16 +103,10 @@
 
     [document setIndeterminateProgressTask:@"setup..."];
     [document displayProgress:YES];
-	
     [self prepare];
-    
     [document setIndeterminateProgressTask:@"creating instance of csound..."];
-    //NSLog(@"%@", commonParameters);
 	
-	if(!csound)
-		csound = csoundCreate(self);
-	
-
+	if(!csound) csound = csoundCreate(self);
 	[self writeCSD]; 
 }
 
@@ -176,27 +139,20 @@
 	
 	csoundSetScoreOffsetSeconds(csound, [[document valueForKey:@"playbackStartTime"]doubleValue]);
 	csoundCreateThread(csThread,(void*)ud); 
-    [document displayProgress:NO];
-
-//	while(!csoundPerform(csound));
-	
+    [document displayProgress:NO];	
 }
 
 -(void) csoundThreadRoutine:(CsoundPlayer *)sp {
-	//NSLog(@"csoundThreatRoutine?");
-	//csoundPerform([sp csound]);
 }
 
 
 uintptr_t csThread(void *data)  { 
-	//NSLog(@"csThread?");
 	CSUserData* udata = (CSUserData*)data; 
 	if(!udata->result) { 
 		udata->result = csoundPerform(udata->csound);
 		udata->csound = nil;
 		if(udata->result){
 			CsoundPlayer *cs = (CsoundPlayer *)udata->player;
-			//NSLog(@"\nSTOOOP\n");
 			[cs stop];
 		}
 	}       
@@ -204,7 +160,6 @@ uintptr_t csThread(void *data)  {
 }
 
 static void * csoundCallback(CSOUND * csound,int attr, const char *format, va_list valist) {
-	//NSLog(@"callback?");
 	return 0;
 }
 
@@ -218,7 +173,6 @@ static void * csoundCallback(CSOUND * csound,int attr, const char *format, va_li
     NSLog(@"CSoundPlayer:stopped");
 	[self setIsPlaying:NO];
 	    [document displayProgress:NO];
-	//csoundDestroy(csound);
 }
 
 
@@ -229,11 +183,11 @@ static void * csoundCallback(CSOUND * csound,int attr, const char *format, va_li
 
 -(NSArray *)excludedParameters{
 
-	return [NSArray arrayWithObjects:@"type", @"nonStandardReadIn", @"resampled", @"sampleRate", @"samplesPerWindow", @"windowDuration", @"offsetKeys", @"id", @"date", @"color", @"subObjects", @"startOffset", @"volumeOffset", @"start", @"volume", @"duration", @"compatible", @"superObject", nil];
+	return [NSArray arrayWithObjects:@"type", @"nonStandardReadIn", @"resampled", @"sampleRate", @"samplesPerWindow", @"windowDuration", @"offsetKeys", @"id", @"date", @"color", @"subObjects", @"startOffset", @"volumeOffset", @"start", @"volume", @"duration", @"compatible", @"superObject", @"pitchOffset", @"centOffset", nil];
 }
 
 -(BOOL)excludedParametersInclude:(NSString *)pam{
-
+    
 	for(NSString * s in [self excludedParameters]){
 	
 		if ([s isEqualToString:pam])
@@ -274,16 +228,15 @@ static void * csoundCallback(CSOUND * csound,int attr, const char *format, va_li
 	[csd appendFormat:@"<CsoundSynthesizer>\n<CsInstruments>\n"];
 	[self writeOrc:csd];
 	
-	[csd appendFormat:@"</CsInstruments>\n<CsScore>\n"];
-	
-	[self writeSco:csd];
+	[csd appendFormat:@"\n\n</CsInstruments>\n<CsScore>\n"];
+	//[self writeSco:csd];
+    [csd appendString:[self valueForKey:@"scoreString"]];
 	[csd appendFormat:@"\n\n</CsScore>\n</CsoundSynthesizer>\n"];
 	NSError * err;
 	if(![csd writeToFile:@"/tmp/quince.csd" atomically:YES encoding:NSUTF8StringEncoding error:&err]){
 		NSLog(@"could not write csd!");
 		NSLog(@"%@", err);
 	}
-	//NSLog(@"\n\n\n\n\n%@", csd);
 	[csd release];
 }
 
@@ -291,18 +244,6 @@ static void * csoundCallback(CSOUND * csound,int attr, const char *format, va_li
 -(void)writeOrc:(NSMutableString *)csd{
 	[document setIndeterminateProgressTask:@"writing orc..."];
     [document displayProgress:YES];
-    
-	/* [csd appendFormat:@"\n\n\nsr = 44100\nkr = 44100\nksmps = 1\nnchnls = 2\n\n"];
-		 //instruments
-		 [csd appendFormat:@";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n\n"];
-		 [csd appendFormat:@"instr 1			;knacks\n\n"];
-		 [csd appendFormat:@"iamp\t=\tampdb(p4+90)\n"];
-		 [csd appendFormat:@"kenv\tlinseg\tiamp, .01, 0\n"];
-		 [csd appendFormat:@"a1\trand\tkenv\n"];
-		 [csd appendFormat:@"\touts\ta1, a1\n"];
-		 [csd appendFormat:@"endin\n\n"];
-	 */
-	
 	[csd appendString:[orcView string]];
 }
 
@@ -314,30 +255,27 @@ static void * csoundCallback(CSOUND * csound,int attr, const char *format, va_li
 	[csd appendFormat:@"f1 0 4096 10 1\n\n\n;i#     start           dur          vol      "];
 	for(NSString * s in commonParameters)
 		[csd appendFormat:@"%@     ", s ];
-	
+	int mode;
 	[csd appendFormat:@"\n\n\n"];
 	
 	for(QuinceObject * q in flatQuinceList){
 		if([q isOfType:@"envelope"]);
 		else{
-			[csd appendFormat:@"i1     %f     %f     %f     ", [[q valueForKey:@"start"]doubleValue], [[q valueForKey:@"duration"]doubleValue], [[q valueForKey:@"volume"]doubleValue]];
+            mode = [self modeForQuince:q];
+ 			[csd appendFormat:@"i%d     %f     %f     %f     ", mode, [[q valueForKey:@"start"]doubleValue], [[q valueForKey:@"duration"]doubleValue], [[q valueForKey:@"volume"]doubleValue]];
 			for(NSString * s in commonParameters){
 				id val = [q valueForKey:s];
-				
-				if([s isEqualToString:@"audioFileName"] || [s isEqualToString:@"mediaFileName"]){
+				if([s isEqualToString:@"audioFileName"] || [s isEqualToString:@"mediaFileName"])
 					val = [[document objectWithValue:[q valueForKey:s] forKey:@"name"]valueForKey:@"filePath"];
-				}
 				
-				//NSLog(@"%@", [val className]);
 				if(val){
 					if([[val className]isEqualToString:@"NSCFString"])
 						[csd appendFormat:@"\"%@\"   ", val];
 					else
 						[csd appendFormat:@"%@   ", val];
 				}
-				else {
+				else 
 					[csd appendFormat:@"0   "];
-				}
 			}
 			[csd appendFormat:@"\n"];
 		}
@@ -355,35 +293,9 @@ static void * csoundCallback(CSOUND * csound,int attr, const char *format, va_li
 	NSMutableString * score = [[[NSMutableString alloc]init]autorelease];
 	[self writeSco:score];
     [self setValue:score forKey:@"scoreString"];
-//	[scoreView setString:score];
 	[[self window]makeKeyAndOrderFront:nil];
 
     [document displayProgress:NO];
-}
-
--(IBAction)Clicks:(id)sender{
-
-    [self setValue:[self valueForKey:@"clickOrc"] forKey:@"orcString"];
-}
-
--(IBAction)SampWin:(id)sender{
-
-    [self setValue:[self valueForKey:@"winOrc"] forKey:@"orcString"];	
-}
-
--(IBAction)Pitches:(id)sender{
- 
-    [self setValue:[self valueForKey:@"pitchOrc"] forKey:@"orcString"];
-	
-}
--(IBAction)Custom:(id)sender{
-   
-    [self setValue:[self valueForKey:@"customOrc"] forKey:@"orcString"];
-}
-
--(IBAction)Glissando:(id)sender{
-
-    [self setValue:[self valueForKey:@"glissOrc"] forKey:@"orcString"];
 }
 
 -(NSDictionary *)settings{
@@ -395,7 +307,6 @@ static void * csoundCallback(CSOUND * csound,int attr, const char *format, va_li
 }
 
 -(void)setSettings:(NSDictionary *)settings{
-	//[orcView setString:[NSString stringWithString:[settings valueForKey:@"orc"]]];
     [self setValue:[settings valueForKey:@"orc"] forKey:@"orcString"];
 }
 
@@ -405,98 +316,62 @@ static void * csoundCallback(CSOUND * csound,int attr, const char *format, va_li
 
 }
 
--(IBAction)saveCustomOrc:(id)sender{
-   
-    [self setValue: [[orcView string]copy]/*[self valueForKey:@"orcString"]*/ forKey:@"customOrc"];        
-}
-
 -(void)setOrcs{
-
-    [self setClickOrc];
-    [self setWinOrc];    
-    [self setPitchOrc];
-    [self setGlissOrc];
-    [self setCustomOrc];
+    NSMutableString * orc = [[[NSMutableString alloc]init] autorelease];
+    [self writeHeader:orc];
+    [self setWinOrc:orc];  
+    [self setClickOrc:orc];
+    [self setGlissOrc:orc];
+    [self setPitchOrc:orc];
+    [self setValue:orc forKey:@"orcString"];
 }
 
--(void)setClickOrc{
+-(void)setClickOrc:(NSMutableString *)orc{
 
-	NSMutableString * orc = [[NSMutableString alloc]init];
-	[orc appendFormat:@"\n\n\nsr = 44100\nkr = 44100\nksmps = 1\nnchnls = 2\n\n"];
+	int inum = [self instrumentNumberForMode:@"Clicks"];
 	//instruments
 	[orc appendFormat:@";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n\n"];
-	[orc appendFormat:@"instr 1			;Clicks\n\n"];
+	[orc appendFormat:@"instr %d			;Clicks\n\n", inum];
 	[orc appendFormat:@"iamp\t=\tampdb(p4+90)\n"];
 	[orc appendFormat:@"kenv\tlinseg\tiamp, .01, 0\n"];
 	[orc appendFormat:@"a1\trand\tkenv\n"];
 	[orc appendFormat:@"\touts\ta1, a1\n"];
 	[orc appendFormat:@"endin\n\n"];
-    [self setValue:orc forKey:@"clickOrc"];
-    //	[orcView setString:orc];
+
 }
 
--(void)setWinOrc{
-	NSMutableString * orc = [[NSMutableString alloc]init];
-	[orc appendFormat:@"\n\n\nsr = 44100\nkr = 44100\nksmps = 1\nnchnls = 2\n\n"];
-	//instruments
-	[orc appendFormat:@"instr 1			;Windowing\n\n"];
+-(void)setWinOrc:(NSMutableString *)orc{
 	
+    int inum = [self instrumentNumberForMode:@"AudioFiles"];
+	//instruments
+	[orc appendFormat:@"instr %d			;AudioFiles\n\n", inum];
 	[orc appendFormat:@"iamp\t=\tampdb(p4)\n"];
 	[orc appendFormat:@"a1\tdiskin\tp8, 1, p2\n"];
 	[orc appendFormat:@"kenv\tlinseg\t0, .004, 1, p3-.008, 1, .004, 0\n"];
 	[orc appendFormat:@"\t\touts a1*kenv*iamp, a1*kenv*iamp\n"];
 	[orc appendFormat:@"endin\n\n"];
-	
-    [self setValue:orc forKey:@"winOrc"];
-	//[orcView setString:orc];
-	
 }
--(void)setPitchOrc{
-	NSMutableString * orc = [[NSMutableString alloc]init];
-	[orc appendFormat:@"\n\n\nsr = 44100\nkr = 44100\nksmps = 1\nnchnls = 2\n\n"];
+
+-(void)setPitchOrc:(NSMutableString *)orc{
+
+    
+    int inum = [self instrumentNumberForMode:@"Pitches"];
 	//instruments
 	[orc appendFormat:@";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n\n"];
-	[orc appendFormat:@"instr 1			;Pitches\n\n"];
+	[orc appendFormat:@"instr %d			;Pitches\n\n", inum];
 	[orc appendFormat:@"iamp\t=\tampdb(p4+90)\n"];
 	[orc appendFormat:@"kenv\tlinseg\t0, .005, 1, p3-.01, 1, .005, 0\n"];
 	[orc appendFormat:@"a1\toscil\tiamp, p7, 1\n"];
 	[orc appendFormat:@"\touts\ta1*kenv, a1*kenv\n"];
-	[orc appendFormat:@"endin\n\n"];
-	//[orcView setString:orc];
-    [self setValue:orc forKey:@"pitchOrc"];
+	[orc appendFormat:@"endin\n\n"];	
+}
+
+-(void)setGlissOrc:(NSMutableString *)orc{
 	
-}
--(void)setCustomOrc{
-    
-
-	NSMutableString * orc = [self valueForKey:@"customOrc"];
-    
-    
-    orc = [[NSMutableString alloc]init];
-    
-    [orc appendFormat:@";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n"];
-    [orc appendFormat:@";;;;;;;; PLEASE CLICK ON \"SAVE CUSTOM\" TO SAVE YOUR CUSTOM ORC!!!!;;;;\n"];
-    [orc appendFormat:@";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n\n"];
-    [orc appendFormat:@"\n\n\nsr = 44100\nkr = 44100\nksmps = 1\nnchnls = 2\n\n"];
+    int inum = [self instrumentNumberForMode:@"Glissando"];	
     //instruments
-    [orc appendFormat:@";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n\n"];
-    [orc appendFormat:@"instr 1			;\n\n"];
-    
-    
-    [orc appendFormat:@"\touts\ta1, a1\n"];
-    [orc appendFormat:@"endin\n\n"];
-    
-       
-    [self setValue:orc forKey:@"customOrc"];
-
-}
-
--(void)setGlissOrc{
-	NSMutableString * orc = [[NSMutableString alloc]init];
-	[orc appendFormat:@"\n\n\nsr = 44100\nkr = 44100\nksmps = 1\nnchnls = 2\n\n"];
-	//instruments
 	[orc appendFormat:@";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n\n"];
-    [orc appendFormat:@"instr 1			;glissando\n\n"];
+    [orc appendFormat:@"instr %d			;Glissando\n\n", inum];
 	[orc appendFormat:@"iamp\t=\tampdb(p4+90)\n"];
 	[orc appendFormat:@"ifl\t=\tp7\n"];
 	[orc appendFormat:@"ifh\t=\tp8\n"];
@@ -509,8 +384,68 @@ static void * csoundCallback(CSOUND * csound,int attr, const char *format, va_li
 	[orc appendFormat:@"a1\toscil\tiamp, kfreq, 1\n"];
 	[orc appendFormat:@"\touts\ta1*kenv, a1*kenv\n"];
 	[orc appendFormat:@"endin\n\n"];
+}
+
+-(void)writeHeader:(NSMutableString *)s{
+	[s appendFormat:@"\nsr = 44100\nkr = 44100\nksmps = 1\nnchnls = 2\n\n\n\n"];
+}
+
+-(int)instrumentNumberForMode:(NSString *)mode{
+
+    return [[[[self valueForKey:@"modes"]valueForKey:mode]valueForKey:@"instrumentNumber"]intValue];
+}
+
+-(int)modeForQuince:(QuinceObject *)q{
+
+    int mode;
+    NSString * v = [q valueForKey:@"csoundMode"];
+
+    if(v) mode = [self instrumentNumberForMode:v];
     
-    [self setValue:orc forKey:@"glissOrc"];
+    v = [q valueForKey:@"csoundInstrumentNumber"];
+    if(v) mode = [v intValue];
+    
+    if(mode >0)
+        return mode;
+    
+    return [[self valueForKey:@"defaultMode"]intValue];
+}
+
+-(IBAction)setDefaultMode:(id)sender{
+
+    [self setValue:[NSNumber numberWithInt:[self instrumentNumberForMode:[modeMenu titleOfSelectedItem]]] forKey:@"defaultMode"];
+   
+    [document displayProgress:YES];
+	[self prepare];
+	NSMutableString * score = [[[NSMutableString alloc]init]autorelease];
+	[self writeSco:score];
+    [self setValue:score forKey:@"scoreString"];
+    [document displayProgress:NO];
+}
+
+-(void)initModes{
+
+    NSArray * modes = [[NSArray alloc]initWithObjects:@"AudioFiles", @"Clicks", @"Glissando", @"Pitches", nil];
+    NSMutableDictionary * modeDicts = [[[NSMutableDictionary alloc ]init]autorelease];
+    NSMutableDictionary * singleModeDict;
+    NSMenuItem * item;
+    int i = 1;
+    for(NSString * s in modes){
+        item = [[[NSMenuItem alloc]init]autorelease];
+        [item setTitle:s];
+        [item setTarget:self];
+        [item setAction:@selector(setDefaultMode:)];
+        [[modeMenu menu] addItem:item];
+        
+        singleModeDict = [[[NSMutableDictionary alloc]init]autorelease];
+        
+        [singleModeDict setValue:s forKey:@"name"];
+        [singleModeDict setValue:[NSNumber numberWithInt:i] forKey:@"instrumentNumber"];
+        
+        [modeDicts setValue:singleModeDict forKey:s];
+        i++;
+    }
+    [self setValue:modeDicts forKey:@"modes"];
 }
 
 @end
