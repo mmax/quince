@@ -36,6 +36,7 @@
 	IBOutlet NSWindow * window;
 	IBOutlet NSTextField * tempoField;
 	IBOutlet NSButton * pitchesButton;
+	IBOutlet NSButton * glissandoButton;    
 	float outTempo;
 	NSMutableArray * topKeys;
 	NSMutableArray * bottomKeys;
@@ -47,6 +48,7 @@
 	NSMutableArray * flatGrid;
 	int voice;
 	BOOL pitches;
+    BOOL glissando;
 	long initialEventsCount;
 }
 
@@ -70,11 +72,14 @@ BOOL weWantKey(NSString * key);
 -(NSString *)createStringFor5RestsOfMeasure:(int)measure;
 -(NSString *)createStringForRestOfMeasure:(int)measure count:(int)times;
 -(NSString *)getPitchStringForEvent:(QuinceObject *)event;
+-(NSString *)getPitchStringForEvent:(QuinceObject *) event glissandoStart:(BOOL)b;
 -(int)getMeasureForTime:(double)start;
 -(int)getLockIndexOfTime:(double)time inMeasure:(int)measure;
 -(int)eventWithMeasure:(int)measure inSameSecondAfter:(double)time afterEvent:(int)index;
 //-(int)createStringForEvent:(NSMutableArray *)seq start:(double)searchStart atEvent:(int)index withMeasure:(int)measure;
 -(int) createStringForEventAtIndex:(int)index start:(double)searchStart withMeasure:(int)measure;
+-(NSString *)glissandoTupletStartString;
+-(NSString *)glissandoEndNoteForEvent:(QuinceObject *)event withMeasure:(int)measure times:(int)times;
 -(NSString *) createInfoStringForEvent:(QuinceObject *)event;
 -(void)quantizeMint:(QuinceObject *)candidate;
 -(BOOL) numberInFlatGrid:(NSNumber *)c;

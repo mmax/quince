@@ -36,6 +36,7 @@
 		topKeys = [[NSMutableArray alloc]init];
 		bottomKeys = [[NSMutableArray alloc]init];					
 		lilly = [[NSMutableString alloc]init];
+        glissando = NO;
 		//pitches = YES;
 	}
 	return self;
@@ -76,6 +77,7 @@
 -(IBAction)export:(id)sender{
 	
 	pitches = [pitchesButton state]==NSOnState ? YES : NO;
+    glissando = pitches ? ([glissandoButton state]== NSOnState ? YES : NO) : NO;
 	[window orderOut:nil];
 	NSSavePanel* sp = [NSSavePanel savePanel];
 	[sp setRequiredFileType:@"ly"];
@@ -376,7 +378,7 @@ double maxabs(double d){return d<0?d*(-1):d;}
 -(int) createStringForEventAtIndex:(int)index start:(double)searchStart withMeasure:(int)measure{//second is the time to start, index is the event to use
 	
 	//NSLog(@"createStringForEventAtIndex:");
-	// we can, at this point, be sure that the event at INDEX is either in a bar which is already already open, with MEASURE, OR that it starts in another second (if !measure)
+	// we can, at this point, be sure that the event at INDEX is either in a bar which is already open, with MEASURE, OR that it starts in another second (if !measure)
 	// events to fill up a bar are called from within this method, events to start in another second should be called from outside
 	[self setProgressWithEventsCount:[events count]];
 	NSString* tupletStart;
@@ -417,7 +419,12 @@ double maxabs(double d){return d<0?d*(-1):d;}
 	int times = [[event duration]doubleValue] > ((measure-lockIndex)*(1.0/measure)) ? (measure-lockIndex) : [[event duration]doubleValue]/(1.0/measure)+0.5;// was : 1;
 	
 	if(times ==0)times = 1;
-	
+
+	// NEW GLISS
+    if(glissando && [event valueForKey:@"glissandoDirection"])
+        [self toFile:[self glissandoTupletStartString]];
+    //
+
 	if(times==5){
 		[self toFile:[NSString stringWithFormat:@"%@%@~%@", pitchString, [self durationStringForMeasure:measure times:3], infoString]];
 		[self toFile:[NSString stringWithFormat:@"%@%@", pitchString, [self durationStringForMeasure:measure times:2]]];
@@ -432,6 +439,13 @@ double maxabs(double d){return d<0?d*(-1):d;}
 	if(lockIndex+times== measure){
 		if(remainingDur>0.001)
 			[self toFile:@"~"];
+        //NEW GLISS
+        else if(glissando && [event valueForKey:@"glissandoDirection"]){
+            [self glissandoEndNoteForEvent:event withMeasure:measure times:times];
+            [self toFile:@" } "];
+        }
+        //
+        
 		[self toFile:tupletEnd];
 	}
 	while(remainingSeconds--){
@@ -458,7 +472,13 @@ double maxabs(double d){return d<0?d*(-1):d;}
 		float timesF = remainingDurFractionalPart / measureLength;
 		times = timesF+0.5;			// very dirty!!!!
 		//NSLog(@"irgendwo hier muss es ja sein...");
-		if(times==5){
+		
+        // NEW GLISS
+        if(glissando && [event valueForKey:@"glissandoDirection"])
+            [self toFile:[self glissandoTupletStartString]];
+        //
+
+        if(times==5){
 			
 			[self toFile:[NSString stringWithFormat:@"%@%@~", pitchString, [self durationStringForMeasure:measure times:3]]];
 			[self toFile:[NSString stringWithFormat:@"%@%@", pitchString, [self durationStringForMeasure:measure times:2]]];
@@ -472,6 +492,14 @@ double maxabs(double d){return d<0?d*(-1):d;}
 	
 	int i=index+1;
 	if(times == measure){
+        
+        //NEW GLISS
+        if(glissando && [event valueForKey:@"glissandoDirection"]){
+            [self glissandoEndNoteForEvent:event withMeasure:measure times:times];
+            [self toFile:@" } "];
+        }
+        //
+        
 		[self toFile:tupletEnd];
 		nextSec = end+0.9;
 	}
@@ -493,6 +521,31 @@ double maxabs(double d){return d<0?d*(-1):d;}
 	[events removeObject:event];
 	//NSLog(@"createStringForEventAtIndex:DONE");
 	return nextSec;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-(NSString *)glissandoTupletStartString{
+
+    return [NSString stringWithFormat:@"\n\\once \\override TupletNumber #'transparent = ##t\n\\once \\override TupletBracket #'transparent = ##t \\times 2/3{ "];
+}
+
+-(NSString *)glissandoEndNoteForEvent:(QuinceObject *)event withMeasure:(int)measure times:(int)times{
+
+    
+    NSString * pitchString = [self getPitchStringForEvent:event glissandoStart:NO];
+    NSMutableString * s = [NSMutableString stringWithFormat:@"\n\\once \\set fontSize = #-6 \\once \\override Stem #'transparent = ##t\n"];
+    NSMutableString * c = [NSMutableString string];
+    
+    if(times==5){
+		[c appendFormat:@"\\glissando %@%@~%@", pitchString, [self durationStringForMeasure:measure times:3]];
+        [c appendString:s];
+		[c appendFormat:@"%@%@", pitchString, [self durationStringForMeasure:measure times:2]];
+	}
+	else {
+		[c appendFormat:@" \\glissando %@%@%@", pitchString, [self durationStringForMeasure:measure times:times]] ;
+	}
+    return c;
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -611,16 +664,34 @@ double maxabs(double d){return d<0?d*(-1):d;}
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 -(NSString *)getPitchStringForEvent:(QuinceObject *) event {
+    return [self getPitchStringForEvent:event glissandoStart:YES];
+}
 
-	int midi = [[event valueForKey:@"pitch"]intValue];
-	int cent = [[event valueForKey:@"cent"]intValue];
+-(NSString *)getPitchStringForEvent:(QuinceObject *) event glissandoStart:(BOOL)b {
+
+	
 	NSString * quarterToneSuffix;
 	NSString * octaveString;
 	NSString * pitchString;	
 	NSString * clefString = [NSString string];
+    
+    int midi, cent, octave, pitch, dir = [[event valueForKey:@"glissandoDirection"]intValue];
+    
+    if((dir>0 && b) || (dir==0 && !b)){
+       midi = [[event valueForKey:@"pitch"]intValue];
+       cent = [[event valueForKey:@"cent"]intValue];
+        
+    }
+    else{//if(((dir==0) && b) || (dir > 0 && !b)){
+    
+        midi = [event fToM:[[event valueForKey:@"frequencyB"]doubleValue]];
+        cent = [event fToC:[[event valueForKey:@"frequencyB"]doubleValue]];
+    }
+    
 
-	int octave = midi / 12;
-	int pitch = midi % 12;
+    
+	octave = midi / 12;
+	pitch = midi % 12;
 	
 	if (!pitches)
 		return [NSString stringWithFormat:@"b'"];
