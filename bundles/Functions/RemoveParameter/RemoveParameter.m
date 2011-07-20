@@ -31,7 +31,7 @@
 
 -(RemoveParameter *)init{
 	
-	if(self = [super init]){
+	if((self = [super init])){
 		[NSBundle loadNibNamed:@"RemoveParameterWindow" owner:self];
 	}
 	return self;
