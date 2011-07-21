@@ -248,6 +248,7 @@ BOOL weWantKey(NSString * key){
 	if(!pitches)
 		[self toFile:@"\t\\override Staff.StaffSymbol #'line-count = 1\n \t\\override Staff.StaffSymbol #'line-count = 1"];
 	[self toFile:@"\t\\override TextScript #'padding = #1.2\n"];
+    [self toFile:@"\t#(set-accidental-style 'forget)\n"];
 	[self toFile:@"\t\n\n"];	//[self toFile:@"\t\\fatText\n\n"];
 	
 	int next=0, event =0;
@@ -386,7 +387,8 @@ double maxabs(double d){return d<0?d*(-1):d;}
 	QuinceObject* event = [events objectAtIndex:index];
 	NSString* pitchString = [self getPitchStringForEvent:event];
 	NSString* infoString=[self createInfoStringForEvent:event];
-	
+    NSString * scale = @"";
+    
 	if(measure<=0)
 		measure =  [self getMeasureForTime:[[event valueForKey:@"start"]doubleValue]];
 	
@@ -417,49 +419,83 @@ double maxabs(double d){return d<0?d*(-1):d;}
 		lockCount+=rests;
 	}
 	int times = [[event duration]doubleValue] > ((measure-lockIndex)*(1.0/measure)) ? (measure-lockIndex) : [[event duration]doubleValue]/(1.0/measure)+0.5;// was : 1;
-	
+	//NSLog(@"times: %d, measure:%d, lockIndex:%d, dur:%f", times, measure, lockIndex, [[event duration]floatValue]);
 	if(times ==0)times = 1;
+    
+    remainingDur = 	[[event duration]doubleValue] - (1.0/measure)*times;
+    
+    BOOL glissNow = (glissando && [event valueForKey:@"glissandoDirection"]) && remainingDur  <= 0.00001 ? YES:NO;//([[event duration]floatValue]<=1)) ? YES : NO;
 
 	// NEW GLISS
-    if(glissando && [event valueForKey:@"glissandoDirection"])
-        [self toFile:[self glissandoTupletStartString]];
+    if(glissNow){
+        NSLog(@"glissStart #429");
+        //[self toFile:[self glissandoTupletStartString]];
+        scale = [NSString stringWithFormat:@"*1/2"];
+    }
     //
 
 	if(times==5){
-		[self toFile:[NSString stringWithFormat:@"%@%@~%@", pitchString, [self durationStringForMeasure:measure times:3], infoString]];
-		[self toFile:[NSString stringWithFormat:@"%@%@", pitchString, [self durationStringForMeasure:measure times:2]]];
+		[self toFile:[NSString stringWithFormat:@"%@%@%@~%@", pitchString, [self durationStringForMeasure:measure times:3], scale, infoString]];
+		[self toFile:[NSString stringWithFormat:@"%@%@%@", pitchString,[self durationStringForMeasure:measure times:2],scale ]];
 	}
 	else {
-		[self toFile:[NSString stringWithFormat:@"%@%@%@", pitchString, [self durationStringForMeasure:measure times:times], infoString]] ;
+		[self toFile:[NSString stringWithFormat:@"%@%@%@%@", pitchString, [self durationStringForMeasure:measure times:times],scale, infoString]] ;
 	}
-	remainingDur = 	[[event duration]doubleValue] - (1.0/measure)*times;
+	//remainingDur = 	[[event duration]doubleValue] - (1.0/measure)*times;
 	int remainingSeconds = remainingDur;
 	remainingDurFractionalPart = remainingDur-remainingSeconds;
 	
 	if(lockIndex+times== measure){
 		if(remainingDur>0.001)
 			[self toFile:@"~"];
+        
         //NEW GLISS
-        else if(glissando && [event valueForKey:@"glissandoDirection"]){
-            [self glissandoEndNoteForEvent:event withMeasure:measure times:times];
-            [self toFile:@" } "];
+        else if(glissNow){NSLog(@"gliss #448");
+            [self toFile:[self glissandoEndNoteForEvent:event withMeasure:measure times:times]];
+            //[self toFile:@" } "];
         }
         //
         
 		[self toFile:tupletEnd];
 	}
+    else if(glissNow){
+        NSLog(@"gliss # 459");
+        [self toFile:[self glissandoEndNoteForEvent:event withMeasure:measure times:times]];
+        //[self toFile:@" } "];
+    }
+    
+    
+    glissNow = (!glissNow && glissando && [event valueForKey:@"glissandoDirection"]) ? YES : NO;
+    
 	while(remainingSeconds--){
 		//NSLog(@"remainingSeconds?");
-		[self toFile:[NSString stringWithFormat:@"\t%@4", pitchString]];
-		//NSLog(@"remainingSeconds: no");
-		if(remainingDurFractionalPart>0){
+		
+        if(glissNow && remainingSeconds == 0 && remainingDurFractionalPart<=0.000001 && remainingDurFractionalPart >=0){
+            NSLog(@"gliss start #462, reSec:%d, frac:%f", remainingSeconds, remainingDurFractionalPart);
+            [self toFile:[self glissandoTupletStartString]];
+        }
+		
+        [self toFile:[NSString stringWithFormat:@"\t%@4", pitchString]];
+
+        if(glissNow && remainingSeconds == 0 && remainingDurFractionalPart<=0.000001 && remainingDurFractionalPart >0){
+            NSLog(@"gliss #467: remainingSec: %d, remainingFracPart: %f", remainingSeconds, remainingDurFractionalPart);
+            [self toFile:[self glissandoEndNoteForEvent:event withMeasure:measure times:times]];
+            [self toFile:@" } "];
+        }
+        
+        //NSLog(@"remainingSeconds: no");
+        
+        if(remainingSeconds > 0){
+        	[self toFile:@"~"];
+        }
+		else if(remainingDurFractionalPart>0){
 			[self toFile:@"~"];
 			[self toFile:@"\n"];	
 		}
 		else tupletEnd = [self getTupletEndStringForMeasure:1];
 	}
-	if(remainingDurFractionalPart>0.000001){ // due to rounding errors...
-		//NSLog(@"LilyPondExport:createStringForEventAtIndex:... in rounding error correction block. should be avoided!");
+	if(remainingDurFractionalPart>0.000001){ 
+		NSLog(@"LilyPondExport:createStringForEventAtIndex:... in rounding error correction block. should be avoided!");
 		measure = [self getMeasureForTime:remainingDurFractionalPart];
 		double measureLength = 1.0 / measure;
 		tupletStart = [self getTupletStartStringForMeasure:measure];
@@ -472,20 +508,22 @@ double maxabs(double d){return d<0?d*(-1):d;}
 		float timesF = remainingDurFractionalPart / measureLength;
 		times = timesF+0.5;			// very dirty!!!!
 		//NSLog(@"irgendwo hier muss es ja sein...");
-		
+		glissNow = (glissando && [event valueForKey:@"glissandoDirection"]) ? YES : NO;
+        scale = @"";
         // NEW GLISS
-        if(glissando && [event valueForKey:@"glissandoDirection"])
-            [self toFile:[self glissandoTupletStartString]];
+        if(glissNow){NSLog(@"glissStart #501");
+            scale = [NSString stringWithFormat:@"*1/2 "];//[self toFile:[self glissandoTupletStartString]];
+        }
         //
 
         if(times==5){
 			
-			[self toFile:[NSString stringWithFormat:@"%@%@~", pitchString, [self durationStringForMeasure:measure times:3]]];
-			[self toFile:[NSString stringWithFormat:@"%@%@", pitchString, [self durationStringForMeasure:measure times:2]]];
+			[self toFile:[NSString stringWithFormat:@"%@%@%@~", pitchString, [self durationStringForMeasure:measure times:3], scale]];
+			[self toFile:[NSString stringWithFormat:@"%@%@%@", pitchString, [self durationStringForMeasure:measure times:2],scale]];
 			
 		}
 		else{
-			[self toFile:[NSString stringWithFormat:@"%@%@", pitchString, [self durationStringForMeasure:measure times:times]]];
+			[self toFile:[NSString stringWithFormat:@"%@%@%@", pitchString, [self durationStringForMeasure:measure times:times],scale]];
 		}
 		//NSLog(@"oder doch nicht?");
 	}
@@ -494,9 +532,11 @@ double maxabs(double d){return d<0?d*(-1):d;}
 	if(times == measure){
         
         //NEW GLISS
-        if(glissando && [event valueForKey:@"glissandoDirection"]){
-            [self glissandoEndNoteForEvent:event withMeasure:measure times:times];
-            [self toFile:@" } "];
+        if(glissNow){
+            [self toFile:[self glissandoEndNoteForEvent:event withMeasure:measure times:times]];
+            //[self toFile:@" } "];
+            glissNow = NO;
+            NSLog(@"gliss #525");
         }
         //
         
@@ -504,7 +544,11 @@ double maxabs(double d){return d<0?d*(-1):d;}
 		nextSec = end+0.9;
 	}
 	else{
-		
+		if(glissNow){
+            [self toFile:[self glissandoEndNoteForEvent:event withMeasure:measure times:times]];
+            //[self toFile:@" } "];
+            NSLog(@"gliss #535");
+        }
 		i =[self eventWithMeasure:measure inSameSecondAfter:end afterEvent:index]; 
 		if(i>0)																			
 			nextSec = [self createStringForEventAtIndex:i start:end withMeasure:measure];
@@ -525,9 +569,15 @@ double maxabs(double d){return d<0?d*(-1):d;}
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+-(NSString *)glissandoTupletStartStringForTimes:(int)times{
+return [NSString stringWithFormat:@"\n\\once \\override TupletNumber #'transparent = ##t\n\\once \\override TupletBracket #'transparent = ##t \\times %d/%d{ ", times, times*2];
+}
+    
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 -(NSString *)glissandoTupletStartString{
 
-    return [NSString stringWithFormat:@"\n\\once \\override TupletNumber #'transparent = ##t\n\\once \\override TupletBracket #'transparent = ##t \\times 2/3{ "];
+    return [NSString stringWithFormat:@"\n\\once \\override TupletNumber #'transparent = ##t\n\\once \\override TupletBracket #'transparent = ##t \\times 1/2{ "];
 }
 
 -(NSString *)glissandoEndNoteForEvent:(QuinceObject *)event withMeasure:(int)measure times:(int)times{
@@ -536,14 +586,19 @@ double maxabs(double d){return d<0?d*(-1):d;}
     NSString * pitchString = [self getPitchStringForEvent:event glissandoStart:NO];
     NSMutableString * s = [NSMutableString stringWithFormat:@"\n\\once \\set fontSize = #-6 \\once \\override Stem #'transparent = ##t\n"];
     NSMutableString * c = [NSMutableString string];
+    NSString * scale = @"*1/2";
+    if(times ==3){
+        scale =  @"*3/4";
+        times = 2;
+    }
     
     if(times==5){
-		[c appendFormat:@"\\glissando %@%@~%@", pitchString, [self durationStringForMeasure:measure times:3]];
-        [c appendString:s];
-		[c appendFormat:@"%@%@", pitchString, [self durationStringForMeasure:measure times:2]];
+		[c appendFormat:@"\\glissando %@ %@%@%@~", s, pitchString, [self durationStringForMeasure:measure times:3], scale];
+		[c appendFormat:@"%@ %@%@%@%@", s, pitchString, [self durationStringForMeasure:measure times:2],scale];
 	}
 	else {
-		[c appendFormat:@" \\glissando %@%@%@", pitchString, [self durationStringForMeasure:measure times:times]] ;
+       // [c appendString:s];
+		[c appendFormat:@" \\glissando %@ %@%@%@", s, pitchString, [self durationStringForMeasure:measure times:times], scale] ;
 	}
     return c;
 }
@@ -863,19 +918,25 @@ double maxabs(double d){return d<0?d*(-1):d;}
 			NSLog(@"start: %f startFractionalPart: %f b: %f i: %ld", start, startFractionalPart, b, i);
 		}
 	}
-	
+
 	// quantizing duration
 	if(endIntegerPart == startIntegerPart){ // wenn das event in derselben sekunde endet in der es begann, müssen wir im selben gridMeasure bleiben
 		NSArray * gridMeasure = [grid objectAtIndex:measure-1];
 		for(int i=0;i<[gridMeasure count];i++){
+            int startInteger = start;
+            float startFrac = start-startInteger;
 			b = [[gridMeasure objectAtIndex:i] doubleValue];
 			if(b>endFractionalPart && i>0){
 				a = [[gridMeasure objectAtIndex:i-1]doubleValue];
 				deltaA = endFractionalPart-a;
 				deltaB = b-endFractionalPart;
-				if (deltaA > deltaB) duration = b-start;
-				else duration = a-start;
-				if(duration < 0.01) duration = 1.0/measure;
+				if (deltaA > deltaB) duration = b-startFrac;
+				else duration = a-startFrac;
+				if(duration < 0.01) {
+                    duration = 1.0/measure;
+                    //NSLog(@"correction -> default, smallest...");
+                }
+                //NSLog(@"start: %f duration: %f a: %f b: %f i: %d", start, duration, a, b, i);
 				[candidate setValue:[NSNumber numberWithDouble:duration] forKey:@"duration"];
 				break;
 			}

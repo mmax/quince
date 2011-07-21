@@ -78,6 +78,7 @@ BOOL weWantKey(NSString * key);
 -(int)eventWithMeasure:(int)measure inSameSecondAfter:(double)time afterEvent:(int)index;
 //-(int)createStringForEvent:(NSMutableArray *)seq start:(double)searchStart atEvent:(int)index withMeasure:(int)measure;
 -(int) createStringForEventAtIndex:(int)index start:(double)searchStart withMeasure:(int)measure;
+-(NSString *)glissandoTupletStartStringForTimes:(int)times;
 -(NSString *)glissandoTupletStartString;
 -(NSString *)glissandoEndNoteForEvent:(QuinceObject *)event withMeasure:(int)measure times:(int)times;
 -(NSString *) createInfoStringForEvent:(QuinceObject *)event;
