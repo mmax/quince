@@ -36,15 +36,17 @@
 -(ChildView *)createChildViewForQuinceObjectController:(QuinceObjectController *)mc andBindWithKeysForLocationOnX:(NSString *)lx sizeOnX:(NSString *)sx locationOnY:(NSString *)ly{
 
     if(![[mc content]valueForKey:@"frequency"]){
+        //NSLog(@"GlissandoContainer: no frequency parameter, creating entry...");
         [mc createFreqEntry];
     }
 
     
     if([[mc content]valueForKey:@"frequency"] && ![[mc content]valueForKey:@"frequencyB"]){
+        //NSLog(@"GlissandoContainer: no frequencyB parameter, creating entry...");
         [mc createFreqBEntry];
     }
-    
-    return [super createChildViewForQuinceObjectController:mc andBindWithKeysForLocationOnX:lx sizeOnX:sx locationOnY:ly];
+    id result = [super createChildViewForQuinceObjectController:mc andBindWithKeysForLocationOnX:lx sizeOnX:sx locationOnY:ly];
+    return  result;
 }
 
 

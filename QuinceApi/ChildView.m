@@ -469,6 +469,28 @@
 #pragma mark controller
 
 
+-(void)setController:(QuinceObjectController *)mc andBindWithKeysForLocationOnX:(NSString *)lx sizeOnX:(NSString *)sx locationOnY:(NSString *)ly sizeOnY:(NSString *)sy{
+    controller = mc;
+   // NSLog(@"%f",[[[mc content]valueForKey:[enclosingView keyForSizeOnYAxis]] floatValue]);
+    [self bind:lx toObject:controller withKeyPath:[NSString stringWithFormat:@"selection.%@", lx] options:nil];	
+    
+   // NSLog(@"%f",[[[mc content]valueForKey:[enclosingView keyForSizeOnYAxis]] floatValue]);
+	[self bind:sx toObject:controller withKeyPath:[NSString stringWithFormat:@"selection.%@", sx] options:nil];	
+    
+  //  NSLog(@"%f",[[[mc content]valueForKey:[enclosingView keyForSizeOnYAxis]] floatValue]);
+	[self bind:ly toObject:controller withKeyPath:[NSString stringWithFormat:@"selection.%@", ly] options:nil];	
+    
+//NSLog(@"%f",[[[mc content]valueForKey:[enclosingView keyForSizeOnYAxis]] floatValue]);
+	[self bind:sy toObject:controller withKeyPath:[NSString stringWithFormat:@"selection.%@", sy] options:nil];	    
+    
+//NSLog(@"%f",[[[mc content]valueForKey:[enclosingView keyForSizeOnYAxis]] floatValue]);
+	[self bind:@"interiorColor" toObject:controller withKeyPath:[NSString stringWithFormat:@"color"] options:nil];
+    
+//NSLog(@"%f",[[[mc content]valueForKey:[enclosingView keyForSizeOnYAxis]] floatValue]);
+	//[self bind:@"startOffset" toObject:controller withKeyPath:[NSString stringWithFormat:@"selection.startOffset"] options:nil];
+	[self bind:@"muted" toObject: controller withKeyPath:@"selection.muted" options:nil];
+} // tried to make things quicker...
+
 
 -(void)setController:(QuinceObjectController *)mc andBindWithKeysForLocationOnX:(NSString *)lx sizeOnX:(NSString *)sx locationOnY:(NSString *)ly{
     controller = mc;

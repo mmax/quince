@@ -203,6 +203,7 @@
 		//NSLog(@"%@: loadObjectWithControler: content: ", [self className]);
 		//[quince log];
 //		[view setValue:[[stripController controller]valueForKey:@"volumeRange"] forKey:@"volumeRange"];
+        //NSLog(@"LayerController:loadObjectWithController:");
 		[view prepareToDisplayObjectWithController:mc];
 		
 		return YES;
@@ -332,6 +333,7 @@
 }
 
 -(void)reload{
+    //NSLog(@"%@: reload!", [self className]);
     [[self view] reload];
 }
 

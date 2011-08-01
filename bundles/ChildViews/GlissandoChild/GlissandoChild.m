@@ -26,19 +26,17 @@
 
 #import <QuinceApi/QuinceObjectController.h>
 #import "GlissandoChild.h"
-
+#import <QuinceApi/ContainerView.h>
 
 @implementation GlissandoChild
 
 -(void)setController:(QuinceObjectController *)mc andBindWithKeysForLocationOnX:(NSString *)lx sizeOnX:(NSString *)sx locationOnY:(NSString *)ly{
-   [self bind:[enclosingView keyForSizeOnYAxis] toObject:mc withKeyPath:[NSString stringWithFormat:@"selection.%@", [enclosingView keyForSizeOnYAxis]] options:nil];	
-    [super setController:mc andBindWithKeysForLocationOnX:lx sizeOnX:sx locationOnY:ly];
 
+    [super setController:mc andBindWithKeysForLocationOnX:lx sizeOnX:sx locationOnY:ly sizeOnY:[enclosingView keyForSizeOnYAxis]];
     [self unbind:@"interiorColor"];
     //[self setInteriorColor:[NSColor colorWithDeviceRed:0.1 green:.3 blue:0.3 alpha:0.4]];
     [self setInteriorColor:[NSColor colorWithDeviceRed:0.517647058823529 green:.6 blue:0.607843137254902 alpha:1]];
     [self resetCursorRects];
-   //[self bind:@"pitchRange" toObject:controller withKeyPath:[NSString stringWithFormat:@"selection.endFreq"] options:nil];	
 }
 
 

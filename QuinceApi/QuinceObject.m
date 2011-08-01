@@ -473,7 +473,7 @@
 }
 
 -(void)updateFrequencyB{
-    
+    //NSLog(@"updateFrequencyB");
     NSNumber * freq = [self valueForKey:@"frequency"];
     NSNumber * pr = [self valueForKey:@"pitchRange"];
     double st = pow(2.0, 1.0/12.0);

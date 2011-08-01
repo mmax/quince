@@ -54,7 +54,7 @@
 			<object class="NSWindowTemplate" id="1005">
 				<int key="NSWindowStyleMask">29</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{172, 156}, {917, 521}}</string>
+				<string key="NSWindowRect">{{172, 135}, {917, 521}}</string>
 				<int key="NSWTFlags">544735232</int>
 				<string key="NSWindowTitle">CsoundPlayer Settings</string>
 				<string key="NSWindowClass">NSPanel</string>
@@ -285,6 +285,7 @@
 												<string key="NSFrame">{{137, 413}, {100, 22}}</string>
 												<reference key="NSSuperview" ref="190296997"/>
 												<reference key="NSWindow"/>
+												<reference key="NSNextKeyView" ref="76061347"/>
 												<bool key="NSEnabled">YES</bool>
 												<object class="NSPopUpButtonCell" key="NSCell" id="1053856461">
 													<int key="NSCellFlags">-2076049856</int>
@@ -323,6 +324,7 @@
 												<string key="NSFrame">{{21, 418}, {114, 14}}</string>
 												<reference key="NSSuperview" ref="190296997"/>
 												<reference key="NSWindow"/>
+												<reference key="NSNextKeyView" ref="336608181"/>
 												<bool key="NSEnabled">YES</bool>
 												<object class="NSTextFieldCell" key="NSCell" id="583944438">
 													<int key="NSCellFlags">68288064</int>
@@ -348,7 +350,7 @@
 										<string key="NSFrame">{{10, 33}, {871, 435}}</string>
 										<reference key="NSSuperview" ref="746537907"/>
 										<reference key="NSWindow"/>
-										<reference key="NSNextKeyView" ref="76061347"/>
+										<reference key="NSNextKeyView" ref="601711426"/>
 									</object>
 									<string key="NSLabel">Orc</string>
 									<reference key="NSColor" ref="451803716"/>

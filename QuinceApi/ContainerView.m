@@ -721,11 +721,13 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 }
 
 -(void)reload{
+   // NSLog(@"%@: reload!", [self className]);
 	QuinceObjectController * qc = [self contentController];
 	[self prepareToDisplayObjectWithController:qc];
 }
 
 -(void)prepareToDisplayObjectWithController:(QuinceObjectController *)mc{
+    //NSLog(@"%@:prepareToDisplayObjectWithController", [self className]);
 		[self clear];
 	float widthNeeded = [[mc valueForKeyPath:@"selection.duration"]floatValue]*[[self valueForKey:@"pixelsPerUnitX"]floatValue];
 	if([self frame].size.width < widthNeeded)
@@ -780,7 +782,6 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 //////////////////////////////////////////////////
 // used by QuinceObjectController
 -(ChildView *)createChildViewForQuinceObjectController:(QuinceObjectController *)mc{
-
 	return [self createChildViewForQuinceObjectController:mc andBindWithKeysForLocationOnX:[self keyForLocationOnXAxis] sizeOnX:[self keyForSizeOnXAxis] locationOnY:[self keyForLocationOnYAxis]];
     
     /*ChildView * childView = [layerController newChildViewOfClassNamed:[self defaultChildViewClassName]];
@@ -803,8 +804,10 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 	[childView setEnclosingView:self];
 	[childView setController:mc andBindWithKeysForLocationOnX:lx sizeOnX:sx locationOnY:ly];
     
-    if(![[mc content] hasValueForKey:[self keyForLocationOnYAxis]])
+    if(![[mc content] hasValueForKey:[self keyForLocationOnYAxis]]){
+        NSLog(@"%@: ContainerView:createChildView...:contentWithoutValueForParameter:%@", [self className], [self keyForSizeOnYAxis] );
         [[mc content] setValue:[NSNumber numberWithDouble:[self minimumYValue]] forKey:[self keyForLocationOnYAxis]];
+    }
     
 	[mc registerChildView:childView];
 	//[childView setInteriorColor:[mc color]];
@@ -823,7 +826,6 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 			return mcv;
 		}
 	}
-	NSLog(@"MintContainerView: childViewWithController: no child view found for controller! controller content: %@", [mc content]);
 	return nil;
 }
 
