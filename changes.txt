@@ -1,3 +1,5 @@
+
+- added function: ExtractFrequencyVertex 
 - added glissando support for LilyPondExport
 - CsoundPlayer: new feature to assign objects to csound orc modes using parameters: "csoundMode" <String> or "csoundInstrumentNumber <number>
 - optimized performance of OneVoice_Loudest

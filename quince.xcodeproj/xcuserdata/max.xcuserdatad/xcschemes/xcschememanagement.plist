@@ -129,6 +129,11 @@
 			<key>orderHint</key>
 			<integer>13</integer>
 		</dict>
+		<key>ExtractFrequencyVertexes.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>64</integer>
+		</dict>
 		<key>FixGlissandoEndPoints.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -603,6 +608,11 @@
 			<true/>
 		</dict>
 		<key>50D3937011C837BA0080B427</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>50D3E76113E6FE6F00BA5D30</key>
 		<dict>
 			<key>primary</key>
 			<true/>

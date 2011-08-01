@@ -84,7 +84,7 @@
         quinceB = [subs objectAtIndex:i+1];
 		endA = [[quinceA end]doubleValue];
 		startB = [[quinceB valueForKey:@"start"]doubleValue];
-        if(endA > startB)
+        if(endA > startB+.001)
             return NO;       
     }
     return YES;
