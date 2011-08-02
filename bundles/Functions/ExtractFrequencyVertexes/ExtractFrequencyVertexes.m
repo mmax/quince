@@ -34,6 +34,8 @@
 	QuinceObject * source = [self objectForPurpose:@"source"];
 	QuinceObject * result = [self outputObjectOfType:@"QuinceObject"];
 	QuinceObject * qa, * qb;
+    NSString * s = [NSString stringWithFormat:@"%@_freqVertex%", [source valueForKey:@"name"]];
+    [result setValue:s forKey:@"name"];
     //double a, b;
     int dir=-1, prevDir=-666;
     NSArray * subs = [source valueForKey:@"subObjects"];
@@ -47,8 +49,12 @@
 
     [self addVertex:[subs objectAtIndex:0] toResult:result]; // init;
     dir = [self getDirectionForQuince:[subs objectAtIndex:0] and:[subs objectAtIndex:1]];
-    
+    [document setProgressTask:@"extracting..."];
+    [document displayProgress:YES];
+    float progress = 0;
     for(int i=1;i<[subs count]-1;i++){
+        progress = (100.0 / [subs count]) * i;
+        [document setProgress:progress];
         qa = [subs objectAtIndex:i];
         qb = [subs objectAtIndex:i+1];
         prevDir = dir;
@@ -59,6 +65,7 @@
     }
     
     [result update];
+    [document displayProgress:NO];
     [self done];
 }
 
