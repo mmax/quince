@@ -289,7 +289,7 @@ BOOL weWantKey(NSString * key){
 	
 	[self toFile:@">>\n"];
 	[self toFile:@"}\n"];
-	[self toFile:@"\\layout{\\context { \\RemoveEmptyStaffContext } }\n"];
+	[self toFile:@"\\layout{\\context { \\RemoveEmptyStaffContext }\\context{\\Score \\override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 64)} }\n"];
 	[self toFile:@"}\n"];
 	[self toFile:@"\\paper{ print-page-number = ##t\n\tprintfirst-page-number = ##t\n\t	 systemSeparatorMarkup = \\slashSeparator\n\tmyStaffSize = #9 	 #(define fonts (make-pango-font-tree \"Helvetica Neue Regular\" \"Helvetica Neue Regular\" \"Helvetica Neue Regular\" (/ myStaffSize 10))) \n"];
 
@@ -466,21 +466,24 @@ double maxabs(double d){return d<0?d*(-1):d;}
     
     
     glissNow = (!glissNow && glissando && [event valueForKey:@"glissandoDirection"]) ? YES : NO;
-    
-	while(remainingSeconds--){
+
+    scale = @"";
+	
+    while(remainingSeconds--){
 		//NSLog(@"remainingSeconds?");
 		
         if(glissNow && remainingSeconds == 0 && remainingDurFractionalPart<=0.000001 && remainingDurFractionalPart >=0){
             NSLog(@"gliss start #462, reSec:%d, frac:%f", remainingSeconds, remainingDurFractionalPart);
-            [self toFile:[self glissandoTupletStartString]];
+            //[self toFile:[self glissandoTupletStartString]];
+            scale = [NSString stringWithFormat:@"*1/2"];
         }
 		
-        [self toFile:[NSString stringWithFormat:@"\t%@4", pitchString]];
+        [self toFile:[NSString stringWithFormat:@"\t%@4 %@", pitchString, scale]];
 
         if(glissNow && remainingSeconds == 0 && remainingDurFractionalPart<=0.000001 && remainingDurFractionalPart >0){
             NSLog(@"gliss #467: remainingSec: %d, remainingFracPart: %f", remainingSeconds, remainingDurFractionalPart);
             [self toFile:[self glissandoEndNoteForEvent:event withMeasure:measure times:times]];
-            [self toFile:@" } "];
+            //[self toFile:@" } "];
         }
         
         //NSLog(@"remainingSeconds: no");
@@ -494,6 +497,7 @@ double maxabs(double d){return d<0?d*(-1):d;}
 		}
 		else tupletEnd = [self getTupletEndStringForMeasure:1];
 	}
+    
 	if(remainingDurFractionalPart>0.000001){ 
 		NSLog(@"LilyPondExport:createStringForEventAtIndex:... in rounding error correction block. should be avoided!");
 		measure = [self getMeasureForTime:remainingDurFractionalPart];
@@ -594,16 +598,37 @@ return [NSString stringWithFormat:@"\n\\once \\override TupletNumber #'transpare
     
     if(times==5){
 		[c appendFormat:@"\\glissando %@ %@%@%@~", s, pitchString, [self durationStringForMeasure:measure times:3], scale];
-		[c appendFormat:@"%@ %@%@%@%@", s, pitchString, [self durationStringForMeasure:measure times:2],scale];
+		[c appendFormat:@"%@ %@%@%@", s, pitchString, [self durationStringForMeasure:measure times:2],scale];
 	}
 	else {
        // [c appendString:s];
 		[c appendFormat:@" \\glissando %@ %@%@%@", s, pitchString, [self durationStringForMeasure:measure times:times], scale] ;
 	}
+    
+    //markup
+    
+    //double f = [self glissandoEndFreqForQuince:event];
+    NSString * sign;
+    
+   if ([[event valueForKey:@"glissandoEndCent"]intValue]>=0) sign = @"+";
+   else sign = @"";
+    
+    [c appendString:@"^\\markup{\\fontsize #0.1 { \\center-align{"];
+    [c appendFormat:@" \"%@%@\"}}}", sign, [NSString stringWithFormat:@"%d", [[event valueForKey:@"glissandoEndCent"]intValue]]];//[event fToC:f]]];
+    
+		
+    //
+    
     return c;
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-(double)glissandoEndFreqForQuince:(QuinceObject *)q{
+    if ([[q valueForKey:@"glissandoDirection"]intValue]==0)
+        return [[q valueForKey:@"frequency"]doubleValue];
+    return [[q valueForKey:@"frequencyB"]doubleValue];
+}
 
 -(NSString*) getTupletStartStringForMeasure:(int)measure{
 	
@@ -792,7 +817,8 @@ return [NSString stringWithFormat:@"\n\\once \\override TupletNumber #'transpare
 	}	
 	else quarterToneSuffix = [NSString stringWithFormat:@""];	
 
-	[event setValue:[NSNumber numberWithInt:cent] forKey:@"cent"];
+	if(b)[event setValue:[NSNumber numberWithInt:cent] forKey:@"cent"];
+    else[event setValue:[NSNumber numberWithInt:cent] forKey:@"glissandoEndCent"];
 
 	switch(octave) {
 			
@@ -855,12 +881,21 @@ return [NSString stringWithFormat:@"\n\\once \\override TupletNumber #'transpare
 	
 
 	NSMutableString * m = [[NSMutableString alloc]init];
-
+    NSString * sign = @"";
 	BOOL dynamic = NO;
 	if([topKeys count]){ 
 		[m appendString:@"^\\markup{\\fontsize #0.1 { \\center-align{"];
-		for(NSString * key in topKeys)
-			[m appendFormat:@" \"%@\"", [self getStringValueOf:[event valueForKey:key]]];
+		for(NSString * key in topKeys){
+            
+            if([key isEqualToString:@"cent"]){
+                if ([[event valueForKey:key]intValue]>0)
+                    sign = @"+";
+                else
+                    sign = @"";
+            }
+            
+			[m appendFormat:@" \"%@%@\"", sign, [self getStringValueOf:[event valueForKey:key]]];
+        }
 		[m appendString:@"}}}"];
 	}
 	if([bottomKeys count]){ 

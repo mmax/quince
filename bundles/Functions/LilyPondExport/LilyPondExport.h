@@ -81,6 +81,7 @@ BOOL weWantKey(NSString * key);
 -(NSString *)glissandoTupletStartStringForTimes:(int)times;
 -(NSString *)glissandoTupletStartString;
 -(NSString *)glissandoEndNoteForEvent:(QuinceObject *)event withMeasure:(int)measure times:(int)times;
+-(double)glissandoEndFreqForQuince:(QuinceObject *)q;
 -(NSString *) createInfoStringForEvent:(QuinceObject *)event;
 -(void)quantizeMint:(QuinceObject *)candidate;
 -(BOOL) numberInFlatGrid:(NSNumber *)c;
