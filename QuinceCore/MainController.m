@@ -96,8 +96,8 @@
 	// scrolling is synchronized in the vertical plane
 	// so only modify the y component of the offset
 	newOffset.y = changedBoundsOrigin.y;
-	 //NSLog(@"scroll: y: %f", newOffset.y);
-	[stripControlScrollContent scrollToPoint:newOffset];
+   // NSLog(@"scroll: y: %f", newOffset.y);
+   [stripControlScrollContent scrollToPoint:newOffset];
 }
 
 
@@ -191,6 +191,8 @@
 	[[doc undoManager]registerUndoWithTarget:self selector:@selector(removeStripWithStripController:) object:stripController];
 	[[doc undoManager]setActionName:@"New Strip"];
 	
+    [self setValue:[self valueForKey:@"pixelsPerUnitX"]forKey:@"pixelsPerUnitX"];
+    
 	return [stripController autorelease];
 }
 
@@ -561,14 +563,19 @@
 -(void)drawCursorForTime:(double)time{
 	cursorTime = time;
 
-	float x = time*[[self valueForKey:@"pixelsPerUnitX"] doubleValue];
-	NSPoint p = NSMakePoint(x, [[[doc mainScrollView]contentView] bounds].origin.y+10);
-	if([doc isPlaying] && !NSPointInRect(p, [[[doc mainScrollView]contentView] bounds])){
-		/* NSLog(@"MainController: drawCursorForTime: scrolling...p:%@ bounds:%@", 
-					  [NSValue valueWithPoint:p],[NSValue valueWithRect:[[[doc mainScrollView]contentView] bounds]]);
-				 */
-		float y = [[[doc mainScrollView]contentView] bounds].origin.y;
-		[mainScrollerDocumentView scrollPoint:NSMakePoint(x, y)];
+	float min, max, y, x = time*[[self valueForKey:@"pixelsPerUnitX"] doubleValue];
+	//NSPoint p = NSMakePoint(x+10, [[[doc mainScrollView]contentView] bounds].origin.y+10);
+    min = [[[doc mainScrollView]contentView] bounds].origin.x;
+    max = [[[doc mainScrollView]contentView] bounds].size.width;
+    
+	//if([doc isPlaying] && !NSPointInRect(p, [[[doc mainScrollView]contentView] frame])){
+
+    if([doc isPlaying] && (/*x < min ||*/ x > min+max)){ // workaround
+		//NSLog(@"MainController: drawCursorForTime: scrolling...p:%@ bounds:%@", 
+		//			  [NSValue valueWithPoint:p],[NSValue valueWithRect:[[[doc mainScrollView]contentView] bounds]]);
+                
+        y = [[[doc mainScrollView]contentView] bounds].origin.y;
+        [mainScrollerDocumentView scrollPoint:NSMakePoint(x, y)];
 	}
 	
 	for(StripController * sc in stripControllers)
