@@ -267,6 +267,11 @@
         [self checkAndUpdateSubsForKey:aKey];
         return;
     }
+    else if([aKey isEqualToString:@"pitchF"]){
+        [self setPitchF:aValue withUpdate:YES];
+        [self checkAndUpdateSubsForKey:aKey];
+        return;
+    }
     else if([aKey isEqualToString:@"cent"]){
         [self setCent:aValue withUpdate:YES];
         [self checkAndUpdateSubsForKey:aKey];
@@ -1014,8 +1019,10 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context){
     [self didChangeValueForKey:@"frequency"];
 		
     if(b) {
+        double pf = [self fToMD:[f doubleValue]];
 		[self setPitch:[NSNumber numberWithInt:[self fToM:[f doubleValue]]] withUpdate:NO];
 		[self setCent:[NSNumber numberWithInt:[self fToC:[f doubleValue]]] withUpdate:NO];
+        [self setPitchF:[NSNumber numberWithDouble:pf] withUpdate:NO];
         [self updateFrequencyB];
 	}
     //else
@@ -1044,6 +1051,7 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context){
 	if(b) {
 		[self setFrequency:[NSNumber numberWithDouble:[self mToF:[doubleP doubleValue]]] withUpdate:NO];
 		[self setCent:[NSNumber numberWithInt:cent] withUpdate:NO];
+        [self setPitchF:p withUpdate:NO];
         [self updateFrequencyB];
 	}
     
@@ -1085,13 +1093,33 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context){
     if(b){
 		int pitch = [[self valueForKey:@"pitch"]intValue];
 		double newFreq = [self mToF:pitch]*pow(pow(2, 1.0/1200), [c intValue]);
+        double pitchF = pitch+([c intValue]*.01);
 		[self setFrequency:[NSNumber numberWithDouble:newFreq] withUpdate:NO];
+        [self setPitchF:[NSNumber numberWithDouble:pitchF] withUpdate:NO];
         [self updateFrequencyB];
        // NSLog(@"JUST UPDATED FREQ: %f", newFreq);
 	}
     else
         [self didChangeValueForKey:@"dictionary"];
 
+}
+
+-(void)setPitchF:(NSNumber *)p withUpdate:(BOOL)b{
+    int pi, ce;
+    pi = [p intValue];
+    ce = ([p floatValue] - pi) * 100;
+    
+    
+    [self willChangeValueForKey:@"pitchF"];
+	[dictionary setValue:p forKey:@"pitchF"];
+    [self didChangeValueForKey:@"pitchF"];
+    
+    if(b){
+        [self setPitch:[NSNumber numberWithInt:pi] withUpdate:NO];
+        [self setCent:[NSNumber numberWithInt:ce] withUpdate:NO];
+        [self setFrequency:[NSNumber numberWithDouble:[self mToF:[p doubleValue]]] withUpdate:NO];  
+    }
+    
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////

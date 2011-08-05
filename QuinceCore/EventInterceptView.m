@@ -400,7 +400,7 @@
         [self computeVolumeGuides];
     else if ([yP isEqualToString:@"frequency"])
         [self computeFrequencyGuides];
-    else if ([yP isEqualToString:@"pitch"])
+    else if ([yP isEqualToString:@"pitch"] || [yP isEqualToString:@"pitchF"])
         [self computePitchGuides];
     else if ([yP isEqualToString:@"cent"])
         [self computeCentGuides];

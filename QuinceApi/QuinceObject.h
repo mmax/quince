@@ -128,6 +128,7 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context);
 -(void)setFrequency:(NSNumber *)f withUpdate:(BOOL)b;
 -(void)setPitch:(NSNumber *)p withUpdate:(BOOL)b;
 -(void)setCent:(NSNumber *)c withUpdate:(BOOL)b;
+-(void)setPitchF:(NSNumber *)p withUpdate:(BOOL)b; // pitch&cent, float
 -(double)mToF:(double)f;
 -(int)fToC:(double)f;
 -(int)fToM:(double)f;

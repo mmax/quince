@@ -34,11 +34,11 @@
 
 
 -(NSString *)parameterOnY{
-	return [NSString stringWithString:@"pitch"];
+	return [NSString stringWithString:@"pitchF"];
 }
 
 -(NSString *)keyForLocationOnYAxis{
-    return [NSString stringWithString:@"pitch"];
+    return [NSString stringWithString:@"pitchF"];
 }
 
 -(NSNumber *)parameterValueForY:(NSNumber *)y{
