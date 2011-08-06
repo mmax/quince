@@ -33,7 +33,7 @@
 
 -(Envelope *)init{
 
-	if(self = [super init]){
+	if((self = [super init])){
 		[self setValue:[NSNumber numberWithBool:YES] forKey:@"nonStandardReadIn"];
 		[self setValue:[NSColor colorWithDeviceRed:0.4 green:0.45 blue:.6 alpha:1] forKey:@"color"];
 	}
@@ -42,7 +42,7 @@
 
 -(QuinceObject *)initWithXMLDictionary:(NSDictionary *)xml{
 
-	if(self = (Envelope *)[super initWithXMLDictionary:xml]){ //?! dirty!
+	if((self = (Envelope *)[super initWithXMLDictionary:xml])){ //?! dirty!
 		//NSLog(@"Envelope: initWithXMLDictonary:");
 	//retrieve envelope data
 		NSString * audioFileName = [xml valueForKey:@"audioFileName"];

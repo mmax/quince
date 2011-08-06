@@ -86,7 +86,6 @@
 }
 
 -(void)addVertex:(QuinceObject *)q toResult:(QuinceObject *)r{
-    NSLog(@"addVertex!");
     [[r controller]addSubObjectWithController:[document controllerForCopyOfQuinceObjectController:[q controller] inPool:NO] withUpdate:NO];
     
 }

@@ -112,7 +112,7 @@
 		quince = [self valueForKey:@"result"];
 		if(![[quince type] isEqualToString:type]){
 			[document presentAlertWithText:
-			 [NSString stringWithFormat:@"%@: ERROR: given object is of type '%@', expected '%@' creating new!", [self className], [quince type], type]];
+			 [NSString stringWithFormat:@"%@: ERROR: given object is of type '%@', expected '%@', creating new!", [self className], [quince type], type]];
 		}
 		else {
 			[self setValue:quince forKey:@"output"];
@@ -151,7 +151,6 @@
 -(void)setOutputObjectToObjectWithPurpose:(NSString *)purpose{
 
 	[self setValue:[self objectForPurpose:purpose] forKey:@"output"];
-	//NSLog(@"%@: setOutputObjectToObjectWithPurpose: %@", [self className],purpose);
 }
 
 -(void)setIsCompatible:(BOOL)b{
@@ -162,8 +161,8 @@
 
 -(void)done{
 	[[NSNotificationCenter defaultCenter]postNotificationName:@"functionDone" object:self];
-
 }
+
 ///////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////
 /////////////// to be implemented by function:

@@ -104,21 +104,25 @@
 	QuinceObject * target = [self objectForPurpose:@"target"];
 	
 	NSMutableArray * keys = [[NSMutableArray alloc]init];
-	NSArray * keysA = [source allKeys];
-	NSArray * keysB = [target allKeys];	
-	
+	NSArray * keysA = [source allKeysRecursively];
+	NSArray * keysB = [target allKeysRecursively];	
+	//[keys addObjectsFromArray:keysB];
+    
 	for(NSString *s in keysA){
 	
-		if([source isString:s inArrayOfStrings:keysB] && 
-		   ![s isEqualToString:@"id"] &&
-		   ![s isEqualToString:@"date"] &&
-		   ![s isEqualToString:@"start"] &&
-		   ![s isEqualToString:@"duration"]
-		   ){
+		if(![source isString:s inArrayOfStrings:keys] && ![source isString:s inArrayOfStrings:[document objectInspectorExcludedKeys]]){
 			[keys addObject:s];
 		}
 	}
-	return keys;
+    
+	for(NSString *s in keysB){
+        
+		if(![source isString:s inArrayOfStrings:keys] && ![source isString:s inArrayOfStrings:[document objectInspectorExcludedKeys]]){
+			[keys addObject:s];
+		}
+	}
+    NSLog(@"%@", keys);
+    return [keys autorelease];
 }
 
 @end
