@@ -150,6 +150,7 @@
 		[q release];
 		
 	}
+    [document displayProgress:NO];
 	//NSLog(@"%@", paths);
 		/* path = [[NSBezierPath alloc]init];
 				[path moveToPoint:NSMakePoint(0, 0)];

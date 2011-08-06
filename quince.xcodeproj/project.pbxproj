@@ -21,6 +21,10 @@
 		500CADB3122D5A7300B980B8 /* MarkChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 500CADB2122D5A7300B980B8 /* MarkChild.m */; };
 		500CADCA122D5B0000B980B8 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B49701207745C0050CFB7 /* QuinceApi.framework */; };
 		500CADCD122D5B1A00B980B8 /* MarkContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 500CADCC122D5B1A00B980B8 /* MarkContainer.m */; };
+		500F1ED313EDEDE300A25411 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		500F1ED913EDEDE300A25411 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 500F1ED713EDEDE300A25411 /* InfoPlist.strings */; };
+		500F1EDE13EDEE9A00A25411 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		500F1EE313EDEEEC00A25411 /* PitchCurveContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 500F1EE213EDEEEC00A25411 /* PitchCurveContainer.m */; };
 		5015AEB7133E70FB006C85AA /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		5015AF34133E721F006C85AA /* FoldByParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5015AF33133E721F006C85AA /* FoldByParameter.m */; };
 		5015AF64133E75AC006C85AA /* FBP_window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5015AF63133E75AC006C85AA /* FBP_window.xib */; };
@@ -38,6 +42,12 @@
 		5027F13A13951CED00A9389A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
 		5027F14F13951E3600A9389A /* PitchContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5027F14E13951E3600A9389A /* PitchContainer.m */; };
 		5027F15013951EFC00A9389A /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		50289EF513EDD10300FB95D6 /* PitchCurve.h in Headers */ = {isa = PBXBuildFile; fileRef = 50289EF313EDD10300FB95D6 /* PitchCurve.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50289EF613EDD10300FB95D6 /* PitchCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = 50289EF413EDD10300FB95D6 /* PitchCurve.m */; };
+		50289EFC13EDD57000FB95D6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		50289F0213EDD57000FB95D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50289F0013EDD57000FB95D6 /* InfoPlist.strings */; };
+		50289F0713EDD64000FB95D6 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		50289F0C13EDD6B000FB95D6 /* Seq2PitchCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = 50289F0B13EDD6B000FB95D6 /* Seq2PitchCurve.m */; };
 		502C8CE611835C27006CCFB2 /* FunctionLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 502C8CE411835C27006CCFB2 /* FunctionLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		502C8CE711835C27006CCFB2 /* FunctionLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 502C8CE511835C27006CCFB2 /* FunctionLoader.m */; };
 		50325EA9122694A000E22031 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
@@ -299,6 +309,13 @@
 			remoteGlobalIDString = 500CADBE122D5AB400B980B8;
 			remoteInfo = MarkContainer;
 		};
+		500F1EDF13EDEEA300A25411 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 500F1ED113EDEDE200A25411;
+			remoteInfo = PitchCurveContainer;
+		};
 		5015AEB3133E70EB006C85AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
@@ -354,6 +371,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5027F13813951CED00A9389A;
 			remoteInfo = PitchContainer;
+		};
+		50289F0813EDD64E00FB95D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50289EFA13EDD57000FB95D6;
+			remoteInfo = Seq2PitchCurve;
 		};
 		5034A0D513D38752008EB6C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1242,6 +1266,12 @@
 		500CADC0122D5AB400B980B8 /* MarkContainer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MarkContainer-Info.plist"; path = "bundles/ContainerViews/MarkContainer/MarkContainer-Info.plist"; sourceTree = "<group>"; };
 		500CADCB122D5B1A00B980B8 /* MarkContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MarkContainer.h; path = bundles/ContainerViews/MarkContainer/MarkContainer.h; sourceTree = "<group>"; };
 		500CADCC122D5B1A00B980B8 /* MarkContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MarkContainer.m; path = bundles/ContainerViews/MarkContainer/MarkContainer.m; sourceTree = "<group>"; };
+		500F1ED213EDEDE200A25411 /* PitchCurveContainer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PitchCurveContainer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		500F1ED613EDEDE300A25411 /* PitchCurveContainer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PitchCurveContainer-Info.plist"; path = "bundles/ContainerViews/PitchCurveContainer/PitchCurveContainer-Info.plist"; sourceTree = SOURCE_ROOT; };
+		500F1ED813EDEDE300A25411 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		500F1EDA13EDEDE300A25411 /* PitchCurveContainer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PitchCurveContainer-Prefix.pch"; path = "bundles/ContainerViews/PitchCurveContainer/PitchCurveContainer-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		500F1EE113EDEEEC00A25411 /* PitchCurveContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PitchCurveContainer.h; path = bundles/ContainerViews/PitchCurveContainer/PitchCurveContainer.h; sourceTree = SOURCE_ROOT; };
+		500F1EE213EDEEEC00A25411 /* PitchCurveContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PitchCurveContainer.m; path = bundles/ContainerViews/PitchCurveContainer/PitchCurveContainer.m; sourceTree = SOURCE_ROOT; };
 		5015AEAE133E70DA006C85AA /* FoldByParameter.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoldByParameter.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		5015AEAF133E70DA006C85AA /* FoldByParameter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FoldByParameter-Info.plist"; path = "bundles/Functions/FoldByParameter/FoldByParameter-Info.plist"; sourceTree = "<group>"; };
 		5015AF32133E721F006C85AA /* FoldByParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoldByParameter.h; path = bundles/Functions/FoldByParameter/FoldByParameter.h; sourceTree = "<group>"; };
@@ -1273,6 +1303,14 @@
 		5027F14B13951D7300A9389A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = bundles/ContainerViews/PitchContainer/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		5027F14D13951E3600A9389A /* PitchContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PitchContainer.h; path = bundles/ContainerViews/PitchContainer/PitchContainer.h; sourceTree = SOURCE_ROOT; };
 		5027F14E13951E3600A9389A /* PitchContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PitchContainer.m; path = bundles/ContainerViews/PitchContainer/PitchContainer.m; sourceTree = SOURCE_ROOT; };
+		50289EF313EDD10300FB95D6 /* PitchCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PitchCurve.h; path = QuinceApi/PitchCurve.h; sourceTree = "<group>"; };
+		50289EF413EDD10300FB95D6 /* PitchCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PitchCurve.m; path = QuinceApi/PitchCurve.m; sourceTree = "<group>"; };
+		50289EFB13EDD57000FB95D6 /* Seq2PitchCurve.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Seq2PitchCurve.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		50289EFF13EDD57000FB95D6 /* Seq2PitchCurve-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Seq2PitchCurve-Info.plist"; path = "bundles/Functions/Seq2PitchCurve/Seq2PitchCurve-Info.plist"; sourceTree = SOURCE_ROOT; };
+		50289F0113EDD57000FB95D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		50289F0313EDD57000FB95D6 /* Seq2PitchCurve-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Seq2PitchCurve-Prefix.pch"; path = "bundles/Functions/Seq2PitchCurve/Seq2PitchCurve-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		50289F0A13EDD6B000FB95D6 /* Seq2PitchCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Seq2PitchCurve.h; path = bundles/Functions/Seq2PitchCurve/Seq2PitchCurve.h; sourceTree = SOURCE_ROOT; };
+		50289F0B13EDD6B000FB95D6 /* Seq2PitchCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Seq2PitchCurve.m; path = bundles/Functions/Seq2PitchCurve/Seq2PitchCurve.m; sourceTree = SOURCE_ROOT; };
 		502C8CE411835C27006CCFB2 /* FunctionLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FunctionLoader.h; path = QuinceApi/FunctionLoader.h; sourceTree = "<group>"; };
 		502C8CE511835C27006CCFB2 /* FunctionLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FunctionLoader.m; path = QuinceApi/FunctionLoader.m; sourceTree = "<group>"; };
 		50325EA01226947500E22031 /* CSoundPlayer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSoundPlayer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1641,6 +1679,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		500F1ECF13EDEDE200A25411 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500F1EDE13EDEE9A00A25411 /* QuinceApi.framework in Frameworks */,
+				500F1ED313EDEDE300A25411 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5015AEAC133E70DA006C85AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1680,6 +1727,15 @@
 			files = (
 				5027F15013951EFC00A9389A /* QuinceApi.framework in Frameworks */,
 				5027F13A13951CED00A9389A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50289EF813EDD57000FB95D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50289F0713EDD64000FB95D6 /* QuinceApi.framework in Frameworks */,
+				50289EFC13EDD57000FB95D6 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2261,6 +2317,8 @@
 				5034A0C913D386D4008EB6C4 /* FixGlissandoStartPoints.bundle */,
 				5034A0E113D39399008EB6C4 /* FixGlissandoEndPoints.bundle */,
 				50D3E76213E6FE6F00BA5D30 /* ExtractFrequencyVertexes.bundle */,
+				50289EFB13EDD57000FB95D6 /* Seq2PitchCurve.bundle */,
+				500F1ED213EDEDE200A25411 /* PitchCurveContainer.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2298,6 +2356,8 @@
 				501E420011B5639E000072FA /* FunctionGraph.m */,
 				50D57E9911963053005F23FD /* Player.h */,
 				50D57E9A11963053005F23FD /* Player.m */,
+				50289EF313EDD10300FB95D6 /* PitchCurve.h */,
+				50289EF413EDD10300FB95D6 /* PitchCurve.m */,
 				50999B2F127645BD00AD0D65 /* QuinceObject.h */,
 				50999B30127645BD00AD0D65 /* QuinceObject.m */,
 			);
@@ -2446,6 +2506,26 @@
 			name = MarkContainer;
 			sourceTree = "<group>";
 		};
+		500F1ED413EDEDE300A25411 /* PitchCurveContainer */ = {
+			isa = PBXGroup;
+			children = (
+				500F1ED513EDEDE300A25411 /* Supporting Files */,
+				500F1EE113EDEEEC00A25411 /* PitchCurveContainer.h */,
+				500F1EE213EDEEEC00A25411 /* PitchCurveContainer.m */,
+			);
+			path = PitchCurveContainer;
+			sourceTree = "<group>";
+		};
+		500F1ED513EDEDE300A25411 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				500F1ED613EDEDE300A25411 /* PitchCurveContainer-Info.plist */,
+				500F1ED713EDEDE300A25411 /* InfoPlist.strings */,
+				500F1EDA13EDEDE300A25411 /* PitchCurveContainer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		5015AF35133E722A006C85AA /* FoldByParameter */ = {
 			isa = PBXGroup;
 			children = (
@@ -2514,6 +2594,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		50289EFD13EDD57000FB95D6 /* Seq2PitchCurve */ = {
+			isa = PBXGroup;
+			children = (
+				50289F0A13EDD6B000FB95D6 /* Seq2PitchCurve.h */,
+				50289F0B13EDD6B000FB95D6 /* Seq2PitchCurve.m */,
+				50289EFE13EDD57000FB95D6 /* Supporting Files */,
+			);
+			path = Seq2PitchCurve;
+			sourceTree = "<group>";
+		};
+		50289EFE13EDD57000FB95D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50289EFF13EDD57000FB95D6 /* Seq2PitchCurve-Info.plist */,
+				50289F0013EDD57000FB95D6 /* InfoPlist.strings */,
+				50289F0313EDD57000FB95D6 /* Seq2PitchCurve-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		50299DE1114EA07C003A2185 /* ChildViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -2536,6 +2636,7 @@
 				50F471D313D0D815005CB978 /* GlissandoContainer */,
 				500CADCE122D5B3700B980B8 /* MarkContainer */,
 				5027F13B13951CED00A9389A /* PitchContainer */,
+				500F1ED413EDEDE300A25411 /* PitchCurveContainer */,
 				509E993613C8A2D90032AEF9 /* PitchGridContainer */,
 				506BF8CD117A5FA700ECBC4E /* TimeGridView */,
 				506BF908117A612000ECBC4E /* VolumeStandard */,
@@ -2578,6 +2679,7 @@
 				508CB8C513C7BABD00F43AED /* PitchQuantization */,
 				50E860BF11F858780014CFE9 /* RemoveParameter */,
 				501C285B11CE8E630097B5F0 /* ResampleEnvelope */,
+				50289EFD13EDD57000FB95D6 /* Seq2PitchCurve */,
 				50B8F4A11230F32A00E444BC /* Sets_Difference */,
 				50D196AC12306ED700C3FC2C /* Sets_Intersection */,
 				50B8F58C1230FFC000E444BC /* Sets_SymDiff */,
@@ -3316,6 +3418,7 @@
 				502C8CE611835C27006CCFB2 /* FunctionLoader.h in Headers */,
 				504B44FE119372790052DD20 /* Envelope.h in Headers */,
 				50023C6D11B69767009C77BD /* FunctionGraph.h in Headers */,
+				50289EF513EDD10300FB95D6 /* PitchCurve.h in Headers */,
 				50D57E9B11963053005F23FD /* Player.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3414,6 +3517,23 @@
 			productReference = 500CADBF122D5AB400B980B8 /* MarkContainer.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
+		500F1ED113EDEDE200A25411 /* PitchCurveContainer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 500F1EDB13EDEDE300A25411 /* Build configuration list for PBXNativeTarget "PitchCurveContainer" */;
+			buildPhases = (
+				500F1ECE13EDEDE200A25411 /* Sources */,
+				500F1ECF13EDEDE200A25411 /* Frameworks */,
+				500F1ED013EDEDE200A25411 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PitchCurveContainer;
+			productName = PitchCurveContainer;
+			productReference = 500F1ED213EDEDE200A25411 /* PitchCurveContainer.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		5015AEAD133E70DA006C85AA /* FoldByParameter */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5015AEB2133E70DB006C85AA /* Build configuration list for PBXNativeTarget "FoldByParameter" */;
@@ -3501,6 +3621,23 @@
 			name = PitchContainer;
 			productName = PitchContainer;
 			productReference = 5027F13913951CED00A9389A /* PitchContainer.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		50289EFA13EDD57000FB95D6 /* Seq2PitchCurve */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50289F0413EDD57000FB95D6 /* Build configuration list for PBXNativeTarget "Seq2PitchCurve" */;
+			buildPhases = (
+				50289EF713EDD57000FB95D6 /* Sources */,
+				50289EF813EDD57000FB95D6 /* Frameworks */,
+				50289EF913EDD57000FB95D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Seq2PitchCurve;
+			productName = Seq2PitchCurve;
+			productReference = 50289EFB13EDD57000FB95D6 /* Seq2PitchCurve.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		50325E9F1226947500E22031 /* CsoundPlayer */ = {
@@ -4533,7 +4670,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				50D3E77513E6FFCC00BA5D30 /* PBXTargetDependency */,
 				506BF7DE117A585700ECBC4E /* PBXTargetDependency */,
 				506BF8AA117A5E6200ECBC4E /* PBXTargetDependency */,
 				50999BF5127650AC00AD0D65 /* PBXTargetDependency */,
@@ -4598,7 +4734,10 @@
 				50F471E113D0D8B6005CB978 /* PBXTargetDependency */,
 				50F471F913D0E36B005CB978 /* PBXTargetDependency */,
 				5034A0F113D39432008EB6C4 /* PBXTargetDependency */,
+				50289F0913EDD64E00FB95D6 /* PBXTargetDependency */,
 				5034A0D913D38763008EB6C4 /* PBXTargetDependency */,
+				500F1EE013EDEEA300A25411 /* PBXTargetDependency */,
+				50D3E77513E6FFCC00BA5D30 /* PBXTargetDependency */,
 			);
 			name = quince;
 			productInstallPath = "$(HOME)/Applications";
@@ -4670,6 +4809,7 @@
 				504A69A911A9F692007F60FF /* Normalize */,
 				504FDE8713BCC3A500470C77 /* OscilPlayer */,
 				5027F13813951CED00A9389A /* PitchContainer */,
+				500F1ED113EDEDE200A25411 /* PitchCurveContainer */,
 				509E993313C8A2D90032AEF9 /* PitchGridContainer */,
 				508CB8C213C7BABC00F43AED /* PitchQuantization */,
 				8D15AC270486D014006FF6A4 /* quince */,
@@ -4679,6 +4819,7 @@
 				501C284011CE8D920097B5F0 /* ResampleEnvelope */,
 				50717033117A7F4300357470 /* SequenceChild */,
 				508C43B11295596E00875B93 /* OneVoice_Loudest */,
+				50289EFA13EDD57000FB95D6 /* Seq2PitchCurve */,
 				50717023117A7F1800357470 /* SequenceChildTestUnit */,
 				5074FE4C1238E1A500BB60C6 /* SetParameter */,
 				50B8F4911230F2E600E444BC /* Sets_Difference */,
@@ -4733,6 +4874,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		500F1ED013EDEDE200A25411 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500F1ED913EDEDE300A25411 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5015AEAA133E70DA006C85AA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -4770,6 +4919,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50289EF913EDD57000FB95D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50289F0213EDD57000FB95D6 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5336,6 +5493,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		500F1ECE13EDEDE200A25411 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500F1EE313EDEEEC00A25411 /* PitchCurveContainer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5015AEAB133E70DA006C85AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5373,6 +5538,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5027F14F13951E3600A9389A /* PitchContainer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50289EF713EDD57000FB95D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50289F0C13EDD6B000FB95D6 /* Seq2PitchCurve.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5645,6 +5818,7 @@
 				50999B38127645D600AD0D65 /* QuinceObjectController.m in Sources */,
 				50999B3E127645EC00AD0D65 /* ChildView.m in Sources */,
 				50999B40127645EC00AD0D65 /* ContainerView.m in Sources */,
+				50289EF613EDD10300FB95D6 /* PitchCurve.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5891,6 +6065,11 @@
 			target = 500CADBE122D5AB400B980B8 /* MarkContainer */;
 			targetProxy = 500CADC6122D5AF500B980B8 /* PBXContainerItemProxy */;
 		};
+		500F1EE013EDEEA300A25411 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 500F1ED113EDEDE200A25411 /* PitchCurveContainer */;
+			targetProxy = 500F1EDF13EDEEA300A25411 /* PBXContainerItemProxy */;
+		};
 		5015AEB4133E70EB006C85AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 50A522B4117A52560072FB09 /* QuinceApi */;
@@ -5930,6 +6109,11 @@
 			isa = PBXTargetDependency;
 			target = 5027F13813951CED00A9389A /* PitchContainer */;
 			targetProxy = 5027F14513951D0600A9389A /* PBXContainerItemProxy */;
+		};
+		50289F0913EDD64E00FB95D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50289EFA13EDD57000FB95D6 /* Seq2PitchCurve */;
+			targetProxy = 50289F0813EDD64E00FB95D6 /* PBXContainerItemProxy */;
 		};
 		5034A0D613D38752008EB6C4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -6576,6 +6760,15 @@
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
+		500F1ED713EDEDE300A25411 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				500F1ED813EDEDE300A25411 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = bundles/ContainerViews/PitchCurveContainer;
+			sourceTree = SOURCE_ROOT;
+		};
 		5020C6A413C7A23600D58742 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -6592,6 +6785,15 @@
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
+		};
+		50289F0013EDD57000FB95D6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50289F0113EDD57000FB95D6 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = bundles/Functions/Seq2PitchCurve;
+			sourceTree = SOURCE_ROOT;
 		};
 		5034A0CE13D386D5008EB6C4 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -7008,6 +7210,48 @@
 			};
 			name = Release;
 		};
+		500F1EDC13EDEDE300A25411 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/ContainerViews/PitchCurveContainer/PitchCurveContainer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/ContainerViews/PitchCurveContainer/PitchCurveContainer-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/ContainerViews/";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		500F1EDD13EDEDE300A25411 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/ContainerViews/PitchCurveContainer/PitchCurveContainer-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/ContainerViews/PitchCurveContainer/PitchCurveContainer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		5015AEB0133E70DB006C85AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -7255,6 +7499,49 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				INFOPLIST_FILE = "bundles/ContainerViews/PitchContainer/PitchContainer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		50289F0513EDD57000FB95D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				"GCC_OPTIMIZATION_LEVEL[arch=*]" = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/Seq2PitchCurve/Seq2PitchCurve-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/Functions/Seq2PitchCurve/Seq2PitchCurve-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		50289F0613EDD57000FB95D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/Seq2PitchCurve/Seq2PitchCurve-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "bundles/Functions/Seq2PitchCurve/Seq2PitchCurve-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -10288,6 +10575,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		500F1EDB13EDEDE300A25411 /* Build configuration list for PBXNativeTarget "PitchCurveContainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				500F1EDC13EDEDE300A25411 /* Debug */,
+				500F1EDD13EDEDE300A25411 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		5015AEB2133E70DB006C85AA /* Build configuration list for PBXNativeTarget "FoldByParameter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -10329,6 +10624,15 @@
 			buildConfigurations = (
 				5027F14213951CED00A9389A /* Debug */,
 				5027F14313951CED00A9389A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50289F0413EDD57000FB95D6 /* Build configuration list for PBXNativeTarget "Seq2PitchCurve" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50289F0513EDD57000FB95D6 /* Debug */,
+				50289F0613EDD57000FB95D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -10745,6 +11049,7 @@
 				50D3E76D13E6FE6F00BA5D30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50DE7B0D13CC473D00FD4F35 /* Build configuration list for PBXNativeTarget "AlignOnFreq" */ = {
 			isa = XCConfigurationList;

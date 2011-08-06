@@ -229,6 +229,11 @@
 			<key>orderHint</key>
 			<integer>50</integer>
 		</dict>
+		<key>PitchCurveContainer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>66</integer>
+		</dict>
 		<key>PitchGridContainer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -258,6 +263,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>44</integer>
+		</dict>
+		<key>Seq2PitchCurve.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>65</integer>
 		</dict>
 		<key>SequenceChild.xcscheme</key>
 		<dict>
@@ -357,6 +367,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>500F1ED113EDEDE200A25411</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5015AEAD133E70DA006C85AA</key>
 		<dict>
 			<key>primary</key>
@@ -378,6 +393,11 @@
 			<true/>
 		</dict>
 		<key>5027F13813951CED00A9389A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>50289EFA13EDD57000FB95D6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
