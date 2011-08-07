@@ -237,6 +237,13 @@
 	//[self createChildViewsForQuinceObjectController:c];
 	
 	//NSLog(@"newObject_startOffset: %@", [c offsetForKey:@"start"]);
+    
+    NSMutableSet * views = [[NSMutableSet alloc]initWithSet:[self registeredContainerViews]];
+    [views removeObject:view];
+    for(ContainerView * cv in views){
+        [cv createChildViewForQuinceObjectController:c];
+    }
+    
 	[[[c content]superObject]update];	
 	[c release];
 }
@@ -244,10 +251,15 @@
 -(void)removeObjectWithController:(QuinceObjectController *)mc inView:(ContainerView *)view{
 	[[[document undoManager]prepareWithInvocationTarget:self] addObjectWithController:mc inView:view];
 	[[document undoManager]setActionName:@"add/remove  SubObject"];
-	[view removeChildViewForQuinceObjectController:mc];
-	//NSLog(@"QuinceObjectController: removeObjectWithController: inView: view done");
+	
+    for(ContainerView * c in [self registeredContainerViews]){
+        [c removeChildViewForQuinceObjectController:mc];
+        
+    }
+//    [view removeChildViewForQuinceObjectController:mc];
+
 	[self removeSubObjectWithController:mc withUpdate:YES];
-	//NSLog(@"QuinceObjectController: removeObjectWithController: inView: DONE");
+
 
 }
 

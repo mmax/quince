@@ -513,9 +513,9 @@ NSString* const kMuteString = @"m";
 		[contentController removeObjectWithController:[child controller] inView:self];//[contentController removeSubObjectWithController:[child controller] withUpdate:NO];
 	
 	[contentController update];
-	[self removeChildViews:selection];
+	//[self removeChildViews:selection];
 	[selection removeAllObjects];
-	[self setNeedsDisplay:YES];
+	//[self setNeedsDisplay:YES];
 }
 
 -(IBAction)insertTab:(id)sender {
