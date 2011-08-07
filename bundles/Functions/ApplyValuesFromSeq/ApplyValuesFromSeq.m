@@ -54,14 +54,22 @@
 }
 
 -(IBAction)OK:(id)sender{
-	NSString * param = [pop titleOfSelectedItem];
+    [[pop window]orderOut:nil];
+    
+    NSString * param = [pop titleOfSelectedItem];
 	QuinceObject * source = [self objectForPurpose:@"source"];
 	QuinceObject * target = [self objectForPurpose:@"target"];
 	NSNumber * start;
-	int mode = [modePop indexOfSelectedItem];
-	
+	int i=0, mode = [modePop indexOfSelectedItem], n = [[target valueForKey:@"subObjects"]count];
+    float prog = 0;
+    [document setProgressTask:@"processing..."];
+    [document displayProgress:YES];
+    
 	for(QuinceObject * q in [target valueForKey:@"subObjects"]){
 	
+        prog = 100.0 / n * i++;
+        [document setProgress:prog];
+        
 		start = [q valueForKey:@"start"];
 		NSMutableArray * sourceValues = [[NSMutableArray alloc]init];
 		[sourceValues addObjectsFromArray:[source valuesForKey:param forTime:start]];
@@ -79,8 +87,9 @@
 			}
 		}
 	}
-	[[pop window]orderOut:nil];
+    [document displayProgress:NO];
 	[self done];
+    
 }
 
 
