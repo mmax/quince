@@ -122,4 +122,9 @@
     return YES;
 }
 
+-(NSString *)outputType{
+    
+	return @"PitchCurve";
+}
+
 @end
