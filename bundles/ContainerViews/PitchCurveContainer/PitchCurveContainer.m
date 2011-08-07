@@ -224,19 +224,19 @@
     
 //	NSArray * pathsToFill = [self pathsFromArray:fillPaths inRect:rect];
 //    
-//	if(![[self contentController] valueForKey:@"color"]){
-//		[[NSColor colorWithDeviceRed:0.4 green:0.45 blue:.6 alpha:1]set];
-//	}
-//	else {
-//		[[[self contentController] valueForKey:@"color"]set];
-//	}
+	if(![[self contentController] valueForKey:@"color"]){
+		[[NSColor colorWithDeviceRed:0.66 green:.07 blue:.04 alpha:1]set];
+	}
+	else {
+		[[[self contentController] valueForKey:@"color"]set];
+	}
 //    
 //	for(NSBezierPath * p in pathsToFill){
 //		[p fill];
 //		[p stroke];
 //	}
     
-	[[NSColor colorWithDeviceRed:1 green:1 blue:1 alpha:1]set];
+	
 	
 	NSArray * pathsToStroke = [self pathsFromArray:strokePaths inRect:rect];
 	

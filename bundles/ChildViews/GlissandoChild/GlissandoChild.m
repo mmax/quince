@@ -35,7 +35,7 @@
     [super setController:mc andBindWithKeysForLocationOnX:lx sizeOnX:sx locationOnY:ly sizeOnY:[enclosingView keyForSizeOnYAxis]];
     [self unbind:@"interiorColor"];
     //[self setInteriorColor:[NSColor colorWithDeviceRed:0.1 green:.3 blue:0.3 alpha:0.4]];
-    [self setInteriorColor:[NSColor colorWithDeviceRed:0.517647058823529 green:.6 blue:0.607843137254902 alpha:1]];
+    [self setInteriorColor:[NSColor colorWithDeviceRed:0.517647058823529 green:.6 blue:0.607843137254902 alpha:.5]];
     [self resetCursorRects];
 }
 

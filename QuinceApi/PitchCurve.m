@@ -35,7 +35,7 @@
     
 	if((self = [super init])){
 		[dictionary removeObjectForKey:@"nonStandardReadIn"];
-		//[self setValue:[NSColor colorWithDeviceRed:0.4 green:0.45 blue:.6 alpha:1] forKey:@"color"];
+		[self setValue:[NSColor colorWithDeviceRed:0.66 green:.07 blue:.04 alpha:1] forKey:@"color"];
 	}
 	return self;
 }
