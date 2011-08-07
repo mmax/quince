@@ -300,6 +300,7 @@
 	
 	[d setValue: [view className] forKey:@"containerViewClass"];
 	[d setValue: [[view contentController]valueForKeyPath:@"selection.id"] forKey:@"content"] ;
+    [d setValue:[stripController stripProperties] forKey:@"stripProperties"];
 
 	return d;
 }

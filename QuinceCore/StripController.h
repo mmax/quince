@@ -86,6 +86,7 @@
 -(void)setFrame:(NSRect)frame;
 -(NSRect)frame;
 -(void)createLayersFromArray:(NSArray *)layers;
+-(void)setStripPropertiesWithLayerDictionary:(NSDictionary *)d;
 -(void)clear;
 -(NSView *)interceptView;
 -(void)activate;
@@ -98,6 +99,7 @@
 //-(NSNumber *)volumeRange;
 //-(void)updateVolumeGuideFlag;
 -(NSArray *)xml_layers;
+-(NSDictionary *)stripProperties;
 -(NSString *)parameterOnYAxis;
 -(int)layerCount;
 -(id)valueForKeyPath:(NSString *)keyPath;

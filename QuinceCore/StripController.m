@@ -44,7 +44,8 @@
         [self setValue:[NSNumber numberWithBool:YES] forKey:@"drawGuides"];
 		[self loadView];
 		layerControllers = [[NSMutableArray alloc] init];
-        [guidesButton bind:@"value" toObject:self withKeyPath:@"drawGuides" options:nil];
+        //[guidesButton bind:@"value" toObject:self withKeyPath:@"drawGuides" options:nil];
+        //[self bind:@"drawGuides" toObject:guidesButton withKeyPath:@"value" options:nil];
 	}
 	return self;
 }
@@ -75,6 +76,7 @@
 
     tableViewController = [[StripLayerControlsArrayController controllerWithViewColumn: layerColumn] retain];
     [tableViewController setDelegate: self];
+    //[guidesButton bind:@"value" toObject:self withKeyPath:@"drawGuides" options:nil];
     [self validateButtons];
 }
 
@@ -282,20 +284,40 @@
 -(void)createLayersFromArray:(NSArray *)layers{
 	[[[controller document]undoManager]registerUndoWithTarget:self selector:@selector(createLayersFromArray:) object:[self xml_layers]];
 	[[[controller document]undoManager]setActionName:@"Rebuild Layers"];
-	
+
 	[self clear];
+    BOOL propertiesSet = NO;
+   // [self setStripPropertiesWithLayerDictionary:[layers lastObject]];
+    
 	for(NSDictionary * layer in layers){	
 		[self addLayer];
 		LayerController * lc = [layerControllers lastObject];
 		QuinceObjectController * contentController = [[controller document] controllerForObjectWithID:[layer valueForKey:@"content"]];
 		[lc setViewWithName:[layer valueForKey:@"containerViewClass"]];
+        if(!propertiesSet){
+            [self setStripPropertiesWithLayerDictionary:layer];
+            propertiesSet = YES;
+        }
 		[lc loadObjectWithController:contentController];
 	}
 //	[self updateVolumeGuideFlag];
 }
 
+-(void)setStripPropertiesWithLayerDictionary:(NSDictionary *)d{
+    NSDictionary * sProperties = [d valueForKey:@"stripProperties"];
+    if(!sProperties) {
+        NSLog(@"[StripController setStripPropertiesWithLayerDictionary:]: no stripProperties entry found in LayerDictionary");   
+        return;
+    }
+   // NSLog(@"setting properties");
+    [self setValue:[sProperties valueForKey:@"minYValue"] forKey:@"minYValue"];
+    [self setValue:[sProperties valueForKey:@"maxYValue"] forKey:@"maxYValue"];    
+    [self setValue:[sProperties valueForKey:@"drawGuides"] forKey:@"drawGuides"];
+}
+
+
 -(void)clear{
-    [guidesButton unbind:@"value"];
+    //[guidesButton unbind:@"value"];
 	for(LayerController * lc in layerControllers)
 		[[lc valueForKey:@"view" ] removeFromSuperview];
 
@@ -361,6 +383,15 @@
 		 [layerArray addObject:[lc dictionary]];
 	
 	return [layerArray autorelease];
+}
+
+-(NSDictionary *)stripProperties{
+
+    NSMutableDictionary * d = [[NSMutableDictionary alloc]init];
+    [d setValue:[self valueForKey:@"minYValue"] forKey:@"minYValue"];
+    [d setValue:[self valueForKey:@"maxYValue"] forKey:@"maxYValue"];
+    [d setValue:[self valueForKey:@"drawGuides"] forKey:@"drawGuides"];
+    return [d autorelease];
 }
 
 -(NSString *)parameterOnYAxis{
