@@ -619,6 +619,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	/* if([poolWindow isVisible])
 		[poolWindow orderOut:nil];
 	else */
+
 		[poolWindow makeKeyAndOrderFront:nil];
 }
 

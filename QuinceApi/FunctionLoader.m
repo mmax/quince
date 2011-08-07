@@ -76,7 +76,7 @@
 }
 
 - (void)didEndSheet:(NSWindow *)sheet returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo{
-	[sheet orderOut:self];
+	NSLog(@"endsheet");[sheet orderOut:self];
 }
 
 -(void)setValue:(id)value forKey:(NSString *)key{
@@ -114,6 +114,7 @@
 	Function * fun = [self valueForKey:@"function"];
 	[panel orderOut:nil];
 	[fun performActionWithInputDescriptors:[self valueForKey:@"inputDescriptors"]];
+    [document togglePool:nil];
 }
 
 -(BOOL)readyForAction{

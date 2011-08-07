@@ -161,6 +161,7 @@
 
 -(void)done{
 	[[NSNotificationCenter defaultCenter]postNotificationName:@"functionDone" object:self];
+    [document togglePool:nil];
 }
 
 ///////////////////////////////////////////////////////////
