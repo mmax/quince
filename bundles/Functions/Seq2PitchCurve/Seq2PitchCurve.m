@@ -50,6 +50,7 @@
     [output setValue:[NSNumber numberWithDouble:100.0] forKey:@"sampleRate"];
     [output setValue:[NSNumber numberWithInt:1] forKey:@"samplesPerWindow"];
     [output setValue:[[self objectForPurpose:@"source"] valueForKey:@"duration"] forKey:@"duration"];
+    [output setValue:[NSString stringWithFormat:@"%@_PiCu", [[self objectForPurpose:@"source"] valueForKey:@"name"]] forKey:@"name"];
     [document displayProgress:NO];
     [self done];
 }
