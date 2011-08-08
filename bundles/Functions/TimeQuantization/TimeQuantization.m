@@ -48,7 +48,7 @@
 	[seq sortChronologically];
 	
 	startOffset = [[seq valueForKey:@"start"]doubleValue]+ [[seq offsetForKey:@"start"]doubleValue];
-	NSLog(@"quantizing object: %@\n startOffset: %f", [seq dictionary], startOffset);
+	//  NSLog(@"quantizing object: %@\n startOffset: %f", [seq dictionary], startOffset);
 	
 	for(QuinceObject * sub in [seq valueForKey:@"subObjects"]){
 		QuinceObject * candidate = [sub copyWithZone:nil];
@@ -58,7 +58,7 @@
 	}
 	
 	[resultController update];
-	[resultController setValue:[NSString stringWithFormat:@"%@_q", [seq valueForKey:@"name"]] forKeyPath:@"selection.name"];
+	[resultController setValue:[NSString stringWithFormat:@"%@_TQ", [seq valueForKey:@"name"]] forKeyPath:@"selection.name"];
 	//[resultController setValue:[[[seq valueForKey:@"start"]copy]autorelease] forKeyPath:@"selection.start"];
 	//[document addObjectToObjectPool:[resultController content]];
 	[document displayProgress:NO];

@@ -34,7 +34,7 @@
 	QuinceObject * source = [self objectForPurpose:@"source"];
 	QuinceObject * result = [self outputObjectOfType:@"QuinceObject"];
 	QuinceObject * qa, * qb;
-    NSString * s = [NSString stringWithFormat:@"%@_freqVertex%", [source valueForKey:@"name"]];
+    NSString * s = [NSString stringWithFormat:@"%@_FVrtx%", [source valueForKey:@"name"]];
     [result setValue:s forKey:@"name"];
     //double a, b;
     int dir=-1, prevDir=-666;

@@ -32,7 +32,7 @@
 
 -(void)perform{
 
-	[document presentAlertWithText:@"OneVoice_Loudest will look for Events with identical start times. Overlapping Events will not be affected. Use the Legato Function First to make sure there are no overlapping Events in your Sequence."];
+	//[document presentAlertWithText:@"OneVoice_Loudest will look for Events with identical start times. Overlapping Events will not be affected. Use the Legato Function First to make sure there are no overlapping Events in your Sequence."];
 	mom = [self objectForPurpose:@"source"];
 	QuinceObject * new = [self outputObjectOfType:@"QuinceObject"];
 	[mom sortChronologically];
@@ -56,7 +56,7 @@
 	
 	[new update];
 	NSMutableString * name = [[NSMutableString alloc]initWithString:[mom valueForKey:@"name"]];
-	[name appendFormat:@"_OV_L"];
+	[name appendFormat:@"_OVL"];
 	
 	[new setValue:name forKey:@"name"];
 	[document displayProgress:NO];

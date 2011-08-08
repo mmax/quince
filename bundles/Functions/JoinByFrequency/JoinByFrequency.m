@@ -60,7 +60,7 @@
 	[source sortChronologically];
 	subs = [source valueForKey:@"subObjects"];
     [self joinNextFrom:0 into:nil];
-	NSString * s = [NSString stringWithFormat:@"%@_joined_%d%", [source valueForKey:@"name"], (int)maxCent];
+	NSString * s = [NSString stringWithFormat:@"%@_JBF%d", [source valueForKey:@"name"], (int)maxCent];
 	[mom setValue:s forKey:@"name"];
 	[mom update];
 	[document displayProgress:NO];
