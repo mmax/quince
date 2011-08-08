@@ -114,7 +114,7 @@
 	Function * fun = [self valueForKey:@"function"];
 	[panel orderOut:nil];
 	[fun performActionWithInputDescriptors:[self valueForKey:@"inputDescriptors"]];
-    [document togglePool:nil];
+   // [document togglePool:nil];
 }
 
 -(BOOL)readyForAction{
