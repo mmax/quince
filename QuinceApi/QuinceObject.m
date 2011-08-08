@@ -1031,32 +1031,35 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context){
 
 
 
--(void)setPitch:(NSNumber *)p withUpdate:(BOOL)b{	
-  
-    int cent = ([p floatValue] - [p intValue]) * 100.0;
+-(void)setPitch:(NSNumber *)p withUpdate:(BOOL)b{
+	
+    if(!p){NSLog(@"QuinceObject:setPitch:withUpdate: : invalid pitch object!");return;}
+    [p retain];
+   // int cent = ([p floatValue] - [p intValue]) * 100.0;
 
-    if(cent >= 1.0)
-        b = YES; 
+//    if(cent >= 1.0)
+//        b = YES; 
     
-    NSNumber * doubleP = p;
-    p = [NSNumber numberWithDouble:[p doubleValue]];
+    //NSNumber * doubleP = p;
+    //p = [NSNumber numberWithDouble:[p doubleValue]];
     
 	if(!b)
         [self willChangeValueForKey:@"dictionary"];
-
+   // NSLog(@"%@", p);
     [self willChangeValueForKey:@"pitch"];
 	[dictionary setValue:p forKey:@"pitch"];
 	[self didChangeValueForKey:@"pitch"];
 
 	if(b) {
-		[self setFrequency:[NSNumber numberWithDouble:[self mToF:[doubleP doubleValue]]] withUpdate:NO];
-		[self setCent:[NSNumber numberWithInt:cent] withUpdate:NO];
+		[self setFrequency:[NSNumber numberWithDouble:[self mToF:[p doubleValue]]] withUpdate:NO];
+		[self setCent:[NSNumber numberWithInt:0] withUpdate:NO];
         [self setPitchF:p withUpdate:NO];
         [self updateFrequencyB];
 	}
     
 	else
         [self didChangeValueForKey:@"dictionary"];
+    [ p release];
 }	
 
 
