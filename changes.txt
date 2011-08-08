@@ -1,9 +1,13 @@
 
+- fixed bugs in LilyPondExport
+- added function: Seq2PitchCurve
+- added ContainerView: PitchCurveContainer
+- added type: PitchCurve
 - added function: ExtractFrequencyVertexes 
 - added glissando support for LilyPondExport
 - CsoundPlayer: new feature to assign objects to csound orc modes using parameters: "csoundMode" <String> or "csoundInstrumentNumber <number>
 - optimized performance of OneVoice_Loudest
-- new feature: adjustable y-axis paremeter range
+- new feature: adjustable y-axis parameter range
 - new feature: show/hide guidelines
 - added function: FixGlissandoEndPoints
 - added function: FixGlissandoStartPoints
