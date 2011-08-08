@@ -93,8 +93,10 @@
 		path = [[sp URL]path];
 		[self generateCode];
 		
-		if(![lilly writeToURL:[sp URL] atomically:NO encoding:NSASCIIStringEncoding error:&error])
+		if(![lilly writeToURL:[sp URL] atomically:NO encoding:NSASCIIStringEncoding error:&error]){
 			[document presentAlertWithText:[NSString stringWithFormat:@"LilyPondExport: save operation failed: %@", error]];
+            NSLog(@"%@", lilly);
+        }
 	}
 	[document displayProgress:NO];
 	[self done];
@@ -428,7 +430,7 @@ double maxabs(double d){return d<0?d*(-1):d;}
 
 	// NEW GLISS
     if(glissNow){
-        NSLog(@"glissStart #429");
+        //NSLog(@"glissStart #429");
         //[self toFile:[self glissandoTupletStartString]];
         scale = [NSString stringWithFormat:@"*1/2"];
     }
@@ -450,7 +452,7 @@ double maxabs(double d){return d<0?d*(-1):d;}
 			[self toFile:@"~"];
         
         //NEW GLISS
-        else if(glissNow){NSLog(@"gliss #448");
+        else if(glissNow){//NSLog(@"gliss #448");
             [self toFile:[self glissandoEndNoteForEvent:event withMeasure:measure times:times]];
             //[self toFile:@" } "];
         }
@@ -459,7 +461,7 @@ double maxabs(double d){return d<0?d*(-1):d;}
 		[self toFile:tupletEnd];
 	}
     else if(glissNow){
-        NSLog(@"gliss # 459");
+       // NSLog(@"gliss # 459");
         [self toFile:[self glissandoEndNoteForEvent:event withMeasure:measure times:times]];
         //[self toFile:@" } "];
     }
@@ -473,7 +475,7 @@ double maxabs(double d){return d<0?d*(-1):d;}
 		//NSLog(@"remainingSeconds?");
 		
         if(glissNow && remainingSeconds == 0 && remainingDurFractionalPart<=0.000001 && remainingDurFractionalPart >=0){
-            NSLog(@"gliss start #462, reSec:%d, frac:%f", remainingSeconds, remainingDurFractionalPart);
+            //NSLog(@"gliss start #462, reSec:%d, frac:%f", remainingSeconds, remainingDurFractionalPart);
             //[self toFile:[self glissandoTupletStartString]];
             scale = [NSString stringWithFormat:@"*1/2"];
         }
@@ -481,7 +483,7 @@ double maxabs(double d){return d<0?d*(-1):d;}
         [self toFile:[NSString stringWithFormat:@"\t%@4 %@", pitchString, scale]];
 
         if(glissNow && remainingSeconds == 0 && remainingDurFractionalPart<=0.000001 && remainingDurFractionalPart >0){
-            NSLog(@"gliss #467: remainingSec: %d, remainingFracPart: %f", remainingSeconds, remainingDurFractionalPart);
+            //NSLog(@"gliss #467: remainingSec: %d, remainingFracPart: %f", remainingSeconds, remainingDurFractionalPart);
             [self toFile:[self glissandoEndNoteForEvent:event withMeasure:measure times:times]];
             //[self toFile:@" } "];
         }
@@ -515,7 +517,7 @@ double maxabs(double d){return d<0?d*(-1):d;}
 		glissNow = (glissando && [event valueForKey:@"glissandoDirection"]) ? YES : NO;
         scale = @"";
         // NEW GLISS
-        if(glissNow){NSLog(@"glissStart #501");
+        if(glissNow){//NSLog(@"glissStart #501");
             scale = [NSString stringWithFormat:@"*1/2 "];//[self toFile:[self glissandoTupletStartString]];
         }
         //
@@ -540,7 +542,7 @@ double maxabs(double d){return d<0?d*(-1):d;}
             [self toFile:[self glissandoEndNoteForEvent:event withMeasure:measure times:times]];
             //[self toFile:@" } "];
             glissNow = NO;
-            NSLog(@"gliss #525");
+           // NSLog(@"gliss #525");
         }
         //
         
@@ -551,7 +553,7 @@ double maxabs(double d){return d<0?d*(-1):d;}
 		if(glissNow){
             [self toFile:[self glissandoEndNoteForEvent:event withMeasure:measure times:times]];
             //[self toFile:@" } "];
-            NSLog(@"gliss #535");
+            //NSLog(@"gliss #535");
         }
 		i =[self eventWithMeasure:measure inSameSecondAfter:end afterEvent:index]; 
 		if(i>0)																			
@@ -607,14 +609,22 @@ return [NSString stringWithFormat:@"\n\\once \\override TupletNumber #'transpare
     
     //markup
     
+    int cent, dir;
+    dir = [[event valueForKey:@"glissandoDirection"]intValue];
+    if(dir)// getPitchStringForEvent:glissandoStart: created _LilyCent / _LilyCentB values!
+        cent = [[event valueForKey:@"_LilyCentB"]intValue];
+    else
+        cent = [[event valueForKey:@"_LilyCent"]intValue];
+    
     //double f = [self glissandoEndFreqForQuince:event];
     NSString * sign;
     
-   if ([[event valueForKey:@"glissandoEndCent"]intValue]>=0) sign = @"+";
+   if (cent>0) sign = @"+";
+   else if (cent == 0)sign = @"";
    else sign = @"";
     
-    [c appendString:@"^\\markup{\\fontsize #0.1 { \\center-align{"];
-    [c appendFormat:@" \"%@%@\"}}}", sign, [NSString stringWithFormat:@"%d", [[event valueForKey:@"glissandoEndCent"]intValue]]];//[event fToC:f]]];
+    [c appendString:@"^\\markup{ \\column{"];
+    [c appendFormat:@" \"%@%d\"}}", sign, cent];//[event fToC:f]]];
     
 		
     //
@@ -817,9 +827,11 @@ return [NSString stringWithFormat:@"\n\\once \\override TupletNumber #'transpare
 	}	
 	else quarterToneSuffix = [NSString stringWithFormat:@""];	
 
-	if(b)[event setValue:[NSNumber numberWithInt:cent] forKey:@"cent"];
-    else[event setValue:[NSNumber numberWithInt:cent] forKey:@"glissandoEndCent"];
-
+	if((dir>0 && b) || (dir==0 && !b))
+        [event setValue:[NSNumber numberWithInt:cent] forKey:@"_LilyCent"];
+    else
+        [event setValue:[NSNumber numberWithInt:cent] forKey:@"_LilyCentB"];
+    //NSLog(@"getPitchString...:cent:%d", cent);
 	switch(octave) {
 			
 		case 15:	octaveString = [NSString stringWithFormat:@"'"]; break;
@@ -881,52 +893,45 @@ return [NSString stringWithFormat:@"\n\\once \\override TupletNumber #'transpare
 	
 
 	NSMutableString * m = [[NSMutableString alloc]init];
-    NSString * sign = @"";
-	BOOL dynamic = NO;
+    NSString * sign;
+	BOOL dynamic = NO, cent = NO;
+    int dir, centDif;
 	if([topKeys count]){ 
-		[m appendString:@"^\\markup{\\fontsize #0.1 { \\center-align{"];
+		[m appendString:@"^\\markup{ \\column{"];
 		for(NSString * key in topKeys){
-            
-            if([key isEqualToString:@"cent"]){
-                if ([[event valueForKey:key]intValue]>0)
+            sign = @"";
+            if([key isEqualToString:@"cent"])
+                cent = YES;
+            if(!cent || !glissando)
+			[m appendFormat:@" \"%@%@\"", sign, [self getStringValueOf:[event valueForKey:key]]];
+            else{
+                dir = [[event valueForKey:@"glissandoDirection"]intValue];
+                centDif = dir?[[event valueForKey:@"_LilyCent"]intValue]:[[event valueForKey:@"_LilyCentB"]intValue];
+                if (centDif>0)
                     sign = @"+";
                 else
-                    sign = @"";
+                    sign = @"";                
+                [m appendFormat:@" \"%@%d\"", sign, centDif];
             }
-            
-			[m appendFormat:@" \"%@%@\"", sign, [self getStringValueOf:[event valueForKey:key]]];
+                
         }
-		[m appendString:@"}}}"];
+		[m appendString:@"}}"];
 	}
 	if([bottomKeys count]){ 
-		[m appendString:@"_\\markup{\\fontsize #0.1 { \\center-align{"];
+		[m appendString:@"_\\markup{ \\column{"];
 		for(NSString * key in bottomKeys){
 			if([key isEqualToString:@"dynExpr"])
 				dynamic = YES;
 			else [m appendFormat:@" \"%@\"", [self getStringValueOf:[event valueForKey:key]]];
 		}
-		[m appendString:@"}}}"];
+		[m appendString:@"}}"];
 		if(dynamic && [event valueForKey:@"dynExpr"]) [m appendFormat:@"\\%@ ", [self getStringValueOf:[event valueForKey:@"dynExpr"]]];
 	}
 
-	
-	/*
-	NSString * aS = [NSString stringWithFormat:@"^\\markup{\\fontsize #0.1 { \\center-align{\"#%d\"", [[event index]longValue]];
-	int cent = [[event cent]intValue];	
-	if([[event cent]intValue] < -25) cent += 50;
-	else if ([[event cent]intValue] > 25) cent -= 50;
-	if(cent!=0)
-		aS = [aS stringByAppendingFormat:@"%@%dcent ", cent > 0 ? [NSString stringWithFormat:@"+"] : [NSString string], cent ];
-
-	if(LYXdescriptions && ![[event description]isEqualToString:@"?"]) aS =[aS stringByAppendingFormat:@" %@", [event description]];
-	if(!controller) printf("no controller!\n");
-	aS = [aS stringByAppendingFormat:@"}}}"];
-	if(LYXdynamics) aS = [aS stringByAppendingFormat:@"\\%@ ", [event dynamicString]];
-	return aS;
-	 */
 	return m;
-	
 }
+
+
 
 -(void)quantizeMint:(QuinceObject *)candidate{
 	
