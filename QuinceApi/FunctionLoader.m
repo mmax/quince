@@ -76,7 +76,7 @@
 }
 
 - (void)didEndSheet:(NSWindow *)sheet returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo{
-	NSLog(@"endsheet");[sheet orderOut:self];
+	NSLog(@"FunctionLoader:endsheet");[sheet orderOut:self];
 }
 
 -(void)setValue:(id)value forKey:(NSString *)key{
