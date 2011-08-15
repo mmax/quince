@@ -68,11 +68,6 @@
 		504A6A3511AA00FB007F60FF /* ApplyEnvelopeWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504A6A3411AA00FB007F60FF /* ApplyEnvelopeWindow.xib */; };
 		504B44FE119372790052DD20 /* Envelope.h in Headers */ = {isa = PBXBuildFile; fileRef = 504B44FC119372790052DD20 /* Envelope.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		504B44FF119372790052DD20 /* Envelope.m in Sources */ = {isa = PBXBuildFile; fileRef = 504B44FD119372790052DD20 /* Envelope.m */; };
-		504FDE8913BCC3A600470C77 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
-		504FDE8F13BCC3A600470C77 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 504FDE8D13BCC3A600470C77 /* InfoPlist.strings */; };
-		504FDE9613BCC46300470C77 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
-		504FDE9B13BCC4D500470C77 /* OscilPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 504FDE9A13BCC4D500470C77 /* OscilPlayer.m */; };
-		504FDE9E13BCCCDA00470C77 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504FDE9D13BCCCDA00470C77 /* AudioToolbox.framework */; };
 		5052AE041207372B00D871D0 /* ApplyEnvelope.m in Sources */ = {isa = PBXBuildFile; fileRef = 504A695D11A9CBB0007F60FF /* ApplyEnvelope.m */; };
 		505B49711207745C0050CFB7 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B49701207745C0050CFB7 /* QuinceApi.framework */; };
 		505B49721207745C0050CFB7 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B49701207745C0050CFB7 /* QuinceApi.framework */; };
@@ -434,13 +429,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 504A69A911A9F692007F60FF;
 			remoteInfo = Normalize;
-		};
-		504FDE9413BCC45800470C77 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 50A522B4117A52560072FB09;
-			remoteInfo = QuinceApi;
 		};
 		5066E5BC122C522500929AA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1072,13 +1060,6 @@
 			remoteGlobalIDString = 50D196A012306E8400C3FC2C;
 			remoteInfo = Sets_Intersection;
 		};
-		50D322B813C667D000F09158 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 504FDE8713BCC3A500470C77;
-			remoteInfo = OscilPlayer;
-		};
 		50D393A911C838BA0080B427 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
@@ -1345,12 +1326,6 @@
 		504A6A3411AA00FB007F60FF /* ApplyEnvelopeWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ApplyEnvelopeWindow.xib; path = bundles/Functions/ApplyEnvelope/ApplyEnvelopeWindow.xib; sourceTree = "<group>"; };
 		504B44FC119372790052DD20 /* Envelope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Envelope.h; path = QuinceApi/Envelope.h; sourceTree = "<group>"; };
 		504B44FD119372790052DD20 /* Envelope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Envelope.m; path = QuinceApi/Envelope.m; sourceTree = "<group>"; };
-		504FDE8813BCC3A500470C77 /* OscilPlayer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OscilPlayer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		504FDE8C13BCC3A600470C77 /* OscilPlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "OscilPlayer-Info.plist"; path = "bundles/Players/OscilPlayer/OscilPlayer-Info.plist"; sourceTree = SOURCE_ROOT; };
-		504FDE8E13BCC3A600470C77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		504FDE9013BCC3A600470C77 /* OscilPlayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "OscilPlayer-Prefix.pch"; path = "bundles/Players/OscilPlayer/OscilPlayer-Prefix.pch"; sourceTree = SOURCE_ROOT; };
-		504FDE9913BCC4D500470C77 /* OscilPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OscilPlayer.h; path = bundles/Players/OscilPlayer/OscilPlayer.h; sourceTree = "<group>"; };
-		504FDE9A13BCC4D500470C77 /* OscilPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OscilPlayer.m; path = bundles/Players/OscilPlayer/OscilPlayer.m; sourceTree = "<group>"; };
 		504FDE9D13BCCCDA00470C77 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		505B49701207745C0050CFB7 /* QuinceApi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuinceApi.framework; path = /Library/Frameworks/QuinceApi.framework; sourceTree = "<absolute>"; };
 		505C6C74119F1FFD0086B612 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = /System/Library/Frameworks/AudioUnit.framework; sourceTree = "<absolute>"; };
@@ -1788,16 +1763,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				505B49761207745C0050CFB7 /* QuinceApi.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		504FDE8513BCC3A500470C77 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				504FDE9E13BCCCDA00470C77 /* AudioToolbox.framework in Frameworks */,
-				504FDE9613BCC46300470C77 /* QuinceApi.framework in Frameworks */,
-				504FDE8913BCC3A600470C77 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2303,7 +2268,6 @@
 				5035B8F013563EBE003E8570 /* ApplyValuesFromSeq.bundle */,
 				50EAF2C81393BAD200258AD1 /* FrequencyStandardContainer.bundle */,
 				5027F13913951CED00A9389A /* PitchContainer.bundle */,
-				504FDE8813BCC3A500470C77 /* OscilPlayer.bundle */,
 				5020C69F13C7A23500D58742 /* Transpose.bundle */,
 				508CB8C313C7BABC00F43AED /* PitchQuantization.bundle */,
 				509E993413C8A2D90032AEF9 /* PitchGridContainer.bundle */,
@@ -2769,27 +2733,6 @@
 				504A69CF11A9F6FB007F60FF /* Normalize.m */,
 			);
 			name = Normalize;
-			sourceTree = "<group>";
-		};
-		504FDE8B13BCC3A600470C77 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				504FDE8C13BCC3A600470C77 /* OscilPlayer-Info.plist */,
-				504FDE8D13BCC3A600470C77 /* InfoPlist.strings */,
-				504FDE9013BCC3A600470C77 /* OscilPlayer-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			path = OscilPlayer;
-			sourceTree = "<group>";
-		};
-		504FDE9C13BCC55800470C77 /* OscilPlayer */ = {
-			isa = PBXGroup;
-			children = (
-				504FDE8B13BCC3A600470C77 /* Supporting Files */,
-				504FDE9913BCC4D500470C77 /* OscilPlayer.h */,
-				504FDE9A13BCC4D500470C77 /* OscilPlayer.m */,
-			);
-			name = OscilPlayer;
 			sourceTree = "<group>";
 		};
 		506BF818117A59F100ECBC4E /* Other Sources */ = {
@@ -3355,7 +3298,6 @@
 			children = (
 				50325EB21226951400E22031 /* CSoundPlayer */,
 				50F4206F1198BF9B009F695A /* AudioFilePlayer */,
-				504FDE9C13BCC55800470C77 /* OscilPlayer */,
 			);
 			name = Players;
 			sourceTree = "<group>";
@@ -3746,24 +3688,6 @@
 			name = Normalize;
 			productName = normalize;
 			productReference = 504A69AA11A9F692007F60FF /* Normalize.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		504FDE8713BCC3A500470C77 /* OscilPlayer */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 504FDE9313BCC3A600470C77 /* Build configuration list for PBXNativeTarget "OscilPlayer" */;
-			buildPhases = (
-				504FDE8413BCC3A500470C77 /* Sources */,
-				504FDE8513BCC3A500470C77 /* Frameworks */,
-				504FDE8613BCC3A500470C77 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				504FDE9513BCC45800470C77 /* PBXTargetDependency */,
-			);
-			name = OscilPlayer;
-			productName = OscilPlayer;
-			productReference = 504FDE8813BCC3A500470C77 /* OscilPlayer.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		506BF832117A5A9700ECBC4E /* AutomationContainer */ = {
@@ -4722,7 +4646,6 @@
 				506C6B47135629E30060BD9D /* PBXTargetDependency */,
 				5035B90A13563F9D003E8570 /* PBXTargetDependency */,
 				5027F14613951D0600A9389A /* PBXTargetDependency */,
-				50D322B913C667D000F09158 /* PBXTargetDependency */,
 				5020C6AE13C7A59300D58742 /* PBXTargetDependency */,
 				508CB8D013C7BB0100F43AED /* PBXTargetDependency */,
 				50DE7B1513CC485C00FD4F35 /* PBXTargetDependency */,
@@ -4807,7 +4730,6 @@
 				500CADA0122D59FD00B980B8 /* MarkChild */,
 				500CADBE122D5AB400B980B8 /* MarkContainer */,
 				504A69A911A9F692007F60FF /* Normalize */,
-				504FDE8713BCC3A500470C77 /* OscilPlayer */,
 				5027F13813951CED00A9389A /* PitchContainer */,
 				500F1ED113EDEDE200A25411 /* PitchCurveContainer */,
 				509E993313C8A2D90032AEF9 /* PitchGridContainer */,
@@ -4974,14 +4896,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		504FDE8613BCC3A500470C77 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				504FDE8F13BCC3A600470C77 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5597,14 +5511,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		504FDE8413BCC3A500470C77 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				504FDE9B13BCC4D500470C77 /* OscilPlayer.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		506BF830117A5A9700ECBC4E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -6155,11 +6061,6 @@
 			target = 504A69A911A9F692007F60FF /* Normalize */;
 			targetProxy = 504A69E211A9F78D007F60FF /* PBXContainerItemProxy */;
 		};
-		504FDE9513BCC45800470C77 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 50A522B4117A52560072FB09 /* QuinceApi */;
-			targetProxy = 504FDE9413BCC45800470C77 /* PBXContainerItemProxy */;
-		};
 		5066E5BD122C522500929AA4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 50325E9F1226947500E22031 /* CsoundPlayer */;
@@ -6610,11 +6511,6 @@
 			target = 50D196A012306E8400C3FC2C /* Sets_Intersection */;
 			targetProxy = 50D196A712306EB500C3FC2C /* PBXContainerItemProxy */;
 		};
-		50D322B913C667D000F09158 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 504FDE8713BCC3A500470C77 /* OscilPlayer */;
-			targetProxy = 50D322B813C667D000F09158 /* PBXContainerItemProxy */;
-		};
 		50D393AA11C838BA0080B427 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 50D3937011C837BA0080B427 /* ColorByKey */;
@@ -6811,15 +6707,6 @@
 			);
 			name = InfoPlist.strings;
 			path = bundles/Functions/FixGlissandoEndPoints;
-			sourceTree = SOURCE_ROOT;
-		};
-		504FDE8D13BCC3A600470C77 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				504FDE8E13BCC3A600470C77 /* en */,
-			);
-			name = InfoPlist.strings;
-			path = bundles/Players/OscilPlayer;
 			sourceTree = SOURCE_ROOT;
 		};
 		508CB8C813C7BABD00F43AED /* InfoPlist.strings */ = {
@@ -7850,52 +7737,6 @@
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
-		504FDE9113BCC3A600470C77 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				COPY_PHASE_STRIP = NO;
-				DEPLOYMENT_LOCATION = YES;
-				DSTROOT = /;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "bundles/Players/OscilPlayer/OscilPlayer-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				INFOPLIST_FILE = "bundles/Players/OscilPlayer/OscilPlayer-Info.plist";
-				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Players/";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		504FDE9213BCC3A600470C77 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEPLOYMENT_LOCATION = YES;
-				DSTROOT = /;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "bundles/Players/OscilPlayer/OscilPlayer-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				INFOPLIST_FILE = "bundles/Players/OscilPlayer/OscilPlayer-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -10582,6 +10423,7 @@
 				500F1EDD13EDEDE300A25411 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5015AEB2133E70DB006C85AA /* Build configuration list for PBXNativeTarget "FoldByParameter" */ = {
 			isa = XCConfigurationList;
@@ -10687,15 +10529,6 @@
 			buildConfigurations = (
 				504A69AC11A9F693007F60FF /* Debug */,
 				504A69AD11A9F693007F60FF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		504FDE9313BCC3A600470C77 /* Build configuration list for PBXNativeTarget "OscilPlayer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				504FDE9113BCC3A600470C77 /* Debug */,
-				504FDE9213BCC3A600470C77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
