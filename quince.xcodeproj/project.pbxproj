@@ -48,6 +48,7 @@
 		50289F0213EDD57000FB95D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50289F0013EDD57000FB95D6 /* InfoPlist.strings */; };
 		50289F0713EDD64000FB95D6 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		50289F0C13EDD6B000FB95D6 /* Seq2PitchCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = 50289F0B13EDD6B000FB95D6 /* Seq2PitchCurve.m */; };
+		502B958C13F9629B0017D33D /* QuinceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 502B958B13F9629B0017D33D /* QuinceAppDelegate.m */; };
 		502C8CE611835C27006CCFB2 /* FunctionLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 502C8CE411835C27006CCFB2 /* FunctionLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		502C8CE711835C27006CCFB2 /* FunctionLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 502C8CE511835C27006CCFB2 /* FunctionLoader.m */; };
 		50325EA9122694A000E22031 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
@@ -1292,6 +1293,8 @@
 		50289F0313EDD57000FB95D6 /* Seq2PitchCurve-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Seq2PitchCurve-Prefix.pch"; path = "bundles/Functions/Seq2PitchCurve/Seq2PitchCurve-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		50289F0A13EDD6B000FB95D6 /* Seq2PitchCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Seq2PitchCurve.h; path = bundles/Functions/Seq2PitchCurve/Seq2PitchCurve.h; sourceTree = SOURCE_ROOT; };
 		50289F0B13EDD6B000FB95D6 /* Seq2PitchCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Seq2PitchCurve.m; path = bundles/Functions/Seq2PitchCurve/Seq2PitchCurve.m; sourceTree = SOURCE_ROOT; };
+		502B958A13F9629B0017D33D /* QuinceAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuinceAppDelegate.h; path = QuinceCore/QuinceAppDelegate.h; sourceTree = "<group>"; };
+		502B958B13F9629B0017D33D /* QuinceAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuinceAppDelegate.m; path = QuinceCore/QuinceAppDelegate.m; sourceTree = "<group>"; };
 		502C8CE411835C27006CCFB2 /* FunctionLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FunctionLoader.h; path = QuinceApi/FunctionLoader.h; sourceTree = "<group>"; };
 		502C8CE511835C27006CCFB2 /* FunctionLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FunctionLoader.m; path = QuinceApi/FunctionLoader.m; sourceTree = "<group>"; };
 		50325EA01226947500E22031 /* CSoundPlayer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSoundPlayer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2740,6 +2743,8 @@
 			children = (
 				2564AD2C0F5327BB00F57823 /* Quince_Prefix.pch */,
 				2A37F4B0FDCFA73011CA2CEA /* main.m */,
+				502B958A13F9629B0017D33D /* QuinceAppDelegate.h */,
+				502B958B13F9629B0017D33D /* QuinceAppDelegate.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -5935,6 +5940,7 @@
 				50BB62D8116F9C490056C410 /* SubviewTableViewCell.m in Sources */,
 				50BB6415116FAF2A0056C410 /* StripController.m in Sources */,
 				50E87AD21170FF8A00FFA57E /* EventInterceptView.m in Sources */,
+				502B958C13F9629B0017D33D /* QuinceAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
