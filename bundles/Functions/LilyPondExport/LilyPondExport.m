@@ -37,7 +37,9 @@
 		bottomKeys = [[NSMutableArray alloc]init];					
 		lilly = [[NSMutableString alloc]init];
         glissando = NO;
-		//pitches = YES;
+		pitches = NO;
+        [self setValue:[NSNumber numberWithBool:NO] forKey:@"_exportPitches"];
+        [self setValue:[NSNumber numberWithBool:NO] forKey:@"_exportGlissando"];
 	}
 	return self;
 }
@@ -76,9 +78,14 @@
 
 -(IBAction)export:(id)sender{
 	
-	pitches = [pitchesButton state]==NSOnState ? YES : NO;
-    glissando = pitches ? ([glissandoButton state]== NSOnState ? YES : NO) : NO;
-	[window orderOut:nil];
+	//pitches = [pitchesButton state]==NSOnState ? YES : NO;
+    //glissando = pitches ? ([glissandoButton state]== NSOnState ? YES : NO) : NO;
+	
+    pitches = [[self valueForKey:@"_exportPitches"]boolValue];
+    glissando = pitches ? [[self valueForKey:@"_exportGlissando"]boolValue] : NO;
+	
+    
+    [window orderOut:nil];
 	NSSavePanel* sp = [NSSavePanel savePanel];
 	[sp setRequiredFileType:@"ly"];
 	[sp setTitle:@"LilyPond Export"];
@@ -147,7 +154,15 @@ BOOL weWantKey(NSString * key){
 	if([key isEqualToString:@"subObjects"]) return NO;
 	if([key isEqualToString:@"superObject"])return NO;
 	if([key isEqualToString:@"pitch"])return NO;
-
+    if([key isEqualToString:@"volumeOffset"])return NO;
+    if([key isEqualToString:@"pitchF"])return NO;
+    if([key isEqualToString:@"pitchFOffset"])return NO;
+    if([key isEqualToString:@"compatible"])return NO;
+    if([key isEqualToString:@"frequencyOffset"])return NO;    
+    if([key isEqualToString:@"id"])return NO;
+    if([key isEqualToString:@"offsetKeys"])return NO;
+    if([key isEqualToString:@"startOffset"])return NO;  
+    if([key isEqualToString:@"type"])return NO;
 	//if([key isEqualToString:@"date"])return NO;
 	return YES;
 }
