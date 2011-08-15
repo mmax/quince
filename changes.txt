@@ -1,34 +1,43 @@
+v 0.9.7
+August 16, 2011
 
-- fixed bugs in LilyPondExport
-- added function: Seq2PitchCurve
-- added ContainerView: PitchCurveContainer
-- added type: PitchCurve
+- added function: AlignOnFreq
+- added function: EqlDstrbtn_Freq
+- added function: EqlDstrbtn_Pitch
 - added function: ExtractFrequencyVertexes 
+- added function: FixGlissandoEndPoints
+- added function: FixGlissandoStartPoints
+- added function: PitchQuantization
+- added function: Seq2PitchCurve
+- added function: Transpose
+
+- added ContainerView: CentContainer
+- added ContainerView: GlissandoContainer
+- added ContainerView: PitchCurveContainer
+- added ContainerView: PitchGridContainer
+
+- added ChildView: GlissandoChild
+
+- added type: PitchCurve
+
 - added glissando support for LilyPondExport
-- CsoundPlayer: new feature to assign objects to csound orc modes using parameters: "csoundMode" <String> or "csoundInstrumentNumber <number>
+- CsoundPlayer: new feature to assign objects to csound orc modes using parameters: "csoundMode" <string> or "csoundInstrumentNumber <number>
 - optimized performance of OneVoice_Loudest
 - new feature: adjustable y-axis parameter range
 - new feature: show/hide guidelines
-- added function: FixGlissandoEndPoints
-- added function: FixGlissandoStartPoints
-- added GlissandoChild
-- added GlissandoContainer
 - minor gui design improvements
-- added container: CentContainer
-- fixed a bug in PitchContainer and FrequencyStandardContainer
-(erratic behaviour with objects without values for pitch / frequency parameters…)
-- fixed a bug regarding pitch and cent updating
-- added function: EqlDstrbtn_Freq
-- added function: EqlDstrbtn_Pitch
-- added function: AlignOnFreq
 - added a pitch tab to CreateGridSequence
-- added container: PitchGridContainer
 - optimized CsoundPlayer performance
-- added function: PitchQuantization
-- added function: Transpose
-- changed Function Name: Quantization to TimeQuantization
 - optimized progress display
+- changed Function Name: Quantization to TimeQuantization
+
 - fixed a bug preventing the function pool table from resizing correctly
+- fixed several bugs in LilyPondExport
+- fixed bugs in PitchContainer and FrequencyStandardContainer
+(erratic behaviour with objects without values for pitch / frequency parameters…)
+- fixed bugs regarding pitch and cent updating
+
+
 _________________________________________________________________
 
 v 0.9.6
