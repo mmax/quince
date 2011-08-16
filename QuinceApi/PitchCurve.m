@@ -61,23 +61,26 @@
 //		}
 //		[self setValue:af forKey:@"source"];
 //		[document performFunctionNamed:@"Audio2Envelope" onObject:self];
-		if(![d valueForKey:@"color"])
-			[self setValue:[NSColor colorWithDeviceRed:0.4 green:0.45 blue:.6 alpha:1] forKey:@"color"];
-		else{
-			
-			[self setValue:[NSColor colorWithDeviceRed:[[[xml valueForKey:@"color"]objectAtIndex:0 ]floatValue] 
-												 green:[[[xml valueForKey:@"color"]objectAtIndex:1 ]floatValue]  
-												  blue:[[[xml valueForKey:@"color"]objectAtIndex:2 ]floatValue]  
-												 alpha:[[[xml valueForKey:@"color"]objectAtIndex:3 ]floatValue]] 
-					forKey:@"color"];
-		}
-//		
-//		if([self valueForKey:@"windowDuration"] && [self valueForKey:@"resampled"]){
-//			[[NSNotificationCenter defaultCenter]addObserver:self
-//													selector:@selector(resampleAfterLoad:)
-//														name:@"functionDone"
-//													  object:[document functionNamed:@"Audio2Envelope"]];
+		
+//        if(![d valueForKey:@"color"])
+//			[self setValue:[NSColor colorWithDeviceRed:0.4 green:0.45 blue:.6 alpha:1] forKey:@"color"];
+//		else{
+//			
+//			[self setValue:[NSColor colorWithDeviceRed:[[[xml valueForKey:@"color"]objectAtIndex:0 ]floatValue] 
+//												 green:[[[xml valueForKey:@"color"]objectAtIndex:1 ]floatValue]  
+//												  blue:[[[xml valueForKey:@"color"]objectAtIndex:2 ]floatValue]  
+//												 alpha:[[[xml valueForKey:@"color"]objectAtIndex:3 ]floatValue]] 
+//					forKey:@"color"];
 //		}
+		
+        [self setValue:[NSColor colorWithDeviceRed:0.66 green:.07 blue:.04 alpha:1] forKey:@"color"];
+        
+		if([self valueForKey:@"windowDuration"] && [self valueForKey:@"resampled"]){
+			[[NSNotificationCenter defaultCenter]addObserver:self
+													selector:@selector(resampleAfterLoad:)
+														name:@"functionDone"
+													  object:[document functionNamed:@"Audio2Envelope"]];
+		}
         
 	}
 	return self;
@@ -108,29 +111,29 @@
 	return nil;
 }
 
--(NSDictionary *)xmlDictionary{
-    
-    //	return [super xmlDictionary];
-	
-	NSMutableDictionary * dict = [super xmlDictionary];
-	[dict removeObjectForKey:@"envelope"];
-	[dict removeObjectForKey:@"source"];
-	
-    
-	NSColor * c = [self valueForKey:@"color"];
-	if(c){
-		NSMutableArray * rgb = [[NSMutableArray alloc]init];
-		[rgb addObject:[NSNumber numberWithFloat:[c redComponent]]];
-		[rgb addObject:[NSNumber numberWithFloat:[c greenComponent]]];
-		[rgb addObject:[NSNumber numberWithFloat:[c blueComponent]]];
-		[rgb addObject:[NSNumber numberWithFloat:[c alphaComponent]]];
-		[dict setValue:rgb forKey:@"color"];
-    }
-    
-	
-	return dict;
-	
-}
+//-(NSDictionary *)xmlDictionary{
+//    
+//    //	return [super xmlDictionary];
+//	
+//	NSMutableDictionary * dict = [super xmlDictionary];
+//	[dict removeObjectForKey:@"envelope"];
+//	[dict removeObjectForKey:@"source"];
+//	//[dict removeObjectForKey:@"color"];
+//    
+////	NSColor * c = [self valueForKey:@"color"];
+////	if(c){
+////		NSMutableArray * rgb = [[NSMutableArray alloc]init];
+////		[rgb addObject:[NSNumber numberWithFloat:[c redComponent]]];
+////		[rgb addObject:[NSNumber numberWithFloat:[c greenComponent]]];
+////		[rgb addObject:[NSNumber numberWithFloat:[c blueComponent]]];
+////		[rgb addObject:[NSNumber numberWithFloat:[c alphaComponent]]];
+////		[dict setValue:rgb forKey:@"color"];
+////    }
+//    
+//	
+//	return dict;
+//	
+//}
 
 -(void)resampleForWindowDuration:(double)userWindowDuration{
 	

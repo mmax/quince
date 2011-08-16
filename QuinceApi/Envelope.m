@@ -46,15 +46,17 @@
 		//NSLog(@"Envelope: initWithXMLDictonary:");
 	//retrieve envelope data
 		NSString * audioFileName = [xml valueForKey:@"audioFileName"];
-		AudioFile * af = (AudioFile *)[document objectWithValue:audioFileName forKey:@"name"];
-		if(![af isOfType:@"AudioFile"]){
-            return nil;
-			[document presentAlertWithText:
-			 [NSString stringWithFormat:@"%@: Error trying to init with audioFile of incompatible type: %@", 
-			  [self className], [af type]]];
-		}
-		[self setValue:af forKey:@"source"];
-		[document performFunctionNamed:@"Audio2Envelope" onObject:self];
+        if(audioFileName){
+            AudioFile * af = (AudioFile *)[document objectWithValue:audioFileName forKey:@"name"];
+            if(![af isOfType:@"AudioFile"]){
+                return nil;
+                [document presentAlertWithText:
+                 [NSString stringWithFormat:@"%@: Error trying to init with audioFile of incompatible type: %@", 
+                  [self className], [af type]]];
+            }
+            [self setValue:af forKey:@"source"];
+            [document performFunctionNamed:@"Audio2Envelope" onObject:self];
+        }
 		if(![xml valueForKey:@"color"])
 			[self setValue:[NSColor colorWithDeviceRed:0.4 green:0.45 blue:.6 alpha:1] forKey:@"color"];
 		else{
