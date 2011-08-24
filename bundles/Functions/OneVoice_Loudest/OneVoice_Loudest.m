@@ -32,16 +32,17 @@
 
 -(void)perform{
 
+    
 	//[document presentAlertWithText:@"OneVoice_Loudest will look for Events with identical start times. Overlapping Events will not be affected. Use the Legato Function First to make sure there are no overlapping Events in your Sequence."];
 	mom = [self objectForPurpose:@"source"];
 	QuinceObject * new = [self outputObjectOfType:@"QuinceObject"];
 	[mom sortChronologically];
 	
-	
+	timeSearchStartIndex = 0;
 	
 	double time = -1;
 	
-	[document setProgressTask:@"reducing..."];
+	[document setProgressTask:@"OVL: reducing..."];
 	[document displayProgress:YES];
 	while (1) {
 		time = [self nextSubTimeAfter:time];
@@ -92,8 +93,10 @@
 	
 	NSMutableArray * basket = [[[NSMutableArray alloc]init]autorelease];
 	double start;
+    QuinceObject * q;
     
-	for(QuinceObject * q in subs){
+	for(int index = timeSearchStartIndex;index<[subs count];index++){// QuinceObject * q in subs){
+        q = [subs objectAtIndex:index];
         start = [[q valueForKey:@"start"]doubleValue];
 		if(start == t)
 			[basket addObject:q];
@@ -110,11 +113,22 @@
 	
 	NSArray * subs = [mom valueForKey:@"subObjects"];
     double start;
-	for(QuinceObject * s in subs){
+    QuinceObject * s;
+    for(int index = timeSearchStartIndex;index<[subs count];index++){
+        s = [subs objectAtIndex:index];
         start =[[s valueForKey:@"start"]doubleValue];
-		if (start>t)
-			return start;
-	}
+        if (start>t){
+            timeSearchStartIndex = index;
+            return start;
+        }
+    }
+    
+//	for(QuinceObject * s in subs){
+//        start =[[s valueForKey:@"start"]doubleValue];
+//		if (start>t)
+//			return start;
+//	}
+
 	
 	return -1;
 }

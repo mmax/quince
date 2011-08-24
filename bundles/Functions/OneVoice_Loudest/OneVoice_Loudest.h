@@ -35,6 +35,7 @@
 @interface OneVoice_Loudest : Function {
 
 	QuinceObject * mom;
+    int timeSearchStartIndex;
 }
 
 -(QuinceObject*)loudestQuinceInArray:(NSArray *)fruit;

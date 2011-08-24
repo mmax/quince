@@ -1,3 +1,14 @@
+
+
+- optimized performance of OneVoice_Loudest
+_________________________________________________________________
+
+v 0.9.7.1
+August 17, 2011
+
+- fixed a bug that prevented sesions containing PitchCurves to be saved correctly
+_________________________________________________________________
+
 v 0.9.7
 August 16, 2011
 
