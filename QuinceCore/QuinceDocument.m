@@ -112,7 +112,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	mixDownMenu = [mixDownMenuItem submenu];
 	functionMenu = [functionItem submenu];
 	selectionMenu = [selectionItem submenu];
-
+    NSString * task = @"loading objects...";
 	//[functionMenu removeAllItems];
 	
 	NSArray * funItems = [functionMenu itemArray];
@@ -130,6 +130,9 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 
 	
 	[self startSearch:nil];
+    
+    [self setIndeterminateProgressTask:@"loading objects..."];
+    [self displayProgress:YES];
 	[objectPoolTreeController bind:@"contentArray" toObject:self withKeyPath:@"objectNodes" options:nil];
 	//[functionPoolController bind:@"contentArray" toObject:self withKeyPath:@"functionPool" options:nil];
 	if(!functionComposerFunctionPoolController)NSLog(@"doc: windowControllerDidLoadNib: no functionComposerFunctionPoolController bad bad bad bad bad bad bad!");
@@ -142,6 +145,9 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 		
 		for(NSDictionary * objectDict in tempObjectArray){
 			//NSLog(@"Document: objectDict: %@", objectDict);
+            task = [NSString stringWithFormat:@"loading objects... %@", [objectDict valueForKey:@"name"]];
+            [self setIndeterminateProgressTask:task];
+            
 			if (![[objectDict valueForKey:@"nonStandardReadIn"]boolValue]){
 				QuinceObjectController * mc = [self controllerForNewObjectOfClassNamed:[objectDict valueForKey:@"type"] inPool:NO];
 				//NSLog(@"doc subobjects: %d", [[objectDict valueForKey:@"subObjects"]count]);
@@ -188,6 +194,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	[functionPoolTable setDoubleAction:@selector(awake)];
 	[specialNeeds release];
 	
+    [self displayProgress:NO];
 	//[[aController window] makeFirstResponder:[[[mainController stripControllers] objectAtIndex:0]activeView]];
 }
 
@@ -198,7 +205,9 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 - (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError{
-
+    [self setIndeterminateProgressTask:@"writing data..."];
+    [self displayProgress:YES];
+    
 	NSString * error;
 	NSDictionary * views = [mainController xmlDictionary];//[[NSMutableDictionary alloc]init];
 	NSMutableDictionary * session = [[NSMutableDictionary alloc]init];
@@ -455,7 +464,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 -(void)functionSearchDone:(NSMutableArray *)functionClassList{
-
+    [self setIndeterminateProgressTask:@"adding Functions"];
 	NSEnumerator * e = [functionClassList objectEnumerator];
 	functionClasses = functionClassList;
 	Function * fun;
@@ -511,6 +520,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 -(void)childViewSearchDone:(NSMutableArray *)childViewClassList{
+    [self setIndeterminateProgressTask:@"adding ChildViews"];
 	NSEnumerator * e = [childViewClassList objectEnumerator];
 	childViewClasses = childViewClassList;
 	Class a;
@@ -521,7 +531,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 /////////////////////////////////////////////////////////////////////////////////////////////////////	
 
 -(void)playerSearchDone:(NSMutableArray *)playerClassList{
-
+    [self setIndeterminateProgressTask:@"adding Players"];
 	playerClasses = playerClassList;
 	[playerMenu removeAllItems];
 	for(Class a in playerClassList)
@@ -1407,7 +1417,12 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 
 -(id)valueForKeyPath:(NSString *)keyPath{
 
-	if([keyPath isEqualToString:@"objectNodes"]){
+    if(!keyPath){
+        NSLog(@"QuinceDocument: valueForKeyPath: ERROR: no valid keyPath!");
+        return nil;
+    }
+	//NSLog(@"QuinceDocument: valueForKeyPath: keyPath: %@", keyPath);
+    if([keyPath isEqualToString:@"objectNodes"]){
 		return objectNodes;
 	}
 	if([keyPath isEqualToString:@"functionPool"])
@@ -1476,7 +1491,11 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 -(void) setProgress:(float)progress {
-	
+//    if(!progress){
+//        NSLog(@"DOC: setProgress: invalid progress value!");
+//        return;
+//    }
+//    NSLog(@"DOC: setProgress: %f", progress);
     [self setValue:[NSNumber numberWithFloat:progress] forKey:@"progress"];
 	//[progressBar setDoubleValue:progress];
 	//[progressBar displayIfNeeded];
