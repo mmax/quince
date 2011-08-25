@@ -200,7 +200,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 // dirty
--(BOOL)isDocumentEdited{return YES;}
+//-(BOOL)isDocumentEdited{return YES;}
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -226,10 +226,11 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	NSData * data = [NSPropertyListSerialization dataFromPropertyList:session
 															   format:NSPropertyListXMLFormat_v1_0
 												errorDescription:&error];	 	 
-	[self displayProgress:NO];
+	
 	[session release];
 	[objects release];
-	
+	[self displayProgress:NO];
+    
 	if(!data) {
 		NSLog(@"%@", error);
 		return nil;
