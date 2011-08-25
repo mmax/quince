@@ -314,8 +314,15 @@
 
 -(id)valueForKey:(NSString *)key{
    // NSLog(@"QuinceObject: valueForKey:%@", key);
-	if([key isEqualToString:@"dictionary"])
-		return [self dictionary];
+	if([key isEqualToString:@"dictionary"]){	
+        if(![self dictionary]){
+            NSLog(@"QuinceObject: valueForKey: ERROR: no dictionary!");
+            return nil;
+        }
+        return [self dictionary];
+    }
+    
+	
 	else if([key isEqualToString:@"isFolded"])
 		return [NSNumber numberWithBool: [self isFolded]];
 	if([key isEqualToString:@"object"])
