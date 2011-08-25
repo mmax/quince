@@ -86,7 +86,7 @@
 	
 	for(QuinceObject * quince in subs){
 
-        NSPoint location = NSMakePoint(0, [[self convertPitchToY:[quince valueForKey:@"pitch"]]floatValue]);
+        NSPoint location = NSMakePoint(0, [[self convertPitchToY:[quince valueForKey:@"pitchF"]]floatValue]);
 		
 		NSBezierPath * p = [NSBezierPath bezierPath];
 		[p moveToPoint:location];
@@ -106,9 +106,9 @@
 		
 		if ([subs count]>(i+1)) {
 			quince = [subs objectAtIndex:i];
-			a = [[self convertPitchToY:[quince valueForKey:@"pitch"]]floatValue];
+			a = [[self convertPitchToY:[quince valueForKey:@"pitchF"]]floatValue];
 			quince = [subs objectAtIndex:i+1];
-			b = [[self convertPitchToY:[quince valueForKey:@"pitch"]]floatValue];
+			b = [[self convertPitchToY:[quince valueForKey:@"pitchF"]]floatValue];
 			
 			c = (b-a)*.5 + a;
 		}
@@ -158,11 +158,11 @@
 
 
 -(NSString *)parameterOnY{
-	return [NSString stringWithString:@"pitch"];
+	return [NSString stringWithString:@"pitchF"];
 }
 
 -(NSString *)keyForLocationOnYAxis{
-    return [NSString stringWithString:@"pitch"];
+    return [NSString stringWithString:@"pitchF"];
 }
 
 -(NSNumber *)parameterValueForY:(NSNumber *)y{
