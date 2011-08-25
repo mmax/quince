@@ -31,16 +31,23 @@
 
 -(void)perform{
 
-    QuinceObject * seq = [self objectForPurpose:@"victim"];
-	QuinceObjectController * resultController = [[self outputObjectOfType:@"QuinceObject"]controller];
-
-    [self copyParamsOf:seq into:[resultController content]];
+    QuinceObjectController * resultController = [[self outputObjectOfType:@"QuinceObject"]controller];
+    QuinceObject * seq = [self objectForPurpose:@"victim"], * result = [resultController content];
+	
+    [self copyParamsOf:seq into:result];
+    NSArray * subs = [seq valueForKey:@"subObjects"];
     
-    for(QuinceObject * q in [seq valueForKey:@"subObjects"])
+    
+    [document setIndeterminateProgressTask:@"PitchQuantization: copying source..."];
+    [document displayProgress:YES];
+    for(QuinceObject * q in subs){
+        
+        
         [resultController addSubObjectWithController:[[q copy]controller] withUpdate:NO];
+    }
     
     [self createGrid];
-    [self doQuantize:[resultController content]];
+    [self doQuantize:result];
     
     [resultController update];
 	[resultController setValue:[NSString stringWithFormat:@"%@_pq", [seq valueForKey:@"name"]] forKeyPath:@"selection.name"];
@@ -50,12 +57,12 @@
 }
 
 -(void)doQuantize:(QuinceObject *)q{
-
-    float progress = 0, f = 100.0/[q subObjectsCount];
-    [document setProgressTask:@"quantizing pitches..."];
+    float count = [q subObjectsCount];
+    float progress = 0, f = 100.0/count;
+    [document setProgressTask:@"PitchQuantization: quantizing objects..."];
     [document displayProgress:YES];
     
-    for(int i = 0; i<[q subObjectsCount];i++){
+    for(int i = 0; i<count;i++){
         [self quantizeQuince:[[q valueForKey:@"subObjects"]objectAtIndex:i]];    
         progress = f * i;
         [document setProgress:progress];
@@ -95,6 +102,8 @@
 }
 
 -(void)createGrid{
+    [document setIndeterminateProgressTask:@"PitchQuantization: processing grid..."];
+    [document displayProgress:YES];
     
     NSMutableArray * grid = [[[NSMutableArray alloc]init]autorelease];
     
