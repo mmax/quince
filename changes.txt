@@ -1,12 +1,15 @@
 
+v 0.9.8
 
+- added pogress/feedback to document tasks
+- fixed a bug in JoinByFrequency
 - optimized performance of OneVoice_Loudest
 _________________________________________________________________
 
 v 0.9.7.1
 August 17, 2011
 
-- fixed a bug that prevented sesions containing PitchCurves to be saved correctly
+- fixed a bug that prevented sessions containing PitchCurves to be saved correctly
 _________________________________________________________________
 
 v 0.9.7
