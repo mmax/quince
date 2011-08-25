@@ -37,10 +37,17 @@
 	float maxCent;
 	QuinceObject * mom;
 	QuinceObject * source;
+    int inIndex, outIndex;
+    
 	
 }
 
 -(IBAction)cancel:(id)sender;
 -(IBAction)go:(id)sender;
--(void)joinNextFrom:(int)index into:(QuinceObject *)j;
+
+//-(void)joinNextFrom:(int)index into:(QuinceObject *)j;
+-(void)joinQuinceAtInIndexIntoQuinceAtOutIndex;
+-(void)join;
+-(BOOL)_check;
+
 @end
