@@ -188,7 +188,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	}
 
 	
- 	[[NSDocumentController sharedDocumentController]setAutosavingDelay:30];
+ 	[[NSDocumentController sharedDocumentController]setAutosavingDelay:300];
 	
 	[functionPoolTable setTarget:functionLoader];
 	[functionPoolTable setDoubleAction:@selector(awake)];
