@@ -44,10 +44,14 @@
     }
     
     PitchCurve * output = (PitchCurve *)[self outputObjectOfType:@"PitchCurve"];
-    
+    float sr = 100;
+    index = 0;
+    [self setValue:[NSNumber numberWithFloat:sr] forKey:@"sampleRate"];
     NSArray * pc = [self pc];
     [output setPitchCurve:pc];
-    [output setValue:[NSNumber numberWithDouble:100.0] forKey:@"sampleRate"];
+
+    [output setValue:[NSNumber numberWithDouble:sr] forKey:@"sampleRate"];
+
     [output setValue:[NSNumber numberWithInt:1] forKey:@"samplesPerWindow"];
     [output setValue:[[self objectForPurpose:@"source"] valueForKey:@"duration"] forKey:@"duration"];
     [output setValue:[NSString stringWithFormat:@"%@_PiCu", [[self objectForPurpose:@"source"] valueForKey:@"name"]] forKey:@"name"];
@@ -60,14 +64,16 @@
 
     NSMutableArray * pc = [[NSMutableArray alloc]init];
     QuinceObject * source = [self objectForPurpose:@"source"], * candidate;
+    [document setIndeterminateProgressTask:@"Seq2PitchCurve: sorting..."];
+    [document displayProgress:YES];
     [source sortChronologically];
     NSArray * subs;
 
-    double pitchF=0, dur = [[source valueForKey:@"duration"]doubleValue], inc = 0.01, time=0;
+    double pitchF=0, dur = [[source valueForKey:@"duration"]doubleValue], inc = 1/[[self valueForKey:@"sampleRate"]floatValue], time=0;
     float progress=0;
     
 
-    [document setProgressTask:@"reading sequence..."];
+    [document setProgressTask:@"Seq2PitchCurve: converting sequence..."];
     [document displayProgress:YES];
 
     int i=0;
@@ -75,24 +81,65 @@
         [document setProgress:progress];
         progress=  100.0/(dur*100.0)*i++;
         
-        subs = [source subObjectsAtTime:[NSNumber numberWithDouble:time]];
-        
+        //subs = [source subObjectsAtTime:[NSNumber numberWithDouble:time]];
+        subs = [self getSubObjectsForTime:[NSNumber numberWithDouble:time]];
         if([subs count]){
-            candidate = [self objectWithHighestFrequencyInArray:subs];
+            if([subs count]==1) 
+                candidate =  [subs lastObject];
+            else
+                candidate = [self objectWithHighestFrequencyInArray:subs];
+            
             pitchF = [[candidate valueForKey:@"pitchF"]doubleValue];
         }
         
         
         [pc addObject:[NSNumber numberWithDouble:pitchF]];
         time+=inc;
-     //   NSLog(@"time: %f, dur:%f", time, dur);
+        
+        //NSLog(@"time: %f, dur:%f", time, dur);
+       // NSString * s = [NSString stringWithFormat:@"Seq2PitchCurve: %.3f/%.3f", time, dur];
+        //[document setProgressTask:s];
         
     }
     return [pc autorelease];
 }
 
--(QuinceObject *)objectWithHighestFrequencyInArray:(NSArray *)a{
+-(NSArray *)getSubObjectsForTime:(NSNumber *)time{
+   // NSMutableArray * subs = [[NSMutableArray alloc]init];
+    int i = index;
+    long max = [[[self objectForPurpose:@"source"]valueForKey:@"subObjects"]count];
+    QuinceObject * m;
+    BOOL flag = NO;
+    NSArray * inSubs = [[self objectForPurpose:@"source"]valueForKey:@"subObjects"];
+    NSMutableArray * s = [[NSMutableArray alloc]init];
+	double start, end, t = [time doubleValue];
+	
+	for(;i<max;i++){
+        m=[inSubs objectAtIndex:i];
+		start = [[m valueForKey:@"start"]doubleValue]+[[m offsetForKey:@"start"]doubleValue];
+		end = start + [[m valueForKey:@"duration"]doubleValue];
+		if (start<=t && t<end){
 
+            if(!flag){
+                flag = YES;
+                index = i;
+            }
+			
+            [s addObject:m];
+            
+        }
+        if(start > t)
+            break;
+	}
+    
+	return [s autorelease];
+
+    
+}
+
+ -(QuinceObject *)objectWithHighestFrequencyInArray:(NSArray *)a{
+
+    
     double f, m=0;
     QuinceObject * c;
     for(QuinceObject * q in a){

@@ -34,8 +34,10 @@
 @interface Seq2PitchCurve : Function {
 @private
     BOOL gliss;
+    int index;
 }
 -(BOOL)checkInput;
 -(QuinceObject *)objectWithHighestFrequencyInArray:(NSArray *)a;
 -(NSArray *)pc;
+-(NSArray *)getSubObjectsForTime:(NSNumber *)time;
 @end
