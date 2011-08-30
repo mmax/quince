@@ -516,7 +516,7 @@ double maxabs(double d){return d<0?d*(-1):d;}
 	}
     
 	if(remainingDurFractionalPart>0.000001){ 
-		NSLog(@"LilyPondExport:createStringForEventAtIndex:... in rounding error correction block. should be avoided!");
+		//NSLog(@"LilyPondExport:createStringForEventAtIndex:... in rounding error correction block. should be avoided!");
 		measure = [self getMeasureForTime:remainingDurFractionalPart];
 		double measureLength = 1.0 / measure;
 		tupletStart = [self getTupletStartStringForMeasure:measure];
@@ -566,7 +566,12 @@ double maxabs(double d){return d<0?d*(-1):d;}
 	}
 	else{
 		if(glissNow){
-            [self toFile:[self glissandoEndNoteForEvent:event withMeasure:measure times:times]];
+            if(remainingDurFractionalPart < 0.0001){
+                [self toFile:[self glissandoEndNoteForEvent:event withMeasure:1 times:1]];
+            }
+            else
+                [self toFile:[self glissandoEndNoteForEvent:event withMeasure:measure times:times]];
+            //[self toFile:[self glissandoEndNoteForEvent:event withMeasure:4 times:1]];
             //[self toFile:@" } "];
             //NSLog(@"gliss #535");
         }
