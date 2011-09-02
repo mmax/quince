@@ -38,4 +38,8 @@
 -(NSNumber *)convertPitchToY:(NSNumber *)f;
 //-(NSNumber *)convertPitchToYDelta:(NSNumber *)p;
 //-(NSNumber *)convertDeltaYToDeltaPitch:(NSNumber *)y;
+
+-(void)setGlissandoEndToNextStart;
+-(void)setGlissandoStartToPreviousEnd;
+
 @end

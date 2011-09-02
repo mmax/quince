@@ -342,7 +342,6 @@ NSString* const kMuteString = @"m";
 	else if(childHit && [event clickCount]==2 && !([event modifierFlags] & NSCommandKeyMask)){
 		[self selectChildView:child];
 		[document showInspector:nil];
-	
 	}
 	
 	[self setNeedsDisplay:YES];
@@ -1076,6 +1075,18 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 		[[mcv controller]toggleMute];
 	}
 	[self setNeedsDisplayInRect:[self unionRectForSelection]];
+}
+
+-(ChildView *)nextChildViewAfterChildView:(ChildView *)c{
+    QuinceObjectController * n = [contentController controllerOfNextSubObjectAfterController:[c controller]];
+    if(!n)return nil;
+    return [self childViewWithController:n];
+}
+
+-(ChildView *)previousChildViewBeforeChildView:(ChildView *)c{
+    QuinceObjectController * n = [contentController controllerOfPreviousSubObjectBeforeController:[c controller]];
+    if(!n)return nil;
+    return [self childViewWithController:n];
 }
 
 #pragma mark resize

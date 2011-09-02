@@ -29,6 +29,9 @@
 
 @implementation GlissandoContainer
 
+NSString * const kGlissandoContainerSetGlissandoEndToNextStartString = @"e";
+NSString * const kGlissandoContainerSetGlissandoStartToPreviousEndString = @"s";
+
 -(NSString *)defaultChildViewClassName{return @"GlissandoChild";}
 
 
@@ -92,6 +95,50 @@
     //NSLog(@"f:%f, y: %f", [f doubleValue], y);
 	return [NSNumber numberWithFloat: y];
 }
+
+
+-(void) insertText:(NSString *)string{
+
+    [super insertText:string];
+    if(![[self valueForKey:@"visible"]boolValue])
+		return;
+    if ([string isEqualToString:kGlissandoContainerSetGlissandoEndToNextStartString]) {
+		[self setGlissandoEndToNextStart];
+	}
+	else if([string isEqualToString:kGlissandoContainerSetGlissandoStartToPreviousEndString]) {
+		[self setGlissandoStartToPreviousEnd];
+	}
+}
+
+-(void)setGlissandoEndToNextStart{
+    if(![selection count])return;
+    ChildView * c = [selection lastObject];
+    [self deselectAllChildViews];
+    [self selectChildView:c];
+    ChildView * d = [self nextChildViewAfterChildView:c];
+    if(!d)return;
+    [self selectChildView:d];
+    [document performFunctionOnCurrentSelectionWithFunctionName:@"FixGlissandoEndPoints"];
+    [self deselectChild:d];
+
+}
+
+
+
+-(void)setGlissandoStartToPreviousEnd{
+
+    if(![selection count])return;
+    ChildView * c = [selection lastObject];
+    [self deselectAllChildViews];
+    [self selectChildView:c];
+    ChildView * d = [self previousChildViewBeforeChildView:c] ;
+    if(!d)return;
+    [self selectChildView:d];
+    [document performFunctionOnCurrentSelectionWithFunctionName:@"FixGlissandoStartPoints"];
+    [self deselectChild:d];
+
+}
+
 
 
 //-(void)moveSelectionByX:(float)x andY:(float)y{

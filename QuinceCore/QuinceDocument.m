@@ -1653,9 +1653,9 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
--(IBAction)performFunctionOnCurrentSelectionWithMenuItem:(id)sender{
-
-	//NSLog(@"performFunctionOnCurrentSelectionWithMenuItem:%@", [sender title]);
+-(void)performFunctionOnCurrentSelectionWithFunctionName:(NSString *)f{
+    
+    //NSLog(@"performFunctionOnCurrentSelectionWithMenuItem:%@", [sender title]);
 	
 	ContainerView * currentView = [mainController activeView];	// get the currently active view
 	NSArray * selectedChildViews = [currentView selection];			// get an array containing the selected childViews
@@ -1664,7 +1664,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	
 	for(ChildView * child in selectedChildViews)				// store their contollers in an array
 		[selectionControllers addObject:[child controller]];
-
+    
 	//for (QuinceObjectController * mc in selectionControllers)	
 	//	[superController removeSubObjectWithController:mc withUpdate:NO];	// remove the subobjects from the previous super-object
 	
@@ -1675,29 +1675,40 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 		[[mother controller] addSubObjectWithController:copy withUpdate:NO];
 	}
 	
-	Function * fun = [self functionNamed:[sender title]];		// get the selected function
+	Function * fun = [self functionNamed:f];		// get the selected function
 	[fun reset];
 	NSArray * inputDescriptors = [fun inputDescriptors];
 	[[inputDescriptors lastObject]setValue:mother forKey:@"object"];	
-//	[fun setValue:inputDescriptors forKey:@"inputDescriptors"];		// pass the ‘mother’ Object as the input to the function
+    //	[fun setValue:inputDescriptors forKey:@"inputDescriptors"];		// pass the ‘mother’ Object as the input to the function
 	[fun performActionWithInputDescriptors:inputDescriptors];		// perform the function,
 	//[fun reset];													// reset it
 	
 	//for (QuinceObjectController * mc in selectionControllers)	
 	//	[superController addSubObjectWithController:mc withUpdate:YES];	// add the subobjects to the previous super-object
 	
-
+    
 	NSMutableArray * newControllers = [[NSMutableArray alloc]init];
 	
 	for(QuinceObject * q in [mother valueForKey:@"subObjects"]){
 		[newControllers addObject:[q controller]];
 	}
 	
-	[self replaceControllers:selectionControllers withControllers:newControllers inSuperController:superController inView:currentView forFunctionNamed:[sender title]];
+	[self replaceControllers:selectionControllers withControllers:newControllers inSuperController:superController inView:currentView forFunctionNamed:f];
 	
 	[selectionControllers release];
 	[newControllers release];
 	[mother release];
+
+    
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-(IBAction)performFunctionOnCurrentSelectionWithMenuItem:(id)sender{
+    [self performFunctionOnCurrentSelectionWithFunctionName:[sender title]];
+    return;
+	//NSLog(@"performFunctionOnCurrentSelectionWithMenuItem:%@", [sender title]);
+	
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////

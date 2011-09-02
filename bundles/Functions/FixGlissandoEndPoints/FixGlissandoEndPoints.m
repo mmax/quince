@@ -89,9 +89,12 @@
         quinceB = [subs objectAtIndex:i+1];
 		endA = [[quinceA end]doubleValue];
 		startB = [[quinceB valueForKey:@"start"]doubleValue];
-        if(endA > startB+.001)
+        if(endA > startB+.001){
             return NO;       
+            //NSLog(@"FixGlissandoEndpoints: check:NO");
+        }
     }
+   // NSLog(@"FixGlissandoEndpoints: check:YES");
     return YES;
     
 }

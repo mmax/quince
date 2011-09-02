@@ -140,6 +140,8 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2);
 -(NSArray *) createChildViewsForUnfoldedControllers:(NSArray *)unfoldedSubControllers andBeginAnimationForChildView:(ChildView *) child;
 -(void)removeChildViews:(NSArray *)obsoleteChildViews;
 -(void)removeChildViewForQuinceObjectController:(QuinceObjectController *)mc;
+-(ChildView *)nextChildViewAfterChildView:(ChildView *)c;
+-(ChildView *)previousChildViewBeforeChildView:(ChildView *)c;
 -(void)setDocument :(QuinceDocument *)doc;
 -(void)sortChildViewsLeft2Right;
 -(void)scaleByX:(float)diffX andY:(float)diffY;
