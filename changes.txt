@@ -1,6 +1,7 @@
 
 v 0.9.8
 
+- added feature in GlissandoContainer, s/e automatically adjusts glissandoStart/glissandoEnd 
 - added pogress/feedback to document tasks
 - fixed a bug in JoinByFrequency
 - optimized performance of OneVoice_Loudest

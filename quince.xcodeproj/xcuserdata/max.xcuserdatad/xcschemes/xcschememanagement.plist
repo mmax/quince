@@ -19,6 +19,11 @@
 			<key>orderHint</key>
 			<integer>26</integer>
 		</dict>
+		<key>ApplyPitchCurve.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>67</integer>
+		</dict>
 		<key>ApplyValueList.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -378,6 +383,11 @@
 			<true/>
 		</dict>
 		<key>5015AFFB133EA9A4006C85AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>501AF9EE141561B7007AFEF3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
