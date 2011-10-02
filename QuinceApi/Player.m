@@ -117,7 +117,7 @@ void sequenceUserCallback (
 								  MusicTimeStamp            inStartSliceBeat,
 								  MusicTimeStamp            inEndSliceBeat
 								  ){
-	NSAutoreleasePool * scbp = [[NSAutoreleasePool alloc]init];
+NSAutoreleasePool * scbp = [[NSAutoreleasePool alloc]init];
 	PlayerMusicEventUserData uData = *(PlayerMusicEventUserData *)inEventData;
 	Player * player = (Player *)inClientData;
 	 
@@ -139,7 +139,7 @@ void sequenceUserCallback (
 	
 	//NSLog(@"%@", [uData.quince valueForKey:@"name"]);
 	
-	[scbp release];
+[scbp release];
 }
 
 -(void)setup{
@@ -322,7 +322,13 @@ void sequenceUserCallback (
 }
 
 -(BOOL)isPlaying{return isPlaying;}
--(void)setIsPlaying:(BOOL)b{isPlaying = b;}
+
+-(void)setIsPlaying:(BOOL)b{
+    isPlaying = b;
+    [document setValue:[NSNumber numberWithBool:b] forKey:@"playbackStarted"];
+    [document setValue:[NSNumber numberWithBool:!b] forKey:@"playbackStopped"];
+}
+
 -(MusicSequence)sequence{return sequence;}
 -(MusicPlayer)player{return player;}
 
