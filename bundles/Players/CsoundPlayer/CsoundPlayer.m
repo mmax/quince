@@ -229,6 +229,11 @@ static void * csoundCallback(CSOUND * csound,int attr, const char *format, va_li
 	[self writeOrc:csd];
 	
 	[csd appendFormat:@"\n\n</CsInstruments>\n<CsScore>\n"];
+    
+    NSMutableString * score = [[[NSMutableString alloc]init]autorelease];
+	[self writeSco:score];
+    [self setValue:score forKey:@"scoreString"];
+    
 	//[self writeSco:csd];
     [csd appendString:[self valueForKey:@"scoreString"]];
 	[csd appendFormat:@"\n\n</CsScore>\n</CsoundSynthesizer>\n"];
@@ -405,6 +410,7 @@ static void * csoundCallback(CSOUND * csound,int attr, const char *format, va_li
     v = [q valueForKey:@"csoundInstrumentNumber"];
     if(v) mode = [v intValue];
     
+    NSLog(@"mode: %d", mode);
     if(mode >0)
         return mode;
     

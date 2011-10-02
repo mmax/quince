@@ -1,6 +1,6 @@
 
 v 0.9.8
-
+- fixed a bug in CsoundPlayer
 - added function: ApplyPitchCurve
 - added feature in GlissandoContainer, s/e automatically adjusts glissandoStart/glissandoEnd 
 - added pogress/feedback to document tasks
