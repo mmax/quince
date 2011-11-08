@@ -3356,8 +3356,8 @@
 		50F420711198BFA2009F695A /* Players */ = {
 			isa = PBXGroup;
 			children = (
-				50325EB21226951400E22031 /* CSoundPlayer */,
 				50F4206F1198BF9B009F695A /* AudioFilePlayer */,
+				50325EB21226951400E22031 /* CSoundPlayer */,
 			);
 			name = Players;
 			sourceTree = "<group>";
@@ -10608,6 +10608,7 @@
 				501AF9F9141561B7007AFEF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		501C284511CE8D940097B5F0 /* Build configuration list for PBXNativeTarget "ResampleEnvelope" */ = {
 			isa = XCConfigurationList;
