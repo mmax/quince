@@ -333,7 +333,7 @@
 */
     for(NSDictionary * d in [self valueForKey:@"guides"]){
      	[[NSGraphicsContext currentContext]setShouldAntialias:NO];   
-		[[d valueForKey:@"color"]set];
+		[(NSColor*)[d valueForKey:@"color"]set];
 		[[d valueForKey:@"path"]stroke];
 		NSMutableAttributedString * s = [d valueForKey:@"string"];
 		NSRect frame = [s boundingRectWithSize:[s size] options:NSStringDrawingUsesFontLeading];

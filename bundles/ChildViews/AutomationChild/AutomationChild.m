@@ -60,11 +60,11 @@
 	
 	if([self selected]){
 		//NSLog(@"MintItem: class: %@ : selected: %@", [self className], [NSNumber numberWithBool:[self selected]]);
-		[[self valueForKey:@"selectionColor"] set];
+		[(NSColor*)[self valueForKey:@"selectionColor"] set];
 	}
 	else{
 		//NSLog(@"MintItem: class: %@ : selected: %@", [self className], [NSNumber numberWithBool:[self selected]]);
-		[[self valueForKey:@"interiorColor"] set];
+		[(NSColor*)[self valueForKey:@"interiorColor"] set];
 	}
 	[NSBezierPath fillRect:r];
 	

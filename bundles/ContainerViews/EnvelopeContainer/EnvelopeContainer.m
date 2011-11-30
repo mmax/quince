@@ -306,7 +306,7 @@
 		[[NSColor colorWithDeviceRed:0.4 green:0.45 blue:.6 alpha:1]set];
 	}
 	else {
-		[[[self contentController] valueForKey:@"color"]set];
+		[(NSColor*)[[self contentController] valueForKey:@"color"]set];
 	}
 
 	for(NSBezierPath * p in pathsToFill){

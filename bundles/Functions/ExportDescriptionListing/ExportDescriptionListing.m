@@ -34,7 +34,9 @@
 
 
 	NSSavePanel* sp = [NSSavePanel savePanel];
-	[sp setRequiredFileType:@"txt"];
+    NSArray * types = [NSArray arrayWithObject:@"txt"];
+    [sp setAllowedFileTypes:types];
+	//[sp setRequiredFileType:@"txt"];
 	[sp setTitle:@"Save Description Listing"];
 #ifdef MAC_OS_X_VERSION_10_6
 	[sp setNameFieldStringValue:@"filenamedoesntmatter.txt"];

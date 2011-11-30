@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -672,6 +672,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5074FE4C1238E1A500BB60C6;
 			remoteInfo = SetParameter;
+		};
+		5077170A148666440036F0AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
 		};
 		507750BF1268DD1900AF7956 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1452,7 +1459,7 @@
 		507C6F8411977F6E00914B4C /* Legato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Legato.m; path = bundles/Functions/Legato/Legato.m; sourceTree = "<group>"; };
 		508B1854114A7977002FBC55 /* MainScrollerDocumentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScrollerDocumentView.h; path = QuinceCore/MainScrollerDocumentView.h; sourceTree = "<group>"; };
 		508B1855114A7977002FBC55 /* MainScrollerDocumentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainScrollerDocumentView.m; path = QuinceCore/MainScrollerDocumentView.m; sourceTree = "<group>"; };
-		508C43B21295596E00875B93 /* OneVoice_Loudest.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneVoice_Loudest.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		508C43B21295596E00875B93 /* OneVoice-Loudest.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OneVoice-Loudest.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		508C43B31295596F00875B93 /* OneVoice_Loudest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "OneVoice_Loudest-Info.plist"; path = "bundles/Functions/OneVoice_Loudest/OneVoice_Loudest-Info.plist"; sourceTree = "<group>"; };
 		508C43BB129559CB00875B93 /* OneVoice_Loudest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OneVoice_Loudest.h; path = /Users/max/SWProjects/quince/bundles/Functions/OneVoice_Loudest/OneVoice_Loudest.h; sourceTree = "<absolute>"; };
 		508C43BC129559CB00875B93 /* OneVoice_Loudest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OneVoice_Loudest.m; path = /Users/max/SWProjects/quince/bundles/Functions/OneVoice_Loudest/OneVoice_Loudest.m; sourceTree = "<absolute>"; };
@@ -1513,7 +1520,7 @@
 		50B171FF13CB336400C9F105 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50B1720113CB336400C9F105 /* TimeQuantization-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TimeQuantization-Prefix.pch"; path = "bundles/Functions/TimeQuantization/TimeQuantization-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		50B5BB5013870A300031A3DF /* CsoundLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CsoundLib.framework; path = Library/Frameworks/CsoundLib.framework; sourceTree = SDKROOT; };
-		50B86D321190383D00D235AA /* EqlDstrbtn_Start.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EqlDstrbtn_Start.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B86D321190383D00D235AA /* EqlDstrbtn-Start.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EqlDstrbtn-Start.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B86D331190383D00D235AA /* EqlDstrbtn_Start-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EqlDstrbtn_Start-Info.plist"; path = "bundles/Functions/EqlDstrbtn_Start/EqlDstrbtn_Start-Info.plist"; sourceTree = "<group>"; };
 		50B86D3D1190388C00D235AA /* EqlDstrbtn_Start.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EqlDstrbtn_Start.h; path = bundles/Functions/EqlDstrbtn_Start/EqlDstrbtn_Start.h; sourceTree = "<group>"; };
 		50B86D3E1190388C00D235AA /* EqlDstrbtn_Start.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EqlDstrbtn_Start.m; path = bundles/Functions/EqlDstrbtn_Start/EqlDstrbtn_Start.m; sourceTree = "<group>"; };
@@ -1521,7 +1528,7 @@
 		50B8F4931230F2E600E444BC /* Sets_Difference-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Sets_Difference-Info.plist"; path = "bundles/Functions/Sets_Difference/Sets_Difference-Info.plist"; sourceTree = "<group>"; };
 		50B8F49C1230F32300E444BC /* Sets_Difference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sets_Difference.h; path = bundles/Functions/Sets_Difference/Sets_Difference.h; sourceTree = "<group>"; };
 		50B8F49D1230F32300E444BC /* Sets_Difference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sets_Difference.m; path = bundles/Functions/Sets_Difference/Sets_Difference.m; sourceTree = "<group>"; };
-		50B8F5251230F60200E444BC /* Sets_SymDiff.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sets_SymDiff.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B8F5251230F60200E444BC /* Sets-SymDiff.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sets-SymDiff.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B8F5261230F60200E444BC /* Sets_SymDiff-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Sets_SymDiff-Info.plist"; path = "bundles/Functions/Sets_SymDiff/Sets_SymDiff-Info.plist"; sourceTree = "<group>"; };
 		50B8F5571230F71300E444BC /* Sets_SymDiff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sets_SymDiff.h; path = bundles/Functions/Sets_SymDiff/Sets_SymDiff.h; sourceTree = "<group>"; };
 		50B8F5581230F71300E444BC /* Sets_SymDiff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sets_SymDiff.m; path = bundles/Functions/Sets_SymDiff/Sets_SymDiff.m; sourceTree = "<group>"; };
@@ -1552,15 +1559,15 @@
 		50D194DC123045BD00C3FC2C /* MapDynamicExpr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapDynamicExpr.h; path = bundles/Functions/MapDynamicExpr/MapDynamicExpr.h; sourceTree = "<group>"; };
 		50D194DD123045BD00C3FC2C /* MapDynamicExpr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapDynamicExpr.m; path = bundles/Functions/MapDynamicExpr/MapDynamicExpr.m; sourceTree = "<group>"; };
 		50D195341230499A00C3FC2C /* MapDynamicExprWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MapDynamicExprWindow.xib; path = bundles/Functions/MapDynamicExpr/MapDynamicExprWindow.xib; sourceTree = "<group>"; };
-		50D195D11230626C00C3FC2C /* Sets_Union.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sets_Union.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		50D195D11230626C00C3FC2C /* Sets-Union.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sets-Union.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D195D21230626C00C3FC2C /* Sets_Union-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Sets_Union-Info.plist"; path = "bundles/Functions/Sets_Union/Sets_Union-Info.plist"; sourceTree = "<group>"; };
 		50D195D7123062C300C3FC2C /* Sets_Union.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sets_Union.h; path = bundles/Functions/Sets_Union/Sets_Union.h; sourceTree = "<group>"; };
 		50D195D8123062C300C3FC2C /* Sets_Union.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sets_Union.m; path = bundles/Functions/Sets_Union/Sets_Union.m; sourceTree = "<group>"; };
-		50D196031230669B00C3FC2C /* Sets_UnionNoDoubles.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sets_UnionNoDoubles.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		50D196031230669B00C3FC2C /* Sets-UnionNoDoubles.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sets-UnionNoDoubles.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D196041230669B00C3FC2C /* Sets_UnionNoDoubles-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Sets_UnionNoDoubles-Info.plist"; path = "bundles/Functions/Sets_UnionNoDoubles/Sets_UnionNoDoubles-Info.plist"; sourceTree = "<group>"; };
 		50D1960B1230670800C3FC2C /* Sets_UnionNoDoubles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sets_UnionNoDoubles.h; path = bundles/Functions/Sets_UnionNoDoubles/Sets_UnionNoDoubles.h; sourceTree = "<group>"; };
 		50D1960C1230670800C3FC2C /* Sets_UnionNoDoubles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sets_UnionNoDoubles.m; path = bundles/Functions/Sets_UnionNoDoubles/Sets_UnionNoDoubles.m; sourceTree = "<group>"; };
-		50D196A112306E8400C3FC2C /* Sets_Intersection.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sets_Intersection.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		50D196A112306E8400C3FC2C /* Sets-Intersection.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sets-Intersection.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D196A212306E8400C3FC2C /* Sets_Intersection-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Sets_Intersection-Info.plist"; path = "bundles/Functions/Sets_Intersection/Sets_Intersection-Info.plist"; sourceTree = "<group>"; };
 		50D196A912306ED300C3FC2C /* Sets_Intersection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sets_Intersection.h; path = bundles/Functions/Sets_Intersection/Sets_Intersection.h; sourceTree = "<group>"; };
 		50D196AA12306ED300C3FC2C /* Sets_Intersection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sets_Intersection.m; path = bundles/Functions/Sets_Intersection/Sets_Intersection.m; sourceTree = "<group>"; };
@@ -1608,7 +1615,7 @@
 		50E8775811709A4E00FFA57E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/StripControl.xib; sourceTree = "<group>"; };
 		50E87AD01170FF8A00FFA57E /* EventInterceptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventInterceptView.h; path = QuinceCore/EventInterceptView.h; sourceTree = "<group>"; };
 		50E87AD11170FF8A00FFA57E /* EventInterceptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventInterceptView.m; path = QuinceCore/EventInterceptView.m; sourceTree = "<group>"; };
-		50E93BD9119065CD00A63246 /* EqlDstrbtn_Volume.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EqlDstrbtn_Volume.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		50E93BD9119065CD00A63246 /* EqlDstrbtn-Volume.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EqlDstrbtn-Volume.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E93BDA119065CD00A63246 /* EqlDstrbtn_Volume-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EqlDstrbtn_Volume-Info.plist"; path = "bundles/Functions/EqlDstrbtn_Volume/EqlDstrbtn_Volume-Info.plist"; sourceTree = "<group>"; };
 		50E93BEF1190662800A63246 /* EqlDstrbtn_Volume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EqlDstrbtn_Volume.h; path = bundles/Functions/EqlDstrbtn_Volume/EqlDstrbtn_Volume.h; sourceTree = "<group>"; };
 		50E93BF01190662800A63246 /* EqlDstrbtn_Volume.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EqlDstrbtn_Volume.m; path = bundles/Functions/EqlDstrbtn_Volume/EqlDstrbtn_Volume.m; sourceTree = "<group>"; };
@@ -2269,8 +2276,8 @@
 				50717024117A7F1800357470 /* SequenceChildTestUnit.octest */,
 				50717034117A7F4300357470 /* SequenceChild.bundle */,
 				5009C31E1187525900666C2D /* Audio2Envelope.bundle */,
-				50B86D321190383D00D235AA /* EqlDstrbtn_Start.bundle */,
-				50E93BD9119065CD00A63246 /* EqlDstrbtn_Volume.bundle */,
+				50B86D321190383D00D235AA /* EqlDstrbtn-Start.bundle */,
+				50E93BD9119065CD00A63246 /* EqlDstrbtn-Volume.bundle */,
 				507C6F7211977EDB00914B4C /* Legato.bundle */,
 				50F420551198BF3C009F695A /* AudioFilePlayer.bundle */,
 				504A692411A9C0E5007F60FF /* ApplyEnvelope.bundle */,
@@ -2285,17 +2292,17 @@
 				500CADA1122D59FD00B980B8 /* MarkChild.bundle */,
 				500CADBF122D5AB400B980B8 /* MarkContainer.bundle */,
 				50D194D21230455000C3FC2C /* MapDynamicExpr.bundle */,
-				50D195D11230626C00C3FC2C /* Sets_Union.bundle */,
-				50D196031230669B00C3FC2C /* Sets_UnionNoDoubles.bundle */,
-				50D196A112306E8400C3FC2C /* Sets_Intersection.bundle */,
+				50D195D11230626C00C3FC2C /* Sets-Union.bundle */,
+				50D196031230669B00C3FC2C /* Sets-UnionNoDoubles.bundle */,
+				50D196A112306E8400C3FC2C /* Sets-Intersection.bundle */,
 				50B8F4921230F2E600E444BC /* Sets_Difference.bundle */,
-				50B8F5251230F60200E444BC /* Sets_SymDiff.bundle */,
+				50B8F5251230F60200E444BC /* Sets-SymDiff.bundle */,
 				50B8F5811230FF7700E444BC /* TempoChange.bundle */,
 				5074FE4D1238E1A500BB60C6 /* SetParameter.bundle */,
 				507750B71268DCE700AF7956 /* Gate.bundle */,
 				50A362CD126EF67B004D360B /* ExportDescriptionListing.bundle */,
 				50999AA7127642A200AD0D65 /* AlignOnVolume.bundle */,
-				508C43B21295596E00875B93 /* OneVoice_Loudest.bundle */,
+				508C43B21295596E00875B93 /* OneVoice-Loudest.bundle */,
 				508C44EB1295E65E00875B93 /* JoinByFrequency.bundle */,
 				50BFCB7C129987DB00618422 /* ImportMaxMspCollForSingleParameter.bundle */,
 				5015AEAE133E70DA006C85AA /* FoldByParameter.bundle */,
@@ -3985,6 +3992,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5077170B148666440036F0AF /* PBXTargetDependency */,
 			);
 			name = AutomationChildTestUnit;
 			productName = AutomationChildViewTestUnit;
@@ -4101,9 +4109,9 @@
 			productReference = 507C6F7211977EDB00914B4C /* Legato.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		508C43B11295596E00875B93 /* OneVoice_Loudest */ = {
+		508C43B11295596E00875B93 /* OneVoice-Loudest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 508C43B61295597000875B93 /* Build configuration list for PBXNativeTarget "OneVoice_Loudest" */;
+			buildConfigurationList = 508C43B61295597000875B93 /* Build configuration list for PBXNativeTarget "OneVoice-Loudest" */;
 			buildPhases = (
 				508C43AE1295596E00875B93 /* Resources */,
 				508C43AF1295596E00875B93 /* Sources */,
@@ -4114,9 +4122,9 @@
 			dependencies = (
 				508C4436129562C100875B93 /* PBXTargetDependency */,
 			);
-			name = OneVoice_Loudest;
+			name = "OneVoice-Loudest";
 			productName = OneVoice_Loudest;
-			productReference = 508C43B21295596E00875B93 /* OneVoice_Loudest.bundle */;
+			productReference = 508C43B21295596E00875B93 /* OneVoice-Loudest.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		508C44EA1295E65E00875B93 /* JoinByFrequency */ = {
@@ -4283,9 +4291,9 @@
 			productReference = 50B171F913CB336400C9F105 /* TimeQuantization.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		50B86D311190383D00D235AA /* EqlDstrbtn_Start */ = {
+		50B86D311190383D00D235AA /* EqlDstrbtn-Start */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50B86D361190384000D235AA /* Build configuration list for PBXNativeTarget "EqlDstrbtn_Start" */;
+			buildConfigurationList = 50B86D361190384000D235AA /* Build configuration list for PBXNativeTarget "EqlDstrbtn-Start" */;
 			buildPhases = (
 				50B86D2E1190383D00D235AA /* Resources */,
 				50B86D2F1190383D00D235AA /* Sources */,
@@ -4296,14 +4304,14 @@
 			dependencies = (
 				50B86D3A1190386700D235AA /* PBXTargetDependency */,
 			);
-			name = EqlDstrbtn_Start;
+			name = "EqlDstrbtn-Start";
 			productName = EqlDstrbtn_Start;
-			productReference = 50B86D321190383D00D235AA /* EqlDstrbtn_Start.bundle */;
+			productReference = 50B86D321190383D00D235AA /* EqlDstrbtn-Start.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		50B8F4911230F2E600E444BC /* Sets_Difference */ = {
+		50B8F4911230F2E600E444BC /* Sets-Difference */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50B8F4961230F2E700E444BC /* Build configuration list for PBXNativeTarget "Sets_Difference" */;
+			buildConfigurationList = 50B8F4961230F2E700E444BC /* Build configuration list for PBXNativeTarget "Sets-Difference" */;
 			buildPhases = (
 				50B8F48E1230F2E600E444BC /* Resources */,
 				50B8F48F1230F2E600E444BC /* Sources */,
@@ -4314,14 +4322,14 @@
 			dependencies = (
 				50B8F5521230F6AC00E444BC /* PBXTargetDependency */,
 			);
-			name = Sets_Difference;
+			name = "Sets-Difference";
 			productName = Sets_Difference;
 			productReference = 50B8F4921230F2E600E444BC /* Sets_Difference.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		50B8F5241230F60200E444BC /* Sets_SymDiff */ = {
+		50B8F5241230F60200E444BC /* Sets-SymDiff */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50B8F5291230F60300E444BC /* Build configuration list for PBXNativeTarget "Sets_SymDiff" */;
+			buildConfigurationList = 50B8F5291230F60300E444BC /* Build configuration list for PBXNativeTarget "Sets-SymDiff" */;
 			buildPhases = (
 				50B8F5211230F60200E444BC /* Resources */,
 				50B8F5221230F60200E444BC /* Sources */,
@@ -4332,9 +4340,9 @@
 			dependencies = (
 				50B8F5541230F6B200E444BC /* PBXTargetDependency */,
 			);
-			name = Sets_SymDiff;
+			name = "Sets-SymDiff";
 			productName = Sets_SymDiff;
-			productReference = 50B8F5251230F60200E444BC /* Sets_SymDiff.bundle */;
+			productReference = 50B8F5251230F60200E444BC /* Sets-SymDiff.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		50B8F5801230FF7700E444BC /* TempoChange */ = {
@@ -4391,9 +4399,9 @@
 			productReference = 50D194D21230455000C3FC2C /* MapDynamicExpr.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		50D195D01230626C00C3FC2C /* Sets_Union */ = {
+		50D195D01230626C00C3FC2C /* Sets-Union */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50D195D51230626D00C3FC2C /* Build configuration list for PBXNativeTarget "Sets_Union" */;
+			buildConfigurationList = 50D195D51230626D00C3FC2C /* Build configuration list for PBXNativeTarget "Sets-Union" */;
 			buildPhases = (
 				50D195CD1230626C00C3FC2C /* Resources */,
 				50D195CE1230626C00C3FC2C /* Sources */,
@@ -4404,14 +4412,14 @@
 			dependencies = (
 				50B8F54C1230F69C00E444BC /* PBXTargetDependency */,
 			);
-			name = Sets_Union;
+			name = "Sets-Union";
 			productName = Sets_Union;
-			productReference = 50D195D11230626C00C3FC2C /* Sets_Union.bundle */;
+			productReference = 50D195D11230626C00C3FC2C /* Sets-Union.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		50D196021230669B00C3FC2C /* Sets_UnionNoDoubles */ = {
+		50D196021230669B00C3FC2C /* Sets-UnionNoDoubles */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50D196071230669C00C3FC2C /* Build configuration list for PBXNativeTarget "Sets_UnionNoDoubles" */;
+			buildConfigurationList = 50D196071230669C00C3FC2C /* Build configuration list for PBXNativeTarget "Sets-UnionNoDoubles" */;
 			buildPhases = (
 				50D195FF1230669B00C3FC2C /* Resources */,
 				50D196001230669B00C3FC2C /* Sources */,
@@ -4422,14 +4430,14 @@
 			dependencies = (
 				50B8F54E1230F6A000E444BC /* PBXTargetDependency */,
 			);
-			name = Sets_UnionNoDoubles;
+			name = "Sets-UnionNoDoubles";
 			productName = Sets_UnionNoDoubles;
-			productReference = 50D196031230669B00C3FC2C /* Sets_UnionNoDoubles.bundle */;
+			productReference = 50D196031230669B00C3FC2C /* Sets-UnionNoDoubles.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		50D196A012306E8400C3FC2C /* Sets_Intersection */ = {
+		50D196A012306E8400C3FC2C /* Sets-Intersection */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50D196A512306E8500C3FC2C /* Build configuration list for PBXNativeTarget "Sets_Intersection" */;
+			buildConfigurationList = 50D196A512306E8500C3FC2C /* Build configuration list for PBXNativeTarget "Sets-Intersection" */;
 			buildPhases = (
 				50D1969D12306E8400C3FC2C /* Resources */,
 				50D1969E12306E8400C3FC2C /* Sources */,
@@ -4440,9 +4448,9 @@
 			dependencies = (
 				50B8F5501230F6A500E444BC /* PBXTargetDependency */,
 			);
-			name = Sets_Intersection;
+			name = "Sets-Intersection";
 			productName = Sets_Intersection;
-			productReference = 50D196A112306E8400C3FC2C /* Sets_Intersection.bundle */;
+			productReference = 50D196A112306E8400C3FC2C /* Sets-Intersection.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		50D3937011C837BA0080B427 /* ColorByKey */ = {
@@ -4499,9 +4507,9 @@
 			productReference = 50DE7B0213CC473D00FD4F35 /* AlignOnFreq.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		50DE7B1913CC4ACC00FD4F35 /* EqlDstrbtn_Pitch */ = {
+		50DE7B1913CC4ACC00FD4F35 /* EqlDstrbtn-Pitch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50DE7B2313CC4ACD00FD4F35 /* Build configuration list for PBXNativeTarget "EqlDstrbtn_Pitch" */;
+			buildConfigurationList = 50DE7B2313CC4ACD00FD4F35 /* Build configuration list for PBXNativeTarget "EqlDstrbtn-Pitch" */;
 			buildPhases = (
 				50DE7B1613CC4ACC00FD4F35 /* Sources */,
 				50DE7B1713CC4ACC00FD4F35 /* Frameworks */,
@@ -4512,14 +4520,14 @@
 			dependencies = (
 				50DE7B2A13CC4E2200FD4F35 /* PBXTargetDependency */,
 			);
-			name = EqlDstrbtn_Pitch;
+			name = "EqlDstrbtn-Pitch";
 			productName = EqlDstrbtn_Pitch;
 			productReference = 50DE7B1A13CC4ACC00FD4F35 /* EqlDstrbtn_Pitch.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		50DE7B3113CC50AC00FD4F35 /* EqlDstrbtn_Freq */ = {
+		50DE7B3113CC50AC00FD4F35 /* EqlDstrbtn-Freq */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50DE7B3B13CC50AC00FD4F35 /* Build configuration list for PBXNativeTarget "EqlDstrbtn_Freq" */;
+			buildConfigurationList = 50DE7B3B13CC50AC00FD4F35 /* Build configuration list for PBXNativeTarget "EqlDstrbtn-Freq" */;
 			buildPhases = (
 				50DE7B2E13CC50AC00FD4F35 /* Sources */,
 				50DE7B2F13CC50AC00FD4F35 /* Frameworks */,
@@ -4530,7 +4538,7 @@
 			dependencies = (
 				50DE7B3F13CC514200FD4F35 /* PBXTargetDependency */,
 			);
-			name = EqlDstrbtn_Freq;
+			name = "EqlDstrbtn-Freq";
 			productName = EqlDstrbtn_Freq;
 			productReference = 50DE7B3213CC50AC00FD4F35 /* EqlDstrbtn_Freq.bundle */;
 			productType = "com.apple.product-type.bundle";
@@ -4571,9 +4579,9 @@
 			productReference = 50E860B011F857A20014CFE9 /* RemoveParameter.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		50E93BD8119065CD00A63246 /* EqlDstrbtn_Volume */ = {
+		50E93BD8119065CD00A63246 /* EqlDstrbtn-Volume */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50E93BDD119065CE00A63246 /* Build configuration list for PBXNativeTarget "EqlDstrbtn_Volume" */;
+			buildConfigurationList = 50E93BDD119065CE00A63246 /* Build configuration list for PBXNativeTarget "EqlDstrbtn-Volume" */;
 			buildPhases = (
 				50E93BD5119065CD00A63246 /* Resources */,
 				50E93BD6119065CD00A63246 /* Sources */,
@@ -4584,9 +4592,9 @@
 			dependencies = (
 				50E93BE1119065E400A63246 /* PBXTargetDependency */,
 			);
-			name = EqlDstrbtn_Volume;
+			name = "EqlDstrbtn-Volume";
 			productName = EqlDstrbtn_Volume;
-			productReference = 50E93BD9119065CD00A63246 /* EqlDstrbtn_Volume.bundle */;
+			productReference = 50E93BD9119065CD00A63246 /* EqlDstrbtn-Volume.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		50EAF2C71393BAD200258AD1 /* FrequencyStandardContainer */ = {
@@ -4753,10 +4761,11 @@
 		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "Maximilian Marcoll";
 			};
 			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "quince" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -4786,10 +4795,10 @@
 				506BF899117A5DD500ECBC4E /* EnvelopeContainer */,
 				50AEBF6F11CEC6AE0055CA29 /* EnvelopeGate */,
 				500CACDF122D4AD600B980B8 /* EnvToSeq */,
-				50DE7B3113CC50AC00FD4F35 /* EqlDstrbtn_Freq */,
-				50DE7B1913CC4ACC00FD4F35 /* EqlDstrbtn_Pitch */,
-				50B86D311190383D00D235AA /* EqlDstrbtn_Start */,
-				50E93BD8119065CD00A63246 /* EqlDstrbtn_Volume */,
+				50DE7B3113CC50AC00FD4F35 /* EqlDstrbtn-Freq */,
+				50DE7B1913CC4ACC00FD4F35 /* EqlDstrbtn-Pitch */,
+				50B86D311190383D00D235AA /* EqlDstrbtn-Start */,
+				50E93BD8119065CD00A63246 /* EqlDstrbtn-Volume */,
 				50A362CC126EF67B004D360B /* ExportDescriptionListing */,
 				506C6B2D135616F60060BD9D /* ExtractEnvSequence */,
 				50D3E76113E6FE6F00BA5D30 /* ExtractFrequencyVertexes */,
@@ -4810,7 +4819,7 @@
 				500CADA0122D59FD00B980B8 /* MarkChild */,
 				500CADBE122D5AB400B980B8 /* MarkContainer */,
 				504A69A911A9F692007F60FF /* Normalize */,
-				508C43B11295596E00875B93 /* OneVoice_Loudest */,
+				508C43B11295596E00875B93 /* OneVoice-Loudest */,
 				5027F13813951CED00A9389A /* PitchContainer */,
 				500F1ED113EDEDE200A25411 /* PitchCurveContainer */,
 				509E993313C8A2D90032AEF9 /* PitchGridContainer */,
@@ -4824,11 +4833,11 @@
 				50289EFA13EDD57000FB95D6 /* Seq2PitchCurve */,
 				50717023117A7F1800357470 /* SequenceChildTestUnit */,
 				5074FE4C1238E1A500BB60C6 /* SetParameter */,
-				50B8F4911230F2E600E444BC /* Sets_Difference */,
-				50D196A012306E8400C3FC2C /* Sets_Intersection */,
-				50B8F5241230F60200E444BC /* Sets_SymDiff */,
-				50D195D01230626C00C3FC2C /* Sets_Union */,
-				50D196021230669B00C3FC2C /* Sets_UnionNoDoubles */,
+				50B8F4911230F2E600E444BC /* Sets-Difference */,
+				50D196A012306E8400C3FC2C /* Sets-Intersection */,
+				50B8F5241230F60200E444BC /* Sets-SymDiff */,
+				50D195D01230626C00C3FC2C /* Sets-Union */,
+				50D196021230669B00C3FC2C /* Sets-UnionNoDoubles */,
 				50B8F5801230FF7700E444BC /* TempoChange */,
 				506BF8C2117A5F6300ECBC4E /* TimeGridContainer */,
 				50B171F813CB336400C9F105 /* TimeQuantization */,
@@ -6328,6 +6337,11 @@
 			target = 5074FE4C1238E1A500BB60C6 /* SetParameter */;
 			targetProxy = 5074FEBE1238E46900BB60C6 /* PBXContainerItemProxy */;
 		};
+		5077170B148666440036F0AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 5077170A148666440036F0AF /* PBXContainerItemProxy */;
+		};
 		507750C01268DD1900AF7956 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 50A522B4117A52560072FB09 /* QuinceApi */;
@@ -6345,7 +6359,7 @@
 		};
 		508C442B12955A2400875B93 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 508C43B11295596E00875B93 /* OneVoice_Loudest */;
+			target = 508C43B11295596E00875B93 /* OneVoice-Loudest */;
 			targetProxy = 508C442A12955A2400875B93 /* PBXContainerItemProxy */;
 		};
 		508C4436129562C100875B93 /* PBXTargetDependency */ = {
@@ -6460,12 +6474,12 @@
 		};
 		50B86D45119038B900D235AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 50B86D311190383D00D235AA /* EqlDstrbtn_Start */;
+			target = 50B86D311190383D00D235AA /* EqlDstrbtn-Start */;
 			targetProxy = 50B86D44119038B900D235AA /* PBXContainerItemProxy */;
 		};
 		50B8F5061230F57700E444BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 50B8F4911230F2E600E444BC /* Sets_Difference */;
+			target = 50B8F4911230F2E600E444BC /* Sets-Difference */;
 			targetProxy = 50B8F5051230F57700E444BC /* PBXContainerItemProxy */;
 		};
 		50B8F52C1230F62E00E444BC /* PBXTargetDependency */ = {
@@ -6575,7 +6589,7 @@
 		};
 		50B8F5561230F6FB00E444BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 50B8F5241230F60200E444BC /* Sets_SymDiff */;
+			target = 50B8F5241230F60200E444BC /* Sets-SymDiff */;
 			targetProxy = 50B8F5551230F6FB00E444BC /* PBXContainerItemProxy */;
 		};
 		50B8F5871230FF7C00E444BC /* PBXTargetDependency */ = {
@@ -6605,17 +6619,17 @@
 		};
 		50D195DB1230646300C3FC2C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 50D195D01230626C00C3FC2C /* Sets_Union */;
+			target = 50D195D01230626C00C3FC2C /* Sets-Union */;
 			targetProxy = 50D195DA1230646300C3FC2C /* PBXContainerItemProxy */;
 		};
 		50D1960A123066E400C3FC2C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 50D196021230669B00C3FC2C /* Sets_UnionNoDoubles */;
+			target = 50D196021230669B00C3FC2C /* Sets-UnionNoDoubles */;
 			targetProxy = 50D19609123066E400C3FC2C /* PBXContainerItemProxy */;
 		};
 		50D196A812306EB500C3FC2C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 50D196A012306E8400C3FC2C /* Sets_Intersection */;
+			target = 50D196A012306E8400C3FC2C /* Sets-Intersection */;
 			targetProxy = 50D196A712306EB500C3FC2C /* PBXContainerItemProxy */;
 		};
 		50D393AA11C838BA0080B427 /* PBXTargetDependency */ = {
@@ -6650,7 +6664,7 @@
 		};
 		50DE7B2D13CC4E3000FD4F35 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 50DE7B1913CC4ACC00FD4F35 /* EqlDstrbtn_Pitch */;
+			target = 50DE7B1913CC4ACC00FD4F35 /* EqlDstrbtn-Pitch */;
 			targetProxy = 50DE7B2C13CC4E3000FD4F35 /* PBXContainerItemProxy */;
 		};
 		50DE7B3F13CC514200FD4F35 /* PBXTargetDependency */ = {
@@ -6660,7 +6674,7 @@
 		};
 		50DE7B4513CC51C600FD4F35 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 50DE7B3113CC50AC00FD4F35 /* EqlDstrbtn_Freq */;
+			target = 50DE7B3113CC50AC00FD4F35 /* EqlDstrbtn-Freq */;
 			targetProxy = 50DE7B4413CC51C600FD4F35 /* PBXContainerItemProxy */;
 		};
 		50DE7B5713CC677500FD4F35 /* PBXTargetDependency */ = {
@@ -6690,7 +6704,7 @@
 		};
 		50E93BFF1190664D00A63246 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 50E93BD8119065CD00A63246 /* EqlDstrbtn_Volume */;
+			target = 50E93BD8119065CD00A63246 /* EqlDstrbtn-Volume */;
 			targetProxy = 50E93BFE1190664D00A63246 /* PBXContainerItemProxy */;
 		};
 		50EAF2E61393BC6B00258AD1 /* PBXTargetDependency */ = {
@@ -6950,7 +6964,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -6963,7 +6976,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = ImportFrequencyTable;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -6976,7 +6988,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -6988,7 +6999,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = ImportFrequencyTable;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -7004,7 +7014,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -7018,7 +7027,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = Audio2Envelope;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -7031,7 +7039,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -7043,7 +7050,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = EnvelopeFromAudioFile;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -7059,7 +7065,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -7072,7 +7077,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = EnvToSeq;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -7085,7 +7089,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -7097,7 +7100,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = EnvToSeq;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -7113,7 +7115,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -7126,7 +7127,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = MarkChild;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -7139,7 +7139,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -7151,7 +7150,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = MarkChild;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -7167,7 +7165,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -7180,7 +7177,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = MarkContainer;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -7193,7 +7189,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -7205,7 +7200,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = MarkContainer;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -7263,7 +7257,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -7276,7 +7269,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = FoldByParameter;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -7289,7 +7281,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -7301,7 +7292,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = FoldByParameter;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -7317,7 +7307,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -7330,7 +7319,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = ApplyValueList;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -7343,7 +7331,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -7355,7 +7342,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = ApplyValueList;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -7413,7 +7399,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -7426,7 +7411,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = ResampleEnvelope;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -7439,7 +7423,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -7451,7 +7434,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = ResampleEnvelope;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -7603,7 +7585,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -7616,7 +7597,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = CSoundPlayer;
 				SDKROOT = macosx;
 				VALID_ARCHS = i386;
@@ -7631,7 +7611,6 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -7643,7 +7622,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = CSoundPlayer;
 				SDKROOT = macosx;
 				VALID_ARCHS = i386;
@@ -7744,7 +7722,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -7757,7 +7734,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = ApplyValuesFromSeq;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -7770,7 +7746,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -7782,7 +7757,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = ApplyValuesFromSeq;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -7798,7 +7772,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -7811,7 +7784,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = ApplyEnvelope;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -7824,7 +7796,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -7836,7 +7807,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = ApplyEnvelope;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -7852,7 +7822,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -7865,7 +7834,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = Normalize;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -7878,7 +7846,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -7890,7 +7857,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = normalize;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -7906,7 +7872,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -7920,7 +7885,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = AutomationView;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -7933,7 +7897,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -7945,7 +7908,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = AutomationView;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -7960,7 +7922,6 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -7975,7 +7936,6 @@
 					"-framework",
 					SenTestingKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = AutomationViewTestUnit;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
@@ -7989,7 +7949,6 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -8002,7 +7961,6 @@
 					"-framework",
 					SenTestingKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = AutomationViewTestUnit;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
@@ -8018,7 +7976,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -8032,7 +7989,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = EnvelopeBasic;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8045,7 +8001,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -8057,7 +8012,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = EnvelopeBasic;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8073,7 +8027,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -8087,7 +8040,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = TimeGridView;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8100,7 +8052,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -8112,7 +8063,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = TimeGridView;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8128,7 +8078,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -8142,7 +8091,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = VolumeStandard;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8155,7 +8103,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -8167,7 +8114,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = VolumeStandard;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8182,7 +8128,6 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -8197,7 +8142,6 @@
 					"-framework",
 					SenTestingKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = VolumeStandardTestUnit;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
@@ -8211,7 +8155,6 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -8224,7 +8167,6 @@
 					"-framework",
 					SenTestingKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = VolumeStandardTestUnit;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
@@ -8240,7 +8182,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -8254,7 +8195,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = CreateGridSequence;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8267,7 +8207,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -8279,7 +8218,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = CreateGridSequence;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8295,7 +8233,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -8309,7 +8246,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = LilyPondExport;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8322,7 +8258,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -8334,7 +8269,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = LilyPondExport;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8349,7 +8283,6 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -8364,7 +8297,6 @@
 					"-framework",
 					SenTestingKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = LilyPondExportTestUnit;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
@@ -8378,7 +8310,6 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -8391,7 +8322,6 @@
 					"-framework",
 					SenTestingKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = LilyPondExportTestUnit;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
@@ -8408,7 +8338,6 @@
 				DEPLOYMENT_POSTPROCESSING = NO;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -8421,7 +8350,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = ExtractEnvSequence;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8434,7 +8362,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -8446,7 +8373,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = ExtractEnvSequence;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8462,7 +8388,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -8475,7 +8400,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = AutomationChildView;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8488,7 +8412,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -8500,7 +8423,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = AutomationChildView;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8515,7 +8437,6 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -8529,7 +8450,6 @@
 					"-framework",
 					SenTestingKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = AutomationChildViewTestUnit;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
@@ -8543,7 +8463,6 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -8556,7 +8475,6 @@
 					"-framework",
 					SenTestingKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = AutomationChildViewTestUnit;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
@@ -8572,7 +8490,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -8585,7 +8502,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = EnvelopeChild;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8598,7 +8514,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -8610,7 +8525,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = EnvelopeChild;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8625,7 +8539,6 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -8639,7 +8552,6 @@
 					"-framework",
 					SenTestingKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = SequenceChildTestUnit;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
@@ -8653,7 +8565,6 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -8666,7 +8577,6 @@
 					"-framework",
 					SenTestingKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = SequenceChildTestUnit;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
@@ -8682,7 +8592,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -8695,7 +8604,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = SequenceChild;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8708,7 +8616,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -8720,7 +8627,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = SequenceChild;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8736,7 +8642,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -8749,7 +8654,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = SetParameter;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8762,7 +8666,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -8774,7 +8677,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = SetParameter;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8790,7 +8692,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -8803,7 +8704,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = Gate;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8816,7 +8716,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -8828,7 +8727,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = Gate;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8844,7 +8742,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -8857,7 +8754,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = Legato;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8870,7 +8766,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -8882,7 +8777,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = Legato;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8898,7 +8792,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -8911,8 +8804,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
-				PRODUCT_NAME = OneVoice_Loudest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -8924,7 +8816,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -8937,8 +8828,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
-				PRODUCT_NAME = OneVoice_Loudest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -8953,7 +8843,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -8966,7 +8855,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = JoinByFrequency;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8979,7 +8867,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -8991,7 +8878,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = JoinByFrequency;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9049,7 +8935,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -9062,7 +8947,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = AlignOnVolume;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9075,7 +8959,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -9087,7 +8970,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = AlignOnVolume;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9145,7 +9027,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -9158,7 +9039,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = ExportDescriptionListing;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9171,7 +9051,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -9183,7 +9062,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = ExportDescriptionListing;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9206,7 +9084,6 @@
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -9224,7 +9101,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = QuinceApi;
 				SDKROOT = macosx;
 			};
@@ -9243,21 +9119,19 @@
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
 				);
 				FRAMEWORK_VERSION = A;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				INFOPLIST_FILE = "QuinceApi-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				INSTALL_PATH = /Library/Frameworks;
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
-				PRODUCT_NAME = MintApi;
+				PRODUCT_NAME = QuinceApi;
 				SDKROOT = macosx;
 				ZERO_LINK = NO;
 			};
@@ -9270,7 +9144,6 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -9285,7 +9158,6 @@
 					"-framework",
 					SenTestingKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = MintApiTestUnit;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
@@ -9299,7 +9171,6 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -9312,7 +9183,6 @@
 					"-framework",
 					SenTestingKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = MintApiTestUnit;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
@@ -9328,7 +9198,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -9341,7 +9210,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = EnvelopeGate;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9354,7 +9222,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -9366,7 +9233,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = EnvelopeGate;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9424,7 +9290,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -9437,8 +9302,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
-				PRODUCT_NAME = EqlDstrbtn_Start;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9450,7 +9314,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -9462,8 +9325,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
-				PRODUCT_NAME = EqlDstrbtn_Start;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -9478,7 +9340,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -9491,8 +9352,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
-				PRODUCT_NAME = Sets_Difference;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9504,7 +9364,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -9516,8 +9375,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
-				PRODUCT_NAME = Sets_Difference;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -9532,7 +9390,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -9545,8 +9402,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
-				PRODUCT_NAME = Sets_SymDiff;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9558,7 +9414,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -9570,8 +9425,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
-				PRODUCT_NAME = Sets_SymDiff;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -9586,7 +9440,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -9599,7 +9452,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = TempoChange;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9612,7 +9464,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -9624,7 +9475,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = TempoChange;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9640,7 +9490,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -9653,7 +9502,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = ImportMaxMspCollForSingleParameter;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9666,7 +9514,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -9678,7 +9525,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = ImportListForSingleParameter;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9694,7 +9540,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -9707,7 +9552,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = MapDynamicExpr;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9720,7 +9564,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -9732,7 +9575,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = MapDynamicExpr;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9748,7 +9590,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -9761,8 +9602,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
-				PRODUCT_NAME = Sets_Union;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9774,7 +9614,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -9786,8 +9625,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
-				PRODUCT_NAME = Sets_Union;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -9802,7 +9640,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -9815,8 +9652,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
-				PRODUCT_NAME = Sets_UnionNoDoubles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9828,7 +9664,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -9840,8 +9675,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
-				PRODUCT_NAME = Sets_UnionNoDoubles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -9856,7 +9690,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -9869,8 +9702,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
-				PRODUCT_NAME = Sets_Intersection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9882,7 +9714,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -9894,8 +9725,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
-				PRODUCT_NAME = Sets_Intersection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -9910,7 +9740,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -9923,7 +9752,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = ColorByKey;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9936,7 +9764,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -9948,7 +9775,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = ColorByKey;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10174,7 +10000,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -10187,7 +10012,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = RemoveParameter;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10200,7 +10024,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -10212,7 +10035,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = RemoveParameter;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10228,7 +10050,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -10241,8 +10062,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
-				PRODUCT_NAME = EqlDstrbtn_Volume;
+				PRODUCT_NAME = "EqlDstrbtn-Volume";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -10254,7 +10074,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -10266,8 +10085,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
-				PRODUCT_NAME = EqlDstrbtn_Volume;
+				PRODUCT_NAME = "EqlDstrbtn-Volume";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -10328,7 +10146,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -10341,7 +10158,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = AudioFilePlayer;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10354,7 +10170,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -10366,7 +10181,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = SimpleAudio;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10465,7 +10279,6 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -10488,7 +10301,7 @@
 				GCC_PREFIX_HEADER = MINT_Prefix.pch;
 				INFOPLIST_FILE = "quince-Info.plist";
 				INSTALL_PATH = "$(PROJECT)/build";
-				PRODUCT_NAME = MINT;
+				PRODUCT_NAME = quince;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -10504,7 +10317,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
 				SDKROOT = macosx;
 				VALID_ARCHS = i386;
 			};
@@ -10520,7 +10332,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
 				SDKROOT = macosx;
 				VALID_ARCHS = i386;
 			};
@@ -10862,7 +10673,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		508C43B61295597000875B93 /* Build configuration list for PBXNativeTarget "OneVoice_Loudest" */ = {
+		508C43B61295597000875B93 /* Build configuration list for PBXNativeTarget "OneVoice-Loudest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				508C43B41295597000875B93 /* Debug */,
@@ -10952,7 +10763,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50B86D361190384000D235AA /* Build configuration list for PBXNativeTarget "EqlDstrbtn_Start" */ = {
+		50B86D361190384000D235AA /* Build configuration list for PBXNativeTarget "EqlDstrbtn-Start" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50B86D341190383F00D235AA /* Debug */,
@@ -10961,7 +10772,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50B8F4961230F2E700E444BC /* Build configuration list for PBXNativeTarget "Sets_Difference" */ = {
+		50B8F4961230F2E700E444BC /* Build configuration list for PBXNativeTarget "Sets-Difference" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50B8F4941230F2E600E444BC /* Debug */,
@@ -10970,7 +10781,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50B8F5291230F60300E444BC /* Build configuration list for PBXNativeTarget "Sets_SymDiff" */ = {
+		50B8F5291230F60300E444BC /* Build configuration list for PBXNativeTarget "Sets-SymDiff" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50B8F5271230F60300E444BC /* Debug */,
@@ -11006,7 +10817,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50D195D51230626D00C3FC2C /* Build configuration list for PBXNativeTarget "Sets_Union" */ = {
+		50D195D51230626D00C3FC2C /* Build configuration list for PBXNativeTarget "Sets-Union" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50D195D31230626D00C3FC2C /* Debug */,
@@ -11015,7 +10826,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50D196071230669C00C3FC2C /* Build configuration list for PBXNativeTarget "Sets_UnionNoDoubles" */ = {
+		50D196071230669C00C3FC2C /* Build configuration list for PBXNativeTarget "Sets-UnionNoDoubles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50D196051230669B00C3FC2C /* Debug */,
@@ -11024,7 +10835,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50D196A512306E8500C3FC2C /* Build configuration list for PBXNativeTarget "Sets_Intersection" */ = {
+		50D196A512306E8500C3FC2C /* Build configuration list for PBXNativeTarget "Sets-Intersection" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50D196A312306E8400C3FC2C /* Debug */,
@@ -11060,7 +10871,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50DE7B2313CC4ACD00FD4F35 /* Build configuration list for PBXNativeTarget "EqlDstrbtn_Pitch" */ = {
+		50DE7B2313CC4ACD00FD4F35 /* Build configuration list for PBXNativeTarget "EqlDstrbtn-Pitch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50DE7B2413CC4ACD00FD4F35 /* Debug */,
@@ -11069,7 +10880,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50DE7B3B13CC50AC00FD4F35 /* Build configuration list for PBXNativeTarget "EqlDstrbtn_Freq" */ = {
+		50DE7B3B13CC50AC00FD4F35 /* Build configuration list for PBXNativeTarget "EqlDstrbtn-Freq" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50DE7B3C13CC50AC00FD4F35 /* Debug */,
@@ -11096,7 +10907,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50E93BDD119065CE00A63246 /* Build configuration list for PBXNativeTarget "EqlDstrbtn_Volume" */ = {
+		50E93BDD119065CE00A63246 /* Build configuration list for PBXNativeTarget "EqlDstrbtn-Volume" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50E93BDB119065CE00A63246 /* Debug */,

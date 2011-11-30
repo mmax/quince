@@ -70,6 +70,7 @@
 	
 	IBOutlet NSWindow * poolWindow;
 	IBOutlet NSWindow * inspectorWindow;
+    IBOutlet NSWindow * window;
 	IBOutlet NSButton * newObjectWithAudioFileButton;
 	IBOutlet NSOutlineView * outlineView;
 	IBOutlet NSTableView * functionPoolTable;
@@ -210,6 +211,8 @@
 -(IBAction)test:(id)sender;
 
 -(BOOL)areTheseControllersSiblings:(NSArray *)controllers;
+
+//-(IBAction)toggleFullScreen:(id)sender;
 @end
 
 

@@ -32,7 +32,7 @@
 -(void)setUp{
 	
 	
-	item = [[ChildView alloc]init];
+	item = [[AutomationChild alloc]init];
 	
 	
 }

@@ -228,7 +228,7 @@
 		[[NSColor colorWithDeviceRed:0.66 green:.07 blue:.04 alpha:1]set];
 	}
 	else {
-		[[[self contentController] valueForKey:@"color"]set];
+		[(NSColor*) [[self contentController] valueForKey:@"color"]set];
 	}
 //    
 //	for(NSBezierPath * p in pathsToFill){

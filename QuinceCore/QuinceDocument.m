@@ -1592,7 +1592,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 -(void)updateFunctionCompatibilityForQuinceObjectController:(QuinceObjectController *)qc{
 
 
-    NSString * type = [[qc content] type];
+    NSString * type = [(QuinceObject*)[qc content] type];
     BOOL comp = NO;
     
     //NSLog(@"updating compatibilities...");
@@ -1820,6 +1820,8 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	[[[self getSingleSelectedObjectController]content]arrayWithValuesForKey:@"start"];
 }
 
-
+//-(IBAction)toggleFullScreen:(id)sender{
+//    [window toggleFullScreen:sender];
+//}
 
 @end

@@ -195,10 +195,10 @@
 	//[[NSColor colorWithDeviceWhite:1 alpha:1]set];
 	[[self interiorColor]set];
 	[NSBezierPath fillRect:r];
-	if([self selected] && ![self muted])	[[self valueForKey:@"selectionColor"] set];
-	else if([self muted] && ![self selected]) [[self valueForKey:@"mutedColor"] set];
-	else if([self selected] && [self muted])  [[self valueForKey:@"mutedSelectionColor"] set];
-	else [[self valueForKey:@"frameColor"] set];
+	if([self selected] && ![self muted])	[(NSColor*)[self valueForKey:@"selectionColor"] set];
+	else if([self muted] && ![self selected]) [(NSColor*)[self valueForKey:@"mutedColor"] set];
+	else if([self selected] && [self muted])  [(NSColor*)[self valueForKey:@"mutedSelectionColor"] set];
+	else [(NSColor*)[self valueForKey:@"frameColor"] set];
 	
 	[NSBezierPath strokeRect:r];
 		

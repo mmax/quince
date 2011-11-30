@@ -83,7 +83,7 @@
 	NSString * parameter = [parameterMenu titleOfSelectedItem];
 
 	QuinceObjectController * qc;
-	while(qc = [self nextSubController])
+	while((qc = [self nextSubController]))
 		[self foldControllersForObjectsWithValue:[self stringFromValue:[[qc content]valueForKey:parameter]]];
 	
 	[self cleanUp];

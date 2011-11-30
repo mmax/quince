@@ -54,11 +54,11 @@
 	
 	if([self selected]){
 		//NSLog(@"MintItem: class: %@ : selected: %@", [self className], [NSNumber numberWithBool:[self selected]]);
-		[[self valueForKey:@"selectionColor"] set];
+		[(NSColor *)[self valueForKey:@"selectionColor"] set];
 	}
 	else{
 		//NSLog(@"MintItem: class: %@ : selected: %@", [self className], [NSNumber numberWithBool:[self selected]]);
-		[[self valueForKey:@"frameColor"]set];
+		[(NSColor *)[self valueForKey:@"frameColor"]set];
 	}
 
 	NSBezierPath * p = [[[NSBezierPath alloc]init]autorelease];

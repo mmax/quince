@@ -143,7 +143,7 @@
 
 	// create the frame for the new view
 	float x = 0;
-	float y = [self yForStripWithIndex:count];//[stripControlDocumentView frame].size.height-(kVerticalStripOffset + kDefaultStripHeight)*(count+1);
+	float y = [self yForStripWithIndex:count];//[self yForStripWithIndex:count];//[stripControlDocumentView frame].size.height-(kVerticalStripOffset + kDefaultStripHeight)*(count+1);
 	width = kDefaultStripControlWidth;
 	NSRect stripControlRect = NSMakeRect(x, y, width, kDefaultStripHeight);
 	
@@ -473,7 +473,7 @@
 	/* if(size.width < r.size.width)
 			 size.width = r.size.width; */
 	
-	if(newSize.height < minSize.height && newSize.height > 0 || min>y)
+	if((newSize.height < minSize.height && newSize.height > 0) || min>y)
 		size.height = minSize.height;
 	if(!newSize.height)
 		size.height = y;

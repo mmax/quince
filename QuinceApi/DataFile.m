@@ -35,10 +35,13 @@
 	if([self fileTypes])
 		[openPanel setAllowedFileTypes:[self fileTypes]];//[NSArray arrayWithObjects:@"aif", @"aiff", @"aifc", @"wav", @"wave", nil]];
 	if([openPanel runModal] == NSOKButton){
-		NSString * path = [NSString stringWithString:[[openPanel filenames] objectAtIndex:0]];
-		[self setValue:path forKey:@"filePath"];
+        NSArray * us = [openPanel URLs];
+        NSURL * u = [us objectAtIndex:0];
+        NSString * fp = [u path];
+		//NSString * path = [NSString stringWithString:[[openPanel filenames] objectAtIndex:0]];
+		[self setValue:fp forKey:@"filePath"];
 		[self setValue:[[self valueForKey:@"filePath"]lastPathComponent] forKey:@"name"];
-		return path;
+		return fp;
 	}
 	return nil;
 }

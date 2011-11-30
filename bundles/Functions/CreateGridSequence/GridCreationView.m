@@ -60,7 +60,7 @@
 	int i;
 	for(i=0;i<[locks count];i++) {
 		
-		[[colors objectAtIndex:i] set];
+		[(NSColor*)[colors objectAtIndex:i] set];
 		[[locks objectAtIndex:i] fill];
 		[[NSColor blackColor]set];
 		[[locks objectAtIndex:i] stroke];

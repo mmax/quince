@@ -87,9 +87,11 @@
     
     [window orderOut:nil];
 	NSSavePanel* sp = [NSSavePanel savePanel];
-	[sp setRequiredFileType:@"ly"];
+    NSArray * types = [NSArray arrayWithObject:@"ly"];
+	//[sp setRequiredFileType:@"ly"];
+    [sp setAllowedFileTypes:types];
 	[sp setTitle:@"LilyPond Export"];
-#ifdef MAC_OS_X_VERSION_10_6
+#ifdef MAC_OS_X_VERSION_10_7
 	[sp setNameFieldStringValue:@"filenamedoesntmatter.ly"];
 #endif
 	outTempo = [tempoField floatValue];
