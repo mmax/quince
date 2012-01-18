@@ -1,5 +1,9 @@
 
 v 0.9.8
+
+- fixed a bug in CsoundPlayer
+- found a bug in AudioFilePlayer. no fix yet. workaround: avoid umlaute in filepaths!
+- added lion support
 - fixed a bug in CsoundPlayer
 - added function: ApplyPitchCurve
 - added feature in GlissandoContainer, s/e automatically adjusts glissandoStart/glissandoEnd 
