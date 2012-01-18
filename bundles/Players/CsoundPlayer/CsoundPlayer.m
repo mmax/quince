@@ -396,7 +396,7 @@ static void * csoundCallback(CSOUND * csound,int attr, const char *format, va_li
 }
 
 -(int)instrumentNumberForMode:(NSString *)mode{
-
+    //NSLog(@"instrumentNumberForMode: '%@' : %@ - number: %@", mode, [[self valueForKey:@"modes"]valueForKey:mode],[[[self valueForKey:@"modes"]valueForKey:mode]valueForKey:@"instrumentNumber"] );
     return [[[[self valueForKey:@"modes"]valueForKey:mode]valueForKey:@"instrumentNumber"]intValue];
 }
 
@@ -409,6 +409,10 @@ static void * csoundCallback(CSOUND * csound,int attr, const char *format, va_li
     
     v = [q valueForKey:@"csoundInstrumentNumber"];
     if(v) mode = [v intValue];
+
+    if(!v){
+        mode = [[self valueForKey:@"defaultMode"]intValue];
+    }
     
     NSLog(@"mode: %d", mode);
     if(mode >0)
