@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "50A522B4117A52560072FB09"
-               BuildableName = "MintApi.framework"
+               BuildableName = "QuinceApi.framework"
                BlueprintName = "QuinceApi"
                ReferencedContainer = "container:quince.xcodeproj">
             </BuildableReference>
@@ -28,7 +28,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8D15AC270486D014006FF6A4"
-               BuildableName = "MINT.app"
+               BuildableName = "quince.app"
                BlueprintName = "quince"
                ReferencedContainer = "container:quince.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8D15AC270486D014006FF6A4"
-            BuildableName = "MINT.app"
+            BuildableName = "quince.app"
             BlueprintName = "quince"
             ReferencedContainer = "container:quince.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8D15AC270486D014006FF6A4"
-            BuildableName = "MINT.app"
+            BuildableName = "quince.app"
             BlueprintName = "quince"
             ReferencedContainer = "container:quince.xcodeproj">
          </BuildableReference>
@@ -93,7 +93,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8D15AC270486D014006FF6A4"
-            BuildableName = "MINT.app"
+            BuildableName = "quince.app"
             BlueprintName = "quince"
             ReferencedContainer = "container:quince.xcodeproj">
          </BuildableReference>
