@@ -39,8 +39,17 @@
 		return;
 	
 	const char * filePath = [[[quince mediaFile]valueForKey:@"filePath"]cStringUsingEncoding: NSASCIIStringEncoding];
+
+    int length = [[[quince mediaFile]valueForKey:@"filePath"]length];
 	
-	CFURLRef audioFileURL = CFURLCreateFromFileSystemRepresentation ( NULL,(const UInt8 *) filePath, strlen(filePath), false);
+
+   // does not work with ä/ö/ü/ in the filePath anymore!!
+    
+    NSLog(@"%@", [[quince mediaFile]valueForKey:@"filePath"]);
+
+	CFURLRef audioFileURL = CFURLCreateFromFileSystemRepresentation ( NULL,(const UInt8 *) filePath,length /*strlen(filePath)*/, false);
+
+    
 	double start = [[quince valueForKey:@"mediaFileStart"]doubleValue];
 	double duration = [[quince valueForKey:@"duration"]doubleValue];
 	double dB = [[quince valueForKey:@"volume"]doubleValue];
