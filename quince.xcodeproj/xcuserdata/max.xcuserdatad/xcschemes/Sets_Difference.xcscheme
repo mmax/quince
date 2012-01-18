@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "50B8F4911230F2E600E444BC"
-               BuildableName = "Sets_Difference.bundle"
+               BuildableName = "Sets-Difference.bundle"
                BlueprintName = "Sets-Difference"
                ReferencedContainer = "container:quince.xcodeproj">
             </BuildableReference>

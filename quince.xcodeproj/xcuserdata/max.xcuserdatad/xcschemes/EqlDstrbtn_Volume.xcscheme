@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "50E93BD8119065CD00A63246"
-               BuildableName = "EqlDstrbtn_Volume.bundle"
+               BuildableName = "EqlDstrbtn-Volume.bundle"
                BlueprintName = "EqlDstrbtn-Volume"
                ReferencedContainer = "container:quince.xcodeproj">
             </BuildableReference>

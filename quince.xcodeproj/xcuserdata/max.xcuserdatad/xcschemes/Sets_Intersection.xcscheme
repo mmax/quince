@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "50D196A012306E8400C3FC2C"
-               BuildableName = "Sets_Intersection.bundle"
+               BuildableName = "Sets-Intersection.bundle"
                BlueprintName = "Sets-Intersection"
                ReferencedContainer = "container:quince.xcodeproj">
             </BuildableReference>
