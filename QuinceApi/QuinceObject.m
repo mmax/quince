@@ -368,6 +368,9 @@
 	if ([key isEqualToString:@"start"]) {
 		if ([value doubleValue]< 0)
 			return [NSNumber numberWithInt:0];
+        else return [NSNumber numberWithDouble:[value doubleValue]]; 
+        // added on march 24, 2012 to fix a bug that caused quince to freeze within a NSArray sortUsingDescriptors: call.
+        // somehow strings and numbers don't get along very well...
 	}
 	return value;
 }
