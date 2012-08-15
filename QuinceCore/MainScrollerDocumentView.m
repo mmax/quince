@@ -48,7 +48,7 @@
 -(void) rulerView:(NSRulerView *)aRuler handleMouseDown:(NSEvent * )event {
 	
 	BOOL loop = YES;
-    float zoom, deltaXD, deltaXS;
+    float zoom;//, deltaXD, deltaXS;
     NSPoint clickLocation;
     NSPoint scrollPoint;
 	NSScrollView * scrollView;
@@ -59,8 +59,8 @@
 	localLastDragLocation=clickLocation;
 	scrollView = [self enclosingScrollView];
 	scrollPoint = [self convertPoint:clickLocation toView:scrollView];
-	deltaXD = scrollPoint.x;
-	deltaXS = clickLocation.x;
+	//deltaXD = scrollPoint.x;
+	//deltaXS = clickLocation.x;
 	BOOL drag = NO;
 	
 	while (loop) {

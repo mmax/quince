@@ -124,8 +124,7 @@
 	ContainerView * newView, *oldView = [self valueForKey:@"view"];
 	QuinceObjectController * mc = [self valueForKey:@"content"];
         
-    newView = [stripController newContainerViewOfClassNamed:name]; // temp, for checking
-//    NSString * viewYPar =    [newView parameterOnY];
+    //newView = [stripController newContainerViewOfClassNamed:name]; // temp, for checking
 
     if(![self isCompatibleViewClass:name]){//(yPar != nil  && ![ viewYPar isEqualToString:yPar] ) {
                 return;
@@ -161,8 +160,8 @@
     double min, max;
 
     if ([stripController layerCount]>1) {
-        min = [[stripController valueForKey:@"minYValue"]doubleValue];
-        max = [[stripController valueForKey:@"maxYValue"]doubleValue];
+        //min = [[stripController valueForKey:@"minYValue"]doubleValue];
+        //max = [[stripController valueForKey:@"maxYValue"]doubleValue];
     }
     else{
         min = [newView minimumYValue];
