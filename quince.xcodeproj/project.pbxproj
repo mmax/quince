@@ -1524,7 +1524,7 @@
 		50B86D331190383D00D235AA /* EqlDstrbtn_Start-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EqlDstrbtn_Start-Info.plist"; path = "bundles/Functions/EqlDstrbtn_Start/EqlDstrbtn_Start-Info.plist"; sourceTree = "<group>"; };
 		50B86D3D1190388C00D235AA /* EqlDstrbtn_Start.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EqlDstrbtn_Start.h; path = bundles/Functions/EqlDstrbtn_Start/EqlDstrbtn_Start.h; sourceTree = "<group>"; };
 		50B86D3E1190388C00D235AA /* EqlDstrbtn_Start.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EqlDstrbtn_Start.m; path = bundles/Functions/EqlDstrbtn_Start/EqlDstrbtn_Start.m; sourceTree = "<group>"; };
-		50B8F4921230F2E600E444BC /* Sets_Difference.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sets_Difference.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B8F4921230F2E600E444BC /* Sets_Difference.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Sets_Difference.bundle; path = "Sets-Difference.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B8F4931230F2E600E444BC /* Sets_Difference-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Sets_Difference-Info.plist"; path = "bundles/Functions/Sets_Difference/Sets_Difference-Info.plist"; sourceTree = "<group>"; };
 		50B8F49C1230F32300E444BC /* Sets_Difference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sets_Difference.h; path = bundles/Functions/Sets_Difference/Sets_Difference.h; sourceTree = "<group>"; };
 		50B8F49D1230F32300E444BC /* Sets_Difference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sets_Difference.m; path = bundles/Functions/Sets_Difference/Sets_Difference.m; sourceTree = "<group>"; };
@@ -1589,13 +1589,13 @@
 		50DE7B0A13CC473D00FD4F35 /* AlignOnFreq-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AlignOnFreq-Prefix.pch"; path = "bundles/Functions/AlignOnFreq/AlignOnFreq-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		50DE7B0E13CC480300FD4F35 /* AlignOnFreq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlignOnFreq.h; path = bundles/Functions/AlignOnFreq/AlignOnFreq.h; sourceTree = SOURCE_ROOT; };
 		50DE7B0F13CC480300FD4F35 /* AlignOnFreq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlignOnFreq.m; path = bundles/Functions/AlignOnFreq/AlignOnFreq.m; sourceTree = SOURCE_ROOT; };
-		50DE7B1A13CC4ACC00FD4F35 /* EqlDstrbtn_Pitch.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EqlDstrbtn_Pitch.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		50DE7B1A13CC4ACC00FD4F35 /* EqlDstrbtn_Pitch.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = EqlDstrbtn_Pitch.bundle; path = "EqlDstrbtn-Pitch.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50DE7B1E13CC4ACC00FD4F35 /* EqlDstrbtn_Pitch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EqlDstrbtn_Pitch-Info.plist"; path = "bundles/Functions/EqlDstrbtn_Pitch/EqlDstrbtn_Pitch-Info.plist"; sourceTree = SOURCE_ROOT; };
 		50DE7B2013CC4ACC00FD4F35 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50DE7B2213CC4ACC00FD4F35 /* EqlDstrbtn_Pitch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "EqlDstrbtn_Pitch-Prefix.pch"; path = "bundles/Functions/EqlDstrbtn_Pitch/EqlDstrbtn_Pitch-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		50DE7B2613CC4BB600FD4F35 /* EqlDstrbtn_Pitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EqlDstrbtn_Pitch.h; path = bundles/Functions/EqlDstrbtn_Pitch/EqlDstrbtn_Pitch.h; sourceTree = SOURCE_ROOT; };
 		50DE7B2713CC4BB600FD4F35 /* EqlDstrbtn_Pitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EqlDstrbtn_Pitch.m; path = bundles/Functions/EqlDstrbtn_Pitch/EqlDstrbtn_Pitch.m; sourceTree = SOURCE_ROOT; };
-		50DE7B3213CC50AC00FD4F35 /* EqlDstrbtn_Freq.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EqlDstrbtn_Freq.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		50DE7B3213CC50AC00FD4F35 /* EqlDstrbtn_Freq.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = EqlDstrbtn_Freq.bundle; path = "EqlDstrbtn-Freq.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50DE7B3613CC50AC00FD4F35 /* EqlDstrbtn_Freq-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EqlDstrbtn_Freq-Info.plist"; path = "bundles/Functions/EqlDstrbtn_Freq/EqlDstrbtn_Freq-Info.plist"; sourceTree = SOURCE_ROOT; };
 		50DE7B3813CC50AC00FD4F35 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50DE7B3A13CC50AC00FD4F35 /* EqlDstrbtn_Freq-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "EqlDstrbtn_Freq-Prefix.pch"; path = "../bundles/Functions/EqlDstrbtn_Freq/EqlDstrbtn_Freq-Prefix.pch"; sourceTree = "<group>"; };
@@ -2341,6 +2341,7 @@
 				50BB629C116F987D0056C410 /* ViewControllers */,
 				50E87AD31170FF9000FFA57E /* View */,
 				2A37F4AFFDCFA73011CA2CEA /* Plug-Ins */,
+				50A522F3117A52B10072FB09 /* Test */,
 				506BF818117A59F100ECBC4E /* Other Sources */,
 				2A37F4B8FDCFA73011CA2CEA /* Resources */,
 				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
@@ -2778,7 +2779,6 @@
 			isa = PBXGroup;
 			children = (
 				506BF89B117A5DD500ECBC4E /* EnvelopeBasic-Info.plist */,
-				50A522F3117A52B10072FB09 /* Test */,
 				506BF8A2117A5E3900ECBC4E /* EnvelopeContainer.h */,
 				506BF8A3117A5E3900ECBC4E /* EnvelopeContainer.m */,
 			);
