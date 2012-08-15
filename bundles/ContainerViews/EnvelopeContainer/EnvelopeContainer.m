@@ -75,7 +75,7 @@
 	 [self setContentController:mc];
 	
 	 if(![env valueForKey:@"samplesPerWindow"] || ![env envelope]){
-		 [document presentAlertWithText:@"no data found! nothing to display"];
+		 //[document presentAlertWithText:@"no data found! nothing to display"];
 		 return;
 	 }
 
