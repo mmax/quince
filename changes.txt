@@ -1,3 +1,7 @@
+v 0.9.9
+
+- fixed a bug in LilyPondExport (Tempo changes are done correctly now!)
+- found a bug in ApplyPitchCurve. no fix yet. workaround: load sequences into GlissandoContainer before executing the function.	
 
 v 0.9.8
 September 25, 2012
