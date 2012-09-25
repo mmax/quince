@@ -224,4 +224,6 @@
 
 -(double)maximumYValue{return 129;}
 
+-(BOOL)canCreateNewEvents{return NO;}
+
 @end

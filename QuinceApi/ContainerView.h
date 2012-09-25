@@ -99,6 +99,7 @@
 -(ChildView *)childViewForPoint:(NSPoint)point;
 -(void)moveSelectionByValuesInSize:(NSValue *)sizeValue;
 -(void)moveSelectionByX:(float)x andY:(float)y;
+-(BOOL)canCreateNewEvents;              // default: YES
 
 NSRect RectFromPoints(NSPoint point1, NSPoint point2);
 

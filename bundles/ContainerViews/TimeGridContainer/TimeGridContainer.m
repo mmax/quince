@@ -198,9 +198,6 @@
 
 -(BOOL)allowsPlayback{return NO;}
 
--(void)doubleClickInEmptySpace:(NSPoint)location{
-// do nothing!
-    
-}
+-(BOOL)canCreateNewEvents{return NO;}
 
 @end

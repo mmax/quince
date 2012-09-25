@@ -556,6 +556,8 @@ NSString* const kMuteString = @"m";
 -(void)doubleClickInEmptySpace:(NSPoint)location{
 	
 	[self deselectAllChildViews];
+    if(![self canCreateNewEvents])return;
+    
 	if(!contentController)// we don't have a contentController, so ask the layer to create an empty content Object for us	
 		[layerController newContentObject];
 
@@ -592,6 +594,10 @@ NSString* const kMuteString = @"m";
 
 -(BOOL)allowsHorizontalDrag{
 	return YES;
+}
+
+-(BOOL)canCreateNewEvents{
+    return YES;
 }
 
 -(BOOL)allowsHorizontalResize{return YES;}
