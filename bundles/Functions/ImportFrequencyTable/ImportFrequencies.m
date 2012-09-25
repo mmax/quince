@@ -82,7 +82,7 @@
    [frames addObjectsFromArray:[fileContents componentsSeparatedByString:@"frame"]];
 							   
 	NSString * temp = [frames objectAtIndex:0];
-	NSScanner * scanner = [NSScanner scannerWithString: fileContents];
+	NSScanner * scanner = [NSScanner localizedScannerWithString: fileContents];
 	//NSMutableArray * tempFrame;	
 	//NSMutableArray * praatFormants = [[[NSMutableArray alloc]init]autorelease];
 	[scanner scanUpToString:@"dx = " intoString:nil];
@@ -196,7 +196,7 @@
 	int i, bin, binCount=0, maxBinCount = -1, index;
 	double spearFramesOffsetX, spearFramesDeltaX, freq, amp, start;
 	QuinceObject * mother = [self outputObjectOfType:@"QuinceObject"];
-	NSScanner * scanner = [NSScanner scannerWithString:[lines objectAtIndex:5]];
+	NSScanner * scanner = [NSScanner localizedScannerWithString:[lines objectAtIndex:5]];
 	
 	if(![scanner scanDouble:&spearFramesOffsetX]) {
 		NSLog(@"%@: scanning: ERROR - BAD!", [self className]);
@@ -205,7 +205,7 @@
 	[document setProgressTask:@"parsing spear text file..."];
 	[document displayProgress:YES];
 
-	scanner = [NSScanner scannerWithString:[lines objectAtIndex:6]];
+	scanner = [NSScanner localizedScannerWithString:[lines objectAtIndex:6]];
 	[scanner scanDouble: &spearFramesDeltaX];
 	spearFramesDeltaX -= spearFramesOffsetX;
 	
@@ -214,7 +214,7 @@
 	for(i=5;i<[lines count]-1;i++){//-1 weil sonst der letzte frame doppelt ist (???)
 		
 		[document setProgress:(100.0/[lines count])*i];
-		scanner = [NSScanner scannerWithString:[lines objectAtIndex:i]];
+		scanner = [NSScanner localizedScannerWithString:[lines objectAtIndex:i]];
 	
 		
 		if(![scanner scanDouble:&freq]){
