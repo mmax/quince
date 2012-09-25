@@ -2615,7 +2615,7 @@
 				5027F13B13951CED00A9389A /* PitchContainer */,
 				500F1ED413EDEDE300A25411 /* PitchCurveContainer */,
 				509E993613C8A2D90032AEF9 /* PitchGridContainer */,
-				506BF8CD117A5FA700ECBC4E /* TimeGridView */,
+				506BF8CD117A5FA700ECBC4E /* TimeGridContainer */,
 				506BF908117A612000ECBC4E /* VolumeStandard */,
 			);
 			name = ContainerViews;
@@ -2785,14 +2785,14 @@
 			name = EnvelopeContainer;
 			sourceTree = "<group>";
 		};
-		506BF8CD117A5FA700ECBC4E /* TimeGridView */ = {
+		506BF8CD117A5FA700ECBC4E /* TimeGridContainer */ = {
 			isa = PBXGroup;
 			children = (
 				506BF8C4117A5F6300ECBC4E /* TimeGridView-Info.plist */,
 				506BF8CA117A5FA200ECBC4E /* TimeGridContainer.h */,
 				506BF8CB117A5FA200ECBC4E /* TimeGridContainer.m */,
 			);
-			name = TimeGridView;
+			name = TimeGridContainer;
 			sourceTree = "<group>";
 		};
 		506BF908117A612000ECBC4E /* VolumeStandard */ = {
