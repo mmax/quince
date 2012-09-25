@@ -455,7 +455,11 @@
 
     NSNumber * freq = [self valueForKey:@"frequency"];
     NSNumber * freqB = [self valueForKey:@"frequencyB"];
-    if(!freq || ! freqB) return;
+    if(!freq) return;
+    if(!freqB) {
+        [self setValue:freq forKey:@"frequencB"];
+        return;
+    }
     
     if([freq doubleValue]>=[freqB doubleValue]){
 
@@ -1076,7 +1080,12 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context){
     
 -(void)setCent:(NSNumber *)c withUpdate:(BOOL)b{	
 
-
+    if(!c) {
+        NSLog(@"ERROR: QuinceObject:setCent: no value!");
+        return;
+    }
+    [c retain];
+//    NSLog(@"%@", c);
     if(!b)
         [self willChangeValueForKey:@"dictionary"];
 
@@ -1115,6 +1124,7 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context){
     else
         [self didChangeValueForKey:@"dictionary"];
 
+    [c release];
 }
 
 -(void)setPitchF:(NSNumber *)p withUpdate:(BOOL)b{
