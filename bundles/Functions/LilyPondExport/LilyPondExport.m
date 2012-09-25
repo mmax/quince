@@ -1022,14 +1022,15 @@ return [NSString stringWithFormat:@"\n\\once \\override TupletNumber #'transpare
 
 -(void)changeTempo{
 
-	id t = [quince valueForKey:@"tempo"];
+	//id t = [quince valueForKey:@"tempo"];
 	float inTempo = 60.0;
 	double f;
 
-	if(t)
-		inTempo = [t floatValue];
+//	if(t)
+//		inTempo = [t floatValue];
 	
 	f = outTempo / inTempo;
+    
 	//NSLog(@"changeTempo: f: %f", f);
 	for(QuinceObject * q in [quince valueForKey:@"subObjects"]){
 		double start = [[q valueForKey:@"start"]doubleValue] * f;
