@@ -61,7 +61,7 @@
 	double targetTempo = [targetTempoField doubleValue];
 	double sourceTempo = [sourceTempoField doubleValue];
 	
-	double factor = targetTempo / sourceTempo;
+	double factor = sourceTempo / targetTempo;
 	
 	QuinceObject * source = [self objectForPurpose:@"source"];
 	QuinceObject * c = [self outputObjectOfType:[source type]];
