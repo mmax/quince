@@ -77,7 +77,7 @@
     
     [q setValue:[NSNumber numberWithDouble:[q mToF:startPich]]forKey:@"frequency"];
     [q setValue:[NSNumber numberWithDouble:[q mToF:endPitch]] forKey:@"frequencyB"];
-    [q setValue:[NSNumber numberWithInt:dir] forKey:@"glissandoDirection"];
+    //[q setValue:[NSNumber numberWithInt:dir] forKey:@"glissandoDirection"];
     //[q setValue:[NSNumber numberWithDouble:pitchRange] forKey:@"pitchRange"];
 }
 
