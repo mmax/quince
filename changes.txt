@@ -1,15 +1,20 @@
 
 v 0.9.8
+September 25, 2012
 
-- fixed a bug in CsoundPlayer
+- fixed a bug in ImportFrequencies
+- fixed a bug in PitchGridContainer
+- fixed a bug in TimeGridContainer
+- fixed a bug in TempoChange
+- fixed bugs in CsoundPlayer
 - found a bug in AudioFilePlayer. no fix yet. workaround: avoid umlaute in filepaths!
 - added lion support
-- fixed a bug in CsoundPlayer
 - added function: ApplyPitchCurve
 - added feature in GlissandoContainer, s/e automatically adjusts glissandoStart/glissandoEnd 
-- added pogress/feedback to document tasks
+- added progress/feedback to document tasks
 - fixed a bug in JoinByFrequency
 - optimized performance of OneVoice_Loudest
+
 _________________________________________________________________
 
 v 0.9.7.1
