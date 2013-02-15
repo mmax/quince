@@ -100,9 +100,9 @@
 
 
 -(void)addSubNodeForQuinceObject:(QuinceObject *)quince{
-	[document willChangeValueForKey:@"objectNodes"]; // not sure why i have to do this...
+//	[document willChangeValueForKey:@"objectNodes"]; // not sure why i have to do this...
 	[[node mutableChildNodes]addObject:[[quince controller]node]];
-	[document didChangeValueForKey:@"objectNodes"];
+//	[document didChangeValueForKey:@"objectNodes"];
 }
 
 -(NSArray *)controllersForSubObjects{
