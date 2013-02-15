@@ -33,8 +33,10 @@
 -(void)perform{
 
 	QuinceObject * mother = [self objectForPurpose:@"source"];
-	[mother sortChronologically];
-	QuinceObject * first = [[mother valueForKey:@"subObjects"]objectAtIndex:0];
+	
+    [mother sortChronologically];
+	
+    QuinceObject * first = [[mother valueForKey:@"subObjects"]objectAtIndex:0];
 	double volume = [[first valueForKey:@"volume"]doubleValue];
 	
 	for(QuinceObject * quince in [mother valueForKey:@"subObjects"])

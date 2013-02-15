@@ -981,6 +981,7 @@
 	NSLog(@"QuinceObject: log: %@", dictionary);
 }
 
+
 -(QuinceObject *)superObject{
 
 	if([self valueForKey:@"superObject"])
