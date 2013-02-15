@@ -32,9 +32,11 @@
 @interface JoinByFrequency : Function {
 	
 	IBOutlet NSTextField * percentageField;
+    IBOutlet NSTextField * timeGapField;
 	IBOutlet NSPanel * window;
     NSArray * subs;
 	float maxCent;
+    float maxTimeGap;
 	QuinceObject * mom;
 	QuinceObject * source;
     int inIndex, outIndex;

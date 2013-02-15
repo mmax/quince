@@ -55,6 +55,8 @@
 
 	
 	maxCent = [percentageField floatValue];
+    maxTimeGap = [timeGapField floatValue];
+    
 	mom = [self outputObjectOfType:@"QuinceObject"];
 	source = [self objectForPurpose:@"source"];
     [source retain];
@@ -90,7 +92,7 @@
     QuinceObject * a, *b;
     double freqA, freqB, cent;
     NSArray * out = [mom valueForKey:@"subObjects"];
-    float cf = count, progress;
+    float cf = count, gap, progress;
     
     a = [subs objectAtIndex:inIndex];
     [[mom controller]addSubObjectWithController:[[a copy] controller] withUpdate:YES];
@@ -101,10 +103,16 @@
         
         a = [out objectAtIndex:outIndex];
         b = [subs objectAtIndex:inIndex];
+        
+        //time should be an issue here!!!
+        
         freqA = [[a valueForKey:@"frequency"]doubleValue];
-        freqB = [[b valueForKey:@"frequency"]doubleValue];	
+        freqB = [[b valueForKey:@"frequency"]doubleValue];
+        
+        gap = [[b valueForKey:@"start"]floatValue] - [[a end]floatValue];
         cent = fabs(1200.0 * log2(freqA/freqB)); 
-        if(cent<=maxCent){
+        
+        if(cent<=maxCent && gap < maxTimeGap){
             [self joinQuinceAtInIndexIntoQuinceAtOutIndex];
         }
         else{
