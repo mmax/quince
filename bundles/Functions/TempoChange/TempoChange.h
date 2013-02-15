@@ -34,6 +34,7 @@
 	IBOutlet NSPanel * window;
 	IBOutlet NSTextField * sourceTempoField;
 	IBOutlet NSTextField * targetTempoField;
+    IBOutlet NSButton * preserveTimingCheckBox;
 }
 
 

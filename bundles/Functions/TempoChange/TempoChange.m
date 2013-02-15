@@ -62,6 +62,10 @@
 	double sourceTempo = [sourceTempoField doubleValue];
 	
 	double factor = sourceTempo / targetTempo;
+
+    if ([preserveTimingCheckBox state] == NSOnState) {
+        factor = targetTempo / sourceTempo;
+    }
 	
 	QuinceObject * source = [self objectForPurpose:@"source"];
 	QuinceObject * c = [self outputObjectOfType:[source type]];
