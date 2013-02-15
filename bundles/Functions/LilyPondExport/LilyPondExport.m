@@ -1022,8 +1022,12 @@ return [NSString stringWithFormat:@"\n\\once \\override TupletNumber #'transpare
 
 -(void)changeTempo{
 
-	//id t = [quince valueForKey:@"tempo"];
-	float inTempo = 60.0;
+	id t = [quince valueForKey:@"tempo"];
+    float inTempo = [t floatValue];
+    
+    if(![t floatValue])
+        inTempo = 60.0;
+
 	double f;
 
 //	if(t)
