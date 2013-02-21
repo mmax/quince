@@ -60,6 +60,9 @@
 -(IBAction)toggleMeasure:(id)sender;
 -(IBAction)doneTime:(id)sender;
 -(IBAction)donePitchTempered:(id)sender;
+
+-(IBAction)cancelTime:(id)sender;
+-(void)cancel;
 -(NSString *)descriptionStringwithMeasures:(NSArray *)measures;
 -(BOOL)newLock:(NSNumber *)lock inGrid:(QuinceObject *)quince;
 @end

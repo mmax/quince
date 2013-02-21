@@ -102,6 +102,16 @@
 	[self done];
 }
 
+-(IBAction)cancelTime:(id)sender{
+	[self cancel];
+}
+
+-(void)cancel{
+
+    [window orderOut:nil];
+	[self done];
+}
+
 -(IBAction)changeMeasure:(id)sender{
 	
 	int measure = [newMeasureTextField intValue];
