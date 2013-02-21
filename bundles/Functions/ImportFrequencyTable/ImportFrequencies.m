@@ -242,12 +242,22 @@
 			QuinceObject * m = [document newObjectOfClassNamed:@"QuinceObject" inPool:NO];
 			[m setValue:[NSNumber numberWithDouble:start] forKey:@"start"];
 			[m setValue:[NSNumber numberWithDouble:spearFramesDeltaX] forKey:@"duration"];
-			[m setValue:[NSNumber numberWithDouble:freq] forKey:@"frequency"];
-			if(amp==0)
+            //NSLog(@"ImportFrequencies:Spear:Freq: %f", freq);
+            
+			
+            if(amp==0)
 				[m setValue:[NSNumber numberWithDouble:-150] forKey:@"volume"];
 			else
 				[m setValue:[NSNumber numberWithDouble:20.0*log10(amp)] forKey:@"volume"];
-			[[mother controller]addSubObjectWithController:[m controller] withUpdate:NO];
+            
+            if(freq<20)
+                NSLog(@"ImportFrequencies: Error: Frequency < 20! : %f\tskipping bin...", freq);
+            else{
+                [m setValue:[NSNumber numberWithDouble:freq] forKey:@"frequency"];
+                [[mother controller]addSubObjectWithController:[m controller] withUpdate:NO];
+            }
+
+
 			
 		}		
 	}
