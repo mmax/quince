@@ -47,12 +47,13 @@
 			<object class="NSWindowTemplate" id="1005">
 				<int key="NSWindowStyleMask">269</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{728, 406}, {523, 346}}</string>
+				<string key="NSWindowRect">{{728, 406}, {523, 358}}</string>
 				<int key="NSWTFlags">544735232</int>
 				<string key="NSWindowTitle">Grid</string>
 				<string key="NSWindowClass">NSWindow</string>
 				<nil key="NSViewClass"/>
 				<nil key="NSUserInterfaceItemIdentifier"/>
+				<string key="NSWindowContentMinSize">{523, 358}</string>
 				<object class="NSView" key="NSWindowView" id="1006">
 					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
@@ -506,7 +507,7 @@
 															<object class="NSPopUpButton" id="528961468">
 																<reference key="NSNextResponder" ref="951949678"/>
 																<int key="NSvFlags">268</int>
-																<string key="NSFrame">{{159, 14}, {49, 15}}</string>
+																<string key="NSFrame">{{157, 14}, {51, 15}}</string>
 																<reference key="NSSuperview" ref="951949678"/>
 																<reference key="NSWindow"/>
 																<reference key="NSNextKeyView" ref="896700656"/>
@@ -970,12 +971,13 @@
 							</array>
 						</object>
 					</array>
-					<string key="NSFrameSize">{523, 346}</string>
+					<string key="NSFrameSize">{523, 358}</string>
 					<reference key="NSSuperview"/>
 					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="956284068"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1366, 746}}</string>
+				<string key="NSMinSize">{523, 380}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
 				<bool key="NSWindowIsRestorable">YES</bool>
 			</object>
