@@ -1,8 +1,9 @@
 v 0.9.9
 
+- fixed a bug in CreateGridSequence that caused quince to crash whenever CreateGridSequence was opened again after the user manually closed its UI
 - fixed a bug in LilyPondExport (Tempo changes are done correctly now!)
 - found a bug in ApplyPitchCurve. no fix yet. workaround: load sequences into GlissandoContainer before executing the function.	
-- added a preserveTiming check box to TempoChange:	 If you want to keep events at the same time when played in another tempo, check this box. If you want to "transpose" the timing of a sequence, leave it unchecked.
+- added a preserveTiming check box to TempoChange: If you want to keep events at the same time when played in another tempo, check this box. If you want to "transpose" the timing of a sequence, leave it unchecked.
 
 v 0.9.8
 September 25, 2012
