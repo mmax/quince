@@ -67,7 +67,7 @@
 -(NSString *)stringFromValue:(id)val{
 
 	id r = val;
-	if(![[val className]isEqualToString:@"NSCFString"]){
+	if(![val isKindOfClass:[NSString class]]){
 		r = [val stringValue];
 	}
 	
