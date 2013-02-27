@@ -52,8 +52,10 @@
 	
 	double threshold = [textField doubleValue];
 	[window orderOut:nil];
-	Envelope * env = (Envelope*)[self objectForPurpose:@"envelope"];
-	NSArray * envArray = [env envelope];
+	Envelope * envOrig = (Envelope*)[self objectForPurpose:@"envelope"];
+    Envelope * env = [[document controllerForCopyOfQuinceObjectController:[envOrig controller] inPool:YES]content];
+    
+	NSArray * envArray = [envOrig envelope];
 	NSMutableArray * newEnv = [[NSMutableArray alloc]init];
 	for(NSNumber * frame in envArray){
 		double val = 0.00001;
@@ -62,9 +64,12 @@
 		}
 		[newEnv addObject:[NSNumber numberWithDouble:val]];
 	}
-	[env setEnvelope:newEnv];
+	[env setEnvelope:newEnv];     
+    
 	[newEnv release];
-	[self setOutputObjectToObjectWithPurpose:@"envelope"];
+	//[self setOutputObjectToObjectWithPurpose:@"envelope"];
+    [[env controller] setValue:[NSString stringWithFormat:@"%@_EnvGt", [env valueForKey:@"name"]] forKeyPath:@"selection.name"];
+    [self setValue:env forKey:@"output"];
 	[self done];
 
 }

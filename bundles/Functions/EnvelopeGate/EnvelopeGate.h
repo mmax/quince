@@ -27,6 +27,7 @@
 #import <Cocoa/Cocoa.h>
 #import <QuinceApi/Function.h>
 #import <QuinceApi/Envelope.h>
+#import <QuinceApi/QuinceDocument.h>
 
 @interface EnvelopeGate : Function {
 
