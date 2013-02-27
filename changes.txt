@@ -1,9 +1,12 @@
 
 
 v 0.9.9
+
+- changed EnvelopeGate so that it creates a new Envelope instead of overwriting the old one
 - fixed a bug in the core that caused EnvelopeContainer (and possibly other ContainerViews) to redraw (and recompute) their entire content every time the cursor was set to another position
 - fixed a fatal bug in FoldByParameter 
 - fixed a bug in ImportFrequencies that caused quince to crash when encountering frequencies below 20 Hz
+- performance imporovement for ImportFrequencies
 - fixed a bug in CreateGridSequence that caused quince to crash whenever CreateGridSequence was opened again after the user manually closed its UI
 - fixed a bug in LilyPondExport (Tempo changes are done correctly now!)
 - found a bug in ApplyPitchCurve. no fix yet. workaround: load sequences into GlissandoContainer before executing the function.	
