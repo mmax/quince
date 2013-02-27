@@ -45,8 +45,7 @@
 
    // does not work with ä/ö/ü/ in the filePath anymore!!
     
-    NSLog(@"%@", [[quince mediaFile]valueForKey:@"filePath"]);
-
+    
 	CFURLRef audioFileURL = CFURLCreateFromFileSystemRepresentation ( NULL,(const UInt8 *) filePath,length /*strlen(filePath)*/, false);
 
     
