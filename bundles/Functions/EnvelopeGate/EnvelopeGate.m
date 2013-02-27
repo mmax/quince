@@ -64,6 +64,7 @@
 		}
 		[newEnv addObject:[NSNumber numberWithDouble:val]];
 	}
+    
 	[env setEnvelope:newEnv];     
     
 	[newEnv release];
