@@ -82,10 +82,11 @@
 				//NSLog(@"mouseUp: %d", [event clickCount]);
 				loop = NO;
 				[[NSCursor arrowCursor] push];
-				[mainController updateViewsForCurrentSize];
-				if(!drag)[mainController setCursorToPoint:clickLocation];
-				if(!drag && [event clickCount] ==2)
-						[[mainController document]play];
+
+				if(!drag && [event clickCount] ==2) [[mainController document]play];
+                if(!drag)[mainController setCursorToPoint:clickLocation];
+                else    [mainController updateViewsForCurrentSize];
+				
 				break;
 			default:
 				// Ignore any other kind of event. 
