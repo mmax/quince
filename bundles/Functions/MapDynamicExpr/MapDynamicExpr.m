@@ -128,10 +128,10 @@
 	
 	NSArray * fields = [NSArray arrayWithObjects:ffffField, fffField, ffField, fField, mfField, mpField, pField, ppField, pppField, ppppField, nil];
 	
-	float delta = [slider floatValue];
+	float delta = [slider floatValue], offset = [offsetSlider floatValue];
 	for(int i = 0; i<[fields count];i++){
 		NSTextField * f = [fields objectAtIndex:i];
-		[f setFloatValue:0-(delta*(i+1))];
+		[f setFloatValue:0-(delta*(i+1))+offset];
 	}
 }
 

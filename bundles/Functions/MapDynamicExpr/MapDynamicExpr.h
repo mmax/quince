@@ -57,6 +57,7 @@
 	IBOutlet NSButton * pppppCheckBox;
 	
 	IBOutlet NSSlider * slider;
+    IBOutlet NSSlider * offsetSlider;
 	
 	NSMutableArray * activeFields;
 	NSMutableArray * activeBoxes;
