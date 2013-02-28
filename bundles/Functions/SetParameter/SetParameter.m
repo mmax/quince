@@ -52,6 +52,11 @@
 	[window makeKeyAndOrderFront:nil];
 }
 
+-(IBAction)add:(id)sender{
+    [pamMenu addItemWithTitle:[newParameterField stringValue]];
+    [pamMenu selectItemWithTitle:[newParameterField stringValue]];
+}
+
 -(IBAction)ok:(id)sender{
 
 	NSString * val = [valueField stringValue];

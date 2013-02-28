@@ -35,11 +35,14 @@
 	IBOutlet NSTextField * valueField;
 	IBOutlet NSButton * okButton;
 	IBOutlet NSButton * recursionBox;
-	IBOutlet NSPanel * window;
+	IBOutlet NSTextField * newParameterField;
+    IBOutlet NSPanel * window;
+    
 
 }
 
 -(IBAction)ok:(id)sender;
+-(IBAction)add:(id)sender;
 -(IBAction)cancel:(id)sender;
 -(void)setParameter:(NSString *)key ofObject:(QuinceObject *)quince toValue:(NSString *)val;
 @end
