@@ -2,6 +2,9 @@
 
 v 0.9.9
 
+
+- added the option to enter new parameters to the SetParameter Function
+- added the option to add an offset to the value distribution of MapDynamikExpr
 - changed EnvelopeGate so that it creates a new Envelope instead of overwriting the old one
 - fixed a bug in the core that caused EnvelopeContainer (and possibly other ContainerViews) to redraw (and recompute) their entire content every time the cursor was set to another position
 - fixed a fatal bug in FoldByParameter 
