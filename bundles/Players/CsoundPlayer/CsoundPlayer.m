@@ -272,9 +272,10 @@ static void * csoundCallback(CSOUND * csound,int attr, const char *format, va_li
 				id val = [q valueForKey:s];
 				if([s isEqualToString:@"audioFileName"] || [s isEqualToString:@"mediaFileName"])
 					val = [[document objectWithValue:[q valueForKey:s] forKey:@"name"]valueForKey:@"filePath"];
-				
+
+
 				if(val){
-					if([[val className]isEqualToString:@"NSCFString"])
+					if([val isKindOfClass:[NSString class]])//if([[val className]isEqualToString:@"NSCFString"])
 						[csd appendFormat:@"\"%@\"   ", val];
 					else
 						[csd appendFormat:@"%@   ", val];
