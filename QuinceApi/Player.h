@@ -137,7 +137,7 @@ OSStatus MintPlayerAURenderCallback (
 -(NSDictionary *)settings;
 -(NSDictionary *)xmlDictionary;
 -(void)mixDown;
-
+-(NSString *)getMixDownFilePath;
 -(IBAction)ok:(id)sender;
 
 void DeriveBufferSize (

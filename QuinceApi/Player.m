@@ -450,6 +450,25 @@ void DeriveBufferSize (
 	[document presentAlertWithText:@"not implemented"];
 }
 
+-(NSString *)getMixDownFilePath{
+    
+    NSSavePanel* sp = [NSSavePanel savePanel];
+    NSArray * types = [NSArray arrayWithObject:@"aif"];
+    [sp setAllowedFileTypes:types];
+	//[sp setRequiredFileType:@"txt"];
+	[sp setTitle:@"Save Audio File..."];
+//#ifdef MAC_OS_X_VERSION_10_6
+	[sp setNameFieldStringValue:@"filenamedoesntmatter.aif"];
+//#endif
+    
+	
+	int status = [sp runModal];
+    
+	if(status==NSFileHandlingPanelOKButton)
+		return [[sp URL]path];
+    
+    return nil;
+}
 
 #pragma mark KVC
 

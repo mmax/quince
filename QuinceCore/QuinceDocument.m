@@ -110,6 +110,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	NSMenu * playerSubMenu = [playerItem submenu];
 	NSMenuItem * mixDownMenuItem = [playerSubMenu itemWithTitle:@"MixDown"];
 	mixDownMenu = [mixDownMenuItem submenu];
+    
 	functionMenu = [functionItem submenu];
 	selectionMenu = [selectionItem submenu];
     NSString * task = @"loading objects...";
@@ -540,23 +541,29 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	
 
 
-	NSMenuItem * item = [[NSMenuItem alloc]init];
+	NSMenuItem * item = [[[NSMenuItem alloc]init]autorelease];
 	[item setTitle:@"Current"];
 	[item setTarget:self];
 	[item setAction:@selector(mixDownWithMenuItem:)];
 	[mixDownMenu addItem:item];
-	[item release];
+//	[item release];
 	
 	for(Class a in playerClassList){
-		NSMenuItem * item = [[NSMenuItem alloc]init];
+		NSMenuItem * item = [[[NSMenuItem alloc]init]autorelease];
 		[item setTitle:[a className]];
 		[item setTarget:self];
 		[item setAction:@selector(mixDownWithMenuItem:)];
 		[mixDownMenu addItem:item];
-		[item release];
+//		[item release];
 		
 	}
-	
+    NSApplication * app = [NSApplication sharedApplication];
+	NSMenu * main = [app mainMenu];
+	NSMenuItem * playerItem = [main itemWithTitle:@"Players"];
+	NSMenu * playerSubMenu = [playerItem submenu];
+	NSMenuItem * mixDownMenuItem = [playerSubMenu itemWithTitle:@"MixDown"];
+    [mixDownMenuItem setEnabled:YES];
+    
 	[[playerMenu target] performSelector:[playerMenu action]];
 	
 }
