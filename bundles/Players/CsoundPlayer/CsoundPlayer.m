@@ -142,6 +142,44 @@
     [document displayProgress:NO];	
 }
 
+
+-(void)mixDown{
+	
+    NSString* path = [self getMixDownFilePath];
+    if(!path)
+        return;
+    
+    
+    [document setIndeterminateProgressTask:@"setting up csound..."];
+    [document displayProgress:YES];
+    
+    [self setup];
+    
+    NSLog(@"resetting...");
+	csoundReset(csound);
+	NSLog(@"CSoundPlayer:reset");
+    
+//	[self setIsPlaying:YES];
+//	timer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(setCursor) userInfo:nil repeats:YES];
+	char * command[4];
+	command[0] = "./dummy";
+	command[1] = "-Ado";
+	command[2] = (char *)[path UTF8String];
+	command[3] = "/tmp/quince.csd";
+	int argc = 4;
+	
+	CSUserData * ud; 
+	ud = (CSUserData *)malloc(sizeof(CSUserData)); 
+	ud->csound = csound;
+	ud->result = csoundCompile(csound, argc, command);
+	ud->player = self;
+	
+	csoundSetScoreOffsetSeconds(csound, 0);//[[document valueForKey:@"playbackStartTime"]doubleValue]);
+	csoundCreateThread(csThread,(void*)ud); 
+    [document displayProgress:NO];
+
+}
+
 -(void) csoundThreadRoutine:(CsoundPlayer *)sp {
 }
 
