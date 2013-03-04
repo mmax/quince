@@ -158,9 +158,7 @@
     NSLog(@"resetting...");
 	csoundReset(csound);
 	NSLog(@"CSoundPlayer:reset");
-    
-//	[self setIsPlaying:YES];
-//	timer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(setCursor) userInfo:nil repeats:YES];
+	
 	char * command[4];
 	command[0] = "./dummy";
 	command[1] = "-Ado";
@@ -168,17 +166,20 @@
 	command[3] = "/tmp/quince.csd";
 	int argc = 4;
 	
-	CSUserData * ud; 
-	ud = (CSUserData *)malloc(sizeof(CSUserData)); 
-	ud->csound = csound;
-	ud->result = csoundCompile(csound, argc, command);
-	ud->player = self;
-	
-	csoundSetScoreOffsetSeconds(csound, 0);//[[document valueForKey:@"playbackStartTime"]doubleValue]);
-	csoundCreateThread(csThread,(void*)ud); 
+    CSOUND *CSound = csoundCreate(NULL);
+    int result = csoundCompile(CSound, argc, command);
+    
+    [document setIndeterminateProgressTask:@"bouncing..."];
+
+    if (result == 0) {
+        result = csoundPerform(CSound);
+    }
+    csoundDestroy(CSound);
+
     [document displayProgress:NO];
 
 }
+
 
 -(void) csoundThreadRoutine:(CsoundPlayer *)sp {
 }
@@ -188,7 +189,7 @@ uintptr_t csThread(void *data)  {
 	CSUserData* udata = (CSUserData*)data; 
 	if(!udata->result) { 
 		udata->result = csoundPerform(udata->csound);
-		udata->csound = nil;
+		//udata->csound = nil;
 		if(udata->result){
 			CsoundPlayer *cs = (CsoundPlayer *)udata->player;
 			[cs stop];
@@ -197,16 +198,18 @@ uintptr_t csThread(void *data)  {
 	return 1; 
 }
 
-static void * csoundCallback(CSOUND * csound,int attr, const char *format, va_list valist) {
-	return 0;
-}
+//static void * csoundCallback(CSOUND * csound,int attr, const char *format, va_list valist) {
+//	return 0;
+//}
 
 -(void)stop{
     [document setIndeterminateProgressTask:@"stopping csound..."];
     [document displayProgress:YES];
     NSLog(@"CSoundPlayer: STOPPING______________________");
-	[timer invalidate];	
+//    csoundDestroy(csound);
 	csoundStop(csound);	
+    [timer invalidate];	
+	
 	[document setCursorTime:[document valueForKey:@"playbackStartTime"]];
     NSLog(@"CSoundPlayer:stopped");
 	[self setIsPlaying:NO];

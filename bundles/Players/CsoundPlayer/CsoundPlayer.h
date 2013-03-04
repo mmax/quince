@@ -65,6 +65,7 @@ typedef struct _userData {
 -(void) csoundThreadRoutine:(CsoundPlayer *)sp;
 
 static void * csoundCallback(CSOUND * csound,int attr, const char *format, va_list valist);
+uintptr_t csThreadMD(void *data);
 uintptr_t csThread(void *data);
 -(CSOUND *)csound;
 -(void)setOrcs;
