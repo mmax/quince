@@ -554,6 +554,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 		[item setTarget:self];
 		[item setAction:@selector(mixDownWithMenuItem:)];
 		[mixDownMenu addItem:item];
+        [item setEnabled:NO];
 //		[item release];
 		
 	}
