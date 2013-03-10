@@ -350,11 +350,14 @@ uintptr_t csThread(void *data)  {
 	NSMutableDictionary * s = [[NSMutableDictionary alloc]init];
 	
 	[s setValue:[orcView string] forKey:@"orc"];
+    [s setValue: [modeMenu titleOfSelectedItem] forKey:@"defaultModeName"];
 	return [s autorelease];
 }
 
 -(void)setSettings:(NSDictionary *)settings{
     [self setValue:[settings valueForKey:@"orc"] forKey:@"orcString"];
+    [modeMenu selectItemWithTitle:[settings valueForKey:@"defaultModeName"]];
+    [self setDefaultMode:self];
 }
 
 -(IBAction)ok:(id)sender{

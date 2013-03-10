@@ -2,7 +2,9 @@
 
 v 0.9.9
 
-
+- default csound playback mode is now saved with session
+- fixed a bug in CsoundPlayer that caused muted events to be played.
+- added a mixdown option to CsoundPlayer (Use Player:MixDown:Current to use it)
 - added the option to enter new parameters to the SetParameter Function
 - added the option to add an offset to the value distribution of MapDynamikExpr
 - changed EnvelopeGate so that it creates a new Envelope instead of overwriting the old one

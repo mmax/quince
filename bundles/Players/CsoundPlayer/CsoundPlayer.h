@@ -48,7 +48,7 @@ typedef struct _userData {
 	IBOutlet NSTextView * orcView;
 	IBOutlet NSTextView * scoreView;
     IBOutlet NSPopUpButton * modeMenu;
-	NSAutoreleasePool * pool;    
+//	NSAutoreleasePool * pool;    
 }
 
 -(void)fetchCommonParametersForArrayOfQuinces:(NSArray *)a;
