@@ -305,7 +305,7 @@ uintptr_t csThread(void *data)  {
 	[csd appendFormat:@"\n\n\n"];
 	
 	for(QuinceObject * q in flatQuinceList){
-		if([q isOfType:@"envelope"]);
+		if([q isOfType:@"envelope"] || [[q valueForKey:@"muted"]boolValue]==YES);
 		else{
             mode = [self modeForQuince:q];
  			[csd appendFormat:@"i%d     %f     %f     %f     ", mode, [[q valueForKey:@"start"]doubleValue], [[q valueForKey:@"duration"]doubleValue], [[q valueForKey:@"volume"]doubleValue]];
