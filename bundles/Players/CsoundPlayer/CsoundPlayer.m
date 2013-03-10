@@ -47,8 +47,9 @@
 
 	if(csound){
 		csoundStop(csound);
-		csoundReset(csound);
-		csoundDestroy(csound);
+		//csoundReset(csound);
+		//csoundDestroy(csound);
+        //free(csound);
 	}
 	[super dealloc];
 }
@@ -190,7 +191,7 @@ uintptr_t csThread(void *data)  {
 	if(!udata->result) { 
 		udata->result = csoundPerform(udata->csound);
 		//udata->csound = nil;
-		if(udata->result){
+		if(udata->result!=0){
 			CsoundPlayer *cs = (CsoundPlayer *)udata->player;
 			[cs stop];
 		}
@@ -203,17 +204,20 @@ uintptr_t csThread(void *data)  {
 //}
 
 -(void)stop{
+    NSAutoreleasePool *p = [[NSAutoreleasePool alloc]init];
     [document setIndeterminateProgressTask:@"stopping csound..."];
     [document displayProgress:YES];
     NSLog(@"CSoundPlayer: STOPPING______________________");
 //    csoundDestroy(csound);
 	csoundStop(csound);	
+   // csoundReset(csound);
     [timer invalidate];	
 	
 	[document setCursorTime:[document valueForKey:@"playbackStartTime"]];
     NSLog(@"CSoundPlayer:stopped");
 	[self setIsPlaying:NO];
-	    [document displayProgress:NO];
+    [document displayProgress:NO];
+    [p release];
 }
 
 
