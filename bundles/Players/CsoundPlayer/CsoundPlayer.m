@@ -459,7 +459,6 @@ uintptr_t csThread(void *data)  {
         mode = [[self valueForKey:@"defaultMode"]intValue];
     }
     
-    NSLog(@"mode: %d", mode);
     if(mode >0)
         return mode;
     
