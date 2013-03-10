@@ -1219,6 +1219,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 -(NSMutableArray *)playbackObjectList{
 
     [self setIndeterminateProgressTask:@"preparing copies..."];
+    [self displayProgress:YES];
     
 	NSMutableArray * topLevel = [mainController topLevelPlaybackList]; // an array with arrays for strips with top-level quinceObjectControllers
 
@@ -1257,7 +1258,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	[flat sortUsingDescriptors:descriptors];
 	[sd release];
 	[tl2 release];
-    
+    [self displayProgress:NO];
 //	NSLog(@"doc: playbackObjectList: %@", flat);		
 	return [flat autorelease];
 }

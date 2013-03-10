@@ -182,7 +182,6 @@
 	NSString * name = [self valueForKey:@"mediaFileName"];
 	if(name && [name length]>1 && ![name isEqualToString:@"value"]){ // dirty - when an empty string is entered in the object-inspector, 
 																	// "value" is being inserted. don't know why or by whom...
-		//NSLog(@"QuinceObject: mediaFileName: found name: %@", name);
 		QuinceObject * media = [document objectWithValue:name forKey:@"name"];
 		
 		if(media) 
@@ -728,7 +727,8 @@
 }
 
 -(void) hardSetMediaFileAssociations{
-
+    if(![self mediaFile])return;
+    
 	[self setValue:[self mediaFileStart] forKey:@"mediaFileStart"];
 	
 	if([self subObjectsCount]>0){
