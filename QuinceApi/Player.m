@@ -42,6 +42,7 @@
 		trackNodes = [[NSMutableArray alloc]init];
 		isPlaying = NO;
         dictionary = [[NSMutableDictionary alloc]init];
+        //pool = [[NSAutoreleasePool alloc]init];
 		
 	}
 	return self;
@@ -51,6 +52,7 @@
 
     [dictionary release];
     [trackNodes release];
+    //[pool release];
     [super dealloc];
 }
 

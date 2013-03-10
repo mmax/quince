@@ -115,6 +115,8 @@ OSStatus MintPlayerAURenderCallback (
 	NSNumber * startTime;
 	
 	NSMutableArray * flatQuinceList;
+    
+    //NSAutoreleasePool * pool;
 }
 
 @property (assign) QuinceDocument * document;
