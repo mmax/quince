@@ -1,7 +1,8 @@
 
 
 v 0.9.9
-
+- added function: ReverseLegato
+- minor UI improvements
 - default csound playback mode is now saved with session
 - fixed a bug in CsoundPlayer that caused muted events to be played.
 - added a mixdown option to CsoundPlayer (Use Player:MixDown:Current to use it)
