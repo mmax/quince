@@ -949,6 +949,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
+
 -(IBAction) windowMenuAction:(id)sender{
 
     NSString * win = [sender title];
@@ -966,8 +967,22 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
+
 -(IBAction)invertSelection:(id)sender{
+
+    ContainerView * currentView = [mainController activeView];	// get the currently active view
+	NSArray * selectedChildViews = [currentView selection];	
+    NSMutableArray * allChildViews = [currentView childViews];    
+    NSMutableArray * unselectedChildViews = [[NSMutableArray alloc]init];
+        
+    for(ChildView * c in allChildViews){
     
+        if(![selectedChildViews containsObject:c])
+            [unselectedChildViews addObject:c];
+    }
+    
+    [currentView deselectAllChildViews];
+    [currentView selectChildViews:unselectedChildViews];
     
 }
 

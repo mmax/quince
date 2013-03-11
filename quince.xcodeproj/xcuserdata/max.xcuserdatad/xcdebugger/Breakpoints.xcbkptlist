@@ -163,11 +163,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "QuinceCore/QuinceDocument.m"
-         timestampString = "384654106.354736"
+         timestampString = "384669761.65679"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "954"
-         endingLineNumber = "954"
+         startingLineNumber = "955"
+         endingLineNumber = "955"
          landmarkName = "-windowMenuAction:"
          landmarkType = "5">
       </FileBreakpoint>
