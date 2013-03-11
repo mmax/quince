@@ -21,6 +21,9 @@
 		500CADB3122D5A7300B980B8 /* MarkChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 500CADB2122D5A7300B980B8 /* MarkChild.m */; };
 		500CADCA122D5B0000B980B8 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B49701207745C0050CFB7 /* QuinceApi.framework */; };
 		500CADCD122D5B1A00B980B8 /* MarkContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 500CADCC122D5B1A00B980B8 /* MarkContainer.m */; };
+		500F1DB716ED4E5A006FCF76 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		500F1DDA16ED5266006FCF76 /* ReverseLegato.m in Sources */ = {isa = PBXBuildFile; fileRef = 500F1DD916ED5266006FCF76 /* ReverseLegato.m */; };
+		500F1DDB16ED53B7006FCF76 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		500F1ED313EDEDE300A25411 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
 		500F1ED913EDEDE300A25411 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 500F1ED713EDEDE300A25411 /* InfoPlist.strings */; };
 		500F1EDE13EDEE9A00A25411 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
@@ -266,6 +269,18 @@
 		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		500F1DD116ED515C006FCF76 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = text.plist.strings;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# builtin-copyStrings\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXContainerItemProxy section */
 		50035B0B11C97D1C008D4F11 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -308,6 +323,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 500CADBE122D5AB400B980B8;
 			remoteInfo = MarkContainer;
+		};
+		500F1DC216ED508C006FCF76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
+		500F1DC416ED5097006FCF76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 500F1DB516ED4E5A006FCF76;
+			remoteInfo = ReverseLegato;
 		};
 		500F1EDF13EDEEA300A25411 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1273,6 +1302,12 @@
 		500CADC0122D5AB400B980B8 /* MarkContainer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MarkContainer-Info.plist"; path = "bundles/ContainerViews/MarkContainer/MarkContainer-Info.plist"; sourceTree = "<group>"; };
 		500CADCB122D5B1A00B980B8 /* MarkContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MarkContainer.h; path = bundles/ContainerViews/MarkContainer/MarkContainer.h; sourceTree = "<group>"; };
 		500CADCC122D5B1A00B980B8 /* MarkContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MarkContainer.m; path = bundles/ContainerViews/MarkContainer/MarkContainer.m; sourceTree = "<group>"; };
+		500F1DB616ED4E5A006FCF76 /* ReverseLegato.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReverseLegato.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		500F1DD216ED5221006FCF76 /* ReverseLegato-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ReverseLegato-Info.plist"; path = "bundles/Functions/ReverseLegato/ReverseLegato-Info.plist"; sourceTree = SOURCE_ROOT; };
+		500F1DD316ED5221006FCF76 /* ReverseLegato-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ReverseLegato-Prefix.pch"; path = "bundles/Functions/ReverseLegato/ReverseLegato-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		500F1DD616ED522C006FCF76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = bundles/Functions/ReverseLegato/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		500F1DD816ED5266006FCF76 /* ReverseLegato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReverseLegato.h; path = bundles/Functions/ReverseLegato/ReverseLegato.h; sourceTree = SOURCE_ROOT; };
+		500F1DD916ED5266006FCF76 /* ReverseLegato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReverseLegato.m; path = bundles/Functions/ReverseLegato/ReverseLegato.m; sourceTree = SOURCE_ROOT; };
 		500F1ED213EDEDE200A25411 /* PitchCurveContainer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PitchCurveContainer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		500F1ED613EDEDE300A25411 /* PitchCurveContainer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PitchCurveContainer-Info.plist"; path = "bundles/ContainerViews/PitchCurveContainer/PitchCurveContainer-Info.plist"; sourceTree = SOURCE_ROOT; };
 		500F1ED813EDEDE300A25411 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -1685,6 +1720,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				500CADCA122D5B0000B980B8 /* QuinceApi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		500F1DB316ED4E5A006FCF76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500F1DDB16ED53B7006FCF76 /* QuinceApi.framework in Frameworks */,
+				500F1DB716ED4E5A006FCF76 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2327,6 +2371,7 @@
 				50289EFB13EDD57000FB95D6 /* Seq2PitchCurve.bundle */,
 				500F1ED213EDEDE200A25411 /* PitchCurveContainer.bundle */,
 				501AF9EF141561B7007AFEF3 /* ApplyPitchCurve.bundle */,
+				500F1DB616ED4E5A006FCF76 /* ReverseLegato.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2454,6 +2499,26 @@
 				500CADCC122D5B1A00B980B8 /* MarkContainer.m */,
 			);
 			name = MarkContainer;
+			sourceTree = "<group>";
+		};
+		500F1DB816ED4E5A006FCF76 /* ReverseLegato */ = {
+			isa = PBXGroup;
+			children = (
+				500F1DB916ED4E5B006FCF76 /* Supporting Files */,
+				500F1DD816ED5266006FCF76 /* ReverseLegato.h */,
+				500F1DD916ED5266006FCF76 /* ReverseLegato.m */,
+			);
+			path = ReverseLegato;
+			sourceTree = "<group>";
+		};
+		500F1DB916ED4E5B006FCF76 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				500F1DD216ED5221006FCF76 /* ReverseLegato-Info.plist */,
+				500F1DD516ED522C006FCF76 /* InfoPlist.strings */,
+				500F1DD316ED5221006FCF76 /* ReverseLegato-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		500F1ED413EDEDE300A25411 /* PitchCurveContainer */ = {
@@ -2657,6 +2722,7 @@
 				508CB8C513C7BABD00F43AED /* PitchQuantization */,
 				50E860BF11F858780014CFE9 /* RemoveParameter */,
 				501C285B11CE8E630097B5F0 /* ResampleEnvelope */,
+				500F1DB816ED4E5A006FCF76 /* ReverseLegato */,
 				50289EFD13EDD57000FB95D6 /* Seq2PitchCurve */,
 				50B8F4A11230F32A00E444BC /* Sets_Difference */,
 				50D196AC12306ED700C3FC2C /* Sets_Intersection */,
@@ -3524,6 +3590,25 @@
 			name = MarkContainer;
 			productName = MarkContainer;
 			productReference = 500CADBF122D5AB400B980B8 /* MarkContainer.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		500F1DB516ED4E5A006FCF76 /* ReverseLegato */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 500F1DC116ED4E5B006FCF76 /* Build configuration list for PBXNativeTarget "ReverseLegato" */;
+			buildPhases = (
+				500F1DB216ED4E5A006FCF76 /* Sources */,
+				500F1DB316ED4E5A006FCF76 /* Frameworks */,
+				500F1DB416ED4E5A006FCF76 /* Resources */,
+			);
+			buildRules = (
+				500F1DD116ED515C006FCF76 /* PBXBuildRule */,
+			);
+			dependencies = (
+				500F1DC316ED508C006FCF76 /* PBXTargetDependency */,
+			);
+			name = ReverseLegato;
+			productName = ReverseLegato;
+			productReference = 500F1DB616ED4E5A006FCF76 /* ReverseLegato.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		500F1ED113EDEDE200A25411 /* PitchCurveContainer */ = {
@@ -4680,6 +4765,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				500F1DC516ED5097006FCF76 /* PBXTargetDependency */,
 				506BF7DE117A585700ECBC4E /* PBXTargetDependency */,
 				506BF8AA117A5E6200ECBC4E /* PBXTargetDependency */,
 				50999BF5127650AC00AD0D65 /* PBXTargetDependency */,
@@ -4829,6 +4915,7 @@
 				50A522FA117A52F60072FB09 /* QuinceApiTestUnit */,
 				50E860AF11F857A20014CFE9 /* RemoveParameter */,
 				501C284011CE8D920097B5F0 /* ResampleEnvelope */,
+				500F1DB516ED4E5A006FCF76 /* ReverseLegato */,
 				50717033117A7F4300357470 /* SequenceChild */,
 				50289EFA13EDD57000FB95D6 /* Seq2PitchCurve */,
 				50717023117A7F1800357470 /* SequenceChildTestUnit */,
@@ -4879,6 +4966,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		500CADBB122D5AB400B980B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		500F1DB416ED4E5A006FCF76 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -5504,6 +5598,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		500F1DB216ED4E5A006FCF76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500F1DDA16ED5266006FCF76 /* ReverseLegato.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		500F1ECE13EDEDE200A25411 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -6076,6 +6178,16 @@
 			isa = PBXTargetDependency;
 			target = 500CADBE122D5AB400B980B8 /* MarkContainer */;
 			targetProxy = 500CADC6122D5AF500B980B8 /* PBXContainerItemProxy */;
+		};
+		500F1DC316ED508C006FCF76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 500F1DC216ED508C006FCF76 /* PBXContainerItemProxy */;
+		};
+		500F1DC516ED5097006FCF76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 500F1DB516ED4E5A006FCF76 /* ReverseLegato */;
+			targetProxy = 500F1DC416ED5097006FCF76 /* PBXContainerItemProxy */;
 		};
 		500F1EE013EDEEA300A25411 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -6777,6 +6889,14 @@
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
+		500F1DD516ED522C006FCF76 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				500F1DD616ED522C006FCF76 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		500F1ED713EDEDE300A25411 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -7204,6 +7324,59 @@
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		500F1DBF16ED4E5B006FCF76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/ReverseLegato/ReverseLegato-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "bundles/Functions/ReverseLegato/ReverseLegato-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		500F1DC016ED4E5B006FCF76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/ReverseLegato/ReverseLegato-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "bundles/Functions/ReverseLegato/ReverseLegato-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -10381,6 +10554,15 @@
 			buildConfigurations = (
 				500CADC1122D5AB500B980B8 /* Debug */,
 				500CADC2122D5AB500B980B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		500F1DC116ED4E5B006FCF76 /* Build configuration list for PBXNativeTarget "ReverseLegato" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				500F1DBF16ED4E5B006FCF76 /* Debug */,
+				500F1DC016ED4E5B006FCF76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

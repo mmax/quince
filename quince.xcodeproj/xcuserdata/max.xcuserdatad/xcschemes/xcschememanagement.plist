@@ -269,6 +269,11 @@
 			<key>orderHint</key>
 			<integer>44</integer>
 		</dict>
+		<key>ReverseLegato.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>68</integer>
+		</dict>
 		<key>Seq2PitchCurve.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -368,6 +373,11 @@
 			<true/>
 		</dict>
 		<key>500CADBE122D5AB400B980B8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>500F1DB516ED4E5A006FCF76</key>
 		<dict>
 			<key>primary</key>
 			<true/>
