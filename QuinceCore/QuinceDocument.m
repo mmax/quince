@@ -110,6 +110,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	NSMenu * playerSubMenu = [playerItem submenu];
 	NSMenuItem * mixDownMenuItem = [playerSubMenu itemWithTitle:@"MixDown"];
 	mixDownMenu = [mixDownMenuItem submenu];
+
     
 	functionMenu = [functionItem submenu];
 	selectionMenu = [selectionItem submenu];
@@ -208,7 +209,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 - (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError{
     [self setIndeterminateProgressTask:@"writing data..."];
     [self displayProgress:YES];
-    
+
 	NSString * error;
 	NSDictionary * views = [mainController xmlDictionary];//[[NSMutableDictionary alloc]init];
 	NSMutableDictionary * session = [[NSMutableDictionary alloc]init];
@@ -947,6 +948,28 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	}
 }
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+-(IBAction) windowMenuAction:(id)sender{
+
+    NSString * win = [sender title];
+    if([win isEqualToString:@"Project"]){
+        [poolWindow close];
+        [inspectorWindow close];
+        [window makeKeyAndOrderFront:nil];
+    }
+    else if([win isEqualToString:@"Pool"]){
+        [inspectorWindow close];
+        [poolWindow makeKeyAndOrderFront:self];
+    }
+    else if([win isEqualToString:@"Inspector"])
+        [inspectorWindow makeKeyAndOrderFront:self];
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+-(IBAction)invertSelection:(id)sender{
+    
+    
+}
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 

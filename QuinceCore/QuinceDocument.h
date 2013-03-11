@@ -100,6 +100,7 @@
 	IBOutlet NSImageView * imageView;
 	
 	IBOutlet NSButton * playerSettingsButton;
+   
 	NSMenu* functionMenu;
 	NSMenu* selectionMenu;
 	NSMenu* mixDownMenu;
@@ -150,22 +151,25 @@
 -(NSNumber *)cursorTime;
 -(void)displayTime;
 
--(IBAction)removeSelectedObjectsFromPool:(id)sender;
--(IBAction)foldSelectedObjectsInPool:(id)sender;
--(IBAction)togglePool:(id)sender;
--(IBAction)toggleInspector:(id)sender;
+-(IBAction) removeSelectedObjectsFromPool:(id)sender;
+-(IBAction) foldSelectedObjectsInPool:(id)sender;
+-(IBAction) togglePool:(id)sender;
+-(IBAction) toggleInspector:(id)sender;
 -(IBAction) showInspector:(id)sender;
 -(IBAction) inspectorAddParameter:(id)sender;
--(IBAction)toggleFunctionComposer:(id)sender;
--(IBAction)objectPoolSelectionChanged:(id)sender;
--(IBAction)functionPoolSelectionChanged:(id)sender;
--(IBAction)clearCompatibilities:(id)sender;
--(IBAction)createFunctionGraph:(id)sender;	
--(IBAction)functionComposerTargetFunctionChanged:(id)sender;
--(IBAction)splitAtCursorTime:(id)sender;
--(IBAction)importAudioFile:(id)sender;
+-(IBAction) toggleFunctionComposer:(id)sender;
+-(IBAction) objectPoolSelectionChanged:(id)sender;
+-(IBAction) functionPoolSelectionChanged:(id)sender;
+-(IBAction) clearCompatibilities:(id)sender;
+-(IBAction) createFunctionGraph:(id)sender;	
+-(IBAction) functionComposerTargetFunctionChanged:(id)sender;
+-(IBAction) splitAtCursorTime:(id)sender;
+-(IBAction) importAudioFile:(id)sender;
 -(IBAction) createEnvelopeForNewAudioFile:(id)sender;
--(IBAction)mixDownWithMenuItem:(id)sender;
+-(IBAction) mixDownWithMenuItem:(id)sender;
+-(IBAction) windowMenuAction:(id)sender;
+-(IBAction) invertSelection:(id)sender;
+
 -(QuinceObjectController *)getSingleSelectedObjectController;
 -(NSMutableArray *)getSelectedObjectControllers;
 -(Function *)getSingleSelectedFunction;
