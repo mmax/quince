@@ -129,7 +129,7 @@
 -(IBAction)newObjectForSelectedAudioFile:(id)sender;
 -(IBAction)newAudioFile:(id)sender;
 -(IBAction)newDataFile:(id)sender;
--(IBAction)copySelectedObjects:(id)sender;
+-(IBAction)duplicateSelectedObjects:(id)sender;
 -(void)addObjectToObjectPool:(QuinceObject *)quince;
 -(void)removeObjectsWithControllers:(NSMutableArray *)controllers forGood:(BOOL)b;
 -(void)removeObject:(QuinceObject *)quince;

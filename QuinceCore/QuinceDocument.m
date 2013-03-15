@@ -612,8 +612,8 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
--(IBAction)copySelectedObjects:(id)sender{
-
+-(IBAction)duplicateSelectedObjects:(id)sender{
+    
 	NSArray * selection = [self getSelectedObjectControllers];
 	
 	for(QuinceObjectController * mc in selection){
