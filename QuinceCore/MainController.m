@@ -85,6 +85,12 @@
 	NSView * changedContentView=[notification object];
 	NSClipView * stripControlScrollContent = [stripControlScrollView contentView];
 
+     if([[stripControlScrollContent documentView]bounds].size.height <= [stripControlScrollContent documentVisibleRect].size.height){
+         return;
+     }
+
+     
+     
 	// get the origin of the NSClipView of the scroll view that
 	// we're watching
 	NSPoint changedBoundsOrigin = [changedContentView bounds].origin;
@@ -96,7 +102,7 @@
 	// scrolling is synchronized in the vertical plane
 	// so only modify the y component of the offset
 	newOffset.y = changedBoundsOrigin.y;
-   // NSLog(@"scroll: y: %f", newOffset.y);
+
    [stripControlScrollContent scrollToPoint:newOffset];
 }
 
@@ -271,15 +277,22 @@
 }
 
 -(void)rearrangeStripControls{
+    
+    
 	NSView * stripControlView;
 	NSRect stripControlRect;
 	StripController * sc;
 	float y;
-	
+	float scrollerOffset = 0;
+    if(![[mainScrollView horizontalScroller]isHidden]){
+        scrollerOffset = [[mainScrollView horizontalScroller]bounds].size.height;
+    }
+    
 	for(int i=0;i<[stripControllers count];i++){
 		sc = [stripControllers objectAtIndex:i];
 		stripControlView = [sc view];
-		y = [self yForStripWithIndex:i];//[stripControlDocumentView frame].size.height-(kVerticalStripOffset + kDefaultStripHeight)*(i+1)+kVerticalStripOffset;
+		y = [self yForStripWithIndex:i];//+scrollerOffset;
+        
 		stripControlRect = NSMakeRect(0, y, kDefaultStripControlWidth, kDefaultStripHeight);
 		[stripControlView setFrame:stripControlRect];
 	}
@@ -288,8 +301,8 @@
 
 
 -(float)yForStripWithIndex:(int)index{
-	
-	return [mainScrollerDocumentView frame].size.height-(kVerticalStripOffset + kDefaultStripHeight)*(index+1)+kVerticalStripOffset;
+
+    return [mainScrollerDocumentView frame].size.height-(kVerticalStripOffset + kDefaultStripHeight)*(index+1)+kVerticalStripOffset;
 }
 
 

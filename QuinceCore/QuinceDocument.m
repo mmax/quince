@@ -495,6 +495,12 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 					[selectionItem release];
 				}
 		 */	}
+    
+    NSMenuItem * separator = [NSMenuItem separatorItem];
+    [selectionMenu addItem:separator];
+    NSMenuItem * separator2 = [NSMenuItem separatorItem];
+    [functionMenu addItem:separator2];
+    
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
