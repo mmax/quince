@@ -86,7 +86,6 @@
 
 -(void)createViewsForQuinceObjectController:(QuinceObjectController *)mc{
 
-    
 	[self createWindows];
 	if(fillPaths) [fillPaths removeAllObjects];
 	else fillPaths = [[NSMutableArray alloc]init];
@@ -94,78 +93,50 @@
 	else strokePaths = [[NSMutableArray alloc]init];
 	
 	int N=0, framesPerPath = 350;
-	//int spw = [[self valueForKey:@"samplesPerWindow"]intValue], 
-	
-	//Envelope * envelope = [mc content];
-	//float sr = [[envelope sampleRate]floatValue];
-	//double windowDuration = [[self valueForKey:@"windowDuration"]doubleValue];
 	double frameDuration = [[self valueForKey:@"frameDuration"]doubleValue];
-
 	double framesPerWindow = [[self valueForKey:@"framesPerWindow"]doubleValue];
-	
-	double /* prevX=0, prevY=0,  */x=0,y=0, time;//,time, spw = [[[[self contentController]content] valueForKey:@"samplesPerWindow"]doubleValue];
+	double x=0,y=0, time;
 	NSPoint startPoint = NSMakePoint(x, y);
 	NSPoint point;
+    
     [document setProgressTask:@"creating view..."];
     [document displayProgress:YES];
-    
-	for(long i = 0;i<[windows count];i+= N){
+	
+    for(long i = 0;i<[windows count];i+= N){
         [document setProgress:(100.0/[windows count])*i];
          
 		NSBezierPath * p = [[NSBezierPath alloc]init];
 		NSBezierPath * q = [[NSBezierPath alloc]init];
 		[p moveToPoint:startPoint];
-		//[q moveToPoint:startPoint];
-		//[p lineToPoint:NSMakePoint(x, y)];
 		[q moveToPoint:NSMakePoint(x, y)];
 		
 		N = [windows count] > i + framesPerPath ? framesPerPath : [windows count]-i;
 		
 		for(int a = 0;a<N;a++){
+            if(i>0){
+                point = NSMakePoint(x, y);
+                [p lineToPoint:point];
+            }
 			y = [[self convertVolumeToY:[NSNumber numberWithDouble:20.0 * log10([[windows objectAtIndex:i+a]floatValue])]]doubleValue];
-			//time = spw / sr * (i+a);
-			//time = (i+a)*windowDuration;
 			int fpwi = framesPerWindow+0.5;
-			time = frameDuration * fpwi * (i+a);
+			time = frameDuration * fpwi * (i+a  );
 			x = [[self convertTimeToX:[NSNumber numberWithDouble:time]]doubleValue];
-			//NSLog(@"a: %d, N: %d, x: %f, y: %f", a, N, x, y);
 			point = NSMakePoint(x, y);
 			[p lineToPoint:point];
 			[q lineToPoint:NSMakePoint(x, y)];
-			
-			//prevX = x;
-			//prevY = y;
 		}
-		
+        
 		startPoint = NSMakePoint(x, 0);
 		[p lineToPoint:startPoint];
 		[p closePath];
-		//[q lineToPoint:startPoint];
 		[q setLineWidth:1];
-
-		//startPoint = NSMakePoint(x, y);
 		[fillPaths addObject:p];
 		[strokePaths addObject:q];
 		[p release];
 		[q release];
 		
 	}
-    [document displayProgress:NO];
-	//NSLog(@"%@", paths);
-		/* path = [[NSBezierPath alloc]init];
-				[path moveToPoint:NSMakePoint(0, 0)];
-				NSArray * audio = (NSArray *)[[mc content]data];
-				double x,y,time, spw = [[[[self contentController]content] valueForKey:@"samplesPerWindow"]doubleValue];
-				
-				for(long i = 0;i<[audio count];i++){
-					y = [[self convertVolumeToY:[NSNumber numberWithDouble:20.0 * log10([[audio objectAtIndex:i]floatValue])]]doubleValue];
-					time = spw / 44100.0 * i;
-					x = [[self convertTimeToX:[NSNumber numberWithDouble:time]]doubleValue];
-					[path lineToPoint:NSMakePoint(x, y)];
-				}
-				[path lineToPoint:NSMakePoint(x, 0)];
-				[path closePath];
-		 */	 
+    [document displayProgress:NO]; 
 }
 
 
