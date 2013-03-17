@@ -159,6 +159,7 @@
 		508C45661295E90400875B93 /* JoinByFrequencyWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 508C45651295E90400875B93 /* JoinByFrequencyWindow.xib */; };
 		508CB8C413C7BABD00F43AED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
 		508CB8CA13C7BABD00F43AED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 508CB8C813C7BABD00F43AED /* InfoPlist.strings */; };
+		5093F27816F673B200C62B4F /* FunctionShortCutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5093F27716F652F800C62B4F /* FunctionShortCutController.m */; };
 		50999AAD127642FB00AD0D65 /* AlignOnVolume.m in Sources */ = {isa = PBXBuildFile; fileRef = 50999A1F127640C000AD0D65 /* AlignOnVolume.m */; };
 		50999ABC1276431A00AD0D65 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		50999B2A127645A300AD0D65 /* AudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 50999B26127645A300AD0D65 /* AudioFile.m */; };
@@ -1507,6 +1508,8 @@
 		508CB8C713C7BABD00F43AED /* PitchQuantization-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "PitchQuantization-Info.plist"; path = "bundles/Functions/PitchQuantization/PitchQuantization-Info.plist"; sourceTree = "<group>"; };
 		508CB8C913C7BABD00F43AED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		508CB8CB13C7BABD00F43AED /* PitchQuantization-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PitchQuantization-Prefix.pch"; path = "bundles/Functions/PitchQuantization/PitchQuantization-Prefix.pch"; sourceTree = "<group>"; };
+		5093F27616F652F800C62B4F /* FunctionShortCutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FunctionShortCutController.h; path = QuinceCore/FunctionShortCutController.h; sourceTree = "<group>"; };
+		5093F27716F652F800C62B4F /* FunctionShortCutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FunctionShortCutController.m; path = QuinceCore/FunctionShortCutController.m; sourceTree = "<group>"; };
 		50999A1E127640C000AD0D65 /* AlignOnVolume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlignOnVolume.h; path = /Users/max/SWProjects/quince/bundles/Functions/AlignOnVolume/AlignOnVolume.h; sourceTree = "<absolute>"; };
 		50999A1F127640C000AD0D65 /* AlignOnVolume.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlignOnVolume.m; path = /Users/max/SWProjects/quince/bundles/Functions/AlignOnVolume/AlignOnVolume.m; sourceTree = "<absolute>"; };
 		50999A9E1276425E00AD0D65 /* AlignOnVolume-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "AlignOnVolume-Info.plist"; path = "/Users/max/SWProjects/quince/bundles/Functions/AlignOnVolume/AlignOnVolume-Info.plist"; sourceTree = "<absolute>"; };
@@ -3173,6 +3176,8 @@
 		50BB629C116F987D0056C410 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5093F27616F652F800C62B4F /* FunctionShortCutController.h */,
+				5093F27716F652F800C62B4F /* FunctionShortCutController.m */,
 				50BB6274116F94760056C410 /* LayerController.h */,
 				50BB6275116F94760056C410 /* LayerController.m */,
 				506009531131BC7A00E75717 /* MainController.h */,
@@ -6133,6 +6138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5093F27816F673B200C62B4F /* FunctionShortCutController.m in Sources */,
 				8D15AC310486D014006FF6A4 /* QuinceDocument.m in Sources */,
 				8D15AC320486D014006FF6A4 /* main.m in Sources */,
 				506009551131BC7A00E75717 /* MainController.m in Sources */,

@@ -64,20 +64,6 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
-         filePath = "QuinceCore/EventInterceptView.m"
-         timestampString = "385185160.353414"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "558"
-         endingLineNumber = "558"
-         landmarkName = "-setValue:forKey:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
          filePath = "QuinceApi/ChildView.m"
          timestampString = "333903414.497766"
          startingColumnNumber = "9223372036854775807"
@@ -163,11 +149,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "QuinceCore/QuinceDocument.m"
-         timestampString = "385186158.129352"
+         timestampString = "385255016.941029"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "964"
-         endingLineNumber = "964"
+         startingLineNumber = "968"
+         endingLineNumber = "968"
          landmarkName = "-windowMenuAction:"
          landmarkType = "5">
       </FileBreakpoint>

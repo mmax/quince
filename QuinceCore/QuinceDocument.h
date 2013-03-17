@@ -37,6 +37,7 @@
 #import <QuinceApi/Player.h>
 #import <QuinceApi/FunctionGraph.h>
 #import <QuinceApi/QuinceObject.h>
+#import "FunctionShortCutController.h"
 
 @class MainController, FunctionLoader;
 
@@ -65,7 +66,8 @@
 	NSDictionary * mainControllerDictionary;
 	NSArray * tempObjectArray;
 	NSDictionary * tempPlayerDict;
-
+    NSDictionary * tempFunctionShortCuts;
+    
 	// InterfaceBuilder connections
 	
 	IBOutlet NSWindow * poolWindow;
@@ -100,6 +102,8 @@
 	IBOutlet NSImageView * imageView;
 	
 	IBOutlet NSButton * playerSettingsButton;
+    
+    IBOutlet FunctionShortCutController * functionShortCutController;
    
 	NSMenu* functionMenu;
 	NSMenu* selectionMenu;
@@ -170,7 +174,7 @@
 -(IBAction) windowMenuAction:(id)sender;
 -(IBAction) invertSelection:(id)sender;
 -(IBAction)toggleShowPositionGuides:(id)sender;
-
+-(IBAction)showFunctionShortCutSettingsWindow:(id)sender;
 
 -(QuinceObjectController *)getSingleSelectedObjectController;
 -(NSMutableArray *)getSelectedObjectControllers;
@@ -215,7 +219,7 @@
 -(IBAction)togglePlayback:(id)sender;
 -(void)updateObjectInspector;
 -(IBAction)test:(id)sender;
-
+-(void)interpretKeyPressedInContainerView:(NSString *)s;
 -(BOOL)areTheseControllersSiblings:(NSArray *)controllers;
 
 //-(IBAction)toggleFullScreen:(id)sender;

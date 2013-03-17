@@ -498,6 +498,9 @@ NSString* const kMuteString = @"m";
 	else if([string isEqualToString:kMuteString]){
 		[self toggleMuteSelection];
 	}
+    else{
+        [document interpretKeyPressedInContainerView:string];
+    }
 
 }
 

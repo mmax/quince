@@ -191,7 +191,8 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 		[player setSettings:[tempPlayerDict valueForKey:@"settings"]];
 	}
 
-	
+    [functionShortCutController setConnectionsWithDict:tempFunctionShortCuts];
+    
  	[[NSDocumentController sharedDocumentController]setAutosavingDelay:300];
 	
 	[functionPoolTable setTarget:functionLoader];
@@ -220,8 +221,8 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	for(QuinceObjectController * mc in objectPool)
 		[objects addObject:[[mc content] xmlDictionary]];
 	
-
-	[session setValue:	[player xmlDictionary] forKey:@"player"];
+    [session setValue:[functionShortCutController dictionary] forKey:@"functionShortCuts"];
+	[session setValue:[player xmlDictionary] forKey:@"player"];
 	[session setValue:views forKey:@"views"];
 	[session setValue:objects forKey:@"objects"];
 	/* NSLog(@"writing file:"); 
@@ -261,6 +262,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	tempObjectArray = [session valueForKey:@"objects"];
 	mainControllerDictionary = [session valueForKey:@"views"];
 	tempPlayerDict = [session valueForKey:@"player"];
+    tempFunctionShortCuts = [session valueForKey:@"functionShortCuts"];
 	
     if ( outError != NULL ) {
 		*outError = [NSError errorWithDomain:NSOSStatusErrorDomain code:unimpErr userInfo:NULL];
@@ -525,6 +527,8 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 		[selectionItem setAction:@selector(performFunctionOnCurrentSelectionWithMenuItem:)];
 		[selectionMenu addItem:selectionItem];
 		[selectionItem release];
+        
+        [functionShortCutController addFunctionWithName:[fun valueForKey:@"name"]];
 	}
 }
 
@@ -1012,6 +1016,21 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
     
     [self setValue:[NSNumber numberWithBool:b] forKey:@"showPositionGuides"];
 
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-(IBAction)showFunctionShortCutSettingsWindow:(id)sender{
+   
+    
+    if(!functionShortCutController){
+    
+        [self presentAlertWithText:@"no editor found!"];
+        NSLog(@"doc: showFunctionShortCutSettingsWindow: no editor!");
+        return;
+    }
+    
+    [functionShortCutController awake];
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1832,7 +1851,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
-
+#pragma mark playback
 -(void)play{
 	
 	if(player){
@@ -1868,11 +1887,24 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+#pragma mark other
+
+-(void)interpretKeyPressedInContainerView:(NSString *)s{
+
+    NSString * funName = [functionShortCutController functionNameForKey:s];
+    if (funName && ![funName isEqualToString:@"Undefined"]) {
+        [self performFunctionOnCurrentSelectionWithFunctionName:funName];
+        return;
+    }
+
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
 -(IBAction)test:(id)sender{
-	//NSDictionary * dict = [self valueForKeyPath:@"selectedObject.selection.dictionary"];
-	//NSLog(@"MintDocument:test: %@", dict);
-	/* NSString * s = [NSString stringWithFormat:@"test"];
-		NSString * t = [NSString stringWithFormat:@"test"]; */
+
 	
 	NSNumber * s = [NSNumber numberWithInt:1];
 	NSNumber * t = [NSNumber numberWithInt:1];
@@ -1885,8 +1917,5 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	[[[self getSingleSelectedObjectController]content]arrayWithValuesForKey:@"start"];
 }
 
-//-(IBAction)toggleFullScreen:(id)sender{
-//    [window toggleFullScreen:sender];
-//}
 
 @end
