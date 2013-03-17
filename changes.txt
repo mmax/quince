@@ -1,6 +1,10 @@
 
 
 v 0.9.9
+
+- new feature: Position Guides (View Menu) to help positioning objects to the right place
+- refurbished look
+- fixed a bug in EnvelopeContainer
 - added function: ReverseLegato
 - minor UI improvements
 - default csound playback mode is now saved with session
