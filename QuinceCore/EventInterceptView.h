@@ -34,7 +34,6 @@
 	float	cursorX;
 	StripController * stripController;
 	NSMutableArray * volumeGuides; // array containing dictionaries with path, colour, string, point (value)
-    //BOOL guides;
     NSMutableDictionary * dictionary;
 }
 
@@ -47,14 +46,12 @@
 -(void)computeFrequencyGuides;
 -(void)computePitchGuides;
 -(void)computeCentGuides;
-//-(void)drawVolumeGuides;
-//-(void)drawFrequencyGuidesInRect:(NSRect) r;
-//-(void)drawPitchGuidesInRect:(NSRect) r;
 -(void)drawGuidesInRect:(NSRect) r;
-//-(void)drawVolumeGuidesInRect:(NSRect) r;
 -(void)setValue:(id)aValue forKey:(NSString *)aKey;
 -(id)valueForKey:(NSString *)key;
 -(id)valueForKeyPath:(NSString *)keyPath;
 -(void)removeObjectForKey:(NSString *)key;
 -(NSMutableDictionary *)dictionary;
+-(void)prepareGuides;
+-(void)removeGuideTextFields;
 @end

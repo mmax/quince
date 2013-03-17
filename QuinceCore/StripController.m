@@ -438,8 +438,10 @@
 	[dictionary setValue:aValue forKey:aKey];
 	[self didChangeValueForKey:aKey];
     
-    if([aKey isEqualToString:@"drawGuides"])
+    if([aKey isEqualToString:@"drawGuides"]){
+        [interceptView prepareGuides];
         [interceptView setNeedsDisplay:YES];
+    }
 
     if([aKey isEqualToString:@"minYValue"] || [aKey isEqualToString:@"maxYValue"]){
         //
