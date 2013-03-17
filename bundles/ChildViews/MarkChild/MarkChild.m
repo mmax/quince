@@ -105,4 +105,9 @@
 	
 }
 
+-(NSArray *)positionGuides{
+    
+    return [NSArray arrayWithObjects:@"LEFT", @"BOTTOM", nil];
+}
+
 @end

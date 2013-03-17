@@ -25,12 +25,16 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
+#import "ChildView.h"
 
 @class StripController;
 
 @interface EventInterceptView : NSView {
 	BOOL active;
+    BOOL showPositionGuides;
+    BOOL topPG, bottomPG, leftPG, rightPG;
+    NSBezierPath *leftPath, *rightPath, *topPath, *bottomPath;
+    NSTextField *leftField, *rightField, *topField, *bottomField;
 	float	cursorX;
 	StripController * stripController;
 	NSMutableArray * volumeGuides; // array containing dictionaries with path, colour, string, point (value)
@@ -38,6 +42,10 @@
 }
 
 @property (assign) StripController * stripController;
+
+
+-(void)parsePositionGuideSettings:(NSArray *)ltd;
+-(void)computePositionGuidePaths;
 -(void) setActive:(BOOL)b;
 
 -(void)drawCursorForX:(double)x;
@@ -54,4 +62,5 @@
 -(NSMutableDictionary *)dictionary;
 -(void)prepareGuides;
 -(void)removeGuideTextFields;
+
 @end

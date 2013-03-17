@@ -103,6 +103,8 @@
 -(void)setVisible:(NSNumber *)v;
 
 -(void)commandClick;
+
+-(NSArray *)positionGuides; // an array containing strings determining which positionGuides to draw (TOP; BOTTOM; LEFT; RIGHT)
 @end
 
 

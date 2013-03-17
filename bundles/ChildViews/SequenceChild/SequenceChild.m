@@ -39,9 +39,5 @@
 	return self;
 }
 
-/* -(float)foldedItemHeight{
-	return 9;
-} */
-
 @end
 

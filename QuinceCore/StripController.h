@@ -73,7 +73,7 @@
 -(void)replaceView:(ContainerView *)oldView withView:(ContainerView *)newView;
 -(ContainerView *)replaceView:(ContainerView *)oldView withNewContainerViewOfClassNamed:(NSString *)name;
 -(void)addView:(ContainerView *)newView;
--(void)addLayer;
+-(LayerController *)addLayer;
 -(LayerController *)activeLayerController;
 -(ContainerView *)activeView;
 -(void)resize:(NSValue *)size;
@@ -102,6 +102,7 @@
 -(NSDictionary *)stripProperties;
 -(NSString *)parameterOnYAxis;
 -(int)layerCount;
+-(BOOL)shouldShowPositionGuides;
 -(id)valueForKeyPath:(NSString *)keyPath;
 -(id)valueForKey:(NSString *)key;
 -(void)setValue:(id)aValue forKey:(NSString *)aKey;

@@ -90,5 +90,11 @@
 -(void)resetCursorRects{
 // do nothing
 }
+
+
+-(NSArray *)positionGuides{
+    
+    return [NSArray arrayWithObjects:@"LEFT", @"BOTTOM", nil];
+}
  
 @end

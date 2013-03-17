@@ -78,4 +78,5 @@
 -(NSString *)parameterOnYAxis;
 //-(void)redrawView;
 -(void)reload;
+-(void)selectDefaultView;
 @end

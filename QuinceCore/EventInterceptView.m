@@ -38,6 +38,48 @@
         cursorX = 0;
         dictionary = [[NSMutableDictionary alloc]init];
 		[self setValue:[[[NSMutableArray alloc]init]autorelease] forKey:@"guides"];
+        showPositionGuides = NO;
+        leftPath = [[NSBezierPath alloc]init];
+        rightPath = [[NSBezierPath alloc]init];
+        topPath = [[NSBezierPath alloc]init];
+        bottomPath = [[NSBezierPath alloc]init];
+        
+        NSFont *font = [NSFont systemFontOfSize:6];
+        NSColor * c = [NSColor colorWithDeviceRed:.8 green:.8 blue:.8 alpha:1];
+        
+        leftField = [[NSTextField alloc]init];
+        [leftField setDrawsBackground:NO];
+        [leftField setBordered:NO];
+        [leftField setTextColor:c];
+        [leftField setFont:font];
+        [leftField setEditable:NO];
+        [leftField.cell setWraps:NO];
+        
+        rightField = [[NSTextField alloc]init];
+        [rightField setDrawsBackground:NO];
+        [rightField setBordered:NO];
+        [rightField setTextColor:c];
+        [rightField setFont:font];
+        [rightField setEditable:NO];
+        [rightField.cell setWraps:NO];
+        
+        topField = [[NSTextField alloc]init];
+        [topField setDrawsBackground:NO];
+        [topField setBordered:NO];
+        [topField setTextColor:c];
+        [topField setFont:font];
+        [topField setEditable:NO];
+        [topField.cell setWraps:NO];
+        
+        bottomField = [[NSTextField alloc]init];
+        [bottomField setDrawsBackground:NO];
+        [bottomField setBordered:NO];
+        [bottomField setTextColor:c];
+        [bottomField setFont:font];
+        [bottomField setEditable:NO];
+        [bottomField.cell setWraps:NO];
+        
+        
     }
     return self;
 }
@@ -45,6 +87,15 @@
 -(void)dealloc{
     [dictionary removeAllObjects];
     [dictionary release];
+    [leftPath dealloc];
+    [rightPath dealloc];
+    [topPath dealloc];
+    [bottomPath dealloc];
+    [leftField dealloc];
+    [rightField dealloc];
+    [bottomField dealloc];
+    [topField dealloc];
+    
 	[super dealloc];
 }
 
@@ -65,8 +116,24 @@
             [self computeGuides];
         [self drawGuidesInRect:dirtyRect];
     }
-
-
+    
+    if(showPositionGuides){
+    
+        [[NSColor colorWithDeviceRed:.8 green:.8 blue:.8 alpha:.1]set];
+        
+        if (leftPG) {
+            [leftPath stroke];
+        }
+        if(rightPG){
+            [rightPath stroke];
+        }
+        if (topPG) {
+            [topPath stroke];
+        }
+        if(bottomPG){
+            [bottomPath stroke];
+        }
+    }
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -75,17 +142,51 @@
 // -----------------------------------
 
 -(void)mouseDown:(NSEvent *)event{
-	[[stripController controller]setActiveStripController:stripController];
+	
+    [[stripController controller]setActiveStripController:stripController];
 	[[stripController activeView] mouseDown:event];
-}
 
+    if([stripController shouldShowPositionGuides]){
+        
+        if([[[stripController activeView]selection]count]==0)
+            return;
+        
+        ChildView * c = [[[stripController activeView]selection]objectAtIndex:0];
+        NSArray * linesToDraw = [c positionGuides];
+        [self parsePositionGuideSettings:linesToDraw];
+        showPositionGuides = YES;
+        
+        [self computePositionGuidePaths];
+        if(leftPG)  [self addSubview:leftField];
+        if(rightPG) [self addSubview:rightField];
+        if(bottomPG) [self addSubview:bottomField];
+        if(topPG) [self addSubview:topField];
+            
+        [self setNeedsDisplay:YES];
+
+    }
+    else
+        showPositionGuides = NO;
+}
 
 -(void)mouseDragged:(NSEvent *)event{
 	[[stripController activeView] mouseDragged:event];
+
+    if(showPositionGuides){
+        [self computePositionGuidePaths];
+        [self setNeedsDisplay:YES];
+    }
 }
 
 -(void)mouseUp:(NSEvent *)event{
 	[[stripController activeView] mouseUp:event];
+
+    if(showPositionGuides && leftPG)[leftField removeFromSuperview];
+    if(showPositionGuides && rightPG)[rightField removeFromSuperview];
+    if(showPositionGuides && bottomPG)[bottomField removeFromSuperview];
+    if(showPositionGuides && topPG)[topField removeFromSuperview];
+    showPositionGuides = NO;
+    [self setNeedsDisplay:YES];
 }
 
 - (void)keyDown:(NSEvent *)event {
@@ -121,6 +222,87 @@
 	[[stripController activeView]deleteBackward:sender];
 }
 
+-(void)parsePositionGuideSettings:(NSArray *)ltd{
+
+    topPG = NO;
+    bottomPG = NO;
+    leftPG = NO;
+    rightPG = NO;
+
+    for(NSString * s in ltd){
+    
+        if([s isEqualToString:@"TOP"])
+            topPG = YES;
+        if([s isEqualToString:@"BOTTOM"])
+            bottomPG = YES;
+        if([s isEqualToString:@"LEFT"])
+            leftPG = YES;
+        if ([s isEqualToString:@"RIGHT"])
+            rightPG = YES;
+    }
+}
+
+-(void)computePositionGuidePaths{
+    
+    // create textFields and paths
+    
+    ContainerView * activeView = [stripController activeView];
+    NSRect bounds = [activeView unionRectForSelection];
+    NSRect frame;
+    
+    NSRect vr = [[[stripController document]mainScrollView]documentVisibleRect];
+    
+    float x1 = bounds.origin.x;//
+    float x2 = x1 + bounds.size.width;
+    float y1 = bounds.origin.y;
+    float y2 = y1 + bounds.size.height;
+    
+    float xLeft = vr.origin.x;
+    float xRight = xLeft + vr.size.width;
+
+    if(leftPG){
+        [leftPath removeAllPoints];
+        [leftPath moveToPoint:NSMakePoint(x1, 0)];
+        [leftPath lineToPoint:NSMakePoint(x1, [self frame].size.height)];
+       
+        frame = NSMakeRect((x1-30 > 0 ? x1-30 : 0), [self frame].size.height-20, 30, 10);
+        [leftField setStringValue:[NSString stringWithFormat:@"%.03f", [[activeView parameterValueForX:[NSNumber numberWithFloat:x1]]floatValue]]];
+        [leftField setFrame:frame];
+    }
+    
+    if(rightPG){
+        [rightPath removeAllPoints];
+        [rightPath moveToPoint:NSMakePoint(x2, 0)];
+        [rightPath lineToPoint:NSMakePoint(x2, [self frame].size.height)];
+        frame = NSMakeRect(x2, [self frame].size.height-20, 30, 10);
+        [rightField setStringValue:[NSString stringWithFormat:@"%.03f", [[activeView parameterValueForX:[NSNumber numberWithFloat:x2]]floatValue]]];
+        
+        [rightField setFrame:frame];
+    }
+    
+    if(bottomPG){
+        
+        [bottomPath removeAllPoints];
+        [bottomPath moveToPoint:NSMakePoint(xLeft, y1)];
+        [bottomPath lineToPoint:NSMakePoint(xRight, y1)];
+        frame = NSMakeRect(xRight-30, y1-10, 30, 10);
+        [bottomField setStringValue:[NSString stringWithFormat:@"%.03f", [[activeView parameterValueForY:[NSNumber numberWithFloat:y1]]floatValue]]];
+        [bottomField setFrame:frame];
+        
+    }
+    
+    if(topPG){
+        
+        [topPath removeAllPoints];
+        [topPath moveToPoint:NSMakePoint(xLeft, y2)];
+        [topPath lineToPoint:NSMakePoint(xRight, y2)];
+        frame = NSMakeRect(xRight-30, y2, 30, 10);
+        [topField setStringValue:[NSString stringWithFormat:@"%.03f", [[activeView parameterValueForY:[NSNumber numberWithFloat:y2]]floatValue]]];
+        [topField setFrame:frame];
+    }
+    
+}
+
 
 -(void) setActive:(BOOL)b{
 
@@ -151,7 +333,7 @@
 		NSMutableDictionary * guide = [[NSMutableDictionary alloc]init];
 		ContainerView * view = [(LayerController * )[[stripController layerControllers] lastObject]view];
 		y = [[view convertVolumeToY:[NSNumber numberWithInt:dB]]floatValue];
-		alpha = (90-maxabs_float(dB))*.003+0.1;
+		alpha = 0.1;//(90-maxabs_float(dB))*.003+0.1;
 		NSColor * color = [NSColor colorWithDeviceWhite:1 alpha:alpha];
 		[guide setValue:color forKey:@"color"];
 		
@@ -189,7 +371,7 @@
 		NSMutableDictionary * guide = [[NSMutableDictionary alloc]init];
 		ContainerView * view = [(LayerController * )[[stripController layerControllers] lastObject]view];
 		y = [[view yForParameterValue:[NSNumber numberWithInt:f]]floatValue];
-		alpha = 0.5;
+		alpha = 0.1;//0.5;
 		NSColor * color = [NSColor colorWithDeviceWhite:1 alpha:alpha];
 		[guide setValue:color forKey:@"color" ];
 		
@@ -224,7 +406,7 @@
 		NSMutableDictionary * guide = [[NSMutableDictionary alloc]init];
 		ContainerView * view = [(LayerController * )[[stripController layerControllers] lastObject]view];
 		y = [[view yForParameterValue:[NSNumber numberWithInt:p]]floatValue];
-		alpha = 0.5;
+		alpha = 0.1;//0.5;
 		NSColor * color = [NSColor colorWithDeviceWhite:1 alpha:alpha];
 		[guide setValue:color forKey:@"color" ];
 		zero = [[[NSBezierPath alloc]init]autorelease];
@@ -260,7 +442,7 @@
 		NSMutableDictionary * guide = [[NSMutableDictionary alloc]init];
 		ContainerView * view = [(LayerController * )[[stripController layerControllers] lastObject]view];
 		y = [[view yForParameterValue:[NSNumber numberWithInt:p]]floatValue];
-		alpha = 0.5;
+		alpha = 0.1;//0.5;
 		NSColor * color = [NSColor colorWithDeviceWhite:1 alpha:alpha];
 		[guide setValue:color forKey:@"color" ];
 		zero = [[[NSBezierPath alloc]init]autorelease];
@@ -288,7 +470,6 @@
 
 -(void)drawGuidesInRect:(NSRect) r{
 
-    if(!active)return;
     for(NSDictionary * d in [self valueForKey:@"guides"]){
      	[[NSGraphicsContext currentContext]setShouldAntialias:NO];   
 		[(NSColor*)[d valueForKey:@"color"]set];
@@ -330,7 +511,6 @@
         [self computeCentGuides];
     
     [self setValue:yP forKey:@"parameter"];
-    [self setNeedsDisplay:YES];
     
     for(NSMutableDictionary * d in [self valueForKey:@"guides"]){
         if([d valueForKey:@"textField"]){
@@ -356,6 +536,8 @@
         [d setValue:t forKey:@"textField"];
         [self addSubview:t];
     }
+    
+    [self setNeedsDisplay:YES];
     
 }
 

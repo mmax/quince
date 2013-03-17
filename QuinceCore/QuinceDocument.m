@@ -60,6 +60,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 
 		[self setValue:[NSNumber numberWithBool:YES] forKey:@"playbackStopped"];
 		[self setValue:[NSNumber numberWithBool:NO] forKey:@"playbackStarted"];
+        [self setValue:[NSNumber numberWithBool:NO] forKey:@"showPositionGuides"];
     }
     return self;
 }
@@ -110,7 +111,6 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	NSMenu * playerSubMenu = [playerItem submenu];
 	NSMenuItem * mixDownMenuItem = [playerSubMenu itemWithTitle:@"MixDown"];
 	mixDownMenu = [mixDownMenuItem submenu];
-
     
 	functionMenu = [functionItem submenu];
 	selectionMenu = [selectionItem submenu];
@@ -178,9 +178,11 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	if(mainControllerDictionary)// if we read in a file, we have a dictionary with views for the main controller to create
 		[mainController createViewsFromDictionary:mainControllerDictionary];
 	else{
-		StripController * strip = [mainController createStrip];
-		[strip addLayer];
-	}
+//		StripController * strip = [mainController createStrip];
+//		[strip addLayer];
+
+        [self newStrip:nil];
+    }
 	
 	if(tempPlayerDict){
 
@@ -627,7 +629,8 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	
 	if(!mainController){NSLog(@"no mainController!");return;}
 	StripController * strip = [mainController createStrip];
-	[strip addLayer];
+	LayerController * lc =  [strip addLayer];
+    [lc selectDefaultView];
 	/* [undoManager registerUndoWithTarget:mainController selector:@selector(removeStripWithStripController:) object:strip];
 		[undoManager setActionName:@"new Strip"]; */
 }
@@ -990,6 +993,25 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
     [currentView deselectAllChildViews];
     [currentView selectChildViews:unselectedChildViews];
     
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+-(IBAction)toggleShowPositionGuides:(id)sender{
+    
+    if([sender state]==NSOnState)
+        [sender setState:NSOffState];
+    else
+        [sender setState:NSOnState];
+    
+    BOOL b = NO;
+    
+    if([sender state] == NSOnState)
+        b = YES;
+    
+    [self setValue:[NSNumber numberWithBool:b] forKey:@"showPositionGuides"];
+
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////

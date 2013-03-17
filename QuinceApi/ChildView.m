@@ -549,4 +549,10 @@
 }
  */
 -(void)commandClick{}
+
+-(NSArray *)positionGuides{
+    
+    return [NSArray arrayWithObjects:@"LEFT", @"RIGHT", @"BOTTOM", nil];
+}
+
 @end

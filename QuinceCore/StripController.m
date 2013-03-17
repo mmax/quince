@@ -41,7 +41,8 @@
 	
 	if((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])){
         dictionary = [[NSMutableDictionary alloc]init];
-        [self setValue:[NSNumber numberWithBool:YES] forKey:@"drawGuides"];
+        [self setValue:[NSNumber numberWithBool:NO
+                        ] forKey:@"drawGuides"];
 		[self loadView];
 		layerControllers = [[NSMutableArray alloc] init];
         //[guidesButton bind:@"value" toObject:self withKeyPath:@"drawGuides" options:nil];
@@ -212,8 +213,9 @@
 	
 }
 
--(void)addLayer{
+-(LayerController *)addLayer{
 	[self addRow:nil];
+    return [layerControllers lastObject];
 }
 
 -(ContainerView *)activeView{
@@ -404,6 +406,11 @@
 -(int)layerCount{
 
     return [layerControllers count];
+}
+
+-(BOOL)shouldShowPositionGuides{
+
+    return [[document valueForKey:@"showPositionGuides"]boolValue];
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////

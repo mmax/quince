@@ -337,4 +337,8 @@
     [[self view] reload];
 }
 
+-(void)selectDefaultView{
+    [viewMenu selectItemWithTitle:@"VolumeStandardContainer"];
+    [self changeView:nil];
+}
 @end

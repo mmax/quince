@@ -104,7 +104,7 @@
 	NSMenu* functionMenu;
 	NSMenu* selectionMenu;
 	NSMenu* mixDownMenu;
-	
+    
 	Player * player;
 	double cursorTime;
 }
@@ -169,6 +169,8 @@
 -(IBAction) mixDownWithMenuItem:(id)sender;
 -(IBAction) windowMenuAction:(id)sender;
 -(IBAction) invertSelection:(id)sender;
+-(IBAction)toggleShowPositionGuides:(id)sender;
+
 
 -(QuinceObjectController *)getSingleSelectedObjectController;
 -(NSMutableArray *)getSelectedObjectControllers;

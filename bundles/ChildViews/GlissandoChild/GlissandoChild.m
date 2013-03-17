@@ -88,4 +88,11 @@
     [self resetCursorRects];
 }
 
+
+-(NSArray *)positionGuides{
+    
+    return [NSArray arrayWithObjects:@"LEFT", @"RIGHT", @"BOTTOM", @"TOP", nil];
+}
+
+
 @end
