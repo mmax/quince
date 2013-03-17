@@ -242,6 +242,7 @@
     }
 }
 
+
 -(void)computePositionGuidePaths{
     
     // create textFields and paths
@@ -300,7 +301,6 @@
         [topField setStringValue:[NSString stringWithFormat:@"%.03f", [[activeView parameterValueForY:[NSNumber numberWithFloat:y2]]floatValue]]];
         [topField setFrame:frame];
     }
-    
 }
 
 
@@ -309,6 +309,7 @@
 	active = b;
     [self setNeedsDisplay:YES];	
 }
+
 
 -(void)drawCursorForX:(double)x{
 	float prevX = cursorX;
@@ -550,7 +551,6 @@
 #pragma mark KVC
 
 -(void)setValue:(id)aValue forKey:(NSString *)aKey{
-    
 	
 	[self willChangeValueForKey:aKey];
 	[self willChangeValueForKey:@"dictionary"];
@@ -558,8 +558,6 @@
 	
 	[self didChangeValueForKey:aKey];
 	[self didChangeValueForKey:@"dictionary"];
-
-
 }
 
 -(id)valueForKey:(NSString *)key{
@@ -568,7 +566,8 @@
 }
 
 -(id)valueForKeyPath:(NSString *)keyPath{
-	NSArray * keys = [keyPath componentsSeparatedByString:@"."];
+	
+    NSArray * keys = [keyPath componentsSeparatedByString:@"."];
 	id val = self;
 	for(NSString * key in keys)
 		val = [val valueForKey:key];
@@ -576,7 +575,8 @@
 } 
 
 -(void)removeObjectForKey:(NSString *)key{
-	[self willChangeValueForKey:key];
+	
+    [self willChangeValueForKey:key];
 	[dictionary removeObjectForKey:key];
 	[self didChangeValueForKey:key];
 }
@@ -594,6 +594,8 @@
     else
         [self computeGuides];
 }
+
+
 -(void)removeGuideTextFields{
 
     for(NSMutableDictionary * d in [self valueForKey:@"guides"]){
