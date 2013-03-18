@@ -380,7 +380,7 @@
 
 
 -(void)changeColor:(id)sender{
-	//NSLog(@"changeColor: %@", sender);
+
 	NSColor * c = [sender color];
 	[[self content]setValue:c forKey:@"color"];
 	for(ContainerView * mcv in registeredContainerViews)

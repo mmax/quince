@@ -51,8 +51,10 @@
 	if ([event clickCount]==2 /*&& clickInPath*/){
 			
 		NSColorPanel * panel = [NSColorPanel sharedColorPanel];
+        [panel setShowsAlpha:YES];
 		[panel setTarget:[self contentController]];
 		[panel setAction:@selector(changeColor:)];  
+        [panel setColor:[[self contentController]valueForKey:@"color"]];
 		[[NSColorPanel sharedColorPanel]makeKeyAndOrderFront:nil];
 		
 	}
