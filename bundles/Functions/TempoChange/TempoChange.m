@@ -94,4 +94,6 @@
 	[q setValue:[NSNumber numberWithDouble:duration] forKey:@"duration"];	
 }
 
+-(BOOL)hasInterface{return YES;}
+
 @end

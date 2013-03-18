@@ -144,6 +144,9 @@
     return YES;
 }
 
+-(BOOL)hasInterface{return YES;}
+
+
 //-(void)joinNextFrom:(int)index into:(QuinceObject *)j{ // index is the index of the object being joined into
 //    int count = [subs count];
 //	//NSLog(@"JBF: joinNextFrom: %d/%d", index, count);

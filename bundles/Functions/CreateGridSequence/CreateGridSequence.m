@@ -112,6 +112,8 @@
 	[self done];
 }
 
+-(BOOL)hasInterface{return YES;}
+
 -(IBAction)changeMeasure:(id)sender{
 	
 	int measure = [newMeasureTextField intValue];

@@ -65,4 +65,6 @@
 	[window orderOut:nil];
 }
 
+-(BOOL)hasInterface{return YES;}
+
 @end

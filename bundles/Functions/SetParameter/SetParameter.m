@@ -90,4 +90,8 @@
 	[window orderOut:nil];
 	[self done];
 }
+
+-(BOOL)hasInterface{return YES;}
+
+
 @end

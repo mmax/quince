@@ -115,5 +115,6 @@
 	[document displayProgress:NO];
 }
 
+-(BOOL)hasInterface{return YES;}
 
 @end

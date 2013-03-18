@@ -93,15 +93,16 @@
 	if(strokePaths)	[strokePaths removeAllObjects];
 	else strokePaths = [[NSMutableArray alloc]init];
 	
-	int N=0, framesPerPath = 350;
-
+	int N=0, framesPerPath = 350, fpwi;
 	double frameDuration = [[self valueForKey:@"frameDuration"]doubleValue];
-    
 	double framesPerWindow = [[self valueForKey:@"framesPerWindow"]doubleValue];
-	
-	double x=0,y=0, time;
+	double time = 0;
+	double x = [[self convertTimeToX:[NSNumber numberWithDouble:time]]doubleValue];
+    double y = [[self convertPitchToY:[windows objectAtIndex:0]]doubleValue];
+    
 	NSPoint startPoint = NSMakePoint(x, y);
 	NSPoint point;
+    
     [document setProgressTask:@"creating view..."];
     [document displayProgress:YES];
     
@@ -119,7 +120,7 @@
 		for(int a = 0;a<N;a++){
 			y = [[self convertPitchToY:[windows objectAtIndex:i+a]]doubleValue];
 
-			int fpwi = framesPerWindow+0.5;
+			fpwi = framesPerWindow+0.5;
 			time = frameDuration * fpwi * (i+a);
 			x = [[self convertTimeToX:[NSNumber numberWithDouble:time]]doubleValue];
 

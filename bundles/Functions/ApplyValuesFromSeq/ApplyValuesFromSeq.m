@@ -36,6 +36,7 @@
 	return self;
 }
 
+-(BOOL)hasInterface{return YES;}
 
 -(NSMutableArray *)inputDescriptors{
 	

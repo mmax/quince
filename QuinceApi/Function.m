@@ -158,6 +158,8 @@
     [self setValue:[NSNumber numberWithBool:b] forKey:@"compatible"];
 }
 
+-(BOOL)hasInterface{return NO;}
+
 
 -(void)done{
 	[[NSNotificationCenter defaultCenter]postNotificationName:@"functionDone" object:self];

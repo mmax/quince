@@ -1047,4 +1047,6 @@ return [NSString stringWithFormat:@"\n\\once \\override TupletNumber #'transpare
 	[quince setValue:[NSNumber numberWithFloat:outTempo] forKey:@"tempo"];
 }
 
+-(BOOL)hasInterface{return YES;}
+
 @end

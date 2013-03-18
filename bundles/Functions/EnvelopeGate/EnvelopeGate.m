@@ -87,4 +87,6 @@
 	return [ipd autorelease];
 }
 
+-(BOOL)hasInterface{return YES;}
+
 @end

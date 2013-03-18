@@ -1823,8 +1823,6 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 		ChildView * cv = [view childViewWithController:mc];
 		[view selectChildView:cv];
 	}
-	
-
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////

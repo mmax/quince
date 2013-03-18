@@ -71,4 +71,6 @@
 	[self done];
 }
 
+-(BOOL)hasInterface{return YES;}
+
 @end

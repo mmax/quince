@@ -144,6 +144,7 @@
 
 }
 
+-(BOOL)hasInterface{return YES;}
 
 @end
 

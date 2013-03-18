@@ -39,6 +39,8 @@
 	return self;
 }
 
+-(BOOL)hasInterface{return YES;}
+
 -(void)perform{
 
 	QuinceObject * quince = [self objectForPurpose:@"source"];
