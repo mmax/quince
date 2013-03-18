@@ -76,7 +76,8 @@
 -(QuinceObjectController *)controllerOfPreviousSubObjectBeforeController:(QuinceObjectController *)mc;
 -(QuinceObjectController *)copyOfController:(QuinceObjectController *)mc withSubObjects:(BOOL)subs addAsSubObject:(BOOL)b;
 -(void)migrateSubObjects:(NSArray *)subs toController:(QuinceObjectController*)mc;
--(void) toggleMute;
+-(void)toggleMute;
+-(void)setMute:(BOOL)b;
 -(void)unregisterChildView:(ChildView *)child;
 -(void)registerChildView:(ChildView *)child;
 -(id)changedParameter;

@@ -460,16 +460,20 @@
 
 -(void) toggleMute{
 
-	if([[[self content]valueForKey:@"muted"]boolValue]){
-		[[self content]setValue:[NSNumber numberWithBool:NO] forKey:@"muted"];
-		//[registeredChildViews makeObjectsPerformSelector:@selector(unmute)];
-	}
-	else {
-		[[self content]setValue:[NSNumber numberWithBool:YES] forKey:@"muted"];
-		//[registeredChildViews makeObjectsPerformSelector:@selector(mute)];
-	}
-
+    BOOL b = YES;
+	if([[[self content]valueForKey:@"muted"]boolValue]) b = NO;
+    [self setMute:b];
 }
+
+
+-(void)setMute:(BOOL)b{
+    [[self content]setValue:[NSNumber numberWithBool:b] forKey:@"muted"]; 
+    NSArray * subCons = [self controllersForSubObjects];
+    
+    for(QuinceObjectController * c in subCons)
+        [c setMute:b];
+}
+
 
 -(void)registerChildView:(ChildView *)child{
 	if([registeredChildViews containsObject:child])return;
