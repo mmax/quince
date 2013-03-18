@@ -611,7 +611,7 @@
 
 -(void)removeSubObject:(QuinceObject *)quince withUpdate:(BOOL)b{
 	if(![[self valueForKey:@"subObjects"]containsObject:quince]){
-		NSLog(@"request to remove an object which is not a subObject of this quinceObject instance");
+		NSLog(@"request to remove an object which is not a subObject of this quinceObject instance:\n%@\ntried to remove: %@", self, quince);
 			return; // make sure ‘quince’ really is a subObject!
 	}
 	[[quince controller] release];

@@ -107,7 +107,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	NSMenu * main = [app mainMenu];
 	NSMenuItem * functionItem = [main itemWithTitle:@"Functions"];
 	NSMenuItem * selectionItem = [main itemWithTitle:@"Selection"];
-	NSMenuItem * playerItem = [main itemWithTitle:@"Players"];
+	NSMenuItem * playerItem = [main itemWithTitle:@"Player"];
 	NSMenu * playerSubMenu = [playerItem submenu];
 	NSMenuItem * mixDownMenuItem = [playerSubMenu itemWithTitle:@"MixDown"];
 	mixDownMenu = [mixDownMenuItem submenu];
@@ -1464,9 +1464,11 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 
 -(AudioFile * )openNewAudioFile{
 	
-	AudioFile * af = (AudioFile *)[self newObjectOfClassNamed:@"AudioFile" inPool:YES];
-	[af openFile];
-	[self objectPoolSelectionChanged:nil];
+	AudioFile * af = (AudioFile *)[self newObjectOfClassNamed:@"AudioFile" inPool:NO];
+	if([af openFile]){
+        [self objectPoolSelectionChanged:nil];
+        [self addObjectToObjectPool:af];
+    }
 	return af;
 }
 
@@ -1814,11 +1816,13 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	for(ContainerView * c in [superController registeredContainerViews])
 		[c reload];
 	
+//    for(ContainerView * c in [superController registeredContainerViews])
+//        [c replaceChildViewsForControllers:a withChildViewsForControllers:b];
+    
 	for(QuinceObjectController * mc in b){
 		ChildView * cv = [view childViewWithController:mc];
 		[view selectChildView:cv];
 	}
-	
 	
 
 }

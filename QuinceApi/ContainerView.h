@@ -114,6 +114,7 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2);
 -(void)clear;
 -(ChildView *)createChildViewForQuinceObjectController:(QuinceObjectController *)mc;
 -(ChildView *)createChildViewForQuinceObjectController:(QuinceObjectController *)mc andBindWithKeysForLocationOnX:(NSString *)lx sizeOnX:(NSString *)sx locationOnY:(NSString *)ly;
+-(void)replaceChildViewsForControllers:(NSArray *)a withChildViewsForControllers:(NSArray *)b;
 -(ChildView *)childViewWithController:(QuinceObjectController *)mc;
 -(void)createViewsForQuinceObjectController:(QuinceObjectController *)mc;
 -(NSArray *) childViewsInRect:(NSRect) rect;

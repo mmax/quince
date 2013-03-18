@@ -789,6 +789,7 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 }
 //////////////////////////////////////////////////
 // used by QuinceObjectController
+
 -(ChildView *)createChildViewForQuinceObjectController:(QuinceObjectController *)mc{
 	return [self createChildViewForQuinceObjectController:mc andBindWithKeysForLocationOnX:[self keyForLocationOnXAxis] sizeOnX:[self keyForSizeOnXAxis] locationOnY:[self keyForLocationOnYAxis]];
     
@@ -826,6 +827,15 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 
 //-(void)setController:(QuinceObjectController *)mc andBindWithKeysForLocationOnX:(NSString *)lx sizeOnX:(NSString *)sx locationOnY:(NSString *)ly
 
+-(void)replaceChildViewsForControllers:(NSArray *)a withChildViewsForControllers:(NSArray *)b{
+
+    for(QuinceObjectController * qc in a)
+        [self removeChildViewForQuinceObjectController:qc];
+    
+    for(QuinceObjectController * qc in b)
+        [self createChildViewForQuinceObjectController:qc];
+}
+
 -(ChildView *)childViewWithController:(QuinceObjectController *)mc{
 
 	for(ChildView * mcv in childViews){
@@ -854,7 +864,7 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 
 	if(!child){
 	
-		NSLog(@"MintContainerView: selectChildView: no child!");
+		NSLog(@"ContainerView: selectChildView: no child!");
 		return;
 	}
 	
