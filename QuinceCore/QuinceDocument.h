@@ -211,7 +211,7 @@
 -(IBAction)performFunctionWithMenuItem:(id)sender;
 -(void)performFunctionOnCurrentSelectionWithFunctionName:(NSString *)f;
 -(IBAction)performFunctionOnCurrentSelectionWithMenuItem:(id)sender;
--(void)replaceControllers:(NSArray *)a withControllers:(NSArray *)b inSuperController:(QuinceObjectController *)superController inView:(ContainerView*)view forFunctionNamed:(NSString*)name;
+//-(void)replaceControllers:(NSArray *)a withControllers:(NSArray *)b inSuperController:(QuinceObjectController *)superController inView:(ContainerView*)view forFunctionNamed:(NSString*)name;
 -(void)performFunctionNamed:(NSString *)functionName onObject:(QuinceObject *)target;
 -(void)performFunction:(Function *)function withValuesOfObject:(QuinceObject *)target;
 

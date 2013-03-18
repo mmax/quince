@@ -827,14 +827,14 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 
 //-(void)setController:(QuinceObjectController *)mc andBindWithKeysForLocationOnX:(NSString *)lx sizeOnX:(NSString *)sx locationOnY:(NSString *)ly
 
--(void)replaceChildViewsForControllers:(NSArray *)a withChildViewsForControllers:(NSArray *)b{
-
-    for(QuinceObjectController * qc in a)
-        [self removeChildViewForQuinceObjectController:qc];
-    
-    for(QuinceObjectController * qc in b)
-        [self createChildViewForQuinceObjectController:qc];
-}
+//-(void)replaceChildViewsForControllers:(NSArray *)a withChildViewsForControllers:(NSArray *)b{
+//
+//    for(QuinceObjectController * qc in a)
+//        [self removeChildViewForQuinceObjectController:qc];
+//    
+//    for(QuinceObjectController * qc in b)
+//        [self createChildViewForQuinceObjectController:qc];
+//}
 
 -(ChildView *)childViewWithController:(QuinceObjectController *)mc{
 

@@ -1750,80 +1750,100 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 -(void)performFunctionOnCurrentSelectionWithFunctionName:(NSString *)f{
+	
+	Function * fun = [self functionNamed:f];		
+    if(!fun)return;
     
+    QuinceObject * mother = [self newObjectOfClassNamed:@"QuinceObject" inPool:NO];
 	
-	ContainerView * currentView = [mainController activeView];	// get the currently active view
-	NSArray * selectedChildViews = [currentView selection];			// get an array containing the selected childViews
-	NSMutableArray * selectionControllers = [[NSMutableArray alloc]init];
-	QuinceObjectController * superController = [[currentView layerController]valueForKey:@"content"];	// currentView's content controller
-	
-	for(ChildView * child in selectedChildViews)				// store their contollers in an array
-		[selectionControllers addObject:[child controller]];
-    
-	QuinceObject * mother = [self newObjectOfClassNamed:@"QuinceObject" inPool:NO];	//create an empty Object
-	
-	for (QuinceObjectController * mc in selectionControllers){			// and add the selection as subobjects
-		QuinceObjectController * copy = [self controllerForCopyOfQuinceObjectController:mc inPool:NO];
-		[[mother controller] addSubObjectWithController:copy withUpdate:NO];
-	}
-	
-	Function * fun = [self functionNamed:f];		// get the selected function
+    for(ChildView * child in [[mainController activeView] selection])
+        [[mother controller]addSubObjectWithController:[child controller] withUpdate:NO];
+
 	[fun reset];
 	NSArray * inputDescriptors = [fun inputDescriptors];
 	[[inputDescriptors lastObject]setValue:mother forKey:@"object"];	
-
-	[fun performActionWithInputDescriptors:inputDescriptors];		// perform the function,
     
-	NSMutableArray * newControllers = [[NSMutableArray alloc]init];
-	
-	for(QuinceObject * q in [mother valueForKey:@"subObjects"]){
-		[newControllers addObject:[q controller]];
-	}
-	
-	[self replaceControllers:selectionControllers withControllers:newControllers inSuperController:superController inView:currentView forFunctionNamed:f];
-	
-	[selectionControllers release];
-	[newControllers release];
+	[fun performActionWithInputDescriptors:inputDescriptors];		    
 	[mother release];
-
+    
 }
+
+
+//-(void)performFunctionOnCurrentSelectionWithFunctionName:(NSString *)f{
+//    
+//	
+//	ContainerView * currentView = [mainController activeView];	// get the currently active view
+//	NSArray * selectedChildViews = [currentView selection];			// get an array containing the selected childViews
+//	NSMutableArray * selectionControllers = [[NSMutableArray alloc]init];
+//	QuinceObjectController * superController = [[currentView layerController]valueForKey:@"content"];	// currentView's content controller
+//	
+//	for(ChildView * child in selectedChildViews)				// store their contollers in an array
+//		[selectionControllers addObject:[child controller]];
+//    
+//	QuinceObject * mother = [self newObjectOfClassNamed:@"QuinceObject" inPool:NO];	//create an empty Object
+//	
+//	for (QuinceObjectController * mc in selectionControllers){			// and add the selection as subobjects
+//		QuinceObjectController * copy = [self controllerForCopyOfQuinceObjectController:mc inPool:NO];
+//		[[mother controller] addSubObjectWithController:copy withUpdate:NO];
+//	}
+//	
+//	Function * fun = [self functionNamed:f];		// get the selected function
+//	[fun reset];
+//	NSArray * inputDescriptors = [fun inputDescriptors];
+//	[[inputDescriptors lastObject]setValue:mother forKey:@"object"];	
+//
+//	[fun performActionWithInputDescriptors:inputDescriptors];		// perform the function,
+//    
+//	NSMutableArray * newControllers = [[NSMutableArray alloc]init];
+//	
+//	for(QuinceObject * q in [mother valueForKey:@"subObjects"]){
+//		[newControllers addObject:[q controller]];
+//	}
+//	
+//	[self replaceControllers:selectionControllers withControllers:newControllers inSuperController:superController inView:currentView forFunctionNamed:f];
+//	
+//	[selectionControllers release];
+//	[newControllers release];
+//	[mother release];
+//
+//}
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 -(IBAction)performFunctionOnCurrentSelectionWithMenuItem:(id)sender{
     [self performFunctionOnCurrentSelectionWithFunctionName:[sender title]];
     return;
-	//NSLog(@"performFunctionOnCurrentSelectionWithMenuItem:%@", [sender title]);
 	
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
--(void)replaceControllers:(NSArray *)a withControllers:(NSArray *)b inSuperController:(QuinceObjectController *)superController 
-				   inView:(ContainerView*)view forFunctionNamed:(NSString*)name{
-
-	[[undoManager prepareWithInvocationTarget:self] replaceControllers:b withControllers:a inSuperController:superController inView:view forFunctionNamed:name];
-	[undoManager setActionName:name];
-	
-	for (QuinceObjectController * mc in a)	
-		[superController removeSubObjectWithController:mc withUpdate:NO];
-	
-	for (QuinceObjectController * mc in b)
-		[superController addSubObjectWithController:mc withUpdate:NO];
-
-	[superController update];
-	
-	for(ContainerView * c in [superController registeredContainerViews])
-		[c reload];
-	
-//    for(ContainerView * c in [superController registeredContainerViews])
-//        [c replaceChildViewsForControllers:a withChildViewsForControllers:b];
-    
-	for(QuinceObjectController * mc in b){
-		ChildView * cv = [view childViewWithController:mc];
-		[view selectChildView:cv];
-	}
-}
+//-(void)replaceControllers:(NSArray *)a withControllers:(NSArray *)b inSuperController:(QuinceObjectController *)superController 
+//				   inView:(ContainerView*)view forFunctionNamed:(NSString*)name{
+//
+//	[[undoManager prepareWithInvocationTarget:self] replaceControllers:b withControllers:a inSuperController:superController inView:view forFunctionNamed:name];
+//	[undoManager setActionName:name];
+//	
+//	for (QuinceObjectController * mc in a)	
+//		[superController removeSubObjectWithController:mc withUpdate:NO];
+//	
+//	for (QuinceObjectController * mc in b)
+//		[superController addSubObjectWithController:mc withUpdate:NO];
+//
+//	[superController update];
+//	
+//	for(ContainerView * c in [superController registeredContainerViews])
+//		[c reload];
+//	
+////    for(ContainerView * c in [superController registeredContainerViews])
+////        [c replaceChildViewsForControllers:a withChildViewsForControllers:b];
+//    
+//	for(QuinceObjectController * mc in b){
+//		ChildView * cv = [view childViewWithController:mc];
+//		[view selectChildView:cv];
+//	}
+//}
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
