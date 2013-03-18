@@ -2,6 +2,7 @@
 
 v 0.9.9
 
+- new feature: Function Shortcuts (Edit Menu) freely assignable short cuts to access frequently used functions
 - new feature: Position Guides (View Menu) to help positioning objects to the right place
 - refurbished look
 - fixed a bug in EnvelopeContainer (drawing)
