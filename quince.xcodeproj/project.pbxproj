@@ -72,6 +72,8 @@
 		5035B90413563F57003E8570 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		5035B90713563F86003E8570 /* ApplyValuesFromSeq.m in Sources */ = {isa = PBXBuildFile; fileRef = 5035B90613563F86003E8570 /* ApplyValuesFromSeq.m */; };
 		5035B90C135643CA003E8570 /* AVFS_win.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5035B90B135643CA003E8570 /* AVFS_win.xib */; };
+		50466F5717271ADC001477E5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		50466F6417271B2D001477E5 /* ExportSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 50466F6317271B2D001477E5 /* ExportSequence.m */; };
 		504A69D211A9F747007F60FF /* Normalize.m in Sources */ = {isa = PBXBuildFile; fileRef = 504A69CF11A9F6FB007F60FF /* Normalize.m */; };
 		504A6A3511AA00FB007F60FF /* ApplyEnvelopeWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504A6A3411AA00FB007F60FF /* ApplyEnvelopeWindow.xib */; };
 		504B44FE119372790052DD20 /* Envelope.h in Headers */ = {isa = PBXBuildFile; fileRef = 504B44FC119372790052DD20 /* Envelope.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -210,6 +212,7 @@
 		50BFCB85129987FA00618422 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		50BFCB881299884100618422 /* ImportMaxMSPCollForSingleParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BFCB871299884100618422 /* ImportMaxMSPCollForSingleParameter.m */; };
 		50BFCC2A12998D0A00618422 /* ILFSP_window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50BFCC2912998D0A00618422 /* ILFSP_window.xib */; };
+		50C284371727216F00841C48 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		50D07A04122D98280061F0E5 /* CsoundPlayerWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D07A03122D98280061F0E5 /* CsoundPlayerWindow.xib */; };
 		50D194DB1230456D00C3FC2C /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		50D194DE123045BD00C3FC2C /* MapDynamicExpr.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D194DD123045BD00C3FC2C /* MapDynamicExpr.m */; };
@@ -1088,6 +1091,20 @@
 			remoteGlobalIDString = 50BFCB7B129987DB00618422;
 			remoteInfo = ImportListForSingleParameter;
 		};
+		50C2843317271D2A00841C48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50466F5517271ADC001477E5;
+			remoteInfo = ExportSequence;
+		};
+		50C2843517271D4600841C48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
 		50D195361230527500C3FC2C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
@@ -1385,6 +1402,9 @@
 		5035B90513563F86003E8570 /* ApplyValuesFromSeq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplyValuesFromSeq.h; path = bundles/Functions/ApplyValuesFromSeq/ApplyValuesFromSeq.h; sourceTree = "<group>"; };
 		5035B90613563F86003E8570 /* ApplyValuesFromSeq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApplyValuesFromSeq.m; path = bundles/Functions/ApplyValuesFromSeq/ApplyValuesFromSeq.m; sourceTree = "<group>"; };
 		5035B90B135643CA003E8570 /* AVFS_win.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AVFS_win.xib; path = bundles/Functions/ApplyValuesFromSeq/AVFS_win.xib; sourceTree = "<group>"; };
+		50466F5617271ADC001477E5 /* ExportSequence.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExportSequence.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		50466F6217271B2D001477E5 /* ExportSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExportSequence.h; path = bundles/Functions/ExportSequence/ExportSequence.h; sourceTree = "<group>"; };
+		50466F6317271B2D001477E5 /* ExportSequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExportSequence.m; path = bundles/Functions/ExportSequence/ExportSequence.m; sourceTree = "<group>"; };
 		504A692411A9C0E5007F60FF /* ApplyEnvelope.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplyEnvelope.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		504A692511A9C0E5007F60FF /* ApplyEnvelope-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ApplyEnvelope-Info.plist"; path = "bundles/Functions/ApplyEnvelope/ApplyEnvelope-Info.plist"; sourceTree = SOURCE_ROOT; };
 		504A695C11A9CBB0007F60FF /* ApplyEnvelope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplyEnvelope.h; path = bundles/Functions/ApplyEnvelope/ApplyEnvelope.h; sourceTree = "<group>"; };
@@ -1589,6 +1609,7 @@
 		50BFCB861299884100618422 /* ImportMaxMSPCollForSingleParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImportMaxMSPCollForSingleParameter.h; path = bundles/Functions/ImportMaxMSPCollForSingleParameter/ImportMaxMSPCollForSingleParameter.h; sourceTree = "<group>"; };
 		50BFCB871299884100618422 /* ImportMaxMSPCollForSingleParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImportMaxMSPCollForSingleParameter.m; path = bundles/Functions/ImportMaxMSPCollForSingleParameter/ImportMaxMSPCollForSingleParameter.m; sourceTree = "<group>"; };
 		50BFCC2912998D0A00618422 /* ILFSP_window.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ILFSP_window.xib; path = bundles/Functions/ImportMaxMSPCollForSingleParameter/ILFSP_window.xib; sourceTree = "<group>"; };
+		50C2843117271C3000841C48 /* ExportSequence-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ExportSequence-Info.plist"; path = "bundles/Functions/ExportSequence/ExportSequence-Info.plist"; sourceTree = "<group>"; };
 		50C5C5391324F92500C145D0 /* ColorByKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorByKey.h; path = bundles/Functions/ColorByKey/ColorByKey.h; sourceTree = "<group>"; };
 		50C5C5761324FB6D00C145D0 /* CSoundPlayer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "CSoundPlayer-Info.plist"; path = "bundles/Players/CsoundPlayer/CSoundPlayer-Info.plist"; sourceTree = "<group>"; };
 		50D07A03122D98280061F0E5 /* CsoundPlayerWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CsoundPlayerWindow.xib; path = bundles/Players/CsoundPlayer/CsoundPlayerWindow.xib; sourceTree = "<group>"; };
@@ -1837,6 +1858,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5035B90413563F57003E8570 /* QuinceApi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50466F5317271ADC001477E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C284371727216F00841C48 /* QuinceApi.framework in Frameworks */,
+				50466F5717271ADC001477E5 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2375,6 +2405,7 @@
 				500F1ED213EDEDE200A25411 /* PitchCurveContainer.bundle */,
 				501AF9EF141561B7007AFEF3 /* ApplyPitchCurve.bundle */,
 				500F1DB616ED4E5A006FCF76 /* ReverseLegato.bundle */,
+				50466F5617271ADC001477E5 /* ExportSequence.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2708,6 +2739,7 @@
 				50B86D581190390800D235AA /* EqlDstrbtn_Start */,
 				50E93C011190666000A63246 /* EqlDstrbtn_Volume */,
 				50A362E6126EF700004D360B /* ExportDescriptionListing */,
+				50466F6517271B34001477E5 /* ExportSequence */,
 				506C6B3F135618030060BD9D /* ExtractEnvSequence */,
 				50D3E76413E6FE6F00BA5D30 /* ExtractFrequencyVertexes */,
 				5034A0E313D3939A008EB6C4 /* FixGlissandoEndPoints */,
@@ -2799,6 +2831,16 @@
 				5035B90613563F86003E8570 /* ApplyValuesFromSeq.m */,
 			);
 			name = ApplyValuesFromSeq;
+			sourceTree = "<group>";
+		};
+		50466F6517271B34001477E5 /* ExportSequence */ = {
+			isa = PBXGroup;
+			children = (
+				50C2843117271C3000841C48 /* ExportSequence-Info.plist */,
+				50466F6217271B2D001477E5 /* ExportSequence.h */,
+				50466F6317271B2D001477E5 /* ExportSequence.m */,
+			);
+			name = ExportSequence;
 			sourceTree = "<group>";
 		};
 		504A694311A9C1D1007F60FF /* ApplyEnvelope */ = {
@@ -3829,6 +3871,24 @@
 			productReference = 5035B8F013563EBE003E8570 /* ApplyValuesFromSeq.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
+		50466F5517271ADC001477E5 /* ExportSequence */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50466F6117271ADC001477E5 /* Build configuration list for PBXNativeTarget "ExportSequence" */;
+			buildPhases = (
+				50466F5217271ADC001477E5 /* Sources */,
+				50466F5317271ADC001477E5 /* Frameworks */,
+				50466F5417271ADC001477E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50C2843617271D4600841C48 /* PBXTargetDependency */,
+			);
+			name = ExportSequence;
+			productName = ExportSequence;
+			productReference = 50466F5617271ADC001477E5 /* ExportSequence.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		504A692311A9C0E5007F60FF /* ApplyEnvelope */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 504A692811A9C0E6007F60FF /* Build configuration list for PBXNativeTarget "ApplyEnvelope" */;
@@ -4770,6 +4830,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				50C2843417271D2A00841C48 /* PBXTargetDependency */,
 				500F1DC516ED5097006FCF76 /* PBXTargetDependency */,
 				506BF7DE117A585700ECBC4E /* PBXTargetDependency */,
 				506BF8AA117A5E6200ECBC4E /* PBXTargetDependency */,
@@ -4891,6 +4952,7 @@
 				50B86D311190383D00D235AA /* EqlDstrbtn-Start */,
 				50E93BD8119065CD00A63246 /* EqlDstrbtn-Volume */,
 				50A362CC126EF67B004D360B /* ExportDescriptionListing */,
+				50466F5517271ADC001477E5 /* ExportSequence */,
 				506C6B2D135616F60060BD9D /* ExtractEnvSequence */,
 				50D3E76113E6FE6F00BA5D30 /* ExtractFrequencyVertexes */,
 				5034A0E013D39399008EB6C4 /* FixGlissandoEndPoints */,
@@ -5077,6 +5139,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5035B90C135643CA003E8570 /* AVFS_win.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50466F5417271ADC001477E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5704,6 +5773,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5035B90713563F86003E8570 /* ApplyValuesFromSeq.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50466F5217271ADC001477E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50466F6417271B2D001477E5 /* ExportSequence.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6729,6 +6806,16 @@
 			isa = PBXTargetDependency;
 			target = 50BFCB7B129987DB00618422 /* ImportMaxMSPCollForSingleParameter */;
 			targetProxy = 50BFCBF7129988E800618422 /* PBXContainerItemProxy */;
+		};
+		50C2843417271D2A00841C48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50466F5517271ADC001477E5 /* ExportSequence */;
+			targetProxy = 50C2843317271D2A00841C48 /* PBXContainerItemProxy */;
+		};
+		50C2843617271D4600841C48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 50C2843517271D4600841C48 /* PBXContainerItemProxy */;
 		};
 		50D195371230527500C3FC2C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -7940,6 +8027,55 @@
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		50466F5F17271ADC001477E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "bundles/Functions/ExportSequence/ExportSequence-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		50466F6017271ADC001477E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "ExportSequence/ExportSequence-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -10677,6 +10813,15 @@
 			buildConfigurations = (
 				5035B8F213563EBF003E8570 /* Debug */,
 				5035B8F313563EBF003E8570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50466F6117271ADC001477E5 /* Build configuration list for PBXNativeTarget "ExportSequence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50466F5F17271ADC001477E5 /* Debug */,
+				50466F6017271ADC001477E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -129,6 +129,11 @@
 			<key>orderHint</key>
 			<integer>27</integer>
 		</dict>
+		<key>ExportSequence.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>69</integer>
+		</dict>
 		<key>ExtractEnvSequence.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -438,6 +443,11 @@
 			<true/>
 		</dict>
 		<key>5035B8EF13563EBE003E8570</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>50466F5517271ADC001477E5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

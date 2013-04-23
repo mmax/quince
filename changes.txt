@@ -1,6 +1,8 @@
 
 
 v 0.9.9
+
+- new function: ExportSequence
 - optimized performance of functions operating on a selection of objects
 - new feature: Function Shortcuts (Edit Menu) freely assignable short cuts to access frequently used functions
 - new feature: Position Guides (View Menu) to help positioning objects to the right place
