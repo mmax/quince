@@ -1,5 +1,5 @@
 //
-//  ExportSequence.h
+//  ImportSequence.h
 //  quince
 //
 //  Created by Maximilian Marcoll on 4/23/13.
@@ -28,8 +28,8 @@
 #import <QuinceApi/Function.h>
 #import <QuinceApi/QuinceObject.h>
 #import <QuinceApi/QuinceDocument.h>
-@interface ExportSequence : Function{
 
-}
+
+@interface ImportSequence : Function
 
 @end

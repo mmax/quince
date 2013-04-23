@@ -161,6 +161,7 @@
 		508C45661295E90400875B93 /* JoinByFrequencyWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 508C45651295E90400875B93 /* JoinByFrequencyWindow.xib */; };
 		508CB8C413C7BABD00F43AED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
 		508CB8CA13C7BABD00F43AED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 508CB8C813C7BABD00F43AED /* InfoPlist.strings */; };
+		509178A1172728C6008C7F08 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		5093F27816F673B200C62B4F /* FunctionShortCutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5093F27716F652F800C62B4F /* FunctionShortCutController.m */; };
 		50999AAD127642FB00AD0D65 /* AlignOnVolume.m in Sources */ = {isa = PBXBuildFile; fileRef = 50999A1F127640C000AD0D65 /* AlignOnVolume.m */; };
 		50999ABC1276431A00AD0D65 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
@@ -213,6 +214,8 @@
 		50BFCB881299884100618422 /* ImportMaxMSPCollForSingleParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BFCB871299884100618422 /* ImportMaxMSPCollForSingleParameter.m */; };
 		50BFCC2A12998D0A00618422 /* ILFSP_window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50BFCC2912998D0A00618422 /* ILFSP_window.xib */; };
 		50C284371727216F00841C48 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		50C2843D172725DB00841C48 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		50C2844C1727261800841C48 /* ImportSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C2844B1727261700841C48 /* ImportSequence.m */; };
 		50D07A04122D98280061F0E5 /* CsoundPlayerWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D07A03122D98280061F0E5 /* CsoundPlayerWindow.xib */; };
 		50D194DB1230456D00C3FC2C /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		50D194DE123045BD00C3FC2C /* MapDynamicExpr.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D194DD123045BD00C3FC2C /* MapDynamicExpr.m */; };
@@ -769,6 +772,13 @@
 			remoteGlobalIDString = 508CB8C213C7BABC00F43AED;
 			remoteInfo = PitchQuantization;
 		};
+		5091789F17272716008C7F08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50C2843B172725DB00841C48;
+			remoteInfo = ImportSequence;
+		};
 		50999ABA1276431700AD0D65 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
@@ -1099,6 +1109,13 @@
 			remoteInfo = ExportSequence;
 		};
 		50C2843517271D4600841C48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
+		50C28448172725FA00841C48 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
 			proxyType = 1;
@@ -1528,6 +1545,9 @@
 		508CB8C713C7BABD00F43AED /* PitchQuantization-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "PitchQuantization-Info.plist"; path = "bundles/Functions/PitchQuantization/PitchQuantization-Info.plist"; sourceTree = "<group>"; };
 		508CB8C913C7BABD00F43AED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		508CB8CB13C7BABD00F43AED /* PitchQuantization-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PitchQuantization-Prefix.pch"; path = "bundles/Functions/PitchQuantization/PitchQuantization-Prefix.pch"; sourceTree = "<group>"; };
+		50917899172726DC008C7F08 /* ImportSequence-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ImportSequence-Info.plist"; path = "../bundles/Functions/ImportSequence/ImportSequence-Info.plist"; sourceTree = "<group>"; };
+		5091789B172726F7008C7F08 /* ImportSequence-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ImportSequence-Prefix.pch"; path = "bundles/Functions/ImportSequence/ImportSequence-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		5091789D17272700008C7F08 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = bundles/Functions/ImportSequence/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		5093F27616F652F800C62B4F /* FunctionShortCutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FunctionShortCutController.h; path = QuinceCore/FunctionShortCutController.h; sourceTree = "<group>"; };
 		5093F27716F652F800C62B4F /* FunctionShortCutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FunctionShortCutController.m; path = QuinceCore/FunctionShortCutController.m; sourceTree = "<group>"; };
 		50999A1E127640C000AD0D65 /* AlignOnVolume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlignOnVolume.h; path = /Users/max/SWProjects/quince/bundles/Functions/AlignOnVolume/AlignOnVolume.h; sourceTree = "<absolute>"; };
@@ -1610,6 +1630,9 @@
 		50BFCB871299884100618422 /* ImportMaxMSPCollForSingleParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImportMaxMSPCollForSingleParameter.m; path = bundles/Functions/ImportMaxMSPCollForSingleParameter/ImportMaxMSPCollForSingleParameter.m; sourceTree = "<group>"; };
 		50BFCC2912998D0A00618422 /* ILFSP_window.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ILFSP_window.xib; path = bundles/Functions/ImportMaxMSPCollForSingleParameter/ILFSP_window.xib; sourceTree = "<group>"; };
 		50C2843117271C3000841C48 /* ExportSequence-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ExportSequence-Info.plist"; path = "bundles/Functions/ExportSequence/ExportSequence-Info.plist"; sourceTree = "<group>"; };
+		50C2843C172725DB00841C48 /* ImportSequence.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImportSequence.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C2844A1727261700841C48 /* ImportSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImportSequence.h; path = bundles/Functions/ImportSequence/ImportSequence.h; sourceTree = "<group>"; };
+		50C2844B1727261700841C48 /* ImportSequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImportSequence.m; path = bundles/Functions/ImportSequence/ImportSequence.m; sourceTree = "<group>"; };
 		50C5C5391324F92500C145D0 /* ColorByKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorByKey.h; path = bundles/Functions/ColorByKey/ColorByKey.h; sourceTree = "<group>"; };
 		50C5C5761324FB6D00C145D0 /* CSoundPlayer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "CSoundPlayer-Info.plist"; path = "bundles/Players/CsoundPlayer/CSoundPlayer-Info.plist"; sourceTree = "<group>"; };
 		50D07A03122D98280061F0E5 /* CsoundPlayerWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CsoundPlayerWindow.xib; path = bundles/Players/CsoundPlayer/CsoundPlayerWindow.xib; sourceTree = "<group>"; };
@@ -2160,6 +2183,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50C28439172725DB00841C48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				509178A1172728C6008C7F08 /* QuinceApi.framework in Frameworks */,
+				50C2843D172725DB00841C48 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50D194D01230455000C3FC2C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2406,6 +2438,7 @@
 				501AF9EF141561B7007AFEF3 /* ApplyPitchCurve.bundle */,
 				500F1DB616ED4E5A006FCF76 /* ReverseLegato.bundle */,
 				50466F5617271ADC001477E5 /* ExportSequence.bundle */,
+				50C2843C172725DB00841C48 /* ImportSequence.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2748,6 +2781,7 @@
 				507750C51268DD4F00AF7956 /* Gate */,
 				50035AF211C97CE9008D4F11 /* ImportFrequencies */,
 				50BFCB891299884600618422 /* ImportMaxMSPCollForSingleParameter */,
+				50C2844D1727261F00841C48 /* ImportSequence */,
 				508C44F91295E6BF00875B93 /* JoinByFrequency */,
 				507C6F8711977F7E00914B4C /* Legato */,
 				506BF977117A64E300ECBC4E /* LilyPondExport */,
@@ -3251,6 +3285,27 @@
 				50BFCC2912998D0A00618422 /* ILFSP_window.xib */,
 			);
 			name = ImportMaxMSPCollForSingleParameter;
+			sourceTree = "<group>";
+		};
+		50C2843F172725DB00841C48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5091789C17272700008C7F08 /* InfoPlist.strings */,
+				5091789B172726F7008C7F08 /* ImportSequence-Prefix.pch */,
+				50917899172726DC008C7F08 /* ImportSequence-Info.plist */,
+			);
+			name = "Supporting Files";
+			path = ImportSequence;
+			sourceTree = "<group>";
+		};
+		50C2844D1727261F00841C48 /* ImportSequence */ = {
+			isa = PBXGroup;
+			children = (
+				50C2843F172725DB00841C48 /* Supporting Files */,
+				50C2844A1727261700841C48 /* ImportSequence.h */,
+				50C2844B1727261700841C48 /* ImportSequence.m */,
+			);
+			name = ImportSequence;
 			sourceTree = "<group>";
 		};
 		50D194DF123045C100C3FC2C /* MapDynamicExpr */ = {
@@ -4531,6 +4586,24 @@
 			productReference = 50BFCB7C129987DB00618422 /* ImportMaxMspCollForSingleParameter.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
+		50C2843B172725DB00841C48 /* ImportSequence */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C28445172725DB00841C48 /* Build configuration list for PBXNativeTarget "ImportSequence" */;
+			buildPhases = (
+				50C28438172725DB00841C48 /* Sources */,
+				50C28439172725DB00841C48 /* Frameworks */,
+				50C2843A172725DB00841C48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50C28449172725FA00841C48 /* PBXTargetDependency */,
+			);
+			name = ImportSequence;
+			productName = ImportSequence;
+			productReference = 50C2843C172725DB00841C48 /* ImportSequence.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		50D194D11230455000C3FC2C /* MapDynamicExpr */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50D194D61230455100C3FC2C /* Build configuration list for PBXNativeTarget "MapDynamicExpr" */;
@@ -4830,6 +4903,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				509178A017272716008C7F08 /* PBXTargetDependency */,
 				50C2843417271D2A00841C48 /* PBXTargetDependency */,
 				500F1DC516ED5097006FCF76 /* PBXTargetDependency */,
 				506BF7DE117A585700ECBC4E /* PBXTargetDependency */,
@@ -4964,6 +5038,7 @@
 				50F471D013D0D815005CB978 /* GlissandoContainer */,
 				50035ADD11C97C37008D4F11 /* ImportFrequencies */,
 				50BFCB7B129987DB00618422 /* ImportMaxMSPCollForSingleParameter */,
+				50C2843B172725DB00841C48 /* ImportSequence */,
 				508C44EA1295E65E00875B93 /* JoinByFrequency */,
 				507C6F7111977EDB00914B4C /* Legato */,
 				506BF95A117A646200ECBC4E /* LilyPondExport */,
@@ -5404,6 +5479,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				50BFCC2A12998D0A00618422 /* ILFSP_window.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C2843A172725DB00841C48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6083,6 +6165,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50C28438172725DB00841C48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C2844C1727261800841C48 /* ImportSequence.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50D194CF1230455000C3FC2C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -6577,6 +6667,11 @@
 			target = 508CB8C213C7BABC00F43AED /* PitchQuantization */;
 			targetProxy = 508CB8CF13C7BB0100F43AED /* PBXContainerItemProxy */;
 		};
+		509178A017272716008C7F08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50C2843B172725DB00841C48 /* ImportSequence */;
+			targetProxy = 5091789F17272716008C7F08 /* PBXContainerItemProxy */;
+		};
 		50999ABB1276431700AD0D65 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 50A522B4117A52560072FB09 /* QuinceApi */;
@@ -6816,6 +6911,11 @@
 			isa = PBXTargetDependency;
 			target = 50A522B4117A52560072FB09 /* QuinceApi */;
 			targetProxy = 50C2843517271D4600841C48 /* PBXContainerItemProxy */;
+		};
+		50C28449172725FA00841C48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 50C28448172725FA00841C48 /* PBXContainerItemProxy */;
 		};
 		50D195371230527500C3FC2C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -7060,6 +7160,14 @@
 			name = InfoPlist.strings;
 			path = bundles/Functions/PitchQuantization;
 			sourceTree = SOURCE_ROOT;
+		};
+		5091789C17272700008C7F08 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5091789D17272700008C7F08 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
 		};
 		509E993913C8A2DA0032AEF9 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -9847,6 +9955,55 @@
 			};
 			name = Release;
 		};
+		50C28446172725DB00841C48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/ImportSequence/ImportSequence-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "bundles/Functions/ImportSequence/ImportSequence-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		50C28447172725DB00841C48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/ImportSequence/ImportSequence-Prefix.pch";
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "bundles/Functions/ImportSequence/ImportSequence-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		50D194D41230455100C3FC2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -11137,6 +11294,15 @@
 			buildConfigurations = (
 				50BFCB7E129987DB00618422 /* Debug */,
 				50BFCB7F129987DB00618422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50C28445172725DB00841C48 /* Build configuration list for PBXNativeTarget "ImportSequence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C28446172725DB00841C48 /* Debug */,
+				50C28447172725DB00841C48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
