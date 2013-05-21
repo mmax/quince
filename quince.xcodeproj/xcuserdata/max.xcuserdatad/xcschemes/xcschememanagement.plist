@@ -329,6 +329,11 @@
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
+		<key>Shuffle.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>71</integer>
+		</dict>
 		<key>TempoChange.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -393,6 +398,11 @@
 			<true/>
 		</dict>
 		<key>500F1ED113EDEDE200A25411</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>50100788174BC565006BDAED</key>
 		<dict>
 			<key>primary</key>
 			<true/>

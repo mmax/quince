@@ -28,6 +28,10 @@
 		500F1ED913EDEDE300A25411 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 500F1ED713EDEDE300A25411 /* InfoPlist.strings */; };
 		500F1EDE13EDEE9A00A25411 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		500F1EE313EDEEEC00A25411 /* PitchCurveContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 500F1EE213EDEEEC00A25411 /* PitchCurveContainer.m */; };
+		5010078A174BC565006BDAED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		50100790174BC565006BDAED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5010078E174BC565006BDAED /* InfoPlist.strings */; };
+		50100799174BC5CF006BDAED /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		5010079C174BC5F3006BDAED /* Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 50100796174BC58E006BDAED /* Shuffle.m */; };
 		5015AEB7133E70FB006C85AA /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		5015AF34133E721F006C85AA /* FoldByParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5015AF33133E721F006C85AA /* FoldByParameter.m */; };
 		5015AF64133E75AC006C85AA /* FBP_window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5015AF63133E75AC006C85AA /* FBP_window.xib */; };
@@ -351,6 +355,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 500F1ED113EDEDE200A25411;
 			remoteInfo = PitchCurveContainer;
+		};
+		5010079A174BC5D6006BDAED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
+		5010079D174BC614006BDAED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50100788174BC565006BDAED;
+			remoteInfo = Shuffle;
 		};
 		5015AEB3133E70EB006C85AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1349,6 +1367,12 @@
 		500F1EDA13EDEDE300A25411 /* PitchCurveContainer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PitchCurveContainer-Prefix.pch"; path = "bundles/ContainerViews/PitchCurveContainer/PitchCurveContainer-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		500F1EE113EDEEEC00A25411 /* PitchCurveContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PitchCurveContainer.h; path = bundles/ContainerViews/PitchCurveContainer/PitchCurveContainer.h; sourceTree = SOURCE_ROOT; };
 		500F1EE213EDEEEC00A25411 /* PitchCurveContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PitchCurveContainer.m; path = bundles/ContainerViews/PitchCurveContainer/PitchCurveContainer.m; sourceTree = SOURCE_ROOT; };
+		50100789174BC565006BDAED /* Shuffle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Shuffle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5010078D174BC565006BDAED /* Shuffle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Shuffle-Info.plist"; sourceTree = "<group>"; };
+		5010078F174BC565006BDAED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		50100791174BC566006BDAED /* Shuffle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shuffle-Prefix.pch"; sourceTree = "<group>"; };
+		50100795174BC58E006BDAED /* Shuffle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shuffle.h; sourceTree = "<group>"; };
+		50100796174BC58E006BDAED /* Shuffle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shuffle.m; sourceTree = "<group>"; };
 		5015AEAE133E70DA006C85AA /* FoldByParameter.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoldByParameter.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		5015AEAF133E70DA006C85AA /* FoldByParameter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FoldByParameter-Info.plist"; path = "bundles/Functions/FoldByParameter/FoldByParameter-Info.plist"; sourceTree = "<group>"; };
 		5015AF32133E721F006C85AA /* FoldByParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoldByParameter.h; path = bundles/Functions/FoldByParameter/FoldByParameter.h; sourceTree = "<group>"; };
@@ -1545,7 +1569,6 @@
 		508CB8C713C7BABD00F43AED /* PitchQuantization-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "PitchQuantization-Info.plist"; path = "bundles/Functions/PitchQuantization/PitchQuantization-Info.plist"; sourceTree = "<group>"; };
 		508CB8C913C7BABD00F43AED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		508CB8CB13C7BABD00F43AED /* PitchQuantization-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PitchQuantization-Prefix.pch"; path = "bundles/Functions/PitchQuantization/PitchQuantization-Prefix.pch"; sourceTree = "<group>"; };
-		50917899172726DC008C7F08 /* ImportSequence-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ImportSequence-Info.plist"; path = "../bundles/Functions/ImportSequence/ImportSequence-Info.plist"; sourceTree = "<group>"; };
 		5091789B172726F7008C7F08 /* ImportSequence-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ImportSequence-Prefix.pch"; path = "bundles/Functions/ImportSequence/ImportSequence-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		5091789D17272700008C7F08 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = bundles/Functions/ImportSequence/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		5093F27616F652F800C62B4F /* FunctionShortCutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FunctionShortCutController.h; path = QuinceCore/FunctionShortCutController.h; sourceTree = "<group>"; };
@@ -1785,6 +1808,15 @@
 			files = (
 				500F1EDE13EDEE9A00A25411 /* QuinceApi.framework in Frameworks */,
 				500F1ED313EDEDE300A25411 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50100786174BC565006BDAED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50100799174BC5CF006BDAED /* QuinceApi.framework in Frameworks */,
+				5010078A174BC565006BDAED /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2439,6 +2471,7 @@
 				500F1DB616ED4E5A006FCF76 /* ReverseLegato.bundle */,
 				50466F5617271ADC001477E5 /* ExportSequence.bundle */,
 				50C2843C172725DB00841C48 /* ImportSequence.bundle */,
+				50100789174BC565006BDAED /* Shuffle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2606,6 +2639,27 @@
 				500F1EDA13EDEDE300A25411 /* PitchCurveContainer-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5010078C174BC565006BDAED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5010078D174BC565006BDAED /* Shuffle-Info.plist */,
+				5010078E174BC565006BDAED /* InfoPlist.strings */,
+				50100791174BC566006BDAED /* Shuffle-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = Shuffle;
+			sourceTree = "<group>";
+		};
+		50100798174BC596006BDAED /* Shuffle */ = {
+			isa = PBXGroup;
+			children = (
+				5010078C174BC565006BDAED /* Supporting Files */,
+				50100795174BC58E006BDAED /* Shuffle.h */,
+				50100796174BC58E006BDAED /* Shuffle.m */,
+			);
+			name = Shuffle;
 			sourceTree = "<group>";
 		};
 		5015AF35133E722A006C85AA /* FoldByParameter */ = {
@@ -2799,6 +2853,7 @@
 				50D196231230692200C3FC2C /* Sets_Union */,
 				50D1966C1230692D00C3FC2C /* Sets_UnionNoDoubles */,
 				5074FE631238E20200BB60C6 /* SetParameter */,
+				50100798174BC596006BDAED /* Shuffle */,
 				50B8F5E01231003300E444BC /* TempoChange */,
 				506BF9A6117A665300ECBC4E /* TimeQuantization */,
 				5020C6A113C7A23600D58742 /* Transpose */,
@@ -3292,7 +3347,6 @@
 			children = (
 				5091789C17272700008C7F08 /* InfoPlist.strings */,
 				5091789B172726F7008C7F08 /* ImportSequence-Prefix.pch */,
-				50917899172726DC008C7F08 /* ImportSequence-Info.plist */,
 			);
 			name = "Supporting Files";
 			path = ImportSequence;
@@ -3728,6 +3782,24 @@
 			name = PitchCurveContainer;
 			productName = PitchCurveContainer;
 			productReference = 500F1ED213EDEDE200A25411 /* PitchCurveContainer.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		50100788174BC565006BDAED /* Shuffle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50100792174BC566006BDAED /* Build configuration list for PBXNativeTarget "Shuffle" */;
+			buildPhases = (
+				50100785174BC565006BDAED /* Sources */,
+				50100786174BC565006BDAED /* Frameworks */,
+				50100787174BC565006BDAED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5010079B174BC5D6006BDAED /* PBXTargetDependency */,
+			);
+			name = Shuffle;
+			productName = Shuffle;
+			productReference = 50100789174BC565006BDAED /* Shuffle.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		5015AEAD133E70DA006C85AA /* FoldByParameter */ = {
@@ -4903,6 +4975,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5010079E174BC614006BDAED /* PBXTargetDependency */,
 				509178A017272716008C7F08 /* PBXTargetDependency */,
 				50C2843417271D2A00841C48 /* PBXTargetDependency */,
 				500F1DC516ED5097006FCF76 /* PBXTargetDependency */,
@@ -5067,6 +5140,7 @@
 				50B8F5241230F60200E444BC /* Sets-SymDiff */,
 				50D195D01230626C00C3FC2C /* Sets-Union */,
 				50D196021230669B00C3FC2C /* Sets-UnionNoDoubles */,
+				50100788174BC565006BDAED /* Shuffle */,
 				50B8F5801230FF7700E444BC /* TempoChange */,
 				506BF8C2117A5F6300ECBC4E /* TimeGridContainer */,
 				50B171F813CB336400C9F105 /* TimeQuantization */,
@@ -5126,6 +5200,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				500F1ED913EDEDE300A25411 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50100787174BC565006BDAED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50100790174BC565006BDAED /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5770,6 +5852,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50100785174BC565006BDAED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5010079C174BC5F3006BDAED /* Shuffle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5015AEAB133E70DA006C85AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -6366,6 +6456,16 @@
 			isa = PBXTargetDependency;
 			target = 500F1ED113EDEDE200A25411 /* PitchCurveContainer */;
 			targetProxy = 500F1EDF13EDEEA300A25411 /* PBXContainerItemProxy */;
+		};
+		5010079B174BC5D6006BDAED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 5010079A174BC5D6006BDAED /* PBXContainerItemProxy */;
+		};
+		5010079E174BC614006BDAED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50100788174BC565006BDAED /* Shuffle */;
+			targetProxy = 5010079D174BC614006BDAED /* PBXContainerItemProxy */;
 		};
 		5015AEB4133E70EB006C85AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -7099,6 +7199,14 @@
 			path = bundles/ContainerViews/PitchCurveContainer;
 			sourceTree = SOURCE_ROOT;
 		};
+		5010078E174BC565006BDAED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5010078F174BC565006BDAED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		501AF9F4141561B7007AFEF3 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -7618,6 +7726,56 @@
 				INFOPLIST_FILE = "bundles/ContainerViews/PitchCurveContainer/PitchCurveContainer-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		50100793174BC566006BDAED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shuffle/Shuffle-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "Shuffle/Shuffle-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		50100794174BC566006BDAED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shuffle/Shuffle-Prefix.pch";
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "Shuffle/Shuffle-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -10874,6 +11032,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		50100792174BC566006BDAED /* Build configuration list for PBXNativeTarget "Shuffle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50100793174BC566006BDAED /* Debug */,
+				50100794174BC566006BDAED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		5015AEB2133E70DB006C85AA /* Build configuration list for PBXNativeTarget "FoldByParameter" */ = {
 			isa = XCConfigurationList;

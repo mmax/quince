@@ -1,7 +1,7 @@
 
 
 v 0.9.9
-
+- new function: Shuffle
 - new function: ImportSequence
 - new function: ExportSequence
 - optimized performance of functions operating on a selection of objects
