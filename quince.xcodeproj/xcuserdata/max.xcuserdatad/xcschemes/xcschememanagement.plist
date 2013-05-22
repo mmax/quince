@@ -274,6 +274,11 @@
 			<key>orderHint</key>
 			<integer>72</integer>
 		</dict>
+		<key>RemoveGlissUp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>74</integer>
+		</dict>
 		<key>RemoveParameter.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -593,6 +598,11 @@
 			<true/>
 		</dict>
 		<key>507C6F7111977EDB00914B4C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>50825BCD174D679D00985915</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -31,7 +31,6 @@
 		5010078A174BC565006BDAED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
 		50100799174BC5CF006BDAED /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		501007A4174BE12E006BDAED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
-		501007AA174BE12E006BDAED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 501007A8174BE12E006BDAED /* InfoPlist.strings */; };
 		501007AF174BE15D006BDAED /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		501007B5174BE1B3006BDAED /* RemoveGlissDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 501007B4174BE1B3006BDAED /* RemoveGlissDown.m */; };
 		501007BB174CBE2B006BDAED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
@@ -39,6 +38,7 @@
 		501007CC174CBF22006BDAED /* Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 501007CB174CBF22006BDAED /* Sort.m */; };
 		501007D2174CC274006BDAED /* SortWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501007D1174CC274006BDAED /* SortWindow.xib */; };
 		501007D5174CC32A006BDAED /* Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 501007D4174CC32A006BDAED /* Shuffle.m */; };
+		5012B19A174D6A0E00B2A132 /* RemoveGlissUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 5012B199174D6A0E00B2A132 /* RemoveGlissUp.m */; };
 		5015AEB7133E70FB006C85AA /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		5015AF34133E721F006C85AA /* FoldByParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5015AF33133E721F006C85AA /* FoldByParameter.m */; };
 		5015AF64133E75AC006C85AA /* FBP_window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5015AF63133E75AC006C85AA /* FBP_window.xib */; };
@@ -87,6 +87,7 @@
 		50466F6417271B2D001477E5 /* ExportSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 50466F6317271B2D001477E5 /* ExportSequence.m */; };
 		504A69D211A9F747007F60FF /* Normalize.m in Sources */ = {isa = PBXBuildFile; fileRef = 504A69CF11A9F6FB007F60FF /* Normalize.m */; };
 		504A6A3511AA00FB007F60FF /* ApplyEnvelopeWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504A6A3411AA00FB007F60FF /* ApplyEnvelopeWindow.xib */; };
+		504A7F59174D69840088AEE5 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		504B44FE119372790052DD20 /* Envelope.h in Headers */ = {isa = PBXBuildFile; fileRef = 504B44FC119372790052DD20 /* Envelope.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		504B44FF119372790052DD20 /* Envelope.m in Sources */ = {isa = PBXBuildFile; fileRef = 504B44FD119372790052DD20 /* Envelope.m */; };
 		5052AE041207372B00D871D0 /* ApplyEnvelope.m in Sources */ = {isa = PBXBuildFile; fileRef = 504A695D11A9CBB0007F60FF /* ApplyEnvelope.m */; };
@@ -164,6 +165,7 @@
 		507750C31268DD3E00AF7956 /* Gate.m in Sources */ = {isa = PBXBuildFile; fileRef = 507750C21268DD3E00AF7956 /* Gate.m */; };
 		5077512C1268DEE100AF7956 /* GateWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5077512B1268DEE100AF7956 /* GateWindow.xib */; };
 		507C6F8511977F6E00914B4C /* Legato.m in Sources */ = {isa = PBXBuildFile; fileRef = 507C6F8411977F6E00914B4C /* Legato.m */; };
+		50825BCF174D679D00985915 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
 		508B1856114A7977002FBC55 /* MainScrollerDocumentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 508B1855114A7977002FBC55 /* MainScrollerDocumentView.m */; };
 		508C43BD129559CB00875B93 /* OneVoice_Loudest.m in Sources */ = {isa = PBXBuildFile; fileRef = 508C43BC129559CB00875B93 /* OneVoice_Loudest.m */; };
 		508C4434129562BE00875B93 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
@@ -537,6 +539,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 504A69A911A9F692007F60FF;
 			remoteInfo = Normalize;
+		};
+		504A7F55174D69680088AEE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50825BCD174D679D00985915;
+			remoteInfo = RemoveGlissUp;
+		};
+		504A7F57174D69790088AEE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
 		};
 		5066E5BC122C522500929AA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1407,9 +1423,6 @@
 		5010078F174BC565006BDAED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50100791174BC566006BDAED /* Shuffle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shuffle-Prefix.pch"; sourceTree = "<group>"; };
 		501007A3174BE12E006BDAED /* RemoveGlissDown.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoveGlissDown.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		501007A7174BE12E006BDAED /* RemoveGlissDown-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RemoveGlissDown-Info.plist"; sourceTree = "<group>"; };
-		501007A9174BE12E006BDAED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		501007AB174BE12E006BDAED /* RemoveGlissDown-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RemoveGlissDown-Prefix.pch"; sourceTree = "<group>"; };
 		501007B3174BE1B3006BDAED /* RemoveGlissDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoveGlissDown.h; path = bundles/Functions/RemoveGlissDown/RemoveGlissDown.h; sourceTree = "<group>"; };
 		501007B4174BE1B3006BDAED /* RemoveGlissDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoveGlissDown.m; path = bundles/Functions/RemoveGlissDown/RemoveGlissDown.m; sourceTree = "<group>"; };
 		501007BA174CBE2B006BDAED /* Sort.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sort.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1421,6 +1434,8 @@
 		501007D1174CC274006BDAED /* SortWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SortWindow.xib; path = bundles/Functions/Sort/SortWindow.xib; sourceTree = "<group>"; };
 		501007D3174CC32A006BDAED /* Shuffle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shuffle.h; path = bundles/Functions/Shuffle/Shuffle.h; sourceTree = "<group>"; };
 		501007D4174CC32A006BDAED /* Shuffle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Shuffle.m; path = bundles/Functions/Shuffle/Shuffle.m; sourceTree = "<group>"; };
+		5012B198174D6A0E00B2A132 /* RemoveGlissUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoveGlissUp.h; path = bundles/Functions/RemoveGlissUp/RemoveGlissUp.h; sourceTree = SOURCE_ROOT; };
+		5012B199174D6A0E00B2A132 /* RemoveGlissUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoveGlissUp.m; path = bundles/Functions/RemoveGlissUp/RemoveGlissUp.m; sourceTree = SOURCE_ROOT; };
 		5015AEAE133E70DA006C85AA /* FoldByParameter.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoldByParameter.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		5015AEAF133E70DA006C85AA /* FoldByParameter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FoldByParameter-Info.plist"; path = "bundles/Functions/FoldByParameter/FoldByParameter-Info.plist"; sourceTree = "<group>"; };
 		5015AF32133E721F006C85AA /* FoldByParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoldByParameter.h; path = bundles/Functions/FoldByParameter/FoldByParameter.h; sourceTree = "<group>"; };
@@ -1503,6 +1518,12 @@
 		504A69CE11A9F6FB007F60FF /* Normalize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Normalize.h; path = bundles/Functions/Normalize/Normalize.h; sourceTree = "<group>"; };
 		504A69CF11A9F6FB007F60FF /* Normalize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Normalize.m; path = bundles/Functions/Normalize/Normalize.m; sourceTree = "<group>"; };
 		504A6A3411AA00FB007F60FF /* ApplyEnvelopeWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ApplyEnvelopeWindow.xib; path = bundles/Functions/ApplyEnvelope/ApplyEnvelopeWindow.xib; sourceTree = "<group>"; };
+		504A7F43174D68980088AEE5 /* RemoveGlissDown-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "RemoveGlissDown-Info.plist"; path = "bundles/Functions/RemoveGlissDown/RemoveGlissDown-Info.plist"; sourceTree = SOURCE_ROOT; };
+		504A7F46174D68B90088AEE5 /* RemoveGlissDown-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RemoveGlissDown-Prefix.pch"; path = "bundles/Functions/RemoveGlissDown/RemoveGlissDown-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		504A7F4D174D68E30088AEE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = bundles/Functions/RemoveGlissDown/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		504A7F4F174D69000088AEE5 /* RemoveGlissUp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "RemoveGlissUp-Info.plist"; path = "bundles/Functions/RemoveGlissUp/RemoveGlissUp-Info.plist"; sourceTree = SOURCE_ROOT; };
+		504A7F50174D69000088AEE5 /* RemoveGlissUp-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RemoveGlissUp-Prefix.pch"; path = "bundles/Functions/RemoveGlissUp/RemoveGlissUp-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		504A7F53174D69170088AEE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = bundles/Functions/RemoveGlissUp/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		504B44FC119372790052DD20 /* Envelope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Envelope.h; path = QuinceApi/Envelope.h; sourceTree = "<group>"; };
 		504B44FD119372790052DD20 /* Envelope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Envelope.m; path = QuinceApi/Envelope.m; sourceTree = "<group>"; };
 		504FDE9D13BCCCDA00470C77 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -1602,6 +1623,7 @@
 		507C6F7311977EDB00914B4C /* Legato-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Legato-Info.plist"; path = "bundles/Functions/Legato/Legato-Info.plist"; sourceTree = "<group>"; };
 		507C6F8311977F6E00914B4C /* Legato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Legato.h; path = bundles/Functions/Legato/Legato.h; sourceTree = "<group>"; };
 		507C6F8411977F6E00914B4C /* Legato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Legato.m; path = bundles/Functions/Legato/Legato.m; sourceTree = "<group>"; };
+		50825BCE174D679D00985915 /* RemoveGlissUp.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoveGlissUp.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		508B1854114A7977002FBC55 /* MainScrollerDocumentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScrollerDocumentView.h; path = QuinceCore/MainScrollerDocumentView.h; sourceTree = "<group>"; };
 		508B1855114A7977002FBC55 /* MainScrollerDocumentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainScrollerDocumentView.m; path = QuinceCore/MainScrollerDocumentView.m; sourceTree = "<group>"; };
 		508C43B21295596E00875B93 /* OneVoice-Loudest.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OneVoice-Loudest.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2156,6 +2178,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50825BCB174D679D00985915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504A7F59174D69840088AEE5 /* QuinceApi.framework in Frameworks */,
+				50825BCF174D679D00985915 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		508C43B01295596E00875B93 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2540,6 +2571,7 @@
 				50100789174BC565006BDAED /* Shuffle.bundle */,
 				501007A3174BE12E006BDAED /* RemoveGlissDown.bundle */,
 				501007BA174CBE2B006BDAED /* Sort.bundle */,
+				50825BCE174D679D00985915 /* RemoveGlissUp.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2733,9 +2765,9 @@
 		501007A6174BE12E006BDAED /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				501007A7174BE12E006BDAED /* RemoveGlissDown-Info.plist */,
-				501007A8174BE12E006BDAED /* InfoPlist.strings */,
-				501007AB174BE12E006BDAED /* RemoveGlissDown-Prefix.pch */,
+				504A7F43174D68980088AEE5 /* RemoveGlissDown-Info.plist */,
+				504A7F4C174D68E30088AEE5 /* InfoPlist.strings */,
+				504A7F46174D68B90088AEE5 /* RemoveGlissDown-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			path = RemoveGlissDown;
@@ -2955,6 +2987,7 @@
 				508C43BE129559D700875B93 /* OneVoice_Loudest */,
 				508CB8C513C7BABD00F43AED /* PitchQuantization */,
 				501007B2174BE171006BDAED /* RemoveGlissDown */,
+				50825BD0174D679D00985915 /* RemoveGlissUp */,
 				50E860BF11F858780014CFE9 /* RemoveParameter */,
 				501C285B11CE8E630097B5F0 /* ResampleEnvelope */,
 				500F1DB816ED4E5A006FCF76 /* ReverseLegato */,
@@ -3236,6 +3269,26 @@
 				507C6F8411977F6E00914B4C /* Legato.m */,
 			);
 			name = Legato;
+			sourceTree = "<group>";
+		};
+		50825BD0174D679D00985915 /* RemoveGlissUp */ = {
+			isa = PBXGroup;
+			children = (
+				5012B198174D6A0E00B2A132 /* RemoveGlissUp.h */,
+				5012B199174D6A0E00B2A132 /* RemoveGlissUp.m */,
+				50825BD1174D679D00985915 /* Supporting Files */,
+			);
+			path = RemoveGlissUp;
+			sourceTree = "<group>";
+		};
+		50825BD1174D679D00985915 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				504A7F52174D69170088AEE5 /* InfoPlist.strings */,
+				504A7F4F174D69000088AEE5 /* RemoveGlissUp-Info.plist */,
+				504A7F50174D69000088AEE5 /* RemoveGlissUp-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		508C43BE129559D700875B93 /* OneVoice_Loudest */ = {
@@ -4535,6 +4588,24 @@
 			productReference = 507C6F7211977EDB00914B4C /* Legato.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
+		50825BCD174D679D00985915 /* RemoveGlissUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50825BD9174D679D00985915 /* Build configuration list for PBXNativeTarget "RemoveGlissUp" */;
+			buildPhases = (
+				50825BCA174D679D00985915 /* Sources */,
+				50825BCB174D679D00985915 /* Frameworks */,
+				50825BCC174D679D00985915 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				504A7F58174D69790088AEE5 /* PBXTargetDependency */,
+			);
+			name = RemoveGlissUp;
+			productName = RemoveGlissUp;
+			productReference = 50825BCE174D679D00985915 /* RemoveGlissUp.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		508C43B11295596E00875B93 /* OneVoice-Loudest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 508C43B61295597000875B93 /* Build configuration list for PBXNativeTarget "OneVoice-Loudest" */;
@@ -5124,6 +5195,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				504A7F56174D69680088AEE5 /* PBXTargetDependency */,
 				501007D0174CBF63006BDAED /* PBXTargetDependency */,
 				501007CE174CBF5C006BDAED /* PBXTargetDependency */,
 				5010079E174BC614006BDAED /* PBXTargetDependency */,
@@ -5279,6 +5351,7 @@
 				8D15AC270486D014006FF6A4 /* quince */,
 				50A522B4117A52560072FB09 /* QuinceApi */,
 				50A522FA117A52F60072FB09 /* QuinceApiTestUnit */,
+				50825BCD174D679D00985915 /* RemoveGlissUp */,
 				501007A2174BE12E006BDAED /* RemoveGlissDown */,
 				50E860AF11F857A20014CFE9 /* RemoveParameter */,
 				501C284011CE8D920097B5F0 /* ResampleEnvelope */,
@@ -5367,7 +5440,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				501007AA174BE12E006BDAED /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5614,6 +5686,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		507C6F6E11977EDB00914B4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50825BCC174D679D00985915 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -6306,6 +6385,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50825BCA174D679D00985915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5012B19A174D6A0E00B2A132 /* RemoveGlissUp.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		508C43AF1295596E00875B93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -6765,6 +6852,16 @@
 			isa = PBXTargetDependency;
 			target = 504A69A911A9F692007F60FF /* Normalize */;
 			targetProxy = 504A69E211A9F78D007F60FF /* PBXContainerItemProxy */;
+		};
+		504A7F56174D69680088AEE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50825BCD174D679D00985915 /* RemoveGlissUp */;
+			targetProxy = 504A7F55174D69680088AEE5 /* PBXContainerItemProxy */;
+		};
+		504A7F58174D69790088AEE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 504A7F57174D69790088AEE5 /* PBXContainerItemProxy */;
 		};
 		5066E5BD122C522500929AA4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -7411,14 +7508,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		501007A8174BE12E006BDAED /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				501007A9174BE12E006BDAED /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		501007BF174CBE2B006BDAED /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -7479,6 +7568,22 @@
 			name = InfoPlist.strings;
 			path = bundles/Functions/FixGlissandoEndPoints;
 			sourceTree = SOURCE_ROOT;
+		};
+		504A7F4C174D68E30088AEE5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				504A7F4D174D68E30088AEE5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		504A7F52174D69170088AEE5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				504A7F53174D69170088AEE5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
 		};
 		508CB8C813C7BABD00F43AED /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -8010,7 +8115,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RemoveGlissDown/RemoveGlissDown-Prefix.pch";
+				GCC_PREFIX_HEADER = "bundles/Functions/RemoveGlissDown/RemoveGlissDown-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -8019,7 +8124,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				INFOPLIST_FILE = "RemoveGlissDown/RemoveGlissDown-Info.plist";
+				INFOPLIST_FILE = "bundles/Functions/RemoveGlissDown/RemoveGlissDown-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -8036,11 +8141,11 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RemoveGlissDown/RemoveGlissDown-Prefix.pch";
+				GCC_PREFIX_HEADER = "bundles/Functions/RemoveGlissDown/RemoveGlissDown-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				INFOPLIST_FILE = "RemoveGlissDown/RemoveGlissDown-Info.plist";
+				INFOPLIST_FILE = "bundles/Functions/RemoveGlissDown/RemoveGlissDown-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -9680,6 +9785,55 @@
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		50825BD7174D679D00985915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/RemoveGlissUp/RemoveGlissUp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_UNUSED_VARIABLE = "bundles/Functions/RemoveGlissUp/RemoveGlissUp-Prefix.pch";
+				INFOPLIST_FILE = "bundles/Functions/RemoveGlissUp/RemoveGlissUp-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		50825BD8174D679D00985915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/RemoveGlissUp/RemoveGlissUp-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_UNUSED_VARIABLE = "bundles/Functions/RemoveGlissUp/RemoveGlissUp-Prefix.pch";
+				INFOPLIST_FILE = "bundles/Functions/RemoveGlissUp/RemoveGlissUp-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -11358,6 +11512,7 @@
 				50100794174BC566006BDAED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		501007AC174BE12E006BDAED /* Build configuration list for PBXNativeTarget "RemoveGlissDown" */ = {
 			isa = XCConfigurationList;
@@ -11366,6 +11521,7 @@
 				501007AE174BE12E006BDAED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		501007C3174CBE2B006BDAED /* Build configuration list for PBXNativeTarget "Sort" */ = {
 			isa = XCConfigurationList;
@@ -11374,6 +11530,7 @@
 				501007C5174CBE2B006BDAED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5015AEB2133E70DB006C85AA /* Build configuration list for PBXNativeTarget "FoldByParameter" */ = {
 			isa = XCConfigurationList;
@@ -11659,6 +11816,15 @@
 			buildConfigurations = (
 				507C6F7411977EDC00914B4C /* Debug */,
 				507C6F7511977EDC00914B4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50825BD9174D679D00985915 /* Build configuration list for PBXNativeTarget "RemoveGlissUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50825BD7174D679D00985915 /* Debug */,
+				50825BD8174D679D00985915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
