@@ -30,8 +30,6 @@
 #import <QuinceApi/QuinceDocument.h>
 
 
-#import "Function.h"
-
 @interface RemoveGlissDown : Function
 
 @end
