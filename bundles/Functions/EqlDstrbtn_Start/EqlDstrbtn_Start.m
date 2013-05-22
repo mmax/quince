@@ -33,9 +33,11 @@
 	
 	QuinceObject * quince, * mother = [self objectForPurpose:@"source"];
 	[mother sortChronologically];
-	double max  = -1, increment, min = [[[[mother valueForKey:@"subObjects"]objectAtIndex:0]valueForKey:@"start"]doubleValue];
-	int i, count = [mother subObjectsCount];
-	for(quince in [mother valueForKey:@"subObjects"]){
+    NSArray * subs = [mother valueForKey:@"subObjects"];
+	double max  = -1, increment, min = [[[subs objectAtIndex:0]valueForKey:@"start"]doubleValue];
+	int i, count = [subs count];
+
+	for(quince in subs){
 		if([[quince valueForKey:@"start"]doubleValue]>max)
 			max = [[quince valueForKey:@"start"]doubleValue];
 	}
@@ -43,9 +45,11 @@
 	increment = (max-min) / (count-1);
 	
 	for(i=0;i<count;i++){
-		quince = [[mother valueForKey:@"subObjects"]objectAtIndex:i];
+		quince = [subs objectAtIndex:i];
 		[quince setValue:[NSNumber numberWithDouble:increment*i+min] forKey:@"start"];
 	}
+    
+    [mother update];
 	[self setOutputObjectToObjectWithPurpose:@"source"];
 	[self done];
 }
