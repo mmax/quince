@@ -29,9 +29,16 @@
 		500F1EDE13EDEE9A00A25411 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		500F1EE313EDEEEC00A25411 /* PitchCurveContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 500F1EE213EDEEEC00A25411 /* PitchCurveContainer.m */; };
 		5010078A174BC565006BDAED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
-		50100790174BC565006BDAED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5010078E174BC565006BDAED /* InfoPlist.strings */; };
 		50100799174BC5CF006BDAED /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
-		5010079C174BC5F3006BDAED /* Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 50100796174BC58E006BDAED /* Shuffle.m */; };
+		501007A4174BE12E006BDAED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		501007AA174BE12E006BDAED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 501007A8174BE12E006BDAED /* InfoPlist.strings */; };
+		501007AF174BE15D006BDAED /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		501007B5174BE1B3006BDAED /* RemoveGlissDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 501007B4174BE1B3006BDAED /* RemoveGlissDown.m */; };
+		501007BB174CBE2B006BDAED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		501007C8174CBECA006BDAED /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		501007CC174CBF22006BDAED /* Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 501007CB174CBF22006BDAED /* Sort.m */; };
+		501007D2174CC274006BDAED /* SortWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501007D1174CC274006BDAED /* SortWindow.xib */; };
+		501007D5174CC32A006BDAED /* Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 501007D4174CC32A006BDAED /* Shuffle.m */; };
 		5015AEB7133E70FB006C85AA /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		5015AF34133E721F006C85AA /* FoldByParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5015AF33133E721F006C85AA /* FoldByParameter.m */; };
 		5015AF64133E75AC006C85AA /* FBP_window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5015AF63133E75AC006C85AA /* FBP_window.xib */; };
@@ -369,6 +376,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 50100788174BC565006BDAED;
 			remoteInfo = Shuffle;
+		};
+		501007B0174BE163006BDAED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
+		501007C6174CBEC5006BDAED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
+		501007CD174CBF5C006BDAED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 501007B9174CBE2B006BDAED;
+			remoteInfo = Sort;
+		};
+		501007CF174CBF63006BDAED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 501007A2174BE12E006BDAED;
+			remoteInfo = RemoveGlissDown;
 		};
 		5015AEB3133E70EB006C85AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1371,8 +1406,21 @@
 		5010078D174BC565006BDAED /* Shuffle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Shuffle-Info.plist"; sourceTree = "<group>"; };
 		5010078F174BC565006BDAED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50100791174BC566006BDAED /* Shuffle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shuffle-Prefix.pch"; sourceTree = "<group>"; };
-		50100795174BC58E006BDAED /* Shuffle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shuffle.h; sourceTree = "<group>"; };
-		50100796174BC58E006BDAED /* Shuffle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shuffle.m; sourceTree = "<group>"; };
+		501007A3174BE12E006BDAED /* RemoveGlissDown.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoveGlissDown.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		501007A7174BE12E006BDAED /* RemoveGlissDown-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RemoveGlissDown-Info.plist"; sourceTree = "<group>"; };
+		501007A9174BE12E006BDAED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		501007AB174BE12E006BDAED /* RemoveGlissDown-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RemoveGlissDown-Prefix.pch"; sourceTree = "<group>"; };
+		501007B3174BE1B3006BDAED /* RemoveGlissDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoveGlissDown.h; path = bundles/Functions/RemoveGlissDown/RemoveGlissDown.h; sourceTree = "<group>"; };
+		501007B4174BE1B3006BDAED /* RemoveGlissDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoveGlissDown.m; path = bundles/Functions/RemoveGlissDown/RemoveGlissDown.m; sourceTree = "<group>"; };
+		501007BA174CBE2B006BDAED /* Sort.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sort.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		501007BE174CBE2B006BDAED /* Sort-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sort-Info.plist"; sourceTree = "<group>"; };
+		501007C0174CBE2B006BDAED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		501007C2174CBE2B006BDAED /* Sort-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sort-Prefix.pch"; sourceTree = "<group>"; };
+		501007CA174CBF22006BDAED /* Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sort.h; path = bundles/Functions/Sort/Sort.h; sourceTree = "<group>"; };
+		501007CB174CBF22006BDAED /* Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sort.m; path = bundles/Functions/Sort/Sort.m; sourceTree = "<group>"; };
+		501007D1174CC274006BDAED /* SortWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SortWindow.xib; path = bundles/Functions/Sort/SortWindow.xib; sourceTree = "<group>"; };
+		501007D3174CC32A006BDAED /* Shuffle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shuffle.h; path = bundles/Functions/Shuffle/Shuffle.h; sourceTree = "<group>"; };
+		501007D4174CC32A006BDAED /* Shuffle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Shuffle.m; path = bundles/Functions/Shuffle/Shuffle.m; sourceTree = "<group>"; };
 		5015AEAE133E70DA006C85AA /* FoldByParameter.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoldByParameter.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		5015AEAF133E70DA006C85AA /* FoldByParameter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FoldByParameter-Info.plist"; path = "bundles/Functions/FoldByParameter/FoldByParameter-Info.plist"; sourceTree = "<group>"; };
 		5015AF32133E721F006C85AA /* FoldByParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoldByParameter.h; path = bundles/Functions/FoldByParameter/FoldByParameter.h; sourceTree = "<group>"; };
@@ -1817,6 +1865,24 @@
 			files = (
 				50100799174BC5CF006BDAED /* QuinceApi.framework in Frameworks */,
 				5010078A174BC565006BDAED /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		501007A0174BE12E006BDAED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				501007AF174BE15D006BDAED /* QuinceApi.framework in Frameworks */,
+				501007A4174BE12E006BDAED /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		501007B7174CBE2B006BDAED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				501007C8174CBECA006BDAED /* QuinceApi.framework in Frameworks */,
+				501007BB174CBE2B006BDAED /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2472,6 +2538,8 @@
 				50466F5617271ADC001477E5 /* ExportSequence.bundle */,
 				50C2843C172725DB00841C48 /* ImportSequence.bundle */,
 				50100789174BC565006BDAED /* Shuffle.bundle */,
+				501007A3174BE12E006BDAED /* RemoveGlissDown.bundle */,
+				501007BA174CBE2B006BDAED /* Sort.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2655,11 +2723,54 @@
 		50100798174BC596006BDAED /* Shuffle */ = {
 			isa = PBXGroup;
 			children = (
+				501007D3174CC32A006BDAED /* Shuffle.h */,
+				501007D4174CC32A006BDAED /* Shuffle.m */,
 				5010078C174BC565006BDAED /* Supporting Files */,
-				50100795174BC58E006BDAED /* Shuffle.h */,
-				50100796174BC58E006BDAED /* Shuffle.m */,
 			);
 			name = Shuffle;
+			sourceTree = "<group>";
+		};
+		501007A6174BE12E006BDAED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				501007A7174BE12E006BDAED /* RemoveGlissDown-Info.plist */,
+				501007A8174BE12E006BDAED /* InfoPlist.strings */,
+				501007AB174BE12E006BDAED /* RemoveGlissDown-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = RemoveGlissDown;
+			sourceTree = "<group>";
+		};
+		501007B2174BE171006BDAED /* RemoveGlissDown */ = {
+			isa = PBXGroup;
+			children = (
+				501007A6174BE12E006BDAED /* Supporting Files */,
+				501007B3174BE1B3006BDAED /* RemoveGlissDown.h */,
+				501007B4174BE1B3006BDAED /* RemoveGlissDown.m */,
+			);
+			name = RemoveGlissDown;
+			sourceTree = "<group>";
+		};
+		501007BD174CBE2B006BDAED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				501007BE174CBE2B006BDAED /* Sort-Info.plist */,
+				501007BF174CBE2B006BDAED /* InfoPlist.strings */,
+				501007C2174CBE2B006BDAED /* Sort-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		501007C9174CBED9006BDAED /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				501007BD174CBE2B006BDAED /* Supporting Files */,
+				501007CA174CBF22006BDAED /* Sort.h */,
+				501007CB174CBF22006BDAED /* Sort.m */,
+				501007D1174CC274006BDAED /* SortWindow.xib */,
+			);
+			name = Sort;
 			sourceTree = "<group>";
 		};
 		5015AF35133E722A006C85AA /* FoldByParameter */ = {
@@ -2843,6 +2954,7 @@
 				504A69D111A9F707007F60FF /* Normalize */,
 				508C43BE129559D700875B93 /* OneVoice_Loudest */,
 				508CB8C513C7BABD00F43AED /* PitchQuantization */,
+				501007B2174BE171006BDAED /* RemoveGlissDown */,
 				50E860BF11F858780014CFE9 /* RemoveParameter */,
 				501C285B11CE8E630097B5F0 /* ResampleEnvelope */,
 				500F1DB816ED4E5A006FCF76 /* ReverseLegato */,
@@ -2854,6 +2966,7 @@
 				50D1966C1230692D00C3FC2C /* Sets_UnionNoDoubles */,
 				5074FE631238E20200BB60C6 /* SetParameter */,
 				50100798174BC596006BDAED /* Shuffle */,
+				501007C9174CBED9006BDAED /* Sort */,
 				50B8F5E01231003300E444BC /* TempoChange */,
 				506BF9A6117A665300ECBC4E /* TimeQuantization */,
 				5020C6A113C7A23600D58742 /* Transpose */,
@@ -3800,6 +3913,42 @@
 			name = Shuffle;
 			productName = Shuffle;
 			productReference = 50100789174BC565006BDAED /* Shuffle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		501007A2174BE12E006BDAED /* RemoveGlissDown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 501007AC174BE12E006BDAED /* Build configuration list for PBXNativeTarget "RemoveGlissDown" */;
+			buildPhases = (
+				5010079F174BE12E006BDAED /* Sources */,
+				501007A0174BE12E006BDAED /* Frameworks */,
+				501007A1174BE12E006BDAED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				501007B1174BE163006BDAED /* PBXTargetDependency */,
+			);
+			name = RemoveGlissDown;
+			productName = RemoveGlissDown;
+			productReference = 501007A3174BE12E006BDAED /* RemoveGlissDown.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		501007B9174CBE2B006BDAED /* Sort */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 501007C3174CBE2B006BDAED /* Build configuration list for PBXNativeTarget "Sort" */;
+			buildPhases = (
+				501007B6174CBE2B006BDAED /* Sources */,
+				501007B7174CBE2B006BDAED /* Frameworks */,
+				501007B8174CBE2B006BDAED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				501007C7174CBEC5006BDAED /* PBXTargetDependency */,
+			);
+			name = Sort;
+			productName = Sort;
+			productReference = 501007BA174CBE2B006BDAED /* Sort.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		5015AEAD133E70DA006C85AA /* FoldByParameter */ = {
@@ -4975,6 +5124,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				501007D0174CBF63006BDAED /* PBXTargetDependency */,
+				501007CE174CBF5C006BDAED /* PBXTargetDependency */,
 				5010079E174BC614006BDAED /* PBXTargetDependency */,
 				509178A017272716008C7F08 /* PBXTargetDependency */,
 				50C2843417271D2A00841C48 /* PBXTargetDependency */,
@@ -5128,6 +5279,7 @@
 				8D15AC270486D014006FF6A4 /* quince */,
 				50A522B4117A52560072FB09 /* QuinceApi */,
 				50A522FA117A52F60072FB09 /* QuinceApiTestUnit */,
+				501007A2174BE12E006BDAED /* RemoveGlissDown */,
 				50E860AF11F857A20014CFE9 /* RemoveParameter */,
 				501C284011CE8D920097B5F0 /* ResampleEnvelope */,
 				500F1DB516ED4E5A006FCF76 /* ReverseLegato */,
@@ -5141,6 +5293,7 @@
 				50D195D01230626C00C3FC2C /* Sets-Union */,
 				50D196021230669B00C3FC2C /* Sets-UnionNoDoubles */,
 				50100788174BC565006BDAED /* Shuffle */,
+				501007B9174CBE2B006BDAED /* Sort */,
 				50B8F5801230FF7700E444BC /* TempoChange */,
 				506BF8C2117A5F6300ECBC4E /* TimeGridContainer */,
 				50B171F813CB336400C9F105 /* TimeQuantization */,
@@ -5207,7 +5360,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50100790174BC565006BDAED /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		501007A1174BE12E006BDAED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				501007AA174BE12E006BDAED /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		501007B8174CBE2B006BDAED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				501007D2174CC274006BDAED /* SortWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5856,7 +6024,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5010079C174BC5F3006BDAED /* Shuffle.m in Sources */,
+				501007D5174CC32A006BDAED /* Shuffle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5010079F174BE12E006BDAED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				501007B5174BE1B3006BDAED /* RemoveGlissDown.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		501007B6174CBE2B006BDAED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				501007CC174CBF22006BDAED /* Sort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6466,6 +6650,26 @@
 			isa = PBXTargetDependency;
 			target = 50100788174BC565006BDAED /* Shuffle */;
 			targetProxy = 5010079D174BC614006BDAED /* PBXContainerItemProxy */;
+		};
+		501007B1174BE163006BDAED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 501007B0174BE163006BDAED /* PBXContainerItemProxy */;
+		};
+		501007C7174CBEC5006BDAED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 501007C6174CBEC5006BDAED /* PBXContainerItemProxy */;
+		};
+		501007CE174CBF5C006BDAED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 501007B9174CBE2B006BDAED /* Sort */;
+			targetProxy = 501007CD174CBF5C006BDAED /* PBXContainerItemProxy */;
+		};
+		501007D0174CBF63006BDAED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 501007A2174BE12E006BDAED /* RemoveGlissDown */;
+			targetProxy = 501007CF174CBF63006BDAED /* PBXContainerItemProxy */;
 		};
 		5015AEB4133E70EB006C85AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -7207,6 +7411,22 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		501007A8174BE12E006BDAED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				501007A9174BE12E006BDAED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		501007BF174CBE2B006BDAED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				501007C0174CBE2B006BDAED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		501AF9F4141561B7007AFEF3 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -7641,7 +7861,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -7654,7 +7874,7 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				INFOPLIST_FILE = "bundles/Functions/ReverseLegato/ReverseLegato-Info.plist";
@@ -7670,7 +7890,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -7678,7 +7898,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bundles/Functions/ReverseLegato/ReverseLegato-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				INFOPLIST_FILE = "bundles/Functions/ReverseLegato/ReverseLegato-Info.plist";
@@ -7742,7 +7962,7 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Shuffle/Shuffle-Prefix.pch";
+				GCC_PREFIX_HEADER = "bundles/Functions/Shuffle/Shuffle-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -7751,7 +7971,7 @@
 				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				INFOPLIST_FILE = "Shuffle/Shuffle-Info.plist";
+				INFOPLIST_FILE = "bundles/Functions/Shuffle/Shuffle-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -7769,14 +7989,112 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Shuffle/Shuffle-Prefix.pch";
+				GCC_PREFIX_HEADER = "bundles/Functions/Shuffle/Shuffle-Prefix.pch";
 				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				INFOPLIST_FILE = "Shuffle/Shuffle-Info.plist";
+				INFOPLIST_FILE = "bundles/Functions/Shuffle/Shuffle-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		501007AD174BE12E006BDAED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RemoveGlissDown/RemoveGlissDown-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "RemoveGlissDown/RemoveGlissDown-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		501007AE174BE12E006BDAED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RemoveGlissDown/RemoveGlissDown-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "RemoveGlissDown/RemoveGlissDown-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		501007C4174CBE2B006BDAED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/Sort/Sort-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "bundles/Functions/Sort/Sort-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "bundles/Functions/Sort/Sort-Info.plist";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		501007C5174CBE2B006BDAED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/Sort/Sort-Prefix.pch";
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "bundles/Functions/Sort/Sort-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "bundles/Functions/Sort/Sort-Info.plist";
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
@@ -11038,6 +11356,22 @@
 			buildConfigurations = (
 				50100793174BC566006BDAED /* Debug */,
 				50100794174BC566006BDAED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		501007AC174BE12E006BDAED /* Build configuration list for PBXNativeTarget "RemoveGlissDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				501007AD174BE12E006BDAED /* Debug */,
+				501007AE174BE12E006BDAED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		501007C3174CBE2B006BDAED /* Build configuration list for PBXNativeTarget "Sort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				501007C4174CBE2B006BDAED /* Debug */,
+				501007C5174CBE2B006BDAED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

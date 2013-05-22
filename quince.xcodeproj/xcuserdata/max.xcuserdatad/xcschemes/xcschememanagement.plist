@@ -269,6 +269,11 @@
 			<key>orderHint</key>
 			<integer>10</integer>
 		</dict>
+		<key>RemoveGlissDown.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>72</integer>
+		</dict>
 		<key>RemoveParameter.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -333,6 +338,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>71</integer>
+		</dict>
+		<key>Sort.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>73</integer>
 		</dict>
 		<key>TempoChange.xcscheme</key>
 		<dict>
@@ -403,6 +413,16 @@
 			<true/>
 		</dict>
 		<key>50100788174BC565006BDAED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>501007A2174BE12E006BDAED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>501007B9174CBE2B006BDAED</key>
 		<dict>
 			<key>primary</key>
 			<true/>
