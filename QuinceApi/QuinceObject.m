@@ -326,6 +326,10 @@
 		return [NSNumber numberWithBool: [self isFolded]];
 	if([key isEqualToString:@"object"])
 	   return self;
+    
+    if(([key isEqualToString:@"frequency"] || [key isEqualToString:@"frequencyB"]) && [[dictionary valueForKey:key]isKindOfClass:[NSString class]])
+        return [NSNumber numberWithDouble:[[dictionary valueForKey:key]doubleValue]];
+    
 	return [dictionary valueForKey:key];
 }
 
