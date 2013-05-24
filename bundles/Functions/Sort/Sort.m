@@ -62,6 +62,13 @@
 	[times sortUsingDescriptors:descriptors];
 
     BOOL asc = [[directionMenu titleOfSelectedItem]isEqualToString:@"Ascending"];	
+    //NSLog(@"Sorting by: %@", [parameterMenu titleOfSelectedItem]);
+    
+//    for(QuinceObject * q in subs){
+//        NSLog(@"frequency type: %@", [[q valueForKey:@"frequency"]className]);
+//        
+//    }
+    
     [result sortByKey:[parameterMenu titleOfSelectedItem] ascending:asc];
 
     
@@ -69,8 +76,7 @@
         [[[result valueForKey:@"subObjects"]objectAtIndex:i]setValue:[[[times objectAtIndex:i]valueForKey:@"start"]copy] forKey:@"start"];
 
 
-    [[result controller] setValue:[NSString stringWithFormat:@"%@_Sort%@", [mother valueForKey:@"name"], [parameterMenu titleOfSelectedItem]] forKeyPath:@"selection.name"];  
-
+    [[result controller] setValue:[NSString stringWithFormat:@"%@_Sort-%@", [mother valueForKey:@"name"], [parameterMenu titleOfSelectedItem]] forKeyPath:@"selection.name"];  
     [[result controller] update];
     [window orderOut:nil];
 	[self done];
