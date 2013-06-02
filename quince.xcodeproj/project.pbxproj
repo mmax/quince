@@ -210,6 +210,9 @@
 		50B1720713CB342A00C9F105 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		50B1720913CB344F00C9F105 /* TimeQuantization.m in Sources */ = {isa = PBXBuildFile; fileRef = 506BF9A4117A664E00ECBC4E /* TimeQuantization.m */; };
 		50B5BB5113870A300031A3DF /* CsoundLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B5BB5013870A300031A3DF /* CsoundLib.framework */; };
+		50B6B946175BB6B4002A68B2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		50B6B954175BB7F8002A68B2 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		50B6B95C175BB8A2002A68B2 /* ComputePitchSlope.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B6B95B175BB8A2002A68B2 /* ComputePitchSlope.m */; };
 		50B86D3F1190388C00D235AA /* EqlDstrbtn_Start.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B86D3E1190388C00D235AA /* EqlDstrbtn_Start.m */; };
 		50B8F4991230F2F300E444BC /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		50B8F5021230F34200E444BC /* Sets_Difference.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B8F49D1230F32300E444BC /* Sets_Difference.m */; };
@@ -967,6 +970,20 @@
 			remoteGlobalIDString = 50B171F813CB336400C9F105;
 			remoteInfo = TimeQuantization;
 		};
+		50B6B952175BB7F2002A68B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
+		50B6B955175BB801002A68B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50B6B944175BB6B4002A68B2;
+			remoteInfo = ComputePitchSlope;
+		};
 		50B86D391190386700D235AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
@@ -1691,6 +1708,11 @@
 		50B171FF13CB336400C9F105 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50B1720113CB336400C9F105 /* TimeQuantization-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TimeQuantization-Prefix.pch"; path = "bundles/Functions/TimeQuantization/TimeQuantization-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		50B5BB5013870A300031A3DF /* CsoundLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CsoundLib.framework; path = Library/Frameworks/CsoundLib.framework; sourceTree = SDKROOT; };
+		50B6B945175BB6B4002A68B2 /* ComputePitchSlope.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComputePitchSlope.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B6B957175BB872002A68B2 /* ComputePitchSlope-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ComputePitchSlope-Info.plist"; path = "bundles/Functions/ComputePitchSlope/ComputePitchSlope-Info.plist"; sourceTree = SOURCE_ROOT; };
+		50B6B959175BB885002A68B2 /* ComputePitchSlope-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ComputePitchSlope-Prefix.pch"; path = "bundles/Functions/ComputePitchSlope/ComputePitchSlope-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		50B6B95A175BB8A2002A68B2 /* ComputePitchSlope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComputePitchSlope.h; path = bundles/Functions/ComputePitchSlope/ComputePitchSlope.h; sourceTree = SOURCE_ROOT; };
+		50B6B95B175BB8A2002A68B2 /* ComputePitchSlope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComputePitchSlope.m; path = bundles/Functions/ComputePitchSlope/ComputePitchSlope.m; sourceTree = SOURCE_ROOT; };
 		50B86D321190383D00D235AA /* EqlDstrbtn-Start.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EqlDstrbtn-Start.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B86D331190383D00D235AA /* EqlDstrbtn_Start-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EqlDstrbtn_Start-Info.plist"; path = "bundles/Functions/EqlDstrbtn_Start/EqlDstrbtn_Start-Info.plist"; sourceTree = "<group>"; };
 		50B86D3D1190388C00D235AA /* EqlDstrbtn_Start.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EqlDstrbtn_Start.h; path = bundles/Functions/EqlDstrbtn_Start/EqlDstrbtn_Start.h; sourceTree = "<group>"; };
@@ -2272,6 +2294,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50B6B942175BB6B4002A68B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B6B954175BB7F8002A68B2 /* QuinceApi.framework in Frameworks */,
+				50B6B946175BB6B4002A68B2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50B86D301190383D00D235AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2572,6 +2603,7 @@
 				501007A3174BE12E006BDAED /* RemoveGlissDown.bundle */,
 				501007BA174CBE2B006BDAED /* Sort.bundle */,
 				50825BCE174D679D00985915 /* RemoveGlissUp.bundle */,
+				50B6B945175BB6B4002A68B2 /* ComputePitchSlope.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2961,6 +2993,7 @@
 				5035B90813563F89003E8570 /* ApplyValuesFromSeq */,
 				506BF9C4117A670A00ECBC4E /* Audio2Envelope */,
 				50D3937C11C838330080B427 /* ColorByKey */,
+				50B6B947175BB6B4002A68B2 /* ComputePitchSlope */,
 				506BF94F117A642F00ECBC4E /* CreateGridSequence */,
 				500CACF4122D4B3D00B980B8 /* EnvToSeq */,
 				50AEBF8011CEC8A90055CA29 /* EnvelopeGate */,
@@ -3427,6 +3460,25 @@
 			);
 			name = "Supporting Files";
 			path = TimeQuantization;
+			sourceTree = "<group>";
+		};
+		50B6B947175BB6B4002A68B2 /* ComputePitchSlope */ = {
+			isa = PBXGroup;
+			children = (
+				50B6B95A175BB8A2002A68B2 /* ComputePitchSlope.h */,
+				50B6B95B175BB8A2002A68B2 /* ComputePitchSlope.m */,
+				50B6B948175BB6B4002A68B2 /* Supporting Files */,
+			);
+			path = ComputePitchSlope;
+			sourceTree = "<group>";
+		};
+		50B6B948175BB6B4002A68B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50B6B957175BB872002A68B2 /* ComputePitchSlope-Info.plist */,
+				50B6B959175BB885002A68B2 /* ComputePitchSlope-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		50B86D581190390800D235AA /* EqlDstrbtn_Start */ = {
@@ -4788,6 +4840,24 @@
 			productReference = 50B171F913CB336400C9F105 /* TimeQuantization.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
+		50B6B944175BB6B4002A68B2 /* ComputePitchSlope */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50B6B950175BB6B4002A68B2 /* Build configuration list for PBXNativeTarget "ComputePitchSlope" */;
+			buildPhases = (
+				50B6B941175BB6B4002A68B2 /* Sources */,
+				50B6B942175BB6B4002A68B2 /* Frameworks */,
+				50B6B943175BB6B4002A68B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50B6B953175BB7F2002A68B2 /* PBXTargetDependency */,
+			);
+			name = ComputePitchSlope;
+			productName = ComputePitchSlope;
+			productReference = 50B6B945175BB6B4002A68B2 /* ComputePitchSlope.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		50B86D311190383D00D235AA /* EqlDstrbtn-Start */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50B86D361190384000D235AA /* Build configuration list for PBXNativeTarget "EqlDstrbtn-Start" */;
@@ -5195,6 +5265,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				50B6B956175BB801002A68B2 /* PBXTargetDependency */,
 				504A7F56174D69680088AEE5 /* PBXTargetDependency */,
 				501007D0174CBF63006BDAED /* PBXTargetDependency */,
 				501007CE174CBF5C006BDAED /* PBXTargetDependency */,
@@ -5311,6 +5382,7 @@
 				506BF853117A5B1A00ECBC4E /* AutomationContainerTestUnit */,
 				50DE7B4913CC675000FD4F35 /* CentContainer */,
 				50D3937011C837BA0080B427 /* ColorByKey */,
+				50B6B944175BB6B4002A68B2 /* ComputePitchSlope */,
 				506BF92D117A629800ECBC4E /* CreateGridSequence */,
 				50325E9F1226947500E22031 /* CsoundPlayer */,
 				50717008117A7E0F00357470 /* EnvelopeChild */,
@@ -5771,6 +5843,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				50B1720013CB336400C9F105 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50B6B943175BB6B4002A68B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6486,6 +6565,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50B6B941175BB6B4002A68B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B6B95C175BB8A2002A68B2 /* ComputePitchSlope.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50B86D2F1190383D00D235AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -7157,6 +7244,16 @@
 			isa = PBXTargetDependency;
 			target = 50B171F813CB336400C9F105 /* TimeQuantization */;
 			targetProxy = 50B1720A13CB345B00C9F105 /* PBXContainerItemProxy */;
+		};
+		50B6B953175BB7F2002A68B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 50B6B952175BB7F2002A68B2 /* PBXContainerItemProxy */;
+		};
+		50B6B956175BB801002A68B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50B6B944175BB6B4002A68B2 /* ComputePitchSlope */;
+			targetProxy = 50B6B955175BB801002A68B2 /* PBXContainerItemProxy */;
 		};
 		50B86D3A1190386700D235AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -10335,6 +10432,53 @@
 			};
 			name = Release;
 		};
+		50B6B94E175BB6B4002A68B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/ComputePitchSlope/ComputePitchSlope-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "bundles/Functions/ComputePitchSlope/ComputePitchSlope-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		50B6B94F175BB6B4002A68B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/ComputePitchSlope/ComputePitchSlope-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "bundles/Functions/ComputePitchSlope/ComputePitchSlope-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		50B86D341190383F00D235AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -11918,6 +12062,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		50B6B950175BB6B4002A68B2 /* Build configuration list for PBXNativeTarget "ComputePitchSlope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50B6B94E175BB6B4002A68B2 /* Debug */,
+				50B6B94F175BB6B4002A68B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		50B86D361190384000D235AA /* Build configuration list for PBXNativeTarget "EqlDstrbtn-Start" */ = {
 			isa = XCConfigurationList;
