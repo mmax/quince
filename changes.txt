@@ -2,6 +2,7 @@
 
 v 0.9.9
 
+- new function: ComputePitchSlope
 - new function: Sort
 - new function: RemoveGlissDown
 - new function: RemoveGlissUp
