@@ -776,7 +776,8 @@ return [NSString stringWithFormat:@"\n\\once \\override TupletNumber #'transpare
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 -(NSString *)getPitchStringForEvent:(QuinceObject *) event {
-    return [self getPitchStringForEvent:event glissandoStart:YES];
+   // NSLog(@"%@", [self getPitchStringForEvent:event glissandoStart:YES]);
+        return [self getPitchStringForEvent:event glissandoStart:YES];
 }
 
 -(NSString *)getPitchStringForEvent:(QuinceObject *) event glissandoStart:(BOOL)b {
@@ -789,7 +790,7 @@ return [NSString stringWithFormat:@"\n\\once \\override TupletNumber #'transpare
     
     int midi, cent, octave, pitch, dir = [[event valueForKey:@"glissandoDirection"]intValue];
     
-    if((dir>0 && b) || (dir==0 && !b)){
+    if((dir>0 && b) || (dir==0)){
        midi = [[event valueForKey:@"pitch"]intValue];
        cent = [[event valueForKey:@"cent"]intValue];
         
@@ -799,12 +800,12 @@ return [NSString stringWithFormat:@"\n\\once \\override TupletNumber #'transpare
         midi = [event fToM:[[event valueForKey:@"frequencyB"]doubleValue]];
         cent = [event fToC:[[event valueForKey:@"frequencyB"]doubleValue]];
     }
-    
 
     
 	octave = midi / 12;
 	pitch = midi % 12;
 	
+    
 	if (!pitches)
 		return [NSString stringWithFormat:@"b'"];
 	
