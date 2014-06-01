@@ -91,6 +91,8 @@
 		504B44FE119372790052DD20 /* Envelope.h in Headers */ = {isa = PBXBuildFile; fileRef = 504B44FC119372790052DD20 /* Envelope.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		504B44FF119372790052DD20 /* Envelope.m in Sources */ = {isa = PBXBuildFile; fileRef = 504B44FD119372790052DD20 /* Envelope.m */; };
 		5052AE041207372B00D871D0 /* ApplyEnvelope.m in Sources */ = {isa = PBXBuildFile; fileRef = 504A695D11A9CBB0007F60FF /* ApplyEnvelope.m */; };
+		505AAD8418A9074E00701D5D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		505AAD9118A907E100701D5D /* CopyValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 505AAD9018A907E100701D5D /* CopyValues.m */; };
 		505B49711207745C0050CFB7 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B49701207745C0050CFB7 /* QuinceApi.framework */; };
 		505B49721207745C0050CFB7 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B49701207745C0050CFB7 /* QuinceApi.framework */; };
 		505B49731207745C0050CFB7 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B49701207745C0050CFB7 /* QuinceApi.framework */; };
@@ -209,6 +211,7 @@
 		50B1720013CB336400C9F105 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50B171FE13CB336400C9F105 /* InfoPlist.strings */; };
 		50B1720713CB342A00C9F105 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		50B1720913CB344F00C9F105 /* TimeQuantization.m in Sources */ = {isa = PBXBuildFile; fileRef = 506BF9A4117A664E00ECBC4E /* TimeQuantization.m */; };
+		50B571DA193505F20007BC98 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		50B5BB5113870A300031A3DF /* CsoundLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B5BB5013870A300031A3DF /* CsoundLib.framework */; };
 		50B6B946175BB6B4002A68B2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
 		50B6B954175BB7F8002A68B2 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
@@ -232,6 +235,9 @@
 		50C284371727216F00841C48 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		50C2843D172725DB00841C48 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
 		50C2844C1727261800841C48 /* ImportSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C2844B1727261700841C48 /* ImportSequence.m */; };
+		50C761A018A909AA005CBA0F /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		50C761A318A909E3005CBA0F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50C761A118A909E3005CBA0F /* InfoPlist.strings */; };
+		50C761A518A90C7F005CBA0F /* CopyValues.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C761A418A90C7F005CBA0F /* CopyValues.xib */; };
 		50D07A04122D98280061F0E5 /* CsoundPlayerWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D07A03122D98280061F0E5 /* CsoundPlayerWindow.xib */; };
 		50D194DB1230456D00C3FC2C /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		50D194DE123045BD00C3FC2C /* MapDynamicExpr.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D194DD123045BD00C3FC2C /* MapDynamicExpr.m */; };
@@ -275,6 +281,8 @@
 		50EAF2CA1393BAD200258AD1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
 		50EAF2E41393BC4400258AD1 /* FrequencyStandardContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EAF2E31393BC4400258AD1 /* FrequencyStandardContainer.m */; };
 		50EAF2E71393BDCD00258AD1 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		50EB905D19350439007D0DBD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		50EB906A19350503007D0DBD /* Rectify.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EB906919350503007D0DBD /* Rectify.m */; };
 		50F420001198B2DD009F695A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506BF9E5117A677800ECBC4E /* AudioToolbox.framework */; };
 		50F4206E1198BF96009F695A /* AudioFilePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F4206D1198BF96009F695A /* AudioFilePlayer.m */; };
 		50F471D213D0D815005CB978 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
@@ -970,6 +978,20 @@
 			remoteGlobalIDString = 50B171F813CB336400C9F105;
 			remoteInfo = TimeQuantization;
 		};
+		50B571DB193505FA0007BC98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
+		50B571DD193506540007BC98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50EB905B19350438007D0DBD;
+			remoteInfo = Rectify;
+		};
 		50B6B952175BB7F2002A68B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
@@ -1202,6 +1224,20 @@
 			remoteInfo = QuinceApi;
 		};
 		50C28448172725FA00841C48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
+		50C7619818A90839005CBA0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 505AAD8218A9074D00701D5D;
+			remoteInfo = CopyValues;
+		};
+		50C7619E18A9099F005CBA0F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
 			proxyType = 1;
@@ -1544,6 +1580,9 @@
 		504B44FC119372790052DD20 /* Envelope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Envelope.h; path = QuinceApi/Envelope.h; sourceTree = "<group>"; };
 		504B44FD119372790052DD20 /* Envelope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Envelope.m; path = QuinceApi/Envelope.m; sourceTree = "<group>"; };
 		504FDE9D13BCCCDA00470C77 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		505AAD8318A9074E00701D5D /* CopyValues.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CopyValues.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		505AAD8F18A907E100701D5D /* CopyValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CopyValues.h; path = bundles/Functions/CopyValues/CopyValues.h; sourceTree = "<group>"; };
+		505AAD9018A907E100701D5D /* CopyValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CopyValues.m; path = bundles/Functions/CopyValues/CopyValues.m; sourceTree = "<group>"; };
 		505B49701207745C0050CFB7 /* QuinceApi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuinceApi.framework; path = /Library/Frameworks/QuinceApi.framework; sourceTree = "<absolute>"; };
 		505C6C74119F1FFD0086B612 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = /System/Library/Frameworks/AudioUnit.framework; sourceTree = "<absolute>"; };
 		506009531131BC7A00E75717 /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainController.h; path = QuinceCore/MainController.h; sourceTree = "<group>"; };
@@ -1750,6 +1789,10 @@
 		50C2844B1727261700841C48 /* ImportSequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImportSequence.m; path = bundles/Functions/ImportSequence/ImportSequence.m; sourceTree = "<group>"; };
 		50C5C5391324F92500C145D0 /* ColorByKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorByKey.h; path = bundles/Functions/ColorByKey/ColorByKey.h; sourceTree = "<group>"; };
 		50C5C5761324FB6D00C145D0 /* CSoundPlayer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "CSoundPlayer-Info.plist"; path = "bundles/Players/CsoundPlayer/CSoundPlayer-Info.plist"; sourceTree = "<group>"; };
+		50C7619A18A908B0005CBA0F /* CopyValues-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "CopyValues-Info.plist"; path = "bundles/Functions/CopyValues/CopyValues-Info.plist"; sourceTree = SOURCE_ROOT; };
+		50C7619C18A908CA005CBA0F /* CopyValues-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CopyValues-Prefix.pch"; path = "bundles/Functions/CopyValues/CopyValues-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		50C761A218A909E3005CBA0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = bundles/Functions/CopyValues/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		50C761A418A90C7F005CBA0F /* CopyValues.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CopyValues.xib; path = bundles/Functions/CopyValues/CopyValues.xib; sourceTree = "<group>"; };
 		50D07A03122D98280061F0E5 /* CsoundPlayerWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CsoundPlayerWindow.xib; path = bundles/Players/CsoundPlayer/CsoundPlayerWindow.xib; sourceTree = "<group>"; };
 		50D194D21230455000C3FC2C /* MapDynamicExpr.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapDynamicExpr.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D194D31230455000C3FC2C /* MapDynamicExpr-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MapDynamicExpr-Info.plist"; path = "bundles/Functions/MapDynamicExpr/MapDynamicExpr-Info.plist"; sourceTree = "<group>"; };
@@ -1823,6 +1866,12 @@
 		50EAF2E01393BC3200258AD1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = bundles/ContainerViews/FrequencyStandardContainer/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		50EAF2E21393BC4400258AD1 /* FrequencyStandardContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FrequencyStandardContainer.h; path = bundles/ContainerViews/FrequencyStandardContainer/FrequencyStandardContainer.h; sourceTree = SOURCE_ROOT; };
 		50EAF2E31393BC4400258AD1 /* FrequencyStandardContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FrequencyStandardContainer.m; path = bundles/ContainerViews/FrequencyStandardContainer/FrequencyStandardContainer.m; sourceTree = SOURCE_ROOT; };
+		50EB905C19350438007D0DBD /* Rectify.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rectify.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		50EB906019350439007D0DBD /* Rectify-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Rectify-Info.plist"; path = "bundles/Functions/Rectify/Rectify-Info.plist"; sourceTree = SOURCE_ROOT; };
+		50EB906219350439007D0DBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		50EB906419350439007D0DBD /* Rectify-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Rectify-Prefix.pch"; path = "bundles/Functions/Rectify/Rectify-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		50EB906819350503007D0DBD /* Rectify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rectify.h; path = bundles/Functions/Rectify/Rectify.h; sourceTree = SOURCE_ROOT; };
+		50EB906919350503007D0DBD /* Rectify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Rectify.m; path = bundles/Functions/Rectify/Rectify.m; sourceTree = SOURCE_ROOT; };
 		50F420551198BF3C009F695A /* AudioFilePlayer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioFilePlayer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F420561198BF3C009F695A /* AudioFilePlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "AudioFilePlayer-Info.plist"; path = "bundles/Players/AudioFilePlayer/AudioFilePlayer-Info.plist"; sourceTree = "<group>"; };
 		50F4206C1198BF96009F695A /* AudioFilePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioFilePlayer.h; path = bundles/Players/AudioFilePlayer/AudioFilePlayer.h; sourceTree = "<group>"; };
@@ -2048,6 +2097,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				505B49761207745C0050CFB7 /* QuinceApi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505AAD8018A9074D00701D5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C761A018A909AA005CBA0F /* QuinceApi.framework in Frameworks */,
+				505AAD8418A9074E00701D5D /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2462,6 +2520,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50EB905919350438007D0DBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B571DA193505F20007BC98 /* QuinceApi.framework in Frameworks */,
+				50EB905D19350439007D0DBD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50F420531198BF3C009F695A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2604,6 +2671,8 @@
 				501007BA174CBE2B006BDAED /* Sort.bundle */,
 				50825BCE174D679D00985915 /* RemoveGlissUp.bundle */,
 				50B6B945175BB6B4002A68B2 /* ComputePitchSlope.bundle */,
+				505AAD8318A9074E00701D5D /* CopyValues.bundle */,
+				50EB905C19350438007D0DBD /* Rectify.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2994,6 +3063,7 @@
 				506BF9C4117A670A00ECBC4E /* Audio2Envelope */,
 				50D3937C11C838330080B427 /* ColorByKey */,
 				50B6B947175BB6B4002A68B2 /* ComputePitchSlope */,
+				505AAD9218A907EA00701D5D /* CopyValues */,
 				506BF94F117A642F00ECBC4E /* CreateGridSequence */,
 				500CACF4122D4B3D00B980B8 /* EnvToSeq */,
 				50AEBF8011CEC8A90055CA29 /* EnvelopeGate */,
@@ -3019,6 +3089,7 @@
 				504A69D111A9F707007F60FF /* Normalize */,
 				508C43BE129559D700875B93 /* OneVoice_Loudest */,
 				508CB8C513C7BABD00F43AED /* PitchQuantization */,
+				50EB905E19350439007D0DBD /* Rectify */,
 				501007B2174BE171006BDAED /* RemoveGlissDown */,
 				50825BD0174D679D00985915 /* RemoveGlissUp */,
 				50E860BF11F858780014CFE9 /* RemoveParameter */,
@@ -3130,6 +3201,28 @@
 				504A69CF11A9F6FB007F60FF /* Normalize.m */,
 			);
 			name = Normalize;
+			sourceTree = "<group>";
+		};
+		505AAD8618A9074E00701D5D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50C7619A18A908B0005CBA0F /* CopyValues-Info.plist */,
+				50C761A118A909E3005CBA0F /* InfoPlist.strings */,
+				50C7619C18A908CA005CBA0F /* CopyValues-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = CopyValues;
+			sourceTree = "<group>";
+		};
+		505AAD9218A907EA00701D5D /* CopyValues */ = {
+			isa = PBXGroup;
+			children = (
+				505AAD8618A9074E00701D5D /* Supporting Files */,
+				505AAD8F18A907E100701D5D /* CopyValues.h */,
+				505AAD9018A907E100701D5D /* CopyValues.m */,
+				50C761A418A90C7F005CBA0F /* CopyValues.xib */,
+			);
+			name = CopyValues;
 			sourceTree = "<group>";
 		};
 		506BF818117A59F100ECBC4E /* Other Sources */ = {
@@ -3790,6 +3883,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		50EB905E19350439007D0DBD /* Rectify */ = {
+			isa = PBXGroup;
+			children = (
+				50EB906819350503007D0DBD /* Rectify.h */,
+				50EB906919350503007D0DBD /* Rectify.m */,
+				50EB905F19350439007D0DBD /* Supporting Files */,
+			);
+			path = Rectify;
+			sourceTree = "<group>";
+		};
+		50EB905F19350439007D0DBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50EB906019350439007D0DBD /* Rectify-Info.plist */,
+				50EB906119350439007D0DBD /* InfoPlist.strings */,
+				50EB906419350439007D0DBD /* Rectify-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		50F4206F1198BF9B009F695A /* AudioFilePlayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -4304,6 +4417,24 @@
 			name = Normalize;
 			productName = normalize;
 			productReference = 504A69AA11A9F692007F60FF /* Normalize.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		505AAD8218A9074D00701D5D /* CopyValues */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 505AAD8E18A9074E00701D5D /* Build configuration list for PBXNativeTarget "CopyValues" */;
+			buildPhases = (
+				505AAD7F18A9074D00701D5D /* Sources */,
+				505AAD8018A9074D00701D5D /* Frameworks */,
+				505AAD8118A9074D00701D5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50C7619F18A9099F005CBA0F /* PBXTargetDependency */,
+			);
+			name = CopyValues;
+			productName = CopyValues;
+			productReference = 505AAD8318A9074E00701D5D /* CopyValues.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		506BF832117A5A9700ECBC4E /* AutomationContainer */ = {
@@ -5200,6 +5331,24 @@
 			productReference = 50EAF2C81393BAD200258AD1 /* FrequencyStandardContainer.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
+		50EB905B19350438007D0DBD /* Rectify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50EB906719350439007D0DBD /* Build configuration list for PBXNativeTarget "Rectify" */;
+			buildPhases = (
+				50EB905819350438007D0DBD /* Sources */,
+				50EB905919350438007D0DBD /* Frameworks */,
+				50EB905A19350438007D0DBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50B571DC193505FA0007BC98 /* PBXTargetDependency */,
+			);
+			name = Rectify;
+			productName = Rectify;
+			productReference = 50EB905C19350438007D0DBD /* Rectify.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		50F420541198BF3C009F695A /* AudioFilePlayer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50F420591198BF3D009F695A /* Build configuration list for PBXNativeTarget "AudioFilePlayer" */;
@@ -5265,6 +5414,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				50B571DE193506540007BC98 /* PBXTargetDependency */,
+				50C7619918A90839005CBA0F /* PBXTargetDependency */,
 				50B6B956175BB801002A68B2 /* PBXTargetDependency */,
 				504A7F56174D69680088AEE5 /* PBXTargetDependency */,
 				501007D0174CBF63006BDAED /* PBXTargetDependency */,
@@ -5383,6 +5534,7 @@
 				50DE7B4913CC675000FD4F35 /* CentContainer */,
 				50D3937011C837BA0080B427 /* ColorByKey */,
 				50B6B944175BB6B4002A68B2 /* ComputePitchSlope */,
+				505AAD8218A9074D00701D5D /* CopyValues */,
 				506BF92D117A629800ECBC4E /* CreateGridSequence */,
 				50325E9F1226947500E22031 /* CsoundPlayer */,
 				50717008117A7E0F00357470 /* EnvelopeChild */,
@@ -5423,6 +5575,7 @@
 				8D15AC270486D014006FF6A4 /* quince */,
 				50A522B4117A52560072FB09 /* QuinceApi */,
 				50A522FA117A52F60072FB09 /* QuinceApiTestUnit */,
+				50EB905B19350438007D0DBD /* Rectify */,
 				50825BCD174D679D00985915 /* RemoveGlissUp */,
 				501007A2174BE12E006BDAED /* RemoveGlissDown */,
 				50E860AF11F857A20014CFE9 /* RemoveParameter */,
@@ -5630,6 +5783,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505AAD8118A9074D00701D5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C761A318A909E3005CBA0F /* InfoPlist.strings in Resources */,
+				50C761A518A90C7F005CBA0F /* CopyValues.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5997,6 +6159,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50EB905A19350438007D0DBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50F420511198BF3C009F695A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -6311,6 +6480,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				504A69D211A9F747007F60FF /* Normalize.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505AAD7F18A9074D00701D5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505AAD9118A907E100701D5D /* CopyValues.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6722,6 +6899,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				50EAF2E41393BC4400258AD1 /* FrequencyStandardContainer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50EB905819350438007D0DBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50EB906A19350503007D0DBD /* Rectify.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7245,6 +7430,16 @@
 			target = 50B171F813CB336400C9F105 /* TimeQuantization */;
 			targetProxy = 50B1720A13CB345B00C9F105 /* PBXContainerItemProxy */;
 		};
+		50B571DC193505FA0007BC98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 50B571DB193505FA0007BC98 /* PBXContainerItemProxy */;
+		};
+		50B571DE193506540007BC98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50EB905B19350438007D0DBD /* Rectify */;
+			targetProxy = 50B571DD193506540007BC98 /* PBXContainerItemProxy */;
+		};
 		50B6B953175BB7F2002A68B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 50A522B4117A52560072FB09 /* QuinceApi */;
@@ -7414,6 +7609,16 @@
 			isa = PBXTargetDependency;
 			target = 50A522B4117A52560072FB09 /* QuinceApi */;
 			targetProxy = 50C28448172725FA00841C48 /* PBXContainerItemProxy */;
+		};
+		50C7619918A90839005CBA0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 505AAD8218A9074D00701D5D /* CopyValues */;
+			targetProxy = 50C7619818A90839005CBA0F /* PBXContainerItemProxy */;
+		};
+		50C7619F18A9099F005CBA0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 50C7619E18A9099F005CBA0F /* PBXContainerItemProxy */;
 		};
 		50D195371230527500C3FC2C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -7725,6 +7930,14 @@
 			name = LayerControlsView.nib;
 			sourceTree = "<group>";
 		};
+		50C761A118A909E3005CBA0F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50C761A218A909E3005CBA0F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		50D3E76713E6FE6F00BA5D30 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -7785,6 +7998,15 @@
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
+		};
+		50EB906119350439007D0DBD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50EB906219350439007D0DBD /* en */,
+			);
+			name = InfoPlist.strings;
+			path = bundles/Functions/Rectify;
+			sourceTree = SOURCE_ROOT;
 		};
 		50F471D613D0D815005CB978 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -8962,6 +9184,53 @@
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		505AAD8C18A9074E00701D5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/CopyValues/CopyValues-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "bundles/Functions/CopyValues/CopyValues-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		505AAD8D18A9074E00701D5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/CopyValues/CopyValues-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "bundles/Functions/CopyValues/CopyValues-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -11384,6 +11653,53 @@
 			};
 			name = Release;
 		};
+		50EB906519350439007D0DBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bundles/Functions/Rectify/Rectify-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "Bundles/Functions/Rectify/Rectify-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		50EB906619350439007D0DBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bundles/Functions/Rectify/Rectify-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "Bundles/Functions/Rectify/Rectify-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		50F420571198BF3D009F695A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -11802,6 +12118,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		505AAD8E18A9074E00701D5D /* Build configuration list for PBXNativeTarget "CopyValues" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				505AAD8C18A9074E00701D5D /* Debug */,
+				505AAD8D18A9074E00701D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		506BF837117A5A9700ECBC4E /* Build configuration list for PBXNativeTarget "AutomationContainer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -12070,6 +12395,7 @@
 				50B6B94F175BB6B4002A68B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50B86D361190384000D235AA /* Build configuration list for PBXNativeTarget "EqlDstrbtn-Start" */ = {
 			isa = XCConfigurationList;
@@ -12238,6 +12564,15 @@
 			buildConfigurations = (
 				50EAF2D31393BAD200258AD1 /* Debug */,
 				50EAF2D41393BAD200258AD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50EB906719350439007D0DBD /* Build configuration list for PBXNativeTarget "Rectify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50EB906519350439007D0DBD /* Debug */,
+				50EB906619350439007D0DBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

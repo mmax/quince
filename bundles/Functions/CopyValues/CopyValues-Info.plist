@@ -9,7 +9,7 @@
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle</string>
+	<string>QuinceFunctionBundle.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -22,10 +22,8 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key>LSApplicationCategoryType</key>
-	<string></string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2013 stock11. All rights reserved.</string>
+	<string>Copyright © 2014 stock11. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string></string>
 </dict>

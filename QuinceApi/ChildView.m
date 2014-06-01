@@ -193,7 +193,13 @@
 	NSRect r = NSMakeRect(b.origin.x+1, b.origin.y+1, b.size.width-2, b.size.height-2);
 	
 	//[[NSColor colorWithDeviceWhite:1 alpha:1]set];
-	[[self interiorColor]set];
+	if([self muted]){
+        [[NSColor colorWithDeviceWhite:.3 alpha:1]set];
+    }
+    else
+        [[self interiorColor]set];
+    
+    
 	[NSBezierPath fillRect:r];
 	if([self selected] && ![self muted])	[(NSColor*)[self valueForKey:@"selectionColor"] set];
 	else if([self muted] && ![self selected]) [(NSColor*)[self valueForKey:@"mutedColor"] set];

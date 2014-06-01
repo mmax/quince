@@ -49,6 +49,7 @@
     NSArray * subs = [mother valueForKey:@"subObjects"];
     [self copyParamsOf:mother into:result];
     NSMutableArray * times = [NSMutableArray array];
+    NSString * directionString = @"-Asc";
 
     for(QuinceObject * sub in subs){
         [[result controller] addSubObjectWithController:[[sub copyWithZone:nil] controller] withUpdate:NO];
@@ -62,6 +63,8 @@
 	[times sortUsingDescriptors:descriptors];
 
     BOOL asc = [[directionMenu titleOfSelectedItem]isEqualToString:@"Ascending"];	
+    if(!asc) directionString = @"-Desc";
+        
     //NSLog(@"Sorting by: %@", [parameterMenu titleOfSelectedItem]);
     
 //    for(QuinceObject * q in subs){
@@ -76,7 +79,7 @@
         [[[result valueForKey:@"subObjects"]objectAtIndex:i]setValue:[[[times objectAtIndex:i]valueForKey:@"start"]copy] forKey:@"start"];
 
 
-    [[result controller] setValue:[NSString stringWithFormat:@"%@_Sort-%@", [mother valueForKey:@"name"], [parameterMenu titleOfSelectedItem]] forKeyPath:@"selection.name"];  
+    [[result controller] setValue:[NSString stringWithFormat:@"%@_Sort-%@%@", [mother valueForKey:@"name"], [parameterMenu titleOfSelectedItem],directionString] forKeyPath:@"selection.name"];  
     [[result controller] update];
     [window orderOut:nil];
 	[self done];

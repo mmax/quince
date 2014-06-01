@@ -45,7 +45,7 @@
 }
 
 -(void)awake{
-	
+	NSLog(@"FunLoader:wake");
 	Function * fun = [document getSingleSelectedFunction];
 
 	[self awakeWithFunction:fun];

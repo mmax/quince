@@ -836,6 +836,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 -(IBAction)wakeFunctionLoader:(id)sender{
+    NSLog(@"Doc: FunLoader: awake");
 	[functionLoader awake];	
 }
 	
@@ -1318,6 +1319,8 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	NSMutableArray * flat = [[NSMutableArray alloc]init];
 
 	// hard-set audioFile associations
+    [self setIndeterminateProgressTask:@"setting media file bindings..."];
+
 	for(QuinceObjectController * tlo in topLevel)
 		[[tlo content]hardSetMediaFileAssociations];
 	

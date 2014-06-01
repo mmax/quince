@@ -79,6 +79,11 @@
 			<key>orderHint</key>
 			<integer>75</integer>
 		</dict>
+		<key>CopyValues.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>76</integer>
+		</dict>
 		<key>CreateGridSequence.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -273,6 +278,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>10</integer>
+		</dict>
+		<key>Rectify.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>77</integer>
 		</dict>
 		<key>RemoveGlissDown.xcscheme</key>
 		<dict>
@@ -508,6 +518,11 @@
 			<true/>
 		</dict>
 		<key>504FDE8713BCC3A500470C77</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>505AAD8218A9074D00701D5D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -758,6 +773,11 @@
 			<true/>
 		</dict>
 		<key>50EAF2C71393BAD200258AD1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>50EB905B19350438007D0DBD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

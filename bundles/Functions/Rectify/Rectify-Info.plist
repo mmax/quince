@@ -22,10 +22,8 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key>LSApplicationCategoryType</key>
-	<string></string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2013 stock11. All rights reserved.</string>
+	<string>Copyright © 2014 stock11. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string></string>
 </dict>
