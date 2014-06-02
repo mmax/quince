@@ -67,6 +67,7 @@
 	NSArray * tempObjectArray;
 	NSDictionary * tempPlayerDict;
     NSDictionary * tempFunctionShortCuts;
+    NSMutableSet * mediaFileRegister;
     
 	// InterfaceBuilder connections
 	
@@ -189,6 +190,7 @@
 -(AudioFile *)getCurrentlySelectedAudioFile;
 -(QuinceObjectController *) controllerForObjectWithID:(NSString *)ID;
 -(QuinceObject *)objectWithValue:(id)value forKey:(NSString *)key;
+-(QuinceObject *)mediaFileNamed:(NSString *)mfn;
 -(NSMutableArray *)playbackObjectList;
 -(NSMutableArray *)removeDuplicatesInArrayOfQuinceObjectControllers:(NSMutableArray *)controllers;
 

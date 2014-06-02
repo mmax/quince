@@ -38,7 +38,7 @@
         cursorX = 0;
         dictionary = [[NSMutableDictionary alloc]init];
 		[self setValue:[[[NSMutableArray alloc]init]autorelease] forKey:@"guides"];
-        showPositionGuides = NO;
+        showPositionGuides = YES;
         leftPath = [[NSBezierPath alloc]init];
         rightPath = [[NSBezierPath alloc]init];
         topPath = [[NSBezierPath alloc]init];

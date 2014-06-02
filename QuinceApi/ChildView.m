@@ -194,7 +194,7 @@
 	
 	//[[NSColor colorWithDeviceWhite:1 alpha:1]set];
 	if([self muted]){
-        [[NSColor colorWithDeviceWhite:.3 alpha:1]set];
+        [[NSColor colorWithDeviceWhite:.4 alpha:.6]set];
     }
     else
         [[self interiorColor]set];

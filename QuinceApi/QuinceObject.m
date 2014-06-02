@@ -182,8 +182,12 @@
 	NSString * name = [self valueForKey:@"mediaFileName"];
 	if(name && [name length]>1 && ![name isEqualToString:@"value"]){ // dirty - when an empty string is entered in the object-inspector, 
 																	// "value" is being inserted. don't know why or by whom...
-		QuinceObject * media = [document objectWithValue:name forKey:@"name"];
-		
+
+		////
+        QuinceObject * media = [document mediaFileNamed:name];
+        //[document objectWithValue:name forKey:@"name"]; // this is what slows us down!!
+		////
+        
 		if(media) 
 			return media;
 	}
@@ -520,15 +524,18 @@
 -(NSNumber *)mediaFileStart{
 
 	NSString * fileName =[self valueForKey:@"mediaFileName"];
-	QuinceObject * superMint = [self valueForKey:@"superObject"];
-	
+
 	if(fileName){ // this quince is directly associated with media file
 		NSNumber * afs = [self valueForKey:@"mediaFileStart"];
-		if(afs) return afs;
-		else return [NSNumber numberWithInt:0];
+		return afs ? afs : [NSNumber numberWithInt:0];
+        /*if(afs) return afs;
+		else return [NSNumber numberWithInt:0];*/
 	}
-	if(!fileName && [self valueForKey:@"superObject"])
-		return [NSNumber numberWithDouble:[[superMint mediaFileStart]doubleValue] + [[self valueForKey:@"start"]doubleValue]];// [[superMint valueForKey:key]doubleValue]];
+	QuinceObject * superQ = [self valueForKey:@"superObject"];
+	
+    if(!fileName && superQ)//[self valueForKey:@"superObject"])
+		return [NSNumber numberWithDouble:[[superQ mediaFileStart]doubleValue] + [[self valueForKey:@"start"]doubleValue]];
+                                            // [[superMint valueForKey:key]doubleValue]];
 	
 	return nil;
 }
@@ -731,17 +738,22 @@
 }
 
 -(void) hardSetMediaFileAssociations{
-    if(![self mediaFile])return;
+    
+    QuinceObject *mf = [self mediaFile];
+    
+    if(!mf || [[self valueForKey:@"muted"]intValue]==1) // no need to set media file if object is muted anyway
+        return;
     
 	[self setValue:[self mediaFileStart] forKey:@"mediaFileStart"];
 	
 	if([self subObjectsCount]>0){
-		for(QuinceObject * quince in [self valueForKey:@"subObjects"])
+        NSArray * subs = [self valueForKey:@"subObjects"];
+		for(QuinceObject * quince in subs)
 			[quince hardSetMediaFileAssociations];
 	}
 	
-	else if ([self mediaFile])
-		[self setValue:[[self mediaFile]valueForKey:@"name"] forKey:@"mediaFileName"];	
+	else 
+        [self setValue:[mf valueForKey:@"name"] forKey:@"mediaFileName"];	
 		// [self mediaFile] returns super's mediaFile if ‘self’ doesn't have one
 }
 

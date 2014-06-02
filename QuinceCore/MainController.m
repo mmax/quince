@@ -75,6 +75,8 @@
 												 name:NSViewFrameDidChangeNotification
 											   object:[mainScrollView contentView]];
 //	[mainScrollerDocumentView setFrameSize:NSMakeSize([mainScrollerDocumentView frame].size.width, kDefaultStripHeight * [stripControllers count]+1)];
+    
+    
 }
 
 -(QuinceDocument *)document{
@@ -454,12 +456,15 @@
 		//[layerArray release];
 	}
 	[dict setValue:stripArray forKey:@"strips"];
+    [dict setValue:@"TESTSTRING" forKey:@"TESTKEY"];
+    [dict setValue:[self valueForKey:@"pixelsPerUnitX"] forKey:@"pixelsPerUnitX"];
 	[stripArray autorelease];
 }
 
 -(NSDictionary *)xmlDictionary{
 	NSMutableDictionary * dict = [[NSMutableDictionary alloc]init];
 	[self createViewEntriesInDictionary:dict];
+
 	return [dict autorelease];
 }
 
@@ -522,6 +527,12 @@
 
 	NSArray * stripArray = [d valueForKey:@"strips"];
 	[self clear];
+    if([d valueForKey:@"pixelsPerUnitX"]){
+        //pixelsPerUnitX = [d valueForKey:@"pixelsPerUnitX"];
+        //[self setValue:pixelsPerUnitX forKey:@"pixelsPerUnitX"];
+        [self setPPX:[[d valueForKey:@"pixelsPerUnitX"]floatValue] fromPoint:NSMakePoint(0, 0)];
+    }
+    
 	for(NSArray * layers in stripArray){
 		StripController * strip = [self createStrip];
 		[strip createLayersFromArray:layers];

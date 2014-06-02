@@ -60,7 +60,8 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 
 		[self setValue:[NSNumber numberWithBool:YES] forKey:@"playbackStopped"];
 		[self setValue:[NSNumber numberWithBool:NO] forKey:@"playbackStarted"];
-        [self setValue:[NSNumber numberWithBool:NO] forKey:@"showPositionGuides"];
+        [self setValue:[NSNumber numberWithBool:YES] forKey:@"showPositionGuides"];
+        mediaFileRegister = [[NSMutableSet alloc]init];
     }
     return self;
 }
@@ -75,6 +76,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	
 	[functionPool release];
 	[dictionary release];
+    [mediaFileRegister release];
 	[super dealloc];
 	
 }
@@ -139,7 +141,8 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	//[functionPoolController bind:@"contentArray" toObject:self withKeyPath:@"functionPool" options:nil];
 	if(!functionComposerFunctionPoolController)NSLog(@"doc: windowControllerDidLoadNib: no functionComposerFunctionPoolController bad bad bad bad bad bad bad!");
 	[functionComposerFunctionPoolController bind:@"contentArray" toObject:self withKeyPath:@"functionPool" options:nil];
-	
+    
+
 	[mainController getReady];
 
 	NSMutableSet * specialNeeds = [[NSMutableSet alloc]init];
@@ -198,7 +201,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	[functionPoolTable setTarget:functionLoader];
 	[functionPoolTable setDoubleAction:@selector(awake)];
 	[specialNeeds release];
-	
+    
     [self displayProgress:NO];
 	//[[aController window] makeFirstResponder:[[[mainController stripControllers] objectAtIndex:0]activeView]];
 }
@@ -1091,6 +1094,10 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 		[mc release];// turn the quince's reference to its controller into a weak one
 	}
 	
+    if([quince isOfType:@"AudioFile"]){ // or any other media File type
+        
+        [mediaFileRegister addObject:quince];
+    }
 	
 	[[self mutableArrayValueForKey:@"objectNodes"]addObject:[mc node]];	
 }
@@ -1132,6 +1139,11 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	
 	[objectPool removeObject:mc];
 	[[self mutableArrayValueForKey:@"objectNodes"]removeObject:[mc node]];
+    
+    if([quince isOfType:@"AudioFile"]){
+    
+        [mediaFileRegister removeObject:quince];
+    }
 	
 }
 
@@ -1226,6 +1238,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 -(QuinceObject *)newObjectOfClassNamed:(NSString *)className inPool:(BOOL)addToPool{
 	QuinceObject * quince = [self newObjectOfClassNamed:className];
 	if(addToPool)[self addObjectToObjectPool:quince];
+    
 	return quince;
 }
 
@@ -1302,10 +1315,22 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+-(QuinceObject *)mediaFileNamed:(NSString *)mfn{
+
+    for (QuinceObject * q in mediaFileRegister){
+        if([[q valueForKey:@"name"]isEqualToString:mfn])
+            return q;
+    }
+    return nil;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
 -(NSMutableArray *)playbackObjectList{
 
-    [self setIndeterminateProgressTask:@"preparing copies..."];
-    [self displayProgress:YES];
+    //[self setIndeterminateProgressTask:@"preparing copies..."];
+//    [self displayProgress:YES];
     
 	NSMutableArray * topLevel = [mainController topLevelPlaybackList]; // an array with arrays for strips with top-level quinceObjectControllers
 
@@ -1313,27 +1338,31 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	for(NSArray * a in topLevel)
 		[tl2 addObjectsFromArray:a];
 
-	//NSLog(@"doc: playbackObjectList: topLevel: before remove dup: %@", tl2);		
+	//NSLog(@"doc: playbackObjectList: topLevel: before remove dup: %@", tl2);
+    //[self setIndeterminateProgressTask:@"removing duplicates..."];
+
 	topLevel = [self removeDuplicatesInArrayOfQuinceObjectControllers:tl2];
 	//NSLog(@"doc: playbackObjectList: topLevel: after remove dup: %@", topLevel);	
 	NSMutableArray * flat = [[NSMutableArray alloc]init];
 
 	// hard-set audioFile associations
-    [self setIndeterminateProgressTask:@"setting media file bindings..."];
+    //[self setIndeterminateProgressTask:@"setting media file bindings..."];
 
 	for(QuinceObjectController * tlo in topLevel)
 		[[tlo content]hardSetMediaFileAssociations];
 	
 	// create flat list
-    [self setIndeterminateProgressTask:@"creating flat object list..."];
+   // [self setIndeterminateProgressTask:@"creating flat object list..."];
 	for(QuinceObjectController * tlo in topLevel){
 		
 		QuinceObject * copy = [tlo content];//[[tlo content]copy]; // actually we already have copies (see StripController:TopLevelPlaybackList)
 		[copy flatten];
 		NSArray * subs = [copy valueForKey:@"subObjects"];
 		if([subs count]){
-			for(QuinceObject * quince in subs)
-				[flat addObject:quince];
+			for(QuinceObject * quince in subs){
+                if(![[quince valueForKey:@"muted"]intValue] == 1)
+                    [flat addObject:quince];
+            }
 		}
 		else 
 			[flat addObject:copy];
@@ -1346,7 +1375,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	[flat sortUsingDescriptors:descriptors];
 	[sd release];
 	[tl2 release];
-    [self displayProgress:NO];
+    //[self displayProgress:NO];
 //	NSLog(@"doc: playbackObjectList: %@", flat);		
 	return [flat autorelease];
 }
