@@ -143,6 +143,7 @@
 -(IBAction)wakeFunctionLoader:(id)sender;
 -(IBAction)changePlayer:(id)sender;
 -(IBAction)showPlayerSettings:(id)sender;
+-(IBAction)newSubObject:(id)sender;
 
 -(BOOL) typeCheckModel:(QuinceObject *)model withView:(ContainerView *)view;
 -(void) displayProgress:(BOOL) display;

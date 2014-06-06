@@ -1036,6 +1036,15 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
     
     [functionShortCutController awake];
 }
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+-(IBAction)newSubObject:(id)sender{
+
+    QuinceObjectController * qc = [self getSingleSelectedObjectController];
+    [qc createNewDefaultSubObject];
+    [objectPoolTreeController setContent:[objectPoolTreeController content]]; // dirrty but worrking
+}
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 

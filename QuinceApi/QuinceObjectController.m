@@ -113,6 +113,17 @@
 	return [sc autorelease];
 }
 
+-(void)createNewDefaultSubObject{
+
+    NSString * t = [(QuinceObject *)[self content]type] ;
+    t = @"QuinceObject"; 
+    QuinceObjectController * qc = [document controllerForNewObjectOfClassNamed:t inPool:NO];
+    [self addSubObjectWithController:qc withUpdate:YES];
+    [self createChildViewsForQuinceObjectController:qc];
+}
+
+
+
 -(void)update{
 	[[self content]update];
 }

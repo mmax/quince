@@ -69,6 +69,7 @@
 -(NSString *)type;
 -(NSString *)getSuperType;
 -(void)addSubObject:(QuinceObject *)quince withUpdate:(BOOL)b;
+
 -(void)removeSubObject:(QuinceObject *)quince withUpdate:(BOOL)b;
 -(NSString *)description;
 -(BOOL)isFolded;

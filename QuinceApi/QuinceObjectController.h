@@ -48,6 +48,7 @@
 -(void)addSubNodeForQuinceObject:(QuinceObject *)quince;
 -(void)addSubNodesForFoldedController:(QuinceObjectController *)mc;
 -(NSArray *)controllersForSubObjects;
+-(void)createNewDefaultSubObject;
 -(QuinceObjectController *)superController;
 -(void)update;
 -(QuinceObjectController* )foldControllers:(NSArray *)subControllers;
