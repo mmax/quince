@@ -1356,12 +1356,17 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	for(QuinceObjectController * tlo in topLevel){
 		
 		QuinceObject * copy = [tlo content];//[[tlo content]copy]; // actually we already have copies (see StripController:TopLevelPlaybackList)
+        
 		[copy flatten];
 		NSArray * subs = [copy valueForKey:@"subObjects"];
 		if([subs count]){
 			for(QuinceObject * quince in subs){
-                if(![[quince valueForKey:@"muted"]intValue] == 1)
+                if(![[quince valueForKey:@"muted"]intValue] == 1){
+                    NSNumber * oldStart = [quince valueForKey:@"start"];
+                    NSNumber * startOffset = [quince valueForKey:@"startOffset"];
+                    [quince setValue:[NSNumber numberWithDouble:[oldStart doubleValue] + [startOffset doubleValue]] forKey:@"start"];
                     [flat addObject:quince];
+                }
             }
 		}
 		else 
