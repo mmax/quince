@@ -175,6 +175,7 @@
 	
 	double windowDur = 1.0 / ppx * deltaX;
 	double frameDur = [envelope windowDuration];
+    double timeOffset = [[envelope valueForKey:@"start"]doubleValue];
 	double framesPerWindow = windowDur / frameDur;
 	
 	if(framesPerWindow < 1.0){
@@ -191,7 +192,17 @@
 	[self setValue:[NSNumber numberWithDouble:frameDur] forKey:@"frameDuration"];
 	
 	int framesPerWindowI = framesPerWindow+0.5;
-	for(long i=0;i<[audio count];i+= N) {
+
+    
+    float sr = [[envelope sampleRate]floatValue];
+    float zero = 0.000000000001;
+    int windowOffset = (sr*timeOffset)/ framesPerWindowI;
+    //NSLog(@"windowOffset:%d", windowOffset);
+    for(long i=0;i<windowOffset;i++)
+        [windows addObject:[NSNumber numberWithFloat:zero]];
+
+	
+    for(long i=0;i<[audio count];i+= N) {
         
         [document setProgress:(100.0/[audio count])*i];
         
@@ -205,6 +216,7 @@
 
 		[windows addObject:[NSNumber numberWithFloat:max]];
 	}
+   // NSLog(@"windows:%@", windows);
 }
 
 /*
