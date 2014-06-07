@@ -80,7 +80,9 @@
 }
 
 -(NSArray *) envelope{
-
+    if([self isChild])
+        return [(Envelope *)[self superObject] envelope];
+    
 	return [self valueForKey:@"envelope"];
 }
 
@@ -90,19 +92,27 @@
 }
 
 -(NSNumber *)sampleRate{
+    if([self isChild])
+        return [(Envelope *)[self superObject]sampleRate];
+    
 	return [self valueForKey:@"sampleRate"];
 }
 
 -(NSNumber *)duration {
+    if([self isChild])
+        return [(Envelope *)[self superObject]duration];
 	return [self valueForKey:@"duration"];
 }
 
 -(NSNumber *)samplesPerWindow{
+    if([self isChild])
+        return [(Envelope *)[self superObject]samplesPerWindow];
 	return [self valueForKey:@"samplesPerWindow"];
 }
 
 -(NSString *)audioFileName{
-
+    if([self isChild])
+        return [(Envelope *)[self superObject]audioFileName];
 	return [self valueForKey:@"audioFileName"];
 }
 
@@ -178,6 +188,7 @@
 	
 	[self setValue:[NSNumber numberWithDouble:userWindowDuration] forKey:@"windowDuration"];
 	[self setValue:[NSNumber numberWithBool:YES] forKey:@"resampled"];
+    [self setValue:[NSNumber numberWithInt:0] forKey:@"clone"];
 	[newEnvelope release];
 	
 }
