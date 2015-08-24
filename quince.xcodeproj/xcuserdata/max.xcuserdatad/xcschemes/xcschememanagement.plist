@@ -139,6 +139,11 @@
 			<key>orderHint</key>
 			<integer>27</integer>
 		</dict>
+		<key>ExportParameterListing.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>78</integer>
+		</dict>
 		<key>ExportSequence.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -502,6 +507,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>50464C07195DBB9B008511C0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>50466F5517271ADC001477E5</key>
 		<dict>
 			<key>primary</key>
@@ -513,6 +523,11 @@
 			<true/>
 		</dict>
 		<key>504A69A911A9F692007F60FF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>504E86BD195DC564005A3FB2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
