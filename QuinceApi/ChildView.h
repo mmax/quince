@@ -71,6 +71,7 @@
 
 -(void)	setEnclosingView:(ContainerView *)view;
 -(ContainerView *)enclosingView;
+-(void)toggleResizeX:(NSNumber *)status;
 
 -(id)valueForKey:(NSString *)key;						
 -(void)setValue:(id)value forKey:(NSString *)key;	

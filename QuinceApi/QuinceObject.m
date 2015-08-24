@@ -280,6 +280,11 @@
         [self checkAndUpdateSubsForKey:aKey];
         return;
     }
+
+    if([aKey isEqualToString:@"duration"] && [self isFolded] && [[self valueForKey:@"resizingX"]boolValue]==YES){
+        double f = [(NSNumber *)value doubleValue]/[[self valueForKey:@"duration"]doubleValue];
+        [self scaleSubObjectsOnTimeByFactor:f];
+    }
 	
 	[self willChangeValueForKey:aKey];
 	[self willChangeValueForKey:@"dictionary"];
@@ -377,7 +382,8 @@
 			return [NSNumber numberWithInt:0];
         else return [NSNumber numberWithDouble:[value doubleValue]]; 
         // added on march 24, 2012 to fix a bug that caused quince to freeze within a NSArray sortUsingDescriptors: call.
-        // somehow strings and numbers don't get along very well...
+        // strings and numbers don't get along very well...
+        // 
 	}
 	return value;
 }
@@ -881,6 +887,23 @@
 	}
 	return YES;
 }
+
+-(void) scaleSubObjectsOnTimeByFactor:(double)f{
+
+    if(![self subObjectsCount])return;
+    
+    NSArray * subs = [self valueForKey:@"subObjects"];
+    
+    for( QuinceObject * q in subs){
+    
+        double start = [[q valueForKey:@"start"]doubleValue];
+        [q setValue:[NSNumber numberWithDouble:start*f] forKey:@"start"];
+        double dur = [[q valueForKey:@"duration"]doubleValue];
+        [q setValue:[NSNumber numberWithDouble:dur*f] forKey:@"duration"];
+    }
+    
+}
+
 
 #pragma mark utility methods
 

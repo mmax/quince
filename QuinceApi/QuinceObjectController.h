@@ -79,6 +79,7 @@
 -(void)migrateSubObjects:(NSArray *)subs toController:(QuinceObjectController*)mc;
 -(void)toggleMute;
 -(void)setMute:(BOOL)b;
+-(void)setResizingX:(BOOL)b;
 -(void)unregisterChildView:(ChildView *)child;
 -(void)registerChildView:(ChildView *)child;
 -(id)changedParameter;

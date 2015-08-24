@@ -485,6 +485,15 @@
         [c setMute:b];
 }
 
+-(void) setResizingX:(BOOL)b{
+    [[self content]setValue:[NSNumber numberWithBool:b] forKey:@"resizingX"];
+
+    NSArray * subCons = [self controllersForSubObjects];
+    for(QuinceObjectController * c in subCons)
+        [c setResizingX:b];
+    
+}
+
 
 -(void)registerChildView:(ChildView *)child{
 	if([registeredChildViews containsObject:child])return;

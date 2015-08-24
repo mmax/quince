@@ -239,8 +239,8 @@
 
 -(void)resize:(NSValue *)deltaValue{
 	
-	if([[controller valueForKeyPath:@"selection.isFolded"]boolValue]==YES) 
-		return;
+	/*if([[controller valueForKeyPath:@"selection.isFolded"]boolValue]==YES) 
+		return;*/
 	
 	NSSize deltaSize = [deltaValue sizeValue];
 	float deltaX = deltaSize.width, deltaY = deltaSize.height;
@@ -354,6 +354,11 @@
 
 -(ContainerView *)enclosingView{
 	return enclosingView;
+}
+
+-(void)toggleResizeX:(NSNumber *)status{
+
+    [controller setValue:status forKey:@"resizingX"];
 }
 
 #pragma mark KVC

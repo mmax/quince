@@ -395,8 +395,8 @@ NSString* const kMuteString = @"m";
 		[self setNeedsDisplayInRect:selRect];
 	}
 	else if(resizeXDragging){
-		newDragLocation=[self convertPoint:[event locationInWindow]
-								  fromView:nil];
+		newDragLocation=[self convertPoint:[event locationInWindow] fromView:nil];
+
 		[self resizeSelectedChildViewsByValuesInSize:[NSValue valueWithSize:NSMakeSize(newDragLocation.x-lastDragLocation.x, 0)]];//newDragLocation.y-lastDragLocation.y)]];
 //		[self resizeSelectedChildViewsByX:newDragLocation.x-lastDragLocation.x andY: newDragLocation.y-lastDragLocation.y];
 	}
@@ -419,6 +419,8 @@ NSString* const kMuteString = @"m";
 	if(dragging){
 		dragging = NO;
 	}
+    if(resizeXDragging)
+        [selection makeObjectsPerformSelector:@selector(toggleResizeX:)withObject:[NSNumber numberWithBool:NO]];
 
 	if(selDragging){
 		selDragging = NO;
@@ -913,6 +915,7 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 }
 
 -(void)resizeSelectedChildViewsByX:(float) x	andY:(float)y{
+    [selection makeObjectsPerformSelector:@selector(toggleResizeX:)withObject:[NSNumber numberWithBool:YES]];
 	[selection makeObjectsPerformSelector:@selector(resize:)withObject:[NSValue valueWithSize:NSMakeSize(x, y)]];
 	[contentController update];
 	//[self setNeedsDisplay:YES];

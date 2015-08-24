@@ -143,4 +143,5 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context);
 
 -(BOOL)isEqualTo:(QuinceObject *)q;
 -(BOOL)checkObject:(QuinceObject *)q forEqualityWithKeys:(NSArray *)keys;
+-(void) scaleSubObjectsOnTimeByFactor:(double)f;
 @end
