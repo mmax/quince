@@ -118,20 +118,20 @@
 	STAssertEqualObjects([NSNumber numberWithInt:lockindexH], [NSNumber numberWithInt:4], @"lockH wrong");	
 }
 
--(void)testquantizeMint{
+-(void)testquantizeQuince{
 
 	//double start = [[quince valueForKey:@"start"]doubleValue];
 	[lily fillGrid];
 	double duration = 0.125;
 	
-	[lily quantizeMint:quince];
+	[lily quantizeQuince:quince];
 	
 	STAssertEqualObjects([NSNumber numberWithDouble:[[quince valueForKey:@"duration"]doubleValue]], [NSNumber numberWithDouble:duration], @"quantization of duration failed");	
 	STAssertEqualObjects([NSNumber numberWithDouble:[[quince valueForKey:@"start"]doubleValue]], [NSNumber numberWithDouble:4.25], @"quantization of start failed");	
 	
 	[quince setValue:[NSNumber numberWithDouble:6.12] forKey:@"start"];
 	[quince setValue:[NSNumber numberWithDouble:1.12] forKey:@"duration"];
-	[lily quantizeMint:quince];
+	[lily quantizeQuince:quince];
 	STAssertEqualObjects([NSNumber numberWithDouble:[[quince valueForKey:@"duration"]doubleValue]], [NSNumber numberWithDouble:1.125], @"second quantization of duration failed");	
 	STAssertEqualObjects([NSNumber numberWithDouble:[[quince valueForKey:@"start"]doubleValue]], [NSNumber numberWithDouble:6.125], @"quantization of start failed");	
 

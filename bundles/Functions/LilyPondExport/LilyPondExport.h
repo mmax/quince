@@ -83,7 +83,7 @@ BOOL weWantKey(NSString * key);
 -(NSString *)glissandoEndNoteForEvent:(QuinceObject *)event withMeasure:(int)measure times:(int)times;
 -(double)glissandoEndFreqForQuince:(QuinceObject *)q;
 -(NSString *) createInfoStringForEvent:(QuinceObject *)event;
--(void)quantizeMint:(QuinceObject *)candidate;
+-(void)quantizeQuince:(QuinceObject *)candidate;
 -(BOOL) numberInFlatGrid:(NSNumber *)c;
 -(void)quantize;
 double maxabs(double d);

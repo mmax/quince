@@ -222,7 +222,7 @@ BOOL weWantKey(NSString * key){
 
 -(void)quantize{
 	for(QuinceObject * sub in [quince valueForKey:@"subObjects"])
-		[self quantizeMint:sub];
+		[self quantizeQuince:sub];
 }
 
 -(void)fillGrid{ // grid: one array for each measure with one nsnumber for each lock including 0 and 1  - flatGrid, onw nsnumber for each lock, no duplicates
@@ -790,13 +790,13 @@ return [NSString stringWithFormat:@"\n\\once \\override TupletNumber #'transpare
     
     int midi, cent, octave, pitch, dir = [[event valueForKey:@"glissandoDirection"]intValue];
     
-    if((dir>0 && b) || (dir==0)){
+    if((dir>0 && b) || (dir==0 && !b)){
        midi = [[event valueForKey:@"pitch"]intValue];
        cent = [[event valueForKey:@"cent"]intValue];
         
     }
-    else{//if(((dir==0) && b) || (dir > 0 && !b)){
-    
+    else{// if((dir==0 && b) || (dir > 0 && !b)){
+
         midi = [event fToM:[[event valueForKey:@"frequencyB"]doubleValue]];
         cent = [event fToC:[[event valueForKey:@"frequencyB"]doubleValue]];
     }
@@ -805,6 +805,7 @@ return [NSString stringWithFormat:@"\n\\once \\override TupletNumber #'transpare
 	octave = midi / 12;
 	pitch = midi % 12;
 	
+   
     
 	if (!pitches)
 		return [NSString stringWithFormat:@"b'"];
@@ -850,11 +851,13 @@ return [NSString stringWithFormat:@"\n\\once \\override TupletNumber #'transpare
 	}	
 	else quarterToneSuffix = [NSString stringWithFormat:@""];	
 
-	if((dir>0 && b) || (dir==0 && !b))
+	if((dir>0 && b) || (dir==0 && !b)){
         [event setValue:[NSNumber numberWithInt:cent] forKey:@"_LilyCent"];
+    }
     else
         [event setValue:[NSNumber numberWithInt:cent] forKey:@"_LilyCentB"];
-    //NSLog(@"getPitchString...:cent:%d", cent);
+    
+
 	switch(octave) {
 			
 		case 15:	octaveString = [NSString stringWithFormat:@"'"]; break;
@@ -925,10 +928,14 @@ return [NSString stringWithFormat:@"\n\\once \\override TupletNumber #'transpare
             sign = @"";
             if([key isEqualToString:@"cent"])
                 cent = YES;
-            if(!cent || !glissando)
-			[m appendFormat:@" \"%@%@\"", sign, [self getStringValueOf:[event valueForKey:key]]];
+            if(!cent || !glissando){
+                [m appendFormat:@" \"%@%@\"", sign, [self getStringValueOf:[event valueForKey:key]]];
+              //  NSLog(@"no cent or gliss info requested");
+            }
             else{
+                
                 dir = [[event valueForKey:@"glissandoDirection"]intValue];
+                
                 centDif = dir?[[event valueForKey:@"_LilyCent"]intValue]:[[event valueForKey:@"_LilyCentB"]intValue];
                 if (centDif>0)
                     sign = @"+";
@@ -956,7 +963,7 @@ return [NSString stringWithFormat:@"\n\\once \\override TupletNumber #'transpare
 
 
 
--(void)quantizeMint:(QuinceObject *)candidate{
+-(void)quantizeQuince:(QuinceObject *)candidate{
 	
 	double a, deltaA, b, deltaB,start = [[candidate valueForKey:@"start"]doubleValue], duration, end = [[candidate end]doubleValue];
 	long i, startIntegerPart = start, measure, endIntegerPart = end;
@@ -977,7 +984,7 @@ return [NSString stringWithFormat:@"\n\\once \\override TupletNumber #'transpare
 			break;
 		}
 		else if(b>startFractionalPart && i==0){
-			NSLog(@"LilyPondExport:quantizeMint: something went awfully wrong! ->->");
+			NSLog(@"LilyPondExport:quantizeQuince: something went awfully wrong! ->->");
 			NSLog(@"start: %f startFractionalPart: %f b: %f i: %ld", start, startFractionalPart, b, i);
 		}
 	}
