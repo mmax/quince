@@ -105,8 +105,29 @@
 }
 
 
-
 -(double)rectifyQuince:(QuinceObject *)q betweenA:(QuinceObject *)A andB:(QuinceObject *)B {
+    
+    double victimStartOffset = [[q valueForKey:@"startOffset"]doubleValue];
+    double gridStartOffset = [[A valueForKey:@"startOffset"]doubleValue];
+    
+    if([[A valueForKey:@"start"]doubleValue] >= [[B valueForKey:@"start"]doubleValue]){
+        
+        [document presentAlertWithText:@"Rectify: ERROR! A >=B"];
+        return 0;
+    }
+    
+    double o = [[q valueForKey:@"start"]doubleValue]+victimStartOffset, a = [[A valueForKey:@"start"]doubleValue]+gridStartOffset, b = [[B valueForKey:@"start"]doubleValue]+gridStartOffset;
+    
+    double dur = [[q valueForKey:@"duration"]doubleValue] /(b-a);
+    
+    [q setValue:[NSNumber numberWithDouble:dur] forKey:@"duration"];
+    
+    return (o-a)/(b-a);
+    
+}
+
+
+/*-(double)rectifyQuince:(QuinceObject *)q betweenA:(QuinceObject *)A andB:(QuinceObject *)B {
     
     
     if([[A valueForKey:@"start"]doubleValue] >= [[B valueForKey:@"start"]doubleValue]){
@@ -123,7 +144,7 @@
     
     return (o-a)/(b-a);
     
-}
+}*/
      
      
 -(void)copyParamsOf:(QuinceObject*)source into:(QuinceObject*)target{
