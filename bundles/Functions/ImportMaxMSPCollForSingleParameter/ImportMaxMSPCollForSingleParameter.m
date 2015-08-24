@@ -81,6 +81,7 @@
 		QuinceObject * q = [document newObjectOfClassNamed:@"QuinceObject" inPool:NO];
 		[self setDefaultParametersForObject:q];
 		[q setValue:[NSNumber numberWithFloat: f] forKey:[parameterName stringValue]];
+        //NSLog(@"f: %f, key: %@", f, parameterName);
 		
 		if([successionBox state]==NSOnState && [durationBox state]==NSOnState && [startBox state]==NSOffState){
 			[q setValue:[NSNumber numberWithDouble:start*[durationValue doubleValue]] forKey:@"start"];
