@@ -55,8 +55,6 @@
     NSMutableArray * p = [[NSMutableArray alloc]init];
     QuinceObject * sub;
     
-    NSLog(@"creating points...");
-    
     for(sub in [q valueForKey:@"subObjects"]){
         [p addObject:[NSNumber numberWithDouble:[(NSNumber *)[sub valueForKey:@"start"]doubleValue]]];
         [p addObject:[NSNumber numberWithDouble:[(NSNumber *)[sub end]doubleValue]]];
@@ -64,7 +62,6 @@
 
     NSSortDescriptor *asc = [NSSortDescriptor sortDescriptorWithKey:@"self" ascending:YES];
     [p sortUsingDescriptors:[NSArray arrayWithObject:asc]];
-    NSLog(@"%@",p);
     return [p autorelease];
 }
 
