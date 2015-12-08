@@ -523,7 +523,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	[functionItem setAction:@selector(performFunctionWithMenuItem:)];
 	[functionMenu addItem:functionItem];
 	
-	if([[fun inputDescriptors]count] == 1 && [fun needsInput] && [[[[fun inputDescriptors]lastObject]valueForKey:@"type"]isEqualToString:@"QuinceObject"]){
+	if([[fun inputDescriptors]count] == 1 && [fun needsInput] && [[[[fun inputDescriptors]lastObject]valueForKey:@"type"]isEqualToString:@"QuinceObject"] && [fun worksOnSelection]){
 		NSMenuItem * selectionItem = [[NSMenuItem alloc]init];
 		[selectionItem setTitle:[fun valueForKey:@"name"]];
 		[selectionItem setTarget:self];
