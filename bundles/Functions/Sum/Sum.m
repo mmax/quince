@@ -44,8 +44,6 @@
 	
     NSMutableArray * points = [self getPoints:mum];
     [self createSeqForTimePointsInArray:points fromQuinceObject:mum intoQuinceObject:[resultController content]];
-    [self cleanUp:[resultController content]];
-        
     [resultController update];
 	[resultController setValue:[NSString stringWithFormat:@"%@_∑", [mum valueForKey:@"name"]] forKeyPath:@"selection.name"];
 
@@ -118,11 +116,6 @@
 
 -(double)a2dB:(double)a{ return 20*log10(a);}
 -(double)dB2a:(double)dB{ return pow(10, dB/20.0);}
-
--(void) cleanUp:(QuinceObject *)q{
-    //      join successive objects with same volume level
-}
-
-
 -(BOOL)worksOnSelection{return NO;}
+
 @end

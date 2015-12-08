@@ -15,7 +15,6 @@
 
 -(NSMutableArray *) getPoints:(QuinceObject *)q;
 -(void) createSeqForTimePointsInArray: (NSArray *)points fromQuinceObject:(QuinceObject *)m intoQuinceObject:(QuinceObject *)q;
--(void) cleanUp:(QuinceObject *)q;
 -(double) sumForParameter:(NSString *)s inArrayOfObjects:o;
 -(double)a2dB:(double)a;
 -(double)dB2a:(double)dB;
