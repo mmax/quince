@@ -183,6 +183,10 @@
 		508CB8CA13C7BABD00F43AED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 508CB8C813C7BABD00F43AED /* InfoPlist.strings */; };
 		509178A1172728C6008C7F08 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		5093F27816F673B200C62B4F /* FunctionShortCutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5093F27716F652F800C62B4F /* FunctionShortCutController.m */; };
+		5098598C1C16F6D300F0CC1F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		509859991C16FB2100F0CC1F /* Sum.m in Sources */ = {isa = PBXBuildFile; fileRef = 509859981C16FB2100F0CC1F /* Sum.m */; };
+		5098599C1C16FB9B00F0CC1F /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		509859A21C16FC6800F0CC1F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 509859A01C16FC6800F0CC1F /* InfoPlist.strings */; };
 		50999AAD127642FB00AD0D65 /* AlignOnVolume.m in Sources */ = {isa = PBXBuildFile; fileRef = 50999A1F127640C000AD0D65 /* AlignOnVolume.m */; };
 		50999ABC1276431A00AD0D65 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		50999B2A127645A300AD0D65 /* AudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 50999B26127645A300AD0D65 /* AudioFile.m */; };
@@ -863,6 +867,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 50C2843B172725DB00841C48;
 			remoteInfo = ImportSequence;
+		};
+		5098599A1C16FB9400F0CC1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
+		5098599D1C16FBBB00F0CC1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5098598A1C16F6D300F0CC1F;
+			remoteInfo = Sum;
 		};
 		50999ABA1276431700AD0D65 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1711,6 +1729,12 @@
 		5091789D17272700008C7F08 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = bundles/Functions/ImportSequence/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		5093F27616F652F800C62B4F /* FunctionShortCutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FunctionShortCutController.h; path = QuinceCore/FunctionShortCutController.h; sourceTree = "<group>"; };
 		5093F27716F652F800C62B4F /* FunctionShortCutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FunctionShortCutController.m; path = QuinceCore/FunctionShortCutController.m; sourceTree = "<group>"; };
+		5098598B1C16F6D300F0CC1F /* Sum.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sum.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		509859971C16FB2100F0CC1F /* Sum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sum.h; path = bundles/Functions/Sum/Sum.h; sourceTree = SOURCE_ROOT; };
+		509859981C16FB2100F0CC1F /* Sum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sum.m; path = bundles/Functions/Sum/Sum.m; sourceTree = SOURCE_ROOT; };
+		5098599F1C16FC5900F0CC1F /* Sum-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Sum-Prefix.pch"; path = "bundles/Functions/Sum/Sum-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		509859A11C16FC6800F0CC1F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = bundles/Functions/Sum/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		509859A31C16FC7100F0CC1F /* Sum-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Sum-Info.plist"; path = "bundles/Functions/Sum/Sum-Info.plist"; sourceTree = SOURCE_ROOT; };
 		50999A1E127640C000AD0D65 /* AlignOnVolume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlignOnVolume.h; path = /Users/max/SWProjects/quince/bundles/Functions/AlignOnVolume/AlignOnVolume.h; sourceTree = "<absolute>"; };
 		50999A1F127640C000AD0D65 /* AlignOnVolume.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlignOnVolume.m; path = /Users/max/SWProjects/quince/bundles/Functions/AlignOnVolume/AlignOnVolume.m; sourceTree = "<absolute>"; };
 		50999A9E1276425E00AD0D65 /* AlignOnVolume-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "AlignOnVolume-Info.plist"; path = "/Users/max/SWProjects/quince/bundles/Functions/AlignOnVolume/AlignOnVolume-Info.plist"; sourceTree = "<absolute>"; };
@@ -2313,6 +2337,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		509859881C16F6D300F0CC1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5098599C1C16FB9B00F0CC1F /* QuinceApi.framework in Frameworks */,
+				5098598C1C16F6D300F0CC1F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50999AA5127642A200AD0D65 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2695,6 +2728,7 @@
 				505AAD8318A9074E00701D5D /* CopyValues.bundle */,
 				50EB905C19350438007D0DBD /* Rectify.bundle */,
 				504E86BE195DC564005A3FB2 /* ExportParameterListing.bundle */,
+				5098598B1C16F6D300F0CC1F /* Sum.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3127,6 +3161,7 @@
 				5074FE631238E20200BB60C6 /* SetParameter */,
 				50100798174BC596006BDAED /* Shuffle */,
 				501007C9174CBED9006BDAED /* Sort */,
+				5098598D1C16F6D300F0CC1F /* Sum */,
 				50B8F5E01231003300E444BC /* TempoChange */,
 				506BF9A6117A665300ECBC4E /* TimeQuantization */,
 				5020C6A113C7A23600D58742 /* Transpose */,
@@ -3498,6 +3533,26 @@
 				508CB8C713C7BABD00F43AED /* PitchQuantization-Info.plist */,
 				508CB8C813C7BABD00F43AED /* InfoPlist.strings */,
 				508CB8CB13C7BABD00F43AED /* PitchQuantization-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5098598D1C16F6D300F0CC1F /* Sum */ = {
+			isa = PBXGroup;
+			children = (
+				5098598E1C16F6D300F0CC1F /* Supporting Files */,
+				509859971C16FB2100F0CC1F /* Sum.h */,
+				509859981C16FB2100F0CC1F /* Sum.m */,
+			);
+			path = Sum;
+			sourceTree = "<group>";
+		};
+		5098598E1C16F6D300F0CC1F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				509859A31C16FC7100F0CC1F /* Sum-Info.plist */,
+				509859A01C16FC6800F0CC1F /* InfoPlist.strings */,
+				5098599F1C16FC5900F0CC1F /* Sum-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -4904,6 +4959,24 @@
 			productReference = 508CB8C313C7BABC00F43AED /* PitchQuantization.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
+		5098598A1C16F6D300F0CC1F /* Sum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 509859961C16F6D300F0CC1F /* Build configuration list for PBXNativeTarget "Sum" */;
+			buildPhases = (
+				509859871C16F6D300F0CC1F /* Sources */,
+				509859881C16F6D300F0CC1F /* Frameworks */,
+				509859891C16F6D300F0CC1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5098599B1C16FB9400F0CC1F /* PBXTargetDependency */,
+			);
+			name = Sum;
+			productName = Sum;
+			productReference = 5098598B1C16F6D300F0CC1F /* Sum.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		50999AA6127642A200AD0D65 /* AlignOnVolume */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50999AAB127642A300AD0D65 /* Build configuration list for PBXNativeTarget "AlignOnVolume" */;
@@ -5474,6 +5547,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5098599E1C16FBBB00F0CC1F /* PBXTargetDependency */,
 				504E86E7195DC8E0005A3FB2 /* PBXTargetDependency */,
 				50B571DE193506540007BC98 /* PBXTargetDependency */,
 				50C7619918A90839005CBA0F /* PBXTargetDependency */,
@@ -5654,6 +5728,7 @@
 				50D196021230669B00C3FC2C /* Sets-UnionNoDoubles */,
 				50100788174BC565006BDAED /* Shuffle */,
 				501007B9174CBE2B006BDAED /* Sort */,
+				5098598A1C16F6D300F0CC1F /* Sum */,
 				50B8F5801230FF7700E444BC /* TempoChange */,
 				506BF8C2117A5F6300ECBC4E /* TimeGridContainer */,
 				50B171F813CB336400C9F105 /* TimeQuantization */,
@@ -6024,6 +6099,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				508CB8CA13C7BABD00F43AED /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		509859891C16F6D300F0CC1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				509859A21C16FC6800F0CC1F /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6752,6 +6835,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		509859871C16F6D300F0CC1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				509859991C16FB2100F0CC1F /* Sum.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50999AA4127642A200AD0D65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -7424,6 +7515,16 @@
 			target = 50C2843B172725DB00841C48 /* ImportSequence */;
 			targetProxy = 5091789F17272716008C7F08 /* PBXContainerItemProxy */;
 		};
+		5098599B1C16FB9400F0CC1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 5098599A1C16FB9400F0CC1F /* PBXContainerItemProxy */;
+		};
+		5098599E1C16FBBB00F0CC1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5098598A1C16F6D300F0CC1F /* Sum */;
+			targetProxy = 5098599D1C16FBBB00F0CC1F /* PBXContainerItemProxy */;
+		};
 		50999ABB1276431700AD0D65 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 50A522B4117A52560072FB09 /* QuinceApi */;
@@ -7988,6 +8089,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				5091789D17272700008C7F08 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		509859A01C16FC6800F0CC1F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				509859A11C16FC6800F0CC1F /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -10483,6 +10592,57 @@
 			};
 			name = Release;
 		};
+		509859941C16F6D300F0CC1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/Sum/Sum-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "bundles/Functions/Sum/Sum-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		509859951C16F6D300F0CC1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/Sum/Sum-Prefix.pch";
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "bundles/Functions/Sum/Sum-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		50999AA9127642A300AD0D65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -12470,6 +12630,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		509859961C16F6D300F0CC1F /* Build configuration list for PBXNativeTarget "Sum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				509859941C16F6D300F0CC1F /* Debug */,
+				509859951C16F6D300F0CC1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		50999AAB127642A300AD0D65 /* Build configuration list for PBXNativeTarget "AlignOnVolume" */ = {
 			isa = XCConfigurationList;

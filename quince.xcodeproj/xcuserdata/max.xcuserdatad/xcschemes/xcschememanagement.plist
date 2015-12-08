@@ -369,6 +369,11 @@
 			<key>orderHint</key>
 			<integer>73</integer>
 		</dict>
+		<key>Sum.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>79</integer>
+		</dict>
 		<key>TempoChange.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -653,6 +658,11 @@
 			<true/>
 		</dict>
 		<key>508CB8C213C7BABC00F43AED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5098598A1C16F6D300F0CC1F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
