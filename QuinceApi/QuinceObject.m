@@ -732,16 +732,40 @@
 	return NO;
 }
 
--(void)flatten{ //not yet working on the controller-level, is it?!!
-	for(QuinceObject * sub in [self valueForKey:@"subObjects"]){
-		if([sub containsFoldedSubObjects])
-			[sub flatten];
-		else if([sub isFolded]){
-			[self unfoldObject:sub];
-			[self flatten]; // now the enumerators are confused, so start a new flatten_call and end this one
-			return;
-		}
-	}
+//-(void)flatten{ //not yet working on the controller-level, is it?!!
+//	for(QuinceObject * sub in [self valueForKey:@"subObjects"]){
+//		if([sub containsFoldedSubObjects])
+//			[sub flatten];
+//		else if([sub isFolded]){
+//			[self unfoldObject:sub];
+//			[self flatten]; // now the enumerators are confused, so start a new flatten_call and end this one
+//			return;
+//		}
+//	}
+//}
+
+
+-(void)flatten{ // new implementation 08.12.2015
+
+    long count = [self subObjectsCount];
+    if(count == 0)return;
+        
+    NSMutableSet * foldedSubs = [[NSMutableSet alloc]init];
+    for (QuinceObject * q in [self valueForKey:@"subObjects"]){
+        if([q subObjectsCount] > 0)
+            [foldedSubs addObject:q];
+    }
+    
+    while([foldedSubs count]){
+    
+        QuinceObject * q =  [foldedSubs anyObject];
+        [q flatten];
+        [self unfoldObject:q];
+        [foldedSubs removeObject:q];
+    }
+    
+    [foldedSubs release];
+    
 }
 
 -(void) hardSetMediaFileAssociations{
