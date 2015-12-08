@@ -185,5 +185,8 @@
 
 -(BOOL)needsInput{return YES;}	// if a function doesNotNeedInput to operate, 
 
+-(BOOL)worksOnSelection{return YES;}	//  regardless of the input and output types, 
+                                        //  there might be functions that can't operate on selctions
+                                        //  for instance because they create copies of their input
 
 @end

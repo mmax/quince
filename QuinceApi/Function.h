@@ -153,6 +153,7 @@
 -(BOOL)typeCheckPurpose:(NSString *)purpose withType:(NSString *)type;
 -(void)setIsCompatible:(BOOL)b;
 -(NSDictionary *)dictionary;
+-(BOOL)worksOnSelection;
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @end
