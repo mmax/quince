@@ -904,12 +904,13 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 
 -(IBAction)splitAtCursorTime:(id)sender{
 
-	[self presentAlertWithText:@"not yet ready to use..."];
+	[self presentAlertWithText:@"not working with more then 1 layer of nested objects at the moment..."];
 	QuinceObject * mom = [[[mainController activeView]contentController]content];
-	NSArray * subs = [mom subObjectsAtTime:[self cursorTime]];
+	NSArray * subs = [mom subObjectsAroundTime:[self cursorTime]];
 	if([subs count]==0)NSLog(@"doc: no objects found to cut...");
-	for(QuinceObject * q in subs)
-		[q splitAtTime:[self cursorTime] migrateToController:nil];
+    else [mom splitAtTime:[self cursorTime]];
+	/*for(QuinceObject * q in subs)
+		[q splitAtTime:[self cursorTime] migrateToController:nil];*/
 //	[subs makeObjectsPerformSelector:@selector(splitAtTime:migrateToController:) withObject:[self cursorTime] :nil];
 	[[mainController activeView] reload]; 
 }

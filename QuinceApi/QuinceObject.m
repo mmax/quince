@@ -814,6 +814,100 @@
 	return [s autorelease];
 }
 
+
+-(NSArray *)subObjectsAroundTime:(NSNumber *)time{
+	
+	double t = [time doubleValue];
+   // NSLog(@"around Time: %f", t);
+	NSMutableArray * s = [[NSMutableArray alloc]init];
+
+	
+	for(QuinceObject * m in [self valueForKey:@"subObjects"]){
+		
+		double start = [[m valueForKey:@"start"]doubleValue];//+[[m offsetForKey:@"start"]doubleValue];
+		double end = [[m end]doubleValue];
+		if ((start+.001)<t && t<(end-.001)){
+			[s addObject:m];
+           // NSLog(@"adding object: %@, start: %f, end: %f", [m valueForKey:@"name"], start, end);
+        }
+	}
+	return [s autorelease];
+}
+
+
+-(NSArray *)subObjectsAfterTime:(NSNumber *)time{
+    
+    NSMutableArray * s = [[NSMutableArray alloc]init];
+    double t = [time doubleValue];
+    
+    for(QuinceObject * m in [self valueForKey:@"subObjects"]){
+    
+        if([[m valueForKey:@"start"]doubleValue] >= (t-.0001))
+            [s addObject:m];
+    }
+    return [s autorelease];
+    
+}
+
+-(void)splitAtTime:(NSNumber *)time{                    //time assumed to be supplied relative to this object's start
+    
+    if([self subObjectsCount] == 0)
+        return ;
+    
+    NSArray * subsToSplit = [self subObjectsAroundTime:time];
+    QuinceObjectController * auntie = nil;
+    double durA, durB, t = [time doubleValue];
+    QuinceObject * niece;
+    
+    subsToSplit = [self subObjectsAroundTime:time];
+    
+    
+    for (QuinceObject * daughter in subsToSplit){
+        if([daughter subObjectsCount])
+            [daughter splitAtTime:[NSNumber numberWithDouble:t-[[daughter valueForKey:@"start"]doubleValue]]];
+        else{
+            durA = t - [[daughter valueForKey:@"start"]doubleValue];
+            durB = [[daughter end]doubleValue] - t;
+            niece = [[document controllerForCopyOfQuinceObjectController:[daughter controller] inPool:NO]content];
+            [[niece controller]removeSubObjects];
+            [niece setValue:time forKey:@"start"];
+            [niece setValue:[NSNumber numberWithDouble:durB] forKey:@"duration"];
+            [niece setValue:@"Split B" forKey:@"name"];
+            [daughter setValue:@"Split A" forKey:@"name"];
+            [daughter setValue:[NSNumber numberWithDouble:durA] forKey:@"duration"];
+            
+            [[self controller]addSubObjectWithController:[niece controller] withUpdate:YES];
+        }
+    }
+    
+    NSArray * subsToMove = [self subObjectsAfterTime:time];  
+    
+    if([self isChild] && [subsToMove count]) {
+        auntie = [document controllerForCopyOfQuinceObjectController:[self controller] inPool:NO];
+
+        [auntie removeSubObjects];
+        [[auntie content]setValue:@"auntie" forKey:@"name"];
+        
+        double delta, ns;
+        for(QuinceObject * q in subsToMove){
+            delta = t - [[self offsetForKey:@"start"]doubleValue];
+            ns = [[q valueForKey:@"start"]doubleValue] - delta;
+            [q setValue:[NSNumber numberWithDouble:ns] forKey:@"start"];
+            [auntie addSubObjectWithController:[q controller] withUpdate:NO];
+            [q updateOffsetForKey:@"start"];
+        }
+
+        [[auntie content] updateOffsetForKey:@"start"];
+        [[auntie content]setValue:[NSNumber numberWithDouble:[time doubleValue]+[[self offsetForKey:@"start"]doubleValue] + [[self valueForKey:@"start"]doubleValue]] forKey:@"start"];
+        [[[self valueForKey:@"superObject"]controller] addSubObjectWithController:auntie withUpdate:YES];
+        [auntie update];
+        
+        for(QuinceObject * q in subsToMove)
+            [[self controller]removeSubObjectWithController:[q controller] withUpdate:NO];
+    }
+    [[self controller]update];
+}
+
 -(void)splitAtTime:(NSNumber *)time migrateToController:(QuinceObjectController *)mig{
 	
 	if(![self superObject]) return;	// can't cut top-level objects
