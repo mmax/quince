@@ -177,6 +177,11 @@
 -(IBAction) invertSelection:(id)sender;
 -(IBAction)toggleShowPositionGuides:(id)sender;
 -(IBAction)showFunctionShortCutSettingsWindow:(id)sender;
+-(IBAction)cut:(id)sender;
+-(IBAction)copy:(id)sender;
+-(IBAction)paste:(id)sender;
+
+
 
 -(QuinceObjectController *)getSingleSelectedObjectController;
 -(NSMutableArray *)getSelectedObjectControllers;

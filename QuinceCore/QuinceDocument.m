@@ -1047,6 +1047,72 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
     [objectPoolTreeController setContent:[objectPoolTreeController content]]; // dirrty but worrking
 }
 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-(IBAction)cut:(id)sender{
+    
+    [self copy:self];
+    [[mainController activeView]deleteBackward:sender];
+
+}    
+    
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-(IBAction)copy:(id)sender{
+    
+    QuinceObject * mother = [self newObjectOfClassNamed:@"QuinceObject" inPool:NO];
+	
+    NSArray * s = [[mainController activeView] selection];
+    
+    if([s count] == 0) return;
+    
+    for(ChildView * child in s)
+        [[mother controller] addSubObjectWithController:[self controllerForCopyOfQuinceObjectController:[child controller] inPool:NO] withUpdate:NO];
+    
+    [dictionary removeObjectForKey:@"clipboard"];
+    [dictionary setValue:mother forKey:@"clipboard"];
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-(IBAction)paste:(id)sender{
+
+    // if clipboard is not of type QuinceObject return
+    
+    QuinceObjectController * cbc = [self controllerForCopyOfQuinceObjectController:[[self valueForKey:@"clipboard"]controller] inPool:NO];
+    NSArray * objects2Paste = [[cbc content ]valueForKey:@"subObjects"];
+    
+    if([objects2Paste count]<1) return;
+    
+    ContainerView * activeView = [mainController activeView];
+    QuinceObjectController * mumC = [activeView contentController];
+
+    NSNumber * time = nil;
+    double startOffset = [[[objects2Paste objectAtIndex:0]valueForKey:@"start"]doubleValue], newStart = 0;
+    
+    NSValue * lcl = [activeView valueForKey:@"lastClickLocation"];
+    
+    
+    if(lcl != nil)
+        time = [activeView convertXToTime:[NSNumber numberWithFloat:[lcl pointValue].x]];
+    else
+        time = [self cursorTime];
+    
+    if(!time)return;
+    
+    for (QuinceObject * q in objects2Paste){
+        newStart = [[q valueForKey:@"start"]doubleValue]-startOffset+[time doubleValue];
+        [q setValue:[NSNumber numberWithDouble:newStart] forKey:@"start"];
+        [mumC addSubObjectWithController:[q controller] withUpdate:NO];
+        for(ContainerView * cv in [mumC registeredContainerViews])
+            [cv createChildViewForQuinceObjectController:[q controller]];
+    }
+        
+    [mumC update];
+        
+}
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 #pragma mark ACCESSORS
