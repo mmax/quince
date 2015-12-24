@@ -863,7 +863,7 @@
     
     
     for (QuinceObject * daughter in subsToSplit){
-        if([daughter subObjectsCount])
+        if([daughter isFolded])
             [daughter splitAtTime:[NSNumber numberWithDouble:t-[[daughter valueForKey:@"start"]doubleValue]]];
         else{
             durA = t - [[daughter valueForKey:@"start"]doubleValue];
@@ -1362,6 +1362,10 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context){
 }
 
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 #pragma mark finish
 
 -(void)dealloc{
@@ -1377,6 +1381,7 @@ NSInteger compareStrings(NSString * a, NSString * b, void * context){
 	[dictionary release];
 	[super dealloc];	
 }
+
 
 
 
