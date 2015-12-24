@@ -230,12 +230,17 @@ NSString* const kMuteString = @"m";
     BOOL childHit=NO;
 	ChildView * child;
 	
+
+    
 	[[document undoManager]beginUndoGrouping];
 	
 	[[self window] makeFirstResponder:self]; //?
 	clickLocation = [self convertPoint:[event locationInWindow] fromView:nil];
 	child = [self childViewForPoint:clickLocation];
 	if(child) childHit = YES;
+
+    if(!childHit)    
+        [self setValue:[NSValue valueWithPoint:clickLocation] forKey:@"lastClickLocation"];
 	
 	if(childHit	&& !([event modifierFlags] & NSShiftKeyMask) // not shift-click, 
 	   && !([event modifierFlags] & NSControlKeyMask) //not control-click, 

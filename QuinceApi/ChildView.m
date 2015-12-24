@@ -207,7 +207,7 @@
 	else [(NSColor*)[self valueForKey:@"frameColor"] set];
 	
 	[NSBezierPath strokeRect:r];
-		
+
 	if([[controller valueForKeyPath:@"selection.isFolded"]boolValue]==YES ){
 	
 		int fontSize=[self foldedItemHeight]-3;
