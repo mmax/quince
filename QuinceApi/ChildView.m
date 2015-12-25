@@ -200,7 +200,8 @@
         [[self interiorColor]set];
     
     
-	[NSBezierPath fillRect:r];
+	//[NSBezierPath fillRect:r];
+    NSRectFill(r);
 	if([self selected] && ![self muted])	[(NSColor*)[self valueForKey:@"selectionColor"] set];
 	else if([self muted] && ![self selected]) [(NSColor*)[self valueForKey:@"mutedColor"] set];
 	else if([self selected] && [self muted])  [(NSColor*)[self valueForKey:@"mutedSelectionColor"] set];
