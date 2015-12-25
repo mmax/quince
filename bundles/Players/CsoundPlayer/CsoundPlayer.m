@@ -453,15 +453,26 @@ uintptr_t csThread(void *data)  {
 
     int mode;
     NSString * v = [q valueForKey:@"csoundMode"];
+    QuinceObject * m = q;
 
-    if(v) mode = [self instrumentNumberForMode:v];
+    if(v){
+        mode = [self instrumentNumberForMode:v];
+    }
     
     v = [q valueForKey:@"csoundInstrumentNumber"];
-    if(v) mode = [v intValue];
+
+    if(!v){
+        while(!v && [m isChild]){
+            m = [m superObject];    
+            v = [m valueForKey:@"csoundInstrumentNumber"];
+        }
+    }
 
     if(!v){
         mode = [[self valueForKey:@"defaultMode"]intValue];
     }
+    
+    if(v) mode = [v intValue];
     
     if(mode >0)
         return mode;
