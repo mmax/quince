@@ -9,7 +9,7 @@
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>MaximilianMarcoll.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
