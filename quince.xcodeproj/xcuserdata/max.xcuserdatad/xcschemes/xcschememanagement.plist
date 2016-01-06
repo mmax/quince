@@ -149,6 +149,11 @@
 			<key>orderHint</key>
 			<integer>69</integer>
 		</dict>
+		<key>ExportSubObjects.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>81</integer>
+		</dict>
 		<key>ExtractEnvSequence.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -369,6 +374,11 @@
 			<key>orderHint</key>
 			<integer>73</integer>
 		</dict>
+		<key>SplitWithSeq.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>80</integer>
+		</dict>
 		<key>Sum.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -478,6 +488,11 @@
 			<true/>
 		</dict>
 		<key>5020C69E13C7A23500D58742</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>502328F61C3D9E550078C9D9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -632,6 +647,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>50755AB41C3D9FAE00FDC2DA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>507750B61268DCE700AF7956</key>
 		<dict>
 			<key>primary</key>
@@ -658,6 +678,11 @@
 			<true/>
 		</dict>
 		<key>508CB8C213C7BABC00F43AED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>508D15461C3DB77A00CEA897</key>
 		<dict>
 			<key>primary</key>
 			<true/>
