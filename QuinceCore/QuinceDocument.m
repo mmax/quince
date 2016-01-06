@@ -1405,7 +1405,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 
 -(NSMutableArray *)playbackObjectList{
 
-    //[self setIndeterminateProgressTask:@"preparing copies..."];
+    [self setIndeterminateProgressTask:@"preparing copies..."];
 //    [self displayProgress:YES];
     
 	NSMutableArray * topLevel = [mainController topLevelPlaybackList]; // an array with arrays for strips with top-level quinceObjectControllers
@@ -1415,20 +1415,20 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 		[tl2 addObjectsFromArray:a];
 
 	//NSLog(@"doc: playbackObjectList: topLevel: before remove dup: %@", tl2);
-    //[self setIndeterminateProgressTask:@"removing duplicates..."];
+    [self setIndeterminateProgressTask:@"removing duplicates..."];
 
 	topLevel = [self removeDuplicatesInArrayOfQuinceObjectControllers:tl2];
 	//NSLog(@"doc: playbackObjectList: topLevel: after remove dup: %@", topLevel);	
 	NSMutableArray * flat = [[NSMutableArray alloc]init];
 
 	// hard-set audioFile associations
-    //[self setIndeterminateProgressTask:@"setting media file bindings..."];
+    [self setIndeterminateProgressTask:@"setting media file bindings..."];
 
 	for(QuinceObjectController * tlo in topLevel)
 		[[tlo content]hardSetMediaFileAssociations];
 	
 	// create flat list
-   // [self setIndeterminateProgressTask:@"creating flat object list..."];
+    [self setIndeterminateProgressTask:@"creating flat object list..."];
 	for(QuinceObjectController * tlo in topLevel){
 		
 		QuinceObject * copy = [tlo content];//[[tlo content]copy]; // actually we already have copies (see StripController:TopLevelPlaybackList)
