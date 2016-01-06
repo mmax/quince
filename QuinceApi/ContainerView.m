@@ -48,7 +48,7 @@ NSString* const kMuteString = @"m";
 -(id)initWithFrame:(NSRect)frame{	
 	if ((self = [super initWithFrame:frame])) {
 		
-		[[NSAnimationContext currentContext] setDuration:1.0];
+		//[[NSAnimationContext currentContext] setDuration:1.0];
 		childViews = [[NSMutableArray alloc] init];
 		selection = [[NSMutableArray alloc] init];
 		dragging = NO;
@@ -816,7 +816,13 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 
 -(ChildView *)createChildViewForQuinceObjectController:(QuinceObjectController *)mc andBindWithKeysForLocationOnX:(NSString *)lx sizeOnX:(NSString *)sx locationOnY:(NSString *)ly{
     
-	ChildView * childView = [layerController newChildViewOfClassNamed:[self defaultChildViewClassName]];
+    ChildView * childView;
+    
+    if(layerController)
+        childView = [layerController newChildViewOfClassNamed:[self defaultChildViewClassName]];
+    else
+        [[NSClassFromString([self defaultChildViewClassName]) alloc]init];
+    
 	[childView setEnclosingView:self];
 	[childView setController:mc andBindWithKeysForLocationOnX:lx sizeOnX:sx locationOnY:ly];
     
@@ -1223,6 +1229,7 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 float maxabs_float(float x){
 	return x<0?x*(-1):x;
 }
+
 
 #pragma mark user feedback
 

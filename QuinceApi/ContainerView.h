@@ -180,4 +180,5 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2);
 float maxabs_float(float x);
 
 -(void)reload;
+
 @end
