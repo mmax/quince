@@ -640,7 +640,7 @@
 }
 
 -(QuinceObject *)foldObjects:(NSArray *)subs{
-
+    if(![subs count]) return nil;
 	//QuinceObjectController * foldedController = [document controllerForNewQuinceObjectOfClassNamed:[self className] inPool:NO];
 	QuinceObject * folded = [document newObjectOfClassNamed:[self className] inPool:NO];//[foldedController content];
 	[folded initWithSubObjects:subs];
@@ -847,6 +847,19 @@
     }
     return [s autorelease];
     
+}
+
+-(NSArray *)subObjectsInTimeRangeFrom:(NSNumber *)start until:(NSNumber *)end{
+    NSMutableArray * s = [[NSMutableArray alloc]init];
+    
+    double a = [start doubleValue], b = [end doubleValue], cs, ce;
+    for(QuinceObject * m in [self valueForKey:@"subObjects"]){
+        cs = [[m valueForKey:@"start"]doubleValue];
+        ce = [[m end]doubleValue];
+        if (cs>=a && cs<b && ce<=b)
+            [s addObject:m];
+    }
+    return [s autorelease];
 }
 
 -(void)splitAtTime:(NSNumber *)time{                    //time assumed to be supplied relative to this object's start

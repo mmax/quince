@@ -117,6 +117,7 @@
 -(NSArray *)subObjectsAtTime:(NSNumber *)time;      // start <= t && t < end
 -(NSArray *)subObjectsAroundTime:(NSNumber *)time;  // like ...AtTime, except: it requires start < t && t< end
 -(NSArray *)subObjectsAfterTime:(NSNumber *)time;
+-(NSArray *)subObjectsInTimeRangeFrom:(NSNumber *)start until:(NSNumber *)end;
 -(void)splitAtTime:(NSNumber *)time;
 -(void)splitAtTime:(NSNumber *)time migrateToController:(QuinceObjectController *)mig;
 
