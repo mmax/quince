@@ -92,6 +92,9 @@
 	if((self = [super init])){
 		[self setInitialValues];
 		dictionary = [[NSMutableDictionary alloc]init];
+//        NSMutableDictionary * dict = [NSMutableDictionary dictionaryWithDictionary:xml];
+//        [dict removeObjectForKey:@"subObjects"];
+//        [dict removeObjectForKey:@"id"];
 		[dictionary addEntriesFromDictionary:xml];
 		//[self setValue:[[NSMutableArray alloc]init] forKey:@"subObjects"];
 		//[[self valueForKey:@"subObjects"]removeAllObjects];// subObjects will be added by the controller!
@@ -143,6 +146,14 @@
 	return copy;	
 }
  
+-(QuinceObject*)copyWithoutSubs{
+	QuinceObject * copy = [[document controllerForNewObjectOfClassNamed:[self className] inPool:NO]content];
+    [copy initWithXMLDictionary:[self xmlDictionary]];
+    [copy setDocument:document];
+	return copy;	
+
+}
+
 #pragma mark accessors
 
 -(void)setController:(QuinceObjectController *)mc{
@@ -527,6 +538,12 @@
         [self setValue:[NSNumber numberWithInt:1]forKey:@"glissandoDirection"];
 }
 
+-(BOOL)hasMediaFileStart{
+    NSNumber * afs = [self valueForKey:@"mediaFileStart"];
+    return afs ? YES : NO;
+}
+
+
 -(NSNumber *)mediaFileStart{
 
 	NSString * fileName =[self valueForKey:@"mediaFileName"];
@@ -541,7 +558,6 @@
 	
     if(!fileName && superQ)//[self valueForKey:@"superObject"])
 		return [NSNumber numberWithDouble:[[superQ mediaFileStart]doubleValue] + [[self valueForKey:@"start"]doubleValue]];
-                                            // [[superMint valueForKey:key]doubleValue]];
 	
 	return nil;
 }
@@ -774,14 +790,14 @@
     if(!mf || [[self valueForKey:@"muted"]intValue]==1) // no need to set media file if object is muted anyway
         return;
     
-	[self setValue:[self mediaFileStart] forKey:@"mediaFileStart"];
+	if(![self hasMediaFileStart])
+        [self setValue:[self mediaFileStart] forKey:@"mediaFileStart"];
 	
-	if([self subObjectsCount]>0){
+	if([self isFolded]){
         NSArray * subs = [self valueForKey:@"subObjects"];
 		for(QuinceObject * quince in subs)
 			[quince hardSetMediaFileAssociations];
-	}
-	
+	}	
 	else 
         [self setValue:[mf valueForKey:@"name"] forKey:@"mediaFileName"];	
 		// [self mediaFile] returns super's mediaFile if ‘self’ doesn't have one

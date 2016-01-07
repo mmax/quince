@@ -206,6 +206,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	//[[aController window] makeFirstResponder:[[[mainController stripControllers] objectAtIndex:0]activeView]];
 }
 
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 // dirty
 //-(BOOL)isDocumentEdited{return YES;}
@@ -1415,40 +1416,21 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	for(NSArray * a in topLevel)
 		[tl2 addObjectsFromArray:a];
 
-	//NSLog(@"doc: playbackObjectList: topLevel: before remove dup: %@", tl2);
-    [self setIndeterminateProgressTask:@"removing duplicates..."];
+	
 
-	topLevel = [self removeDuplicatesInArrayOfQuinceObjectControllers:tl2];
-	//NSLog(@"doc: playbackObjectList: topLevel: after remove dup: %@", topLevel);	
+	topLevel = tl2;//[self removeDuplicatesInArrayOfQuinceObjectControllers:tl2];
 	NSMutableArray * flat = [[NSMutableArray alloc]init];
 
-	// hard-set audioFile associations
-    //[self setIndeterminateProgressTask:@"setting media file bindings..."];
-
-	//for(QuinceObjectController * tlo in topLevel)
-		//[[tlo content]hardSetMediaFileAssociations];
-	
-	// create flat list
+		// create flat list
     [self setIndeterminateProgressTask:@"creating flat object list..."];
 	for(QuinceObjectController * tlo in topLevel){
 		
-		QuinceObject * copy = [tlo content];//[[tlo content]copy]; // actually we already have copies (see StripController:TopLevelPlaybackList)
-        
-
-        [copy hardSetMediaFileAssociations];
-        [self setIndeterminateProgressTask:@"flattening..."];
-
-   		[copy flatten];
-        [self setIndeterminateProgressTask:@"creating flat object list..."];
+		QuinceObject * copy = [tlo content];
 
 		NSArray * subs = [copy valueForKey:@"subObjects"];
 		if([subs count]){
 			for(QuinceObject * quince in subs){
                 if(![[quince valueForKey:@"muted"]intValue] == 1){
-                   // NSNumber * oldStart = [quince valueForKey:@"start"];
-                   // NSNumber * startOffset = [quince valueForKey:@"startOffset"];
-                   // NSLog(@"startOffset: %@", startOffset);
-                   // [quince setValue:[NSNumber numberWithDouble:[oldStart doubleValue] + [startOffset doubleValue]] forKey:@"start"];
                     [flat addObject:quince];
                 }
             }
@@ -1469,6 +1451,45 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	return [flat autorelease];
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-(QuinceObjectController *)playbackCopyOfController:(QuinceObjectController *)mc{
+	
+	QuinceObject *copy = [[mc content] copy];
+    [copy hardSetMediaFileAssociations];
+    [copy flatten];
+    return [copy controller];
+    
+    /*QuinceObject *m, * c = [mc content]; 
+    QuinceObject * copy = [c copyWithoutSubs];//
+    
+    NSMutableArray * foldedSubs = [NSMutableArray array], * s = [NSMutableArray array];
+    NSArray * subs = [c valueForKey:@"subObjects"];
+    
+    for(QuinceObject * q in subs){
+        if([q isFolded])
+            [foldedSubs addObject:q];
+        else{
+            m = [q copy]; 
+            [m hardSetMediaFileAssociations];
+            [s addObject:m];
+        }
+    }
+    
+    for(QuinceObject * q in foldedSubs){
+        m = [self playbackCopyOfController:[q controller]];
+    
+    }
+    
+    for(QuinceObject *q in s)
+        [copy addSubObject:q withUpdate:NO];
+    
+    [copy update];return copy;*/
+    
+
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 -(NSMutableArray *)removeDuplicatesInArrayOfQuinceObjectControllers:(NSMutableArray *)controllers{
 
@@ -2011,7 +2032,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 		//[self setValue:[NSNumber numberWithBool:YES] forKey:@"playbackStarted"];
 	}
 	
-	if(!player){
+    if(!player){
 		NSString * playerName = [playerMenu titleOfSelectedItem];
 		player = [[NSClassFromString(playerName) alloc]init];
 		[player setDocument:self];

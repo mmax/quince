@@ -198,6 +198,7 @@
 -(QuinceObject *)objectWithValue:(id)value forKey:(NSString *)key;
 -(QuinceObject *)mediaFileNamed:(NSString *)mfn;
 -(NSMutableArray *)playbackObjectList;
+-(QuinceObjectController *)playbackCopyOfController:(QuinceObjectController *)mc;
 -(NSMutableArray *)removeDuplicatesInArrayOfQuinceObjectControllers:(NSMutableArray *)controllers;
 
 -(void)updateFunctionCompatibilityForQuinceObjectController:(QuinceObjectController *)qc;

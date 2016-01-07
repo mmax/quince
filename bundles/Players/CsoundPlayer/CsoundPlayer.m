@@ -361,7 +361,7 @@ uintptr_t csThread(void *data)  {
 -(void)setSettings:(NSDictionary *)settings{
     [self setValue:[settings valueForKey:@"orc"] forKey:@"orcString"];
     [modeMenu selectItemWithTitle:[settings valueForKey:@"defaultModeName"]];
-    [self setDefaultMode:self];
+    [self setDefaultMode:nil];
 }
 
 -(IBAction)ok:(id)sender{
@@ -483,7 +483,8 @@ uintptr_t csThread(void *data)  {
 -(IBAction)setDefaultMode:(id)sender{
 
     [self setValue:[NSNumber numberWithInt:[self instrumentNumberForMode:[modeMenu titleOfSelectedItem]]] forKey:@"defaultMode"];
-   
+    if (!sender) return;
+    
     [document displayProgress:YES];
 	[self prepare];
 	NSMutableString * score = [[[NSMutableString alloc]init]autorelease];

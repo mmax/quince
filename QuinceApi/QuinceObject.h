@@ -49,6 +49,7 @@
 -(QuinceObject *)initWithXMLDictionary:(NSDictionary *)xml;
 -(void)setInitialValues;
 -(QuinceObject*)copyWithZone:(NSZone *)zone;
+-(QuinceObject*)copyWithoutSubs;
 -(NSString *)createUUID;
 
 
@@ -94,6 +95,7 @@
 -(NSNumber *)end;
 -(QuinceObject *)mediaFile;
 -(NSNumber *)mediaFileStart;
+-(BOOL)hasMediaFileStart;
 -(void)hardSetMediaFileAssociations;
 -(NSArray *)arrayWithValuesForKey:(NSString *)key;
 
