@@ -747,12 +747,12 @@
 
 -(void)flatten{ // new implementation 08.12.2015
 
-    long count = [self subObjectsCount];
-    if(count == 0)return;
+    if(![self isFolded]) return;
         
     NSMutableSet * foldedSubs = [[NSMutableSet alloc]init];
+    
     for (QuinceObject * q in [self valueForKey:@"subObjects"]){
-        if([q subObjectsCount] > 0)
+        if([q isFolded])
             [foldedSubs addObject:q];
     }
     
@@ -765,7 +765,6 @@
     }
     
     [foldedSubs release];
-    
 }
 
 -(void) hardSetMediaFileAssociations{

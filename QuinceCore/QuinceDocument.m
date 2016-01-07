@@ -1409,7 +1409,8 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 //    [self displayProgress:YES];
     
 	NSMutableArray * topLevel = [mainController topLevelPlaybackList]; // an array with arrays for strips with top-level quinceObjectControllers
-
+    
+    [self setIndeterminateProgressTask:@"unpacking strips..."];
 	NSMutableArray * tl2 = [[NSMutableArray alloc]init];
 	for(NSArray * a in topLevel)
 		[tl2 addObjectsFromArray:a];
@@ -1422,10 +1423,10 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	NSMutableArray * flat = [[NSMutableArray alloc]init];
 
 	// hard-set audioFile associations
-    [self setIndeterminateProgressTask:@"setting media file bindings..."];
+    //[self setIndeterminateProgressTask:@"setting media file bindings..."];
 
-	for(QuinceObjectController * tlo in topLevel)
-		[[tlo content]hardSetMediaFileAssociations];
+	//for(QuinceObjectController * tlo in topLevel)
+		//[[tlo content]hardSetMediaFileAssociations];
 	
 	// create flat list
     [self setIndeterminateProgressTask:@"creating flat object list..."];
@@ -1433,14 +1434,21 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 		
 		QuinceObject * copy = [tlo content];//[[tlo content]copy]; // actually we already have copies (see StripController:TopLevelPlaybackList)
         
-		[copy flatten];
+
+        [copy hardSetMediaFileAssociations];
+        [self setIndeterminateProgressTask:@"flattening..."];
+
+   		[copy flatten];
+        [self setIndeterminateProgressTask:@"creating flat object list..."];
+
 		NSArray * subs = [copy valueForKey:@"subObjects"];
 		if([subs count]){
 			for(QuinceObject * quince in subs){
                 if(![[quince valueForKey:@"muted"]intValue] == 1){
-                    NSNumber * oldStart = [quince valueForKey:@"start"];
-                    NSNumber * startOffset = [quince valueForKey:@"startOffset"];
-                    [quince setValue:[NSNumber numberWithDouble:[oldStart doubleValue] + [startOffset doubleValue]] forKey:@"start"];
+                   // NSNumber * oldStart = [quince valueForKey:@"start"];
+                   // NSNumber * startOffset = [quince valueForKey:@"startOffset"];
+                   // NSLog(@"startOffset: %@", startOffset);
+                   // [quince setValue:[NSNumber numberWithDouble:[oldStart doubleValue] + [startOffset doubleValue]] forKey:@"start"];
                     [flat addObject:quince];
                 }
             }
