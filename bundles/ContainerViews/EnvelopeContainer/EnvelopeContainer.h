@@ -35,6 +35,7 @@
 	NSMutableArray * fillPaths;
 	NSMutableArray * strokePaths;
 	NSMutableArray * windows;
+    float * wins;
 }
 -(NSArray *)pathsFromArray: (NSArray *)paths inRect:(NSRect)rect;
 -(void)createWindows;

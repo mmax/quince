@@ -30,6 +30,7 @@
 #import <QuinceApi/QuinceDocument.h>
 #import <QuinceApi/ChildView.h>
 #import <QuinceApi/Envelope.h>
+#include <malloc/malloc.h>
 
 #define kDeltaX 4
 
@@ -39,7 +40,8 @@
 
 	if(fillPaths) [fillPaths release];
 	if(strokePaths)	[strokePaths release];
-	if(windows)	[windows release];
+	//if(windows)	[windows release];
+    if(wins) free(wins);
 	[super dealloc];
 }
 
@@ -63,7 +65,7 @@
 -(NSString *)defaultChildViewClassName{return nil;}//@"EnvelopeChild";}
 
  -(void)prepareToDisplayObjectWithController:(QuinceObjectController *)mc{
-
+     NSLog(@"EnvelopeCotainer: prepareToDisplayObjectWithController");
 	Envelope * env = [mc content];
 	double ppx = [[self valueForKey:@"pixelsPerUnitX"]doubleValue];
 	 double duration = [[env valueForKey:@"duration"]doubleValue];
@@ -76,18 +78,19 @@
 	
 	 [self setContentController:mc];
 	
-	 if(![env samplesPerWindow] || ![env envelope]){
+	 if(![env samplesPerWindow] || ![env samples]){
 		 //[document presentAlertWithText:@"no data found! nothing to display"];
 		 return;
 	 }
 
 	 [self createViewsForQuinceObjectController:mc];
-     [document displayProgress:NO];
+     
 }
 
 
 -(void)createViewsForQuinceObjectController:(QuinceObjectController *)mc{
 
+    NSLog(@"EnvelopeCotainer: createViewsForQuinceObjectController");
 	[self createWindows];
 	if(fillPaths) [fillPaths removeAllObjects];
 	else fillPaths = [[NSMutableArray alloc]init];
@@ -100,26 +103,30 @@
 	double x=0,y=0, time;
 	NSPoint startPoint = NSMakePoint(x, y);
 	NSPoint point;
-    
+    long winCount = [[self valueForKey:@"winCount"]longValue]; // [windows count]
     [document setProgressTask:@"creating view..."];
     [document displayProgress:YES];
 	
-    for(long i = 0;i<[windows count];i+= N){
-        [document setProgress:(100.0/[windows count])*i];
+    for(long i = 0;i<winCount;i+= N){
+        [document setProgress:(100.0/winCount)*i];
          
 		NSBezierPath * p = [[NSBezierPath alloc]init];
 		NSBezierPath * q = [[NSBezierPath alloc]init];
 		[p moveToPoint:startPoint];
 		[q moveToPoint:NSMakePoint(x, y)];
 		
-		N = [windows count] > i + framesPerPath ? framesPerPath : [windows count]-i;
+        N = winCount > i + framesPerPath ? framesPerPath : winCount-i;
+        
+		//N = [windows count] > i + framesPerPath ? framesPerPath : [windows count]-i;
 		
 		for(int a = 0;a<N;a++){
             if(i>0){
                 point = NSMakePoint(x, y);
                 [p lineToPoint:point];
             }
-			y = [[self convertVolumeToY:[NSNumber numberWithDouble:20.0 * log10([[windows objectAtIndex:i+a]floatValue])]]doubleValue];
+			//y = [[self convertVolumeToY:[NSNumber numberWithDouble:20.0 * log10([[windows objectAtIndex:i+a]floatValue])]]doubleValue];
+            //NSLog(@"(i+a):%ld , wins: %lu", (i+a), malloc_size(wins)/(sizeof(float)));
+            y = [[self convertVolumeToY:[NSNumber numberWithDouble:20.0 * log10(wins[i+a])]]doubleValue];
 			int fpwi = framesPerWindow+0.5;
 			time = frameDuration * fpwi * (i+a  );
 			x = [[self convertTimeToX:[NSNumber numberWithDouble:time]]doubleValue];
@@ -138,7 +145,7 @@
 		[q release];
 		
 	}
-    [document displayProgress:NO]; 
+    [document displayProgress:NO];
 }
 
 
@@ -149,30 +156,39 @@
     [document setProgress:0];
     [document displayProgress:YES];
     
-	if(windows){
+
+    
+	/*if(windows){
 		//[windows makeObjectsPerformSelector:@selector(release)];
 		[windows removeAllObjects];
 	}
 	else
 		windows = [[NSMutableArray alloc]init];
-	
-	Envelope * envelope = [[self contentController] content];
-	NSArray * audio = [envelope envelope];
+	*/
+    
+	Envelope * envelope = [[self contentController] content]; 
+	//NSArray * audio = [envelope envelope];
+    long index, count = [envelope count];//[audio count];
+    float * samples = [envelope samples];
+    if(wins)
+        free(wins);
+    else{
+        wins = malloc(count*sizeof(float));
+        if(!wins || malloc_size(wins)/sizeof(float) < count){
+            [document presentAlertWithText:@"EnvelopeContainer: Could not allocate memory for envelope windows."];
+            return;
+        }
+    }
+    
+    NSLog(@"EnvelopeContainer: count: %ld", count);
+    NSLog(@"EnvelopeContainer: creating windows now...");
+    
 	int N;
 	double candidate, ppx = [[self valueForKey:@"pixelsPerUnitX"]doubleValue];
 	float deltaX = kDeltaX;
-	//float sr = [[envelope sampleRate]floatValue];// 44100.0;
-	//int envelopeSamplesPerWindow = [[envelope samplesPerWindow]intValue];
 
-	/* double spwF = deltaX / ppx * sr;
-		int envSamplesPerFrame = [[envelope samplesPerWindow]intValue];
-		double envFramesF = spwF / envSamplesPerFrame;
-	 */	
 	float max = 0;
-	//int spw = spwF*0.5;
-	
-	//int framesPerWindow = envFramesF + 0.5;
-	
+		
 	double windowDur = 1.0 / ppx * deltaX;
 	double frameDur = [envelope windowDuration];
     double timeOffset = [[envelope valueForKey:@"start"]doubleValue];
@@ -183,10 +199,6 @@
 		windowDur = frameDur;
 	}
 	
-	//NSLog(@"ppx: %f, windowDur: %f, frameDur: %f, framesPerWindow: %f", ppx, windowDur, frameDur, framesPerWindow);	
-	//double duration = [audio count] * frameDur;
-	//NSLog(@"envelope duration: %@, computed duration: %f", [envelope duration], duration);
-	//[self setValue:[NSNumber numberWithInt:spwF+0.5] forKey:@"samplesPerWindow"];
 	[self setValue:[NSNumber numberWithDouble:windowDur] forKey:@"windowDuration"];
 	[self setValue:[NSNumber numberWithDouble:framesPerWindow] forKey:@"framesPerWindow"];
 	[self setValue:[NSNumber numberWithDouble:frameDur] forKey:@"frameDuration"];
@@ -197,26 +209,42 @@
     float sr = [[envelope sampleRate]floatValue];
     float zero = 0.000000000001;
     int windowOffset = (sr*timeOffset)/ framesPerWindowI;
-    //NSLog(@"windowOffset:%d", windowOffset);
-    for(long i=0;i<windowOffset;i++)
-        [windows addObject:[NSNumber numberWithFloat:zero]];
+    NSLog(@"windowOffset: %d", windowOffset);
+    index = 0;
+    
+    //experimental<
 
-	
-    for(long i=0;i<[audio count];i+= N) {
+    //for(long i=0;i<windowOffset;i++)
+       //[windows addObject:[NSNumber numberWithFloat:zero]];
+
+    for(long i=0;i<windowOffset;i++)
+        wins[index++] = zero;
+    
+	//  >experimental
+
+    for(long i=0;i<count;i+= N) {
         
-        [document setProgress:(100.0/[audio count])*i];
+        [document setProgress:(100.0/count)*i];
         
-		N = [audio count] < i+framesPerWindowI ? [audio count]-i : framesPerWindowI;
+		N = count < i+framesPerWindowI ? count-i : framesPerWindowI;
 		max = 0;
 		for(int a=0;a<N;a++){
-			candidate = [[audio objectAtIndex:i+a]doubleValue];
+			candidate = samples[i+a];//[[audio objectAtIndex:i+a]doubleValue];
 			if (candidate > max)
 				max = candidate;
 		}
 
-		[windows addObject:[NSNumber numberWithFloat:max]];
+       // experimental<
+        wins[index++]=max;
+		//[windows addObject:[NSNumber numberWithFloat:max]];
+        
+        //  >experimental
+        
 	}
-   // NSLog(@"windows:%@", windows);
+    //NSLog(@"windows count: %d", [windows count]);
+    NSLog(@"wins count: %ld", index);
+    [self setValue:[NSNumber numberWithLong:index] forKey:@"winCount"];
+
 }
 
 /*

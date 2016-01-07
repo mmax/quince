@@ -31,6 +31,8 @@
 
 @implementation Envelope
 
+@synthesize samples, count;
+
 -(Envelope *)init{
 
 	if((self = [super init])){
@@ -145,33 +147,39 @@
 	[document setProgressTask:@"resampling envelope..."];
 	[document displayProgress:YES];
 	
-	NSArray * env = [self envelope];
-	
+	//NSArray * env = [self envelope];
+    if(samples == NULL || count == 0) return;
 	//NSLog(@"before Resampling: %d frames", [env count]);
 	
+    float * newSamples = malloc(sizeof(float)*count);
+    if(!newSamples){
+        [document presentAlertWithText:@"could not allocate memory for samples"];
+        return;
+    }
+    
 	int envSamplesPerWindow = [[self samplesPerWindow]intValue];
 	float progress=0, f, sampleRate = [[self sampleRate]floatValue];
-	double candidate, y, max = -100000000;
+	float candidate, y, max = -100000000;
 	int userSamplesPerWindow = sampleRate*userWindowDuration/envSamplesPerWindow;
-	
-	NSMutableArray * newEnvelope = [[NSMutableArray alloc]init];
+	long newSize = 0;
+	//NSMutableArray * newEnvelope = [[NSMutableArray alloc]init];
 	
 	//int frames = [env count]/userSamplesPerWindow;
 	
 	[document setProgress:progress];
-	for(int i = 0;i<[env count];i+=userSamplesPerWindow){
+	for(int i = 0;i<count;i+=userSamplesPerWindow){
 		y=-1;
 		f = i;
-		progress = f/[env count]*100.0;//100.0/frames * i;
+		progress = f/count*100.0;//100.0/frames * i;
 		
-		for(int x = 0;x<userSamplesPerWindow && i+x<[env count];x++){
+		for(int x = 0;x<userSamplesPerWindow && i+x<count;x++){
 			
-			candidate = [[env  objectAtIndex:i+x]doubleValue];
+			candidate = samples[i+x];
 			if (candidate > y) 
 				y = candidate;
 		}
 		if(y>max)max=y;
-		[newEnvelope addObject:[NSNumber numberWithDouble:y]];
+		newSamples[newSize++] = y;//[newEnvelope addObject:[NSNumber numberWithDouble:y]];
 		
 		[document setProgress:progress];
 	}
@@ -179,9 +187,12 @@
 	//NSLog(@"after Resampling: %d frames", [newEnvelope count]);
 	//NSLog(@"max: %f", max);
 	//NSLog(@"%@", newEnvelope);
-	[self setEnvelope:newEnvelope];
+	//[self setEnvelope:newEnvelope];
 	double spw = sampleRate * userWindowDuration;
 	[self setValue:[NSNumber numberWithDouble:spw] forKey:@"samplesPerWindow"];
+    free(samples);
+    samples = newSamples;
+    count = newSize;
 //	
 	//double dur = [newEnvelope count] * userWindowDuration;
 	//NSLog(@"after resampling: %d frames, frameDur : %f, envelope duration: %f", [newEnvelope count], userWindowDuration, dur);
@@ -189,7 +200,7 @@
 	[self setValue:[NSNumber numberWithDouble:userWindowDuration] forKey:@"windowDuration"];
 	[self setValue:[NSNumber numberWithBool:YES] forKey:@"resampled"];
     [self setValue:[NSNumber numberWithInt:0] forKey:@"clone"];
-	[newEnvelope release];
+	//[newEnvelope release];
 	
 }
 
@@ -210,6 +221,15 @@
 	double sr = [[self sampleRate]doubleValue];
 	double spw = [[self samplesPerWindow]doubleValue];
 	return spw/sr;
+}
+
+
+-(void)dealloc{
+	if(samples)
+        free(samples);
+    
+	[dictionary release];
+	[super dealloc];	
 }
 
 @end

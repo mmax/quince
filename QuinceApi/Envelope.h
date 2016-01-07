@@ -29,8 +29,13 @@
 //@class QuinceObject;
 
 @interface Envelope : QuinceObject {
+    float * samples;
+    long count;
 
 }
+
+@property (assign) float * samples;
+@property (assign) long count;
 
 -(NSArray *) envelope;
 -(void)setEnvelope:(NSArray *)array;

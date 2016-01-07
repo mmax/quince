@@ -30,7 +30,7 @@
 #import <AudioToolbox/ExtendedAudioFile.h>
 #import <QuinceApi/QuinceDocument.h>
 
-//#define kSamplesPerWindow 350
+
 #define kSamplesPerWindow 1
 @class Sequence, AudioFile;
 
@@ -43,6 +43,8 @@
 
 -(BOOL)checkObject:(QuinceObject *)quince ofType:(NSString *)type;
 -(NSArray *)readSoundData;
+-(float *) readSoundDataFloats;
+
 -(double)envelopeWindowDuration; // in s
 float getMax(Float32 * buf, int N);
 float maxabs(float x);

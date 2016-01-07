@@ -66,7 +66,8 @@
 	if(!quince)NSLog(@"%@: ERROR: no quince!", [self className]);
 	double duration = [[env duration]doubleValue];
 	//NSArray * envArray = [self resampleEnvelopeForDuration:userWindowDuration];
-	NSArray * envArray = [[env resampleCopyForWindowDuration:userWindowDuration]envelope];
+	//NSArray * envArray = [[env resampleCopyForWindowDuration:userWindowDuration]envelope];
+    float * samples = [[env resampleCopyForWindowDuration:userWindowDuration]samples];
 	[document setIndeterminateProgressTask:@"setting volume values..."];
 	[document displayProgress:YES];
 	for(QuinceObject * m in [quince valueForKey:@"subObjects"]){
@@ -75,7 +76,8 @@
 		if(time < duration){
 			int windowsPerSecond = 1.0/userWindowDuration;
 			int index = time*windowsPerSecond;
-			double envVal = [[envArray objectAtIndex:index]doubleValue];
+			//double envVal = [[envArray objectAtIndex:index]doubleValue];
+            float envVal = samples[index];
 			[m setValue:[NSNumber numberWithDouble:20*log10(envVal)] forKey:@"volume"];
 		}
 	}
@@ -83,7 +85,7 @@
 	//NSLog(@"%@: apply: ready for output...", [self className]);
 	[self setOutputObjectToObjectWithPurpose:@"target"];
 	[self done];
-	[envArray release];
+	//[envArray release];
 }
 
 -(void)reset{

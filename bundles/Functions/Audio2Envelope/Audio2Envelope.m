@@ -92,12 +92,17 @@
 	 [NSString stringWithFormat:@"Reading Sound Data: %@", [[self objectForPurpose:@"source"]valueForKey:@"name"]]];		
 	[document displayProgress:YES];	
 	
-	NSArray * data = [self readSoundData];
+	//NSArray * data = [self readSoundData];
+    float * samples = [self readSoundDataFloats];
 	Envelope * env = (Envelope *)[self outputObjectOfType:@"Envelope"];
 	[env setValue:[NSNumber numberWithInt:kSamplesPerWindow] forKey:@"samplesPerWindow"];
 	[env setValue:[NSNumber numberWithDouble:frameCount/ sr] forKey:@"duration"];
-	[env setEnvelope:data];
+	//[env setEnvelope:data];
 	[env setValue:[NSNumber numberWithInt:sr] forKey:@"sampleRate"];
+    [env setCount:frameCount];
+    NSLog(@"Audio2Envelope: frame count: %ld", [env count]);
+    [env setSamples:samples];
+    
 	NSArray * comp = [[[self objectForPurpose:@"source"]valueForKey:@"name"]componentsSeparatedByString:@"."];
 	int index = [comp count] > 2 ? [comp count]-2 : 0;
 	if(![self valueForKey:@"result"])
@@ -182,6 +187,8 @@
     float progress = 0, old = 0;
     [document setProgressTask:@"Reading Frames..."];
     [document displayProgress:YES];
+    
+    
 	while(1){
 		err = ExtAudioFileRead(inFile, &loadedPackets, &bufList);
 		if (err)
@@ -190,14 +197,7 @@
 		if(err || !loadedPackets)
 			break;
 
-		/* int N=0;
-				for(i=0;i<loadedPackets;i+= N) {
-					N = loadedPackets < kSamplesPerWindow ? loadedPackets : samplesPerWindow;
-					//NSLog(@"N: %d", N);
-					float max = getMax( &(srcBuffer[i]), N);
-					[data addObject:[NSNumber numberWithDouble:max]];
-					frameCount +=N;
-				} */
+	
 		for(i=0;i<loadedPackets;i++){
 			[data addObject:[NSNumber numberWithFloat:fabs(srcBuffer[i])]];
             frameCount++;
@@ -215,6 +215,119 @@
 
 	return [data autorelease];
 }
+
+
+
+-(float *) readSoundDataFloats{ // look at http://www.cocoadev.com/index.pl?ExtAudioFile
+
+	//NSMutableArray * data = [[NSMutableArray alloc]init];
+	ExtAudioFileRef inFile;
+	OSStatus err;
+	FSRef soundRef;
+	int i, kSrcBufSize = 44100;//= kSamplesPerWindow;
+	Float32 srcBuffer[kSrcBufSize];//, progress=0;
+	int nChannels = 1;
+	AudioFile * file = (AudioFile *)[self objectForPurpose:@"source"]; // is already typechecked, so the cast is ok!
+	if(!file){
+		[document presentAlertWithText:[NSString stringWithFormat:@"%@: ERROR: readSoundData:  no file!", [self className]]];
+		return nil;
+	}
+    
+	path = [file valueForKey:@"filePath"];
+    
+	err = FSPathMakeRef((const UInt8 *)[path fileSystemRepresentation], &soundRef, NULL);
+	if(err) {
+		[document presentAlertWithText:[NSString stringWithFormat:@"EnvelopeFromAudioFile: ERROR: invalid path: %@", path]]; //Could not create FSRef from path
+		return nil;
+	}
+	//int samplesPerWindow = kSamplesPerWindow;
+	err = ExtAudioFileOpenURL(CFURLCreateFromFSRef(NULL, &soundRef), &inFile);
+	
+    //    kExtAudioFileProperty_FileLengthFrames
+    
+    SInt64 totalFrameCount;
+    UInt32 tfcs = sizeof(totalFrameCount);
+    
+    err = ExtAudioFileGetProperty(inFile, kExtAudioFileProperty_FileLengthFrames, &tfcs, &totalFrameCount);
+	UInt32 propSize;
+	
+	AudioStreamBasicDescription clientFormat;
+	propSize = sizeof(clientFormat);
+	
+	err = ExtAudioFileGetProperty(inFile, kExtAudioFileProperty_FileDataFormat, &propSize, &clientFormat);
+	//_ThrowExceptionIfErr(@"kExtAudioFileProperty_FileDataFormat", err);
+	
+	
+	// If you need to alloc a buffer, you'll need to alloc filelength*channels*rateRatio bytes
+	//double rateRatio = kGraphSampleRate / clientFormat.mSampleRate;
+	
+	
+	clientFormat.mSampleRate = sr;
+	//clientFormat.SetCanonical(1, true);
+    
+	// copied from setCanonical....
+	clientFormat.mFormatID = kAudioFormatLinearPCM;
+	int sampleSize = sizeof(Float32);
+	clientFormat.mFormatFlags = kAudioFormatFlagsCanonical;
+	clientFormat.mBitsPerChannel = 8 * sampleSize;
+	clientFormat.mChannelsPerFrame = nChannels;
+	clientFormat.mFramesPerPacket = 1;
+	clientFormat.mBytesPerPacket = clientFormat.mBytesPerFrame = nChannels * sampleSize;
+	
+	
+	
+	propSize = sizeof(clientFormat);
+	err = ExtAudioFileSetProperty(inFile, kExtAudioFileProperty_ClientDataFormat, propSize, &clientFormat);
+	//_ThrowExceptionIfErr(@"kExtAudioFileProperty_ClientDataFormat", err);
+	
+	UInt32 numPackets = kSrcBufSize;//kSegmentSize; // Frames to read (might be filelength (in frames) to read the whole file)
+	UInt32 samples = numPackets;//<<1; // 2 channels (samples) per frame
+	
+	AudioBufferList bufList;
+	bufList.mNumberBuffers = 1;
+	bufList.mBuffers[0].mNumberChannels = 1; // Always 2 channels in this example
+	bufList.mBuffers[0].mData = srcBuffer; // data is a pointer (float*) so our sample buffer
+	bufList.mBuffers[0].mDataByteSize = samples * sizeof(Float32);
+	
+	UInt32 loadedPackets = numPackets;
+    float progress = 0, old = 0;
+    [document setProgressTask:@"Reading Frames..."];
+    [document displayProgress:YES];
+    
+    float * sampleBuffer = malloc(sizeof(float)*totalFrameCount);
+    if(!sampleBuffer){
+        [document presentAlertWithText:@"could not allocate memory to store samples!"];
+        return NULL;
+    }
+    
+    frameCount = 0;
+    
+	while(1){
+		err = ExtAudioFileRead(inFile, &loadedPackets, &bufList);
+		if (err)
+			NSLog(@"error while reading soundFile: %@", path);
+        
+		if(err || !loadedPackets)
+			break;
+    
+		for(i=0;i<loadedPackets;i++){
+            sampleBuffer[frameCount]=fabs(srcBuffer[i]);
+            frameCount++;
+		}
+        progress = (100.0/totalFrameCount)*frameCount;
+        if(progress >= old+.2){
+            old = progress;
+            [document setProgress:progress];
+        }
+        
+        
+	}
+	
+	ExtAudioFileDispose(inFile);
+    
+	return sampleBuffer;
+}
+
 
 
 float getMax(Float32 * buf, int N){
