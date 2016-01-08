@@ -783,9 +783,9 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
 		//[self createChildViewForQuinceObjectController:c];
         [self createChildViewForQuinceObjectController:c andBindWithKeysForLocationOnX:lx sizeOnX:sx locationOnY:ly];
         progress = (float)(100.0 /max)*i;
-        [document setProgressTask:[NSString stringWithFormat:@"processing objects......%ld/%ld", i, max]];
+        //[document setProgressTask:[NSString stringWithFormat:@"processing objects......%ld/%ld", i, max]];
         [document setProgress:progress];        
-        [document displayProgress:YES];
+        //[document displayProgress:YES];
     }
 	[document displayProgress:NO];	
 }
