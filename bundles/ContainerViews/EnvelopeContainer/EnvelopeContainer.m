@@ -36,6 +36,15 @@
 
 @implementation EnvelopeContainer
 
+-(id)initWithFrame:(NSRect)frame{	
+	if ((self = [super initWithFrame:frame])) {
+		
+		wins = NULL;
+    }
+    return self;
+}	
+
+
 -(void)dealloc{
 
 	if(fillPaths) [fillPaths release];
@@ -170,8 +179,12 @@
 	//NSArray * audio = [envelope envelope];
     long index, count = [envelope count];//[audio count];
     float * samples = [envelope samples];
-    if(wins)
-        free(wins);
+    if(wins){
+        long s = malloc_size(wins);
+        //NSLog(@"size: %ld", s);
+        if(!s)
+            free(wins);
+    }
     else{
         wins = malloc(count*sizeof(float));
         if(!wins || malloc_size(wins)/sizeof(float) < count){
@@ -284,7 +297,7 @@
 */
 
 -(void)scaleByX:(float)x andY:(float)y{
-	
+	//NSLog(@"scaleByX: andY:");
 	NSAffineTransform * transform = [NSAffineTransform transform];
 	[transform scaleXBy:x yBy:y];
 	/* [path transformUsingAffineTransform:transform]; */
