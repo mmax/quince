@@ -29,6 +29,7 @@
     // preparations
     double lastTime = 0, time = 0;
     long i = 0;
+    float progress = 0;
     [grid sortChronologically];
     NSArray * affectedQuinces, * subs = [grid valueForKey:@"subObjects"];
     if(![subs count]){
@@ -39,6 +40,10 @@
     // fast forward until we have the first sub with a start > 0
     while([[[subs objectAtIndex:i]valueForKey:@"start"]doubleValue]<=0 && i<[subs count]) i++; 
     //NSLog(@"alright");
+    [document setProgressTask:@"splitting..."];
+    [document setProgress:progress];
+    [document displayProgress:YES];
+    
     while(i<[subs count]){
         // get times
         q = [subs objectAtIndex:i++];
@@ -51,6 +56,8 @@
         affectedQuinces = [quince subObjectsInTimeRangeFrom:[NSNumber numberWithDouble:lastTime] until:[NSNumber numberWithDouble:time]];
           
         [quince foldObjects:affectedQuinces];
+        progress = (100.0/[subs count])*i;
+        [document setProgress:progress];
     }
     // fold remaining subs
     if([[quince end]doubleValue]> time){
@@ -61,7 +68,7 @@
     
     [quince update];
 	[quince setValue:[NSString stringWithFormat:@"%@_Split", [victim valueForKey:@"name"]] forKey:@"name"];
-
+    [document displayProgress:NO];
     [self done];
 
 }
