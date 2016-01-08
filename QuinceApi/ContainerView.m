@@ -766,9 +766,10 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
     
 	NSArray * subControllers = [mc controllersForSubObjects];
 	QuinceObjectController * c;
-    float progress, max = [subControllers count];
+    float progress;
+    long max = [subControllers count];
     //int iMax = max;
-    [document setProgressTask:[NSString stringWithFormat:@"%@: processing objects...", [self className]]];
+    [document setProgressTask:[NSString stringWithFormat:@"processing objects..."]];
 	[document displayProgress:YES];
    
     NSString * lx = [self keyForLocationOnXAxis];
@@ -776,13 +777,15 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
     NSString * ly = [self keyForLocationOnYAxis];
     
     
-	for(int i=0; i<max;i++){//QuinceObjectController * mc in subControllers){
-        //[document setProgressTask:[NSString stringWithFormat:@"%@: creating display...%d/%d", [self className], i, iMax]];
+	for(long i=0; i<max;i++){//QuinceObjectController * mc in subControllers){
+        
         c = [subControllers objectAtIndex:i];
 		//[self createChildViewForQuinceObjectController:c];
         [self createChildViewForQuinceObjectController:c andBindWithKeysForLocationOnX:lx sizeOnX:sx locationOnY:ly];
-        progress = 100.0 * ((i+1)/(max));
-        [document setProgress:progress];
+        progress = (float)(100.0 /max)*i;
+        [document setProgressTask:[NSString stringWithFormat:@"processing objects......%ld/%ld", i, max]];
+        [document setProgress:progress];        
+        [document displayProgress:YES];
     }
 	[document displayProgress:NO];	
 }
