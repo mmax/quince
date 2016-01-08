@@ -1734,7 +1734,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 //        NSLog(@"DOC: setProgress: invalid progress value!");
 //        return;
 //    }
-//    NSLog(@"DOC: setProgress: %f", progress);
+    //NSLog(@"DOC: setProgress: %f", progress);
     [self setValue:[NSNumber numberWithFloat:progress] forKey:@"progress"];
 	//[progressBar setDoubleValue:progress];
 	//[progressBar displayIfNeeded];
