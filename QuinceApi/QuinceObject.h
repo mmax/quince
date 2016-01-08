@@ -92,7 +92,9 @@
 
 -(void)sortByKey:(NSString *)key ascending:(BOOL)asc;
 -(void)sortChronologically;
+-(NSArray *)subObjects;
 -(NSNumber *)end;
+-(NSNumber *)absoluteStart;
 -(QuinceObject *)mediaFile;
 -(NSNumber *)mediaFileStart;
 -(BOOL)hasMediaFileStart;

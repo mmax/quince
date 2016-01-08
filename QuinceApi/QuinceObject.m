@@ -185,8 +185,21 @@
 	return [self valueForKey:@"duration"];
 }
 
+-(NSArray *)subObjects{
+    return [self valueForKey:@"subObjects"];
+}
 -(NSNumber *)end{
 	return [NSNumber numberWithDouble:[[self valueForKey:@"start"] doubleValue] + [[self valueForKey:@"duration"]doubleValue]];
+}
+
+-(NSNumber *)absoluteStart{
+
+    double start = [[self valueForKey:@"start"]doubleValue];
+    QuinceObject * superQuince = [self superObject];
+    if(superQuince)
+        start += [[superQuince absoluteStart]doubleValue];
+    
+    return [NSNumber numberWithDouble:start];
 }
 
 -(QuinceObject *)mediaFile{

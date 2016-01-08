@@ -1454,7 +1454,16 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 
 -(QuinceObjectController *)playbackCopyOfController:(QuinceObjectController *)mc{
 	
-	QuinceObject *copy = [[mc content] copy];
+	QuinceObject *copy = [[mc content] copyWithoutSubs];
+    double time = [[self cursorTime]doubleValue];
+    
+    for(QuinceObject * q in [[mc content] subObjects]){
+    
+        if([[q absoluteStart]doubleValue] >= time){
+            [copy addSubObject:[q copy] withUpdate:NO];
+        }
+    }
+    [copy update];
     [copy hardSetMediaFileAssociations];
     [copy flatten];
     return [copy controller];
