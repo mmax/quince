@@ -814,17 +814,37 @@
 	return [a autorelease];
 }
 
--(NSArray *)subObjectsAtTime:(NSNumber *)time{
-	
+-(NSArray *)subObjectsAtTime:(NSNumber *)time startLookingAtIndex:(long *)n{     // assumes that we have a sorted subObjects array.
+                                                                                // upon returning, *n will hold the index of the first subObject to match the criteria. On subsequent calls, looking for subs at later times, n can be reused! :)
 	NSMutableArray * s = [[NSMutableArray alloc]init];
 	double t = [time doubleValue];
-	
-	for(QuinceObject * m in [self valueForKey:@"subObjects"]){
+	long i, startIndex=0, count = [self subObjectsCount];
+    NSArray * subs = [self valueForKey:@"subObjects"];
+    BOOL flag = NO;
+    
+    if(n && *n){
+        startIndex = *n;
+    }
+    
+    QuinceObject * m;
+    
+	for(i=startIndex; i<count;i++){
+        
+        m = [subs objectAtIndex:i];
 		
 		double start = [[m valueForKey:@"start"]doubleValue]+[[m offsetForKey:@"start"]doubleValue];
 		double end = start + [[m valueForKey:@"duration"]doubleValue];
-		if (start<=t && t<end)
+    
+        if (start<=t && t<end){
 			[s addObject:m];
+            if(n != NULL && !flag){
+                *n = i;
+                flag = YES;
+            }
+        }
+        
+        if (start > t)
+            break;
 	}
 	return [s autorelease];
 }
@@ -1002,13 +1022,13 @@
 				if(start<cut && end>cut)
 					[q splitAtTime:time migrateToController:newSplitController];
 		} */
-	NSArray * sot = [self subObjectsAtTime:time];
+	NSArray * sot = [self subObjectsAtTime:time startLookingAtIndex:NULL];
 	int count = [sot count];
 
 	while(count>0){
 		NSLog(@"loooop---splittting: count: %d", count);
 		[[sot lastObject] splitAtTime:time migrateToController:newSplitController];
-		sot = [self subObjectsAtTime:time];
+		sot = [self subObjectsAtTime:time startLookingAtIndex:NULL];
 		count = [sot count];
 	}
 
@@ -1064,7 +1084,7 @@
 	if(![[self valueForKey:@"subObjects"]count])
 		return nil;
 	
-	NSArray * subs = [self subObjectsAtTime:time];
+	NSArray * subs = [self subObjectsAtTime:time startLookingAtIndex:NULL];
 	NSMutableArray * amps = [[NSMutableArray alloc]init];
 	for(QuinceObject * m in subs){
 		if([m amplitude])
@@ -1076,7 +1096,7 @@
 -(NSArray *)valuesForKey:(NSString *)key forTime:(NSNumber *)time{
 	if(![[self valueForKey:@"subObjects"]count])
 		return nil;
-	NSArray * subs = [self subObjectsAtTime:time];
+	NSArray * subs = [self subObjectsAtTime:time startLookingAtIndex:NULL];
 	NSMutableArray * values = [[NSMutableArray alloc]init];
 	for(QuinceObject * m in subs){
 		if([m valueForKey:key])
@@ -1094,7 +1114,7 @@
 
 -(NSNumber *)mostIntenseFrequencyForTime:(NSNumber *)time{
 	
-	NSArray * subs = [self subObjectsAtTime:time];
+	NSArray * subs = [self subObjectsAtTime:time startLookingAtIndex:NULL];
 	float max = -1;
 	QuinceObject * maxMint;
 	for(QuinceObject * m in subs){

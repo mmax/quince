@@ -116,7 +116,7 @@
 -(void)removeObjectForKey:(NSString *)key;
 -(void)recursivelyRemoveObjectForKey:(NSString *)key;
 
--(NSArray *)subObjectsAtTime:(NSNumber *)time;      // start <= t && t < end
+-(NSArray *)subObjectsAtTime:(NSNumber *)time startLookingAtIndex:(long *)n;      // start <= t && t < end
 -(NSArray *)subObjectsAroundTime:(NSNumber *)time;  // like ...AtTime, except: it requires start < t && t< end
 -(NSArray *)subObjectsAfterTime:(NSNumber *)time;
 -(NSArray *)subObjectsInTimeRangeFrom:(NSNumber *)start until:(NSNumber *)end;

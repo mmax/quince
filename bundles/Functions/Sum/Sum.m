@@ -34,6 +34,9 @@
 -(void)perform{
     
 	QuinceObject * mum =[(QuinceObject *)[self objectForPurpose:@"source"]copy];
+    [document setIndeterminateProgressTask:@"flattening copy..."];
+    [document displayProgress:YES];
+
     [mum flatten];
     [mum sortChronologically];
     
@@ -42,57 +45,97 @@
     
 	[mum sortChronologically];
 	
-    NSMutableArray * points = [self getPoints:mum];
-    [self createSeqForTimePointsInArray:points fromQuinceObject:mum intoQuinceObject:[resultController content]];
+    [self getPoints:mum];
+    
+    [self createSeqForTimePointsFromQuinceObject:mum intoQuinceObject:[resultController content]];
     [resultController update];
 	[resultController setValue:[NSString stringWithFormat:@"%@_∑", [mum valueForKey:@"name"]] forKeyPath:@"selection.name"];
+    
+    [document displayProgress:NO];
 
 	[self done];
 }
 
--(NSMutableArray *) getPoints:(QuinceObject *)q{
+-(void) getPoints:(QuinceObject *)q{
     
-    NSMutableArray * p = [[NSMutableArray alloc]init];
-    QuinceObject * sub;
+    //NSLog(@"Sum: getPoints");
+    [document setProgressTask:@"finding times points..."];
+
+
+    NSArray * subs = [q valueForKey:@"subObjects"] ;
+    long count = [subs count],i=0, index = 0;
+
+    float progress = 0;
+    //NSMutableArray * p = [[NSMutableArray alloc]init];
+    pointCount = count * 2;
     
-    for(sub in [q valueForKey:@"subObjects"]){
-        [p addObject:[NSNumber numberWithDouble:[(NSNumber *)[sub valueForKey:@"start"]doubleValue]]];
-        [p addObject:[NSNumber numberWithDouble:[(NSNumber *)[sub end]doubleValue]]];
+    points = malloc(sizeof(double)*pointCount);
+    if(!points){
+    
+        [document presentAlertWithText:@"Could not allocate memory for storing data!"];
+        return;
+    }
+    
+    for(QuinceObject * sub in subs){
+        
+        //[p addObject:[NSNumber numberWithDouble:[(NSNumber *)[sub valueForKey:@"start"]doubleValue]]];
+        //[p addObject:[NSNumber numberWithDouble:[(NSNumber *)[sub end]doubleValue]]];
+        points[index++] = [[sub valueForKey:@"start"]doubleValue];
+        points[index++] = [[sub end]doubleValue];
+        
+        progress = (100.0/count)*i++;
+        
+        [document setProgress:progress];
     }
 
-    NSSortDescriptor *asc = [NSSortDescriptor sortDescriptorWithKey:@"self" ascending:YES];
-    [p sortUsingDescriptors:[NSArray arrayWithObject:asc]];
-    return [p autorelease];
+    qsort(points, pointCount, sizeof(double), compare);
+    
+//    NSSortDescriptor *asc = [NSSortDescriptor sortDescriptorWithKey:@"self" ascending:YES];
+//    [p sortUsingDescriptors:[NSArray arrayWithObject:asc]];
+    //return [p autorelease];
 }
 
--(void) createSeqForTimePointsInArray: (NSArray *)points fromQuinceObject:(QuinceObject *)m intoQuinceObject:(QuinceObject *)result{
-    
+-(void) createSeqForTimePointsFromQuinceObject:(QuinceObject *)m intoQuinceObject:(QuinceObject *)result{
+
+   // NSLog(@"Sum: createSeq...");
+
     QuinceObject * q = nil;
-    long count = [points count];
+
     NSNumber * n = nil;
-    double previousStart;
+    double previousStart, p;
     int i;
+    long index=0;
+    float progress=0;
     
-    for(i = 0; i < count-1;i++){ //counting to the n-1 because the last "point" is an end!
+    [document setProgressTask:@"creating sum sequence..."];
+    [document setProgress:0];
+        [document displayProgress:YES];
+    
+    for(i = 0; i < pointCount-1;i++){ //counting to the n-1 because the last "point" is an end!
+        //NSLog(@"count: %d/%ld", i, pointCount);
         
-        n = [points objectAtIndex:i];
-        
+        //n = [points objectAtIndex:i];
+        p = points[i];
         if(q){
             previousStart = [[q valueForKey:@"start"]doubleValue];
-            [q setValue:[NSNumber numberWithDouble:[n doubleValue]-previousStart] forKey:@"duration"];
+            [q setValue:[NSNumber numberWithDouble:p-previousStart] forKey:@"duration"];
         }
         
-        NSArray * subs = [m subObjectsAtTime:n];
+        n = [NSNumber numberWithDouble:p];
+        NSArray * subs = [m subObjectsAtTime:n startLookingAtIndex:&index];
         double sum = [self sumForParameter:@"volume" inArrayOfObjects:subs];
         q = [[document controllerForNewObjectOfClassNamed:@"QuinceObject" inPool:NO]content];
 
-        [q setValue:[n copy] forKey:@"start"];
+        [q setValue:n forKey:@"start"];
         [q setValue:[NSNumber numberWithDouble:sum] forKey:@"volume"];
         [[result controller] addSubObjectWithController:[q controller] withUpdate:NO];//addSubObject:q withUpdate:NO];
+        progress = (100.0/pointCount)*i;
+        //NSLog(@"progress: %f", progress);
+        [document setProgress:progress];
     }
-    n = [points objectAtIndex:i];                                                                   // since the last "point" is an end,
+    p = points[i];
     previousStart = [[q valueForKey:@"start"]doubleValue];                                          // we need to 
-    [q setValue:[NSNumber numberWithDouble:[n doubleValue]-previousStart] forKey:@"duration"];      // adjust the last q's duration
+    [q setValue:[NSNumber numberWithDouble:p-previousStart] forKey:@"duration"];      // adjust the last q's duration
     [result update];
 }
 
@@ -108,6 +151,15 @@
         return [self a2dB:linSum];
     }
     [document presentAlertWithText:@"SUM: NO MATCHING PARAMETER FOUND!"];
+    return 0;
+}
+
+int compare(const void * a, const void * b){
+    double A = *(double *)a;
+    double B = *(double *)b;
+    
+    if(A>B)return 1;
+    if(A<B)return -1;
     return 0;
 }
 

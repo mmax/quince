@@ -11,11 +11,16 @@
 #import <QuinceApi/QuinceObject.h>
 
 
-@interface Sum : Function
+@interface Sum : Function{
 
--(NSMutableArray *) getPoints:(QuinceObject *)q;
--(void) createSeqForTimePointsInArray: (NSArray *)points fromQuinceObject:(QuinceObject *)m intoQuinceObject:(QuinceObject *)q;
+    double * points;
+    long pointCount;
+}
+
+-(void) getPoints:(QuinceObject *)q;
+-(void) createSeqForTimePointsFromQuinceObject:(QuinceObject *)m intoQuinceObject:(QuinceObject *)q;
 -(double) sumForParameter:(NSString *)s inArrayOfObjects:o;
 -(double)a2dB:(double)a;
 -(double)dB2a:(double)dB;
+int compare(const void * a, const void * b);
 @end
