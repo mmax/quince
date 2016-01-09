@@ -11,5 +11,5 @@
 @interface SplitWithSeq : Function
 
 -(void)copyParamsOf:(QuinceObject*)source into:(QuinceObject*)target;
-
+-(void) updateDurationsForQuince:(QuinceObject*)q beginningAtTime:(double)t;
 @end

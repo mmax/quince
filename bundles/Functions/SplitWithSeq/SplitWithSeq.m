@@ -15,7 +15,7 @@
 -(void)perform{
     
     
-    QuinceObject * q, *grid = [self objectForPurpose:@"grid"], * victim = [self objectForPurpose:@"victim"];
+    QuinceObject * ns, * q, *grid = [self objectForPurpose:@"grid"], * victim = [self objectForPurpose:@"victim"];
     
     // make sure we have a working copy of the victim, registered as the output object
     QuinceObject * quince = [self outputObjectOfType:@"QuinceObject"];
@@ -40,13 +40,13 @@
     // fast forward until we have the first sub with a start > 0
     while([[[subs objectAtIndex:i]valueForKey:@"start"]doubleValue]<=0 && i<[subs count]) i++; 
     //NSLog(@"alright");
-    [document setProgressTask:@"splitting..."];
+    [document setProgressTask:[NSString stringWithFormat:@"splitting %ld objects...", [victim subObjectsCount]]];
     [document setProgress:progress];
     [document displayProgress:YES];
-    
+    NSString * mumName = [victim valueForKey:@"name"];
     while(i<[subs count]){
         // get times
-        q = [subs objectAtIndex:i++];
+        q = [subs objectAtIndex:i];
         lastTime = time;
         time = [[q valueForKey:@"start"]doubleValue];
         // split
@@ -55,9 +55,12 @@
         
         affectedQuinces = [quince subObjectsInTimeRangeFrom:[NSNumber numberWithDouble:lastTime] until:[NSNumber numberWithDouble:time]];
           
-        [quince foldObjects:affectedQuinces];
+        ns = [quince foldObjects:affectedQuinces];
+        [self updateDurationsForQuince:ns beginningAtTime:lastTime];
+        [ns setValue:[NSString stringWithFormat:@"%@_%ld", mumName, i] forKey:@"name"];
         progress = (100.0/[subs count])*i;
         [document setProgress:progress];
+         i++;
     }
     // fold remaining subs
     if([[quince end]doubleValue]> time){
@@ -71,6 +74,21 @@
     [document displayProgress:NO];
     [self done];
 
+}
+
+-(void) updateDurationsForQuince:(QuinceObject*)q beginningAtTime:(double)t{
+
+    double start = [[q valueForKey:@"start"]doubleValue];
+    if(start>t){
+    
+        double delta = start -t;
+        [q setValue:[NSNumber numberWithDouble:t] forKey:@"start"];
+        
+        for(QuinceObject * m in [q subObjects]){
+            start = [[m valueForKey:@"start"]doubleValue];
+            [m setValue:[NSNumber numberWithDouble:start+delta] forKey:@"start"];
+        }
+    }
 }
 
 -(NSMutableArray *)inputDescriptors{
