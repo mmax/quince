@@ -32,7 +32,9 @@
 // SUM creates a new sequence, containing the sum of all volume values of the source object's subObjects
 
 -(void)perform{
-    
+    [document setIndeterminateProgressTask:@"copying..."];
+    [document displayProgress:YES];
+
 	QuinceObject * mum =[(QuinceObject *)[self objectForPurpose:@"source"]copy];
     [document setIndeterminateProgressTask:@"flattening copy..."];
     [document displayProgress:YES];
@@ -49,7 +51,7 @@
     
     [self createSeqForTimePointsFromQuinceObject:mum intoQuinceObject:[resultController content]];
     [resultController update];
-	[resultController setValue:[NSString stringWithFormat:@"%@_∑", [mum valueForKey:@"name"]] forKeyPath:@"selection.name"];
+	[resultController setValue:[NSString stringWithFormat:@"%@_SUM", [mum valueForKey:@"name"]] forKeyPath:@"selection.name"];
     
     [document displayProgress:NO];
 
