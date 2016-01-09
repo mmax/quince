@@ -769,7 +769,7 @@ NSRect RectFromPoints(NSPoint point1, NSPoint point2) {
     float progress;
     long max = [subControllers count];
     //int iMax = max;
-    [document setProgressTask:[NSString stringWithFormat:@"processing objects..."]];
+    [document setProgressTask:[NSString stringWithFormat:@"processing %ld objects...", max]];
 	[document displayProgress:YES];
    
     NSString * lx = [self keyForLocationOnXAxis];
