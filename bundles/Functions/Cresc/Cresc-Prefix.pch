@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Cresc' target in the 'Cresc' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

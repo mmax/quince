@@ -84,8 +84,16 @@
 		5035B90713563F86003E8570 /* ApplyValuesFromSeq.m in Sources */ = {isa = PBXBuildFile; fileRef = 5035B90613563F86003E8570 /* ApplyValuesFromSeq.m */; };
 		5035B90C135643CA003E8570 /* AVFS_win.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5035B90B135643CA003E8570 /* AVFS_win.xib */; };
 		5038FE45195DCB49006D4736 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		503C58581C427E25002DF1A8 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		503C58591C427E99002DF1A8 /* Decresc.m in Sources */ = {isa = PBXBuildFile; fileRef = 503C58521C427C23002DF1A8 /* Decresc.m */; };
+		503C585F1C428AC5002DF1A8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		503C58651C428AC5002DF1A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 503C58631C428AC5002DF1A8 /* InfoPlist.strings */; };
+		503C586C1C428B7E002DF1A8 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		503C58711C428C31002DF1A8 /* Cresc.m in Sources */ = {isa = PBXBuildFile; fileRef = 503C58701C428C31002DF1A8 /* Cresc.m */; };
 		503D35AA1C3DA11500573FFA /* SplitWithSeq.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D35A91C3DA11500573FFA /* SplitWithSeq.m */; };
 		503D35AC1C3DA12F00573FFA /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
+		5043D1CD1C42794F00D7F006 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
+		5043D1D31C42794F00D7F006 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5043D1D11C42794F00D7F006 /* InfoPlist.strings */; };
 		50466F5717271ADC001477E5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAF2C91393BAD200258AD1 /* Cocoa.framework */; };
 		50466F6417271B2D001477E5 /* ExportSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 50466F6317271B2D001477E5 /* ExportSequence.m */; };
 		504A69D211A9F747007F60FF /* Normalize.m in Sources */ = {isa = PBXBuildFile; fileRef = 504A69CF11A9F6FB007F60FF /* Normalize.m */; };
@@ -552,7 +560,56 @@
 			remoteGlobalIDString = 5035B8EF13563EBE003E8570;
 			remoteInfo = ApplyValuesFromSeq;
 		};
+		503C58541C427DFA002DF1A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5043D1CB1C42794F00D7F006;
+			remoteInfo = Decresc;
+		};
+		503C58561C427E1E002DF1A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
+		503C586A1C428B6E002DF1A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
+		503C586D1C428BCF002DF1A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 503C585D1C428AC5002DF1A8;
+			remoteInfo = Cresc;
+		};
 		503D35AD1C3DA13600573FFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
+		5043D1BF1C4278A500D7F006 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
+		5043D1C11C4278BD00D7F006 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A522B4117A52560072FB09;
+			remoteInfo = QuinceApi;
+		};
+		5043D1C31C4278C400D7F006 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
 			proxyType = 1;
@@ -1616,8 +1673,20 @@
 		5035B90513563F86003E8570 /* ApplyValuesFromSeq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplyValuesFromSeq.h; path = bundles/Functions/ApplyValuesFromSeq/ApplyValuesFromSeq.h; sourceTree = "<group>"; };
 		5035B90613563F86003E8570 /* ApplyValuesFromSeq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApplyValuesFromSeq.m; path = bundles/Functions/ApplyValuesFromSeq/ApplyValuesFromSeq.m; sourceTree = "<group>"; };
 		5035B90B135643CA003E8570 /* AVFS_win.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AVFS_win.xib; path = bundles/Functions/ApplyValuesFromSeq/AVFS_win.xib; sourceTree = "<group>"; };
+		503C58511C427C23002DF1A8 /* Decresc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Decresc.h; path = bundles/Functions/Decresc/Decresc.h; sourceTree = "<group>"; };
+		503C58521C427C23002DF1A8 /* Decresc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Decresc.m; path = bundles/Functions/Decresc/Decresc.m; sourceTree = SOURCE_ROOT; };
+		503C585E1C428AC5002DF1A8 /* Cresc.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Cresc.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		503C58621C428AC5002DF1A8 /* Cresc-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Cresc-Info.plist"; path = "bundles/Functions/Cresc/Cresc-Info.plist"; sourceTree = SOURCE_ROOT; };
+		503C58641C428AC5002DF1A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		503C58661C428AC5002DF1A8 /* Cresc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Cresc-Prefix.pch"; path = "bundles/Functions/Cresc/Cresc-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		503C586F1C428C31002DF1A8 /* Cresc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cresc.h; path = bundles/Functions/Cresc/Cresc.h; sourceTree = SOURCE_ROOT; };
+		503C58701C428C31002DF1A8 /* Cresc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cresc.m; path = bundles/Functions/Cresc/Cresc.m; sourceTree = SOURCE_ROOT; };
 		503D35A91C3DA11500573FFA /* SplitWithSeq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SplitWithSeq.m; path = bundles/Functions/SplitWithSeq/SplitWithSeq.m; sourceTree = SOURCE_ROOT; };
 		503D35AB1C3DA12000573FFA /* SplitWithSeq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplitWithSeq.h; path = bundles/Functions/SplitWithSeq/SplitWithSeq.h; sourceTree = SOURCE_ROOT; };
+		5043D1CC1C42794F00D7F006 /* Decresc.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Decresc.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5043D1D01C42794F00D7F006 /* Decresc-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "Decresc-Info.plist"; path = "bundles/Functions/Decresc/Decresc-Info.plist"; sourceTree = "<group>"; };
+		5043D1D21C42794F00D7F006 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5043D1D41C42794F00D7F006 /* Decresc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Decresc-Prefix.pch"; path = "bundles/Functions/Decresc/Decresc-Prefix.pch"; sourceTree = "<group>"; };
 		50466F5617271ADC001477E5 /* ExportSequence.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExportSequence.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		50466F6217271B2D001477E5 /* ExportSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExportSequence.h; path = bundles/Functions/ExportSequence/ExportSequence.h; sourceTree = "<group>"; };
 		50466F6317271B2D001477E5 /* ExportSequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExportSequence.m; path = bundles/Functions/ExportSequence/ExportSequence.m; sourceTree = "<group>"; };
@@ -2154,6 +2223,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				5035B90413563F57003E8570 /* QuinceApi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		503C585B1C428AC5002DF1A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503C586C1C428B7E002DF1A8 /* QuinceApi.framework in Frameworks */,
+				503C585F1C428AC5002DF1A8 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5043D1C91C42794F00D7F006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503C58581C427E25002DF1A8 /* QuinceApi.framework in Frameworks */,
+				5043D1CD1C42794F00D7F006 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2796,6 +2883,8 @@
 				5098598B1C16F6D300F0CC1F /* Sum.bundle */,
 				50755AB51C3D9FAE00FDC2DA /* SplitWithSeq.bundle */,
 				508D15471C3DB77A00CEA897 /* ExportSubObjects.bundle */,
+				5043D1CC1C42794F00D7F006 /* Decresc.bundle */,
+				503C585E1C428AC5002DF1A8 /* Cresc.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3187,6 +3276,8 @@
 				50B6B947175BB6B4002A68B2 /* ComputePitchSlope */,
 				505AAD9218A907EA00701D5D /* CopyValues */,
 				506BF94F117A642F00ECBC4E /* CreateGridSequence */,
+				503C58601C428AC5002DF1A8 /* Cresc */,
+				5043D1CE1C42794F00D7F006 /* Decresc */,
 				500CACF4122D4B3D00B980B8 /* EnvToSeq */,
 				50AEBF8011CEC8A90055CA29 /* EnvelopeGate */,
 				50DE7B3413CC50AC00FD4F35 /* EqlDstrbtn_Freq */,
@@ -3296,6 +3387,46 @@
 				5035B90613563F86003E8570 /* ApplyValuesFromSeq.m */,
 			);
 			name = ApplyValuesFromSeq;
+			sourceTree = "<group>";
+		};
+		503C58601C428AC5002DF1A8 /* Cresc */ = {
+			isa = PBXGroup;
+			children = (
+				503C586F1C428C31002DF1A8 /* Cresc.h */,
+				503C58701C428C31002DF1A8 /* Cresc.m */,
+				503C58611C428AC5002DF1A8 /* Supporting Files */,
+			);
+			path = Cresc;
+			sourceTree = "<group>";
+		};
+		503C58611C428AC5002DF1A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				503C58621C428AC5002DF1A8 /* Cresc-Info.plist */,
+				503C58631C428AC5002DF1A8 /* InfoPlist.strings */,
+				503C58661C428AC5002DF1A8 /* Cresc-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5043D1CE1C42794F00D7F006 /* Decresc */ = {
+			isa = PBXGroup;
+			children = (
+				503C58511C427C23002DF1A8 /* Decresc.h */,
+				503C58521C427C23002DF1A8 /* Decresc.m */,
+				5043D1CF1C42794F00D7F006 /* Supporting Files */,
+			);
+			path = Decresc;
+			sourceTree = "<group>";
+		};
+		5043D1CF1C42794F00D7F006 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5043D1D01C42794F00D7F006 /* Decresc-Info.plist */,
+				5043D1D11C42794F00D7F006 /* InfoPlist.strings */,
+				5043D1D41C42794F00D7F006 /* Decresc-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		50466F6517271B34001477E5 /* ExportSequence */ = {
@@ -4316,6 +4447,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5043D1C21C4278BD00D7F006 /* PBXTargetDependency */,
 			);
 			name = PitchCurveContainer;
 			productName = PitchCurveContainer;
@@ -4477,6 +4609,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5043D1C41C4278C400D7F006 /* PBXTargetDependency */,
 			);
 			name = PitchContainer;
 			productName = PitchContainer;
@@ -4494,6 +4627,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5043D1C01C4278A500D7F006 /* PBXTargetDependency */,
 			);
 			name = Seq2PitchCurve;
 			productName = Seq2PitchCurve;
@@ -4570,6 +4704,42 @@
 			name = ApplyValuesFromSeq;
 			productName = ApplyValuesFromSeq;
 			productReference = 5035B8F013563EBE003E8570 /* ApplyValuesFromSeq.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		503C585D1C428AC5002DF1A8 /* Cresc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 503C58671C428AC5002DF1A8 /* Build configuration list for PBXNativeTarget "Cresc" */;
+			buildPhases = (
+				503C585A1C428AC5002DF1A8 /* Sources */,
+				503C585B1C428AC5002DF1A8 /* Frameworks */,
+				503C585C1C428AC5002DF1A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				503C586B1C428B6E002DF1A8 /* PBXTargetDependency */,
+			);
+			name = Cresc;
+			productName = Cresc;
+			productReference = 503C585E1C428AC5002DF1A8 /* Cresc.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		5043D1CB1C42794F00D7F006 /* Decresc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5043D1D51C42794F00D7F006 /* Build configuration list for PBXNativeTarget "Decresc" */;
+			buildPhases = (
+				5043D1C81C42794F00D7F006 /* Sources */,
+				5043D1C91C42794F00D7F006 /* Frameworks */,
+				5043D1CA1C42794F00D7F006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				503C58571C427E1E002DF1A8 /* PBXTargetDependency */,
+			);
+			name = Decresc;
+			productName = Decresc;
+			productReference = 5043D1CC1C42794F00D7F006 /* Decresc.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		50466F5517271ADC001477E5 /* ExportSequence */ = {
@@ -5691,6 +5861,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				503C586E1C428BCF002DF1A8 /* PBXTargetDependency */,
+				503C58551C427DFA002DF1A8 /* PBXTargetDependency */,
 				508D15591C3DB87C00CEA897 /* PBXTargetDependency */,
 				50755AC21C3DA07000FDC2DA /* PBXTargetDependency */,
 				5098599E1C16FBBB00F0CC1F /* PBXTargetDependency */,
@@ -5817,7 +5989,9 @@
 				50B6B944175BB6B4002A68B2 /* ComputePitchSlope */,
 				505AAD8218A9074D00701D5D /* CopyValues */,
 				506BF92D117A629800ECBC4E /* CreateGridSequence */,
+				503C585D1C428AC5002DF1A8 /* Cresc */,
 				50325E9F1226947500E22031 /* CsoundPlayer */,
+				5043D1CB1C42794F00D7F006 /* Decresc */,
 				50717008117A7E0F00357470 /* EnvelopeChild */,
 				506BF899117A5DD500ECBC4E /* EnvelopeContainer */,
 				50AEBF6F11CEC6AE0055CA29 /* EnvelopeGate */,
@@ -6046,6 +6220,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				5035B90C135643CA003E8570 /* AVFS_win.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		503C585C1C428AC5002DF1A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503C58651C428AC5002DF1A8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5043D1CA1C42794F00D7F006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5043D1D31C42794F00D7F006 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6775,6 +6965,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		503C585A1C428AC5002DF1A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503C58711C428C31002DF1A8 /* Cresc.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5043D1C81C42794F00D7F006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503C58591C427E99002DF1A8 /* Decresc.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50466F5217271ADC001477E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -7463,10 +7669,45 @@
 			target = 5035B8EF13563EBE003E8570 /* ApplyValuesFromSeq */;
 			targetProxy = 5035B90913563F9D003E8570 /* PBXContainerItemProxy */;
 		};
+		503C58551C427DFA002DF1A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5043D1CB1C42794F00D7F006 /* Decresc */;
+			targetProxy = 503C58541C427DFA002DF1A8 /* PBXContainerItemProxy */;
+		};
+		503C58571C427E1E002DF1A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 503C58561C427E1E002DF1A8 /* PBXContainerItemProxy */;
+		};
+		503C586B1C428B6E002DF1A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 503C586A1C428B6E002DF1A8 /* PBXContainerItemProxy */;
+		};
+		503C586E1C428BCF002DF1A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 503C585D1C428AC5002DF1A8 /* Cresc */;
+			targetProxy = 503C586D1C428BCF002DF1A8 /* PBXContainerItemProxy */;
+		};
 		503D35AE1C3DA13600573FFA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 50A522B4117A52560072FB09 /* QuinceApi */;
 			targetProxy = 503D35AD1C3DA13600573FFA /* PBXContainerItemProxy */;
+		};
+		5043D1C01C4278A500D7F006 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 5043D1BF1C4278A500D7F006 /* PBXContainerItemProxy */;
+		};
+		5043D1C21C4278BD00D7F006 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 5043D1C11C4278BD00D7F006 /* PBXContainerItemProxy */;
+		};
+		5043D1C41C4278C400D7F006 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A522B4117A52560072FB09 /* QuinceApi */;
+			targetProxy = 5043D1C31C4278C400D7F006 /* PBXContainerItemProxy */;
 		};
 		504A692F11A9C14D007F60FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -8247,6 +8488,24 @@
 			);
 			name = InfoPlist.strings;
 			path = bundles/Functions/FixGlissandoEndPoints;
+			sourceTree = SOURCE_ROOT;
+		};
+		503C58631C428AC5002DF1A8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				503C58641C428AC5002DF1A8 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = bundles/Functions/Cresc;
+			sourceTree = SOURCE_ROOT;
+		};
+		5043D1D11C42794F00D7F006 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5043D1D21C42794F00D7F006 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = bundles/Functions/Decresc;
 			sourceTree = SOURCE_ROOT;
 		};
 		504A7F4C174D68E30088AEE5 /* InfoPlist.strings */ = {
@@ -9447,6 +9706,100 @@
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		503C58681C428AC5002DF1A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/Cresc/Cresc-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "bundles/Functions/Cresc/Cresc-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		503C58691C428AC5002DF1A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/Cresc/Cresc-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "bundles/Functions/Cresc/Cresc-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		5043D1D61C42794F00D7F006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/Decresc/Decresc-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "bundles/Functions/Decresc/Decresc-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		5043D1D71C42794F00D7F006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bundles/Functions/Decresc/Decresc-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "bundles/Functions/Decresc/Decresc-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -12701,6 +13054,24 @@
 			buildConfigurations = (
 				5035B8F213563EBF003E8570 /* Debug */,
 				5035B8F313563EBF003E8570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		503C58671C428AC5002DF1A8 /* Build configuration list for PBXNativeTarget "Cresc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				503C58681C428AC5002DF1A8 /* Debug */,
+				503C58691C428AC5002DF1A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5043D1D51C42794F00D7F006 /* Build configuration list for PBXNativeTarget "Decresc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5043D1D61C42794F00D7F006 /* Debug */,
+				5043D1D71C42794F00D7F006 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

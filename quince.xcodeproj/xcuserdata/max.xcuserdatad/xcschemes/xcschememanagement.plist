@@ -89,10 +89,20 @@
 			<key>orderHint</key>
 			<integer>35</integer>
 		</dict>
+		<key>Cresc.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>83</integer>
+		</dict>
 		<key>CsoundPlayer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>37</integer>
+		</dict>
+		<key>Decresc.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>82</integer>
 		</dict>
 		<key>EnvToSeq.xcscheme</key>
 		<dict>
@@ -409,6 +419,11 @@
 			<key>orderHint</key>
 			<integer>28</integer>
 		</dict>
+		<key>decresc.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>82</integer>
+		</dict>
 		<key>quince.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -523,6 +538,21 @@
 			<true/>
 		</dict>
 		<key>5035B8EF13563EBE003E8570</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>503C585D1C428AC5002DF1A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5043D1AF1C42780100D7F006</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5043D1CB1C42794F00D7F006</key>
 		<dict>
 			<key>primary</key>
 			<true/>
