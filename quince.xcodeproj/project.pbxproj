@@ -1735,7 +1735,7 @@
 		506BF8CB117A5FA200ECBC4E /* TimeGridContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeGridContainer.m; path = bundles/ContainerViews/TimeGridContainer/TimeGridContainer.m; sourceTree = "<group>"; };
 		506BF8E9117A606600ECBC4E /* VolumeStandard.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VolumeStandard.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		506BF8EA117A606600ECBC4E /* VolumeStandard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "VolumeStandard-Info.plist"; path = "bundles/ContainerViews/VolumeStandardContainer/VolumeStandard-Info.plist"; sourceTree = "<group>"; };
-		506BF8F7117A60DD00ECBC4E /* VolumeStandardTestUnit.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VolumeStandardTestUnit.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		506BF8F7117A60DD00ECBC4E /* VolumeStandardTestUnit.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VolumeStandardTestUnit.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		506BF8F8117A60DD00ECBC4E /* VolumeStandardTestUnit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "VolumeStandardTestUnit-Info.plist"; path = "bundles/ContainerViews/VolumeStandardContainer/VolumeStandardTestUnit-Info.plist"; sourceTree = "<group>"; };
 		506BF901117A610800ECBC4E /* VolumeStandardContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VolumeStandardContainer.h; path = bundles/ContainerViews/VolumeStandardContainer/VolumeStandardContainer.h; sourceTree = "<group>"; };
 		506BF902117A610800ECBC4E /* VolumeStandardContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VolumeStandardContainer.m; path = bundles/ContainerViews/VolumeStandardContainer/VolumeStandardContainer.m; sourceTree = "<group>"; };
@@ -1879,7 +1879,7 @@
 		50A362E4126EF6F8004D360B /* ExportDescriptionListing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExportDescriptionListing.m; path = bundles/Functions/ExportDescriptionListing/ExportDescriptionListing.m; sourceTree = "<group>"; };
 		50A522B5117A52560072FB09 /* QuinceApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuinceApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A522B6117A52560072FB09 /* QuinceApi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "QuinceApi-Info.plist"; path = "QuinceApi/QuinceApi-Info.plist"; sourceTree = "<group>"; };
-		50A522FB117A52F60072FB09 /* MintApiTestUnit.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MintApiTestUnit.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50A522FB117A52F60072FB09 /* MintApiTestUnit.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MintApiTestUnit.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A522FC117A52F60072FB09 /* QuinceApiTestUnit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "QuinceApiTestUnit-Info.plist"; path = "QuinceApi/QuinceApiTestUnit-Info.plist"; sourceTree = "<group>"; };
 		50AEBF7011CEC6AE0055CA29 /* EnvelopeGate.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnvelopeGate.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		50AEBF7911CEC6AE0055CA29 /* EnvelopeGate-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EnvelopeGate-Info.plist"; path = "bundles/Functions/EnvelopeGate/EnvelopeGate-Info.plist"; sourceTree = "<group>"; };
@@ -2788,13 +2788,13 @@
 			isa = PBXGroup;
 			children = (
 				8D15AC370486D014006FF6A4 /* quince.app */,
-				50A522FB117A52F60072FB09 /* MintApiTestUnit.octest */,
+				50A522FB117A52F60072FB09 /* MintApiTestUnit.xctest */,
 				506BF833117A5A9700ECBC4E /* AutomationView.bundle */,
 				506BF854117A5B1A00ECBC4E /* AutomationViewTestUnit.octest */,
 				506BF89A117A5DD500ECBC4E /* EnvelopeBasic.bundle */,
 				506BF8C3117A5F6300ECBC4E /* TimeGridView.bundle */,
 				506BF8E9117A606600ECBC4E /* VolumeStandard.bundle */,
-				506BF8F7117A60DD00ECBC4E /* VolumeStandardTestUnit.octest */,
+				506BF8F7117A60DD00ECBC4E /* VolumeStandardTestUnit.xctest */,
 				506BF92E117A629800ECBC4E /* CreateGridSequence.bundle */,
 				506BF95B117A646200ECBC4E /* LilyPondExport.bundle */,
 				506BF968117A64B200ECBC4E /* LilyPondExportTestUnit.xctest */,
@@ -4925,7 +4925,7 @@
 			);
 			name = VolumeStandardContainerTestUnit;
 			productName = VolumeStandardTestUnit;
-			productReference = 506BF8F7117A60DD00ECBC4E /* VolumeStandardTestUnit.octest */;
+			productReference = 506BF8F7117A60DD00ECBC4E /* VolumeStandardTestUnit.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		506BF92D117A629800ECBC4E /* CreateGridSequence */ = {
@@ -5365,7 +5365,7 @@
 			);
 			name = QuinceApiTestUnit;
 			productName = MintApiTestUnit;
-			productReference = 50A522FB117A52F60072FB09 /* MintApiTestUnit.octest */;
+			productReference = 50A522FB117A52F60072FB09 /* MintApiTestUnit.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		50AEBF6F11CEC6AE0055CA29 /* EnvelopeGate */ = {
@@ -5945,7 +5945,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastTestingUpgradeCheck = 0730;
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Maximilian Marcoll";
 			};
 			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "quince" */;
@@ -8691,6 +8691,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -8707,6 +8708,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = ImportFrequencyTable;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8717,6 +8719,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -8730,6 +8733,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = ImportFrequencyTable;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8741,6 +8745,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -8758,6 +8763,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = Audio2Envelope;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8768,6 +8774,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -8781,6 +8788,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = EnvelopeFromAudioFile;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8792,6 +8800,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -8808,6 +8817,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = EnvToSeq;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8818,6 +8828,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -8831,6 +8842,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = EnvToSeq;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8842,6 +8854,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -8858,6 +8871,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceChildViewBundle.${PRODUCT_NAME:rfc1034Identifier}";
 				PRODUCT_NAME = MarkChild;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8868,6 +8882,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -8881,6 +8896,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceChildViewBundle.${PRODUCT_NAME:rfc1034Identifier}";
 				PRODUCT_NAME = MarkChild;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8892,6 +8908,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -8908,6 +8925,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceContainerViewBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = MarkContainer;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8918,6 +8936,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -8931,6 +8950,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceContainerViewBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = MarkContainer;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -8942,8 +8962,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -8962,6 +8982,7 @@
 				INFOPLIST_FILE = "bundles/Functions/ReverseLegato/ReverseLegato-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -8971,8 +8992,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -8986,6 +9007,7 @@
 				INFOPLIST_FILE = "bundles/Functions/ReverseLegato/ReverseLegato-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -8995,7 +9017,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -9008,6 +9030,7 @@
 				INFOPLIST_FILE = "bundles/ContainerViews/PitchCurveContainer/PitchCurveContainer-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/ContainerViews/";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceContainerViewBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9017,7 +9040,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -9028,6 +9051,7 @@
 				INFOPLIST_FILE = "bundles/ContainerViews/PitchCurveContainer/PitchCurveContainer-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceContainerViewBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9037,8 +9061,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -9056,6 +9080,7 @@
 				INFOPLIST_FILE = "bundles/Functions/Shuffle/Shuffle-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9065,8 +9090,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -9078,6 +9103,7 @@
 				INFOPLIST_FILE = "bundles/Functions/Shuffle/Shuffle-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9087,7 +9113,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -9104,6 +9130,7 @@
 				INFOPLIST_FILE = "bundles/Functions/RemoveGlissDown/RemoveGlissDown-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9113,7 +9140,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -9125,6 +9152,7 @@
 				INFOPLIST_FILE = "bundles/Functions/RemoveGlissDown/RemoveGlissDown-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9134,7 +9162,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -9152,6 +9180,7 @@
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "bundles/Functions/Sort/Sort-Info.plist";
 				WRAPPER_EXTENSION = bundle;
@@ -9162,7 +9191,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -9175,6 +9204,7 @@
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "bundles/Functions/Sort/Sort-Info.plist";
 				WRAPPER_EXTENSION = bundle;
@@ -9185,6 +9215,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -9201,6 +9232,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = FoldByParameter;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9211,6 +9243,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -9224,6 +9257,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = FoldByParameter;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9235,6 +9269,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -9251,6 +9286,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = ApplyValueList;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9261,6 +9297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -9274,6 +9311,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = ApplyValueList;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9285,7 +9323,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -9298,6 +9336,7 @@
 				INFOPLIST_FILE = "bundles/Functions/ApplyPitchCurve/ApplyPitchCurve-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9307,7 +9346,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -9318,6 +9357,7 @@
 				INFOPLIST_FILE = "bundles/Functions/ApplyPitchCurve/ApplyPitchCurve-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9327,6 +9367,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -9343,6 +9384,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = ResampleEnvelope;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9353,6 +9395,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -9366,6 +9409,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = ResampleEnvelope;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9377,7 +9421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -9392,6 +9436,7 @@
 				INFOPLIST_FILE = "bundles/Functions/Transpose/Transpose-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9401,7 +9446,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEPLOYMENT_LOCATION = YES;
@@ -9414,6 +9459,7 @@
 				INFOPLIST_FILE = "bundles/Functions/Transpose/Transpose-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9423,7 +9469,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -9438,6 +9484,7 @@
 				INFOPLIST_FILE = "bundles/ContainerViews/PitchContainer/PitchContainer-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/ContainerViews/";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceContainerViewBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9447,7 +9494,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEPLOYMENT_LOCATION = YES;
@@ -9460,6 +9507,7 @@
 				INFOPLIST_FILE = "bundles/ContainerViews/PitchContainer/PitchContainer-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceContainerViewBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9469,7 +9517,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -9483,6 +9531,7 @@
 				INFOPLIST_FILE = "bundles/Functions/Seq2PitchCurve/Seq2PitchCurve-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9492,7 +9541,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -9503,6 +9552,7 @@
 				INFOPLIST_FILE = "bundles/Functions/Seq2PitchCurve/Seq2PitchCurve-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9512,7 +9562,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -9529,6 +9579,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuincePlayerBundle.${PRODUCT_NAME:rfc1034Identifier}";
 				PRODUCT_NAME = CSoundPlayer;
 				SDKROOT = macosx;
 				VALID_ARCHS = i386;
@@ -9540,7 +9591,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -9554,6 +9605,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuincePlayerBundle.${PRODUCT_NAME:rfc1034Identifier}";
 				PRODUCT_NAME = CSoundPlayer;
 				SDKROOT = macosx;
 				VALID_ARCHS = i386;
@@ -9566,7 +9618,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -9579,6 +9631,7 @@
 				INFOPLIST_FILE = "bundles/Functions/FixGlissandoStartPoints/FixGlissandoStartPoints-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9588,7 +9641,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -9599,6 +9652,7 @@
 				INFOPLIST_FILE = "bundles/Functions/FixGlissandoStartPoints/FixGlissandoStartPoints-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9608,7 +9662,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -9621,6 +9675,7 @@
 				INFOPLIST_FILE = "bundles/Functions/FixGlissandoEndPoints/FixGlissandoEndPoints-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9630,7 +9685,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -9641,6 +9696,7 @@
 				INFOPLIST_FILE = "bundles/Functions/FixGlissandoEndPoints/FixGlissandoEndPoints-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9650,6 +9706,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -9666,6 +9723,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = ApplyValuesFromSeq;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9676,6 +9734,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -9689,6 +9748,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = ApplyValuesFromSeq;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9700,7 +9760,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -9717,6 +9777,7 @@
 				INFOPLIST_FILE = "bundles/Functions/Cresc/Cresc-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9726,7 +9787,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -9738,6 +9799,7 @@
 				INFOPLIST_FILE = "bundles/Functions/Cresc/Cresc-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9747,7 +9809,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -9764,6 +9826,7 @@
 				INFOPLIST_FILE = "bundles/Functions/Decresc/Decresc-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9773,7 +9836,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -9785,6 +9848,7 @@
 				INFOPLIST_FILE = "bundles/Functions/Decresc/Decresc-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9794,8 +9858,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -9812,6 +9876,7 @@
 				INFOPLIST_FILE = "bundles/Functions/ExportSequence/ExportSequence-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9821,8 +9886,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -9834,6 +9899,7 @@
 				INFOPLIST_FILE = "ExportSequence/ExportSequence-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9843,6 +9909,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -9859,6 +9926,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = ApplyEnvelope;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9869,6 +9937,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -9882,6 +9951,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = ApplyEnvelope;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9893,6 +9963,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -9909,6 +9980,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = Normalize;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9919,6 +9991,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -9932,6 +10005,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = normalize;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -9943,8 +10017,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
@@ -9961,6 +10035,7 @@
 				INFOPLIST_FILE = "bundles/Functions/ExportParameterListing/ExportParameterListing-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9970,8 +10045,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
@@ -9983,6 +10058,7 @@
 				INFOPLIST_FILE = "bundles/Functions/ExportParameterListing/ExportParameterListing-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9992,7 +10068,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -10009,6 +10085,7 @@
 				INFOPLIST_FILE = "bundles/Functions/CopyValues/CopyValues-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -10018,7 +10095,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -10030,6 +10107,7 @@
 				INFOPLIST_FILE = "bundles/Functions/CopyValues/CopyValues-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -10039,6 +10117,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -10056,6 +10135,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceContainerViewBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = AutomationView;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10066,6 +10146,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -10079,6 +10160,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceContainerViewBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = AutomationView;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10090,6 +10172,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10107,6 +10190,7 @@
 					"-framework",
 					SenTestingKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = AutomationViewTestUnit;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
@@ -10117,6 +10201,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
@@ -10132,6 +10217,7 @@
 					"-framework",
 					SenTestingKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = AutomationViewTestUnit;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
@@ -10143,6 +10229,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -10160,6 +10247,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceContainerViewBundle.${PRODUCT_NAME:rfc1034Identifier}";
 				PRODUCT_NAME = EnvelopeBasic;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10170,6 +10258,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -10183,6 +10272,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceContainerViewBundle.${PRODUCT_NAME:rfc1034Identifier}";
 				PRODUCT_NAME = EnvelopeBasic;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10194,6 +10284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -10211,6 +10302,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceContainerViewBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = TimeGridView;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10221,6 +10313,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -10234,6 +10327,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceContainerViewBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = TimeGridView;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10245,6 +10339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -10262,6 +10357,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceContainerViewBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = VolumeStandard;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10272,6 +10368,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -10285,6 +10382,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceContainerViewBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = VolumeStandard;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10296,6 +10394,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10311,6 +10410,7 @@
 					"-framework",
 					Cocoa,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = VolumeStandardTestUnit;
 				SDKROOT = macosx;
 			};
@@ -10320,6 +10420,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -10333,6 +10434,7 @@
 					"-framework",
 					Cocoa,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = VolumeStandardTestUnit;
 				SDKROOT = macosx;
 				ZERO_LINK = NO;
@@ -10343,6 +10445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -10360,6 +10463,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = CreateGridSequence;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10370,6 +10474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -10383,6 +10488,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = CreateGridSequence;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10394,6 +10500,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -10411,6 +10518,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = LilyPondExport;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10421,6 +10529,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -10434,6 +10543,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = LilyPondExport;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10445,6 +10555,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10460,6 +10571,7 @@
 					"-framework",
 					Cocoa,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = LilyPondExportTestUnit;
 				SDKROOT = macosx;
 			};
@@ -10469,6 +10581,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -10482,6 +10595,7 @@
 					"-framework",
 					Cocoa,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = LilyPondExportTestUnit;
 				SDKROOT = macosx;
 				ZERO_LINK = NO;
@@ -10492,6 +10606,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DEPLOYMENT_POSTPROCESSING = NO;
@@ -10509,6 +10624,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = ExtractEnvSequence;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10519,6 +10635,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -10532,6 +10649,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = ExtractEnvSequence;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10543,6 +10661,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -10559,6 +10678,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceChildViewBundle.${PRODUCT_NAME:rfc1034Identifier}";
 				PRODUCT_NAME = AutomationChildView;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10569,6 +10689,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -10582,6 +10703,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceChildViewBundle.${PRODUCT_NAME:rfc1034Identifier}";
 				PRODUCT_NAME = AutomationChildView;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10593,6 +10715,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10609,6 +10732,7 @@
 					"-framework",
 					SenTestingKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = AutomationChildViewTestUnit;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
@@ -10619,6 +10743,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
@@ -10634,6 +10759,7 @@
 					"-framework",
 					SenTestingKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = AutomationChildViewTestUnit;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
@@ -10645,6 +10771,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -10661,6 +10788,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceChildViewBundle.${PRODUCT_NAME:rfc1034Identifier}";
 				PRODUCT_NAME = EnvelopeChild;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10671,6 +10799,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -10684,6 +10813,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceChildViewBundle.${PRODUCT_NAME:rfc1034Identifier}";
 				PRODUCT_NAME = EnvelopeChild;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10695,6 +10825,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10711,6 +10842,7 @@
 					"-framework",
 					SenTestingKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = SequenceChildTestUnit;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
@@ -10721,6 +10853,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
@@ -10736,6 +10869,7 @@
 					"-framework",
 					SenTestingKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = SequenceChildTestUnit;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
@@ -10747,6 +10881,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -10763,6 +10898,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceChildViewBundle.${PRODUCT_NAME:rfc1034Identifier}";
 				PRODUCT_NAME = SequenceChild;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10773,6 +10909,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -10786,6 +10923,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceChildViewBundle.${PRODUCT_NAME:rfc1034Identifier}";
 				PRODUCT_NAME = SequenceChild;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10797,6 +10935,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -10813,6 +10952,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = SetParameter;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10823,6 +10963,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -10836,6 +10977,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = SetParameter;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10847,7 +10989,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -10864,6 +11006,7 @@
 				INFOPLIST_FILE = "bundles/Functions/SplitWithSeq/SplitWithSeq-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -10873,7 +11016,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -10885,6 +11028,7 @@
 				INFOPLIST_FILE = "bundles/Functions/SplitWithSeq/SplitWithSeq-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -10894,6 +11038,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -10910,6 +11055,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = Gate;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10920,6 +11066,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -10933,6 +11080,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = Gate;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10944,6 +11092,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -10960,6 +11109,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = Legato;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10970,6 +11120,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -10983,6 +11134,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = Legato;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -10994,7 +11146,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -11012,6 +11164,7 @@
 				INFOPLIST_FILE = "bundles/Functions/RemoveGlissUp/RemoveGlissUp-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -11021,7 +11174,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -11034,6 +11187,7 @@
 				INFOPLIST_FILE = "bundles/Functions/RemoveGlissUp/RemoveGlissUp-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -11043,6 +11197,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -11059,6 +11214,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -11069,6 +11225,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -11083,6 +11240,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -11094,6 +11252,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -11110,6 +11269,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = JoinByFrequency;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -11120,6 +11280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -11133,6 +11294,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = JoinByFrequency;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -11144,7 +11306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -11157,6 +11319,7 @@
 				INFOPLIST_FILE = "bundles/Functions/PitchQuantization/PitchQuantization-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -11166,7 +11329,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -11177,6 +11340,7 @@
 				INFOPLIST_FILE = "bundles/Functions/PitchQuantization/PitchQuantization-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -11186,7 +11350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -11203,6 +11367,7 @@
 				INFOPLIST_FILE = "bundles/Functions/ExportSubObjects/ExportSubObjects-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -11212,7 +11377,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -11224,6 +11389,7 @@
 				INFOPLIST_FILE = "bundles/Functions/ExportSubObjects/ExportSubObjects-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -11233,8 +11399,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -11252,6 +11418,7 @@
 				INFOPLIST_FILE = "bundles/Functions/Sum/Sum-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -11261,8 +11428,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -11275,6 +11442,7 @@
 				INFOPLIST_FILE = "bundles/Functions/Sum/Sum-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -11284,6 +11452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -11300,6 +11469,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = AlignOnVolume;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -11310,6 +11480,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -11323,6 +11494,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = AlignOnVolume;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -11334,7 +11506,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -11347,6 +11519,7 @@
 				INFOPLIST_FILE = "bundles/ContainerViews/PitchGridContainer/PitchGridContainer-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/ContainerViews/";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceContainerViewBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -11356,7 +11529,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -11367,6 +11540,7 @@
 				INFOPLIST_FILE = "bundles/ContainerViews/PitchGridContainer/PitchGridContainer-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceContainerViewBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -11376,6 +11550,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -11392,6 +11567,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = ExportDescriptionListing;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -11402,6 +11578,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -11415,6 +11592,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = ExportDescriptionListing;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -11426,6 +11604,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
 				DEPLOYMENT_LOCATION = YES;
@@ -11458,6 +11637,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.maximilianmarcoll.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = QuinceApi;
 				SDKROOT = macosx;
 			};
@@ -11467,6 +11647,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -11492,6 +11673,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.maximilianmarcoll.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = QuinceApi;
 				SDKROOT = macosx;
 				ZERO_LINK = NO;
@@ -11502,6 +11684,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -11517,6 +11700,7 @@
 					"-framework",
 					Cocoa,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = MintApiTestUnit;
 				SDKROOT = macosx;
 			};
@@ -11526,6 +11710,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -11539,6 +11724,7 @@
 					"-framework",
 					Cocoa,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = MintApiTestUnit;
 				SDKROOT = macosx;
 				ZERO_LINK = NO;
@@ -11549,6 +11735,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -11565,6 +11752,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = EnvelopeGate;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -11575,6 +11763,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -11588,6 +11777,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = EnvelopeGate;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -11599,7 +11789,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -11612,6 +11802,7 @@
 				INFOPLIST_FILE = "bundles/Functions/TimeQuantization/TimeQuantization-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -11621,7 +11812,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -11632,6 +11823,7 @@
 				INFOPLIST_FILE = "bundles/Functions/TimeQuantization/TimeQuantization-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -11641,7 +11833,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -11658,6 +11850,7 @@
 				INFOPLIST_FILE = "bundles/Functions/ComputePitchSlope/ComputePitchSlope-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -11667,7 +11860,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -11679,6 +11872,7 @@
 				INFOPLIST_FILE = "bundles/Functions/ComputePitchSlope/ComputePitchSlope-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -11688,6 +11882,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -11704,6 +11899,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -11714,6 +11910,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -11727,6 +11924,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -11738,6 +11936,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -11754,6 +11953,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -11764,6 +11964,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -11777,6 +11978,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -11788,6 +11990,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -11804,6 +12007,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -11814,6 +12018,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -11827,6 +12032,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -11838,6 +12044,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -11854,6 +12061,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = TempoChange;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -11864,6 +12072,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -11877,6 +12086,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = TempoChange;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -11888,6 +12098,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -11904,6 +12115,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = ImportMaxMspCollForSingleParameter;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -11914,6 +12126,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -11927,6 +12140,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = ImportListForSingleParameter;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -11938,8 +12152,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -11956,6 +12170,7 @@
 				INFOPLIST_FILE = "bundles/Functions/ImportSequence/ImportSequence-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -11965,8 +12180,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -11978,6 +12193,7 @@
 				INFOPLIST_FILE = "bundles/Functions/ImportSequence/ImportSequence-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -11987,6 +12203,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -12003,6 +12220,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = MapDynamicExpr;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -12013,6 +12231,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -12026,6 +12245,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = MapDynamicExpr;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -12037,6 +12257,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -12053,6 +12274,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -12063,6 +12285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -12076,6 +12299,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -12087,6 +12311,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -12103,6 +12328,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -12113,6 +12339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -12126,6 +12353,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -12137,6 +12365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -12153,6 +12382,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -12163,6 +12393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -12176,6 +12407,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -12187,6 +12419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -12203,6 +12436,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = ColorByKey;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -12213,6 +12447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -12226,6 +12461,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = ColorByKey;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -12237,7 +12473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -12250,6 +12486,7 @@
 				INFOPLIST_FILE = "bundles/Functions/ExtractFrequencyVertexes/ExtractFrequencyVertexes-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -12259,7 +12496,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -12270,6 +12507,7 @@
 				INFOPLIST_FILE = "bundles/Functions/ExtractFrequencyVertexes/ExtractFrequencyVertexes-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -12279,7 +12517,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -12292,6 +12530,7 @@
 				INFOPLIST_FILE = "bundles/Functions/AlignOnFreq/AlignOnFreq-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -12301,7 +12540,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -12312,6 +12551,7 @@
 				INFOPLIST_FILE = "bundles/Functions/AlignOnFreq/AlignOnFreq-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -12321,7 +12561,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -12334,6 +12574,7 @@
 				INFOPLIST_FILE = "bundles/Functions/EqlDstrbtn_Pitch/EqlDstrbtn_Pitch-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -12343,7 +12584,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -12354,6 +12595,7 @@
 				INFOPLIST_FILE = "bundles/Functions/EqlDstrbtn_Pitch/EqlDstrbtn_Pitch-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -12363,7 +12605,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -12376,6 +12618,7 @@
 				INFOPLIST_FILE = "bundles/Functions/EqlDstrbtn_Freq/EqlDstrbtn_Freq-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -12385,7 +12628,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -12396,6 +12639,7 @@
 				INFOPLIST_FILE = "bundles/Functions/EqlDstrbtn_Freq/EqlDstrbtn_Freq-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -12405,7 +12649,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -12418,6 +12662,7 @@
 				INFOPLIST_FILE = "bundles/ContainerViews/CentContainer/CentContainer-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/ContainerViews/";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceContainerViewBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -12427,7 +12672,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -12438,6 +12683,7 @@
 				INFOPLIST_FILE = "bundles/ContainerViews/CentContainer/CentContainer-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceContainerViewBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -12447,6 +12693,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -12463,6 +12710,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = RemoveParameter;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -12473,6 +12721,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -12486,6 +12735,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = RemoveParameter;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -12497,6 +12747,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -12513,6 +12764,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "EqlDstrbtn-Volume";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -12523,6 +12775,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -12536,6 +12789,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "EqlDstrbtn-Volume";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -12547,7 +12801,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -12562,6 +12816,7 @@
 				INFOPLIST_FILE = "bundles/ContainerViews/FrequencyStandardContainer/FrequencyStandardContainer-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/ContainerViews/";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceContainerViewBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -12571,7 +12826,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEPLOYMENT_LOCATION = NO;
@@ -12584,6 +12839,7 @@
 				INFOPLIST_FILE = "bundles/ContainerViews/FrequencyStandardContainer/FrequencyStandardContainer-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceContainerViewBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -12593,7 +12849,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -12610,6 +12866,7 @@
 				INFOPLIST_FILE = "Bundles/Functions/Rectify/Rectify-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -12619,7 +12876,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -12631,6 +12888,7 @@
 				INFOPLIST_FILE = "Bundles/Functions/Rectify/Rectify-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/Functions/";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceFunctionBundle.${PRODUCT_NAME:rfc1034Identifier}.bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -12640,6 +12898,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -12656,6 +12915,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuincePlayerBundle.${PRODUCT_NAME:rfc1034Identifier}";
 				PRODUCT_NAME = AudioFilePlayer;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -12666,6 +12926,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -12679,6 +12940,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QuincePlayerBundle.${PRODUCT_NAME:rfc1034Identifier}";
 				PRODUCT_NAME = SimpleAudio;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -12690,7 +12952,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -12703,6 +12965,7 @@
 				INFOPLIST_FILE = "bundles/ContainerViews/GlissandoContainer/GlissandoContainer-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/ContainerViews/";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceContainerViewBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -12712,7 +12975,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -12723,6 +12986,7 @@
 				INFOPLIST_FILE = "bundles/ContainerViews/GlissandoContainer/GlissandoContainer-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceContainerViewBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -12732,7 +12996,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -12745,6 +13009,7 @@
 				INFOPLIST_FILE = "bundles/ChildViews/GlissandoChild/GlissandoChild-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/$(PROJECT_NAME)/ChildViews/";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceChildViewBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -12754,7 +13019,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -12765,6 +13030,7 @@
 				INFOPLIST_FILE = "bundles/ChildViews/GlissandoChild/GlissandoChild-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "QuinceChildViewBundle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -12774,7 +13040,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
@@ -12784,6 +13050,7 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "QuinceCore/quince-Info.plist";
 				INSTALL_PATH = "$(PROJECT_DIR)/build";
+				PRODUCT_BUNDLE_IDENTIFIER = de.maximilianmarcoll.quince;
 				PRODUCT_NAME = quince;
 				SDKROOT = macosx;
 			};
@@ -12793,12 +13060,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MINT_Prefix.pch;
 				INFOPLIST_FILE = "quince-Info.plist";
 				INSTALL_PATH = "$(PROJECT)/build";
+				PRODUCT_BUNDLE_IDENTIFIER = de.maximilianmarcoll.quince;
 				PRODUCT_NAME = quince;
 				SDKROOT = macosx;
 			};
@@ -12807,9 +13076,9 @@
 		C05733CC08A9546B00998B17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -12823,7 +13092,6 @@
 		C05733CD08A9546B00998B17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
