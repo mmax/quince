@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -1543,8 +1543,8 @@
 		1DDD58290DA1D0D100B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/QuinceDocument.xib; sourceTree = "<group>"; };
 		1DDD582B0DA1D0D100B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2564AD2C0F5327BB00F57823 /* Quince_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Quince_Prefix.pch; path = QuinceCore/Quince_Prefix.pch; sourceTree = "<group>"; };
-		2A37F4ACFDCFA73011CA2CEA /* QuinceDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuinceDocument.m; path = QuinceCore/QuinceDocument.m; sourceTree = "<group>"; };
-		2A37F4AEFDCFA73011CA2CEA /* QuinceDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuinceDocument.h; path = QuinceCore/QuinceDocument.h; sourceTree = "<group>"; };
+		2A37F4ACFDCFA73011CA2CEA /* QuinceDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuinceDocument.m; path = QuinceCore/QuinceDocument.m; sourceTree = SOURCE_ROOT; };
+		2A37F4AEFDCFA73011CA2CEA /* QuinceDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuinceDocument.h; path = QuinceCore/QuinceDocument.h; sourceTree = SOURCE_ROOT; };
 		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = QuinceCore/main.m; sourceTree = "<group>"; };
 		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
@@ -1619,8 +1619,8 @@
 		501C285811CE8E5D0097B5F0 /* ResampleEnvelope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResampleEnvelope.h; path = bundles/Functions/ResampleEnvelope/ResampleEnvelope.h; sourceTree = "<group>"; };
 		501C285911CE8E5D0097B5F0 /* ResampleEnvelope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResampleEnvelope.m; path = bundles/Functions/ResampleEnvelope/ResampleEnvelope.m; sourceTree = "<group>"; };
 		501C286011CE92F90097B5F0 /* ResampleEnvelopeWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ResampleEnvelopeWindow.xib; path = bundles/Functions/ResampleEnvelope/ResampleEnvelopeWindow.xib; sourceTree = "<group>"; };
-		501E41FF11B5639E000072FA /* FunctionGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FunctionGraph.h; path = QuinceApi/FunctionGraph.h; sourceTree = "<group>"; };
-		501E420011B5639E000072FA /* FunctionGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FunctionGraph.m; path = QuinceApi/FunctionGraph.m; sourceTree = "<group>"; };
+		501E41FF11B5639E000072FA /* FunctionGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FunctionGraph.h; path = QuinceApi/FunctionGraph.h; sourceTree = SOURCE_ROOT; };
+		501E420011B5639E000072FA /* FunctionGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FunctionGraph.m; path = QuinceApi/FunctionGraph.m; sourceTree = SOURCE_ROOT; };
 		5020C69F13C7A23500D58742 /* Transpose.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Transpose.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		5020C6A313C7A23600D58742 /* Transpose-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Transpose-Info.plist"; path = "bundles/Functions/Transpose/Transpose-Info.plist"; sourceTree = SOURCE_ROOT; };
 		5020C6A513C7A23600D58742 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -1634,8 +1634,8 @@
 		5027F14B13951D7300A9389A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = bundles/ContainerViews/PitchContainer/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		5027F14D13951E3600A9389A /* PitchContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PitchContainer.h; path = bundles/ContainerViews/PitchContainer/PitchContainer.h; sourceTree = SOURCE_ROOT; };
 		5027F14E13951E3600A9389A /* PitchContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PitchContainer.m; path = bundles/ContainerViews/PitchContainer/PitchContainer.m; sourceTree = SOURCE_ROOT; };
-		50289EF313EDD10300FB95D6 /* PitchCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PitchCurve.h; path = QuinceApi/PitchCurve.h; sourceTree = "<group>"; };
-		50289EF413EDD10300FB95D6 /* PitchCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PitchCurve.m; path = QuinceApi/PitchCurve.m; sourceTree = "<group>"; };
+		50289EF313EDD10300FB95D6 /* PitchCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PitchCurve.h; path = QuinceApi/PitchCurve.h; sourceTree = SOURCE_ROOT; };
+		50289EF413EDD10300FB95D6 /* PitchCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PitchCurve.m; path = QuinceApi/PitchCurve.m; sourceTree = SOURCE_ROOT; };
 		50289EFB13EDD57000FB95D6 /* Seq2PitchCurve.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Seq2PitchCurve.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		50289EFF13EDD57000FB95D6 /* Seq2PitchCurve-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Seq2PitchCurve-Info.plist"; path = "bundles/Functions/Seq2PitchCurve/Seq2PitchCurve-Info.plist"; sourceTree = SOURCE_ROOT; };
 		50289F0113EDD57000FB95D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -1644,8 +1644,8 @@
 		50289F0B13EDD6B000FB95D6 /* Seq2PitchCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Seq2PitchCurve.m; path = bundles/Functions/Seq2PitchCurve/Seq2PitchCurve.m; sourceTree = SOURCE_ROOT; };
 		502B958A13F9629B0017D33D /* QuinceAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuinceAppDelegate.h; path = QuinceCore/QuinceAppDelegate.h; sourceTree = "<group>"; };
 		502B958B13F9629B0017D33D /* QuinceAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuinceAppDelegate.m; path = QuinceCore/QuinceAppDelegate.m; sourceTree = "<group>"; };
-		502C8CE411835C27006CCFB2 /* FunctionLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FunctionLoader.h; path = QuinceApi/FunctionLoader.h; sourceTree = "<group>"; };
-		502C8CE511835C27006CCFB2 /* FunctionLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FunctionLoader.m; path = QuinceApi/FunctionLoader.m; sourceTree = "<group>"; };
+		502C8CE411835C27006CCFB2 /* FunctionLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FunctionLoader.h; path = QuinceApi/FunctionLoader.h; sourceTree = SOURCE_ROOT; };
+		502C8CE511835C27006CCFB2 /* FunctionLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FunctionLoader.m; path = QuinceApi/FunctionLoader.m; sourceTree = SOURCE_ROOT; };
 		50325EA01226947500E22031 /* CSoundPlayer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSoundPlayer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		50325EAA122694AD00E22031 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		50325EAC122694E900E22031 /* CsoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CsoundPlayer.h; path = bundles/Players/CsoundPlayer/CsoundPlayer.h; sourceTree = "<group>"; };
@@ -1699,8 +1699,8 @@
 		504A7F4F174D69000088AEE5 /* RemoveGlissUp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "RemoveGlissUp-Info.plist"; path = "bundles/Functions/RemoveGlissUp/RemoveGlissUp-Info.plist"; sourceTree = SOURCE_ROOT; };
 		504A7F50174D69000088AEE5 /* RemoveGlissUp-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RemoveGlissUp-Prefix.pch"; path = "bundles/Functions/RemoveGlissUp/RemoveGlissUp-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		504A7F53174D69170088AEE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = bundles/Functions/RemoveGlissUp/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
-		504B44FC119372790052DD20 /* Envelope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Envelope.h; path = QuinceApi/Envelope.h; sourceTree = "<group>"; };
-		504B44FD119372790052DD20 /* Envelope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Envelope.m; path = QuinceApi/Envelope.m; sourceTree = "<group>"; };
+		504B44FC119372790052DD20 /* Envelope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Envelope.h; path = QuinceApi/Envelope.h; sourceTree = SOURCE_ROOT; };
+		504B44FD119372790052DD20 /* Envelope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Envelope.m; path = QuinceApi/Envelope.m; sourceTree = SOURCE_ROOT; };
 		504E86BE195DC564005A3FB2 /* ExportParameterListing.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExportParameterListing.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		504E86C2195DC564005A3FB2 /* ExportParameterListing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ExportParameterListing-Info.plist"; path = "bundles/Functions/ExportParameterListing/ExportParameterListing-Info.plist"; sourceTree = SOURCE_ROOT; };
 		504E86C4195DC564005A3FB2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -1714,8 +1714,8 @@
 		505AAD9018A907E100701D5D /* CopyValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CopyValues.m; path = bundles/Functions/CopyValues/CopyValues.m; sourceTree = "<group>"; };
 		505B49701207745C0050CFB7 /* QuinceApi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuinceApi.framework; path = /Library/Frameworks/QuinceApi.framework; sourceTree = "<absolute>"; };
 		505C6C74119F1FFD0086B612 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = /System/Library/Frameworks/AudioUnit.framework; sourceTree = "<absolute>"; };
-		506009531131BC7A00E75717 /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainController.h; path = QuinceCore/MainController.h; sourceTree = "<group>"; };
-		506009541131BC7A00E75717 /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainController.m; path = QuinceCore/MainController.m; sourceTree = "<group>"; };
+		506009531131BC7A00E75717 /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainController.h; path = QuinceCore/MainController.h; sourceTree = SOURCE_ROOT; };
+		506009541131BC7A00E75717 /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainController.m; path = QuinceCore/MainController.m; sourceTree = SOURCE_ROOT; };
 		5069D9F513C7BDCD00B0B6E5 /* PitchQuantization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PitchQuantization.h; path = bundles/Functions/PitchQuantization/PitchQuantization.h; sourceTree = SOURCE_ROOT; };
 		5069D9F613C7BDCD00B0B6E5 /* PitchQuantization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PitchQuantization.m; path = bundles/Functions/PitchQuantization/PitchQuantization.m; sourceTree = SOURCE_ROOT; };
 		506BF833117A5A9700ECBC4E /* AutomationView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutomationView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1812,8 +1812,8 @@
 		507C6F8311977F6E00914B4C /* Legato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Legato.h; path = bundles/Functions/Legato/Legato.h; sourceTree = "<group>"; };
 		507C6F8411977F6E00914B4C /* Legato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Legato.m; path = bundles/Functions/Legato/Legato.m; sourceTree = "<group>"; };
 		50825BCE174D679D00985915 /* RemoveGlissUp.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoveGlissUp.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		508B1854114A7977002FBC55 /* MainScrollerDocumentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScrollerDocumentView.h; path = QuinceCore/MainScrollerDocumentView.h; sourceTree = "<group>"; };
-		508B1855114A7977002FBC55 /* MainScrollerDocumentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainScrollerDocumentView.m; path = QuinceCore/MainScrollerDocumentView.m; sourceTree = "<group>"; };
+		508B1854114A7977002FBC55 /* MainScrollerDocumentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScrollerDocumentView.h; path = QuinceCore/MainScrollerDocumentView.h; sourceTree = SOURCE_ROOT; };
+		508B1855114A7977002FBC55 /* MainScrollerDocumentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainScrollerDocumentView.m; path = QuinceCore/MainScrollerDocumentView.m; sourceTree = SOURCE_ROOT; };
 		508C43B21295596E00875B93 /* OneVoice-Loudest.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OneVoice-Loudest.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		508C43B31295596F00875B93 /* OneVoice_Loudest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "OneVoice_Loudest-Info.plist"; path = "bundles/Functions/OneVoice_Loudest/OneVoice_Loudest-Info.plist"; sourceTree = "<group>"; };
 		508C43BB129559CB00875B93 /* OneVoice_Loudest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OneVoice_Loudest.h; path = /Users/max/SWProjects/quince/bundles/Functions/OneVoice_Loudest/OneVoice_Loudest.h; sourceTree = "<absolute>"; };
@@ -1835,8 +1835,8 @@
 		508D15541C3DB85500CEA897 /* ExportSubObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExportSubObjects.m; path = bundles/Functions/ExportSubObjects/ExportSubObjects.m; sourceTree = SOURCE_ROOT; };
 		5091789B172726F7008C7F08 /* ImportSequence-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ImportSequence-Prefix.pch"; path = "bundles/Functions/ImportSequence/ImportSequence-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		5091789D17272700008C7F08 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = bundles/Functions/ImportSequence/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
-		5093F27616F652F800C62B4F /* FunctionShortCutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FunctionShortCutController.h; path = QuinceCore/FunctionShortCutController.h; sourceTree = "<group>"; };
-		5093F27716F652F800C62B4F /* FunctionShortCutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FunctionShortCutController.m; path = QuinceCore/FunctionShortCutController.m; sourceTree = "<group>"; };
+		5093F27616F652F800C62B4F /* FunctionShortCutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FunctionShortCutController.h; path = QuinceCore/FunctionShortCutController.h; sourceTree = SOURCE_ROOT; };
+		5093F27716F652F800C62B4F /* FunctionShortCutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FunctionShortCutController.m; path = QuinceCore/FunctionShortCutController.m; sourceTree = SOURCE_ROOT; };
 		5098598B1C16F6D300F0CC1F /* Sum.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sum.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		509859971C16FB2100F0CC1F /* Sum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sum.h; path = bundles/Functions/Sum/Sum.h; sourceTree = SOURCE_ROOT; };
 		509859981C16FB2100F0CC1F /* Sum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sum.m; path = bundles/Functions/Sum/Sum.m; sourceTree = SOURCE_ROOT; };
@@ -1847,20 +1847,20 @@
 		50999A1F127640C000AD0D65 /* AlignOnVolume.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlignOnVolume.m; path = /Users/max/SWProjects/quince/bundles/Functions/AlignOnVolume/AlignOnVolume.m; sourceTree = "<absolute>"; };
 		50999A9E1276425E00AD0D65 /* AlignOnVolume-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "AlignOnVolume-Info.plist"; path = "/Users/max/SWProjects/quince/bundles/Functions/AlignOnVolume/AlignOnVolume-Info.plist"; sourceTree = "<absolute>"; };
 		50999AA7127642A200AD0D65 /* AlignOnVolume.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlignOnVolume.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		50999B25127645A300AD0D65 /* AudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioFile.h; path = /Users/max/SWProjects/quince/QuinceApi/AudioFile.h; sourceTree = "<absolute>"; };
-		50999B26127645A300AD0D65 /* AudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioFile.m; path = /Users/max/SWProjects/quince/QuinceApi/AudioFile.m; sourceTree = "<absolute>"; };
-		50999B27127645A300AD0D65 /* DataFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataFile.h; path = /Users/max/SWProjects/quince/QuinceApi/DataFile.h; sourceTree = "<absolute>"; };
-		50999B28127645A300AD0D65 /* DataFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataFile.m; path = /Users/max/SWProjects/quince/QuinceApi/DataFile.m; sourceTree = "<absolute>"; };
-		50999B2D127645BD00AD0D65 /* Function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Function.h; path = /Users/max/SWProjects/quince/QuinceApi/Function.h; sourceTree = "<absolute>"; };
-		50999B2E127645BD00AD0D65 /* Function.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Function.m; path = /Users/max/SWProjects/quince/QuinceApi/Function.m; sourceTree = "<absolute>"; };
-		50999B2F127645BD00AD0D65 /* QuinceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuinceObject.h; path = /Users/max/SWProjects/quince/QuinceApi/QuinceObject.h; sourceTree = "<absolute>"; };
-		50999B30127645BD00AD0D65 /* QuinceObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuinceObject.m; path = /Users/max/SWProjects/quince/QuinceApi/QuinceObject.m; sourceTree = "<absolute>"; };
-		50999B35127645D600AD0D65 /* QuinceObjectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuinceObjectController.h; path = /Users/max/SWProjects/quince/QuinceApi/QuinceObjectController.h; sourceTree = "<absolute>"; };
-		50999B36127645D600AD0D65 /* QuinceObjectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuinceObjectController.m; path = /Users/max/SWProjects/quince/QuinceApi/QuinceObjectController.m; sourceTree = "<absolute>"; };
-		50999B39127645EC00AD0D65 /* ChildView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChildView.h; path = /Users/max/SWProjects/quince/QuinceApi/ChildView.h; sourceTree = "<absolute>"; };
-		50999B3A127645EC00AD0D65 /* ChildView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChildView.m; path = /Users/max/SWProjects/quince/QuinceApi/ChildView.m; sourceTree = "<absolute>"; };
-		50999B3B127645EC00AD0D65 /* ContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContainerView.h; path = /Users/max/SWProjects/quince/QuinceApi/ContainerView.h; sourceTree = "<absolute>"; };
-		50999B3C127645EC00AD0D65 /* ContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContainerView.m; path = /Users/max/SWProjects/quince/QuinceApi/ContainerView.m; sourceTree = "<absolute>"; };
+		50999B25127645A300AD0D65 /* AudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioFile.h; path = QuinceApi/AudioFile.h; sourceTree = SOURCE_ROOT; };
+		50999B26127645A300AD0D65 /* AudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioFile.m; path = QuinceApi/AudioFile.m; sourceTree = SOURCE_ROOT; };
+		50999B27127645A300AD0D65 /* DataFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataFile.h; path = QuinceApi/DataFile.h; sourceTree = SOURCE_ROOT; };
+		50999B28127645A300AD0D65 /* DataFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataFile.m; path = QuinceApi/DataFile.m; sourceTree = SOURCE_ROOT; };
+		50999B2D127645BD00AD0D65 /* Function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Function.h; path = QuinceApi/Function.h; sourceTree = SOURCE_ROOT; };
+		50999B2E127645BD00AD0D65 /* Function.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Function.m; path = QuinceApi/Function.m; sourceTree = SOURCE_ROOT; };
+		50999B2F127645BD00AD0D65 /* QuinceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuinceObject.h; path = QuinceApi/QuinceObject.h; sourceTree = SOURCE_ROOT; };
+		50999B30127645BD00AD0D65 /* QuinceObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuinceObject.m; path = QuinceApi/QuinceObject.m; sourceTree = SOURCE_ROOT; };
+		50999B35127645D600AD0D65 /* QuinceObjectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuinceObjectController.h; path = QuinceApi/QuinceObjectController.h; sourceTree = SOURCE_ROOT; };
+		50999B36127645D600AD0D65 /* QuinceObjectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuinceObjectController.m; path = QuinceApi/QuinceObjectController.m; sourceTree = SOURCE_ROOT; };
+		50999B39127645EC00AD0D65 /* ChildView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChildView.h; path = QuinceApi/ChildView.h; sourceTree = SOURCE_ROOT; };
+		50999B3A127645EC00AD0D65 /* ChildView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChildView.m; path = QuinceApi/ChildView.m; sourceTree = SOURCE_ROOT; };
+		50999B3B127645EC00AD0D65 /* ContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContainerView.h; path = QuinceApi/ContainerView.h; sourceTree = SOURCE_ROOT; };
+		50999B3C127645EC00AD0D65 /* ContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContainerView.m; path = QuinceApi/ContainerView.m; sourceTree = SOURCE_ROOT; };
 		50999B411276460C00AD0D65 /* QuinceObjectTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuinceObjectTest.h; path = /Users/max/SWProjects/quince/QuinceApi/QuinceObjectTest.h; sourceTree = "<absolute>"; };
 		50999B421276460C00AD0D65 /* QuinceObjectTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuinceObjectTest.m; path = /Users/max/SWProjects/quince/QuinceApi/QuinceObjectTest.m; sourceTree = "<absolute>"; };
 		50999B441276462A00AD0D65 /* ChildViewTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChildViewTest.h; path = /Users/max/SWProjects/quince/QuinceApi/ChildViewTest.h; sourceTree = "<absolute>"; };
@@ -1913,15 +1913,15 @@
 		50B8F5DD1231002800E444BC /* TempoChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TempoChange.h; path = bundles/Functions/TempoChange/TempoChange.h; sourceTree = "<group>"; };
 		50B8F5DE1231002800E444BC /* TempoChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TempoChange.m; path = bundles/Functions/TempoChange/TempoChange.m; sourceTree = "<group>"; };
 		50B8F5E11231056100E444BC /* TempoChangeWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TempoChangeWindow.xib; path = bundles/Functions/TempoChange/TempoChangeWindow.xib; sourceTree = "<group>"; };
-		50BB612D116F27290056C410 /* StripLayerControlsArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StripLayerControlsArrayController.h; path = QuinceCore/StripLayerControlsArrayController.h; sourceTree = "<group>"; };
-		50BB612E116F27290056C410 /* StripLayerControlsArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StripLayerControlsArrayController.m; path = QuinceCore/StripLayerControlsArrayController.m; sourceTree = "<group>"; };
-		50BB6274116F94760056C410 /* LayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LayerController.h; path = QuinceCore/LayerController.h; sourceTree = "<group>"; };
-		50BB6275116F94760056C410 /* LayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LayerController.m; path = QuinceCore/LayerController.m; sourceTree = "<group>"; };
+		50BB612D116F27290056C410 /* StripLayerControlsArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StripLayerControlsArrayController.h; path = QuinceCore/StripLayerControlsArrayController.h; sourceTree = SOURCE_ROOT; };
+		50BB612E116F27290056C410 /* StripLayerControlsArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StripLayerControlsArrayController.m; path = QuinceCore/StripLayerControlsArrayController.m; sourceTree = SOURCE_ROOT; };
+		50BB6274116F94760056C410 /* LayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LayerController.h; path = QuinceCore/LayerController.h; sourceTree = SOURCE_ROOT; };
+		50BB6275116F94760056C410 /* LayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LayerController.m; path = QuinceCore/LayerController.m; sourceTree = SOURCE_ROOT; };
 		50BB6280116F958E0056C410 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/LayerControlsView.nib; sourceTree = "<group>"; };
-		50BB62D7116F9C490056C410 /* SubviewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SubviewTableViewCell.m; path = QuinceCore/SubviewTableViewCell.m; sourceTree = "<group>"; };
-		50BB62D9116F9C500056C410 /* SubviewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SubviewTableViewCell.h; path = QuinceCore/SubviewTableViewCell.h; sourceTree = "<group>"; };
-		50BB6413116FAF2A0056C410 /* StripController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StripController.h; path = QuinceCore/StripController.h; sourceTree = "<group>"; };
-		50BB6414116FAF2A0056C410 /* StripController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StripController.m; path = QuinceCore/StripController.m; sourceTree = "<group>"; };
+		50BB62D7116F9C490056C410 /* SubviewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SubviewTableViewCell.m; path = QuinceCore/SubviewTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		50BB62D9116F9C500056C410 /* SubviewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SubviewTableViewCell.h; path = QuinceCore/SubviewTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		50BB6413116FAF2A0056C410 /* StripController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StripController.h; path = QuinceCore/StripController.h; sourceTree = SOURCE_ROOT; };
+		50BB6414116FAF2A0056C410 /* StripController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StripController.m; path = QuinceCore/StripController.m; sourceTree = SOURCE_ROOT; };
 		50BFCB7C129987DB00618422 /* ImportMaxMspCollForSingleParameter.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImportMaxMspCollForSingleParameter.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		50BFCB7D129987DB00618422 /* ImportMaxMSPCollForSingleParameter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ImportMaxMSPCollForSingleParameter-Info.plist"; path = "bundles/Functions/ImportMaxMSPCollForSingleParameter/ImportMaxMSPCollForSingleParameter-Info.plist"; sourceTree = "<group>"; };
 		50BFCB861299884100618422 /* ImportMaxMSPCollForSingleParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImportMaxMSPCollForSingleParameter.h; path = bundles/Functions/ImportMaxMSPCollForSingleParameter/ImportMaxMSPCollForSingleParameter.h; sourceTree = "<group>"; };
@@ -1965,8 +1965,8 @@
 		50D3E77113E6FFAA00BA5D30 /* ExtractFrequencyVertexes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExtractFrequencyVertexes.h; path = bundles/Functions/ExtractFrequencyVertexes/ExtractFrequencyVertexes.h; sourceTree = SOURCE_ROOT; };
 		50D3E77213E6FFAA00BA5D30 /* ExtractFrequencyVertexes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExtractFrequencyVertexes.m; path = bundles/Functions/ExtractFrequencyVertexes/ExtractFrequencyVertexes.m; sourceTree = SOURCE_ROOT; };
 		50D512841188B69D00B149A5 /* poolIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = poolIcon.png; path = graphics/poolIcon.png; sourceTree = "<group>"; };
-		50D57E9911963053005F23FD /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = QuinceApi/Player.h; sourceTree = "<group>"; };
-		50D57E9A11963053005F23FD /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = QuinceApi/Player.m; sourceTree = "<group>"; };
+		50D57E9911963053005F23FD /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = QuinceApi/Player.h; sourceTree = SOURCE_ROOT; };
+		50D57E9A11963053005F23FD /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = QuinceApi/Player.m; sourceTree = SOURCE_ROOT; };
 		50DE7B0213CC473D00FD4F35 /* AlignOnFreq.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlignOnFreq.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		50DE7B0613CC473D00FD4F35 /* AlignOnFreq-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "AlignOnFreq-Info.plist"; path = "bundles/Functions/AlignOnFreq/AlignOnFreq-Info.plist"; sourceTree = SOURCE_ROOT; };
 		50DE7B0813CC473D00FD4F35 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -1997,8 +1997,8 @@
 		50E860BC11F8586A0014CFE9 /* RemoveParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoveParameter.m; path = bundles/Functions/RemoveParameter/RemoveParameter.m; sourceTree = "<group>"; };
 		50E8610511F88C890014CFE9 /* RemoveParameterWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RemoveParameterWindow.xib; path = bundles/Functions/RemoveParameter/RemoveParameterWindow.xib; sourceTree = "<group>"; };
 		50E8775811709A4E00FFA57E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/StripControl.xib; sourceTree = "<group>"; };
-		50E87AD01170FF8A00FFA57E /* EventInterceptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventInterceptView.h; path = QuinceCore/EventInterceptView.h; sourceTree = "<group>"; };
-		50E87AD11170FF8A00FFA57E /* EventInterceptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventInterceptView.m; path = QuinceCore/EventInterceptView.m; sourceTree = "<group>"; };
+		50E87AD01170FF8A00FFA57E /* EventInterceptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventInterceptView.h; path = QuinceCore/EventInterceptView.h; sourceTree = SOURCE_ROOT; };
+		50E87AD11170FF8A00FFA57E /* EventInterceptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventInterceptView.m; path = QuinceCore/EventInterceptView.m; sourceTree = SOURCE_ROOT; };
 		50E93BD9119065CD00A63246 /* EqlDstrbtn-Volume.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EqlDstrbtn-Volume.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E93BDA119065CD00A63246 /* EqlDstrbtn_Volume-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EqlDstrbtn_Volume-Info.plist"; path = "bundles/Functions/EqlDstrbtn_Volume/EqlDstrbtn_Volume-Info.plist"; sourceTree = "<group>"; };
 		50E93BEF1190662800A63246 /* EqlDstrbtn_Volume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EqlDstrbtn_Volume.h; path = bundles/Functions/EqlDstrbtn_Volume/EqlDstrbtn_Volume.h; sourceTree = "<group>"; };
@@ -5949,7 +5949,7 @@
 				ORGANIZATIONNAME = "Maximilian Marcoll";
 			};
 			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "quince" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -11604,11 +11604,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
 				DEPLOYMENT_LOCATION = YES;
-				DSTROOT = /;
+				DSTROOT = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -11629,8 +11630,9 @@
 				GCC_WARN_UNUSED_PARAMETER = NO;
 				GCC_WARN_UNUSED_VALUE = YES;
 				INFOPLIST_FILE = "QuinceApi/QuinceApi-Info.plist";
-				INSTALL_PATH = /Library/Frameworks;
+				INSTALL_PATH = "~/Library/Frameworks";
 				LLVM_LTO = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -11640,6 +11642,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "de.maximilianmarcoll.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = QuinceApi;
 				SDKROOT = macosx;
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -11647,10 +11650,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DSTROOT = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -11665,8 +11670,9 @@
 				GCC_UNROLL_LOOPS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				INFOPLIST_FILE = "QuinceApi-Info.plist";
-				INSTALL_PATH = /Library/Frameworks;
+				INSTALL_PATH = "~/Library/Frameworks";
 				LLVM_LTO = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -11676,6 +11682,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "de.maximilianmarcoll.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = QuinceApi;
 				SDKROOT = macosx;
+				VALID_ARCHS = "i386 x86_64";
 				ZERO_LINK = NO;
 			};
 			name = Release;

@@ -299,6 +299,11 @@
 			<key>orderHint</key>
 			<integer>10</integer>
 		</dict>
+		<key>QuinceApi_sep16.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>84</integer>
+		</dict>
 		<key>Rectify.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
