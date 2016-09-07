@@ -139,14 +139,11 @@
 		506009551131BC7A00E75717 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506009541131BC7A00E75717 /* MainController.m */; };
 		5069D9F713C7BDCD00B0B6E5 /* PitchQuantization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5069D9F613C7BDCD00B0B6E5 /* PitchQuantization.m */; };
 		5069D9FA13C7BE2600B0B6E5 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
-		506BF80F117A597200ECBC4E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506BF7B1117A56DA00ECBC4E /* SenTestingKit.framework */; };
 		506BF84C117A5AF500ECBC4E /* AutomationContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 506BF84B117A5AF500ECBC4E /* AutomationContainer.m */; };
-		506BF859117A5B3400ECBC4E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506BF7B1117A56DA00ECBC4E /* SenTestingKit.framework */; };
 		506BF85D117A5B4D00ECBC4E /* AutomationContainerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 506BF85B117A5B4D00ECBC4E /* AutomationContainerTest.m */; };
 		506BF873117A5C8100ECBC4E /* AutomationContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 506BF84B117A5AF500ECBC4E /* AutomationContainer.m */; };
 		506BF8A4117A5E3900ECBC4E /* EnvelopeContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 506BF8A3117A5E3900ECBC4E /* EnvelopeContainer.m */; };
 		506BF8CC117A5FA200ECBC4E /* TimeGridContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 506BF8CB117A5FA200ECBC4E /* TimeGridContainer.m */; };
-		506BF900117A60F500ECBC4E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506BF7B1117A56DA00ECBC4E /* SenTestingKit.framework */; };
 		506BF903117A610800ECBC4E /* VolumeStandardContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 506BF902117A610800ECBC4E /* VolumeStandardContainer.m */; };
 		506BF904117A610800ECBC4E /* VolumeStandardContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 506BF902117A610800ECBC4E /* VolumeStandardContainer.m */; };
 		506BF907117A611500ECBC4E /* VolumeStandardContainerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 506BF906117A611500ECBC4E /* VolumeStandardContainerTest.m */; };
@@ -156,7 +153,6 @@
 		506BF972117A64D200ECBC4E /* LilyPondExportTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 506BF971117A64D200ECBC4E /* LilyPondExportTest.m */; };
 		506BF975117A64E000ECBC4E /* LilyPondExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 506BF974117A64E000ECBC4E /* LilyPondExport.m */; };
 		506BF976117A64E000ECBC4E /* LilyPondExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 506BF974117A64E000ECBC4E /* LilyPondExport.m */; };
-		506BF979117A64F700ECBC4E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506BF7B1117A56DA00ECBC4E /* SenTestingKit.framework */; };
 		506BF987117A653D00ECBC4E /* LilyPondExportWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 506BF986117A653D00ECBC4E /* LilyPondExportWindow.xib */; };
 		506BF988117A653D00ECBC4E /* LilyPondExportWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 506BF986117A653D00ECBC4E /* LilyPondExportWindow.xib */; };
 		506C6B36135617020060BD9D /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
@@ -165,7 +161,6 @@
 		506D0C0A120AE70400F3F602 /* stop.gif in Resources */ = {isa = PBXBuildFile; fileRef = 506D0C09120AE70400F3F602 /* stop.gif */; };
 		506D0D5E120B9BBD00F3F602 /* ColorByKey.xib in Resources */ = {isa = PBXBuildFile; fileRef = 506D0D5D120B9BBD00F3F602 /* ColorByKey.xib */; };
 		506D0DEA120C62F000F3F602 /* quince.icns in Resources */ = {isa = PBXBuildFile; fileRef = 506D0DE9120C62F000F3F602 /* quince.icns */; };
-		50716FC2117A797000357470 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506BF7B1117A56DA00ECBC4E /* SenTestingKit.framework */; };
 		50716FD8117A79F900357470 /* AutomationChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 50716FD7117A79F900357470 /* AutomationChild.m */; };
 		50716FD9117A79F900357470 /* AutomationChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 50716FD7117A79F900357470 /* AutomationChild.m */; };
 		50716FDC117A7A0C00357470 /* AutomationChildTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 50716FDB117A7A0C00357470 /* AutomationChildTest.m */; };
@@ -173,7 +168,6 @@
 		5071702D117A7F3900357470 /* SequenceChildTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5071702C117A7F3900357470 /* SequenceChildTest.m */; };
 		50717040117A7FE100357470 /* SequenceChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 5071703F117A7FE100357470 /* SequenceChild.m */; };
 		50717041117A7FE100357470 /* SequenceChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 5071703F117A7FE100357470 /* SequenceChild.m */; };
-		5071704A117A80D300357470 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506BF7B1117A56DA00ECBC4E /* SenTestingKit.framework */; };
 		507383C311BEAFF0001645A5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506BF9E5117A677800ECBC4E /* AudioToolbox.framework */; };
 		5074FE5E1238E1BF00BB60C6 /* QuinceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A522B5117A52560072FB09 /* QuinceApi.framework */; };
 		5074FE611238E1FB00BB60C6 /* SetParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5074FE601238E1FB00BB60C6 /* SetParameter.m */; };
@@ -1724,7 +1718,6 @@
 		506009541131BC7A00E75717 /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainController.m; path = QuinceCore/MainController.m; sourceTree = "<group>"; };
 		5069D9F513C7BDCD00B0B6E5 /* PitchQuantization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PitchQuantization.h; path = bundles/Functions/PitchQuantization/PitchQuantization.h; sourceTree = SOURCE_ROOT; };
 		5069D9F613C7BDCD00B0B6E5 /* PitchQuantization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PitchQuantization.m; path = bundles/Functions/PitchQuantization/PitchQuantization.m; sourceTree = SOURCE_ROOT; };
-		506BF7B1117A56DA00ECBC4E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		506BF833117A5A9700ECBC4E /* AutomationView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutomationView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		506BF834117A5A9700ECBC4E /* AutomationView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "AutomationView-Info.plist"; path = "bundles/ContainerViews/AutomationContainer/AutomationView-Info.plist"; sourceTree = "<group>"; };
 		506BF84A117A5AF500ECBC4E /* AutomationContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutomationContainer.h; path = bundles/ContainerViews/AutomationContainer/AutomationContainer.h; sourceTree = "<group>"; };
@@ -1756,7 +1749,7 @@
 		506BF942117A631E00ECBC4E /* CreateGridSequenceWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CreateGridSequenceWindow.xib; path = bundles/functions/CreateGridSequence/CreateGridSequenceWindow.xib; sourceTree = "<group>"; };
 		506BF95B117A646200ECBC4E /* LilyPondExport.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LilyPondExport.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		506BF95C117A646200ECBC4E /* LilyPondExport-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LilyPondExport-Info.plist"; path = "bundles/Functions/LilyPondExport/LilyPondExport-Info.plist"; sourceTree = "<group>"; };
-		506BF968117A64B200ECBC4E /* LilyPondExportTestUnit.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LilyPondExportTestUnit.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		506BF968117A64B200ECBC4E /* LilyPondExportTestUnit.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LilyPondExportTestUnit.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		506BF969117A64B200ECBC4E /* LilyPondExportTestUnit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LilyPondExportTestUnit-Info.plist"; path = "bundles/Functions/LilyPondExport/LilyPondExportTestUnit-Info.plist"; sourceTree = "<group>"; };
 		506BF970117A64D200ECBC4E /* LilyPondExportTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LilyPondExportTest.h; path = bundles/functions/LilyPondExport/LilyPondExportTest.h; sourceTree = "<group>"; };
 		506BF971117A64D200ECBC4E /* LilyPondExportTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LilyPondExportTest.m; path = bundles/functions/LilyPondExport/LilyPondExportTest.m; sourceTree = "<group>"; };
@@ -1907,7 +1900,7 @@
 		50B86D331190383D00D235AA /* EqlDstrbtn_Start-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EqlDstrbtn_Start-Info.plist"; path = "bundles/Functions/EqlDstrbtn_Start/EqlDstrbtn_Start-Info.plist"; sourceTree = "<group>"; };
 		50B86D3D1190388C00D235AA /* EqlDstrbtn_Start.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EqlDstrbtn_Start.h; path = bundles/Functions/EqlDstrbtn_Start/EqlDstrbtn_Start.h; sourceTree = "<group>"; };
 		50B86D3E1190388C00D235AA /* EqlDstrbtn_Start.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EqlDstrbtn_Start.m; path = bundles/Functions/EqlDstrbtn_Start/EqlDstrbtn_Start.m; sourceTree = "<group>"; };
-		50B8F4921230F2E600E444BC /* Sets_Difference.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Sets_Difference.bundle; path = "Sets-Difference.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B8F4921230F2E600E444BC /* Sets-Difference.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sets-Difference.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B8F4931230F2E600E444BC /* Sets_Difference-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Sets_Difference-Info.plist"; path = "bundles/Functions/Sets_Difference/Sets_Difference-Info.plist"; sourceTree = "<group>"; };
 		50B8F49C1230F32300E444BC /* Sets_Difference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sets_Difference.h; path = bundles/Functions/Sets_Difference/Sets_Difference.h; sourceTree = "<group>"; };
 		50B8F49D1230F32300E444BC /* Sets_Difference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sets_Difference.m; path = bundles/Functions/Sets_Difference/Sets_Difference.m; sourceTree = "<group>"; };
@@ -1980,13 +1973,13 @@
 		50DE7B0A13CC473D00FD4F35 /* AlignOnFreq-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AlignOnFreq-Prefix.pch"; path = "bundles/Functions/AlignOnFreq/AlignOnFreq-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		50DE7B0E13CC480300FD4F35 /* AlignOnFreq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlignOnFreq.h; path = bundles/Functions/AlignOnFreq/AlignOnFreq.h; sourceTree = SOURCE_ROOT; };
 		50DE7B0F13CC480300FD4F35 /* AlignOnFreq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlignOnFreq.m; path = bundles/Functions/AlignOnFreq/AlignOnFreq.m; sourceTree = SOURCE_ROOT; };
-		50DE7B1A13CC4ACC00FD4F35 /* EqlDstrbtn_Pitch.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = EqlDstrbtn_Pitch.bundle; path = "EqlDstrbtn-Pitch.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50DE7B1A13CC4ACC00FD4F35 /* EqlDstrbtn-Pitch.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EqlDstrbtn-Pitch.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50DE7B1E13CC4ACC00FD4F35 /* EqlDstrbtn_Pitch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EqlDstrbtn_Pitch-Info.plist"; path = "bundles/Functions/EqlDstrbtn_Pitch/EqlDstrbtn_Pitch-Info.plist"; sourceTree = SOURCE_ROOT; };
 		50DE7B2013CC4ACC00FD4F35 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50DE7B2213CC4ACC00FD4F35 /* EqlDstrbtn_Pitch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "EqlDstrbtn_Pitch-Prefix.pch"; path = "bundles/Functions/EqlDstrbtn_Pitch/EqlDstrbtn_Pitch-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		50DE7B2613CC4BB600FD4F35 /* EqlDstrbtn_Pitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EqlDstrbtn_Pitch.h; path = bundles/Functions/EqlDstrbtn_Pitch/EqlDstrbtn_Pitch.h; sourceTree = SOURCE_ROOT; };
 		50DE7B2713CC4BB600FD4F35 /* EqlDstrbtn_Pitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EqlDstrbtn_Pitch.m; path = bundles/Functions/EqlDstrbtn_Pitch/EqlDstrbtn_Pitch.m; sourceTree = SOURCE_ROOT; };
-		50DE7B3213CC50AC00FD4F35 /* EqlDstrbtn_Freq.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = EqlDstrbtn_Freq.bundle; path = "EqlDstrbtn-Freq.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50DE7B3213CC50AC00FD4F35 /* EqlDstrbtn-Freq.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EqlDstrbtn-Freq.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50DE7B3613CC50AC00FD4F35 /* EqlDstrbtn_Freq-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EqlDstrbtn_Freq-Info.plist"; path = "bundles/Functions/EqlDstrbtn_Freq/EqlDstrbtn_Freq-Info.plist"; sourceTree = SOURCE_ROOT; };
 		50DE7B3813CC50AC00FD4F35 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50DE7B3A13CC50AC00FD4F35 /* EqlDstrbtn_Freq-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "EqlDstrbtn_Freq-Prefix.pch"; path = "../bundles/Functions/EqlDstrbtn_Freq/EqlDstrbtn_Freq-Prefix.pch"; sourceTree = "<group>"; };
@@ -2299,7 +2292,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				506BF859117A5B3400ECBC4E /* SenTestingKit.framework in Frameworks */,
 				505B49831207745D0050CFB7 /* QuinceApi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2332,7 +2324,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				506BF900117A60F500ECBC4E /* SenTestingKit.framework in Frameworks */,
 				505B49871207745D0050CFB7 /* QuinceApi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2357,7 +2348,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				506BF979117A64F700ECBC4E /* SenTestingKit.framework in Frameworks */,
 				505B498A1207745D0050CFB7 /* QuinceApi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2382,7 +2372,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50716FC2117A797000357470 /* SenTestingKit.framework in Frameworks */,
 				505B498D1207745D0050CFB7 /* QuinceApi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2399,7 +2388,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5071704A117A80D300357470 /* SenTestingKit.framework in Frameworks */,
 				505B497E1207745D0050CFB7 /* QuinceApi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2535,7 +2523,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				506BF80F117A597200ECBC4E /* SenTestingKit.framework in Frameworks */,
 				50999BF11276508A00AD0D65 /* QuinceApi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2790,7 +2777,6 @@
 				50B5BB5013870A300031A3DF /* CsoundLib.framework */,
 				505C6C74119F1FFD0086B612 /* AudioUnit.framework */,
 				506BF9E5117A677800ECBC4E /* AudioToolbox.framework */,
-				506BF7B1117A56DA00ECBC4E /* SenTestingKit.framework */,
 				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
 				13E42FBA07B3F13500E4EEF1 /* CoreData.framework */,
 				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
@@ -2811,7 +2797,7 @@
 				506BF8F7117A60DD00ECBC4E /* VolumeStandardTestUnit.octest */,
 				506BF92E117A629800ECBC4E /* CreateGridSequence.bundle */,
 				506BF95B117A646200ECBC4E /* LilyPondExport.bundle */,
-				506BF968117A64B200ECBC4E /* LilyPondExportTestUnit.octest */,
+				506BF968117A64B200ECBC4E /* LilyPondExportTestUnit.xctest */,
 				50716F7D117A77E600357470 /* AutomationChildView.bundle */,
 				50716F97117A78C400357470 /* AutomationChildViewTestUnit.octest */,
 				50717009117A7E0F00357470 /* EnvelopeChild.bundle */,
@@ -2837,7 +2823,7 @@
 				50D195D11230626C00C3FC2C /* Sets-Union.bundle */,
 				50D196031230669B00C3FC2C /* Sets-UnionNoDoubles.bundle */,
 				50D196A112306E8400C3FC2C /* Sets-Intersection.bundle */,
-				50B8F4921230F2E600E444BC /* Sets_Difference.bundle */,
+				50B8F4921230F2E600E444BC /* Sets-Difference.bundle */,
 				50B8F5251230F60200E444BC /* Sets-SymDiff.bundle */,
 				50B8F5811230FF7700E444BC /* TempoChange.bundle */,
 				5074FE4D1238E1A500BB60C6 /* SetParameter.bundle */,
@@ -2858,8 +2844,8 @@
 				509E993413C8A2D90032AEF9 /* PitchGridContainer.bundle */,
 				50B171F913CB336400C9F105 /* TimeQuantization.bundle */,
 				50DE7B0213CC473D00FD4F35 /* AlignOnFreq.bundle */,
-				50DE7B1A13CC4ACC00FD4F35 /* EqlDstrbtn_Pitch.bundle */,
-				50DE7B3213CC50AC00FD4F35 /* EqlDstrbtn_Freq.bundle */,
+				50DE7B1A13CC4ACC00FD4F35 /* EqlDstrbtn-Pitch.bundle */,
+				50DE7B3213CC50AC00FD4F35 /* EqlDstrbtn-Freq.bundle */,
 				50DE7B4A13CC675000FD4F35 /* CentContainer.bundle */,
 				50F471D113D0D815005CB978 /* GlissandoContainer.bundle */,
 				50F471E913D0E2DA005CB978 /* GlissandoChild.bundle */,
@@ -4866,7 +4852,7 @@
 			name = AutomationContainerTestUnit;
 			productName = AutomationViewTestUnit;
 			productReference = 506BF854117A5B1A00ECBC4E /* AutomationViewTestUnit.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		506BF899117A5DD500ECBC4E /* EnvelopeContainer */ = {
 			isa = PBXNativeTarget;
@@ -4940,7 +4926,7 @@
 			name = VolumeStandardContainerTestUnit;
 			productName = VolumeStandardTestUnit;
 			productReference = 506BF8F7117A60DD00ECBC4E /* VolumeStandardTestUnit.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		506BF92D117A629800ECBC4E /* CreateGridSequence */ = {
 			isa = PBXNativeTarget;
@@ -4995,8 +4981,8 @@
 			);
 			name = LilyPondExportTestUnit;
 			productName = LilyPondExportTestUnit;
-			productReference = 506BF968117A64B200ECBC4E /* LilyPondExportTestUnit.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 506BF968117A64B200ECBC4E /* LilyPondExportTestUnit.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		506C6B2D135616F60060BD9D /* ExtractEnvSequence */ = {
 			isa = PBXNativeTarget;
@@ -5053,7 +5039,7 @@
 			name = AutomationChildTestUnit;
 			productName = AutomationChildViewTestUnit;
 			productReference = 50716F97117A78C400357470 /* AutomationChildViewTestUnit.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		50717008117A7E0F00357470 /* EnvelopeChild */ = {
 			isa = PBXNativeTarget;
@@ -5090,7 +5076,7 @@
 			name = SequenceChildTestUnit;
 			productName = SequenceChildTestUnit;
 			productReference = 50717024117A7F1800357470 /* SequenceChildTestUnit.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		50717033117A7F4300357470 /* SequenceChild */ = {
 			isa = PBXNativeTarget;
@@ -5380,7 +5366,7 @@
 			name = QuinceApiTestUnit;
 			productName = MintApiTestUnit;
 			productReference = 50A522FB117A52F60072FB09 /* MintApiTestUnit.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		50AEBF6F11CEC6AE0055CA29 /* EnvelopeGate */ = {
 			isa = PBXNativeTarget;
@@ -5469,7 +5455,7 @@
 			);
 			name = "Sets-Difference";
 			productName = Sets_Difference;
-			productReference = 50B8F4921230F2E600E444BC /* Sets_Difference.bundle */;
+			productReference = 50B8F4921230F2E600E444BC /* Sets-Difference.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		50B8F5241230F60200E444BC /* Sets-SymDiff */ = {
@@ -5685,7 +5671,7 @@
 			);
 			name = "EqlDstrbtn-Pitch";
 			productName = EqlDstrbtn_Pitch;
-			productReference = 50DE7B1A13CC4ACC00FD4F35 /* EqlDstrbtn_Pitch.bundle */;
+			productReference = 50DE7B1A13CC4ACC00FD4F35 /* EqlDstrbtn-Pitch.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		50DE7B3113CC50AC00FD4F35 /* EqlDstrbtn-Freq */ = {
@@ -5703,7 +5689,7 @@
 			);
 			name = "EqlDstrbtn-Freq";
 			productName = EqlDstrbtn_Freq;
-			productReference = 50DE7B3213CC50AC00FD4F35 /* EqlDstrbtn_Freq.bundle */;
+			productReference = 50DE7B3213CC50AC00FD4F35 /* EqlDstrbtn-Freq.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		50DE7B4913CC675000FD4F35 /* CentContainer */ = {
@@ -5958,6 +5944,7 @@
 		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastTestingUpgradeCheck = 0730;
 				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "Maximilian Marcoll";
 			};
@@ -10310,7 +10297,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
@@ -10323,12 +10310,9 @@
 				OTHER_LDFLAGS = (
 					"-framework",
 					Cocoa,
-					"-framework",
-					SenTestingKit,
 				);
 				PRODUCT_NAME = VolumeStandardTestUnit;
 				SDKROOT = macosx;
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -10338,7 +10322,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -10348,12 +10332,9 @@
 				OTHER_LDFLAGS = (
 					"-framework",
 					Cocoa,
-					"-framework",
-					SenTestingKit,
 				);
 				PRODUCT_NAME = VolumeStandardTestUnit;
 				SDKROOT = macosx;
-				WRAPPER_EXTENSION = octest;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -10465,7 +10446,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
@@ -10478,12 +10459,9 @@
 				OTHER_LDFLAGS = (
 					"-framework",
 					Cocoa,
-					"-framework",
-					SenTestingKit,
 				);
 				PRODUCT_NAME = LilyPondExportTestUnit;
 				SDKROOT = macosx;
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -10493,7 +10471,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -10503,12 +10481,9 @@
 				OTHER_LDFLAGS = (
 					"-framework",
 					Cocoa,
-					"-framework",
-					SenTestingKit,
 				);
 				PRODUCT_NAME = LilyPondExportTestUnit;
 				SDKROOT = macosx;
-				WRAPPER_EXTENSION = octest;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -11528,7 +11503,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
@@ -11541,12 +11516,9 @@
 				OTHER_LDFLAGS = (
 					"-framework",
 					Cocoa,
-					"-framework",
-					SenTestingKit,
 				);
 				PRODUCT_NAME = MintApiTestUnit;
 				SDKROOT = macosx;
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -11556,7 +11528,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -11566,12 +11538,9 @@
 				OTHER_LDFLAGS = (
 					"-framework",
 					Cocoa,
-					"-framework",
-					SenTestingKit,
 				);
 				PRODUCT_NAME = MintApiTestUnit;
 				SDKROOT = macosx;
-				WRAPPER_EXTENSION = octest;
 				ZERO_LINK = NO;
 			};
 			name = Release;
