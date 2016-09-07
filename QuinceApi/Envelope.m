@@ -42,6 +42,25 @@
 	return self;
 }
 
+-(QuinceObject *)copy{
+    Envelope * q = (Envelope *)[self copyWithZone:nil];
+    
+    long i;
+    
+    float * s = malloc(count * sizeof(float));
+    if(!s){
+        [document presentAlertWithText:@"could not allocate memory for samples"];
+        return nil;
+    }
+    
+    for ( i =0; i<count;i++){
+        s[i] = samples[i];
+    }
+    [q setSamples:s];
+    [q setCount:count];
+    return q;
+}
+
 -(QuinceObject *)initWithXMLDictionary:(NSDictionary *)xml{
 
 	if((self = (Envelope *)[super initWithXMLDictionary:xml])){ //?! dirty!
@@ -148,6 +167,7 @@
 	[document displayProgress:YES];
 	
 	//NSArray * env = [self envelope];
+    NSLog(@"Envelope: before resample: count: %ld", [self count]);
     if(samples == NULL || count == 0) return;
 	//NSLog(@"before Resampling: %d frames", [env count]);
 	
@@ -193,6 +213,7 @@
     free(samples);
     samples = newSamples;
     count = newSize;
+    NSLog(@"Envelope: after resample: new count: %ld", count);
 //	
 	//double dur = [newEnvelope count] * userWindowDuration;
 	//NSLog(@"after resampling: %d frames, frameDur : %f, envelope duration: %f", [newEnvelope count], userWindowDuration, dur);
@@ -207,6 +228,8 @@
 -(Envelope *)resampleCopyForWindowDuration:(double)windowDuration{
 
 	Envelope * e = [self copy];
+    NSLog(@"Envelope: after copy: new count: %ld", [e count]);
+
 	[e resampleForWindowDuration:windowDuration];
 	return e;
 }

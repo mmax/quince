@@ -78,11 +78,14 @@
 		env = [env resampleCopyForWindowDuration:windowSize];
 	}
 	
-	
+	NSLog(@"%@", [env valueForKey:@"name"]);
 	
 	QuinceObject * mom = [self outputObjectOfType:@"QuinceObject"];//[document newObjectOfClassNamed:@"QuinceObject" inPool:NO];
 	double windowDuration = [env windowDuration];
-	NSArray * enVal = [env envelope];
+	//NSArray * enVal = [env envelope];
+    float * envelope = [env samples];
+    long count = [env count];
+    NSLog(@"count: %ld", count);
 	float f;
 	double start, a, b, factor = 100.0/detectionPercentage, progress=0;
 	//NSLog(@"\ndetection: %d values to check\nenv _ windowDuration:%f \n\nfactor: %f", [enVal count], windowDuration, factor);
@@ -91,12 +94,13 @@
 	[document displayProgress:YES];
 	QuinceObject * q;
 
-	for(int i=1; i<[enVal count];i++){
+	//for(int i=1; i<[enVal count];i++){
+    for(int i=1; i<count;i++){
 		f = i;
-		progress = (f/[enVal count]) * 100.0;
+		progress = (f/count) * 100.0;
 		[document setProgress:progress];
-		a = [[enVal objectAtIndex:i-1]doubleValue];
-		b = [[enVal objectAtIndex:i]doubleValue];
+		a = envelope[i-1];//[[enVal objectAtIndex:i-1]doubleValue];
+		b = envelope[i];//[[enVal objectAtIndex:i]doubleValue];
 		//NSLog(@"a: %f, b:%f, a*factor = %f", a, b, a*factor);
 		if(a*factor <= b){
 			//NSLog(@"\t\t\t\tHIT!");
