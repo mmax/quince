@@ -52,7 +52,7 @@ typedef struct _userData {
 }
 
 -(void)fetchCommonParametersForArrayOfQuinces:(NSArray *)a;
--(BOOL)doAllObjectsInArray:(NSArray *)a haveAValueForKey:(NSString *)key;
+//-(BOOL)doAllObjectsInArray:(NSArray *)a haveAValueForKey:(NSString *)key;
 -(void)prepare;
 -(NSArray *)excludedParameters;
 -(BOOL)excludedParametersInclude:(NSString *)pam;

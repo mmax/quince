@@ -63,40 +63,64 @@
 
 -(void)fetchCommonParametersForArrayOfQuinces:(NSArray *)a{
     
-    [document setProgressTask:@"fetching common parameters..."];
+    
     [self removeObjectForKey:@"commonParameters"];
     QuinceObject * quince = [a lastObject]; // need ANY quince to use it's methods
     NSMutableArray * common = [[[NSMutableArray alloc]init] autorelease];
+    NSMutableArray * toRemove = [[[NSMutableArray alloc]init] autorelease];
     int i=0;
     float f = 100.0/[a count];
     NSArray * ek = [self excludedParameters];
     
+
+    [document setProgressTask:@"fetching common parameters..."];
+        
     for(QuinceObject * q in a){
         [document setProgress:f*i++];
+        NSArray * allKeys = [q allKeys];
         
-        for(NSString * s in [q allKeys]){
+        for(NSString * s in allKeys){
+            
+
             if(![quince isString:s inArrayOfStrings:ek] && 
-               ![quince isString:s inArrayOfStrings:common] &&
-               [self doAllObjectsInArray:a haveAValueForKey:s]){
+               ![quince isString:s inArrayOfStrings:common])// &&
+               //[self doAllObjectsInArray:a haveAValueForKey:s]){
                         
                 [common addObject:s];
+            
+        }
+    }
+    [document setProgressTask:@"removing other parameters..."];
+    i=0;
+    
+    for (NSString * s in common){
+        [document setProgress:[common count]*i++];
+        
+        for(QuinceObject * q in a){
+        
+            if (![q valueForKey:s]){
+                [toRemove addObject:s];
+                break;
             }
         }
     }
+
+    [common removeObjectsInArray:toRemove];
+    
     [common sortUsingSelector:@selector(compare:)];
     [self setValue:common forKey:@"commonParameters"];
 }
 
 
--(BOOL)doAllObjectsInArray:(NSArray *)a haveAValueForKey:(NSString *)key{
-    
-    for(QuinceObject * q in a){
-    
-        if(![q valueForKey:key])
-            return NO;
-    }
-    return YES;
-}
+//-(BOOL)doAllObjectsInArray:(NSArray *)a haveAValueForKey:(NSString *)key{
+//    
+//    for(QuinceObject * q in a){
+//    
+//        if(![q valueForKey:key])
+//            return NO;
+//    }
+//    return YES;
+//}
 
 -(void)setup{
 
