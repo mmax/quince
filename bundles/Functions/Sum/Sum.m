@@ -125,12 +125,14 @@
         
         n = [NSNumber numberWithDouble:p];
         NSArray * subs = [m subObjectsAtTime:n startLookingAtIndex:&index];
-        double sum = [self sumForParameter:@"volume" inArrayOfObjects:subs];
-        q = [[document controllerForNewObjectOfClassNamed:@"QuinceObject" inPool:NO]content];
+        if([subs count]){
+            double sum = [self sumForParameter:@"volume" inArrayOfObjects:subs];
+            q = [[document controllerForNewObjectOfClassNamed:@"QuinceObject" inPool:NO]content];
 
-        [q setValue:n forKey:@"start"];
-        [q setValue:[NSNumber numberWithDouble:sum] forKey:@"volume"];
-        [[result controller] addSubObjectWithController:[q controller] withUpdate:NO];//addSubObject:q withUpdate:NO];
+            [q setValue:n forKey:@"start"];
+            [q setValue:[NSNumber numberWithDouble:sum] forKey:@"volume"];
+            [[result controller] addSubObjectWithController:[q controller] withUpdate:NO];//addSubObject:q withUpdate:NO];
+        }
         progress = (100.0/pointCount)*i;
         //NSLog(@"progress: %f", progress);
         [document setProgress:progress];
@@ -143,6 +145,10 @@
 
 -(double) sumForParameter:(NSString *)s inArrayOfObjects:o{
    
+    double defaultVol = -90.0;
+    
+    if(![o count])return defaultVol;
+    
     if([s isEqualToString:@"volume"]){
        
         double linSum = 0;
@@ -153,7 +159,7 @@
         return [self a2dB:linSum];
     }
     [document presentAlertWithText:@"SUM: NO MATCHING PARAMETER FOUND!"];
-    return 0;
+    return defaultVol;
 }
 
 int compare(const void * a, const void * b){
@@ -165,7 +171,14 @@ int compare(const void * a, const void * b){
     return 0;
 }
 
--(double)a2dB:(double)a{ return 20*log10(a);}
+-(double)a2dB:(double)a{ 
+    if(a ==0){
+        NSLog(@"Sum: a2Db: a == 0!");
+        return -90.0;
+    }
+    double r = 20*log10(a);
+    return r;
+}
 -(double)dB2a:(double)dB{ return pow(10, dB/20.0);}
 -(BOOL)worksOnSelection{return NO;}
 
