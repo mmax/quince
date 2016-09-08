@@ -34,7 +34,7 @@
 	NSOpenPanel *openPanel = [NSOpenPanel openPanel];
 	if([self fileTypes])
 		[openPanel setAllowedFileTypes:[self fileTypes]];//[NSArray arrayWithObjects:@"aif", @"aiff", @"aifc", @"wav", @"wave", nil]];
-	if([openPanel runModal] == NSOKButton){
+    if([openPanel runModal] == NSModalResponseOK){//OKButton){
         NSArray * us = [openPanel URLs];
         NSURL * u = [us objectAtIndex:0];
         NSString * fp = [u path];
