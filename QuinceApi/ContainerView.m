@@ -591,11 +591,11 @@ NSString* const kMuteString = @"m";
 #pragma mark settings
 
 -(NSString *)parameterOnX{
-	return [NSString stringWithString:@"time"];
+	return @"time";
 }
 
 -(NSString *)parameterOnY{
-	return [NSString stringWithString:@"volume"];
+	return @"volume";
 }
 
 -(BOOL)allowsVerticalDrag{
@@ -622,7 +622,7 @@ NSString* const kMuteString = @"m";
 }
 
 -(NSArray *)types{
-	return [NSArray arrayWithObject:[NSString stringWithString:@"QuinceObject"]];
+    return [NSArray arrayWithObject:@"QuinceObject"];
 }
 
 -(NSString *)defaultChildViewClassName{
@@ -1237,7 +1237,8 @@ float maxabs_float(float x){
 #pragma mark user feedback
 
 -(void)presentAlertWithText:(NSString *)message{
-	NSAlert * alert = [NSAlert alertWithMessageText:message defaultButton:@"OK" alternateButton:@"" otherButton:@"" informativeTextWithFormat:@""];
+    NSAlert * alert = [[NSAlert alloc ]init];//alertWithMessageText:message defaultButton:@"OK" alternateButton:@"" otherButton:@"" informativeTextWithFormat:@""];
+    [alert addButtonWithTitle:@"OK"];
 	[alert setAlertStyle:NSInformationalAlertStyle];
 	[alert layout];
 	[alert runModal];

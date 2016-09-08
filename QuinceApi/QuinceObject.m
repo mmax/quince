@@ -1009,7 +1009,7 @@
 			[subsToMigrate addObject:q];
 	}
 	
-	NSLog(@"%u subs to migrate", [subsToMigrate count]);
+	//NSLog(@"%u subs to migrate", [subsToMigrate count]);
 	
 	if([subsToMigrate count]){
 		//QuinceObjectController * splitCopy = [superController copyOfController:newSplitController withSubObjects:NO addAsSubObject:NO];
@@ -1036,10 +1036,10 @@
 					[q splitAtTime:time migrateToController:newSplitController];
 		} */
 	NSArray * sot = [self subObjectsAtTime:time startLookingAtIndex:NULL];
-	int count = [sot count];
+	long count = [sot count];
 
 	while(count>0){
-		NSLog(@"loooop---splittting: count: %d", count);
+		NSLog(@"loooop---splittting: count: %ld", count);
 		[[sot lastObject] splitAtTime:time migrateToController:newSplitController];
 		sot = [self subObjectsAtTime:time startLookingAtIndex:NULL];
 		count = [sot count];

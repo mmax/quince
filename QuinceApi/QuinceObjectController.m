@@ -412,7 +412,7 @@
 	if(![subs containsObject:[mc content]])
 		return nil;
 	
-	int index = [subs indexOfObject:[mc content]];
+	long index = [subs indexOfObject:[mc content]];
 	
 	if (index < [subs count]-1)
 		return [[subs objectAtIndex:index+1]controller];
@@ -428,7 +428,7 @@
 	if(![subs containsObject:[mc content]])
 		return nil;
 	
-	int index = [subs indexOfObject:[mc content]];
+	long index = [subs indexOfObject:[mc content]];
 	
 	if(index > 0)
 		return [[subs objectAtIndex:index-1]controller];
@@ -453,14 +453,14 @@
 	//NSArray * c = [NSArray arrayWithArray:subs];
 	double start  = [[[mc content]valueForKey:@"start"]doubleValue] + [[[mc content]offsetForKey:@"start"]doubleValue];
 	QuinceObject * quince = [self content];
-	NSLog(@"QuinceObjectController:migrateSubObjects. current subObjsctsCount: %d newOwner subCount: %d", [[[self content]valueForKey:@"subObjects"]count], [[[mc content]valueForKey:@"subObjects"]count]);
+	//NSLog(@"QuinceObjectController:migrateSubObjects. current subObjectsCount: %lu newOwner subCount: %d", [[[self content]valueForKey:@"subObjects"]count], [[[mc content]valueForKey:@"subObjects"]count]);
 	for(QuinceObject * q in subs){
 		double prevSubStart = [[q valueForKey:@"start"]doubleValue]+[[q offsetForKey:@"start"]doubleValue];
 		double newSubStart = prevSubStart - start;
 
 		[self removeSubObjectWithController:[q controller] withUpdate:NO];
 		[mc addSubObjectWithController:[q controller] withUpdate:NO];
-		NSLog(@"migrating subObject: %@. self subCount: %d, newOwner subCount: %d", [q valueForKey:@"name"], [[[self content]valueForKey:@"subObjects"]count], [[[mc content]valueForKey:@"subObjects"]count]);
+		//NSLog(@"migrating subObject: %@. self subCount: %lu, newOwner subCount: %d", [q valueForKey:@"name"], [[[self content]valueForKey:@"subObjects"]count], [[[mc content]valueForKey:@"subObjects"]count]);
 		NSLog(@"sub->super->name: %@", [[q superObject]valueForKey:@"name"]);
 		[q setValue:[NSNumber numberWithDouble:newSubStart] forKey:@"start"];
 	}

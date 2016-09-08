@@ -216,7 +216,7 @@
 		NSRange tRange;
 		NSPoint point;
 		NSMutableAttributedString * s = [[NSMutableAttributedString alloc]initWithString:
-										 [NSString stringWithFormat:@"%d", [[controller valueForKeyPath:@"selection.subObjects"]count]]];
+										 [NSString stringWithFormat:@"%lu", [[controller valueForKeyPath:@"selection.subObjects"]count]]];
 		tRange = NSMakeRange(0, [s length]);	
 		[s addAttribute:NSForegroundColorAttributeName value:[NSColor redColor]range:tRange];
 		[s addAttribute:NSFontAttributeName value:font range:tRange];
