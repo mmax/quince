@@ -108,11 +108,10 @@ enum {
 @property (retain) NSNumber * startTime;
 
 -(void)setup;
--(OSStatus)createEventForQuince:(QuinceObject *)quince inTrack:(MusicTrack)track;
 
 -(BOOL)isPlaying;
 -(void)setIsPlaying:(BOOL)b;
--(void)checkQuince:(QuinceObject *)quince;
+
 -(void)play;
 -(void)stop;
 

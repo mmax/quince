@@ -68,5 +68,7 @@ void HandleOutputBuffer (
                          );
 
 -(void)getSampleTimeBase;
+-(OSStatus)createEventForQuince:(QuinceObject *)quince inTrack:(MusicTrack)track;
+-(void)checkQuince:(QuinceObject *)quince;
 
 @end
