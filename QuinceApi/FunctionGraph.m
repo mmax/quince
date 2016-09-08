@@ -217,7 +217,7 @@
 		return path;
 	}
 	
-	int length = [[pathComponents objectAtIndex:0]length];
+	long length = [[pathComponents objectAtIndex:0]length];
 	NSRange range = NSMakeRange(0, length+1);
 	[outPath deleteCharactersInRange:range];
 	//NSLog(@"%@: stripFirstComponentFromFunctionPath: %@ -> %@", [self className], path, outPath);

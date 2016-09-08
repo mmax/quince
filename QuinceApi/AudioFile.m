@@ -64,7 +64,7 @@
 	if(!b)return;
 
 	NSArray * comp = [[self valueForKey:@"name"]componentsSeparatedByString:@"."];
-	int index = [comp count] > 2 ? [comp count]-2 : 0;
+	unsigned long index = [comp count] > 2 ? [comp count]-2 : 0;
 	[quince setValue:[NSString stringWithFormat:@"%@_%d", [comp objectAtIndex:index], [self getNewLinkedObjectNamePostfixNumber]] forKey:@"name"];
 }
 

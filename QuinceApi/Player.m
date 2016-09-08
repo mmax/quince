@@ -464,7 +464,7 @@ void DeriveBufferSize (
 //#endif
     
 	
-	int status = [sp runModal];
+	long status = [sp runModal];
     
 	if(status==NSFileHandlingPanelOKButton)
 		return [[sp URL]path];
