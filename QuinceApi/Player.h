@@ -69,31 +69,16 @@ enum {
 
 #endif
 
-OSStatus playbackCallback(void *inRefCon, 
-								 AudioUnitRenderActionFlags *ioActionFlags, 
-								 const AudioTimeStamp *inTimeStamp, 
-								 UInt32 inBusNumber, 
-								 UInt32 inNumberFrames, 
-								 AudioBufferList *ioData);
 
-void sequenceUserCallback (
-						   void                      *inClientData,
-						   MusicSequence             inSequence,
-						   MusicTrack                inTrack,
-						   MusicTimeStamp            inEventTime,
-						   const MusicEventUserData  *inEventData,
-						   MusicTimeStamp            inStartSliceBeat,
-						   MusicTimeStamp            inEndSliceBeat
-						   );
 
-OSStatus MintPlayerAURenderCallback (
+/*OSStatus MintPlayerAURenderCallback (
 							void                        *inRefCon,
 							AudioUnitRenderActionFlags  *ioActionFlags,
 							const AudioTimeStamp        *inTimeStamp,
 							UInt32                      inBusNumber,
 							UInt32                      inNumberFrames,
 							AudioBufferList             *ioData
-							);
+							);*/
 
 
 
@@ -124,14 +109,13 @@ OSStatus MintPlayerAURenderCallback (
 
 -(void)setup;
 -(OSStatus)createEventForQuince:(QuinceObject *)quince inTrack:(MusicTrack)track;
--(void)checkQuince:(QuinceObject *)quince;
+
 -(BOOL)isPlaying;
 -(void)setIsPlaying:(BOOL)b;
--(MusicSequence)sequence;
--(MusicPlayer)player;
+-(void)checkQuince:(QuinceObject *)quince;
 -(void)play;
 -(void)stop;
--(void)getSampleTimeBase;
+
 -(void)playQuince:(QuinceObject *)quince;
 -(NSPanel *)window;
 -(void)showWindow;
@@ -142,19 +126,6 @@ OSStatus MintPlayerAURenderCallback (
 -(NSString *)getMixDownFilePath;
 -(IBAction)ok:(id)sender;
 
-void DeriveBufferSize (
-					   AudioStreamBasicDescription ASBDesc,                            // 1
-					   UInt32                      maxPacketSize,                       // 2
-					   Float64                     seconds,                             // 3
-					   UInt32                      *outBufferSize,                      // 4
-					   UInt32                      *outNumPacketsToRead                 // 5
-					   );
-
-void HandleOutputBuffer (
-								void                *aqData,
-								AudioQueueRef       inAQ,
-								AudioQueueBufferRef inBuffer
-								);
 
 
 -(void)setValue:(id)aValue forKey:(NSString *)aKey;

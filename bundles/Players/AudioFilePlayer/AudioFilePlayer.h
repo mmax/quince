@@ -27,8 +27,46 @@
 #import <Cocoa/Cocoa.h>
 #import <QuinceApi/Player.h>
 
-@interface AudioFilePlayer : Player {
 
+OSStatus playbackCallback(void *inRefCon,
+                          AudioUnitRenderActionFlags *ioActionFlags,
+                          const AudioTimeStamp *inTimeStamp,
+                          UInt32 inBusNumber,
+                          UInt32 inNumberFrames,
+                          AudioBufferList *ioData);
+
+void sequenceUserCallback (
+                           void                      *inClientData,
+                           MusicSequence             inSequence,
+                           MusicTrack                inTrack,
+                           MusicTimeStamp            inEventTime,
+                           const MusicEventUserData  *inEventData,
+                           MusicTimeStamp            inStartSliceBeat,
+                           MusicTimeStamp            inEndSliceBeat
+                           );
+
+@interface AudioFilePlayer : Player {
+    
+
+    
 }
+
+-(MusicSequence)sequence;
+-(MusicPlayer)player;
+void DeriveBufferSize (
+                       AudioStreamBasicDescription ASBDesc,                            // 1
+                       UInt32                      maxPacketSize,                       // 2
+                       Float64                     seconds,                             // 3
+                       UInt32                      *outBufferSize,                      // 4
+                       UInt32                      *outNumPacketsToRead                 // 5
+);
+
+void HandleOutputBuffer (
+                         void                *aqData,
+                         AudioQueueRef       inAQ,
+                         AudioQueueBufferRef inBuffer
+                         );
+
+-(void)getSampleTimeBase;
 
 @end
