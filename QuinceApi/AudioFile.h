@@ -35,7 +35,7 @@
 //-(void)openFile;
 //-(NSString *)getPath;
 -(void)registerLinkedObject:(QuinceObject *)quince rename:(BOOL)b;
--(int)getNewLinkedObjectNamePostfixNumber;
+-(long)getNewLinkedObjectNamePostfixNumber;
 -(void)unregisterLinkedObject:(QuinceObject *)quince;
 
 @end

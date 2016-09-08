@@ -65,16 +65,16 @@
 
 	NSArray * comp = [[self valueForKey:@"name"]componentsSeparatedByString:@"."];
 	unsigned long index = [comp count] > 2 ? [comp count]-2 : 0;
-	[quince setValue:[NSString stringWithFormat:@"%@_%d", [comp objectAtIndex:index], [self getNewLinkedObjectNamePostfixNumber]] forKey:@"name"];
+	[quince setValue:[NSString stringWithFormat:@"%@_%ld", [comp objectAtIndex:index], [self getNewLinkedObjectNamePostfixNumber]] forKey:@"name"];
 }
 
--(int)getNewLinkedObjectNamePostfixNumber{
+-(long)getNewLinkedObjectNamePostfixNumber{
 
-	int max = 0;
+	long max = 0;
 	for(QuinceObject * quince in [self valueForKey:@"registeredLinkedObjects"]){
 	
 		NSArray * comp = [[quince valueForKey:@"name"] componentsSeparatedByString:@"_"];
-		int number = [[comp lastObject]integerValue];
+		long number = [[comp lastObject]integerValue];
 		if(number > max)max = number;
 	}
 	return max+1;
