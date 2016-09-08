@@ -172,8 +172,8 @@
 -(NSMutableArray *)inputDescriptors{
 	
 	NSMutableDictionary * dictA = [[NSMutableDictionary alloc]init];
-	[dictA setValue:[NSString stringWithString:@"source"] forKey:@"purpose"];
-	[dictA setValue:[NSString stringWithString:@"QuinceObject"] forKey:@"type"];
+	[dictA setValue:@"source" forKey:@"purpose"];
+	[dictA setValue:@"QuinceObject" forKey:@"type"];
 	NSMutableArray * ipd = [[NSMutableArray alloc]initWithObjects:dictA, nil];
 	[dictA release];
 	return [ipd autorelease];
