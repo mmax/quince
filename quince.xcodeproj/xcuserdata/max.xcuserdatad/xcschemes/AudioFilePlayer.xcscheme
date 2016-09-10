@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "50F420541198BF3C009F695A"
-               BuildableName = "SimpleAudio.bundle"
+               BuildableName = "AudioFilePlayer.bundle"
                BlueprintName = "AudioFilePlayer"
                ReferencedContainer = "container:quince.xcodeproj">
             </BuildableReference>
@@ -48,7 +48,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "50F420541198BF3C009F695A"
-            BuildableName = "SimpleAudio.bundle"
+            BuildableName = "AudioFilePlayer.bundle"
             BlueprintName = "AudioFilePlayer"
             ReferencedContainer = "container:quince.xcodeproj">
          </BuildableReference>

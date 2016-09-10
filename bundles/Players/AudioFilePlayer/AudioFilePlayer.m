@@ -29,6 +29,78 @@
 
 @implementation AudioFilePlayer
 
+-(void)setup{
+    
+    if(![self document] || isPlaying) return;
+    
+    OSStatus err;
+    NewAUGraph(&graph);
+#ifdef MAC_OS_X_VERSION_10_6
+    AudioComponentDescription cd;
+#endif
+    
+#ifndef MAC_OS_X_VERSION_10_6
+    ComponentDescription cd;
+#endif
+    
+    AUNode outputNode;
+    cd.componentManufacturer = kAudioUnitManufacturer_Apple;
+    cd.componentFlags = 0;
+    cd.componentFlagsMask = 0;
+    cd.componentType = kAudioUnitType_Output;
+    cd.componentSubType = kAudioUnitSubType_DefaultOutput;
+    
+    // add it to the graph
+    err = AUGraphAddNode(graph, &cd, &outputNode);
+    if(err != noErr) NSLog(@"%@: error creating defaultOutput node: %d", [self className], (int)err);
+    
+    // create a sequence
+    NewMusicSequence(&sequence); // error checking?!?!
+    MusicSequenceSetAUGraph(sequence, graph); // connect the AUGraph
+    err = MusicSequenceSetUserCallback (sequence, sequenceUserCallback, self);
+    if(err != noErr) NSLog(@"%@: error adding sequenceUserCallback", [self className]);
+    
+    flatQuinceList = [document playbackObjectList];
+    // create tracks, add events, and create AU-Sub-Graphs for each track
+    //NSLog(@"%@: setup: %@", [self className], quinceList);
+    
+    // create tracks & add events
+    
+    MusicTrack track;
+    MusicSequenceNewTrack(sequence, &track);
+    
+    //for(NSArray * strip in quinceList){
+    
+    for(QuinceObject * quince in flatQuinceList){
+        //[quince log];
+        err = [self createEventForQuince: quince inTrack:track];
+        if(err != noErr) NSLog(@"%@: error adding event", [self className]);
+    }
+    MusicTrackSetDestNode(track, outputNode);
+    //}
+    
+    err = AUGraphOpen(graph);
+    if(err != noErr) NSLog(@"%@: error opening graph ", [self className]);
+    err = AUGraphInitialize(graph);
+    if(err != noErr) NSLog(@"%@: error initializing graph", [self className]);
+    
+    AURenderCallbackStruct callbackStruct;
+    callbackStruct.inputProc = playbackCallback;
+    
+    //set the reference to "self" this becomes *inRefCon in the playback callback
+    callbackStruct.inputProcRefCon = self;
+    
+    AudioUnit outputUnit;
+    err = AUGraphNodeInfo(graph, outputNode, NULL, &outputUnit);
+    if(err)NSLog(@"%@: error getting outputUnit...", [self className]);
+    
+    err = AudioUnitSetProperty(outputUnit,
+                               kAudioUnitProperty_SetRenderCallback,
+                               kAudioUnitScope_Global, 0, &callbackStruct, sizeof(callbackStruct));
+    if(err)NSLog(@"%@: error setting playbackCallback", [self className]);
+    
+    //AUGraphStart(graph);
+}
 
 -(void)playQuince:(QuinceObject *)quince{
 	
@@ -224,78 +296,7 @@ void sequenceUserCallback (
     [scbp release];
 }
 
--(void)setup{
-    
-    if(![self document] || isPlaying) return;
-    
-    OSStatus err;
-    NewAUGraph(&graph);
-#ifdef MAC_OS_X_VERSION_10_6
-    AudioComponentDescription cd;
-#endif
-    
-#ifndef MAC_OS_X_VERSION_10_6
-    ComponentDescription cd;
-#endif
-    
-    AUNode outputNode;
-    cd.componentManufacturer = kAudioUnitManufacturer_Apple;
-    cd.componentFlags = 0;
-    cd.componentFlagsMask = 0;
-    cd.componentType = kAudioUnitType_Output;
-    cd.componentSubType = kAudioUnitSubType_DefaultOutput;
-    
-    // add it to the graph
-    err = AUGraphAddNode(graph, &cd, &outputNode);
-    if(err != noErr) NSLog(@"%@: error creating defaultOutput node: %d", [self className], (int)err);
-    
-    // create a sequence
-    NewMusicSequence(&sequence); // error checking?!?!
-    MusicSequenceSetAUGraph(sequence, graph); // connect the AUGraph
-    err = MusicSequenceSetUserCallback (sequence, sequenceUserCallback, self);
-    if(err != noErr) NSLog(@"%@: error adding sequenceUserCallback", [self className]);
-    
-    flatQuinceList = [document playbackObjectList];
-    // create tracks, add events, and create AU-Sub-Graphs for each track
-    //NSLog(@"%@: setup: %@", [self className], quinceList);
-    
-    // create tracks & add events
-    
-    MusicTrack track;
-    MusicSequenceNewTrack(sequence, &track);
-    
-    //for(NSArray * strip in quinceList){
-    
-    for(QuinceObject * quince in flatQuinceList){
-        //[quince log];
-        err = [self createEventForQuince: quince inTrack:track];
-        if(err != noErr) NSLog(@"%@: error adding event", [self className]);
-    }
-    MusicTrackSetDestNode(track, outputNode);
-    //}
-    
-    err = AUGraphOpen(graph);
-    if(err != noErr) NSLog(@"%@: error opening graph ", [self className]);
-    err = AUGraphInitialize(graph);
-    if(err != noErr) NSLog(@"%@: error initializing graph", [self className]);
-    
-    AURenderCallbackStruct callbackStruct;
-    callbackStruct.inputProc = playbackCallback;
-    
-    //set the reference to "self" this becomes *inRefCon in the playback callback
-    callbackStruct.inputProcRefCon = self;
-    
-    AudioUnit outputUnit;
-    err = AUGraphNodeInfo(graph, outputNode, NULL, &outputUnit);
-    if(err)NSLog(@"%@: error getting outputUnit...", [self className]);
-    
-    err = AudioUnitSetProperty(outputUnit,
-                               kAudioUnitProperty_SetRenderCallback,
-                               kAudioUnitScope_Global, 0, &callbackStruct, sizeof(callbackStruct));
-    if(err)NSLog(@"%@: error setting playbackCallback", [self className]);
-    
-    //AUGraphStart(graph);
-}
+
 
 -(OSStatus) createEventForQuince: (QuinceObject *) quince inTrack:(MusicTrack) track{
     
@@ -359,7 +360,6 @@ void sequenceUserCallback (
     //NSLog(@"player: play done");
 }
 
-
 -(void)stop{
     //NSLog(@"stop");
     MusicPlayerStop(player);
@@ -370,6 +370,8 @@ void sequenceUserCallback (
     if(b)NSLog(@"still playing, shouldn't be..");
     [document setCursorTime:[document valueForKey:@"playbackStartTime"]];
 }
+
+
 
 -(void)getSampleTimeBase{
     
@@ -394,8 +396,7 @@ void sequenceUserCallback (
     AudioQueueDispose(q, NO);
 }
 
--(MusicSequence)sequence{return sequence;}
--(MusicPlayer)player{return player;}
+
 
 
 //////////////////////////////////////////////////////////////////////////////////

@@ -18,7 +18,7 @@
     [sp setCanChooseDirectories:YES];
     [sp setCanCreateDirectories:YES];
 	[sp setTitle:@"Save SubObjects"];
-    int status = [sp runModal];
+    long status = [sp runModal];
     long i=1;
     
 	if(status==NSFileHandlingPanelOKButton){

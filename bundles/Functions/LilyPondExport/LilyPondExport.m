@@ -32,7 +32,8 @@
 -(LilyPondExport *)init{
 
 	if((self = [super init])){
-		[NSBundle loadNibNamed:@"LilyPondExportWindow" owner:self];
+		//[NSBundle loadNibNamed:@"LilyPondExportWindow" owner:self];
+        [[[NSBundle alloc]init] loadNibNamed:@"LilyPondExportWindow" owner:self topLevelObjects:nil];
 		topKeys = [[NSMutableArray alloc]init];
 		bottomKeys = [[NSMutableArray alloc]init];					
 		lilly = [[NSMutableString alloc]init];

@@ -34,7 +34,8 @@
 {
     self = [super init];
     if (self) {
-        [NSBundle loadNibNamed:@"TransposeWindow" owner:self];
+        //[NSBundle loadNibNamed:@"TransposeWindow" owner:self];
+        [[[NSBundle alloc]init] loadNibNamed:@"TransposeWindow" owner:self topLevelObjects:nil];
     }
     
     return self;

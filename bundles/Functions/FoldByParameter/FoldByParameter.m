@@ -32,7 +32,8 @@
 -(FoldByParameter *)init{
 	
 	if(self = [super init]){
-		[NSBundle loadNibNamed:@"FBP_window" owner:self];
+		//[NSBundle loadNibNamed:@"FBP_window" owner:self];
+        [[[NSBundle alloc]init] loadNibNamed:@"FBP_window" owner:self topLevelObjects:nil];
 	}
 	return self;
 }

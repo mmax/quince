@@ -1239,6 +1239,7 @@ float maxabs_float(float x){
 -(void)presentAlertWithText:(NSString *)message{
     NSAlert * alert = [[NSAlert alloc ]init];//alertWithMessageText:message defaultButton:@"OK" alternateButton:@"" otherButton:@"" informativeTextWithFormat:@""];
     [alert addButtonWithTitle:@"OK"];
+    [alert setInformativeText:message];
 	[alert setAlertStyle:NSInformationalAlertStyle];
 	[alert layout];
 	[alert runModal];

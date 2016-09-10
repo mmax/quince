@@ -13,7 +13,8 @@
 -(ExportParameterListing *)init{
 	
 	if((self = [super init])){
-		[NSBundle loadNibNamed:@"EPL_Win" owner:self];
+		//[NSBundle loadNibNamed:@"EPL_Win" owner:self];
+        [[[NSBundle alloc]init]loadNibNamed:@"EPL_Win" owner:self topLevelObjects:nil];
 	}
 	return self;
 }
@@ -71,7 +72,7 @@
     #endif
     
 	
-	int status = [sp runModal];
+	long status = [sp runModal];
 	NSError * error;
     
 	if(status==NSFileHandlingPanelOKButton){

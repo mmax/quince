@@ -32,7 +32,8 @@
 -(JoinByFrequency *)init{
 	
 	if((self = [super init])){
-		[NSBundle loadNibNamed:@"JoinByFrequencyWindow" owner:self];
+		//[NSBundle loadNibNamed:@"JoinByFrequencyWindow" owner:self];
+        [[[NSBundle alloc]init] loadNibNamed:@"JoinByFrequencyWindow" owner:self topLevelObjects:nil];
 		maxCent = 0;
 	}
 	return self;

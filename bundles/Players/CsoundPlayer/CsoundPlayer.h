@@ -29,7 +29,7 @@
 #import <QuinceApi/Player.h>
 #import <QuinceApi/QuinceDocument.h>
 #import <QuinceApi/QuinceObjectController.h>
-#import <CsoundLib/csound.h>
+#import "/Library/Frameworks/CsoundLib64.framework/Headers/csound.h"//CsoundLib/csound.h>
 
 
 typedef struct _userData { 

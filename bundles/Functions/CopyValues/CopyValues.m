@@ -16,7 +16,8 @@
 	
 	if(self = [super init]){
 		
-		[NSBundle loadNibNamed:@"CopyValues" owner:self];
+		//[NSBundle loadNibNamed:@"CopyValues" owner:self];
+        [[[NSBundle alloc]init]loadNibNamed:@"CopyValues" owner:self topLevelObjects:nil];
 	}
 	return self;
 }

@@ -47,7 +47,7 @@
     
     for(QuinceObject * q in subs){
         QuinceObject * c = [q copyWithZone:nil];
-        int i = [self findGridIndexForQuince:c];
+        long i = [self findGridIndexForQuince:c];
         if(i == -1){
             NSLog(@"Rectify: EOF");//EOF
         }
@@ -69,19 +69,21 @@
     
 }
 
--(int)findGridIndexForQuince:(QuinceObject *)q{
+-(long)findGridIndexForQuince:(QuinceObject *)q{
     
     QuinceObject * g = [self objectForPurpose:@"grid"];
     NSArray * subs = [g valueForKey:@"subObjects"];
-    int i;
+    long i, e;
     double time = [[q valueForKey:@"start"]doubleValue];
     
     for(i=0;i<[subs count]-1;i++){
         QuinceObject * a = [subs objectAtIndex:i];
         QuinceObject * b = [subs objectAtIndex:i+1];
         
-        if([[a valueForKey:@"start"]doubleValue] <= time && time < [[b valueForKey:@"start"]doubleValue])
-            return [subs indexOfObject:a];
+        if([[a valueForKey:@"start"]doubleValue] <= time && time < [[b valueForKey:@"start"]doubleValue]){
+            e = [subs indexOfObject:a];
+            return e;
+        }
     
     }
     return -1;

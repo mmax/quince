@@ -124,6 +124,8 @@ enum {
 -(void)mixDown;
 -(NSString *)getMixDownFilePath;
 -(IBAction)ok:(id)sender;
+-(MusicSequence)sequence;
+-(MusicPlayer)player;
 
 
 

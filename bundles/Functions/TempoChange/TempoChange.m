@@ -32,7 +32,8 @@
 -(TempoChange *)init{
 	
 	if((self = [super init])){
-		[NSBundle loadNibNamed:@"TempoChangeWindow" owner:self];
+		//[NSBundle loadNibNamed:@"TempoChangeWindow" owner:self];
+        [[[NSBundle alloc]init] loadNibNamed:@"TempoChangeWindow" owner:self topLevelObjects:nil];
 	}
 	return self;
 }

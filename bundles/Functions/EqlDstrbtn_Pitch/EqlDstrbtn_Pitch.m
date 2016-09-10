@@ -36,7 +36,7 @@
 	[mother sortByKey:@"frequency" ascending:YES];
 	
 	double max  = -1000, incrementCent, min = [[[[mother valueForKey:@"subObjects"]objectAtIndex:0]valueForKey:@"frequency"]doubleValue], f , factor;
-	int i, count = [mother subObjectsCount];
+	long i, count = [mother subObjectsCount];
 	for(quince in [mother valueForKey:@"subObjects"]){
 		if([[quince valueForKey:@"frequency"]doubleValue]>max)
 			max = [[quince valueForKey:@"frequency"]doubleValue];

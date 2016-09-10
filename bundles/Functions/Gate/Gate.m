@@ -33,7 +33,8 @@
 -(Gate *)init{
 	
 	if(self = [super init]){
-		[NSBundle loadNibNamed:@"GateWindow" owner:self];
+		//[NSBundle loadNibNamed:@"GateWindow" owner:self];
+        [[[NSBundle alloc]init] loadNibNamed:@"GateWindow" owner:self topLevelObjects:nil];
 	}
 	return self;
 }

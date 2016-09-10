@@ -33,7 +33,8 @@
 
 	if(self = [super init]){
 	
-		[NSBundle loadNibNamed:@"ApplyEnvelopeWindow" owner:self];
+		//[NSBundle loadNibNamed:@"ApplyEnvelopeWindow" owner:self];
+        [[[NSBundle alloc]init] loadNibNamed:@"ApplyEnvelopeWindow" owner:self topLevelObjects:nil];
 	}
 	return self;
 }

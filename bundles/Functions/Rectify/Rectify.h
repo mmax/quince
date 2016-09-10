@@ -12,7 +12,7 @@
 
 @interface Rectify : Function
 -(double)rectifyQuince:(QuinceObject *)q betweenA:(QuinceObject *)A andB:(QuinceObject *)B;
--(int)findGridIndexForQuince:(QuinceObject *)q;
+-(long)findGridIndexForQuince:(QuinceObject *)q;
 -(void)copyParamsOf:(QuinceObject*)source into:(QuinceObject*)target;
     
     @end

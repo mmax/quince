@@ -42,11 +42,11 @@
 
 
 -(NSString *)parameterOnY{
-	return [NSString stringWithString:@"cent"];
+	return @"cent";
 }
 
 -(NSString *)keyForLocationOnYAxis{
-    return [NSString stringWithString:@"cent"];
+    return @"cent";
 }
 
 -(NSNumber *)parameterValueForY:(NSNumber *)y{

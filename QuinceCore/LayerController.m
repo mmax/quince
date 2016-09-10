@@ -44,7 +44,8 @@
 		[self setValue:nil forKey:@"content"];
 		[self setValue:nil forKey:@"view"];
 		
-        if (![NSBundle loadNibNamed: @"LayerControlsView" owner: self]){
+        //if (![NSBundle loadNibNamed: @"LayerControlsView" owner: self]){
+        if (![[[NSBundle alloc]init]loadNibNamed: @"LayerControlsView" owner: self topLevelObjects:nil]){
             [self release];
             //self = nil;
 			NSLog(@"LayerController:init: ;o(");

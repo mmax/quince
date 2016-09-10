@@ -268,8 +268,8 @@
 -(NSMutableArray *)inputDescriptors{
 	
 	NSMutableDictionary * dictA = [[NSMutableDictionary alloc]init];
-	[dictA setValue:[NSString stringWithString:@"empty"] forKey:@"purpose"];
-	[dictA setValue:[NSString stringWithString:@"empty"] forKey:@"type"];
+	[dictA setValue:@"empty" forKey:@"purpose"];
+	[dictA setValue:@"empty" forKey:@"type"];
 	NSMutableArray * ipd = [[NSMutableArray alloc]initWithObjects:dictA, nil];
 	[dictA release];
 	return [ipd autorelease];

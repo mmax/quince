@@ -56,6 +56,8 @@
     [super dealloc];
 }
 
+
+
 -(void)setup{
 	
 	if(![self document] || isPlaying) return;
@@ -82,11 +84,6 @@
 }
 
 
--(void)stop{
-}
-
-
-
 -(BOOL)isPlaying{return isPlaying;}
 
 -(void)setIsPlaying:(BOOL)b{
@@ -98,7 +95,7 @@
 
 
 //////////////////////////////////////////////////////////////////////////////////
-// i reckon this is where player_plug-ins will implement their playback algorithms:
+// this is where player_plug-ins will implement their playback algorithms:
 -(void)playQuince:(QuinceObject *)quince{
 
 }
@@ -149,6 +146,11 @@
     return nil;
 }
 
+
+-(void)stop{
+}
+
+
 #pragma mark KVC
 
 -(void)setValue:(id)aValue forKey:(NSString *)aKey{
@@ -187,5 +189,9 @@
 
 
 -(NSDictionary *)dictionary{return dictionary;}
+-(MusicSequence)sequence{return sequence;}
+-(MusicPlayer)player{return player;}
+
+
 @end
 

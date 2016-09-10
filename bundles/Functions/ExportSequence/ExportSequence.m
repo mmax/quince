@@ -38,7 +38,7 @@
     [sp setAllowedFileTypes:types];
 	[sp setTitle:@"Save Sequence"];
 
-    int status = [sp runModal];
+    long status = [sp runModal];
 	if(status==NSFileHandlingPanelOKButton){
 
 		if(![d writeToURL:[sp URL] atomically:NO])

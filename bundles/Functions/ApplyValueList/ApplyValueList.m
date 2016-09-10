@@ -33,7 +33,8 @@
 -(ApplyValueList *)init{
 	
 	if(self = [super init]){
-		[NSBundle loadNibNamed:@"AVL_win" owner:self];
+		//[NSBundle loadNibNamed:@"AVL_win" owner:self];
+        [[[NSBundle alloc]init] loadNibNamed:@"AVL_win" owner:self topLevelObjects:nil];
 	}
 	return self;
 }
@@ -76,8 +77,8 @@
 
 -(NSArray *)linesFromString:(NSString *)string{
 
-	unsigned length = [string length];
-	unsigned paraStart = 0, paraEnd = 0, contentsEnd = 0;
+	unsigned long length = [string length];
+	unsigned long paraStart = 0, paraEnd = 0, contentsEnd = 0;
 	NSMutableArray *array = [NSMutableArray array];
 	NSRange currentRange;
 	while (paraEnd < length) {

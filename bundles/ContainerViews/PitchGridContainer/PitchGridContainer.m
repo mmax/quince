@@ -74,7 +74,7 @@
     
 	regions = [[NSMutableArray alloc]init];
     
-	int i=0,count = [subs count];
+	long i=0,count = [subs count];
     
     
 	//lines
@@ -158,11 +158,11 @@
 
 
 -(NSString *)parameterOnY{
-	return [NSString stringWithString:@"pitchF"];
+	return @"pitchF";
 }
 
 -(NSString *)keyForLocationOnYAxis{
-    return [NSString stringWithString:@"pitchF"];
+    return @"pitchF";
 }
 
 -(NSNumber *)parameterValueForY:(NSNumber *)y{

@@ -32,7 +32,8 @@
 -(CsoundPlayer *)init{
 
 	if((self = [super init])){
-		[NSBundle loadNibNamed:@"CsoundPlayerWindow" owner:self];
+		//[NSBundle loadNibNamed:@"CsoundPlayerWindow" owner:self];
+        [[[NSBundle alloc]init] loadNibNamed:@"CsoundPlayerWindow" owner:self topLevelObjects:nil];
 		[scoreView setRichText:NO];
 		[[scoreView textContainer] setContainerSize:NSMakeSize(FLT_MAX, FLT_MAX)];
         [self initModes];

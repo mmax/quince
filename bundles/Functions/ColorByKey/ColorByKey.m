@@ -34,7 +34,8 @@
 	
 	if(self = [super init]){
 		
-		[NSBundle loadNibNamed:@"ColorByKey" owner:self];
+		//[NSBundle loadNibNamed:@"ColorByKey" owner:self];
+        [[[NSBundle alloc]init] loadNibNamed:@"ColorByKey" owner:self topLevelObjects:nil];
 	}
 	return self;
 }

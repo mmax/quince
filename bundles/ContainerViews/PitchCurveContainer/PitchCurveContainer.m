@@ -93,7 +93,7 @@
 	if(strokePaths)	[strokePaths removeAllObjects];
 	else strokePaths = [[NSMutableArray alloc]init];
 	
-	int N=0, framesPerPath = 350, fpwi;
+	long N=0, framesPerPath = 350, fpwi;
 	double frameDuration = [[self valueForKey:@"frameDuration"]doubleValue];
 	double framesPerWindow = [[self valueForKey:@"framesPerWindow"]doubleValue];
 	double time = 0;
@@ -160,7 +160,7 @@
 	
 	Envelope * envelope = [[self contentController] content];
 	NSArray * audio = [envelope envelope];
-	int N;
+	long N;
 	double candidate, ppx = [[self valueForKey:@"pixelsPerUnitX"]doubleValue];
 	float deltaX = kDeltaX, max = 0;
 	
@@ -255,7 +255,7 @@
 }
 
 -(NSArray *)types{
-	return [NSArray arrayWithObject:[NSString stringWithString:@"PitchCurve"]];
+	return [NSArray arrayWithObject:@"PitchCurve"];
 }
 
 -(BOOL)allowsPlayback{return NO;}
@@ -277,11 +277,11 @@
 }
 
 -(NSString *)parameterOnY{
-	return [NSString stringWithString:@"pitchF"];
+	return @"pitchF";
 }
 
 -(NSString *)keyForLocationOnYAxis{
-    return [NSString stringWithString:@"pitchF"];
+    return @"pitchF";
 }
 
 -(double)minimumYValue{return 16;}

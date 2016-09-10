@@ -26,6 +26,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import <QuinceApi/Player.h>
+#import <QuinceApi/QuinceDocument.h>
 
 
 OSStatus playbackCallback(void *inRefCon,
@@ -51,8 +52,6 @@ void sequenceUserCallback (
     
 }
 
--(MusicSequence)sequence;
--(MusicPlayer)player;
 void DeriveBufferSize (
                        AudioStreamBasicDescription ASBDesc,                            // 1
                        UInt32                      maxPacketSize,                       // 2

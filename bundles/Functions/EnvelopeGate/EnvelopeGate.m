@@ -32,7 +32,8 @@
 -(EnvelopeGate *)init{
 	
 	if(self = [super init]){
-		[NSBundle loadNibNamed:@"EnvelopeGateWindow" owner:self];
+		//[NSBundle loadNibNamed:@"EnvelopeGateWindow" owner:self];
+        [[[NSBundle alloc]init] loadNibNamed:@"EnvelopeGateWindow" owner:self topLevelObjects:nil];
 	}
 	return self;
 }

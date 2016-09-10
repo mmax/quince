@@ -33,7 +33,8 @@
 -(CreateGridSequence *)init{
 
 	if((self = [super init])){
-		[NSBundle loadNibNamed:@"CreateGridSequenceWindow" owner:self];
+		//[NSBundle loadNibNamed:@"CreateGridSequenceWindow" owner:self];
+        [[[NSBundle alloc]init]loadNibNamed:@"CreateGridSequenceWindow" owner:self topLevelObjects:nil];
 	}
 	return self;
 }
@@ -193,8 +194,8 @@
 -(NSMutableArray *)inputDescriptors{
 	
 	NSMutableDictionary * dictA = [[NSMutableDictionary alloc]init];
-	[dictA setValue:[NSString stringWithString:@"empty"] forKey:@"purpose"];
-	[dictA setValue:[NSString stringWithString:@"empty"] forKey:@"type"];
+	[dictA setValue:@"empty" forKey:@"purpose"];
+	[dictA setValue:@"empty" forKey:@"type"];
 	NSMutableArray * ipd = [[NSMutableArray alloc]initWithObjects:dictA, nil];
 	[dictA release];
 	return [ipd autorelease];

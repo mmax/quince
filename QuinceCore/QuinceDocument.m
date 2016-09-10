@@ -217,7 +217,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
     [self setIndeterminateProgressTask:@"writing data..."];
     [self displayProgress:YES];
 
-	NSString * error;
+	//NSString * error;
 	NSDictionary * views = [mainController xmlDictionary];//[[NSMutableDictionary alloc]init];
 	NSMutableDictionary * session = [[NSMutableDictionary alloc]init];
 	NSMutableArray * objects = [[NSMutableArray alloc]init];
@@ -232,9 +232,14 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	/* NSLog(@"writing file:"); 
 		NSLog(@"session: %@", session);
 	 */	
-	NSData * data = [NSPropertyListSerialization dataFromPropertyList:session
+	/*NSData * data = [NSPropertyListSerialization dataFromPropertyList:session
 															   format:NSPropertyListXMLFormat_v1_0
-												errorDescription:&error];	 	 
+												errorDescription:&error];*/
+    
+    NSError * error;
+    NSData * data = [NSPropertyListSerialization dataWithPropertyList:session
+                                                               format:NSPropertyListXMLFormat_v1_0 options:nil error:&error];
+    //[NSData dataWithPropertyList:session
 	
 	[session release];
 	[objects release];
@@ -256,13 +261,15 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 
 - (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError{
   
-	NSString *error;
+	//NSString *error;
+    NSError * error;
 	NSPropertyListFormat format;
-	NSDictionary * session = [NSPropertyListSerialization propertyListFromData:data
+	/*NSDictionary * session = [NSPropertyListSerialization propertyListFromData:data
 															  mutabilityOption:NSPropertyListImmutable
 																		format:&format
-															  errorDescription:&error];
-	
+															  errorDescription:&error];*/
+    NSDictionary * session = [NSPropertyListSerialization   propertyListWithData:data options:nil format:&format error:&error];
+    
 	tempObjectArray = [session valueForKey:@"objects"];
 	mainControllerDictionary = [session valueForKey:@"views"];
 	tempPlayerDict = [session valueForKey:@"player"];
@@ -1430,7 +1437,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 		NSArray * subs = [copy valueForKey:@"subObjects"];
 		if([subs count]){
 			for(QuinceObject * quince in subs){
-                if(![[quince valueForKey:@"muted"]intValue] == 1){
+                if(!([[quince valueForKey:@"muted"]intValue] == 1)){
                     [flat addObject:quince];
                 }
             }
@@ -1638,8 +1645,8 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 
 -(BOOL)areTheseControllersSiblings:(NSArray *)controllers{
 
-	if(![controllers count]>0)return NO;
-	if(![controllers count]==1)return YES;
+	if(!([controllers count]>0))return NO;
+	if(!([controllers count]==1))return YES;
 	
 	NSString * firstId = [[[[controllers objectAtIndex:0]content]superObject]valueForKey:@"id"];
 	
@@ -1763,8 +1770,12 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 -(void)presentAlertWithText:(NSString *)message{
-	NSAlert * alert = [NSAlert alertWithMessageText:message defaultButton:@"OK" alternateButton:@"" otherButton:@"" informativeTextWithFormat:@""];
-	[alert setAlertStyle:NSInformationalAlertStyle];
+    NSAlert * alert = [[NSAlert alloc ]init];//alertWithMessageText:message defaultButton:@"OK" alternateButton:@"" otherButton:@"" informativeTextWithFormat:@""];
+    [alert addButtonWithTitle:@"OK"];
+    [alert setInformativeText:message];
+    [alert setAlertStyle:NSInformationalAlertStyle];
+    /*NSAlert * alert = [NSAlert alertWithMessageText:message defaultButton:@"OK" alternateButton:@"" otherButton:@"" informativeTextWithFormat:@""];
+	[alert setAlertStyle:NSInformationalAlertStyle];*/
 	[alert layout];
 	[alert runModal];
 }

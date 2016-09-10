@@ -31,7 +31,8 @@
 -(ApplyValuesFromSeq *)init{
 	
 	if(self = [super init]){
-		[NSBundle loadNibNamed:@"AVFS_win" owner:self];
+		//[NSBundle loadNibNamed:@"AVFS_win" owner:self];
+        [[[NSBundle alloc]init] loadNibNamed:@"AVFS_win" owner:self topLevelObjects:nil];
 	}
 	return self;
 }

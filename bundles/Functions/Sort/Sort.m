@@ -32,7 +32,8 @@
 -(Sort *)init{
 	
 	if((self = [super init])){
-		[NSBundle loadNibNamed:@"SortWindow" owner:self];
+		//[NSBundle loadNibNamed:@"SortWindow" owner:self];
+        [[[NSBundle alloc]init]loadNibNamed:@"SortWindow" owner:self topLevelObjects:nil];
 	}
 	return self;
 }

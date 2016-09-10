@@ -57,11 +57,11 @@ NSString * const kGlissandoContainerSetGlissandoStartToPreviousEndString = @"s";
 
 
 -(NSString *)parameterOnY{
-	return [NSString stringWithString:@"pitchF"];
+	return @"pitchF";
 }
 
 -(NSString *)keyForLocationOnYAxis{
-    return [NSString stringWithString:@"pitchF"];
+    return @"pitchF";
 }
 
 -(NSString *)keyForSizeOnYAxis{return @"pitchRange";}

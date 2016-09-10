@@ -362,7 +362,7 @@
 }
 
 -(NSArray *)types{
-	return [NSArray arrayWithObject:[NSString stringWithString:@"Envelope"]];
+	return [NSArray arrayWithObject:@"Envelope"];
 }
 
 -(BOOL)allowsPlayback{return NO;}

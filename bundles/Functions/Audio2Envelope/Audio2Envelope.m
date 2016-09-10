@@ -58,20 +58,24 @@
 		path = [quince valueForKey:@"filePath"];
 
 		AudioFileID file;// = [self openAudioFileAtPath:path];
-		FSRef fileRef;
+		/*FSRef fileRef;
 		OSStatus err = FSPathMakeRef((const UInt8 *)[path fileSystemRepresentation], &fileRef, NULL);
 		
 		if(err) {
 			NSLog(@"SequenceFromAudioFile: Could not create FSRef from path");
 			return NO;
 		}
-		err = AudioFileOpenURL (CFURLCreateFromFSRef(NULL,&fileRef), kAudioFileReadWritePermission, 0, &file);
-		
+		err = AudioFileOpenURL (CFURLCreateFromFSRef(NULL,&fileRef), kAudioFileReadWritePermission, 0, &file);*/
+        
+        NSURL * url = [NSURL fileURLWithPath:path];
+        CFURLRef cfurl = CFBridgingRetain(url);
+        OSStatus err = AudioFileOpenURL (cfurl, kAudioFileReadWritePermission, 0, &file);
 		if(err){
 			NSLog(@"could not open audiofile");
 			return NO;
 		}
 		AudioFileClose(file);
+        CFRelease(cfurl);
 	}
 	
 	return YES;
@@ -117,7 +121,7 @@
 	NSMutableArray * data = [[NSMutableArray alloc]init];
 	ExtAudioFileRef inFile;
 	OSStatus err;
-	FSRef soundRef;
+	//FSRef soundRef;
 	int i, kSrcBufSize = kSamplesPerWindow;
 	Float32 srcBuffer[kSrcBufSize];//, progress=0;
 	int nChannels = 1;
@@ -128,15 +132,19 @@
 	}
 		
 	path = [file valueForKey:@"filePath"];
+    
+    NSURL * url = [NSURL fileURLWithPath:path];
+    CFURLRef cfurl = CFBridgingRetain(url);
+    err = ExtAudioFileOpenURL(cfurl, &inFile);
 
-	err = FSPathMakeRef((const UInt8 *)[path fileSystemRepresentation], &soundRef, NULL);
+	/*err = FSPathMakeRef((const UInt8 *)[path fileSystemRepresentation], &soundRef, NULL);
 	if(err) {
 		[document presentAlertWithText:[NSString stringWithFormat:@"EnvelopeFromAudioFile: ERROR: invalid path: %@", path]]; //Could not create FSRef from path
 		return nil;
 	}
 	//int samplesPerWindow = kSamplesPerWindow;
 	err = ExtAudioFileOpenURL(CFURLCreateFromFSRef(NULL, &soundRef), &inFile);
-	
+     */
 //    kExtAudioFileProperty_FileLengthFrames
     
     SInt64 totalFrameCount;
@@ -212,6 +220,7 @@
 	}
 	
 	ExtAudioFileDispose(inFile);
+    CFRelease(cfurl);
 
 	return [data autorelease];
 }
@@ -223,7 +232,7 @@
 	//NSMutableArray * data = [[NSMutableArray alloc]init];
 	ExtAudioFileRef inFile;
 	OSStatus err;
-	FSRef soundRef;
+	//FSRef soundRef;
 	int i, kSrcBufSize = 44100;//= kSamplesPerWindow;
 	Float32 srcBuffer[kSrcBufSize];//, progress=0;
 	int nChannels = 1;
@@ -235,14 +244,17 @@
     
 	path = [file valueForKey:@"filePath"];
     
-	err = FSPathMakeRef((const UInt8 *)[path fileSystemRepresentation], &soundRef, NULL);
+	/*err = FSPathMakeRef((const UInt8 *)[path fileSystemRepresentation], &soundRef, NULL);
 	if(err) {
 		[document presentAlertWithText:[NSString stringWithFormat:@"EnvelopeFromAudioFile: ERROR: invalid path: %@", path]]; //Could not create FSRef from path
 		return nil;
 	}
 	//int samplesPerWindow = kSamplesPerWindow;
-	err = ExtAudioFileOpenURL(CFURLCreateFromFSRef(NULL, &soundRef), &inFile);
-	
+	err = ExtAudioFileOpenURL(CFURLCreateFromFSRef(NULL, &soundRef), &inFile);*/
+    NSURL * url = [NSURL fileURLWithPath:path];
+    CFURLRef cfurl = CFBridgingRetain(url);
+    err = ExtAudioFileOpenURL(cfurl, &inFile);
+    
     //    kExtAudioFileProperty_FileLengthFrames
     
     SInt64 totalFrameCount;
@@ -324,6 +336,7 @@
 	}
 	
 	ExtAudioFileDispose(inFile);
+    CFRelease(cfurl);
     
 	return sampleBuffer;
 }

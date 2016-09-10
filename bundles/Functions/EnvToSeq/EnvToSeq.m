@@ -33,7 +33,8 @@
 -(EnvToSeq *)init{
 	
 	if(self = [super init]){
-		[NSBundle loadNibNamed:@"EnvToSeqWindow" owner:self];
+		//[NSBundle loadNibNamed:@"EnvToSeqWindow" owner:self];
+        [[[NSBundle alloc]init] loadNibNamed:@"EnvToSeqWindow" owner:self topLevelObjects:nil];
 	}
 	return self;
 }

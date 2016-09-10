@@ -40,11 +40,11 @@
 
 
 -(NSString *)parameterOnY{
-	return [NSString stringWithString:@"frequency"];
+	return @"frequency";
 }
 
 -(NSString *)keyForLocationOnYAxis{
-    return [NSString stringWithString:@"frequency"];
+    return @"frequency";
 }
 
 -(NSNumber *)parameterValueForY:(NSNumber *)y{

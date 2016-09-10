@@ -32,7 +32,7 @@
 -(NSString *)defaultChildViewClassName{return @"SequenceChild";}
 
 -(NSArray *)types{
-	return [NSArray arrayWithObject:[NSString stringWithString:@"QuinceObject"]];
+	return [NSArray arrayWithObject:@"QuinceObject"];
 }
 
 -(NSString *)defaultObjectClassName{return @"QuinceObject";}

@@ -34,7 +34,8 @@
 
 	
 	if(self = [super init]){
-		[NSBundle loadNibNamed:@"MapDynamicExprWindow" owner:self];
+		//[NSBundle loadNibNamed:@"MapDynamicExprWindow" owner:self];
+        [[[NSBundle alloc]init] loadNibNamed:@"MapDynamicExprWindow" owner:self topLevelObjects:nil];
 	}
 	return self;
 

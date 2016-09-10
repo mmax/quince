@@ -32,7 +32,8 @@
 -(ResampleEnvelope *)init{
 
 	if((self = [super init])){
-		[NSBundle loadNibNamed:@"ResampleEnvelopeWindow" owner:self];
+		//[NSBundle loadNibNamed:@"ResampleEnvelopeWindow" owner:self];
+        [[[NSBundle alloc]init] loadNibNamed:@"ResampleEnvelopeWindow" owner:self topLevelObjects:nil];
 	}
 	return self;
 }

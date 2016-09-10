@@ -34,7 +34,8 @@
 	
 	if(self = [super init]){
 		
-		[NSBundle loadNibNamed:@"SetParameterWindow" owner:self];
+		//[NSBundle loadNibNamed:@"SetParameterWindow" owner:self];
+        [[[NSBundle alloc]init] loadNibNamed:@"SetParameterWindow" owner:self topLevelObjects:nil];
 	}
 	return self;
 }
