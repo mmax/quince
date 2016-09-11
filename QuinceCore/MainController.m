@@ -157,7 +157,15 @@
 	
 	// create content inside that frame
 
-	StripController * stripController = 	[[StripController alloc]initWithNibName:@"StripControl" bundle:nil];
+    StripController * stripController = 	[StripController alloc];
+    NSBundle * mainBundle = [NSBundle mainBundle];
+    
+    [stripController initWithNibName:@"StripControl" bundle:mainBundle];
+    
+//    if([stripController className] == nil){
+//        NSLog(@"MainController: ERROR Loading StripControl.nib");
+//        return nil;
+//    }
 	[stripController setController:self];
     [stripController setDocument:doc];
 	NSView * stripControlView = [stripController view];
@@ -166,7 +174,6 @@
 	// connect the content
 	[stripControllers addObject:stripController];
 	[stripControlDocumentView addSubview:stripControlView];
-	
 
 	// we do have a new strip, so increment the count NOW
 	count++;
@@ -322,6 +329,7 @@
 		if(![[doc containerViewClassNames]count])NSLog(@"mainController: containerViewClassNames count == 0!!!");
 		return [doc containerViewClassNames];
 	}
+    
 }
 
 -(NSArray *)containerViewClasses{

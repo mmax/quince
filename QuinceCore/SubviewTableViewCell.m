@@ -28,6 +28,11 @@
 @implementation SubviewTableViewCell
 
 - (void) addSubview:(NSView *) view{
+    if(!view){
+        NSLog(@"SubviewTableViewCell addSubview: NO VIEW!");
+        return;
+    }
+    //NSLog(@"%@", [view className]);
     subview = [view retain];
 }
 
@@ -47,6 +52,7 @@
 
     if ([[self view] superview] != controlView)
 		[controlView addSubview: [self view]];
+
 }
 
 -(void)setPlaceholderString:(NSString *)s{

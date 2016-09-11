@@ -346,7 +346,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	NSMutableArray* bundlePaths = [[NSMutableArray alloc]init];
 	NSString* currPath;
 	NSMutableArray*	bundleSearchPaths = [[NSMutableArray alloc]init];
-	NSArray* librarySearchPaths = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSSystemDomainMask, YES);
+	NSArray* librarySearchPaths = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES);//NSSystemDomainMask, YES);
 
     NSEnumerator* searchPathEnum = [librarySearchPaths objectEnumerator];
     while ((currPath = [searchPathEnum nextObject]))
@@ -476,6 +476,7 @@ NSString* const kPlayerBundlePrefixIDStr = @"QuincePlayerBundle";
 	Class a;
 	while ((a = [e nextObject]))
 		[containerViewClassNames addObject:[a className]];
+    NSLog(@"%@", containerViewClassNames);
 	[mainController setContainerViewClasses:viewClassList];
 }
 

@@ -199,6 +199,9 @@
 	NSView * cv = (NSView *)[controller contentView];
 	//NSArray * subviews = [cv subviews];
 
+    if(!newView){
+        NSLog(@"StripController addView: NO VIEW!\n");
+    }
 	
 	[cv addSubview:newView positioned:NSWindowBelow relativeTo:interceptView];		// this line was inserted replacing the following if-else
 																					// it fixed a bug where some user events where not received by the view in the selected layer

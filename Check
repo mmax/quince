@@ -1,0 +1,7 @@
+
+
+Check ContainerView.m & QuinceDocument for NSAlert modifications
+
+QuinceAppDelegate.m:
+
+- (BOOL)applicationShouldOpenUntitledFile:(NSApplication *)sender{

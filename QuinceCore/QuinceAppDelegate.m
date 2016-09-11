@@ -34,16 +34,15 @@
 
     return NO;
 	//
-    id documentController = [NSDocumentController sharedDocumentController];
+   /* id documentController = [NSDocumentController sharedDocumentController];
 	
 	// Reopen last document
 	for (NSURL *url in [documentController recentDocumentURLs]) {
 		if ([[NSFileManager defaultManager] fileExistsAtPath:[url path]]) {
-			//if([documentController openDocumentWithContentsOfURL:url display:YES error:nil])
-            if([documentController openDocumentWithContentsOfURL:url display:YES completionHandler:<#^(NSDocument * _Nullable document, BOOL documentWasAlreadyOpen, NSError * _Nullable error)completionHandler#>])
+			if([documentController openDocumentWithContentsOfURL:url display:YES error:nil])
 				return NO;
 		}
-	}
+	}*/
 	return YES;
 }
 

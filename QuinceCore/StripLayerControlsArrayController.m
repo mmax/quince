@@ -96,16 +96,29 @@ NSString * MovedRowsType = @"quince_MOVED_ROWS_TYPE";
 }
 
 - (void) tableView:(NSTableView *) tableView willDisplayCell:(id) cell forTableColumn:(NSTableColumn *) tableColumn row:(int) row{
+    NSLog(@"StripLayerControlsArrayController: willDisplayCell row: %d", row);
+    
+    
 	if (tableColumn == subviewTableColumn){
-		if ([self isValidDelegateForSelector: @selector(tableView:viewForRow:)])
-			[(SubviewTableViewCell *)cell addSubview: [[self delegate] tableView: tableView viewForRow: row]];
+        if ([self isValidDelegateForSelector: @selector(tableView:viewForRow:)]){
+            if(![self delegate]){
+                NSLog(@"No StripController!");
+            }
+            NSView * tv = [[self delegate] tableView: tableView viewForRow: row];
+            if(!tv){
+                NSLog(@"no table view");
+            }
+            else
+                [(SubviewTableViewCell *)cell addSubview: tv];
+        }
 	}
 	else{
 		if ([self isValidDelegateForSelector: _cmd]){
 				//[[self delegate] tableView: tableView willDisplayCell: cell forTableColumn: tableColumn row: row];
 				NSLog(@"StripLayerControlsArrayControler:tableView:(NSTableView *) tableView willDisplayCell:(id) cell forTableColumn:(NSTableColumn *) tableColumn row:(int) row : ;o(");
 			}
-	} 
+	}
+
 }
  
 - (void) tableViewColumnDidMove:(NSNotification *) notification{

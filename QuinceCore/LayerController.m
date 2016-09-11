@@ -44,12 +44,17 @@
 		[self setValue:nil forKey:@"content"];
 		[self setValue:nil forKey:@"view"];
 		
+        
         //if (![NSBundle loadNibNamed: @"LayerControlsView" owner: self]){
-        if (![[[NSBundle alloc]init]loadNibNamed: @"LayerControlsView" owner: self topLevelObjects:nil]){
+        NSArray * tlo = [NSArray array];
+        if (![[NSBundle mainBundle] loadNibNamed: @"LayerControlsView" owner:self topLevelObjects:&tlo]){
+           
             [self release];
             //self = nil;
 			NSLog(@"LayerController:init: ;o(");
+            return nil;
         }
+         NSLog(@"LayerController: loaded Nib with %lu topLevelObjects", [tlo count]);
 	}
     return self;
 }
@@ -131,7 +136,7 @@
                 return;
     }
 	
-	if(oldView != nil)
+	if(oldView)
 		newView = [stripController replaceView:oldView withNewContainerViewOfClassNamed:name];
 	else {
 		newView = [stripController newContainerViewOfClassNamed:name];
